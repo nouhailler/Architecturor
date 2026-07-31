@@ -67,6 +67,14 @@ const MICRO_PINS = [
   { id: 'templeprotestant', cx: 640, cy: 620, label: 'Temple protestant' },
   { id: 'synagogue',        cx: 520, cy: 210, label: 'Synagogue' },
   { id: 'mosqueecontemporaine', cx: 565, cy: 300, label: 'Mosquée contemporaine' },
+  { id: 'chateaufort',      cx: 550, cy: 400, label: 'Château fort' },
+  { id: 'donjon',           cx: 570, cy: 420, label: 'Donjon' },
+  { id: 'tourmedievale',    cx: 540, cy: 230, label: 'Tour médiévale' },
+  { id: 'bastidefortifiee', cx: 400, cy: 720, label: 'Bastide fortifiée' },
+  { id: 'citadellevauban',  cx: 620, cy: 180, label: 'Citadelle Vauban' },
+  { id: 'fortnapoleon',     cx: 250, cy: 500, label: 'Fort Napoléon' },
+  { id: 'blockhausatlantique', cx: 240, cy: 300, label: 'Blockhaus Atlantique' },
+  { id: 'caserne',          cx: 600, cy: 350, label: 'Caserne' },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */

@@ -3,21 +3,25 @@ import { useNavigate } from 'react-router-dom'
 import styles from './FriseChronologique.module.css'
 
 /* Année de départ et durée totale de la frise */
-const START = 1000
-const SPAN  = 1000 // 1000 → 2000
+const START = 900
+const SPAN  = 1100 // 900 → 2000
 
 const toPercent = (year: number) => `${((year - START) / SPAN) * 100}%`
 const toWidth   = (from: number, to: number) => `${((to - from) / SPAN) * 100}%`
 
 const LANES = [
+  { id: 'donjon',          label: 'Donjon',               from: 950,  to: 1350, accent: false },
   { id: 'egliseromane',    label: 'Église romane',        from: 1000, to: 1200, accent: false },
   { id: 'abbaye',          label: 'Abbaye',               from: 1000, to: 1789, accent: false },
   { id: 'monastere',       label: 'Monastère',            from: 1000, to: 1800, accent: false },
   { id: 'prieure',         label: 'Prieuré',              from: 1000, to: 1500, accent: false },
   { id: 'cloitre',         label: 'Cloître',              from: 1000, to: 1500, accent: false },
+  { id: 'chateaufort',     label: 'Château fort',         from: 1000, to: 1500, accent: false },
+  { id: 'tourmedievale',   label: 'Tour médiévale',       from: 1100, to: 1500, accent: false },
   { id: 'eglisegothique',  label: 'Église gothique',      from: 1140, to: 1500, accent: false },
   { id: 'cathedralegothique', label: 'Cathédrale gothique', from: 1150, to: 1550, accent: false },
   { id: 'chapellerurale',  label: 'Chapelle rurale',      from: 1200, to: 1900, accent: false },
+  { id: 'bastidefortifiee', label: 'Bastide fortifiée',   from: 1220, to: 1370, accent: false },
   { id: 'alsacienne',      label: 'Maison alsacienne',    from: 1450, to: 1850, accent: false },
   { id: 'panbois',         label: 'Pan de bois',          from: 1450, to: 1650, accent: false },
   { id: 'perigourdine',    label: 'Maison périgourdine',  from: 1500, to: 1900, accent: false },
@@ -37,6 +41,7 @@ const LANES = [
   { id: 'savoyarde',       label: 'Maison savoyarde',     from: 1600, to: 1950, accent: false },
   { id: 'longerevendeenne', label: 'Longère vendéenne',   from: 1600, to: 1900, accent: false },
   { id: 'hotelparticulier', label: 'Hôtel particulier',   from: 1600, to: 1900, accent: false },
+  { id: 'citadellevauban', label: 'Citadelle Vauban',     from: 1667, to: 1707, accent: false },
   { id: 'longere',         label: 'Longère bretonne',     from: 1700, to: 1900, accent: false },
   { id: 'solognote',       label: 'Maison solognote',     from: 1700, to: 1900, accent: false },
   { id: 'beauceronne',     label: 'Ferme beauceronne',    from: 1700, to: 1950, accent: false },
@@ -47,11 +52,13 @@ const LANES = [
   { id: 'borie',           label: 'Borie',                from: 1700, to: 1900, accent: false },
   { id: 'capitelle',       label: 'Capitelle',            from: 1700, to: 1900, accent: false },
   { id: 'maisondeville18e', label: 'Maison de ville XVIIIe', from: 1700, to: 1800, accent: false },
+  { id: 'caserne',         label: 'Caserne',              from: 1700, to: 1950, accent: false },
   { id: 'canutlyonnais',   label: 'Canut lyonnais',       from: 1700, to: 1900, accent: false },
   { id: 'maisontoulousaine', label: 'Maison toulousaine', from: 1700, to: 1900, accent: false },
   { id: 'echoppe',         label: 'Échoppe bordelaise',   from: 1730, to: 1914, accent: false },
   { id: 'chalet',          label: 'Chalet savoyard',      from: 1750, to: 1900, accent: false },
   { id: 'maisonbourgeoise', label: 'Maison bourgeoise',   from: 1800, to: 1900, accent: false },
+  { id: 'fortnapoleon',    label: 'Fort Napoléon',        from: 1800, to: 1870, accent: false },
   { id: 'maisonouvriere',  label: 'Maison ouvrière',      from: 1800, to: 1900, accent: false },
   { id: 'maisonnantaise',  label: 'Maison nantaise',      from: 1800, to: 1900, accent: false },
   { id: 'templeprotestant', label: 'Temple protestant',   from: 1800, to: 1900, accent: false },
@@ -62,6 +69,7 @@ const LANES = [
   { id: 'artnouveau',      label: 'Art nouveau',          from: 1890, to: 1914, accent: false },
   { id: 'artdeco',         label: 'Art déco',             from: 1920, to: 1935, accent: false },
   { id: 'annees30',        label: 'Immeuble années 30',   from: 1925, to: 1939, accent: false },
+  { id: 'blockhausatlantique', label: 'Blockhaus Atlantique', from: 1942, to: 1944, accent: false },
   { id: 'maisonidf',       label: 'Maison Île-de-France', from: 1950, to: 2000, accent: false },
   { id: 'grandensemble',   label: 'Grand ensemble',       from: 1953, to: 1975, accent: false },
   { id: 'barrehlm',        label: 'Barre HLM',            from: 1955, to: 1975, accent: false },
@@ -70,7 +78,7 @@ const LANES = [
   { id: 'mosqueecontemporaine', label: 'Mosquée contemporaine', from: 1980, to: 2010, accent: false },
 ] as const
 
-const TICKS = [1000, 1200, 1400, 1600, 1800, 2000]
+const TICKS = [900, 1100, 1300, 1500, 1700, 1900, 2000]
 
 export default function FriseChronologique() {
   const navigate = useNavigate()

@@ -3409,6 +3409,446 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'chateaufort',
+    name: 'Château fort',
+    region: 'France · sites médiévaux',
+    periode: '1000–1500',
+    procede: 'Pierre',
+    usage: 'Forteresse seigneuriale',
+    categorie: 'militaire',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Résidence fortifiée du seigneur, organisée en enceintes successives autour d’un donjon refuge : courtines, tours de flanquement, chemin de ronde et pont-levis. Né de la motte castrale en bois, le château fort se pétrifie progressivement du XIe au XIIIe siècle pour résister au siège et affirmer un pouvoir territorial.",
+    identite: [
+      ['Période', 'XIe–XVe siècle'],
+      ['Région', 'France, sites médiévaux'],
+      ['Usage', 'Forteresse seigneuriale'],
+      ['Système', 'Enceintes concentriques en pierre'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Basse-cour et haute-cour autour du donjon'],
+      ['Particularité', 'Mâchicoulis, chemin de ronde, pont-levis'],
+    ],
+    materiaux: ['Pierre de taille', 'Moellons', 'Chaux', 'Bois (charpente, pont-levis)', 'Fer (herses, ferrures)', 'Plomb (couverture des tours)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toitures coniques ou en poivrière sur les tours, charpente bois, couverture ardoise ou plomb.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Courtines épaisses, tours de flanquement rondes, chemin de ronde crénelé.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois entre les niveaux du donjon et des tours résidentielles.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs très épais en pierre, tours rondes limitant les angles morts.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier en vis dans l’épaisseur des tours, desservant chaque niveau.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations rocheuses ou massives, souvent sur un site naturellement défensif.' },
+    ],
+    sections: [
+      {
+        title: 'Des enceintes concentriques',
+        icon: 'ph ph-grid-nine',
+        intro: "Le château fort organise sa défense en profondeur : chaque enceinte franchie ralentit l’assaillant avant d’atteindre le donjon.",
+        groups: [
+          G(null, ['Basse-cour extérieure pour les communs et l’ost', 'Haute-cour resserrée autour du donjon', 'Fossé sec ou en eau entre les enceintes']),
+        ],
+      },
+      {
+        title: 'Le système défensif',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Tours rondes de flanquement supprimant les angles morts', 'Mâchicoulis pour le tir vertical', 'Archères et meurtrières dans l’épaisseur des murs']),
+        ],
+      },
+      {
+        title: 'Franchissements & accès',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Pont-levis enjambant le fossé', 'Herse doublant la porte principale', 'Chicane d’entrée limitant la charge frontale']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'donjon',
+    name: 'Donjon',
+    region: 'France · sites médiévaux',
+    periode: '950–1350',
+    procede: 'Pierre',
+    usage: 'Tour maîtresse, refuge et résidence',
+    categorie: 'militaire',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Tour maîtresse du château, dernier refuge en cas de siège et résidence seigneuriale en temps de paix. D’abord carré puis majoritairement circulaire à partir du XIIe siècle pour mieux résister au sapement et aux projectiles, le donjon domine toujours la silhouette du château par sa hauteur.",
+    identite: [
+      ['Période', 'Xe–XIVe siècle'],
+      ['Région', 'France, sites médiévaux'],
+      ['Usage', 'Tour maîtresse, refuge et résidence'],
+      ['Système', 'Murs porteurs en pierre très épais'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Tour carrée puis circulaire'],
+      ['Particularité', 'Entrée surélevée, dernier refuge du château'],
+    ],
+    materiaux: ['Pierre de taille', 'Moellons', 'Chaux', 'Bois (planchers, échelle d’accès)', 'Fer', 'Plomb'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toit en poivrière ou terrasse crénelée, charpente bois protégée.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs de 2 à 4 mètres d’épaisseur, peu d’ouvertures, entrée surélevée.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois séparant salle basse, salle seigneuriale et niveaux supérieurs.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs massifs, forme circulaire privilégiée contre le sapement.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier en vis dans l’épaisseur du mur, ou échelle amovible à l’entrée.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes ou ancrage rocheux, résistant au sapement.' },
+    ],
+    sections: [
+      {
+        title: 'Le dernier refuge',
+        icon: 'ph ph-shield-check',
+        intro: "En cas de prise des enceintes extérieures, la garnison se replie dans le donjon, conçu pour tenir seul un siège prolongé.",
+        groups: [
+          G(null, ['Réserves de vivres et d’eau autonomes', 'Entrée surélevée accessible par échelle ou pont amovible', 'Murs épais résistant aux machines de siège']),
+        ],
+      },
+      {
+        title: 'Une résidence seigneuriale',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Salle seigneuriale aux étages supérieurs', 'Cheminées et latrines en encorbellement', 'Chapelle privée intégrée dans certains donjons']),
+        ],
+      },
+      {
+        title: 'Du plan carré au plan circulaire',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Donjons carrés (Xe–XIIe siècle), plus simples à bâtir', 'Donjons circulaires généralisés au XIIe siècle', 'Angles arrondis supprimant les points faibles du sapement']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'tourmedievale',
+    name: 'Tour médiévale',
+    region: 'France · enceintes urbaines',
+    periode: '1100–1500',
+    procede: 'Pierre',
+    usage: 'Tour de guet et de défense',
+    categorie: 'militaire',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Tour isolée ou intégrée à une enceinte urbaine, dédiée au guet, à la transmission de signaux et à la défense rapprochée. Plus légère qu’un donjon seigneurial, elle ponctue les remparts de ville à intervalles réguliers pour couvrir les courtines par des tirs croisés.",
+    identite: [
+      ['Période', 'XIIe–XVe siècle'],
+      ['Région', 'France, enceintes urbaines'],
+      ['Usage', 'Tour de guet et de défense'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Plan', 'Tour ronde ou semi-circulaire en saillie du rempart'],
+      ['Particularité', 'Guet, signaux, tir croisé sur les courtines'],
+    ],
+    materiaux: ['Pierre locale', 'Moellons', 'Chaux', 'Bois (hourds, planchers)', 'Fer', 'Tuile ou ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toit conique ou plateforme crénelée pour le guet, charpente légère.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre appareillée, archères réparties sur plusieurs niveaux de tir.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois desservant les niveaux de guet et de tir.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre, tour semi-circulaire en saillie du rempart.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier en vis desservant chaque niveau jusqu’à la plateforme de guet.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre ancrées au rempart adjacent.' },
+    ],
+    sections: [
+      {
+        title: 'Le guet et les signaux',
+        icon: 'ph ph-shield-check',
+        intro: "Postée en hauteur, la tour surveille les approches et relaie l’alerte par signaux visuels ou sonores vers la ville.",
+        groups: [
+          G(null, ['Plateforme de guet dominant les alentours', 'Transmission de signaux entre tours voisines', 'Guetteur logé en permanence en temps de tension']),
+        ],
+      },
+      {
+        title: 'Le tir croisé sur les courtines',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Tours espacées régulièrement le long du rempart', 'Archères orientées pour couvrir le pied des courtines', 'Aucun angle mort laissé à l’assaillant']),
+        ],
+      },
+      {
+        title: 'Murs en pierre',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre locale appareillée avec soin en parement', 'Épaisseur dégressive du bas vers le haut', 'Hourds en bois amovibles en cas de siège']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'bastidefortifiee',
+    name: 'Bastide fortifiée',
+    region: 'Sud-Ouest · Aquitaine',
+    periode: '1220–1370',
+    procede: 'Pierre & pans de bois',
+    usage: 'Ville neuve fortifiée',
+    categorie: 'militaire',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Ville neuve fondée sur un plan en damier autour d’une place centrale à couverts, dont le pourtour des maisons forme lui-même le rempart. Créées par centaines dans le Sud-Ouest au XIIIe siècle par les pouvoirs anglais, français et seigneuriaux rivaux, les bastides organisent peuplement, commerce et défense d’un même geste.",
+    identite: [
+      ['Période', 'XIIIe–XIVe siècle'],
+      ['Région', 'Sud-Ouest, Aquitaine'],
+      ['Usage', 'Ville neuve fortifiée'],
+      ['Système', 'Plan en damier, pourtour fortifié'],
+      ['Matériau dominant', 'Pierre et pans de bois'],
+      ['Plan', 'Place centrale à couverts, rues en quadrillage'],
+      ['Particularité', 'Église parfois elle-même fortifiée'],
+    ],
+    materiaux: ['Pierre locale', 'Chêne (couverts, pans de bois)', 'Torchis', 'Tuile canal ou plate', 'Chaux', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toitures individuelles des maisons, tuile canal ou plate selon les secteurs.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Maisons en pans de bois ou pierre, façades du pourtour formant un rempart continu.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois des maisons, couverts de la place sur poteaux de bois ou piliers de pierre.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Pans de bois ou murs de pierre selon les parcelles, portes fortifiées aux issues du plan.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers intérieurs propres à chaque maison du plan en lots réguliers.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre, tracé régulier hérité du plan de fondation initial.' },
+    ],
+    sections: [
+      {
+        title: 'Un plan en damier',
+        icon: 'ph ph-grid-nine',
+        intro: "Fondée d’un seul jet par charte, la bastide applique un plan géométrique régulier, rare au Moyen Âge.",
+        groups: [
+          G(null, ['Rues rectilignes se coupant à angle droit', 'Place centrale à arcades (couverts) accueillant le marché', 'Lots de maisons de taille égale distribués aux nouveaux habitants']),
+        ],
+      },
+      {
+        title: 'Le pourtour fortifié',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Façades arrière des maisons périphériques formant le rempart', 'Portes fortifiées aux principaux accès', 'Économie de construction en évitant un rempart séparé']),
+        ],
+      },
+      {
+        title: 'Une fondation de peuplement',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Charte accordant franchises et libertés aux habitants', 'Rivalité entre pouvoirs anglo-gascons et capétiens', 'Église paroissiale parfois fortifiée en clocher-donjon']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'citadellevauban',
+    name: 'Citadelle Vauban',
+    region: 'Places fortes · France',
+    periode: '1667–1707',
+    procede: 'Pierre & brique',
+    usage: 'Fortification bastionnée',
+    categorie: 'militaire',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Fortification bastionnée en étoile conçue par Vauban pour verrouiller les frontières du royaume, où chaque bastion couvre par son feu les faces voisines sans angle mort. Glacis, fossés, demi-lunes et casemates composent un système défensif méthodique, aujourd’hui classé au patrimoine mondial de l’UNESCO pour douze sites français.",
+    identite: [
+      ['Période', '1667–1707'],
+      ['Région', 'Places fortes, France'],
+      ['Usage', 'Fortification bastionnée'],
+      ['Système', 'Trace bastionnée (« à la Vauban »)'],
+      ['Matériau dominant', 'Pierre et brique'],
+      ['Plan', 'Enceinte en étoile, bastions et demi-lunes'],
+      ['Particularité', 'Glacis, fossés, tir rasant croisé'],
+    ],
+    materiaux: ['Pierre de taille', 'Brique (casemates)', 'Terre (remblais, glacis)', 'Chaux', 'Fer (affûts, ferrures)', 'Bois (charpentes de casernement)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toitures basses des casernements intérieurs, casemates voûtées à l’épreuve des bombes.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Escarpe en pierre de taille, bastions en étoile, glacis en pente douce.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers des casernements, plateformes d’artillerie sur les bastions.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs d’escarpe et de contrescarpe en pierre, remblais de terre entre les parements.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers et rampes desservant les terrepleins des bastions.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes en pierre, fossés secs ou en eau selon le site.' },
+    ],
+    sections: [
+      {
+        title: 'La trace bastionnée',
+        icon: 'ph ph-shield-check',
+        intro: "Le tracé en étoile de Vauban élimine tout angle mort : chaque bastion défend par son feu les faces des bastions voisins.",
+        groups: [
+          G(null, ['Bastions en pointe couvrant les courtines adjacentes', 'Demi-lunes protégeant les portes et courtines', 'Glacis exposant l’assaillant au tir avant tout assaut']),
+        ],
+      },
+      {
+        title: 'Le système Vauban',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Méthode standardisée appliquée sur des dizaines de places fortes', 'Douze sites inscrits au patrimoine mondial de l’UNESCO', 'Vauban, commissaire général des fortifications du royaume']),
+        ],
+      },
+      {
+        title: 'Casemates & artillerie',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Casemates voûtées à l’épreuve des bombes', 'Plateformes d’artillerie sur les bastions', 'Casernements intérieurs pour la garnison']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'fortnapoleon',
+    name: 'Fort Napoléon',
+    region: 'Littoral & frontières · France',
+    periode: '1800–1870',
+    procede: 'Maçonnerie & terre',
+    usage: 'Fort d’artillerie',
+    categorie: 'militaire',
+    periodeTags: ['XIXe'],
+    resume:
+      "Fort d’artillerie du XIXe siècle, hérité du système Vauban mais adapté à la portée croissante des canons : profils enterrés, casemates maçonnées et glacis étendus protègent la garnison et les pièces d’artillerie. Ces forts jalonnent le littoral et les frontières pour couvrir rades, ports et voies d’invasion.",
+    identite: [
+      ['Période', '1800–1870'],
+      ['Région', 'Littoral et frontières, France'],
+      ['Usage', 'Fort d’artillerie'],
+      ['Système', 'Maçonnerie enterrée et glacis'],
+      ['Matériau dominant', 'Pierre et maçonnerie'],
+      ['Plan', 'Fort polygonal ou en étoile adapté au site'],
+      ['Particularité', 'Casemates d’artillerie, fossés défendus par caponnières'],
+    ],
+    materiaux: ['Pierre de taille', 'Moellons', 'Terre (remblais, glacis)', 'Fer (affûts de canon)', 'Chaux', 'Brique (voûtes de casemates)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Casemates voûtées en berceau recouvertes de terre, protection contre les tirs plongeants.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Escarpe maçonnée basse, profil enterré limitant la cible offerte à l’ennemi.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers des casernements intérieurs, plateformes de tir pour l’artillerie.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs de maçonnerie épais, remblais de terre absorbant l’impact des projectiles.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers et rampes reliant casemates, plateformes et fossés.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations maçonnées profondes, fossés défendus par des caponnières.' },
+    ],
+    sections: [
+      {
+        title: 'S’adapter à l’artillerie moderne',
+        icon: 'ph ph-shield-check',
+        intro: "L’allongement de la portée des canons impose des forts plus bas, plus enterrés, moins exposés que les hautes murailles de l’Ancien Régime.",
+        groups: [
+          G(null, ['Profil enterré limitant la silhouette exposée', 'Glacis étendu tenant l’ennemi à distance', 'Casemates maçonnées protégeant pièces et garnison']),
+        ],
+      },
+      {
+        title: 'Verrouiller le territoire',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Forts côtiers couvrant rades et ports stratégiques', 'Forts frontaliers complétant le dispositif Vauban', 'Ceintures fortifiées autour des grandes villes']),
+        ],
+      },
+      {
+        title: 'Défense rapprochée',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Caponnières défendant le fond des fossés', 'Poternes reliant les différents niveaux du fort', 'Garnison logée dans des casernements voûtés']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'blockhausatlantique',
+    name: 'Blockhaus Atlantique',
+    region: 'Littoral atlantique · France',
+    periode: '1942–1944',
+    procede: 'Béton armé',
+    usage: 'Casemate défensive (Mur de l’Atlantique)',
+    categorie: 'militaire',
+    periodeTags: ['XXe'],
+    resume:
+      "Casemate en béton armé massif édifiée par l’Organisation Todt entre 1942 et 1944 pour former le Mur de l’Atlantique, chaîne défensive censée repousser un débarquement allié. Murs de plusieurs mètres d’épaisseur, embrasures de tir étroites et formes standardisées (types « Regelbau ») caractérisent ces vestiges encore nombreux sur le littoral.",
+    identite: [
+      ['Période', '1942–1944'],
+      ['Région', 'Littoral atlantique, France'],
+      ['Usage', 'Casemate défensive (Mur de l’Atlantique)'],
+      ['Système', 'Coffrage béton armé monolithique'],
+      ['Matériau dominant', 'Béton armé'],
+      ['Plan', 'Types standardisés (« Regelbau »)'],
+      ['Particularité', 'Murs de 2 à 3,5 m d’épaisseur, embrasures de tir'],
+    ],
+    materiaux: ['Béton armé', 'Acier (armatures, blindage des embrasures)', 'Coffrage bois (perdu)', 'Camouflage peint', 'Fer', 'Périscope (observation)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Dalle de béton armé de plusieurs mètres d’épaisseur, seule protection contre les bombardements.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs de béton coulé monolithique, embrasure de tir unique orientée vers la mer.' },
+      { n: 3, el: 'Planchers', txt: 'Dalle béton au sol, réserve de munitions et poste de tir sur un seul niveau généralement.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Volume monolithique en béton armé coulé en une fois, sans structure interne séparée.' },
+      { n: 5, el: 'Escalier', txt: 'Accès en chicane bétonnée, parfois un niveau enterré pour les munitions.' },
+      { n: 6, el: 'Fondations', txt: 'Radier béton épais, souvent posé à même le sable ou la roche côtière.' },
+    ],
+    sections: [
+      {
+        title: 'Un système standardisé',
+        icon: 'ph ph-grid-nine',
+        intro: "L’Organisation Todt construit ces ouvrages selon des plans types (« Regelbau ») répétés sur des milliers de kilomètres de côtes.",
+        groups: [
+          G(null, ['Plans standardisés selon la fonction (canon, mitrailleuse, observation)', 'Construction en série par une main-d’œuvre réquisitionnée', 'Chaîne défensive continue de la Norvège aux Pyrénées']),
+        ],
+      },
+      {
+        title: 'Une masse de béton armé',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Murs de 2 à 3,5 mètres d’épaisseur selon le type', 'Coulage monolithique limitant les points de faiblesse', 'Camouflage peint imitant le paysage environnant']),
+        ],
+      },
+      {
+        title: 'Un patrimoine de mémoire',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Vestiges massifs difficiles à démolir, toujours visibles sur le littoral', 'Reconversion en musées ou points de mémoire', 'Érosion côtière déplaçant certains ouvrages échoués sur la plage']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'caserne',
+    name: 'Caserne',
+    region: 'Villes de garnison · France',
+    periode: '1700–1950',
+    procede: 'Pierre ou brique',
+    usage: 'Casernement militaire',
+    categorie: 'militaire',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Ensemble de casernement organisé autour d’une vaste cour d’exercice, logeant troupe, chevaux et matériel dans des bâtiments à façades répétitives. Généralisée à partir de Louvois sous Louis XIV pour loger les troupes permanentes hors du logement chez l’habitant, la caserne structure encore aujourd’hui de nombreuses villes de garnison françaises.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Villes de garnison, France'],
+      ['Usage', 'Casernement militaire'],
+      ['Système', 'Murs porteurs en pierre ou brique'],
+      ['Matériau dominant', 'Pierre ou brique selon les régions'],
+      ['Plan', 'Cour d’exercice entourée de bâtiments'],
+      ['Particularité', 'Façades répétitives, chambrées collectives'],
+    ],
+    materiaux: ['Pierre', 'Brique', 'Chaux', 'Chêne (charpente, planchers)', 'Ardoise ou tuile mécanique', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois répétitive, couverture ardoise ou tuile mécanique selon les régions.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades sobres et répétitives en pierre ou brique, ordonnancement militaire strict.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, grandes chambrées collectives desservies par des couloirs.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre ou brique, trame répétitive d’un bâtiment à l’autre.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers collectifs desservant les étages de chambrées.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles filantes en pierre, caves parfois voûtées pour les magasins.' },
+    ],
+    sections: [
+      {
+        title: 'La cour d’exercice',
+        icon: 'ph ph-grid-nine',
+        intro: "Tout le quartier militaire s’organise autour d’une vaste cour rectangulaire dédiée aux exercices et rassemblements.",
+        groups: [
+          G(null, ['Cour centrale pour l’instruction et les rassemblements', 'Bâtiments de chambrées sur le pourtour', 'Écuries, magasins et infirmerie en périphérie']),
+        ],
+      },
+      {
+        title: 'Une architecture répétitive',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Façades identiques d’un bâtiment à l’autre', 'Sobriété décorative, primauté de la fonction', 'Numérotation et signalétique militaire normalisée']),
+        ],
+      },
+      {
+        title: 'Loger la troupe permanente',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Fin du logement des soldats chez l’habitant sous Louvois', 'Chambrées collectives remplacées par des chambres plus petites au XXe siècle', 'Reconversions civiles fréquentes après désaffectation militaire']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
