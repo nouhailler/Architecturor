@@ -134,6 +134,12 @@ const MICRO_PINS = [
   { id: 'columbarium',      cx: 500, cy: 280, label: 'Columbarium' },
   { id: 'ossuaire',         cx: 290, cy: 250, label: 'Ossuaire' },
   { id: 'monumentauxmorts', cx: 640, cy: 450, label: 'Monument aux morts' },
+  { id: 'lycee',            cx: 370, cy: 480, label: 'Lycée' },
+  { id: 'universite',       cx: 400, cy: 620, label: 'Université' },
+  { id: 'bibliothequeuniversitaire', cx: 430, cy: 600, label: 'Bibliothèque universitaire' },
+  { id: 'citeuniversitaire', cx: 560, cy: 200, label: 'Cité universitaire' },
+  { id: 'ecolematernelle',  cx: 340, cy: 470, label: 'École maternelle' },
+  { id: 'grandeecole',      cx: 545, cy: 195, label: 'Grande école' },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */

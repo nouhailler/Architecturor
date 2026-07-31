@@ -7099,6 +7099,336 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'lycee',
+    name: 'Lycée',
+    region: 'Toutes régions · villes moyennes et grandes',
+    periode: '1802–1960',
+    procede: 'Pierre de taille, plan en cour d’honneur',
+    usage: 'Enseignement secondaire public',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Établissement d’enseignement secondaire créé par la loi de 1802 instaurant les lycées napoléoniens, organisé autour d’une cour d’honneur monumentale distribuant salles de classe, internat, réfectoire et gymnase. Souvent installé dans d’anciens couvents sécularisés à la Révolution ou construit ex nihilo au XIXe siècle.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle, fondation du modèle en 1802'],
+      ['Région', 'Toutes régions, villes moyennes et grandes'],
+      ['Usage', 'Enseignement secondaire public'],
+      ['Système', 'Murs porteurs en pierre, plan en cour d’honneur'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Cour d’honneur centrale distribuant les ailes'],
+      ['Particularité', 'Souvent installé dans un ancien couvent sécularisé'],
+    ],
+    materiaux: ['Pierre de taille', 'Brique', 'Ardoise', 'Fer (verrières, préau)', 'Bois (mobilier, parquet)', 'Fonte (colonnes de préau)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à longs pans en ardoise, souvent complétée d’une verrière métallique au-dessus du préau ou du grand escalier.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade institutionnelle en pierre de taille, fenêtres régulièrement alignées, fronton portant parfois le nom de l’établissement.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois sur solivage dans les salles de classe, carrelage dans les circulations et le réfectoire.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs massifs en pierre, ailes organisées autour d’une ou plusieurs cours.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier d’honneur central desservant les étages de salles de classe, escaliers de service pour l’internat.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre, souvent héritées d’un bâtiment conventuel antérieur à la Révolution.' },
+    ],
+    sections: [
+      {
+        title: 'Les lycées napoléoniens',
+        icon: 'ph ph-building',
+        intro: "La loi de 1802 crée les lycées pour former les cadres de l’État, souvent en réutilisant les couvents et collèges religieux confisqués à la Révolution.",
+        groups: [
+          G(null, ['Fondation du modèle en 1802 sous Napoléon Bonaparte', 'Réemploi fréquent d’anciens bâtiments conventuels', 'Uniforme et discipline militaire à l’origine du système']),
+        ],
+      },
+      {
+        title: 'La cour d’honneur',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Cour centrale distribuant salles de classe et administration', 'Préau couvert pour la récréation par mauvais temps', 'Symétrie et monumentalité affirmant le prestige de l’institution']),
+        ],
+      },
+      {
+        title: 'Internat et vie collective',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Dortoirs communs pour les élèves internes', 'Réfectoire desservant l’ensemble des pensionnaires', 'Gymnase et infirmerie complétant l’équipement collectif']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'universite',
+    name: 'Université',
+    region: 'Toutes régions · villes universitaires historiques',
+    periode: '1200–1900',
+    procede: 'Pierre de taille, amphithéâtre',
+    usage: 'Enseignement supérieur, faculté',
+    categorie: 'publique',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Bâtiment d’enseignement supérieur héritier des universités médiévales fondées dès le XIIIe siècle, reconstruit ou agrandi massivement au XIXe siècle sous la IIIe République. Organisé autour d’un grand amphithéâtre, d’une bibliothèque et d’une cour d’honneur, souvent orné de statuaire savante.",
+    identite: [
+      ['Période', 'XIIIe siècle (fondation) – XIXe siècle (reconstruction)'],
+      ['Région', 'Toutes régions, villes universitaires historiques'],
+      ['Usage', 'Enseignement supérieur, faculté'],
+      ['Système', 'Maçonnerie porteuse, grand amphithéâtre'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Cour d’honneur, amphithéâtre, galeries'],
+      ['Particularité', 'Statuaire savante, devise gravée au fronton'],
+    ],
+    materiaux: ['Pierre de taille', 'Marbre (hall d’honneur)', 'Bois (gradins d’amphithéâtre)', 'Fer (verrières)', 'Bronze (statuaire)', 'Vitrail'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture d’ardoise à longs pans, coupole ou verrière zénithale au-dessus du grand amphithéâtre.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade monumentale en pierre de taille, fronton sculpté et devise gravée, statues de savants en niches.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en gradins dans l’amphithéâtre, parquet ou dallage noble dans le hall d’honneur.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs massifs en pierre, grande travée libre pour l’amphithéâtre principal.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier d’honneur monumental menant aux salles de cours et à la bibliothèque.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes en pierre, bâtiment souvent implanté sur un site universitaire historique.' },
+    ],
+    sections: [
+      {
+        title: 'Une institution médiévale',
+        icon: 'ph ph-buildings',
+        intro: "Héritières des universités fondées au Moyen Âge, les facultés françaises sont profondément reconstruites au XIXe siècle pour accueillir un enseignement supérieur en expansion.",
+        groups: [
+          G(null, ['Fondation médiévale (Paris, Montpellier, Toulouse…)', 'Reconstruction massive sous la IIIe République', 'Statut symbolique fort dans le tissu urbain']),
+        ],
+      },
+      {
+        title: 'Le grand amphithéâtre',
+        icon: 'ph ph-steps',
+        groups: [
+          G(null, ['Gradins en éventail face à la chaire du professeur', 'Verrière ou coupole assurant un éclairage zénithal', 'Décor peint ou sculpté célébrant les sciences et les lettres']),
+        ],
+      },
+      {
+        title: 'Une architecture savante',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Statues de savants et de figures tutélaires en façade', 'Devise latine gravée au fronton', 'Hall d’honneur en marbre marquant l’entrée solennelle']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'bibliothequeuniversitaire',
+    name: 'Bibliothèque universitaire',
+    region: 'Toutes régions · campus universitaires',
+    periode: '1850–1980',
+    procede: 'Structure métallique, grandes salles de lecture',
+    usage: 'Conservation et consultation des collections documentaires',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Bâtiment dédié à la conservation et à la consultation des collections documentaires universitaires, structuré autour d’une grande salle de lecture largement éclairée et de magasins de stockage à rayonnages métalliques. Typologie affirmée à partir du XIXe siècle avec le développement de l’enseignement supérieur de masse.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle'],
+      ['Région', 'Toutes régions, campus universitaires'],
+      ['Usage', 'Conservation et consultation des collections documentaires'],
+      ['Système', 'Structure métallique, magasins à rayonnages'],
+      ['Matériau dominant', 'Fer et verre, pierre ou béton en façade'],
+      ['Plan', 'Salle de lecture centrale, magasins périphériques'],
+      ['Particularité', 'Verrière zénithale éclairant la salle de lecture'],
+    ],
+    materiaux: ['Fer (structure)', 'Verre (verrière)', 'Pierre de taille ou béton', 'Bois (mobilier de lecture)', 'Acier (rayonnages)', 'Cuivre (luminaires anciens)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Verrière zénithale métallique diffusant une lumière naturelle homogène sur la grande salle de lecture.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade sobre en pierre ou béton, grandes baies éclairant les salles de lecture périphériques.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers renforcés dans les magasins pour supporter le poids des rayonnages chargés d’ouvrages.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature métallique légère permettant de larges portées sans poteaux dans la salle de lecture.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers et parfois monte-livres reliant la salle de lecture aux magasins de stockage en sous-sol ou en étage.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations renforcées pour supporter la charge exceptionnelle des collections en magasin.' },
+    ],
+    sections: [
+      {
+        title: 'Une salle de lecture lumineuse',
+        icon: 'ph ph-grid-nine',
+        intro: "La grande salle de lecture, cœur de la bibliothèque universitaire, bénéficie d’un éclairage naturel maximal grâce à une verrière zénithale caractéristique.",
+        groups: [
+          G(null, ['Tables alignées sous une verrière métallique', 'Éclairage naturel privilégié pour la lecture prolongée', 'Silence et concentration organisés par le plan en enfilade']),
+        ],
+      },
+      {
+        title: 'Des magasins à rayonnages',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Rayonnages métalliques optimisant le stockage vertical', 'Magasins parfois inaccessibles au public, service par navette', 'Charges au sol très supérieures aux planchers ordinaires']),
+        ],
+      },
+      {
+        title: 'Une structure métallique légère',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Ossature fer ou acier permettant de grandes portées', 'Poteaux fins libérant l’espace de lecture', 'Technique héritée des halles et grands magasins du XIXe siècle']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'citeuniversitaire',
+    name: 'Cité universitaire',
+    region: 'Toutes régions · grandes villes universitaires',
+    periode: '1920–1975',
+    procede: 'Béton armé, pavillons ou barres',
+    usage: 'Logement collectif des étudiants',
+    categorie: 'publique',
+    periodeTags: ['XXe'],
+    resume:
+      "Ensemble de logements collectifs destiné aux étudiants, organisé en pavillons nationaux distincts — modèle inauguré par la Cité internationale universitaire de Paris en 1925 — ou en barres et tours standardisées construites en masse durant les Trente Glorieuses pour répondre à l’explosion des effectifs universitaires.",
+    identite: [
+      ['Période', '1920–1975'],
+      ['Région', 'Toutes régions, grandes villes universitaires'],
+      ['Usage', 'Logement collectif des étudiants'],
+      ['Système', 'Béton armé, pavillons ou barres'],
+      ['Matériau dominant', 'Béton armé'],
+      ['Plan', 'Chambres individuelles distribuées par coursive ou couloir'],
+      ['Particularité', 'Parc paysager reliant les pavillons (modèle parisien)'],
+    ],
+    materiaux: ['Béton armé', 'Brique (parements)', 'Verre (façades)', 'Acier (menuiseries)', 'Bois (mobilier standardisé)', 'Linoléum (sols)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture-terrasse en béton ou toiture à faible pente selon la période de construction.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade rythmée par les fenêtres régulières des chambres individuelles, balcons filants sur les réalisations les plus tardives.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en béton armé, chambres individuelles desservies par un couloir ou une coursive centrale.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton armé, structure répétitive facilitant la construction en série.' },
+      { n: 5, el: 'Escalier', txt: 'Cages d’escalier desservant plusieurs étages de chambres, ascenseur dans les tours les plus hautes.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en béton armé standardisées, adaptées à la construction de masse des Trente Glorieuses.' },
+    ],
+    sections: [
+      {
+        title: 'Le modèle de la Cité internationale',
+        icon: 'ph ph-buildings',
+        intro: "Fondée en 1925, la Cité internationale universitaire de Paris rassemble des pavillons nationaux dans un vaste parc paysager, modèle unique en son genre.",
+        groups: [
+          G(null, ['Pavillons nationaux à l’architecture distincte', 'Parc paysager commun favorisant la vie collective', 'Mixité internationale des résidents étudiants']),
+        ],
+      },
+      {
+        title: 'La massification des Trente Glorieuses',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Explosion des effectifs étudiants après 1945', 'Barres et tours standardisées construites en série', 'Chambres individuelles minimales mais fonctionnelles']),
+        ],
+      },
+      {
+        title: 'La chambre étudiante standardisée',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Lit, bureau et point d’eau dans un espace réduit', 'Sanitaires communs sur le palier dans les résidences anciennes', 'Cuisine collective par étage ou par bâtiment']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'ecolematernelle',
+    name: 'École maternelle',
+    region: 'Toutes régions · quartiers résidentiels',
+    periode: '1960–2000',
+    procede: 'Béton, plain-pied, grandes baies basses',
+    usage: 'Accueil des jeunes enfants avant l’école primaire',
+    categorie: 'publique',
+    periodeTags: ['XXe'],
+    resume:
+      "Établissement de plain-pied conçu à l’échelle du jeune enfant, généralisé après la loi de 1959 rendant l’école maternelle publique gratuite et développé massivement durant les Trente Glorieuses. Salles de classe largement vitrées ouvrant sur une cour de jeux, mobilier et menuiseries dimensionnés pour les tout-petits.",
+    identite: [
+      ['Période', '1960–2000'],
+      ['Région', 'Toutes régions, quartiers résidentiels'],
+      ['Usage', 'Accueil des jeunes enfants avant l’école primaire'],
+      ['Système', 'Ossature béton ou structure légère, plain-pied'],
+      ['Matériau dominant', 'Béton, parpaing enduit'],
+      ['Plan', 'Classes en rez-de-chaussée ouvertes sur la cour'],
+      ['Particularité', 'Menuiseries et mobilier à échelle enfantine'],
+    ],
+    materiaux: ['Béton', 'Parpaing enduit', 'Verre (grandes baies basses)', 'Bois (mobilier)', 'Linoléum (sols de classe)', 'Acier (structure légère)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture-terrasse ou à faible pente en béton, simple et économique, typique de la construction scolaire de masse.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Grandes baies basses dimensionnées à hauteur d’enfant, ouvrant directement sur la cour de récréation.' },
+      { n: 3, el: 'Planchers', txt: 'Sols en linoléum résistant et facile d’entretien, plain-pied favorisant l’autonomie des jeunes enfants.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton ou structure légère à un seul niveau, construction rapide et standardisée.' },
+      { n: 5, el: 'Escalier', txt: 'Absence d’escalier : bâtiment de plain-pied par principe pédagogique et sécuritaire.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations légères en béton, adaptées à un bâtiment bas sans étage.' },
+    ],
+    sections: [
+      {
+        title: 'L’école à hauteur d’enfant',
+        icon: 'ph ph-house-line',
+        intro: "Toute la conception de l’école maternelle est pensée à l’échelle du jeune enfant : poignées basses, fenêtres abaissées, mobilier adapté.",
+        groups: [
+          G(null, ['Menuiseries et poignées à hauteur d’enfant', 'Sanitaires et mobilier dimensionnés pour les tout-petits', 'Salle de repos attenante aux salles de classe']),
+        ],
+      },
+      {
+        title: 'Une construction de masse',
+        icon: 'ph ph-buildings',
+        groups: [
+          G('Loi de 1959', ['Généralisation de l’école maternelle publique gratuite', 'Construction en série durant les Trente Glorieuses', 'Modèles standardisés diffusés par l’Éducation nationale']),
+        ],
+      },
+      {
+        title: 'Classe et cour, un seul espace',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Continuité visuelle et physique entre classe et cour', 'Cour de récréation plantée et sécurisée', 'Circulation de plain-pied facilitant la surveillance']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'grandeecole',
+    name: 'Grande école',
+    region: 'Île-de-France · campus dédiés',
+    periode: '1794–1980',
+    procede: 'Pierre monumentale ou béton, campus dédié',
+    usage: 'Enseignement supérieur sélectif d’ingénieurs ou de cadres',
+    categorie: 'publique',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Établissement d’enseignement supérieur sélectif né du modèle français des grandes écoles institué par la Convention en 1794 (École polytechnique), formant ingénieurs, cadres et hauts fonctionnaires hors du cadre universitaire classique. Campus dédié associant bâtiments d’enseignement monumentaux, internat et espaces sportifs.",
+    identite: [
+      ['Période', '1794 (fondation du modèle) – XXe siècle'],
+      ['Région', 'Île-de-France, campus dédiés'],
+      ['Usage', 'Enseignement supérieur sélectif d’ingénieurs ou de cadres'],
+      ['Système', 'Maçonnerie monumentale ou béton selon la période'],
+      ['Matériau dominant', 'Pierre de taille ou béton'],
+      ['Plan', 'Campus organisé autour d’une esplanade ou cour d’honneur'],
+      ['Particularité', 'Sélection par concours, tradition et corps d’uniforme'],
+    ],
+    materiaux: ['Pierre de taille', 'Béton armé (campus modernes)', 'Verre (amphithéâtres)', 'Acier (structures sportives)', 'Bois (boiseries d’apparat)', 'Bronze (statuaire commémorative)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture d’ardoise sur les bâtiments historiques, toiture-terrasse en béton sur les campus modernes délocalisés.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade monumentale à la symétrie affirmée, esplanade ou cour d’honneur dégagée pour les cérémonies.' },
+      { n: 3, el: 'Planchers', txt: 'Amphithéâtres en gradins, laboratoires et ateliers techniques au rez-de-chaussée pour les charges lourdes.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure massive en pierre pour les bâtiments historiques, ossature béton armé pour les campus du XXe siècle.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers d’apparat dans les bâtiments historiques, circulations horizontales privilégiées sur les campus modernes.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes et massives, proportionnées à l’ambition monumentale de l’institution.' },
+    ],
+    sections: [
+      {
+        title: 'Le modèle français des grandes écoles',
+        icon: 'ph ph-building',
+        intro: "Instituée par la Convention en 1794 avec la création de l’École polytechnique, la tradition des grandes écoles forme une élite technique et administrative hors du cadre universitaire classique.",
+        groups: [
+          G(null, ['Fondation du modèle en 1794 (École polytechnique)', 'Recrutement par concours national très sélectif', 'Formation d’ingénieurs, de cadres et de hauts fonctionnaires']),
+        ],
+      },
+      {
+        title: 'Un campus à part',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Esplanade ou cour d’honneur structurant le campus', 'Internat et vie collective encadrée', 'Tradition d’uniforme et de rites propres à certaines écoles']),
+        ],
+      },
+      {
+        title: 'Sélection et prestige',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Architecture pensée pour affirmer le prestige de l’institution', 'Statuaire commémorative des anciens élèves illustres', 'Réseau d’anciens perpétuant la tradition de l’école']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
