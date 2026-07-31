@@ -87,6 +87,18 @@ const MICRO_PINS = [
   { id: 'moulineau',        cx: 470, cy: 400, label: 'Moulin à eau' },
   { id: 'sechoirtabac',     cx: 380, cy: 660, label: 'Séchoir à tabac' },
   { id: 'hangaragricole',   cx: 550, cy: 500, label: 'Hangar agricole' },
+  { id: 'filature',         cx: 590, cy: 90,  label: 'Filature' },
+  { id: 'forge',            cx: 660, cy: 300, label: 'Forge' },
+  { id: 'hautfourneau',     cx: 680, cy: 130, label: 'Haut-fourneau' },
+  { id: 'usinetextile',     cx: 570, cy: 70,  label: 'Usine textile' },
+  { id: 'sucrerie',         cx: 540, cy: 110, label: 'Sucrerie' },
+  { id: 'distillerie',      cx: 310, cy: 610, label: 'Distillerie' },
+  { id: 'manufacture',      cx: 500, cy: 260, label: 'Manufacture' },
+  { id: 'mine',             cx: 610, cy: 60,  label: 'Mine' },
+  { id: 'chevalement',      cx: 625, cy: 65,  label: 'Chevalement' },
+  { id: 'centraleelectrique', cx: 800, cy: 500, label: 'Centrale électrique' },
+  { id: 'silo',             cx: 260, cy: 350, label: 'Silo' },
+  { id: 'entrepot',         cx: 240, cy: 280, label: 'Entrepôt' },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */

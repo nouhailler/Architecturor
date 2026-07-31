@@ -4509,6 +4509,666 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'filature',
+    name: 'Filature',
+    region: 'Nord & Normandie · bassins textiles',
+    periode: '1800–1900',
+    procede: 'Brique & fonte',
+    usage: 'Filature de coton ou de laine',
+    categorie: 'industrielle',
+    periodeTags: ['XIXe'],
+    resume:
+      "Usine de filature textile organisée sur plusieurs niveaux au-dessus d’une halle à piliers de fonte, où de vastes rangées de fenêtres éclairaient les métiers à filer. La machine à vapeur, puis l’électricité, y remplace progressivement la roue hydraulique au fil du XIXe siècle industriel.",
+    identite: [
+      ['Période', 'XIXe siècle'],
+      ['Région', 'Nord et Normandie, bassins textiles'],
+      ['Usage', 'Filature de coton ou de laine'],
+      ['Système', 'Halle à piliers de fonte'],
+      ['Matériau dominant', 'Brique et fonte'],
+      ['Plan', 'Bâtiment étagé à trame régulière'],
+      ['Particularité', 'Grandes fenêtres, cheminée de la salle des machines'],
+    ],
+    materiaux: ['Brique', 'Fonte (piliers)', 'Bois (planchers)', 'Verre (grandes baies)', 'Fer (charpente)', 'Acier (machines)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique ou bois, cheminée d’usine élancée en brique.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Brique appareillée, rangées régulières de grandes fenêtres pour l’éclairage naturel.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers portés par des piliers de fonte, trame structurelle très régulière.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Poteaux de fonte et poutres métalliques libérant de larges plateaux de production.' },
+      { n: 5, el: 'Escalier', txt: 'Cages d’escalier et monte-charges reliant les niveaux de production.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations massives supportant les vibrations des machines de filature.' },
+    ],
+    sections: [
+      {
+        title: 'La halle à piliers de fonte',
+        icon: 'ph ph-columns',
+        intro: "Les piliers de fonte, plus fins que des colonnes de pierre, libèrent un maximum de surface au sol pour aligner les métiers à filer.",
+        groups: [
+          G(null, ['Poteaux de fonte à section réduite', 'Trame régulière optimisant l’implantation des machines', 'Planchers bois portés par les poutres métalliques']),
+        ],
+      },
+      {
+        title: 'La lumière au service de la production',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Grandes fenêtres rythmant toute la façade', 'Éclairage naturel indispensable au travail du fil', 'Complément par éclairage au gaz puis électrique']),
+        ],
+      },
+      {
+        title: 'De l’eau à la vapeur',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Implantation initiale près d’un cours d’eau', 'Machine à vapeur puis moteur électrique', 'Cheminée d’usine signalant la salle des machines']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'forge',
+    name: 'Forge',
+    region: 'Massifs forestiers · France',
+    periode: '1600–1900',
+    procede: 'Pierre & bois',
+    usage: 'Production de fer au marteau hydraulique',
+    categorie: 'industrielle',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Établissement métallurgique isolé en forêt, où une roue hydraulique actionne à la fois le soufflet du fourneau et le lourd marteau qui corrobore le fer. La proximité du bois pour le charbon de bois et d’un cours d’eau pour la force motrice conditionne entièrement l’implantation de la forge.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Massifs forestiers, France'],
+      ['Usage', 'Production de fer au marteau hydraulique'],
+      ['Système', 'Roue hydraulique + marteau et soufflet'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Toiture', 'Charpente bois, couverture tuile ou ardoise'],
+      ['Particularité', 'Martinet actionné par la force de l’eau'],
+    ],
+    materiaux: ['Pierre', 'Bois (charpente, roue)', 'Fer (production, ferrures)', 'Charbon de bois', 'Chaux', 'Tuile ou ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois robuste, ouvertures pour l’évacuation de la fumée et de la chaleur.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs de pierre épais, grande ouverture pour le passage des pièces de fer.' },
+      { n: 3, el: 'Planchers', txt: 'Sol maçonné résistant aux vibrations du martinet et à la chaleur du foyer.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Charpente massive supportant l’axe du marteau et le bâti du soufflet.' },
+      { n: 5, el: 'Escalier', txt: 'Passerelle desservant la roue hydraulique et le bief attenant.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre ancrées au bief, canal de fuite évacuant l’eau motrice.' },
+    ],
+    sections: [
+      {
+        title: 'La force de l’eau',
+        icon: 'ph ph-waves',
+        intro: "Une même roue hydraulique actionne à la fois le soufflet qui attise le feu et le marteau qui façonne le métal.",
+        groups: [
+          G(null, ['Roue hydraulique alimentée par un bief dérivé', 'Transmission mécanique vers le soufflet et le marteau', 'Vanne réglant le débit selon les besoins de production']),
+        ],
+      },
+      {
+        title: 'Le martinet',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Lourd marteau de fer actionné par came', 'Corroyage du fer en barres ou en pièces', 'Bruit caractéristique rythmant la vie du hameau industriel']),
+        ],
+      },
+      {
+        title: 'Une implantation forestière',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Proximité du bois pour la production de charbon de bois', 'Cours d’eau indispensable à la force motrice', 'Déclin au XIXe siècle face au charbon minéral et à la fonte au coke']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'hautfourneau',
+    name: 'Haut-fourneau',
+    region: 'Lorraine · bassin sidérurgique',
+    periode: '1850–1950',
+    procede: 'Brique réfractaire & fonte',
+    usage: 'Production de fonte',
+    categorie: 'industrielle',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Tour métallurgique monumentale où le minerai de fer, le coke et le calcaire fondent en continu pour produire de la fonte liquide, dans un cycle alimenté par le sommet (gueulard) et vidé à la base. Symbole de la sidérurgie lorraine, le haut-fourneau domine ses usines de plusieurs dizaines de mètres.",
+    identite: [
+      ['Période', '1850–1950'],
+      ['Région', 'Lorraine, bassin sidérurgique'],
+      ['Usage', 'Production de fonte'],
+      ['Système', 'Cuve verticale à chargement continu'],
+      ['Matériau dominant', 'Brique réfractaire et fonte'],
+      ['Hauteur', '30 à 60 mètres'],
+      ['Particularité', 'Chargement au gueulard, coulée à la base'],
+    ],
+    materiaux: ['Brique réfractaire', 'Fonte (blindage)', 'Acier (structure)', 'Coke', 'Minerai de fer', 'Calcaire (fondant)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Gueulard sommital pour le chargement continu du minerai, du coke et du calcaire.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Cuve en brique réfractaire cerclée d’un blindage de tôle ou de fonte.' },
+      { n: 3, el: 'Planchers', txt: 'Plateformes métalliques desservant les différents niveaux de la cuve.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature métallique autour de la cuve réfractaire, tuyères d’air chaud à la base.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers et ascenseur à charbon desservant le sommet pour le chargement.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations massives en béton armé supportant plusieurs milliers de tonnes.' },
+    ],
+    sections: [
+      {
+        title: 'Un cycle continu',
+        icon: 'ph ph-crane-tower',
+        intro: "Le haut-fourneau fonctionne sans interruption, parfois pendant des années, du chargement au sommet à la coulée de fonte à la base.",
+        groups: [
+          G(null, ['Chargement par le gueulard au sommet', 'Descente progressive de la charge dans la cuve', 'Coulée de fonte liquide au creuset, en bas de la cuve']),
+        ],
+      },
+      {
+        title: 'La chimie du fer',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Coke comme combustible et réducteur du minerai', 'Calcaire captant les impuretés (laitier)', 'Air chaud soufflé par les tuyères activant la combustion']),
+        ],
+      },
+      {
+        title: 'Un paysage industriel',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Batteries de plusieurs hauts-fourneaux dans les grandes usines', 'Silhouette dominant tout le bassin sidérurgique', 'Vestiges patrimoniaux après la désindustrialisation']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'usinetextile',
+    name: 'Usine textile',
+    region: 'Nord · Hauts-de-France',
+    periode: '1850–1950',
+    procede: 'Brique & sheds métalliques',
+    usage: 'Tissage industriel',
+    categorie: 'industrielle',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Grande usine de tissage organisée en halles basses couvertes de sheds, ces toitures en dents de scie dont les pans vitrés orientés au nord diffusent une lumière constante sans éblouissement. Souvent flanquée d’une cité ouvrière, l’usine textile structure des quartiers entiers du Nord industriel.",
+    identite: [
+      ['Période', '1850–1950'],
+      ['Région', 'Nord, Hauts-de-France'],
+      ['Usage', 'Tissage industriel'],
+      ['Système', 'Halles à sheds métalliques'],
+      ['Matériau dominant', 'Brique et structure métallique'],
+      ['Toiture', 'Sheds vitrés orientés au nord'],
+      ['Particularité', 'Cité ouvrière associée à l’usine'],
+    ],
+    materiaux: ['Brique', 'Acier (charpente des sheds)', 'Verre (vitrage nord)', 'Fonte (poteaux)', 'Bois (planchers)', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Sheds en dents de scie, pans vitrés orientés au nord pour une lumière stable.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Brique industrielle, façade principale plus soignée côté rue.' },
+      { n: 3, el: 'Planchers', txt: 'Rez-de-chaussée dégagé pour les métiers à tisser, planchers d’étage pour d’autres ateliers.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Poteaux métalliques ou de fonte supportant la charpente des sheds.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers desservant bureaux et ateliers annexes en périphérie de la halle.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre ou béton, adaptées au poids des métiers à tisser.' },
+    ],
+    sections: [
+      {
+        title: 'Le toit en sheds',
+        icon: 'ph ph-house-line',
+        intro: "L’orientation nord des vitrages évite l’ensoleillement direct, source d’ombres et de reflets gênants pour le travail du tissage.",
+        groups: [
+          G(null, ['Pans vitrés orientés systématiquement au nord', 'Lumière diffuse et constante toute la journée', 'Multiplication des sheds pour couvrir de vastes halles']),
+        ],
+      },
+      {
+        title: 'La cité ouvrière',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Logements patronaux à proximité immédiate de l’usine', 'École, économat et équipements sociaux associés', 'Paternalisme industriel encadrant la vie ouvrière']),
+        ],
+      },
+      {
+        title: 'Un patrimoine en reconversion',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Nombreuses friches après le déclin textile du XXe siècle', 'Reconversions en logements, bureaux ou équipements culturels', 'Sheds emblématiques souvent conservés lors des réhabilitations']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'sucrerie',
+    name: 'Sucrerie',
+    region: 'Picardie & Nord · France',
+    periode: '1830–1950',
+    procede: 'Brique & métal',
+    usage: 'Raffinage du sucre de betterave',
+    categorie: 'industrielle',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Complexe industriel saisonnier transformant la betterave sucrière en sucre, actif seulement quelques mois durant la « campagne » d’automne. Tours de diffusion, batteries d’évaporateurs et haute cheminée composent un ensemble technique complexe, embranché au chemin de fer pour l’acheminement massif des betteraves.",
+    identite: [
+      ['Période', '1830–1950'],
+      ['Région', 'Picardie et Nord, France'],
+      ['Usage', 'Raffinage du sucre de betterave'],
+      ['Système', 'Diffusion, évaporation, cristallisation'],
+      ['Matériau dominant', 'Brique et structure métallique'],
+      ['Toiture', 'Charpente métallique, cheminée élancée'],
+      ['Particularité', 'Activité saisonnière (campagne betteravière)'],
+    ],
+    materiaux: ['Brique', 'Acier (cuves, structure)', 'Fonte', 'Cuivre (chaudières)', 'Verre', 'Bois (bureaux, planchers)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique de grande portée, haute cheminée de brique signalant la sucrerie.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Brique industrielle, larges ouvertures pour la ventilation des ateliers.' },
+      { n: 3, el: 'Planchers', txt: 'Passerelles métalliques desservant les cuves de diffusion et d’évaporation.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature métallique supportant les grandes cuves et tours de process.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers métalliques et passerelles reliant les différents ateliers de production.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en béton armé, embranchement ferroviaire pour l’arrivage des betteraves.' },
+    ],
+    sections: [
+      {
+        title: 'La campagne betteravière',
+        icon: 'ph ph-grid-nine',
+        intro: "L’essentiel de l’activité se concentre sur quelques semaines d’automne, à la récolte de la betterave, mobilisant une main-d’œuvre saisonnière importante.",
+        groups: [
+          G(null, ['Réception massive des betteraves par voie ferrée', 'Production intensive pendant la campagne d’automne', 'Arrêt et maintenance le reste de l’année']),
+        ],
+      },
+      {
+        title: 'Le procédé de raffinage',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Diffusion extrayant le sucre des cossettes de betterave', 'Évaporateurs concentrant le jus sucré', 'Cristallisation et centrifugation du sucre final']),
+        ],
+      },
+      {
+        title: 'Un paysage industriel rural',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Haute cheminée visible dans la plaine agricole', 'Silos et hangars de stockage attenants', 'Lien étroit avec les exploitations betteravières environnantes']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'distillerie',
+    name: 'Distillerie',
+    region: 'Charentes & DOM · France',
+    periode: '1700–1950',
+    procede: 'Cuivre & pierre',
+    usage: 'Distillation (cognac, rhum, armagnac)',
+    categorie: 'industrielle',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Établissement de distillation organisé autour des alambics de cuivre et des chais de vieillissement où les eaux-de-vie murissent en fût pendant des années. Le champignon noir qui noircit les murs extérieurs des chais, nourri par la vapeur d’alcool évaporée (la « part des anges »), signale de loin la présence d’une distillerie.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Charentes et DOM, France'],
+      ['Usage', 'Distillation (cognac, rhum, armagnac)'],
+      ['Système', 'Alambics de cuivre, double distillation'],
+      ['Matériau dominant', 'Cuivre et pierre'],
+      ['Plan', 'Salle de distillation + chais de vieillissement'],
+      ['Particularité', 'Champignon noir (Torula) sur les murs des chais'],
+    ],
+    materiaux: ['Cuivre (alambics)', 'Pierre', 'Chêne (fûts)', 'Chaux', 'Fer', 'Tuile ou ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile, évacuation de la vapeur des alambics.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs de pierre, noircis par le champignon Torula nourri des vapeurs d’alcool.' },
+      { n: 3, el: 'Planchers', txt: 'Sol de la salle de chauffe résistant à la chaleur des alambics.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Charpente robuste dans les chais pour soutenir plusieurs niveaux de fûts.' },
+      { n: 5, el: 'Escalier', txt: 'Passerelles et escaliers desservant les niveaux de gerbage des fûts.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre, sol drainé sous les alambics et les chais.' },
+    ],
+    sections: [
+      {
+        title: 'Les alambics de cuivre',
+        icon: 'ph ph-hammer',
+        intro: "Le cuivre, excellent conducteur de chaleur et catalyseur chimique, reste le matériau de référence pour les alambics de distillation.",
+        groups: [
+          G(null, ['Alambic charentais à double distillation (chauffe et repasse)', 'Chauffe directe au feu nu traditionnellement', 'Forme en col de cygne favorisant la finesse aromatique']),
+        ],
+      },
+      {
+        title: 'Les chais de vieillissement',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Fûts de chêne empilés sur plusieurs niveaux', 'Obscurité et hygrométrie contrôlées', 'Vieillissement s’étalant parfois sur plusieurs décennies']),
+        ],
+      },
+      {
+        title: 'La part des anges',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Évaporation naturelle de l’alcool à travers le bois des fûts', 'Champignon noir (Torula) colonisant les murs extérieurs', 'Signature visuelle caractéristique des chais anciens']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'manufacture',
+    name: 'Manufacture',
+    region: 'France · manufactures royales',
+    periode: '1660–1790',
+    procede: 'Pierre',
+    usage: 'Production centralisée sous privilège royal',
+    categorie: 'industrielle',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Grand atelier centralisé regroupant sous un même toit des artisans spécialisés produisant des biens de luxe sous privilège et souvent monopole royal. Précurseur de l’usine par sa concentration de main-d’œuvre, la manufacture reste antérieure à la mécanisation, fondée sur la division du travail artisanal.",
+    identite: [
+      ['Période', '1660–1790'],
+      ['Région', 'France, manufactures royales'],
+      ['Usage', 'Production centralisée sous privilège royal'],
+      ['Système', 'Ateliers regroupés autour d’une cour'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Grands corps de bâtiments organisés en cour'],
+      ['Particularité', 'Monopole ou privilège royal (colbertisme)'],
+    ],
+    materiaux: ['Pierre de taille', 'Chaux', 'Bois (métiers, charpente)', 'Ardoise ou tuile', 'Verre', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois classique, couverture ardoise, silhouette monumentale.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre de taille, façade ordonnancée à l’instar des grands édifices classiques.' },
+      { n: 3, el: 'Planchers', txt: 'Grands ateliers desservis par des planchers bois, éclairage naturel abondant.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre, corps de bâtiments organisés autour d’une cour.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers monumentaux desservant les ateliers de direction et d’administration.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre, caves pour le stockage des matières premières.' },
+    ],
+    sections: [
+      {
+        title: 'Le colbertisme',
+        icon: 'ph ph-shield-check',
+        intro: "Sous Colbert, l’État favorise la création de manufactures royales pour affranchir la France des importations de produits de luxe.",
+        groups: [
+          G(null, ['Privilège ou monopole accordé par la Couronne', 'Production de biens de luxe (tapisserie, porcelaine, glaces)', 'Politique mercantiliste de substitution aux importations']),
+        ],
+      },
+      {
+        title: 'Concentrer les artisans',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Regroupement de corps de métiers spécialisés', 'Division du travail sans mécanisation encore', 'Logements parfois intégrés pour les meilleurs artisans']),
+        ],
+      },
+      {
+        title: 'Une préfiguration de l’usine',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Concentration de main-d’œuvre inédite pour l’époque', 'Organisation hiérarchique de la production', 'Certaines manufactures perdurent encore aujourd’hui (Sèvres, Gobelins)']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'mine',
+    name: 'Mine',
+    region: 'Bassins miniers · France',
+    periode: '1830–1990',
+    procede: 'Brique & métal',
+    usage: 'Extraction du charbon (carreau de fosse)',
+    categorie: 'industrielle',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Carreau de fosse regroupant en surface l’ensemble des installations liées à l’extraction : lampisterie, bains-douches, criblage-lavage du charbon et voies ferrées d’évacuation. Le terril, colline artificielle de déblais, et le chevalement dominant le puits composent la silhouette caractéristique des bassins miniers.",
+    identite: [
+      ['Période', '1830–1990'],
+      ['Région', 'Bassins miniers, France'],
+      ['Usage', 'Extraction du charbon (carreau de fosse)'],
+      ['Système', 'Ensemble de bâtiments autour du puits'],
+      ['Matériau dominant', 'Brique et structure métallique'],
+      ['Plan', 'Carreau organisé autour du chevalement'],
+      ['Particularité', 'Terril, lampisterie, bains-douches'],
+    ],
+    materiaux: ['Brique', 'Acier (structures, rails)', 'Béton', 'Bois (étais de galerie)', 'Charbon', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpentes métalliques des grands bâtiments de criblage et de triage.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Brique industrielle, façades fonctionnelles des bâtiments de service.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers métalliques des installations de triage et de lavage du charbon.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structures métalliques et bâtiments en brique organisés autour du puits.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers et passerelles reliant les différents bâtiments du carreau.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations massives en béton armé autour de la tête de puits.' },
+    ],
+    sections: [
+      {
+        title: 'Le carreau de fosse',
+        icon: 'ph ph-grid-nine',
+        intro: "Autour du puits d’extraction s’organise tout un ensemble de bâtiments dédiés à la vie et au travail des mineurs.",
+        groups: [
+          G(null, ['Lampisterie pour la distribution des lampes de sécurité', 'Bains-douches (salles Dumont) pour les mineurs remontés', 'Criblage-lavage triant et nettoyant le charbon extrait']),
+        ],
+      },
+      {
+        title: 'Le terril',
+        icon: 'ph ph-mountains',
+        groups: [
+          G(null, ['Colline artificielle formée des déblais stériles', 'Silhouette reconnaissable des paysages miniers', 'Certains terrils reconvertis en espaces naturels ou de loisirs']),
+        ],
+      },
+      {
+        title: 'Un patrimoine classé',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Bassin minier du Nord-Pas-de-Calais inscrit à l’UNESCO', 'Reconversion de nombreux sites en lieux de mémoire', 'Cités minières associées, souvent préservées']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'chevalement',
+    name: 'Chevalement',
+    region: 'Bassins miniers · France',
+    periode: '1850–1990',
+    procede: 'Acier',
+    usage: 'Structure de puits de mine',
+    categorie: 'industrielle',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Tour métallique en treillis dominant le puits de mine, portant à son sommet les molettes autour desquelles s’enroulent les câbles remontant la cage d’extraction. Silhouette la plus emblématique du patrimoine minier, le chevalement rythme l’horizon des bassins houillers de son architecture toute en légèreté structurelle.",
+    identite: [
+      ['Période', '1850–1990'],
+      ['Région', 'Bassins miniers, France'],
+      ['Usage', 'Structure de puits de mine'],
+      ['Système', 'Tour en treillis métallique'],
+      ['Matériau dominant', 'Acier'],
+      ['Hauteur', '20 à 60 mètres'],
+      ['Particularité', 'Molettes sommitales pour les câbles d’extraction'],
+    ],
+    materiaux: ['Acier (treillis, poutres)', 'Fonte (premières structures)', 'Béton (fondations, socle)', 'Câbles d’acier', 'Fer', 'Peinture anticorrosion'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Sommet ouvert portant les molettes, sans couverture proprement dite.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Structure en treillis d’acier ajourée, sans remplissage de façade.' },
+      { n: 3, el: 'Planchers', txt: 'Plateformes métalliques intermédiaires pour la maintenance des câbles.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Treillis métallique triangulé reportant les efforts de traction des câbles.' },
+      { n: 5, el: 'Escalier', txt: 'Échelles et escaliers métalliques desservant les plateformes de service.' },
+      { n: 6, el: 'Fondations', txt: 'Massif de béton armé ancrant la tour au-dessus de la tête de puits.' },
+    ],
+    sections: [
+      {
+        title: 'Les molettes',
+        icon: 'ph ph-crane-tower',
+        intro: "Au sommet du chevalement, les molettes guident les câbles reliant les machines d’extraction en surface à la cage descendue dans le puits.",
+        groups: [
+          G(null, ['Roues à gorge guidant les câbles d’extraction', 'Cage remontant mineurs et charbon depuis le fond', 'Machine d’extraction au sol actionnant l’ensemble']),
+        ],
+      },
+      {
+        title: 'Une architecture de légèreté',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Treillis triangulé minimisant la quantité de métal', 'Structure ajourée résistant au vent', 'Évolution du bois puis de la fonte vers l’acier riveté puis soudé']),
+        ],
+      },
+      {
+        title: 'Un symbole patrimonial',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Silhouette la plus identifiable du patrimoine minier', 'Nombreux chevalements préservés après la fermeture des mines', 'Éclairage nocturne mettant en valeur certains exemplaires classés']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'centraleelectrique',
+    name: 'Centrale électrique',
+    region: 'France',
+    periode: '1900–1980',
+    procede: 'Béton & métal',
+    usage: 'Production d’électricité',
+    categorie: 'industrielle',
+    periodeTags: ['XXe'],
+    resume:
+      "Grand équipement industriel produisant l’électricité, qu’il s’agisse d’une centrale thermique à la salle des turbines vitrée et à la haute cheminée, ou d’une centrale hydroélectrique intégrée à un barrage. Certaines centrales de la première moitié du XXe siècle adoptent une architecture monumentale, revendiquant leur rôle de « cathédrales » de l’énergie moderne.",
+    identite: [
+      ['Période', '1900–1980'],
+      ['Région', 'France'],
+      ['Usage', 'Production d’électricité'],
+      ['Système', 'Turbines et alternateurs'],
+      ['Matériau dominant', 'Béton et structure métallique'],
+      ['Plan', 'Salle des machines de grande portée'],
+      ['Particularité', 'Cheminées ou barrage selon le type de centrale'],
+    ],
+    materiaux: ['Béton armé', 'Acier (structure, turbines)', 'Verre (grandes verrières)', 'Brique (parements)', 'Cuivre (bobinages)', 'Fonte'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique de grande portée au-dessus de la salle des turbines.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Béton et brique, grandes verrières éclairant la salle des machines.' },
+      { n: 3, el: 'Planchers', txt: 'Dalles béton armé supportant le poids considérable des groupes turbo-alternateurs.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton armé ou métallique dimensionnée pour les vibrations des machines.' },
+      { n: 5, el: 'Escalier', txt: 'Passerelles et escaliers métalliques desservant les niveaux techniques.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations massives en béton armé, souvent intégrées à un barrage pour l’hydroélectrique.' },
+    ],
+    sections: [
+      {
+        title: 'La salle des machines',
+        icon: 'ph ph-building',
+        intro: "Cœur monumental de la centrale, la salle des machines abrite les groupes turbo-alternateurs convertissant l’énergie mécanique en électricité.",
+        groups: [
+          G(null, ['Turbines à vapeur, à gaz ou hydrauliques selon le type', 'Alternateurs convertissant le mouvement en courant électrique', 'Pont roulant pour la maintenance des équipements lourds']),
+        ],
+      },
+      {
+        title: 'Thermique ou hydraulique',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Centrale thermique alimentée en charbon, fioul ou gaz', 'Centrale hydroélectrique intégrée à un barrage', 'Cheminées d’évacuation des fumées pour le thermique']),
+        ],
+      },
+      {
+        title: 'Une architecture de prestige',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Certaines centrales conçues comme de véritables monuments', 'Verrières et façades soignées affichant la modernité technique', 'Reconversions patrimoniales de plusieurs centrales historiques']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'silo',
+    name: 'Silo',
+    region: 'Ports & plaines céréalières · France',
+    periode: '1900–1980',
+    procede: 'Béton',
+    usage: 'Stockage du grain',
+    categorie: 'industrielle',
+    periodeTags: ['XXe'],
+    resume:
+      "Tour ou batterie de tours cylindriques en béton armé destinées au stockage massif du grain, aux ports d’exportation comme au cœur des plaines céréalières. Leur pure géométrie fonctionnelle, sans aucun ornement, a fasciné les architectes modernistes du début du XXe siècle, qui y voyaient l’expression la plus honnête de l’architecture industrielle.",
+    identite: [
+      ['Période', '1900–1980'],
+      ['Région', 'Ports et plaines céréalières, France'],
+      ['Usage', 'Stockage du grain'],
+      ['Système', 'Cellules cylindriques en béton armé'],
+      ['Matériau dominant', 'Béton armé'],
+      ['Plan', 'Batterie de cellules cylindriques juxtaposées'],
+      ['Particularité', 'Géométrie pure, référence du mouvement moderne'],
+    ],
+    materiaux: ['Béton armé', 'Acier (armatures, convoyeurs)', 'Céréales (contenu)', 'Verre (bureaux annexes)', 'Peinture', 'Bois (coffrage perdu, historique)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture technique plate abritant les convoyeurs de remplissage des cellules.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Parois de béton armé lisses, cellules cylindriques juxtaposées.' },
+      { n: 3, el: 'Planchers', txt: 'Fond conique ou plat de chaque cellule facilitant la vidange du grain.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Voiles de béton armé coulés en continu, résistant à la poussée du grain.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers et ascenseurs techniques desservant le sommet des cellules.' },
+      { n: 6, el: 'Fondations', txt: 'Radier général en béton armé supportant plusieurs milliers de tonnes de grain.' },
+    ],
+    sections: [
+      {
+        title: 'Une géométrie fonctionnelle',
+        icon: 'ph ph-building',
+        intro: "La forme cylindrique répartit uniformément la pression du grain sur les parois, sans angle mort ni accumulation.",
+        groups: [
+          G(null, ['Cellules cylindriques optimisant la résistance structurelle', 'Fond conique facilitant l’évacuation par gravité', 'Batteries de cellules juxtaposées pour massifier le stockage']),
+        ],
+      },
+      {
+        title: 'Une icône du mouvement moderne',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Silos admirés par les architectes modernistes des années 1920', 'Référence explicite chez Le Corbusier et le Bauhaus', 'Absence totale d’ornement, pure expression fonctionnelle']),
+        ],
+      },
+      {
+        title: 'Logistique céréalière',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Silos portuaires pour l’exportation par voie maritime', 'Silos de collecte au cœur des plaines céréalières', 'Convoyeurs mécanisés pour le remplissage et la vidange']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'entrepot',
+    name: 'Entrepôt',
+    region: 'Ports & villes industrielles · France',
+    periode: '1850–1950',
+    procede: 'Brique ou béton',
+    usage: 'Stockage de marchandises',
+    categorie: 'industrielle',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Grand bâtiment de stockage à structure répétitive, en brique puis en béton armé, offrant de vastes plateaux libres desservis par des quais de chargement et des monte-charges. Implanté près des ports, gares ou canaux, l’entrepôt organise la logistique urbaine avant l’ère du conteneur.",
+    identite: [
+      ['Période', '1850–1950'],
+      ['Région', 'Ports et villes industrielles, France'],
+      ['Usage', 'Stockage de marchandises'],
+      ['Système', 'Structure répétitive à trame régulière'],
+      ['Matériau dominant', 'Brique ou béton armé'],
+      ['Plan', 'Plateaux libres desservis par quais et monte-charges'],
+      ['Particularité', 'Implantation près des ports, gares ou canaux'],
+    ],
+    materiaux: ['Brique', 'Béton armé', 'Acier (structure, monte-charges)', 'Bois (planchers anciens)', 'Verre (éclairage zénithal)', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture-terrasse ou charpente métallique, parfois éclairage zénithal.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Brique ou béton, façades répétitives percées de baies régulières.' },
+      { n: 3, el: 'Planchers', txt: 'Grands plateaux libres desservis par des monte-charges industriels.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Trame régulière de poteaux en béton armé ou en fonte selon l’époque.' },
+      { n: 5, el: 'Escalier', txt: 'Cages d’escalier et monte-charges desservant les niveaux de stockage.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations renforcées supportant le poids des marchandises stockées.' },
+    ],
+    sections: [
+      {
+        title: 'Une structure répétitive',
+        icon: 'ph ph-grid-nine',
+        intro: "L’entrepôt répète un même module structurel sur toute sa longueur, permettant une extension aisée selon les besoins logistiques.",
+        groups: [
+          G(null, ['Trame de poteaux régulière sur tous les niveaux', 'Plateaux libres modulables selon les marchandises', 'Façades répétitives, sobres et fonctionnelles']),
+        ],
+      },
+      {
+        title: 'Quais & logistique',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Quais de chargement adaptés aux péniches, trains ou camions', 'Monte-charges desservant les étages de stockage', 'Implantation stratégique près des voies de transport']),
+        ],
+      },
+      {
+        title: 'Une seconde vie',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Nombreux entrepôts reconvertis en lofts ou bureaux', 'Volumes généreux appréciés pour la réhabilitation', 'Éléments industriels (poutres, verrières) souvent conservés']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
