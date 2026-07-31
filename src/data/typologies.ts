@@ -8089,6 +8089,281 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'villabelleepoque',
+    name: 'Villa Belle Époque',
+    region: 'Côtes normande, basque, méditerranéenne',
+    periode: '1850–1914',
+    procede: 'Brique et pierre, tourelles et bow-windows',
+    usage: 'Résidence secondaire balnéaire bourgeoise',
+    categorie: 'littorale',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Résidence secondaire cossue édifiée par la bourgeoisie et l’aristocratie sur le front de mer des stations balnéaires naissantes, mêlant éclectisme régionaliste — chalet normand, cottage anglais, style basque — et fantaisie décorative. Tourelles, bow-windows, vérandas et jardins clos affirment le statut social du propriétaire.",
+    identite: [
+      ['Période', '1850–1914, essor des bains de mer'],
+      ['Région', 'Côtes normande, basque, méditerranéenne'],
+      ['Usage', 'Résidence secondaire balnéaire bourgeoise'],
+      ['Système', 'Murs porteurs en brique et pierre, charpente complexe'],
+      ['Matériau dominant', 'Brique, pierre, bois (colombages décoratifs)'],
+      ['Plan', 'Plan irrégulier, tourelles et avant-corps multiples'],
+      ['Particularité', 'Éclectisme régionaliste (normand, basque, anglo-normand)'],
+    ],
+    materiaux: ['Brique', 'Pierre de taille', 'Bois (colombages décoratifs)', 'Ardoise (toitures complexes)', 'Fer forgé (balcons, clôtures)', 'Verre (vérandas et bow-windows)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture complexe à multiples pans, tourelles coiffées d’ardoise en poivrière, lucarnes ouvragées.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade éclectique mêlant brique, pierre et faux colombages décoratifs, bow-windows en saillie sur la mer.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois nobles, parquets à motifs dans les pièces de réception côté mer.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en brique et pierre, charpente complexe soutenant tourelles et pignons multiples.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois tourné, parfois à double volée pour la réception mondaine.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations adaptées au sol sableux du front de mer, parfois sur soubassement surélevé.' },
+    ],
+    sections: [
+      {
+        title: 'Les bains de mer à la mode',
+        icon: 'ph ph-waves',
+        intro: "La mode des bains de mer, lancée par l’aristocratie au milieu du XIXe siècle, transforme d’anciens villages de pêcheurs en stations balnéaires prisées de la bourgeoisie.",
+        groups: [
+          G(null, ['Résidence secondaire de la haute bourgeoisie et de l’aristocratie', 'Villégiature estivale, saison courte et intense', 'Front de mer loti en villas individuelles distinctives']),
+        ],
+      },
+      {
+        title: 'Un éclectisme régionaliste',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Références au chalet normand, au cottage anglais ou au style basque', 'Fantaisie décorative affichant le statut du propriétaire', 'Chaque villa dotée d’un nom propre gravé en façade']),
+        ],
+      },
+      {
+        title: 'Face à la mer',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Bow-windows et vérandas orientés vers l’horizon marin', 'Jardin clos protégeant du vent et du sable', 'Terrasse ou balcon filant profitant de la vue']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'villaartdeco',
+    name: 'Villa Art déco',
+    region: 'Côtes normande, basque, méditerranéenne',
+    periode: '1920–1939',
+    procede: 'Béton et enduit lisse, lignes géométriques',
+    usage: 'Résidence secondaire balnéaire moderne',
+    categorie: 'littorale',
+    periodeTags: ['XXe'],
+    resume:
+      "Résidence secondaire balnéaire à la géométrie épurée, héritière du style paquebot et du mouvement Art déco de l’entre-deux-guerres. Volumes cubiques, angles arrondis évoquant les ponts de navire, larges baies horizontales et terrasses tournées vers la mer.",
+    identite: [
+      ['Période', '1920–1939, entre-deux-guerres'],
+      ['Région', 'Côtes normande, basque, méditerranéenne'],
+      ['Usage', 'Résidence secondaire balnéaire moderne'],
+      ['Système', 'Ossature béton, volumes géométriques purs'],
+      ['Matériau dominant', 'Béton, enduit lisse blanc'],
+      ['Plan', 'Volumes cubiques emboîtés, terrasses en toiture'],
+      ['Particularité', 'Angles arrondis « style paquebot », hublots décoratifs'],
+    ],
+    materiaux: ['Béton', 'Enduit lisse (blanc ou pastel)', 'Verre (baies horizontales)', 'Fer (garde-corps tubulaires)', 'Céramique (frises décoratives)', 'Bois exotique (menuiseries)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture-terrasse accessible, souvent bordée d’un garde-corps tubulaire évoquant le pont d’un paquebot.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade lisse et géométrique, angles arrondis, larges baies horizontales, parfois hublots décoratifs.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en béton ou parquet, terrasses ouvertes prolongeant les pièces de vie vers la mer.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton armé permettant les volumes en porte-à-faux et les grandes baies continues.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur aux lignes épurées, parfois circulaire, garde-corps tubulaire métallique.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en béton armé adaptées au terrain sableux ou rocheux du littoral.' },
+    ],
+    sections: [
+      {
+        title: 'Le style paquebot',
+        icon: 'ph ph-waves',
+        intro: "Fascinée par les grands paquebots transatlantiques, l’architecture Art déco balnéaire emprunte hublots, coursives et angles arrondis au vocabulaire de la marine moderne.",
+        groups: [
+          G(null, ['Angles arrondis et bandeaux horizontaux évoquant la coque d’un navire', 'Garde-corps tubulaires façon bastingage', 'Hublots décoratifs ponctuant certaines façades']),
+        ],
+      },
+      {
+        title: 'Une géométrie épurée',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Rupture nette avec l’éclectisme décoratif de la Belle Époque', 'Volumes cubiques simples, ornementation réduite', 'Enduit lisse blanc ou pastel caractéristique du mouvement']),
+        ],
+      },
+      {
+        title: 'Vivre tourné vers la mer',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Larges baies horizontales cadrant l’horizon marin', 'Terrasses en toiture profitant du panorama', 'Orientation systématique des pièces de vie côté océan']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'grandhotel',
+    name: 'Grand hôtel',
+    region: 'Stations balnéaires et thermales',
+    periode: '1860–1930',
+    procede: 'Pierre et brique, façade monumentale',
+    usage: 'Hébergement hôtelier de luxe',
+    categorie: 'littorale',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Établissement hôtelier de grand luxe édifié en front de mer pour accueillir la clientèle internationale des stations balnéaires à la Belle Époque, avec façade monumentale à répétition de travées, hall d’apparat, salons de réception et longue terrasse ou promenade couverte face à l’océan.",
+    identite: [
+      ['Période', '1860–1930, apogée du tourisme balnéaire international'],
+      ['Région', 'Stations balnéaires et thermales'],
+      ['Usage', 'Hébergement hôtelier de luxe'],
+      ['Système', 'Murs porteurs en pierre et brique, façade répétitive'],
+      ['Matériau dominant', 'Pierre de taille, brique'],
+      ['Plan', 'Façade linéaire sur le front de mer, chambres en enfilade'],
+      ['Particularité', 'Longue terrasse ou promenade couverte face à l’océan'],
+    ],
+    materiaux: ['Pierre de taille', 'Brique', 'Fer forgé (balcons filants)', 'Verre (verrière du hall)', 'Marbre (hall et salons)', 'Bois précieux (mobilier et boiseries)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture mansardée à la française ou toiture complexe multipliant lucarnes et cheminées, silhouette reconnaissable depuis la plage.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade monumentale à répétition régulière de travées et de balcons filants, orientée pour maximiser la vue sur mer.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers nobles dans les salons de réception, moquette ou parquet dans les chambres desservies par de longs couloirs.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre et brique, structure répétitive facilitant la construction de centaines de chambres identiques.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier d’honneur central dans le hall, complété d’ascenseurs dès la fin du XIXe siècle.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations massives adaptées à l’ampleur du bâtiment et à sa proximité immédiate avec la mer.' },
+    ],
+    sections: [
+      {
+        title: 'Le tourisme international de la Belle Époque',
+        icon: 'ph ph-waves',
+        intro: "Les grands hôtels des stations balnéaires accueillent une clientèle cosmopolite venue de toute l’Europe, attirée par la mode des bains de mer et le faste de la villégiature.",
+        groups: [
+          G(null, ['Clientèle internationale et aristocratique', 'Concurrence entre stations pour l’hôtel le plus prestigieux', 'Saison estivale rythmant l’activité de l’établissement']),
+        ],
+      },
+      {
+        title: 'Une façade sur l’océan',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Répétition régulière des travées de chambres', 'Balcons filants profitant tous de la vue sur mer', 'Silhouette monumentale visible depuis la plage et le large']),
+        ],
+      },
+      {
+        title: 'Le faste des salons',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Hall d’apparat orné de marbre et de dorures', 'Salons de réception pour bals et dîners mondains', 'Salle à manger panoramique tournée vers la mer']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'etablissementthermal',
+    name: 'Établissement thermal',
+    region: 'Villes d’eaux littorales et intérieures',
+    periode: '1850–1930',
+    procede: 'Pierre et structure métallique, grandes salles de soins',
+    usage: 'Cures thermales et thalassothérapie',
+    categorie: 'littorale',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Établissement dédié aux cures thermales ou marines, organisé autour de grandes salles de bains et de soins, galeries de promenade couvertes et buvette d’eau minérale. Architecture monumentale et hygiéniste, souvent complétée d’un casino et d’un parc pour l’agrément des curistes.",
+    identite: [
+      ['Période', '1850–1930'],
+      ['Région', 'Villes d’eaux littorales et intérieures'],
+      ['Usage', 'Cures thermales et thalassothérapie'],
+      ['Système', 'Structure mixte pierre et métal, grandes salles'],
+      ['Matériau dominant', 'Pierre de taille, céramique'],
+      ['Plan', 'Galeries de soins organisées autour d’une buvette centrale'],
+      ['Particularité', 'Galerie de promenade couverte, décor hygiéniste en céramique'],
+    ],
+    materiaux: ['Pierre de taille', 'Céramique (revêtements de salles de bains)', 'Fer (verrières de galeries)', 'Marbre (buvette et halls)', 'Verre (verrières)', 'Cuivre (robinetterie ancienne)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Verrière métallique couvrant la galerie de promenade, dômes ou coupoles au-dessus de la buvette centrale.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade monumentale évoquant les thermes antiques, colonnades et frontons affichant la vocation curative du lieu.' },
+      { n: 3, el: 'Planchers', txt: 'Sols carrelés de céramique dans les salles de soins, faciles à laver et résistants à l’humidité constante.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure mixte pierre et métal, grandes salles de bains individuelles distribuées le long de couloirs.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers menant aux étages de cabines de soins, parfois complétés d’ascenseurs pour les curistes âgés.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations adaptées à la présence de sources ou de canalisations d’eau de mer pompée pour la thalassothérapie.' },
+    ],
+    sections: [
+      {
+        title: 'Le temple de la cure',
+        icon: 'ph ph-waves',
+        intro: "Qu’elle soit thermale ou marine, la cure du XIXe siècle se pratique dans un cadre architectural monumental, mêlant vocation médicale et prestige social.",
+        groups: [
+          G(null, ['Prescription médicale encadrant le séjour du curiste', 'Buvette d’eau minérale ou bains d’eau de mer chauffée', 'Cure souvent complétée par un casino et un parc']),
+        ],
+      },
+      {
+        title: 'Des salles de soins hygiénistes',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Cabines de bains individuelles alignées le long de couloirs', 'Carrelage de céramique pour l’hygiène et l’entretien', 'Équipements de pointe pour l’époque : douches, massages, étuves']),
+        ],
+      },
+      {
+        title: 'La promenade des curistes',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Galerie couverte pour la promenade quotidienne prescrite', 'Buvette centrale, lieu de sociabilité des curistes', 'Décor monumental inspiré des thermes antiques']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'pavillondeplage',
+    name: 'Pavillon de plage',
+    region: 'Toutes côtes françaises',
+    periode: '1900–1970',
+    procede: 'Structure bois légère, cabines alignées',
+    usage: 'Accueil des baigneurs, location de cabines',
+    categorie: 'littorale',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Petit établissement léger en bois implanté directement sur le sable ou la digue, louant cabines de bain, transats et parasols aux baigneurs. Architecture éphémère et colorée, souvent démontée hors saison, symbole populaire des vacances balnéaires françaises du XXe siècle.",
+    identite: [
+      ['Période', '1900–1970'],
+      ['Région', 'Toutes côtes françaises'],
+      ['Usage', 'Accueil des baigneurs, location de cabines'],
+      ['Système', 'Structure bois légère sur pilotis ou plots'],
+      ['Matériau dominant', 'Bois peint'],
+      ['Plan', 'Cabines alignées autour d’une terrasse centrale'],
+      ['Particularité', 'Couleurs vives, architecture démontable saisonnière'],
+    ],
+    materiaux: ['Bois peint', 'Toile (auvents et parasols)', 'Métal galvanisé (structure légère)', 'Verre (comptoir)', 'Bâche (protection hors saison)', 'Zinc (petites toitures)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Petites toitures à un ou deux pans en bois ou tôle légère, auvents de toile colorée protégeant la terrasse.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade en bois peint de couleurs vives, cabines de bain alignées en rangées régulières et numérotées.' },
+      { n: 3, el: 'Planchers', txt: 'Platelage bois surélevé protégeant du sable humide, parfois simple plancher posé sur plots.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure légère en bois sur pilotis ou plots, démontable ou renforcée selon l’exposition aux tempêtes.' },
+      { n: 5, el: 'Escalier', txt: 'Quelques marches de bois menant du sable à la terrasse surélevée du pavillon.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations minimales sur plots ou pilotis, bâtiment conçu pour être temporaire ou saisonnier.' },
+    ],
+    sections: [
+      {
+        title: 'Les vacances populaires',
+        icon: 'ph ph-waves',
+        intro: "Avec les congés payés de 1936, la plage se démocratise et le pavillon de location de cabines devient un équipement familier de toutes les stations balnéaires françaises.",
+        groups: [
+          G(null, ['Démocratisation des vacances à la mer après 1936', 'Location saisonnière de cabines, transats et parasols', 'Équipement familier de toute plage surveillée française']),
+        ],
+      },
+      {
+        title: 'Une architecture éphémère',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Structure légère montée et démontée chaque saison', 'Couleurs vives facilitant le repérage sur le sable', 'Entretien minimal adapté à l’exposition au sel et au sable']),
+        ],
+      },
+      {
+        title: 'Cabines et transats',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Cabines individuelles numérotées pour se changer', 'Location de matériel de plage à la journée ou à la semaine', 'Terrasse centrale, poste d’accueil et de surveillance']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
