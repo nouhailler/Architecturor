@@ -770,6 +770,1271 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'longerevendeenne',
+    name: 'Longère vendéenne',
+    region: 'Vendée · Pays de la Loire',
+    periode: '1600–1900',
+    procede: 'Moellons',
+    usage: 'Ferme, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Longère de bocage vendéen bâtie en moellons calcaires ou granitiques enduits à la chaux, sous toiture de tuile canal ou d’ardoise selon les secteurs. Plan allongé simple, souvent adossée à la haie bocagère qui la protège du vent.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Vendée, Pays de la Loire'],
+      ['Usage', 'Ferme, habitat rural'],
+      ['Système', 'Murs porteurs en moellons'],
+      ['Matériau dominant', 'Moellons calcaires ou granitiques'],
+      ['Toiture', 'Tuile canal ou ardoise'],
+      ['Plan', 'Rectangulaire allongé, adossé au bocage'],
+    ],
+    materiaux: ['Moellons', 'Chaux', 'Chêne', 'Tuile canal', 'Torchis', 'Granit'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile canal ou ardoise selon les secteurs du bocage.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Moellons calcaires ou granitiques enduits à la chaux, ouvertures modestes.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, terre battue ou tomettes au rez-de-chaussée.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en moellons hourdés à la chaux, pignons épais.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier extérieur en pierre ou intérieur en bois selon les logis.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en moellons, peu profondes, ancrées au sol bocager.' },
+    ],
+    sections: [
+      {
+        title: 'Implantation bocagère',
+        icon: 'ph ph-stack',
+        intro: "La longère s’adosse à la haie et au talus du bocage vendéen, qui la protègent des vents d’ouest.",
+        groups: [
+          G(null, ['Orientation dos aux vents dominants', 'Plan rectangulaire simple, une seule travée', 'Cour et dépendances agricoles attenantes']),
+        ],
+      },
+      {
+        title: 'Murs en moellons',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Moellons calcaires ou granitiques selon le secteur', 'Enduit à la chaux, finition talochée', 'Chaînages d’angle plus soignés']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Tuile canal dans le Bas-Bocage', 'Ardoise dans le Haut-Bocage', 'Faîtage bas, pente modérée']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'solognote',
+    name: 'Maison solognote',
+    region: 'Sologne · Centre-Val de Loire',
+    periode: '1700–1900',
+    procede: 'Brique & colombage',
+    usage: 'Habitat rural, maison des étangs',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Maison des étangs solognots associant un soubassement en brique et un étage à pans de bois, sous une toiture pentue de tuile plate adaptée aux terrains humides. Le bois local, issu des forêts de Sologne, structure une architecture marquée par l’eau et l’étang.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Sologne, Centre-Val de Loire'],
+      ['Usage', 'Habitat rural, maison des étangs'],
+      ['Système', 'Soubassement brique + pans de bois'],
+      ['Matériau dominant', 'Brique et bois de Sologne'],
+      ['Toiture', 'Tuile plate, forte pente'],
+      ['Particularité', 'Implantation près des étangs'],
+    ],
+    materiaux: ['Brique', 'Chêne', 'Tuile plate', 'Torchis', 'Pierre (soubassement)', 'Chaux'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile plate, forte pente contre l’humidité ambiante.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Soubassement en brique, étage à pans de bois et remplissage torchis.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois surélevé, protection contre l’humidité des sols sableux et humides.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Brique en soubassement, ossature bois de chêne local à l’étage.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois, simple et étroit.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles brique ou pierre, adaptées aux sols sableux et humides.' },
+    ],
+    sections: [
+      {
+        title: 'Un habitat lié à l’eau',
+        icon: 'ph ph-stack',
+        intro: "La Sologne, pays d’étangs et de forêts, impose une construction adaptée à l’humidité des sols.",
+        groups: [
+          G(null, ['Soubassement surélevé contre l’humidité', 'Implantation proche des étangs et des bois', 'Économie forestière et cynégétique locale']),
+        ],
+      },
+      {
+        title: 'Brique & pans de bois',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Soubassement en brique de terre cuite locale', 'Étage à pans de bois de chêne', 'Remplissage en torchis ou briquette']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Tuile plate de Sologne', 'Forte pente pour l’évacuation rapide des eaux', 'Lucarnes et souches de cheminée en brique']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'alsacienne',
+    name: 'Maison alsacienne',
+    region: 'Alsace · Grand Est',
+    periode: '1450–1850',
+    procede: 'Colombage',
+    usage: 'Habitat rural et de bourg',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Maison à colombages polychromes typique des villages alsaciens, organisée autour d’une cour intérieure fleurie. La charpente apparente, peinte de couleurs vives, et la forte pente du toit de tuile témoignent d’un savoir-faire constructif ininterrompu depuis la fin du Moyen Âge.",
+    identite: [
+      ['Période', 'XVe–XIXe siècle'],
+      ['Région', 'Alsace, Grand Est'],
+      ['Usage', 'Habitat rural et de bourg viticole'],
+      ['Système', 'Ossature bois + remplissage'],
+      ['Matériau dominant', 'Chêne & torchis'],
+      ['Toiture', 'Tuile plate, forte pente'],
+      ['Particularité', 'Colombages polychromes, cour intérieure'],
+    ],
+    materiaux: ['Chêne', 'Torchis', 'Tuile plate', 'Pigments (colombages)', 'Pierre (soubassement)', 'Chaux'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente à forte pente, couverture tuile plate, nombreuses lucarnes.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Colombages apparents peints, remplissage torchis ou brique, encorbellements.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois massif, encorbellement gagnant de la surface aux étages.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature bois de chêne, poteaux, sablières, décharges obliques.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois, parfois en tourelle côté cour.' },
+      { n: 6, el: 'Fondations', txt: 'Soubassement en pierre ou grès, isolant le bois de l’humidité du sol.' },
+    ],
+    sections: [
+      {
+        title: 'Ossature bois & colombages',
+        icon: 'ph ph-tree',
+        intro: "Le colombage alsacien affiche un motif structurel très codifié : croix de Saint-André, décharges, sablières.",
+        groups: [
+          G(null, ['Poteaux et sablières de chêne équarri', 'Croix de Saint-André et décharges obliques', 'Remplissage en torchis ou briquette']),
+          G('Décor', ['Colombages peints de couleurs vives selon les villages']),
+        ],
+      },
+      {
+        title: 'Cour & organisation',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Cour intérieure fleurie, cœur de la maison', 'Logis, grange et cellier autour de la cour', 'Puits ou fontaine au centre']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Forte pente pour l’évacuation de la neige', 'Couverture en tuile plate', 'Nombreuses lucarnes rampantes']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'lorraine',
+    name: 'Maison lorraine',
+    region: 'Lorraine · Grand Est',
+    periode: '1600–1900',
+    procede: 'Pierre calcaire',
+    usage: 'Ferme-bloc, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Ferme-bloc lorraine regroupant sous un même faîtage le logis, l’étable et la grange, desservis par une imposante porte charretière en plein cintre. La pierre calcaire locale et le plan compact répondent aux hivers rigoureux du plateau lorrain.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Lorraine, Grand Est'],
+      ['Usage', 'Ferme-bloc, habitat rural'],
+      ['Système', 'Murs porteurs en pierre calcaire'],
+      ['Matériau dominant', 'Pierre calcaire locale'],
+      ['Toiture', 'Tuile mécanique ou ardoise'],
+      ['Particularité', 'Porte charretière monumentale en plein cintre'],
+    ],
+    materiaux: ['Pierre calcaire', 'Chaux', 'Chêne', 'Tuile mécanique', 'Ardoise', 'Fer forgé'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile mécanique ou ardoise, faîtage continu.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre calcaire appareillée, porte charretière en plein cintre monumentale.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois pour le logis, aire battue pour la grange attenante.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre calcaire regroupant logis, étable et grange.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en pierre ou bois desservant le logis.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre calcaire, cave voûtée fréquente.' },
+    ],
+    sections: [
+      {
+        title: 'La ferme-bloc',
+        icon: 'ph ph-grid-nine',
+        intro: "Contrairement aux fermes à cour, la ferme lorraine réunit toutes les fonctions sous un seul et même toit.",
+        groups: [
+          G(null, ['Logis, étable et grange alignés sous un même faîtage', 'Porte charretière en plein cintre desservant la grange', 'Plan compact adapté au climat continental']),
+        ],
+      },
+      {
+        title: 'Murs en pierre calcaire',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre calcaire locale hourdée à la chaux', 'Encadrements de baies en pierre de taille', 'Peu d’ouvertures côté nord']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Charpente continue sur toute la longueur du bloc', 'Couverture tuile mécanique ou ardoise', 'Faible débord de toit']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'comtoise',
+    name: 'Maison comtoise',
+    region: 'Franche-Comté · Doubs',
+    periode: '1600–1900',
+    procede: 'Pierre',
+    usage: 'Ferme, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Grande ferme comtoise en pierre, coiffée d’un large avant-toit protégeant le bois de chauffage et les circulations. Sa masse, son plan compact et sa cave voûtée à comté témoignent d’une économie agropastorale tournée vers l’élevage et le fromage.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Franche-Comté, Doubs'],
+      ['Usage', 'Ferme, habitat rural'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre calcaire du Jura'],
+      ['Toiture', 'Tuile ou tavaillon, large avant-toit'],
+      ['Particularité', 'Cave voûtée pour l’affinage du comté'],
+    ],
+    materiaux: ['Pierre calcaire', 'Chaux', 'Bois (charpente)', 'Tuile', 'Tavaillon', 'Fer forgé'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois robuste, large avant-toit protégeant bois et circulations.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre calcaire locale, façade sobre, peu d’ouvertures.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois massif pour le logis et le grenier à fourrage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre calcaire du Jura, plan compact.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en pierre ou bois massif.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, cave voûtée pour l’affinage des fromages.' },
+    ],
+    sections: [
+      {
+        title: 'Murs en pierre',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre calcaire du massif jurassien', 'Murs épais pour l’inertie thermique hivernale', 'Peu de percements en façade nord']),
+        ],
+      },
+      {
+        title: 'Le large avant-toit',
+        icon: 'ph ph-house-line',
+        intro: "L’avant-toit comtois, très débordant, protège le bois de chauffage stocké contre le mur.",
+        groups: [
+          G(null, ['Charpente débordante sur consoles de bois', 'Stockage du bois de chauffage à l’abri', 'Circulation protégée en pourtour de la ferme']),
+        ],
+      },
+      {
+        title: 'Cave & affinage',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Cave voûtée en pierre, fraîche et humide', 'Affinage traditionnel du comté', 'Accès direct depuis la cour de ferme']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'bressane',
+    name: 'Ferme bressane',
+    region: 'Bresse · Ain',
+    periode: '1600–1900',
+    procede: 'Colombage & torchis',
+    usage: 'Ferme, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Ferme bressane à pans de bois et torchis, reconnaissable à sa cheminée sarrasine pyramidale qui domine la toiture de tuile. Ce dispositif de fumage traditionnel, hérité des influences sarrasines, caractérise l’architecture rurale de la plaine bressane.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Bresse, Ain'],
+      ['Usage', 'Ferme, habitat rural'],
+      ['Système', 'Ossature bois + remplissage'],
+      ['Matériau dominant', 'Chêne & torchis'],
+      ['Toiture', 'Tuile plate, faible pente'],
+      ['Particularité', 'Cheminée sarrasine pyramidale'],
+    ],
+    materiaux: ['Chêne', 'Torchis', 'Tuile plate', 'Brique', 'Pierre (soubassement)', 'Chaux'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile plate, cheminée sarrasine pyramidale émergente.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pans de bois de chêne, remplissage torchis, galerie couverte fréquente.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois séparant logis et grenier à grain.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature bois de chêne, poteaux et sablières, contreventement par écharpes.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois, simple, menant au grenier.' },
+      { n: 6, el: 'Fondations', txt: 'Soubassement en pierre ou brique isolant le bois du sol humide.' },
+    ],
+    sections: [
+      {
+        title: 'La cheminée sarrasine',
+        icon: 'ph ph-house-line',
+        intro: "Élément emblématique de la Bresse, la cheminée sarrasine surmonte le foyer et sert au fumage des salaisons et volailles.",
+        groups: [
+          G(null, ['Souche pyramidale en brique ou pan de bois', 'Fumoir intégré au-dessus du foyer', 'Silhouette caractéristique dominant les toits bressans']),
+        ],
+      },
+      {
+        title: 'Ossature bois & torchis',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Poteaux et sablières de chêne', 'Remplissage en torchis sur lattis', 'Galerie de bois couverte en façade']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Faible pente en tuile plate', 'Large débord protégeant les murs de torchis', 'Volumes bas caractéristiques de la plaine bressane']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'beauceronne',
+    name: 'Ferme beauceronne',
+    region: 'Beauce · Eure-et-Loir',
+    periode: '1700–1950',
+    procede: 'Pierre',
+    usage: 'Ferme à cour, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Ferme à cour fermée de la plaine céréalière beauceronne, organisée autour d’un vaste corps de logis, d’étables et d’une grange immense accessible par un portail monumental. L’échelle des bâtiments reflète la richesse des grandes exploitations céréalières.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Beauce, Eure-et-Loir'],
+      ['Usage', 'Ferme à cour, habitat rural'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre calcaire de Beauce'],
+      ['Toiture', 'Tuile plate ou ardoise'],
+      ['Particularité', 'Cour fermée, portail monumental'],
+    ],
+    materiaux: ['Pierre calcaire', 'Chaux', 'Chêne', 'Tuile plate', 'Ardoise', 'Brique (chaînages)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois de grande portée, couverture tuile plate ou ardoise.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre calcaire, portail charretier monumental sur la cour.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois pour le logis, vastes greniers à grain au-dessus des granges.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre calcaire, grange à charpente de grande portée.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en pierre ou bois desservant le logis.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre calcaire, caves voûtées sous le logis.' },
+    ],
+    sections: [
+      {
+        title: 'La cour fermée',
+        icon: 'ph ph-grid-nine',
+        intro: "Le plan en cour fermée organise logis, étables et grange autour d’un espace central clos.",
+        groups: [
+          G(null, ['Portail charretier monumental en pierre', 'Logis, étables et grange autour de la cour', 'Fumière et puits au centre de la cour']),
+        ],
+      },
+      {
+        title: 'La grange céréalière',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Charpente de très grande portée', 'Vastes volumes pour le stockage du grain', 'Aire de battage traditionnelle']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Tuile plate ou ardoise selon les secteurs', 'Grandes surfaces de toiture peu pentées', 'Lucarnes de grenier nombreuses']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'bourbonnaise',
+    name: 'Ferme bourbonnaise',
+    region: 'Bourbonnais · Allier',
+    periode: '1600–1900',
+    procede: 'Pierre',
+    usage: 'Ferme, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Ferme à cour du Bourbonnais, en pierre et brique locale, associant polyculture et élevage bovin dans une région de transition entre le Massif central et le Bassin parisien. Toiture à faible pente couverte de tuile plate bourbonnaise.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Bourbonnais, Allier'],
+      ['Usage', 'Ferme, habitat rural'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre et brique locale'],
+      ['Toiture', 'Tuile plate bourbonnaise, faible pente'],
+      ['Particularité', 'Économie mixte polyculture-élevage'],
+    ],
+    materiaux: ['Pierre', 'Brique', 'Chaux', 'Chêne', 'Tuile plate', 'Torchis'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile plate bourbonnaise, faible pente.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre et brique locale associées, chaînages d’angle en brique.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, grenier à fourrage au-dessus des étables.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs mixtes pierre et brique, plan à cour ouverte.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois, sobre.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, peu profondes.' },
+    ],
+    sections: [
+      {
+        title: 'Murs mixtes pierre et brique',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre locale en moellons', 'Chaînages et encadrements en brique', 'Enduit à la chaux en finition']),
+        ],
+      },
+      {
+        title: 'Organisation agricole',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Cour ouverte desservant logis et bâtiments d’élevage', 'Étables pour l’élevage bovin bourbonnais', 'Grange et fenil attenants']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Tuile plate bourbonnaise', 'Faible pente caractéristique', 'Souches de cheminée en brique']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'fermenormande',
+    name: 'Ferme normande',
+    region: "Normandie · Pays d'Auge",
+    periode: '1600–1900',
+    procede: 'Colombage',
+    usage: 'Ferme, habitat rural (cour-masure)',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Ferme normande organisée en cour-masure : bâtiments à pans de bois et torchis disposés autour d’une cour plantée de pommiers, entourée d’un talus planté protégeant du vent. Une architecture indissociable du bocage et de la tradition cidricole.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Normandie, Pays d’Auge'],
+      ['Usage', 'Ferme, habitat rural (cour-masure)'],
+      ['Système', 'Ossature bois + remplissage'],
+      ['Matériau dominant', 'Chêne & torchis'],
+      ['Toiture', 'Chaume ou tuile, forte pente'],
+      ['Particularité', 'Cour-masure plantée de pommiers'],
+    ],
+    materiaux: ['Chêne', 'Torchis', 'Chaume', 'Tuile', 'Pierre (soubassement)', 'Brique (chaînages)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture chaume ou tuile, forte pente.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pans de bois de chêne, remplissage torchis, essentage de tuile parfois.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, plancher haut réservé au stockage du foin ou des pommes.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature bois de chêne, poteaux, sablières, décharges de contreventement.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier extérieur en bois ou meunier vers le grenier.' },
+      { n: 6, el: 'Fondations', txt: 'Soubassement en silex ou pierre, isolant le bois de l’humidité.' },
+    ],
+    sections: [
+      {
+        title: 'La cour-masure',
+        icon: 'ph ph-grid-nine',
+        intro: "Le talus planté d’arbres qui ceinture la cour-masure protège bâtiments et vergers des vents du bocage.",
+        groups: [
+          G(null, ['Talus boisé en pourtour de la parcelle', 'Pommiers pour la production cidricole', 'Bâtiments dispersés autour de la cour']),
+        ],
+      },
+      {
+        title: 'Ossature bois & torchis',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Poteaux et sablières de chêne équarri', 'Remplissage en torchis sur clayonnage', 'Essentage de tuile ou d’ardoise en protection']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Chaume traditionnel ou tuile selon les secteurs', 'Forte pente pour l’écoulement des pluies', 'Faîtage arrondi typique du chaume normand']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'auvergnate',
+    name: 'Ferme auvergnate',
+    region: 'Auvergne · Puy-de-Dôme',
+    periode: '1600–1900',
+    procede: 'Pierre volcanique',
+    usage: 'Ferme-bloc, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Ferme-bloc du plateau volcanique auvergnat, bâtie en basalte sombre et arkose, couverte de lauzes ou de chaume épais pour résister aux hivers rigoureux. Logis et étable communiquent souvent directement, la chaleur animale participant au chauffage du logis.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Auvergne, Puy-de-Dôme'],
+      ['Usage', 'Ferme-bloc, habitat rural'],
+      ['Système', 'Murs porteurs en pierre volcanique'],
+      ['Matériau dominant', 'Basalte & arkose'],
+      ['Toiture', 'Lauze ou chaume épais'],
+      ['Particularité', 'Logis et étable communicants'],
+    ],
+    materiaux: ['Basalte', 'Arkose', 'Chaux', 'Bois (charpente)', 'Lauze', 'Chaume'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente robuste, couverture en lauze de basalte ou chaume très épais.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Basalte sombre et arkose en moellons, ouvertures réduites.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois massif, grenier à foin isolant sous la toiture.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs très épais en pierre volcanique, forte inertie thermique.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier extérieur en pierre menant au logis surélevé.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrage direct sur le socle volcanique, semelles peu profondes.' },
+    ],
+    sections: [
+      {
+        title: 'Murs en pierre volcanique',
+        icon: 'ph ph-wall',
+        intro: "Le basalte, sombre et dense, confère à la ferme auvergnate son inertie thermique caractéristique.",
+        groups: [
+          G(null, ['Basalte et arkose en moellons appareillés', 'Murs très épais pour l’isolation hivernale', 'Peu d’ouvertures, orientées à l’abri du vent']),
+        ],
+      },
+      {
+        title: 'Logis et étable communicants',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Logis surélevé au-dessus de l’étable', 'Chaleur animale contribuant au chauffage', 'Accès direct entre les deux espaces']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-mountains',
+        groups: [
+          G(null, ['Lauzes de basalte, très lourdes', 'Charpente surdimensionnée pour porter la couverture', 'Chaume épais en alternative selon les secteurs']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'cevenole',
+    name: 'Maison cévenole',
+    region: 'Cévennes · Gard',
+    periode: '1600–1900',
+    procede: 'Schiste',
+    usage: 'Habitat rural de pente',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Maison de pente cévenole bâtie en schiste local sur les terrasses de culture (bancels), liée à l’économie de la châtaigne et à la sériciculture. Toiture de lauzes de schiste ou de tuile canal, façades étroites adaptées au relief escarpé.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Cévennes, Gard'],
+      ['Usage', 'Habitat rural de pente'],
+      ['Système', 'Murs porteurs en schiste'],
+      ['Matériau dominant', 'Schiste local'],
+      ['Toiture', 'Lauzes de schiste ou tuile canal'],
+      ['Particularité', 'Implantation en terrasses (bancels)'],
+    ],
+    materiaux: ['Schiste', 'Chaux', 'Châtaignier', 'Lauze', 'Tuile canal', 'Pierre sèche (terrasses)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente châtaignier, couverture lauzes de schiste ou tuile canal.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Schiste local en moellons, façades étroites adossées à la pente.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage châtaignier, étage de magnanerie pour l’élevage du ver à soie.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en schiste, construction étagée sur la pente.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier extérieur en pierre reliant les niveaux étagés.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrage sur le rocher schisteux, terrasses de soutènement en pierre sèche.' },
+    ],
+    sections: [
+      {
+        title: 'Implantation en terrasses',
+        icon: 'ph ph-stack',
+        intro: "Les bancels, terrasses de pierre sèche, permettent l’implantation de la maison et des cultures sur les pentes cévenoles.",
+        groups: [
+          G(null, ['Terrasses de soutènement en pierre sèche', 'Maison étagée épousant la déclivité', 'Châtaigneraies et vignes en restanques']),
+        ],
+      },
+      {
+        title: 'Murs en schiste',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Schiste local hourdé à la chaux', 'Façades étroites, peu d’ouvertures', 'Chaînages d’angle plus soignés']),
+        ],
+      },
+      {
+        title: 'Magnanerie & toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G('Toiture', ['Lauzes de schiste ou tuile canal', 'Charpente en châtaignier local']),
+          G('Magnanerie', ['Étage aéré dédié à l’élevage du ver à soie', 'Liée à l’économie textile cévenole du XIXe siècle']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'quercynoise',
+    name: 'Maison quercynoise',
+    region: 'Quercy · Lot',
+    periode: '1600–1900',
+    procede: 'Calcaire',
+    usage: 'Ferme, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Maison du causse quercynois en pierre calcaire blonde, couverte de lauzes calcaires à faible pente ou de tuile canal. Le pigeonnier, souvent intégré ou isolé, signale la richesse agricole de l’exploitation.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Quercy, Lot'],
+      ['Usage', 'Ferme, habitat rural'],
+      ['Système', 'Murs porteurs en calcaire'],
+      ['Matériau dominant', 'Calcaire blond du causse'],
+      ['Toiture', 'Lauzes calcaires ou tuile canal'],
+      ['Particularité', 'Pigeonnier caractéristique'],
+    ],
+    materiaux: ['Calcaire', 'Chaux', 'Chêne', 'Lauze calcaire', 'Tuile canal', 'Fer forgé'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois massive, couverture lauzes calcaires ou tuile canal.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Calcaire blond du causse, encadrements de baies en pierre de taille.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, voûtes en berceau fréquentes au rez-de-chaussée.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en calcaire, pigeonnier intégré ou en tour isolée.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier extérieur en pierre menant au logis surélevé.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrage direct sur le causse calcaire, caves voûtées.' },
+    ],
+    sections: [
+      {
+        title: 'Murs en calcaire du causse',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Calcaire blond local hourdé à la chaux', 'Encadrements de baies en pierre de taille', 'Voûtes en berceau au rez-de-chaussée (celliers)']),
+        ],
+      },
+      {
+        title: 'Le pigeonnier',
+        icon: 'ph ph-buildings',
+        intro: "Signe de richesse agricole, le pigeonnier fournissait la fiente utilisée comme engrais sur les terres du causse.",
+        groups: [
+          G(null, ['Tour isolée ou intégrée à la façade', 'Boulins en pierre ou terre cuite', 'Génoise ou corniche protégeant l’accès des rapaces']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Lauzes calcaires à faible pente', 'Tuile canal en alternative plus légère', 'Charpente surdimensionnée pour porter la lauze']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'perigourdine',
+    name: 'Maison périgourdine',
+    region: 'Périgord · Dordogne',
+    periode: '1500–1900',
+    procede: 'Pierre',
+    usage: 'Ferme, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Maison du Périgord en pierre calcaire dorée, couverte de lauzes calcaires à forte pente ou de tuile canal. Tourelles, pigeonniers et toits complexes composent une silhouette caractéristique de la vallée de la Dordogne.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'Périgord, Dordogne'],
+      ['Usage', 'Ferme, habitat rural'],
+      ['Système', 'Murs porteurs en pierre calcaire'],
+      ['Matériau dominant', 'Pierre calcaire dorée du Périgord'],
+      ['Toiture', 'Lauzes calcaires ou tuile canal'],
+      ['Particularité', 'Tourelles et pigeonniers'],
+    ],
+    materiaux: ['Pierre calcaire', 'Chaux', 'Chêne', 'Lauze calcaire', 'Tuile canal', 'Noyer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois complexe, couverture lauzes calcaires à forte pente ou tuile canal.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre calcaire dorée appareillée, tourelles d’escalier fréquentes.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage chêne, voûtes en berceau au rez-de-chaussée.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre calcaire, volumes composites accolés.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier en tourelle, vis de pierre desservant les étages.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre calcaire, caves voûtées fréquentes.' },
+    ],
+    sections: [
+      {
+        title: 'Murs en pierre dorée',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre calcaire dorée du Périgord', 'Appareillage soigné en façade principale', 'Tourelles d’escalier en encorbellement']),
+        ],
+      },
+      {
+        title: 'Toiture complexe',
+        icon: 'ph ph-house-line',
+        intro: "La toiture périgourdine, souvent à plusieurs pans et croupes, adapte sa pente à la lourdeur de la lauze.",
+        groups: [
+          G(null, ['Lauzes calcaires très pentues et lourdes', 'Charpente surdimensionnée en chêne', 'Tuile canal en couverture secondaire ou de remplacement']),
+        ],
+      },
+      {
+        title: 'Pigeonnier & dépendances',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Pigeonnier en tour ou sur pilier', 'Séchoir à tabac ou à noix attenant', 'Cour ou terrasse dominant la vallée']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'charentaise',
+    name: 'Maison charentaise',
+    region: 'Charente · Nouvelle-Aquitaine',
+    periode: '1600–1900',
+    procede: 'Pierre',
+    usage: 'Ferme, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Maison charentaise en pierre de taille calcaire blanche, couverte de tuile canal et ornée d’une génoise en corniche d’influence méridionale. Souvent liée au vignoble et à la production de cognac, elle associe logis et chai.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Charente, Nouvelle-Aquitaine'],
+      ['Usage', 'Ferme, habitat rural viticole'],
+      ['Système', 'Murs porteurs en pierre calcaire'],
+      ['Matériau dominant', 'Pierre de taille calcaire blanche'],
+      ['Toiture', 'Tuile canal'],
+      ['Particularité', 'Génoise en corniche, chai attenant'],
+    ],
+    materiaux: ['Pierre calcaire', 'Chaux', 'Chêne', 'Tuile canal', 'Fer forgé', 'Verre (chai)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile canal, génoise en débord de rive.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre de taille calcaire blanche, encadrements soignés.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage chêne, chai voûté ou de plain-pied attenant au logis.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre calcaire, logis et chai accolés.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en pierre ou bois, sobre.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre calcaire, caves voûtées pour le vieillissement.' },
+    ],
+    sections: [
+      {
+        title: 'Murs en pierre blanche',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre de taille calcaire locale', 'Génoise (double ou triple rang de tuiles) en corniche', 'Encadrements de baies soignés']),
+        ],
+      },
+      {
+        title: 'Logis & chai',
+        icon: 'ph ph-grid-nine',
+        intro: "L’économie viticole charentaise associe étroitement l’habitat et les bâtiments de production du cognac.",
+        groups: [
+          G(null, ['Chai attenant ou en vis-à-vis du logis', 'Caves voûtées pour le vieillissement en fût', 'Cour desservant logis, chai et cellier']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Tuile canal à faible pente', 'Génoise éloignant les eaux de pluie du mur', 'Lucarnes discrètes']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'landaise',
+    name: 'Maison landaise',
+    region: 'Landes · Nouvelle-Aquitaine',
+    periode: '1600–1900',
+    procede: 'Bois',
+    usage: 'Ferme, habitat rural (airial)',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Maison landaise à structure de poteaux de pin maritime, implantée sur l’airial, clairière herbeuse ombragée par les chênes au milieu de la forêt de pins. L’avant-toit débordant sur poteaux abrite la circulation et le matériel agricole.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Landes, Nouvelle-Aquitaine'],
+      ['Usage', 'Ferme, habitat rural (airial)'],
+      ['Système', 'Ossature bois sur poteaux'],
+      ['Matériau dominant', 'Pin des Landes'],
+      ['Toiture', 'Tuile plate, faible pente'],
+      ['Particularité', 'Implantation sur airial boisé'],
+    ],
+    materiaux: ['Pin maritime', 'Chêne', 'Torchis', 'Tuile plate', 'Pierre (soubassement)', 'Argile'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente pin, couverture tuile plate, faible pente, large avant-toit.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Structure de poteaux de pin, remplissage torchis ou bois.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, plancher haut pour le stockage du fourrage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Poteaux de pin maritime porteurs, avant-toit sur poteaux avancés.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois, simple.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre ou galets, sol sableux landais.' },
+    ],
+    sections: [
+      {
+        title: 'L’airial',
+        icon: 'ph ph-tree',
+        intro: "L’airial, clairière ombragée de chênes au sein de la forêt de pins, structure l’habitat dispersé landais.",
+        groups: [
+          G(null, ['Clairière herbeuse plantée de chênes', 'Bâtiments dispersés autour de l’airial', 'Forêt de pins maritimes en pourtour']),
+        ],
+      },
+      {
+        title: 'Structure en pin',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Poteaux de pin maritime équarris', 'Remplissage en torchis ou planches', 'Avant-toit débordant sur poteaux avancés']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Tuile plate à faible pente', 'Large débord protégeant hommes et matériel', 'Volumes bas et allongés']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'bearnaise',
+    name: 'Maison béarnaise',
+    region: 'Béarn · Pyrénées-Atlantiques',
+    periode: '1600–1900',
+    procede: 'Galets',
+    usage: 'Ferme, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Maison béarnaise du piémont pyrénéen bâtie en galets de gave, associés à des chaînages de brique ou de pierre de taille. Toiture à forte pente en ardoise ou tuile, typique des vallées où les rivières fournissent la matière première.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Béarn, Pyrénées-Atlantiques'],
+      ['Usage', 'Ferme, habitat rural'],
+      ['Système', 'Murs porteurs en galets'],
+      ['Matériau dominant', 'Galets de gave'],
+      ['Toiture', 'Ardoise ou tuile, forte pente'],
+      ['Particularité', 'Chaînages de brique ou pierre de taille'],
+    ],
+    materiaux: ['Galets', 'Brique (chaînages)', 'Chaux', 'Chêne', 'Ardoise', 'Tuile'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture ardoise ou tuile, forte pente pyrénéenne.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Galets de gave assemblés, chaînages d’angle en brique ou pierre de taille.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, plancher haut pour le fourrage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en galets hourdés à la chaux, chaînages structurels.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois ou pierre.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en galets ou pierre, ancrées sur les terrasses alluviales.' },
+    ],
+    sections: [
+      {
+        title: 'Murs en galets',
+        icon: 'ph ph-wall',
+        intro: "Les galets ronds du gave, difficiles à appareiller seuls, sont toujours associés à des chaînages rigides.",
+        groups: [
+          G(null, ['Galets de rivière assemblés au mortier de chaux', 'Chaînages d’angle en brique ou pierre de taille', 'Encadrements de baies en pierre']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Forte pente pyrénéenne en ardoise ou tuile', 'Charpente bois traditionnelle', 'Débord modéré protégeant les murs']),
+        ],
+      },
+      {
+        title: 'Organisation rurale',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Logis et étable sous le même volume ou accolés', 'Cour desservant les dépendances agricoles', 'Implantation en piémont, proche des gaves']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'savoyarde',
+    name: 'Maison savoyarde',
+    region: 'Savoie · Alpes',
+    periode: '1600–1950',
+    procede: 'Pierre & bois',
+    usage: 'Ferme de vallée, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Ferme de vallée savoyarde associant un rez-de-chaussée en pierre et un étage en pans de bois ou bardage, prolongé de larges galeries de bois. Moins haute en altitude que le chalet d’alpage, elle regroupe logis et exploitation agricole dans un même volume.",
+    identite: [
+      ['Période', 'XVIIe–XXe siècle'],
+      ['Région', 'Savoie, Alpes'],
+      ['Usage', 'Ferme de vallée, habitat rural'],
+      ['Système', 'Soubassement pierre + étage bois'],
+      ['Matériau dominant', 'Pierre & bois local'],
+      ['Toiture', 'Tuile écaille ou ardoise'],
+      ['Particularité', 'Larges galeries de bois en façade'],
+    ],
+    materiaux: ['Pierre locale', 'Épicéa', 'Mélèze', 'Tuile écaille', 'Ardoise', 'Chaux'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile écaille ou ardoise, pente modérée.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Soubassement en pierre, étage en pans de bois ou bardage, galeries en façade.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher bois posé sur solives, isolant les niveaux d’habitation.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs en pierre au rez-de-chaussée, ossature bois à l’étage.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier extérieur en bois desservant la galerie et l’étage.' },
+      { n: 6, el: 'Fondations', txt: 'Soubassement massif en pierre, adapté au terrain de vallée.' },
+    ],
+    sections: [
+      {
+        title: 'Soubassement en pierre',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Murs en pierre locale au rez-de-chaussée', 'Étable et cave protégées du froid', 'Encadrements de baies en pierre de taille']),
+        ],
+      },
+      {
+        title: 'Étage en bois & galeries',
+        icon: 'ph ph-tree',
+        intro: "Les larges galeries de bois, souvent sur plusieurs niveaux, servent au séchage du foin et à la circulation.",
+        groups: [
+          G(null, ['Bardage ou pans de bois à l’étage', 'Galeries de bois filantes en façade', 'Balcons sculptés selon les vallées']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-mountains',
+        groups: [
+          G(null, ['Tuile écaille ou ardoise selon l’altitude', 'Pente modérée, moins forte qu’en haute montagne', 'Larges débords protégeant les galeries']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'jurassienne',
+    name: 'Maison jurassienne',
+    region: 'Jura · Haut-Doubs',
+    periode: '1700–1950',
+    procede: 'Pierre',
+    usage: 'Ferme, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Grande ferme du Haut-Doubs organisée autour du tuyé, vaste cheminée pyramidale en charpente de bois qui domine le volume et sert traditionnellement au fumage des salaisons. Le large avant-toit protège le bois de chauffage des rigueurs de l’hiver jurassien.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Jura, Haut-Doubs'],
+      ['Usage', 'Ferme, habitat rural'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre calcaire du Jura'],
+      ['Toiture', 'Tavaillon ou tuile, large avant-toit'],
+      ['Particularité', 'Tuyé : cheminée pyramidale de fumage'],
+    ],
+    materiaux: ['Pierre calcaire', 'Sapin', 'Chaux', 'Tavaillon', 'Tuile', 'Fer forgé'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois massive, large avant-toit, couverture tavaillon ou tuile.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre calcaire du Jura, façade sobre, tuyé émergent au faîtage.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois massif, grenier à fourrage vaste.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre, charpente pyramidale du tuyé au centre du bâtiment.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois massif.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre calcaire, cave voûtée pour l’affinage.' },
+    ],
+    sections: [
+      {
+        title: 'Le tuyé',
+        icon: 'ph ph-mountains',
+        intro: "Le tuyé, immense cheminée-charpente pyramidale, structure le cœur de la ferme et sert au fumage des salaisons.",
+        groups: [
+          G(null, ['Charpente pyramidale en sapin au-dessus du foyer', 'Fumage traditionnel des salaisons et jambons', 'Élément architectural emblématique du Haut-Doubs']),
+        ],
+      },
+      {
+        title: 'Murs en pierre',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre calcaire locale hourdée à la chaux', 'Murs épais pour l’inertie thermique hivernale', 'Peu d’ouvertures côté nord']),
+        ],
+      },
+      {
+        title: 'Large avant-toit',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Charpente débordante protégeant le bois de chauffage', 'Couverture en tavaillon ou tuile', 'Circulation abritée en pourtour de la ferme']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'vosgienne',
+    name: 'Maison vosgienne',
+    region: 'Vosges · Grand Est',
+    periode: '1700–1950',
+    procede: 'Grès',
+    usage: 'Ferme-bloc, habitat rural',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Maison-bloc vosgienne en grès rose local, réunissant logis, étable et grange sous un même faîtage à forte pente. La toiture d’ardoise ou de tavaillon, très inclinée, répond aux hivers neigeux du massif vosgien.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Vosges, Grand Est'],
+      ['Usage', 'Ferme-bloc, habitat rural'],
+      ['Système', 'Murs porteurs en grès'],
+      ['Matériau dominant', 'Grès rose des Vosges'],
+      ['Toiture', 'Ardoise ou tavaillon, forte pente'],
+      ['Particularité', 'Ferme-bloc adaptée aux hivers neigeux'],
+    ],
+    materiaux: ['Grès', 'Chaux', 'Sapin', 'Ardoise', 'Tavaillon', 'Fer forgé'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente sapin, couverture ardoise ou tavaillon, forte pente anti-neige.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Grès rose des Vosges appareillé, encadrements de baies soignés.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage sapin, grenier à fourrage isolant sous la toiture.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en grès, logis, étable et grange réunis sous un même toit.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois massif.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en grès, ancrées sur le socle vosgien.' },
+    ],
+    sections: [
+      {
+        title: 'La ferme-bloc vosgienne',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Logis, étable et grange sous un même faîtage', 'Plan compact limitant les déperditions de chaleur', 'Accès couvert entre les différentes fonctions']),
+        ],
+      },
+      {
+        title: 'Murs en grès',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Grès rose local appareillé', 'Murs épais pour l’inertie hivernale', 'Enduit partiel ou pierre apparente selon les secteurs']),
+        ],
+      },
+      {
+        title: 'Toiture anti-neige',
+        icon: 'ph ph-mountains',
+        groups: [
+          G(null, ['Forte pente pour l’évacuation rapide de la neige', 'Couverture ardoise ou tavaillon de sapin', 'Charpente renforcée pour la surcharge neigeuse']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'buron',
+    name: 'Buron',
+    region: 'Aubrac · Cantal',
+    periode: '1700–1950',
+    procede: 'Pierre sèche',
+    usage: "Buron, bâtiment pastoral d'estive",
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Cabane pastorale d’estive du plateau de l’Aubrac, bâtie en pierre sèche ou hourdée à la terre, utilisée durant la transhumance estivale pour la traite et la fabrication du fromage (laguiole, cantal). Toiture très épaisse en lauzes ou en chaume pour affronter le climat rude du plateau.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Aubrac, Cantal'],
+      ['Usage', "Buron, bâtiment pastoral d'estive"],
+      ['Système', 'Murs porteurs en pierre sèche'],
+      ['Matériau dominant', 'Pierre volcanique de l’Aubrac'],
+      ['Toiture', 'Lauze ou chaume très épais'],
+      ['Particularité', 'Fabrication fromagère durant l’estive'],
+    ],
+    materiaux: ['Pierre volcanique', 'Terre (hourdage)', 'Bois (charpente)', 'Lauze', 'Chaume', 'Genêt'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois robuste, couverture lauze ou chaume très épais.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre volcanique sèche ou hourdée à la terre, très peu d’ouvertures.' },
+      { n: 3, el: 'Planchers', txt: 'Sol en terre battue ou dallage de pierre, cave à fromage attenante.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs massifs en pierre sèche, résistant au vent du plateau.' },
+      { n: 5, el: 'Escalier', txt: 'Pas d’étage la plupart du temps ; simple accès de plain-pied.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrage direct sur le socle volcanique de l’Aubrac.' },
+    ],
+    sections: [
+      {
+        title: 'Un bâtiment de la transhumance',
+        icon: 'ph ph-mountains',
+        intro: "Le buron accueille chaque été les buronniers venus fabriquer le fromage sur l’estive du plateau de l’Aubrac.",
+        groups: [
+          G(null, ['Occupation saisonnière durant l’estive', 'Salle de fabrication fromagère (cantalès)', 'Cave d’affinage attenante ou en sous-sol']),
+        ],
+      },
+      {
+        title: 'Murs en pierre sèche',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre volcanique locale assemblée sans mortier ou à la terre', 'Murs très épais contre le vent et le froid', 'Peu ou pas d’ouvertures']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Lauze de pierre volcanique très lourde', 'Chaume de genêt en alternative traditionnelle', 'Charpente surdimensionnée pour porter la couverture']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'mazet',
+    name: 'Mazet cévenol',
+    region: 'Cévennes · Gard',
+    periode: '1700–1900',
+    procede: 'Pierre sèche',
+    usage: 'Abri agricole en pierre sèche',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Petit abri agricole en pierre sèche des terrasses (bancels) cévenoles, lié à la culture de la châtaigne et à la viticulture de pente. Le mazet servait au rangement des outils et à l’abri temporaire du vigneron ou du châtaigneraie.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Cévennes, Gard'],
+      ['Usage', 'Abri agricole en pierre sèche'],
+      ['Système', 'Murs et voûte en pierre sèche'],
+      ['Matériau dominant', 'Schiste ou granite local'],
+      ['Toiture', 'Voûte ou dalle de pierre'],
+      ['Particularité', 'Construction sans mortier, en terrasses'],
+    ],
+    materiaux: ['Schiste', 'Granite', 'Pierre sèche', 'Terre (sol)', 'Bois (rare)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Voûte ou dalle de pierre sèche, parfois recouverte de terre.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre sèche assemblée sans mortier, une seule ouverture basse.' },
+      { n: 3, el: 'Planchers', txt: 'Sol en terre battue ou pierre, volume unique de petite taille.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs épais en pierre sèche portant une voûte en encorbellement.' },
+      { n: 5, el: 'Escalier', txt: 'Sans étage ; simple accès de plain-pied.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrage direct sur la terrasse (bancel) de pierre sèche.' },
+    ],
+    sections: [
+      {
+        title: 'Une architecture des terrasses',
+        icon: 'ph ph-stack',
+        intro: "Le mazet se niche au cœur des bancels, terrasses de culture soutenues par des murets de pierre sèche.",
+        groups: [
+          G(null, ['Implanté au sein des terrasses cultivées', 'Lié à la châtaigneraie ou à la vigne de pente', 'Petit volume, usage temporaire ou de stockage']),
+        ],
+      },
+      {
+        title: 'Construction en pierre sèche',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Assemblage sans mortier, pierre sur pierre', 'Voûte en encorbellement pour la couverture', 'Savoir-faire transmis de génération en génération']),
+        ],
+      },
+      {
+        title: 'Usage agricole',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Rangement des outils de culture', 'Abri temporaire pour le travailleur agricole', 'Parfois utilisé pour le séchage des châtaignes']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'borie',
+    name: 'Borie',
+    region: 'Provence · Vaucluse',
+    periode: '1700–1900',
+    procede: 'Pierre sèche',
+    usage: 'Cabane agricole ou pastorale',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Cabane provençale en pierre sèche à voûte en encorbellement, sans mortier ni charpente, célèbre dans le village des Bories près de Gordes. Utilisée comme abri agricole, bergerie ou habitat saisonnier, elle illustre un art constructif millénaire.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Provence, Vaucluse'],
+      ['Usage', 'Cabane agricole ou pastorale'],
+      ['Système', 'Voûte en encorbellement, pierre sèche'],
+      ['Matériau dominant', 'Calcaire local'],
+      ['Toiture', 'Voûte de pierre en encorbellement'],
+      ['Particularité', 'Aucun mortier, aucune charpente'],
+    ],
+    materiaux: ['Calcaire', 'Pierre sèche', 'Terre (sol)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Voûte en encorbellement de pierre sèche, sans charpente.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs de calcaire assemblés sans mortier, ouverture unique basse.' },
+      { n: 3, el: 'Planchers', txt: 'Sol en terre battue ou pierre, volume circulaire ou ovale unique.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs épais portant directement la voûte en pierre sèche.' },
+      { n: 5, el: 'Escalier', txt: 'Aucun étage ; construction de plain-pied.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrage direct sur le sol calcaire, sans fondation creusée.' },
+    ],
+    sections: [
+      {
+        title: 'La voûte en encorbellement',
+        icon: 'ph ph-stack',
+        intro: "Chaque assise de pierre déborde légèrement sur la précédente, refermant progressivement la voûte sans aucun support.",
+        groups: [
+          G(null, ['Pierres plates posées en assises successives', 'Encorbellement progressif jusqu’à la clé de voûte', 'Aucun mortier, aucune charpente nécessaire']),
+        ],
+      },
+      {
+        title: 'Un art constructif ancestral',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Savoir-faire transmis depuis l’Antiquité', 'Pierre calcaire locale extraite à l’épierrement des champs', 'Regroupement en hameaux de bories (Gordes)']),
+        ],
+      },
+      {
+        title: 'Usages',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Abri de berger ou de vigneron', 'Bergerie temporaire', 'Stockage d’outils et de récoltes']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'capitelle',
+    name: 'Capitelle',
+    region: 'Languedoc · Hérault',
+    periode: '1700–1900',
+    procede: 'Pierre sèche',
+    usage: 'Cabane de vigne',
+    categorie: 'rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Petite cabane de vigne languedocienne en pierre sèche, cousine de la borie provençale, édifiée par épierrement au milieu des parcelles de garrigue. Elle abritait les outils du vigneron et offrait un abri temporaire lors des travaux de la vigne.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Languedoc, Hérault'],
+      ['Usage', 'Cabane de vigne'],
+      ['Système', 'Voûte en encorbellement, pierre sèche'],
+      ['Matériau dominant', 'Calcaire de garrigue'],
+      ['Toiture', 'Voûte de pierre en encorbellement'],
+      ['Particularité', 'Construite par épierrement des parcelles'],
+    ],
+    materiaux: ['Calcaire', 'Pierre sèche', 'Terre (sol)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Voûte en encorbellement de pierre sèche, étanche sans aucune charpente.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs de calcaire de garrigue assemblés sans mortier.' },
+      { n: 3, el: 'Planchers', txt: 'Sol en terre battue, volume unique de petite taille.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs épais portant directement la voûte en pierre sèche.' },
+      { n: 5, el: 'Escalier', txt: 'Aucun étage ; construction de plain-pied.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrage direct sur le sol de garrigue, sans fondation creusée.' },
+    ],
+    sections: [
+      {
+        title: 'Née de l’épierrement',
+        icon: 'ph ph-stack',
+        intro: "La capitelle recycle les pierres extraites lors de la mise en culture des parcelles de garrigue.",
+        groups: [
+          G(null, ['Pierres issues de l’épierrement des vignes environnantes', 'Implantation au milieu ou en bordure de parcelle', 'Petit volume circulaire ou carré']),
+        ],
+      },
+      {
+        title: 'Construction en pierre sèche',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Assises successives en encorbellement', 'Aucun mortier, assemblage par simple gravité', 'Parenté directe avec la borie provençale']),
+        ],
+      },
+      {
+        title: 'Usage viticole',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Abri des outils de la vigne', 'Refuge temporaire lors des travaux ou des orages', 'Repère du parcellaire viticole traditionnel']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
