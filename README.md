@@ -75,6 +75,11 @@ src/
 | 🌾 Mas provençal | 1600–1850 | Provence · Méditerranée | Moellons & chaux |
 | ⛏️ Coron minier | 1825–1914 | Nord · Hauts-de-France | Brique |
 | 🏗️ Grand ensemble en béton | 1953–1975 | Aires urbaines · France | Béton armé |
+| 🌊 Longère bretonne | 1700–1900 | Bretagne · Côtes-d'Armor | Granite |
+| 🏔️ Chalet savoyard | 1750–1900 | Savoie · Alpes | Bois & pierre |
+| 🍷 Échoppe bordelaise | 1730–1914 | Bordeaux · Gironde | Pierre calcaire |
+| 🎨 Maison basque (labourdine) | 1600–1850 | Pays basque · Aquitaine | Pans de bois & torchis |
+| 🏛️ Immeuble Art déco | 1920–1935 | Reims · Champagne | Béton & brique |
 
 ## 🎨 Design
 

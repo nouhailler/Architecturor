@@ -14,6 +14,8 @@ import {
   GridNine,
   CraneTower,
   Building,
+  Mountains,
+  Waves,
 } from '@phosphor-icons/react'
 
 export const SECTION_ICONS: Record<string, Icon> = {
@@ -31,4 +33,6 @@ export const SECTION_ICONS: Record<string, Icon> = {
   'ph ph-grid-nine': GridNine,
   'ph ph-crane-tower': CraneTower,
   'ph ph-building': Building,
+  'ph ph-mountains': Mountains,
+  'ph ph-waves': Waves,
 }

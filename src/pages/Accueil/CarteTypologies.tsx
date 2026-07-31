@@ -7,9 +7,14 @@ import styles from './CarteTypologies.module.css'
 const PINS = [
   { id: 'coron',         cx: 557, cy:  45, label: 'Coron minier',    pulse: true,  anchor: 'start',  tx: 577, ty:  50 },
   { id: 'panbois',       cx: 423, cy: 162, label: 'Pan de bois',     pulse: false, anchor: 'end',    tx: 405, ty: 150 },
+  { id: 'artdeco',       cx: 580, cy: 150, label: 'Art déco',        pulse: false, anchor: 'start',  tx: 600, ty: 155 },
   { id: 'haussmann',     cx: 508, cy: 220, label: 'Haussmannien',    pulse: true,  anchor: 'start',  tx: 530, ty: 226 },
+  { id: 'longere',       cx: 230, cy: 230, label: 'Longère bretonne', pulse: false, anchor: 'start', tx: 250, ty: 236 },
+  { id: 'chalet',        cx: 820, cy: 560, label: 'Chalet savoyard', pulse: false, anchor: 'end',    tx: 800, ty: 565 },
   { id: 'grandensemble', cx: 678, cy: 525, label: 'Grand ensemble',  pulse: false, anchor: 'start',  tx: 698, ty: 530 },
+  { id: 'echoppe',       cx: 330, cy: 650, label: 'Échoppe bordelaise', pulse: false, anchor: 'end', tx: 312, ty: 656 },
   { id: 'mas',           cx: 714, cy: 768, label: 'Mas provençal',   pulse: false, anchor: 'start',  tx: 735, ty: 773 },
+  { id: 'labourdine',    cx: 260, cy: 790, label: 'Maison basque',   pulse: false, anchor: 'end',    tx: 242, ty: 796 },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */

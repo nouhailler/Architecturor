@@ -423,6 +423,325 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'longere',
+    name: 'Longère bretonne',
+    region: "Bretagne · Côtes-d'Armor",
+    periode: '1700–1900',
+    procede: 'Granite',
+    usage: 'Habitat rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Maison rurale bretonne tout en longueur, bâtie en gros blocs de granite sous une toiture d’ardoise à forte pente. Plan simple d’une seule travée en profondeur, pignons épais orientés face aux vents et pluies atlantiques.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Bretagne, Côtes-d’Armor, Finistère'],
+      ['Usage', 'Ferme, habitat rural'],
+      ['Système', 'Murs porteurs en granite'],
+      ['Matériau dominant', 'Granite (moellons ou pierre de taille)'],
+      ['Épaisseur des murs', '60–90 cm'],
+      ['Toiture', 'Ardoise, forte pente, pignons débordants'],
+      ['Plan', 'Rectangulaire allongé, une seule travée en profondeur'],
+    ],
+    materiaux: ['Granite', 'Ardoise', 'Chêne', 'Chaux', 'Torchis', 'Schiste'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture ardoise à forte pente, pignons débordants contre les embruns.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Gros blocs de granite appareillés, ouvertures étroites côté vents dominants.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois reposant sur les murs gouttereaux, comble souvent ouvert sans plancher haut.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs de granite très épais, pignons porteurs aux extrémités, pas de mur de refend.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier extérieur en pierre ou échelle meunière donnant accès au comble-grenier.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles de granite directement ancrées au socle rocheux, peu profondes.' },
+    ],
+    sections: [
+      {
+        title: 'Implantation & fondations',
+        icon: 'ph ph-stack',
+        intro: "La longère s’implante perpendiculairement aux vents dominants, sur un socle granitique affleurant.",
+        groups: [
+          G(null, ['Fondations peu profondes ancrées au rocher', 'Orientation dos aux vents d’ouest', 'Plan rectangulaire simple, une seule pièce en profondeur']),
+        ],
+      },
+      {
+        title: 'Murs en granite',
+        icon: 'ph ph-wall',
+        intro: "Le granite local, dur et imperméable, structure toute la construction.",
+        groups: [
+          G(null, ['Moellons de granite hourdés à la chaux', 'Chaînages d’angle en pierre de taille', 'Ouvertures rares et étroites, encadrements chanfreinés']),
+        ],
+        outro: "L’épaisseur des murs protège du froid et de l’humidité océanique.",
+      },
+      {
+        title: 'Toiture & charpente',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Charpente à fermes simples', 'Couverture en ardoise fine', 'Forte pente pour résister aux pluies et au vent', 'Pignons débordants protégeant les murs']),
+        ],
+      },
+      {
+        title: 'Vie rurale & dépendances',
+        icon: 'ph ph-waves',
+        groups: [
+          G(null, ['Étable et logis parfois sous le même toit', 'Grenier accessible par échelle meunière', 'Puits et four à pain à proximité']),
+        ],
+        outro: "La longère organise dans un même volume l’habitat et les activités agricoles.",
+      },
+    ],
+  },
+
+  {
+    id: 'chalet',
+    name: 'Chalet savoyard',
+    region: 'Savoie · Alpes',
+    periode: '1750–1900',
+    procede: 'Bois & pierre',
+    usage: 'Habitat rural montagnard',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Habitat de montagne combinant un soubassement en pierre (étable, cave) et un étage en madriers de bois (logis, grenier à foin). Toiture à faible pente couverte de tavaillons ou de lauzes, dimensionnée pour porter la neige.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Savoie, Haute-Savoie, Alpes'],
+      ['Usage', 'Ferme alpine, habitat rural'],
+      ['Système', 'Soubassement pierre + étage bois'],
+      ['Matériau dominant', 'Épicéa / mélèze & pierre locale'],
+      ['Toiture', 'Tavaillons ou lauzes, faible pente'],
+      ['Particularité', 'Étage bois en madriers empilés (blockbau)'],
+    ],
+    materiaux: ['Mélèze', 'Épicéa', 'Pierre locale', 'Lauze', 'Tavaillon', 'Chaux'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente robuste, couverture en lauzes ou tavaillons, faible pente dimensionnée pour porter la neige.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Soubassement en pierre, étage en madriers de bois assemblés en blockbau (rondins empilés).' },
+      { n: 3, el: 'Planchers', txt: 'Plancher bois posé sur solives, isolant l’étage d’habitation du soubassement en pierre.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs en pierre au rez-de-chaussée (étable, cave), murs en madriers massifs à l’étage.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier extérieur en bois menant au balcon et à l’étage d’habitation.' },
+      { n: 6, el: 'Fondations', txt: 'Soubassement massif en pierre, ancré à flanc de pente, résistant au gel et à la neige.' },
+    ],
+    sections: [
+      {
+        title: 'Soubassement en pierre',
+        icon: 'ph ph-stack',
+        intro: "Le rez-de-chaussée en pierre abrite l’étable et la cave, isolées du froid.",
+        groups: [
+          G(null, ['Murs en moellons de pierre locale', 'Faibles ouvertures, ventilation contrôlée', 'Implantation à flanc de pente pour l’écoulement des eaux']),
+        ],
+      },
+      {
+        title: 'Étage en bois (blockbau)',
+        icon: 'ph ph-tree',
+        intro: "L’étage d’habitation est construit en madriers de bois massif empilés et assemblés aux angles.",
+        groups: [
+          G('Éléments', ['Madriers d’épicéa ou de mélèze équarris', 'Assemblages en queue d’aronde aux angles', 'Balcon en bois filant sur la façade sud']),
+        ],
+        outro: "Le bois massif offre une bonne isolation thermique naturelle.",
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-mountains',
+        groups: [
+          G(null, ['Faible pente pour retenir la neige (isolant naturel)', 'Couverture en lauzes ou tavaillons de bois', 'Larges débords protégeant les façades et le bois de chauffage']),
+        ],
+      },
+      {
+        title: 'Pourquoi cette construction résiste à la montagne',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Bois massif à forte inertie et isolation', 'Toiture dimensionnée pour la surcharge de neige', 'Soubassement pierre protégeant du gel et de l’humidité']),
+        ],
+        outro: "Une architecture entièrement adaptée au climat alpin et aux ressources locales.",
+      },
+    ],
+  },
+
+  {
+    id: 'echoppe',
+    name: 'Échoppe bordelaise',
+    region: 'Bordeaux · Gironde',
+    periode: '1730–1914',
+    procede: 'Pierre calcaire',
+    usage: 'Habitat urbain',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Maison de ville de plain-pied ou à un étage, en pierre calcaire blonde, typique des faubourgs bordelais. Façade étroite sur rue, plan en profondeur desservant les pièces en enfilade, toiture à faible pente en tuile.",
+    identite: [
+      ['Période', '1730–1914'],
+      ['Région', 'Bordeaux, Gironde'],
+      ['Usage', 'Habitat urbain, maison de faubourg'],
+      ['Système', 'Murs porteurs en pierre calcaire'],
+      ['Matériau dominant', 'Pierre calcaire de Bordeaux'],
+      ['Gabarit', 'Plain-pied ou un étage'],
+      ['Toiture', 'Tuile creuse, faible pente'],
+      ['Plan', 'Étroit en façade, profond, pièces en enfilade'],
+    ],
+    materiaux: ['Pierre calcaire', 'Tuile creuse', 'Fer forgé', 'Chêne', 'Mortier de chaux', 'Zinc'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile creuse à faible pente, souvent invisible depuis la rue.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade étroite en pierre calcaire, ferronneries ouvragées, corniche moulurée.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, parquet ou carreaux de terre cuite selon les pièces.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs mitoyens porteurs en pierre calcaire, façade et mur de fond porteurs.' },
+      { n: 5, el: 'Escalier', txt: 'Peu ou pas d’escalier (plain-pied) ; escalier droit simple pour les échoppes à étage.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre calcaire, caves voûtées fréquentes sous le corps avant.' },
+    ],
+    sections: [
+      {
+        title: 'Implantation urbaine',
+        icon: 'ph ph-grid-nine',
+        intro: "L’échoppe s’aligne sur la rue, en bande continue avec ses voisines.",
+        groups: [
+          G(null, ['Parcelle étroite et profonde héritée du parcellaire ancien', 'Façade sur rue, jardin ou cour à l’arrière', 'Mitoyenneté systématique']),
+        ],
+      },
+      {
+        title: 'Murs en pierre calcaire',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre calcaire blonde de la région bordelaise', 'Façade travaillée : bandeaux, corniches, encadrements moulurés', 'Murs mitoyens porteurs, mur de fond porteur']),
+        ],
+        outro: "La pierre calcaire se patine et jaunit caractéristiquement avec le temps.",
+      },
+      {
+        title: 'Toiture & plan intérieur',
+        icon: 'ph ph-house-line',
+        groups: [
+          G('Toiture', ['Faible pente en tuile creuse', 'Peu visible depuis la rue']),
+          G('Plan', ['Pièces en enfilade, de la rue vers le jardin', 'Cour ou jardin arrière fréquent']),
+        ],
+      },
+      {
+        title: 'Ferronnerie & décor',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Garde-corps et grilles en fer forgé travaillé', 'Encadrements de portes et fenêtres sculptés', 'Diversité de styles selon les faubourgs et les époques']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'labourdine',
+    name: 'Maison basque (labourdine)',
+    region: 'Pays basque · Aquitaine',
+    periode: '1600–1850',
+    procede: 'Pans de bois & torchis',
+    usage: 'Habitat rural',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Grande maison rurale basque à ossature bois apparente, façade principale en pignon tourné vers l’est, colombages peints en rouge ou vert. Toit à deux pans très asymétriques abritant logis, étable et grenier sous un même volume.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Pays basque, Labourd'],
+      ['Usage', 'Ferme, habitat rural (maison-étable-grenier)'],
+      ['Système', 'Ossature bois + remplissage'],
+      ['Matériau dominant', 'Chêne & torchis / brique'],
+      ['Toiture', 'Deux pans très asymétriques, tuile'],
+      ['Particularité', 'Pignon principal en façade, orienté à l’est'],
+    ],
+    materiaux: ['Chêne', 'Torchis', 'Brique', 'Tuile', 'Pierre', 'Pigments naturels'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile, deux pans très asymétriques (long pan arrière, court pan avant).' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pignon à colombages apparents peints en rouge ou vert, remplissage brique ou torchis.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois séparant logis, grenier à foin et parfois étable en rez-de-chaussée.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature bois de chêne, poteaux et sablières, soubassement en pierre pour l’étable.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois menant aux chambres et à la galerie côté cour.' },
+      { n: 6, el: 'Fondations', txt: 'Soubassement maçonné en pierre, plus massif côté étable.' },
+    ],
+    sections: [
+      {
+        title: 'Implantation & orientation',
+        icon: 'ph ph-stack',
+        intro: "La façade principale, en pignon, est traditionnellement orientée à l’est, face au soleil levant et dos aux vents dominants.",
+        groups: [
+          G(null, ['Pignon principal en façade sur la cour', 'Orientation est traditionnelle', 'Bâtiment unique regroupant logis, étable et grenier']),
+        ],
+      },
+      {
+        title: 'Ossature bois & colombages',
+        icon: 'ph ph-tree',
+        intro: "Le chêne, matériau noble, structure toute la façade en pans de bois apparents.",
+        groups: [
+          G('Éléments', ['Poteaux et sablières de chêne équarri', 'Croix de Saint-André et écharpes de contreventement', 'Remplissage en torchis ou en brique']),
+          G('Décor', ['Colombages peints en rouge ou vert selon la tradition locale']),
+        ],
+      },
+      {
+        title: 'Toiture asymétrique',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Pan arrière long descendant bas pour protéger l’étable', 'Pan avant court au-dessus de la façade pignon', 'Couverture en tuile, faible débord']),
+        ],
+        outro: "Cette dissymétrie caractéristique distingue la maison basque des autres typologies à colombages.",
+      },
+      {
+        title: 'Organisation intérieure',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Logis, étable et grenier sous un même toit', 'Galerie de bois côté cour pour le séchage du maïs', 'Four à pain souvent accolé au pignon']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'artdeco',
+    name: 'Immeuble Art déco',
+    region: 'Reims · Champagne',
+    periode: '1920–1935',
+    procede: 'Béton & brique',
+    usage: 'Habitat urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Immeuble de la reconstruction d’après-guerre, mêlant structure en béton armé et parements de brique ou de béton mouluré. Façades géométriques, ferronneries stylisées et frises décoratives caractérisent ce style né de la reconstruction de villes comme Reims après 1918.",
+    identite: [
+      ['Période', '1920–1935'],
+      ['Région', 'Reims, villes reconstruites du Nord-Est'],
+      ['Usage', 'Immeuble de rapport, habitat urbain'],
+      ['Système', 'Ossature béton armé + parements'],
+      ['Matériau dominant', 'Béton armé, brique décorative'],
+      ['Style', 'Art déco (géométrie, frises, ferronneries)'],
+      ['Contexte', 'Reconstruction après la Première Guerre mondiale'],
+    ],
+    materiaux: ['Béton armé', 'Brique décorative', 'Grès flammé', 'Fer forgé géométrique', 'Verre', 'Pierre reconstituée'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à faible pente ou terrasse, souvent masquée par un acrotère décoratif.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Ossature béton armé, parements de brique ou béton mouluré, frises géométriques en façade.' },
+      { n: 3, el: 'Planchers', txt: 'Dalles en béton armé, portées plus importantes que la maçonnerie traditionnelle.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Poteaux et voiles en béton armé, murs de façade souvent non porteurs (rideau).' },
+      { n: 5, el: 'Escalier', txt: 'Cage d’escalier avec verrières et ferronneries géométriques caractéristiques du style.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en béton armé, adaptées aux charges plus importantes de la structure béton.' },
+    ],
+    sections: [
+      {
+        title: 'Contexte de la reconstruction',
+        icon: 'ph ph-crane-tower',
+        intro: "Après les destructions de 1914-1918, des villes comme Reims sont rebâties selon des principes modernes.",
+        groups: [
+          G(null, ['Plans d’alignement repensés pour les nouveaux immeubles', 'Emploi généralisé du béton armé, plus rapide à mettre en œuvre', 'Décor Art déco affirmant une identité moderne']),
+        ],
+      },
+      {
+        title: 'Structure béton armé',
+        icon: 'ph ph-building',
+        groups: [
+          G(null, ['Poteaux-poutres et voiles en béton armé', 'Portées plus grandes que la maçonnerie traditionnelle', 'Façades parfois non porteuses, simples parements']),
+        ],
+        outro: "Le béton armé permet des façades plus libres et des ouvertures plus généreuses.",
+      },
+      {
+        title: 'Décor & façade',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Frises géométriques en brique ou pierre reconstituée', 'Ferronneries stylisées (balcons, verrières d’escalier)', 'Céramiques et grès flammés en éléments décoratifs']),
+        ],
+      },
+      {
+        title: 'Planchers & distribution',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Dalles pleines en béton armé', 'Cages d’escalier largement vitrées', 'Appartements traversants plus fréquents qu’au XIXe siècle']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))

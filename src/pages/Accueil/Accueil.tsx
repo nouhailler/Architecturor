@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { SquaresFour, ClockCountdown, CompassTool, ArrowRight } from '@phosphor-icons/react'
+import { TYPOLOGIES } from '../../data/typologies'
 import CarteTypologies from './CarteTypologies'
 import FriseChronologique from './FriseChronologique'
 import styles from './Accueil.module.css'
@@ -46,7 +47,7 @@ export default function Accueil() {
       <div className={styles.section}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>Carte des typologies</h2>
-          <span className={styles.sectionSub}>5 typologies géolocalisées</span>
+          <span className={styles.sectionSub}>{TYPOLOGIES.length} typologies géolocalisées</span>
         </div>
         <CarteTypologies />
       </div>

@@ -10,11 +10,16 @@ const toPercent = (year: number) => `${((year - START) / SPAN) * 100}%`
 const toWidth   = (from: number, to: number) => `${((to - from) / SPAN) * 100}%`
 
 const LANES = [
-  { id: 'panbois',       label: 'Pan de bois',    from: 1450, to: 1650, accent: false },
-  { id: 'mas',           label: 'Mas provençal',  from: 1600, to: 1850, accent: false },
-  { id: 'coron',         label: 'Coron minier',   from: 1825, to: 1914, accent: false },
-  { id: 'haussmann',     label: 'Haussmannien',   from: 1853, to: 1870, accent: true  },
-  { id: 'grandensemble', label: 'Grand ensemble', from: 1953, to: 1975, accent: false },
+  { id: 'panbois',       label: 'Pan de bois',       from: 1450, to: 1650, accent: false },
+  { id: 'labourdine',    label: 'Maison basque',     from: 1600, to: 1850, accent: false },
+  { id: 'mas',           label: 'Mas provençal',     from: 1600, to: 1850, accent: false },
+  { id: 'longere',       label: 'Longère bretonne',  from: 1700, to: 1900, accent: false },
+  { id: 'echoppe',       label: 'Échoppe bordelaise', from: 1730, to: 1914, accent: false },
+  { id: 'chalet',        label: 'Chalet savoyard',   from: 1750, to: 1900, accent: false },
+  { id: 'coron',         label: 'Coron minier',      from: 1825, to: 1914, accent: false },
+  { id: 'haussmann',     label: 'Haussmannien',      from: 1853, to: 1870, accent: true  },
+  { id: 'artdeco',       label: 'Art déco',          from: 1920, to: 1935, accent: false },
+  { id: 'grandensemble', label: 'Grand ensemble',    from: 1953, to: 1975, accent: false },
 ] as const
 
 const TICKS = [1400, 1500, 1600, 1700, 1800, 1900, 2000]
