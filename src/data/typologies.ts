@@ -7429,6 +7429,336 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'grandmagasin',
+    name: 'Grand magasin',
+    region: 'Paris · grandes villes',
+    periode: '1850–1930',
+    procede: 'Structure métallique, verrière, ossature légère',
+    usage: 'Commerce de détail à grande échelle',
+    categorie: 'urbain',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Bâtiment commercial de grande ampleur né au Second Empire avec l’ouverture du Bon Marché en 1852, révolutionnant le commerce de détail par la vente à prix fixe et le libre accès aux marchandises. Structure métallique audacieuse, grand hall central sous verrière, escaliers monumentaux et balcons ouvrant sur plusieurs niveaux de vente.",
+    identite: [
+      ['Période', '1850–1930, essor sous le Second Empire'],
+      ['Région', 'Paris, grandes villes'],
+      ['Usage', 'Commerce de détail à grande échelle'],
+      ['Système', 'Ossature métallique, verrière zénithale'],
+      ['Matériau dominant', 'Fer, verre, pierre en façade'],
+      ['Plan', 'Hall central, galeries superposées en mezzanine'],
+      ['Particularité', 'Escalier monumental et coupole vitrée'],
+    ],
+    materiaux: ['Fer (structure)', 'Verre (verrière et vitrines)', 'Pierre de taille (façade)', 'Fonte (colonnes intérieures)', 'Bois (comptoirs)', 'Cuivre (ornements)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Verrière métallique zénithale ou coupole vitrée, souvent décorée de vitraux ou de ferronneries Art nouveau.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade en pierre de taille largement percée de vitrines, enseigne monumentale signalant le magasin de loin.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers métalliques en mezzanines superposées, balcons ouverts sur le hall central pour maximiser la visibilité des rayons.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature métallique légère libérant de vastes plateaux de vente sans mur porteur intermédiaire.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier monumental central, complété d’ascenseurs et d’escaliers mécaniques dès le début du XXe siècle.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations renforcées pour supporter la charge des marchandises et l’affluence massive de la clientèle.' },
+    ],
+    sections: [
+      {
+        title: 'La révolution du commerce moderne',
+        icon: 'ph ph-buildings',
+        intro: "Avec la vente à prix fixe et le libre accès aux marchandises, le grand magasin invente au XIXe siècle une nouvelle manière de consommer, spectaculaire et démocratisée.",
+        groups: [
+          G(null, ['Vente à prix fixe affiché, rupture avec le marchandage', 'Libre accès aux marchandises pour tous les clients', 'Vitrines spectaculaires renouvelées au fil des saisons']),
+        ],
+      },
+      {
+        title: 'Une prouesse métallique',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Ossature en fer calculée pour de vastes portées', 'Poteaux fins libérant la visibilité sur les rayons', 'Savoir-faire hérité des grandes structures métalliques du siècle']),
+        ],
+      },
+      {
+        title: 'Le hall sous verrière',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Hall central organisant la circulation entre les rayons', 'Lumière zénithale valorisant les marchandises exposées', 'Balcons en mezzanine offrant une vue plongeante sur le hall']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'passagecouvert',
+    name: 'Passage couvert',
+    region: 'Paris · grandes villes',
+    periode: '1800–1860',
+    procede: 'Structure métallique et verrière, galerie piétonne',
+    usage: 'Galerie marchande piétonne couverte',
+    categorie: 'urbain',
+    periodeTags: ['XIXe'],
+    resume:
+      "Galerie piétonne couverte reliant deux rues à travers un îlot, bordée de boutiques et couverte d’une verrière métallique protégeant les promeneurs des intempéries et de la boue des rues non pavées. Typologie parisienne emblématique du début du XIXe siècle, ancêtre direct du grand magasin et du centre commercial.",
+    identite: [
+      ['Période', '1800–1860, apogée sous la Restauration'],
+      ['Région', 'Paris, grandes villes'],
+      ['Usage', 'Galerie marchande piétonne couverte'],
+      ['Système', 'Structure métallique légère, verrière'],
+      ['Matériau dominant', 'Fer et verre'],
+      ['Plan', 'Galerie rectiligne traversant un îlot'],
+      ['Particularité', 'Verrière continue protégeant toute la galerie'],
+    ],
+    materiaux: ['Fer (structure)', 'Verre (verrière)', 'Bois (devantures de boutiques)', 'Marbre ou mosaïque (sol)', 'Laiton (enseignes et ferrures)', 'Pierre (façades d’entrée)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Verrière continue en fer et verre courant sur toute la longueur de la galerie, apportant une lumière zénithale homogène.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades d’entrée en pierre de taille aux deux extrémités, portails souvent ornés de sculptures allégoriques du commerce.' },
+      { n: 3, el: 'Planchers', txt: 'Sol dallé de marbre ou de mosaïque, parfois à motifs géométriques élaborés.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Fine ossature métallique supportant la verrière, boutiques logées dans les immeubles existants de part et d’autre.' },
+      { n: 5, el: 'Escalier', txt: 'Absence d’escalier propre à la galerie, simple traversée piétonne de plain-pied entre deux rues.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations légères, la galerie s’insérant dans le parcellaire existant sans reconstruction lourde.' },
+    ],
+    sections: [
+      {
+        title: 'Une invention parisienne',
+        icon: 'ph ph-buildings',
+        intro: "Apparu à la fin du XVIIIe siècle et généralisé sous la Restauration, le passage couvert offre aux Parisiens une promenade marchande protégée, loin de la boue des rues.",
+        groups: [
+          G(null, ['Apogée entre 1800 et 1850, avant l’haussmannisation', 'Traversée piétonne raccourcissant les trajets urbains', 'Boutiques de luxe et de nouveauté logées sous verrière']),
+        ],
+      },
+      {
+        title: 'Protéger le piéton',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Verrière continue à l’abri de la pluie', 'Sol surélevé et pavé, propre en toute saison', 'Éclairage au gaz puis électrique dès la fin du XIXe siècle']),
+        ],
+      },
+      {
+        title: 'L’ancêtre du grand magasin',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Concentration de boutiques sous un même espace couvert', 'Modèle spatial repris et amplifié par les grands magasins', 'Nombreux passages parisiens aujourd’hui classés monuments historiques']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'marchecouvert',
+    name: 'Marché couvert',
+    region: 'Toutes régions · centres-villes',
+    periode: '1850–1900',
+    procede: 'Structure métallique, halles de fonte',
+    usage: 'Commerce alimentaire de gros et de détail',
+    categorie: 'urbain',
+    periodeTags: ['XIXe'],
+    resume:
+      "Halle urbaine consacrée au commerce alimentaire, reconstruite en fer et fonte sur le modèle des halles Baltard de Paris (1852-1870) pour remplacer les marchés en plein air jugés insalubres. Grande nef métallique largement ouverte et ventilée, éclairage zénithal, étals organisés en rangées.",
+    identite: [
+      ['Période', '1850–1900, modèle des halles Baltard'],
+      ['Région', 'Toutes régions, centres-villes'],
+      ['Usage', 'Commerce alimentaire de gros et de détail'],
+      ['Système', 'Ossature en fonte et fer, nef ouverte'],
+      ['Matériau dominant', 'Fonte et fer'],
+      ['Plan', 'Nef rectangulaire, étals alignés en rangées'],
+      ['Particularité', 'Auvents largement débordants, ventilation naturelle'],
+    ],
+    materiaux: ['Fonte', 'Fer', 'Verre (lanterneaux)', 'Zinc (couverture)', 'Pierre (soubassement)', 'Carrelage (sols et étals)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique légère, lanterneaux zénithaux assurant ventilation et éclairage naturel des étals.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Structure largement ouverte sur l’extérieur, auvents débordants protégeant les étals extérieurs les jours de marché.' },
+      { n: 3, el: 'Planchers', txt: 'Sol carrelé ou pavé, facile à laver, légèrement en pente pour l’évacuation des eaux de lavage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Poteaux de fonte fins et répétitifs supportant une charpente métallique légère, grande portée libre sous la nef.' },
+      { n: 5, el: 'Escalier', txt: 'Généralement de plain-pied, sans étage.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre ou béton, soubassement parfois surélevé pour l’écoulement des eaux.' },
+    ],
+    sections: [
+      {
+        title: 'Le modèle Baltard',
+        icon: 'ph ph-buildings',
+        intro: "Les halles centrales de Paris, reconstruites en fer et fonte par Victor Baltard à partir de 1852, imposent un modèle repris dans toute la France pour moderniser le commerce alimentaire urbain.",
+        groups: [
+          G(null, ['Remplacement des marchés en plein air jugés insalubres', 'Modèle diffusé dans les villes moyennes dès 1860', 'Matériaux industriels affichés sans dissimulation']),
+        ],
+      },
+      {
+        title: 'Une nef ventilée',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Lanterneaux assurant une ventilation naturelle continue', 'Structure ajourée limitant les odeurs et l’humidité stagnante', 'Éclairage zénithal mettant en valeur les étals']),
+        ],
+      },
+      {
+        title: 'Le commerce alimentaire organisé',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Étals alignés par corporation ou type de denrée', 'Circulation fluide entre les rangées pour la clientèle', 'Fonction sociale de rendez-vous hebdomadaire']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'hallemedievale',
+    name: 'Halle médiévale',
+    region: 'Toutes régions · bourgs et petites villes',
+    periode: '1300–1700',
+    procede: 'Charpente bois, piliers de pierre ou de bois',
+    usage: 'Marché couvert communal',
+    categorie: 'urbain',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Marché couvert communal établi sur la place centrale du bourg dès le Moyen Âge, formé d’une vaste charpente de bois reposant sur des piliers de pierre ou de chêne, largement ouverte sur les côtés pour le commerce hebdomadaire. Symbole des franchises et privilèges commerciaux accordés par les seigneurs aux villes marchandes.",
+    identite: [
+      ['Période', 'XIVe–XVIIe siècle'],
+      ['Région', 'Toutes régions, bourgs et petites villes'],
+      ['Usage', 'Marché couvert communal'],
+      ['Système', 'Charpente bois sur piliers de pierre ou de chêne'],
+      ['Matériau dominant', 'Bois (chêne, châtaignier)'],
+      ['Plan', 'Rectangulaire, largement ouvert sur les côtés'],
+      ['Particularité', 'Charpente apparente, souvent classée monument historique'],
+    ],
+    materiaux: ['Chêne', 'Châtaignier', 'Pierre (piliers)', 'Ardoise ou tuile (toiture)', 'Chaux (enduits ponctuels)', 'Fer forgé (ferrures anciennes)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Vaste toiture à longs pans en ardoise ou tuile, charpente de bois massive largement apparente et souvent remarquable.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Aucune façade close : structure ouverte sur les quatre côtés, piliers de pierre ou de bois rythmant le pourtour.' },
+      { n: 3, el: 'Planchers', txt: 'Sol dallé de pierre ou de terre battue, parfois légèrement surélevé par rapport à la place environnante.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Piliers de pierre ou troncs de chêne équarris supportant directement la charpente sans mur porteur.' },
+      { n: 5, el: 'Escalier', txt: 'Généralement de plain-pied, sans étage, à l’exception de quelques halles à grenier.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre sous chaque pilier, structure légère et largement ventilée par nature.' },
+    ],
+    sections: [
+      {
+        title: 'Un privilège commercial',
+        icon: 'ph ph-buildings',
+        intro: "L’édification d’une halle sur la place centrale traduit les franchises commerciales accordées par le seigneur ou le roi, permettant au bourg de tenir marché hebdomadaire.",
+        groups: [
+          G(null, ['Franchise royale ou seigneuriale autorisant le marché', 'Marché hebdomadaire structurant la vie économique locale', 'Emplacement central, cœur symbolique du bourg']),
+        ],
+      },
+      {
+        title: 'Une charpente remarquable',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Charpente de chêne assemblée sans clou ni vis', 'Piliers massifs équarris à la main', 'Savoir-faire de charpente médiévale exceptionnellement conservé']),
+        ],
+      },
+      {
+        title: 'Le cœur battant du bourg',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Marché aux grains, aux draps ou aux volailles selon les jours', 'Lieu d’affichage des décisions communales et royales', 'Usage parfois détourné pour des fêtes ou assemblées publiques']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'centrecommercial',
+    name: 'Centre commercial',
+    region: 'Toutes régions · périphérie urbaine',
+    periode: '1960–2000',
+    procede: 'Béton et structure métallique, grande surface couverte',
+    usage: 'Regroupement de commerces sous un même toit',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Vaste ensemble commercial regroupant sous un même toit boutiques, grande surface alimentaire et espaces de restauration, développé en périphérie des villes françaises à partir des années 1960 sur le modèle nord-américain, favorisé par la généralisation de l’automobile et la création de vastes parkings.",
+    identite: [
+      ['Période', '1960–2000, essor avec la périurbanisation'],
+      ['Région', 'Toutes régions, périphérie urbaine'],
+      ['Usage', 'Regroupement de commerces sous un même toit'],
+      ['Système', 'Ossature béton et charpente métallique'],
+      ['Matériau dominant', 'Béton, acier, verre'],
+      ['Plan', 'Mail central desservant les boutiques'],
+      ['Particularité', 'Vaste parking périphérique, accès automobile privilégié'],
+    ],
+    materiaux: ['Béton', 'Acier (charpente)', 'Verre (verrières et vitrines)', 'Aluminium (menuiseries)', 'Bitume (parkings)', 'Signalétique lumineuse'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique à grande portée couvrant le mail central, souvent complétée de verrières zénithales.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades peu ouvertes sur l’extérieur, l’essentiel de la vie commerciale se déroulant à l’intérieur autour du mail.' },
+      { n: 3, el: 'Planchers', txt: 'Dalle béton de grande portée, sol traité pour un trafic piéton continu et intense.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton et charpente métallique dégageant de vastes plateaux commerciaux sans contrainte structurelle.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers mécaniques et ascenseurs reliant les niveaux commerciaux au parking.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en béton armé dimensionnées pour la charge du bâtiment et du parking souvent aérien ou souterrain.' },
+    ],
+    sections: [
+      {
+        title: 'Le modèle nord-américain',
+        icon: 'ph ph-buildings',
+        intro: "Importé des États-Unis, le centre commercial s’implante en périphérie des villes françaises à partir des années 1960, profitant de terrains disponibles et bon marché en périurbain.",
+        groups: [
+          G(null, ['Implantation en périphérie sur de vastes terrains', 'Locomotive alimentaire tirant l’ensemble des commerces', 'Enseignes nationales et internationales standardisées']),
+        ],
+      },
+      {
+        title: 'Le mail, rue intérieure climatisée',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Rue intérieure couverte et climatisée toute l’année', 'Circulation continue entre les boutiques', 'Éclairage artificiel maîtrisé, indépendant du climat extérieur']),
+        ],
+      },
+      {
+        title: 'L’automobile au centre du projet',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Vaste parking gratuit condition de l’attractivité', 'Accès facilité depuis les axes routiers périphériques', 'Dimensionnement pensé pour l’affluence du samedi']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'grandesurface',
+    name: 'Grande surface',
+    region: 'Toutes régions · périphérie et zones commerciales',
+    periode: '1960–1990',
+    procede: 'Structure métallique simple, grand plateau de vente',
+    usage: 'Vente en libre-service à grande échelle',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Bâtiment commercial de plain-pied au volume simple et économique, conçu pour le libre-service à grande échelle popularisé par l’ouverture du premier hypermarché Carrefour en 1963. Grand plateau de vente sans cloisonnement, façade dominée par l’enseigne et vaste parking d’accès direct.",
+    identite: [
+      ['Période', '1960–1990, essor de l’hypermarché à la française'],
+      ['Région', 'Toutes régions, périphérie et zones commerciales'],
+      ['Usage', 'Vente en libre-service à grande échelle'],
+      ['Système', 'Structure métallique simple, plateau libre'],
+      ['Matériau dominant', 'Bardage métallique, structure acier'],
+      ['Plan', 'Plateau de vente unique, réserves à l’arrière'],
+      ['Particularité', 'Caisses alignées en sortie, parking attenant'],
+    ],
+    materiaux: ['Acier (structure et bardage)', 'Béton (dalle et fondations)', 'Verre (façade d’entrée)', 'Aluminium (menuiseries)', 'Bitume (parking)', 'Signalétique enseigne'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture métallique légère à faible pente, charpente en fermes métalliques dégageant un grand plateau sans poteaux intermédiaires.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade dominée par l’enseigne commerciale, bardage métallique économique, entrée vitrée unique.' },
+      { n: 3, el: 'Planchers', txt: 'Dalle béton unique de grande surface, sol traité pour le passage des chariots et le fort trafic piéton.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Charpente métallique en fermes triangulées permettant une grande portée sans poteau intermédiaire.' },
+      { n: 5, el: 'Escalier', txt: 'Généralement de plain-pied, sans étage, mezzanine technique parfois présente pour les bureaux.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en béton armé légères, adaptées à un bâtiment de plain-pied à faible charge.' },
+    ],
+    sections: [
+      {
+        title: 'L’hypermarché à la française',
+        icon: 'ph ph-buildings',
+        intro: "L’ouverture du premier hypermarché Carrefour à Sainte-Geneviève-des-Bois en 1963 invente un format inédit : tout sous un même toit, à prix discount, avec parking gratuit.",
+        groups: [
+          G(null, ['Format inventé en France en 1963', 'Alimentaire et non-alimentaire réunis sous un même toit', 'Politique de prix bas fondée sur les volumes de vente']),
+        ],
+      },
+      {
+        title: 'Un plateau de vente libre',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Absence de cloisonnement intérieur pour une flexibilité maximale', 'Rayonnages modulables reconfigurés selon les saisons', 'Réserves logistiques directement accolées au plateau de vente']),
+        ],
+      },
+      {
+        title: 'Le triomphe de l’automobile',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Implantation systématique en bordure de voie rapide', 'Parking gratuit dimensionné pour l’affluence de pointe', 'Caisses alignées organisant le flux de sortie de la clientèle']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
