@@ -99,6 +99,13 @@ const MICRO_PINS = [
   { id: 'centraleelectrique', cx: 800, cy: 500, label: 'Centrale électrique' },
   { id: 'silo',             cx: 260, cy: 350, label: 'Silo' },
   { id: 'entrepot',         cx: 240, cy: 280, label: 'Entrepôt' },
+  { id: 'garemonumentale',  cx: 510, cy: 235, label: 'Gare monumentale' },
+  { id: 'garerurale',       cx: 450, cy: 350, label: 'Gare rurale' },
+  { id: 'rotondeferroviaire', cx: 650, cy: 400, label: 'Rotonde ferroviaire' },
+  { id: 'hallemarchandises', cx: 480, cy: 320, label: 'Halle marchandises' },
+  { id: 'chateaudeau',      cx: 420, cy: 340, label: 'Château d’eau SNCF' },
+  { id: 'passageniveau',    cx: 380, cy: 380, label: 'Passage à niveau' },
+  { id: 'depotlocomotives', cx: 620, cy: 380, label: 'Dépôt locomotives' },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */

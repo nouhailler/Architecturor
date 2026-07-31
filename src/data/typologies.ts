@@ -5169,6 +5169,391 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'garemonumentale',
+    name: 'Gare monumentale',
+    region: 'Grandes villes · France',
+    periode: '1840–1900',
+    procede: 'Pierre, métal & verre',
+    usage: 'Terminus ferroviaire urbain',
+    categorie: 'transports',
+    periodeTags: ['XIXe'],
+    resume:
+      "Terminus ferroviaire urbain associant une façade monumentale en pierre, vitrine de prestige de la compagnie exploitante, à une immense halle métallique et vitrée abritant les voies. L’horloge géante, la statuaire allégorique et la marquise de verre affichent la fierté technique du chemin de fer naissant.",
+    identite: [
+      ['Période', 'XIXe siècle'],
+      ['Région', 'Grandes villes, France'],
+      ['Usage', 'Terminus ferroviaire urbain'],
+      ['Système', 'Façade en pierre + halle métallique'],
+      ['Matériau dominant', 'Pierre, métal et verre'],
+      ['Plan', 'Façade sur ville, halle en profondeur'],
+      ['Particularité', 'Horloge monumentale, verrière de la halle'],
+    ],
+    materiaux: ['Pierre de taille', 'Fonte (colonnes)', 'Acier (charpente de halle)', 'Verre (verrière)', 'Bronze (statuaire, horloge)', 'Zinc (couverture)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Verrière métallique en berceau couvrant l’ensemble des voies et quais.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade en pierre de taille, horloge monumentale, statuaire allégorique.' },
+      { n: 3, el: 'Planchers', txt: 'Quais surélevés desservant chaque voie, hall des pas perdus dallé.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Arcs métalliques de grande portée libérant l’espace au-dessus des voies.' },
+      { n: 5, el: 'Escalier', txt: 'Grands escaliers et passerelles reliant hall, quais et passages souterrains.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations massives, sous-sols techniques et voies en contrebas.' },
+    ],
+    sections: [
+      {
+        title: 'Deux architectures en une',
+        icon: 'ph ph-buildings',
+        intro: "La gare monumentale juxtapose une façade urbaine classique et une halle métallique résolument moderne, alors novatrice.",
+        groups: [
+          G(null, ['Façade en pierre dialoguant avec le tissu urbain', 'Halle métallique exprimant la modernité ferroviaire', 'Contraste assumé entre les deux langages architecturaux']),
+        ],
+      },
+      {
+        title: 'La halle métallique',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Arcs métalliques de grande portée sans appui intermédiaire', 'Verrière laissant entrer la lumière naturelle', 'Évacuation de la fumée des locomotives à vapeur']),
+        ],
+      },
+      {
+        title: 'Un symbole de prestige',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Horloge monumentale visible de loin', 'Statuaire allégorique représentant les villes desservies', 'Rivalité architecturale entre grandes compagnies ferroviaires']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'garerurale',
+    name: 'Gare rurale',
+    region: 'France · lignes secondaires',
+    periode: '1850–1930',
+    procede: 'Pierre ou brique',
+    usage: 'Gare de desserte locale',
+    categorie: 'transports',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Petite gare de desserte locale bâtie sur un modèle standardisé par chaque grande compagnie ferroviaire, associant guichet, salle d’attente et logement du chef de gare sous un même toit. Sa marquise protégeant le quai et sa sobriété de brique ou de pierre en font l’un des bâtiments les plus répétés du paysage ferroviaire français.",
+    identite: [
+      ['Période', '1850–1930'],
+      ['Région', 'France, lignes secondaires'],
+      ['Usage', 'Gare de desserte locale'],
+      ['Système', 'Murs porteurs en pierre ou brique'],
+      ['Matériau dominant', 'Pierre ou brique selon les compagnies'],
+      ['Plan', 'Guichet, salle d’attente, logement de fonction'],
+      ['Particularité', 'Modèle type standardisé, marquise de quai'],
+    ],
+    materiaux: ['Pierre ou brique', 'Chaux', 'Bois (charpente, guichet)', 'Fonte (marquise)', 'Ardoise ou tuile', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toit à deux pans, marquise métallique protégeant le quai côté voie.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre ou brique selon le modèle type de la compagnie, sobriété générale.' },
+      { n: 3, el: 'Planchers', txt: 'Rez-de-chaussée pour le service, étage pour le logement du chef de gare.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs simples, plan répété à l’identique sur toute une ligne.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur menant au logement de fonction à l’étage.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles simples en pierre, quai surélevé le long de la voie.' },
+    ],
+    sections: [
+      {
+        title: 'Un modèle type standardisé',
+        icon: 'ph ph-grid-nine',
+        intro: "Chaque compagnie ferroviaire décline ses gares secondaires sur quelques modèles types, répétés à l’identique le long de ses lignes.",
+        groups: [
+          G(null, ['Plan et façade répétés sur toute une ligne', 'Variantes de taille selon l’importance du trafic', 'Signature architecturale propre à chaque compagnie']),
+        ],
+      },
+      {
+        title: 'Guichet, attente et logement',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Guichet et salle d’attente au rez-de-chaussée', 'Logement du chef de gare à l’étage', 'Présence continue du personnel sur le site']),
+        ],
+      },
+      {
+        title: 'La marquise de quai',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Auvent métallique protégeant les voyageurs', 'Structure légère en fonte ou en fer', 'Élément le plus caractéristique de la silhouette de la gare']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'rotondeferroviaire',
+    name: 'Rotonde ferroviaire',
+    region: 'France · dépôts ferroviaires',
+    periode: '1850–1950',
+    procede: 'Brique & métal',
+    usage: 'Remisage et rotation des locomotives',
+    categorie: 'transports',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Bâtiment circulaire ou polygonal organisé autour d’une plaque tournante centrale, permettant de réorienter puis de ranger les locomotives dans des voies rayonnantes individuelles. Le lanterneau vitré au sommet de la toiture évacue la fumée tout en éclairant l’ensemble du dépôt.",
+    identite: [
+      ['Période', '1850–1950'],
+      ['Région', 'France, dépôts ferroviaires'],
+      ['Usage', 'Remisage et rotation des locomotives'],
+      ['Système', 'Plan circulaire autour d’une plaque tournante'],
+      ['Matériau dominant', 'Brique et structure métallique'],
+      ['Toiture', 'Charpente métallique, lanterneau d’évacuation des fumées'],
+      ['Particularité', 'Voies rayonnantes autour du pivot central'],
+    ],
+    materiaux: ['Brique', 'Acier (charpente, plaque tournante)', 'Fonte', 'Verre (lanterneau)', 'Fer', 'Charbon (dépôt attenant)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique circulaire, lanterneau vitré évacuant les fumées.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs de brique percés de portes pour chaque voie rayonnante.' },
+      { n: 3, el: 'Planchers', txt: 'Fosses de visite entre les rails pour l’entretien sous les locomotives.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Charpente métallique rayonnante centrée sur la plaque tournante.' },
+      { n: 5, el: 'Escalier', txt: 'Passerelles techniques desservant les niveaux supérieurs de maintenance.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations circulaires massives supportant la plaque tournante centrale.' },
+    ],
+    sections: [
+      {
+        title: 'La plaque tournante',
+        icon: 'ph ph-crane-tower',
+        intro: "Pivot mécanique central, la plaque tournante aligne la locomotive avec la voie de la rotonde souhaitée, permettant un remisage optimal de l’espace.",
+        groups: [
+          G(null, ['Plateau pivotant recevant une locomotive à la fois', 'Alignement précis avec chaque voie rayonnante', 'Manœuvre motorisée ou manuelle selon les époques']),
+        ],
+      },
+      {
+        title: 'Un plan rayonnant',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Voies individuelles disposées en éventail ou en cercle complet', 'Chaque voie desservant une baie de remisage', 'Optimisation maximale de l’espace au sol']),
+        ],
+      },
+      {
+        title: 'Le lanterneau',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Ouverture zénithale évacuant la fumée des locomotives à vapeur', 'Éclairage naturel de l’ensemble du dépôt', 'Élément architectural le plus visible depuis l’extérieur']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'hallemarchandises',
+    name: 'Halle marchandises',
+    region: 'France · gares de triage',
+    periode: '1850–1950',
+    procede: 'Brique & charpente métallique',
+    usage: 'Stockage et transbordement du fret',
+    categorie: 'transports',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Vaste halle desservie par une voie ferrée pénétrant à l’intérieur même du bâtiment, permettant le transbordement direct entre wagons et quais routiers. Sa structure répétitive et son grand volume dégagé en font aujourd’hui l’un des bâtiments industriels ferroviaires les plus recherchés pour la reconversion.",
+    identite: [
+      ['Période', '1850–1950'],
+      ['Région', 'France, gares de triage'],
+      ['Usage', 'Stockage et transbordement du fret'],
+      ['Système', 'Charpente métallique, voie ferrée intérieure'],
+      ['Matériau dominant', 'Brique et structure métallique'],
+      ['Plan', 'Halle traversante desservie par le rail'],
+      ['Particularité', 'Quais mixtes rail et route'],
+    ],
+    materiaux: ['Brique', 'Acier (charpente)', 'Fonte (poteaux)', 'Bois (quais, planchers)', 'Verre (éclairage zénithal)', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique de grande portée, éclairage zénithal fréquent.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Brique industrielle, grandes portes coulissantes pour le passage des wagons.' },
+      { n: 3, el: 'Planchers', txt: 'Quai surélevé le long de la voie intérieure pour le transbordement direct.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Poteaux métalliques ou de fonte espacés selon la trame des wagons.' },
+      { n: 5, el: 'Escalier', txt: 'Passerelles et rampes reliant quai ferroviaire et quai routier.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations renforcées supportant le poids des marchandises et des wagons.' },
+    ],
+    sections: [
+      {
+        title: 'Le rail entre dans le bâtiment',
+        icon: 'ph ph-crane-tower',
+        intro: "La voie ferrée pénètre directement sous la halle, permettant de charger ou décharger les wagons à l’abri des intempéries.",
+        groups: [
+          G(null, ['Voie ferrée intérieure traversant la halle', 'Quai surélevé au niveau du plancher des wagons', 'Grandes portes coulissantes aux extrémités']),
+        ],
+      },
+      {
+        title: 'Transbordement rail-route',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Quai routier attenant pour les charrettes puis les camions', 'Manutention directe entre les deux modes de transport', 'Bureaux d’expédition et de douane annexes']),
+        ],
+      },
+      {
+        title: 'Une seconde vie',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Grand volume dégagé propice à la reconversion', 'Nombreuses halles transformées en équipements culturels', 'Structure métallique et brique souvent conservée telle quelle']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'chateaudeau',
+    name: 'Château d’eau SNCF',
+    region: 'France · lignes à vapeur',
+    periode: '1850–1950',
+    procede: 'Brique ou béton',
+    usage: 'Alimentation en eau des locomotives à vapeur',
+    categorie: 'transports',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Tour hydraulique élevée le long des lignes à vapeur pour alimenter en eau le tender des locomotives, via une grue hydraulique pivotante placée en bout de quai. Rendus obsolètes par la traction diesel puis électrique, nombre de ces châteaux d’eau ferroviaires subsistent, silencieux témoins de l’ère de la vapeur.",
+    identite: [
+      ['Période', '1850–1950'],
+      ['Région', 'France, lignes à vapeur'],
+      ['Usage', 'Alimentation en eau des locomotives à vapeur'],
+      ['Système', 'Réservoir surélevé sur tour porteuse'],
+      ['Matériau dominant', 'Brique ou béton armé'],
+      ['Plan', 'Tour isolée en bout de quai ou de voie'],
+      ['Particularité', 'Grue hydraulique pivotante d’alimentation'],
+    ],
+    materiaux: ['Brique', 'Béton armé', 'Acier (réservoir, grue hydraulique)', 'Fonte (canalisations)', 'Fer', 'Bois (structures anciennes)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toit conique ou plat couvrant le réservoir d’eau surélevé.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Brique ou béton armé, silhouette verticale reconnaissable de loin.' },
+      { n: 3, el: 'Planchers', txt: 'Absence de niveaux intermédiaires ; fût technique menant au réservoir.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Tour porteuse en brique ou béton soutenant le poids de l’eau stockée.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier ou échelle intérieure menant au réservoir pour l’entretien.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations massives supportant plusieurs dizaines de tonnes d’eau.' },
+    ],
+    sections: [
+      {
+        title: 'La grue hydraulique',
+        icon: 'ph ph-crane-tower',
+        intro: "Un bras pivotant articulé, alimenté par gravité depuis le réservoir, remplit en quelques minutes le tender de la locomotive à l’arrêt.",
+        groups: [
+          G(null, ['Bras orientable venant surplomber le tender', 'Remplissage par gravité depuis le réservoir surélevé', 'Opération rapide pour ne pas retarder la circulation']),
+        ],
+      },
+      {
+        title: 'Un jalon de la ligne',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Implantation régulière selon l’autonomie des locomotives', 'Souvent associé à un point d’eau naturel ou un forage', 'Silhouette verticale servant aussi de repère visuel']),
+        ],
+      },
+      {
+        title: 'Un patrimoine obsolète',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Abandon massif avec la fin de la traction vapeur', 'Nombreux exemplaires démolis ou laissés à l’abandon', 'Quelques châteaux d’eau préservés comme témoins ferroviaires']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'passageniveau',
+    name: 'Passage à niveau',
+    region: 'France · réseau ferré',
+    periode: '1850–1970',
+    procede: 'Brique ou meulière',
+    usage: 'Franchissement routier de la voie ferrée',
+    categorie: 'transports',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Point de croisement entre route et voie ferrée, surveillé depuis une petite maison de garde-barrière au modèle standardisé, où le garde actionnait manuellement les barrières par un système de roue et de câbles. Ce guetteur logé sur place veillait sur le passage, jour et nuit, avant l’automatisation progressive du XXe siècle.",
+    identite: [
+      ['Période', '1850–1970'],
+      ['Région', 'France, réseau ferré'],
+      ['Usage', 'Franchissement routier de la voie ferrée'],
+      ['Système', 'Barrières manuelles à commande mécanique'],
+      ['Matériau dominant', 'Brique ou meulière'],
+      ['Plan', 'Petite maison de garde-barrière standardisée'],
+      ['Particularité', 'Logement de fonction du garde-barrière'],
+    ],
+    materiaux: ['Brique ou meulière', 'Chaux', 'Bois (charpente, barrières)', 'Fonte (mécanisme)', 'Fer', 'Ardoise ou tuile'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toit à deux pans simple, souvent en ardoise ou tuile mécanique.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Brique ou meulière, modèle type répété le long des lignes.' },
+      { n: 3, el: 'Planchers', txt: 'Petit logement de plain-pied ou à un étage pour le garde-barrière.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs simples, volume compact et standardisé.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur simple dans les modèles à étage.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles simples en pierre ou brique, proximité immédiate de la voie.' },
+    ],
+    sections: [
+      {
+        title: 'La maison de garde-barrière',
+        icon: 'ph ph-buildings',
+        intro: "Le garde-barrière habite sur place, en veille permanente, prêt à actionner les barrières au passage de chaque train.",
+        groups: [
+          G(null, ['Logement de fonction attenant au poste de manœuvre', 'Présence continue, y compris de nuit', 'Modèle type répété à l’identique sur tout le réseau']),
+        ],
+      },
+      {
+        title: 'Le mécanisme des barrières',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Roue à manivelle actionnant les barrières par câbles', 'Signalisation sonore et visuelle associée', 'Fermeture anticipée avant l’arrivée du train']),
+        ],
+      },
+      {
+        title: 'Vers l’automatisation',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Automatisation progressive à partir du milieu du XXe siècle', 'Suppression du poste de garde humain', 'Maisons de garde-barrière souvent vendues ou reconverties']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'depotlocomotives',
+    name: 'Dépôt locomotives',
+    region: 'France · dépôts ferroviaires',
+    periode: '1850–1970',
+    procede: 'Métal & brique',
+    usage: 'Entretien et remisage des locomotives',
+    categorie: 'transports',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Grand établissement technique où les locomotives sont entretenues, réparées, approvisionnées en eau et en charbon puis remisées entre deux services. Souvent organisé autour d’une rotonde, le dépôt rassemble ateliers, fosses de visite et voies de garage sur un vaste site attenant à une gare importante.",
+    identite: [
+      ['Période', '1850–1970'],
+      ['Région', 'France, dépôts ferroviaires'],
+      ['Usage', 'Entretien et remisage des locomotives'],
+      ['Système', 'Halles à voies multiples, fosses de visite'],
+      ['Matériau dominant', 'Métal et brique'],
+      ['Plan', 'Voies parallèles ou rayonnantes autour d’un dépôt'],
+      ['Particularité', 'Souvent associé à une rotonde et un château d’eau'],
+    ],
+    materiaux: ['Acier (charpente, rails)', 'Brique', 'Fonte', 'Charbon (approvisionnement)', 'Bois (ateliers)', 'Verre (éclairage zénithal)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique de grande portée, ouvertures pour l’évacuation des fumées.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Brique industrielle, grandes ouvertures pour l’entrée des locomotives.' },
+      { n: 3, el: 'Planchers', txt: 'Fosses de visite entre les rails pour l’entretien sous les machines.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Charpente métallique portant sur des voies multiples parallèles.' },
+      { n: 5, el: 'Escalier', txt: 'Passerelles techniques desservant les ateliers et postes de contrôle.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations renforcées sous les voies et les fosses de visite.' },
+    ],
+    sections: [
+      {
+        title: 'Un site technique complet',
+        icon: 'ph ph-crane-tower',
+        intro: "Le dépôt rassemble tout ce qu’il faut pour préparer une locomotive au service : eau, charbon, entretien mécanique et remisage.",
+        groups: [
+          G(null, ['Fosses de visite pour l’inspection sous les machines', 'Ateliers de réparation mécanique', 'Approvisionnement en eau et en charbon sur site']),
+        ],
+      },
+      {
+        title: 'Voies multiples',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Voies parallèles ou rayonnantes selon la configuration', 'Capacité de remisage pour de nombreuses locomotives', 'Souvent complété par une rotonde attenante']),
+        ],
+      },
+      {
+        title: 'La fin de la vapeur',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Reconversion des dépôts avec l’arrivée du diesel et de l’électrique', 'Certains sites transformés en musées ferroviaires', 'D’autres démolis ou laissés à l’abandon']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
