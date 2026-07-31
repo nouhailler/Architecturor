@@ -3849,6 +3849,666 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'grange',
+    name: 'Grange',
+    region: 'France · fermes et domaines',
+    periode: '1400–1900',
+    procede: 'Bois ou pierre',
+    usage: 'Stockage du foin et des récoltes',
+    categorie: 'agricole',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Vaste bâtiment agricole dédié au stockage du foin, de la paille et des récoltes, organisé autour d’une grande aire centrale où l’on battait autrefois le grain. Sa charpente à très grande portée, souvent sans support intermédiaire, en fait l’un des plus grands volumes de la ferme traditionnelle.",
+    identite: [
+      ['Période', 'XVe–XIXe siècle'],
+      ['Région', 'France, fermes et domaines'],
+      ['Usage', 'Stockage du foin et des récoltes'],
+      ['Système', 'Charpente bois de grande portée'],
+      ['Matériau dominant', 'Bois ou pierre selon les régions'],
+      ['Toiture', 'Tuile, chaume ou ardoise'],
+      ['Particularité', 'Grande porte charretière, aire de battage'],
+    ],
+    materiaux: ['Chêne (charpente)', 'Pierre ou moellons', 'Torchis', 'Tuile ou chaume', 'Fer (ferrures de porte)', 'Paille'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente à très grande portée, souvent sans poteau intermédiaire, couverture tuile ou chaume.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Grande porte charretière permettant l’entrée des charrettes chargées.' },
+      { n: 3, el: 'Planchers', txt: 'Aire de battage en terre battue ou pavée, volume unique ouvert sous comble.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Fermes de charpente reportant les charges sur des murs gouttereaux porteurs.' },
+      { n: 5, el: 'Escalier', txt: 'Échelle meunière ou escalier extérieur menant au fenil supérieur.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles simples en pierre, dallage ou sol en terre battue.' },
+    ],
+    sections: [
+      {
+        title: 'L’aire de battage',
+        icon: 'ph ph-stack',
+        intro: "Avant la mécanisation, le grain était battu au fléau sur une aire centrale dégagée, entre les deux grandes portes de la grange.",
+        groups: [
+          G(null, ['Aire centrale en terre battue ou pavée', 'Deux portes opposées créant un courant d’air pour le vannage', 'Travées latérales pour le stockage des gerbes']),
+        ],
+      },
+      {
+        title: 'Une charpente de grande portée',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Fermes de charpente sans poteau central', 'Volume unique dégagé sous comble', 'Bois de charpente sélectionné pour sa longueur']),
+        ],
+      },
+      {
+        title: 'La porte charretière',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Large ouverture dimensionnée pour les charrettes attelées', 'Vantaux en bois massif à ferrures apparentes', 'Parfois doublée d’une petite porte piétonne']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'bergerie',
+    name: 'Bergerie',
+    region: 'Provence · zones pastorales',
+    periode: '1600–1900',
+    procede: 'Pierre',
+    usage: 'Abri du troupeau ovin',
+    categorie: 'agricole',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Bâtiment pastoral abritant le troupeau ovin, aux murs de pierre épais assurant fraîcheur l’été et protection l’hiver. Longue et basse, ouverte de rares baies, la bergerie surmontée d’un fenil accueille aussi la réserve de fourrage nécessaire à la mauvaise saison.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Provence, zones pastorales'],
+      ['Usage', 'Abri du troupeau ovin'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre calcaire locale'],
+      ['Toiture', 'Tuile canal ou lauze'],
+      ['Particularité', 'Fenil à l’étage, liée à la transhumance'],
+    ],
+    materiaux: ['Pierre calcaire', 'Chaux', 'Bois (charpente)', 'Tuile canal', 'Paille ou foin', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente simple, couverture tuile canal ou lauze, isolant le fenil supérieur.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs épais en pierre, rares ouvertures pour limiter les écarts thermiques.' },
+      { n: 3, el: 'Planchers', txt: 'Sol en terre battue, plancher haut séparant le fenil du troupeau.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs massifs en pierre, volume bas et allongé.' },
+      { n: 5, el: 'Escalier', txt: 'Échelle ou escalier extérieur menant au fenil pour affourager depuis le haut.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, sol légèrement en pente pour l’évacuation du purin.' },
+    ],
+    sections: [
+      {
+        title: 'Un confort thermique pour le troupeau',
+        icon: 'ph ph-wall',
+        intro: "L’épaisseur des murs en pierre protège les bêtes de la chaleur estivale et du froid hivernal sans chauffage.",
+        groups: [
+          G(null, ['Murs très épais à forte inertie thermique', 'Peu d’ouvertures, orientation soignée', 'Volume bas limitant les déperditions']),
+        ],
+      },
+      {
+        title: 'Le fenil au-dessus du troupeau',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Réserve de foin isolant la toiture', 'Trappes pour affourager directement depuis le fenil', 'Accès séparé du niveau des bêtes']),
+        ],
+      },
+      {
+        title: 'La transhumance',
+        icon: 'ph ph-mountains',
+        groups: [
+          G(null, ['Bergerie de plaine occupée l’hiver', 'Estive de montagne l’été', 'Réseau de drailles reliant les deux territoires']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'etable',
+    name: 'Étable',
+    region: 'France · fermes d’élevage',
+    periode: '1600–1950',
+    procede: 'Pierre ou brique',
+    usage: 'Abri du bétail bovin',
+    categorie: 'agricole',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Bâtiment d’élevage bovin organisé autour d’une rangée de mangeoires et d’un couloir de service, souvent adossé au logis pour que la chaleur animale participe au chauffage de la maison. Plafond bas, sol pavé en légère pente et ventilation calculée caractérisent cette architecture utilitaire.",
+    identite: [
+      ['Période', 'XVIIe–XXe siècle'],
+      ['Région', 'France, fermes d’élevage'],
+      ['Usage', 'Abri du bétail bovin'],
+      ['Système', 'Murs porteurs en pierre ou brique'],
+      ['Matériau dominant', 'Pierre ou brique selon les régions'],
+      ['Toiture', 'Tuile ou ardoise'],
+      ['Particularité', 'Souvent accolée au logis (chaleur animale)'],
+    ],
+    materiaux: ['Pierre ou brique', 'Chaux', 'Bois (mangeoires, charpente)', 'Pavé (sol)', 'Tuile ou ardoise', 'Fer (attaches)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente simple, couverture tuile ou ardoise, faible hauteur sous plafond.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre ou brique, ouvertures hautes et étroites pour la ventilation.' },
+      { n: 3, el: 'Planchers', txt: 'Sol pavé en légère pente vers une rigole d’évacuation du purin.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs simples, mangeoires en pierre ou bois le long des travées.' },
+      { n: 5, el: 'Escalier', txt: 'Absence d’étage sur bête ; échelle vers un éventuel fenil attenant.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, sol légèrement surélevé contre l’humidité.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation intérieure',
+        icon: 'ph ph-rows',
+        intro: "L’étable s’organise en travées régulières, chaque bête disposant de sa place le long de la mangeoire commune.",
+        groups: [
+          G(null, ['Mangeoire continue le long des travées', 'Couloir de service pour la distribution du fourrage', 'Rigole d’évacuation du purin en pente douce']),
+        ],
+      },
+      {
+        title: 'La chaleur animale',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Étable souvent accolée ou sous le logis', 'Chaleur des bêtes contribuant au chauffage', 'Plafond bas limitant le volume à chauffer']),
+        ],
+      },
+      {
+        title: 'Ventilation & hygiène',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Ouvertures hautes évitant les courants d’air directs', 'Sol pavé facilitant le nettoyage', 'Réserve de litière en paille à proximité']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'fenil',
+    name: 'Fenil',
+    region: 'France · fermes de montagne et de plaine',
+    periode: '1700–1950',
+    procede: 'Bois',
+    usage: 'Stockage et séchage du foin',
+    categorie: 'agricole',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Grenier à foin ventilé, en essentage de planches à claire-voie laissant circuler l’air pour sécher et conserver le fourrage. Placé à l’étage d’une grange ou d’une étable, ou parfois bâti isolément en montagne, le fenil constitue la réserve vitale pour nourrir le bétail en hiver.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'France, fermes de montagne et de plaine'],
+      ['Usage', 'Stockage et séchage du foin'],
+      ['Système', 'Ossature bois, parois à claire-voie'],
+      ['Matériau dominant', 'Bois (planches d’essentage)'],
+      ['Toiture', 'Bardeaux, tavaillons ou tuile'],
+      ['Particularité', 'Parois ajourées pour la ventilation du foin'],
+    ],
+    materiaux: ['Bois (mélèze, épicéa)', 'Planches d’essentage', 'Fer (ferrures)', 'Tavaillon ou tuile', 'Paille', 'Foin'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente légère, couverture tavaillons, bardeaux ou tuile.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Planches d’essentage à claire-voie, jours calculés pour la ventilation.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher à claire-voie ou simple solivage supportant le foin en vrac.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature bois légère, adaptée au poids réparti du foin engrangé.' },
+      { n: 5, el: 'Escalier', txt: 'Échelle extérieure ou trappe depuis le bâtiment inférieur.' },
+      { n: 6, el: 'Fondations', txt: 'Soubassement en pierre ou pilotis bois isolant le foin de l’humidité du sol.' },
+    ],
+    sections: [
+      {
+        title: 'Un séchage par ventilation naturelle',
+        icon: 'ph ph-tree',
+        intro: "L’essentage à claire-voie laisse circuler l’air à travers la masse de foin, évitant l’échauffement et la moisissure.",
+        groups: [
+          G(null, ['Planches espacées calculées selon le climat local', 'Circulation d’air traversante', 'Orientation tenant compte des vents dominants']),
+        ],
+      },
+      {
+        title: 'Une réserve vitale',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Foin engrangé assurant l’alimentation hivernale du bétail', 'Volume dimensionné selon la taille du troupeau', 'Trappes de distribution vers l’étable inférieure']),
+        ],
+      },
+      {
+        title: 'Ossature légère',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Charpente et parois en bois local', 'Soubassement surélevé contre l’humidité', 'Construction rapide et économique']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'colombier',
+    name: 'Colombier',
+    region: 'France · domaines seigneuriaux',
+    periode: '1400–1789',
+    procede: 'Pierre',
+    usage: 'Élevage de pigeons (droit seigneurial)',
+    categorie: 'agricole',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Tour d’élevage de pigeons réservée avant la Révolution aux seigneurs justiciers, dont la capacité en boulins était réglementairement proportionnée à l’étendue des terres possédées. La fiente de pigeon, engrais précieux (colombine), et la chair de l’oiseau en faisaient un symbole de prestige autant qu’un outil agronomique.",
+    identite: [
+      ['Période', 'XVe–XVIIIe siècle'],
+      ['Région', 'France, domaines seigneuriaux'],
+      ['Usage', 'Élevage de pigeons (droit seigneurial)'],
+      ['Système', 'Tour en pierre, boulins muraux'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Tour ronde ou carrée isolée'],
+      ['Particularité', 'Droit de colombier réservé à la noblesse'],
+    ],
+    materiaux: ['Pierre de taille', 'Chaux', 'Bois (échelle tournante)', 'Tuile ou ardoise', 'Terre cuite (boulins)', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toit conique ou pyramidal, lanternon d’envol pour les pigeons.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre de taille lisse, bandeau anti-rongeurs empêchant l’accès aux prédateurs.' },
+      { n: 3, el: 'Planchers', txt: 'Absence de plancher intermédiaire ; volume unique tapissé de boulins.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre percés de centaines de boulins (nichoirs).' },
+      { n: 5, el: 'Escalier', txt: 'Échelle tournante centrale (potence) permettant la collecte des œufs et de la colombine.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, tour isolée au centre des terres du domaine.' },
+    ],
+    sections: [
+      {
+        title: 'Un privilège seigneurial',
+        icon: 'ph ph-shield-check',
+        intro: "Sous l’Ancien Régime, seuls les seigneurs justiciers disposaient du droit de colombier, dont la taille signalait l’étendue de leurs terres.",
+        groups: [
+          G(null, ['Capacité en boulins proportionnée à la superficie du domaine', 'Symbole de statut social et de pouvoir', 'Droit aboli à la Révolution en 1789']),
+        ],
+      },
+      {
+        title: 'Les boulins',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Centaines de niches individuelles en pierre ou terre cuite', 'Bandeau lisse anti-rongeurs à mi-hauteur', 'Lanternon sommital pour l’envol des pigeons']),
+        ],
+      },
+      {
+        title: 'Un outil agronomique',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Colombine, engrais azoté très recherché', 'Chair de pigeonneau pour la table seigneuriale', 'Échelle tournante facilitant la collecte sans déranger l’ensemble des nichoirs']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'pigeonnier',
+    name: 'Pigeonnier',
+    region: 'Quercy & Sud-Ouest · France',
+    periode: '1600–1900',
+    procede: 'Pierre ou pans de bois',
+    usage: 'Élevage de pigeons (colombine)',
+    categorie: 'agricole',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Petit bâtiment d’élevage de pigeons plus modeste que le colombier seigneurial, intégré à la ferme ou bâti sur pilotis pour protéger les nichoirs des rongeurs. Sa démocratisation après l’abolition des droits féodaux en 1789 en fait un marqueur très répandu du paysage rural du Sud-Ouest.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Quercy et Sud-Ouest, France'],
+      ['Usage', 'Élevage de pigeons (colombine)'],
+      ['Système', 'Pierre, pans de bois ou pilotis'],
+      ['Matériau dominant', 'Pierre ou pans de bois'],
+      ['Plan', 'Tour, pavillon ou pigeonnier-porche'],
+      ['Particularité', 'Souvent sur pilotis (protection anti-rongeurs)'],
+    ],
+    materiaux: ['Pierre locale', 'Chêne (pilotis, pans de bois)', 'Torchis', 'Tuile canal', 'Terre cuite (boulins)', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toit pentu, tuile canal, génoise en corniche protégeant les nichoirs.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre ou pans de bois, façade percée de boulins ou d’un simple pigeonnier intérieur.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher unique surélevé sur pilotis dans les modèles les plus caractéristiques.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Pilotis de chêne ou murs de pierre isolant le pigeonnier du sol.' },
+      { n: 5, el: 'Escalier', txt: 'Échelle amovible ou escalier extérieur, retiré pour dissuader les rongeurs.' },
+      { n: 6, el: 'Fondations', txt: 'Champignons de pierre au sommet des pilotis, infranchissables par les rats.' },
+    ],
+    sections: [
+      {
+        title: 'Le pigeonnier sur pilotis',
+        icon: 'ph ph-stack',
+        intro: "Élevé sur quatre ou six piliers coiffés d’un « champignon » de pierre, le pigeonnier isole totalement ses nichoirs des prédateurs terrestres.",
+        groups: [
+          G(null, ['Pilotis de pierre ou de bois surélevant la cabane', 'Champignons anti-rongeurs au sommet des piliers', 'Volume unique entièrement dédié aux nichoirs']),
+        ],
+      },
+      {
+        title: 'Une démocratisation post-révolutionnaire',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Droit de colombier aboli en 1789', 'Multiplication des petits pigeonniers paysans', 'Formes variées : tour, pavillon, pigeonnier-porche']),
+        ],
+      },
+      {
+        title: 'La colombine',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Fiente de pigeon utilisée comme engrais et poudre à canon', 'Ressource complémentaire pour l’exploitation familiale', 'Collecte régulière sous les nichoirs']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'pressoir',
+    name: 'Pressoir',
+    region: 'France · vignobles et vergers',
+    periode: '1500–1900',
+    procede: 'Pierre & bois',
+    usage: 'Pressurage du raisin, de la pomme ou de l’olive',
+    categorie: 'agricole',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Bâtiment abritant le mécanisme de pressurage, dominé par l’imposante vis de bois ou de pierre du pressoir à levier ou à vis, dimensionné selon qu’il traite le raisin, la pomme à cidre ou l’olive. Cave voûtée attenante pour la fermentation ou le stockage complète cet outil collectif ou seigneurial.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'France, vignobles et vergers'],
+      ['Usage', 'Pressurage du raisin, de la pomme ou de l’olive'],
+      ['Système', 'Charpente porteuse du mécanisme de pressurage'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Toiture', 'Tuile ou ardoise, forte charpente'],
+      ['Particularité', 'Vis de pressoir monumentale en bois ou pierre'],
+    ],
+    materiaux: ['Pierre', 'Chêne (vis, cuve)', 'Chaux', 'Tuile ou ardoise', 'Fer (ferrures)', 'Bois (charpente renforcée)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente renforcée soutenant les efforts du mécanisme de pressurage.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs épais en pierre, grande porte pour l’entrée des charrettes de récolte.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage de pierre en légère pente pour l’écoulement du moût ou du jus.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Charpente et murs dimensionnés pour encaisser la pression du mécanisme.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier vers la cave voûtée de fermentation ou de stockage des fûts.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations massives en pierre, cave voûtée fréquente en sous-sol.' },
+    ],
+    sections: [
+      {
+        title: 'La vis du pressoir',
+        icon: 'ph ph-hammer',
+        intro: "Le pressoir à vis, souvent taillé dans un tronc de chêne unique, exerce une pression progressive sur la cage de bois contenant fruits ou raisins.",
+        groups: [
+          G(null, ['Vis monumentale en bois ou en pierre', 'Cage de bois contenant le marc à presser', 'Écoulement du jus par des rigoles taillées dans le sol']),
+        ],
+      },
+      {
+        title: 'Un bâtiment aux usages multiples',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Pressoir à vin, à cidre ou à huile selon les régions', 'Souvent bien collectif ou seigneurial (banalité)', 'Utilisation saisonnière concentrée sur les vendanges ou la récolte']),
+        ],
+      },
+      {
+        title: 'La cave attenante',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Cave voûtée pour la fermentation du moût', 'Stockage des fûts ou des jarres', 'Fraîcheur et obscurité propices à la conservation']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'fourapain',
+    name: 'Four à pain',
+    region: 'France · fermes et hameaux',
+    periode: '1500–1900',
+    procede: 'Brique & pierre',
+    usage: 'Cuisson du pain communautaire ou familial',
+    categorie: 'agricole',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Petite construction voûtée en brique réfractaire ou pierre, chauffée par combustion directe de bois avant d’y enfourner le pain sur la sole encore chaude. Attenant à la maison ou partagé par un hameau, le four à pain rythmait la vie collective au fil des fournées hebdomadaires.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'France, fermes et hameaux'],
+      ['Usage', 'Cuisson du pain communautaire ou familial'],
+      ['Système', 'Voûte en brique réfractaire'],
+      ['Matériau dominant', 'Brique et pierre'],
+      ['Toiture', 'Petit toit protecteur en tuile ou pierre'],
+      ['Particularité', 'Sole chauffée par combustion directe de bois'],
+    ],
+    materiaux: ['Brique réfractaire', 'Pierre', 'Argile (sole)', 'Bois de chauffe', 'Chaux', 'Fer (porte du four)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Petit auvent ou toiture en pierre protégeant le four des intempéries.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Maçonnerie de brique ou pierre, gueule d’enfournement en façade.' },
+      { n: 3, el: 'Planchers', txt: 'Sole en brique réfractaire ou terre cuite, chauffée directement par le feu.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Voûte en berceau ou en coupole de brique réfractaire.' },
+      { n: 5, el: 'Escalier', txt: 'Sans étage ; simple accès de plain-pied à la gueule du four.' },
+      { n: 6, el: 'Fondations', txt: 'Socle maçonné surélevant la sole du four du sol humide.' },
+    ],
+    sections: [
+      {
+        title: 'Le principe de la chaleur tournante',
+        icon: 'ph ph-house-line',
+        intro: "Le bois brûle directement sur la sole ; une fois les braises retirées, la chaleur accumulée dans la voûte cuit le pain enfourné.",
+        groups: [
+          G(null, ['Chauffe au bois directement sur la sole', 'Braises retirées avant l’enfournement du pain', 'Voûte en brique réfractaire accumulant la chaleur']),
+        ],
+      },
+      {
+        title: 'Un usage communautaire',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Four banal partagé par plusieurs foyers d’un hameau', 'Tour de fournée organisé collectivement', 'Four privé attenant à la maison pour les fermes isolées']),
+        ],
+      },
+      {
+        title: 'Construction voûtée',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Voûte en berceau ou en coupole selon les modèles', 'Brique réfractaire résistant aux hautes températures', 'Isolation en terre ou sable au-dessus de la voûte']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'moulinvent',
+    name: 'Moulin à vent',
+    region: 'Plaines & littoral · France',
+    periode: '1200–1900',
+    procede: 'Pierre & bois',
+    usage: 'Mouture du grain par force éolienne',
+    categorie: 'agricole',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Machine à moudre le grain actionnée par le vent, sous forme de moulin-tour en pierre à calotte pivotante ou de moulin-cavier entièrement orientable sur son pivot. Ailes toilées, mécanisme d’engrenages en bois et meules de pierre composent un ensemble technique raffiné, autrefois omniprésent dans les paysages de plaine.",
+    identite: [
+      ['Période', 'XIIIe–XIXe siècle'],
+      ['Région', 'Plaines et littoral, France'],
+      ['Usage', 'Mouture du grain par force éolienne'],
+      ['Système', 'Ailes toilées et mécanisme d’engrenages bois'],
+      ['Matériau dominant', 'Pierre (tour) et bois (mécanisme)'],
+      ['Toiture', 'Calotte pivotante orientée face au vent'],
+      ['Particularité', 'Meules de pierre entraînées par le vent'],
+    ],
+    materiaux: ['Pierre (tour)', 'Chêne (mécanisme, ailes)', 'Toile (ailes)', 'Meules de pierre', 'Fer (axes, engrenages)', 'Chaux'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Calotte ou toiture pivotante orientant les ailes face au vent dominant.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Tour de pierre conique, ouvertures réduites pour la solidité de la structure.' },
+      { n: 3, el: 'Planchers', txt: 'Plusieurs niveaux desservant le mécanisme, les meules et le stockage du grain.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Tour de pierre porteuse ou fût de bois pivotant (moulin-cavier).' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois desservant les niveaux du mécanisme.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations massives en pierre, pivot central pour les moulins caviers.' },
+    ],
+    sections: [
+      {
+        title: 'S’orienter face au vent',
+        icon: 'ph ph-mountains',
+        intro: "Pour capter le vent quelle que soit sa direction, le moulin doit pouvoir pivoter, soit par sa calotte, soit dans son ensemble.",
+        groups: [
+          G(null, ['Moulin-tour à calotte pivotante sur corps fixe', 'Moulin-cavier pivotant entièrement sur un pivot central', 'Queue de manœuvre pour orienter manuellement les ailes']),
+        ],
+      },
+      {
+        title: 'Le mécanisme de mouture',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Ailes toilées transmettant leur rotation à un arbre moteur', 'Engrenages de bois démultipliant la vitesse vers les meules', 'Meules de pierre dormante et tournante broyant le grain']),
+        ],
+      },
+      {
+        title: 'Un paysage disparu',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Des milliers de moulins jalonnaient les plaines céréalières', 'Déclin rapide avec la minoterie industrielle du XIXe siècle', 'Nombreux moulins restaurés aujourd’hui à vocation touristique']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'moulineau',
+    name: 'Moulin à eau',
+    region: 'Vallées fluviales · France',
+    periode: '1000–1900',
+    procede: 'Pierre & bois',
+    usage: 'Mouture du grain par force hydraulique',
+    categorie: 'agricole',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Bâtiment de meunerie implanté sur un cours d’eau, dont la roue à aubes ou à augets, actionnée par un bief dérivé de la rivière, entraîne les meules par un jeu d’engrenages. Antérieur au moulin à vent, le moulin à eau a aussi actionné forges, scieries et foulons à mesure que l’usage de la force hydraulique s’est diversifié.",
+    identite: [
+      ['Période', 'XIe–XIXe siècle'],
+      ['Région', 'Vallées fluviales, France'],
+      ['Usage', 'Mouture du grain par force hydraulique'],
+      ['Système', 'Roue à aubes ou à augets'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Toiture', 'Charpente bois, tuile ou ardoise'],
+      ['Particularité', 'Bief dérivant l’eau de la rivière vers la roue'],
+    ],
+    materiaux: ['Pierre', 'Chêne (roue, mécanisme)', 'Meules de pierre', 'Fer (axes, vannes)', 'Chaux', 'Tuile ou ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile ou ardoise, abritant le mécanisme des meules.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs de pierre en bord de rivière, roue à aubes en saillie ou logée sous le bâtiment.' },
+      { n: 3, el: 'Planchers', txt: 'Niveaux desservant meules, trémies et sacs de farine.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre, arbre moteur transmettant la rotation de la roue aux meules.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois entre les niveaux du moulin.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre ancrées dans le lit ou la berge, vannes réglant le débit du bief.' },
+    ],
+    sections: [
+      {
+        title: 'Le bief et la roue',
+        icon: 'ph ph-waves',
+        intro: "Un canal dérivé de la rivière, le bief, concentre le débit et la chute d’eau nécessaires pour entraîner la roue avec suffisamment de force.",
+        groups: [
+          G(null, ['Bief de dérivation captant l’eau en amont', 'Roue à aubes (eau de surface) ou à augets (chute)', 'Vannes réglant le débit selon les saisons']),
+        ],
+      },
+      {
+        title: 'La transmission mécanique',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Arbre moteur transmettant la rotation de la roue', 'Engrenages de bois puis de fer démultipliant la vitesse', 'Meules dormante et tournante broyant le grain']),
+        ],
+      },
+      {
+        title: 'Au-delà de la farine',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Moulins à foulon pour le traitement des draps', 'Forges hydrauliques actionnant des martinets', 'Scieries hydrauliques dans les régions boisées']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'sechoirtabac',
+    name: 'Séchoir à tabac',
+    region: 'Dordogne & Garonne · France',
+    periode: '1800–1950',
+    procede: 'Bois (essentage)',
+    usage: 'Séchage des feuilles de tabac',
+    categorie: 'agricole',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Haut bâtiment à ossature bois dont les parois en planches mobiles s’ouvrent et se referment pour régler précisément la ventilation nécessaire au séchage lent des feuilles de tabac suspendues en hauteur. Sa silhouette élancée et son essentage caractéristique marquent encore les paysages du Sud-Ouest tabacole.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle'],
+      ['Région', 'Dordogne et Garonne, France'],
+      ['Usage', 'Séchage des feuilles de tabac'],
+      ['Système', 'Ossature bois, parois mobiles'],
+      ['Matériau dominant', 'Bois (essentage réglable)'],
+      ['Toiture', 'Tuile ou fibrociment, charpente élevée'],
+      ['Particularité', 'Lattes pivotantes réglant la ventilation'],
+    ],
+    materiaux: ['Bois (ossature, lattes)', 'Fer (charnières, tringles)', 'Tuile ou fibrociment', 'Fil (suspension des feuilles)', 'Pierre (soubassement)', 'Peinture protectrice'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente haute et légère, couverture tuile ou fibrociment selon les époques.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Lattes de bois pivotantes réglables, actionnées par des tringles depuis le sol.' },
+      { n: 3, el: 'Planchers', txt: 'Plusieurs niveaux de perches horizontales pour suspendre les feuilles enfilées.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature bois élevée, charpente légère mais très haute.' },
+      { n: 5, el: 'Escalier', txt: 'Échelles intérieures desservant les différents niveaux de perches.' },
+      { n: 6, el: 'Fondations', txt: 'Soubassement en pierre ou plots béton, structure bois surélevée du sol.' },
+    ],
+    sections: [
+      {
+        title: 'Un séchage finement réglé',
+        icon: 'ph ph-columns',
+        intro: "L’ouverture des lattes se règle selon l’hygrométrie et le vent pour obtenir un séchage lent et homogène des feuilles.",
+        groups: [
+          G(null, ['Lattes pivotantes actionnées par tringles depuis le sol', 'Réglage fin selon la météo du jour', 'Séchage pouvant durer plusieurs semaines']),
+        ],
+      },
+      {
+        title: 'Suspendre la récolte',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Feuilles enfilées sur des ficelles ou des lattes', 'Perches disposées sur plusieurs niveaux', 'Volume intérieur entièrement dédié au séchage']),
+        ],
+      },
+      {
+        title: 'Un paysage agricole du Sud-Ouest',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Culture du tabac développée en vallée de la Garonne et de la Dordogne', 'Silhouette élancée reconnaissable de loin', 'Nombreux séchoirs aujourd’hui reconvertis ou à l’abandon']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'hangaragricole',
+    name: 'Hangar agricole',
+    region: 'France · exploitations agricoles',
+    periode: '1950–2020',
+    procede: 'Acier & béton',
+    usage: 'Stockage de matériel et de récoltes',
+    categorie: 'agricole',
+    periodeTags: ['XXe'],
+    resume:
+      "Grand volume industrialisé à ossature métallique ou en béton, dimensionné pour abriter machines agricoles, fourrage en grande quantité ou récoltes en vrac. Sa portée dégagée sans poteau intermédiaire et sa rapidité de montage traduisent la mécanisation et l’agrandissement des exploitations depuis l’après-guerre.",
+    identite: [
+      ['Période', '1950–2020'],
+      ['Région', 'France, exploitations agricoles'],
+      ['Usage', 'Stockage de matériel et de récoltes'],
+      ['Système', 'Ossature métallique ou portiques béton'],
+      ['Matériau dominant', 'Acier et béton'],
+      ['Toiture', 'Bac acier ou fibrociment'],
+      ['Particularité', 'Grande portée dégagée, montage rapide'],
+    ],
+    materiaux: ['Acier (ossature)', 'Béton (dalle, plots)', 'Bac acier (bardage et toiture)', 'Polycarbonate (éclairage zénithal)', 'Bois (parfois en structure secondaire)', 'Peinture anticorrosion'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique légère, couverture en bac acier ou fibrociment.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Bardage en bac acier, larges ouvertures pour l’entrée des engins agricoles.' },
+      { n: 3, el: 'Planchers', txt: 'Dalle béton au sol, résistante au passage répété des engins lourds.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Portiques métalliques ou béton offrant une portée dégagée sans poteau intermédiaire.' },
+      { n: 5, el: 'Escalier', txt: 'Généralement de plain-pied ; mezzanine technique possible dans les modèles récents.' },
+      { n: 6, el: 'Fondations', txt: 'Plots béton individuels sous chaque poteau de la structure métallique.' },
+    ],
+    sections: [
+      {
+        title: 'Une structure industrialisée',
+        icon: 'ph ph-crane-tower',
+        intro: "Fabriqués en série et montés rapidement sur le terrain, ces hangars accompagnent la mécanisation croissante des exploitations.",
+        groups: [
+          G(null, ['Portiques métalliques préfabriqués en usine', 'Montage rapide sur plots béton', 'Portée dégagée pour manœuvrer de gros engins']),
+        ],
+      },
+      {
+        title: 'Des usages multiples',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Remisage du matériel agricole motorisé', 'Stockage de fourrage ou de céréales en vrac', 'Parfois converti en bâtiment d’élevage hors-sol']),
+        ],
+      },
+      {
+        title: 'Sobriété fonctionnelle',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Aucun décor, primauté donnée à la fonction', 'Éclairage zénithal en polycarbonate translucide', 'Entretien réduit grâce aux matériaux industriels']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
