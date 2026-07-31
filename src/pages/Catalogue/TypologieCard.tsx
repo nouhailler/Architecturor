@@ -1,0 +1,36 @@
+import { useNavigate } from 'react-router-dom'
+import type { Typologie } from '../../data/typologies'
+import styles from './TypologieCard.module.css'
+
+export default function TypologieCard({ typologie: t }: { typologie: Typologie }) {
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate(`/typologie/${t.id}`)
+    window.scrollTo(0, 0)
+  }
+
+  return (
+    <button className={styles.card} onClick={handleClick}>
+      {/* TODO: remplacer ce placeholder par <img src="..." alt={t.name} /> */}
+      <div className={styles.thumb}>
+        <i className="ph ph-image" style={{ fontSize: 26, color: 'var(--color-neutral-600)' }} />
+        <span className={styles.periodeBadge}>{t.periode}</span>
+      </div>
+
+      <div className={styles.body}>
+        <div>
+          <div className={styles.name}>{t.name}</div>
+          <div className={styles.region}>
+            <i className="ph ph-map-pin" style={{ fontSize: 12 }} /> {t.region}
+          </div>
+        </div>
+        <p className={styles.resume}>{t.resume}</p>
+        <div className={styles.tags}>
+          <span className="tag tag-accent">{t.procede}</span>
+          <span className="tag tag-neutral">{t.usage}</span>
+        </div>
+      </div>
+    </button>
+  )
+}

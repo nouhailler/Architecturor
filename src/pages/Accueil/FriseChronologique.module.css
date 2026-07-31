@@ -1,0 +1,84 @@
+.surface {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 22px 26px 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 0 16px;
+}
+
+.axis {
+  position: relative;
+  height: 20px;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.tick {
+  position: absolute;
+  top: 0;
+  font-size: 11px;
+  color: var(--color-neutral-600);
+  transform: translateX(-50%);
+}
+.tick:last-child {
+  transform: none;
+}
+
+.laneLabel {
+  font-size: 13px;
+  padding: 11px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  color: var(--color-neutral-200);
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+.track {
+  position: relative;
+  height: 42px;
+  cursor: pointer;
+}
+
+.trackBorder {
+  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 5%, transparent);
+}
+
+.bar {
+  position: absolute;
+  top: 9px;
+  height: 24px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 11.5px;
+  white-space: nowrap;
+  transition: background 0.14s ease;
+}
+
+.barMuted {
+  background: color-mix(in srgb, var(--color-accent) 26%, transparent);
+  border: 1px solid var(--color-accent-700);
+  color: var(--color-accent-100);
+}
+
+.track:hover .barMuted {
+  background: color-mix(in srgb, var(--color-accent) 40%, transparent);
+}
+
+.barAccent {
+  background: var(--color-accent);
+  border: 1px solid var(--color-accent-400);
+  color: var(--color-bg);
+}
+
+.track:hover .barAccent {
+  filter: brightness(1.1);
+}

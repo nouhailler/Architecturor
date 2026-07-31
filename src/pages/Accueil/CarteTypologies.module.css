@@ -1,0 +1,91 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.mapCard {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 10px;
+  position: relative;
+  min-height: 360px;
+}
+
+.pin {
+  transition: filter 0.18s ease;
+}
+.pin:hover {
+  filter: brightness(1.35);
+}
+.pin:focus-visible {
+  outline: 2px solid var(--color-accent);
+}
+
+.mapLegend {
+  position: absolute;
+  left: 18px;
+  bottom: 14px;
+  font-size: 11px;
+  color: var(--color-neutral-600);
+  pointer-events: none;
+}
+
+.legendList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legendItem {
+  cursor: pointer;
+  background: var(--color-surface);
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  padding: 12px 14px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-align: left;
+  transition: background 0.14s ease;
+  width: 100%;
+}
+
+.legendItem:hover {
+  background: var(--color-neutral-900);
+}
+
+.legendItem:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  flex-shrink: 0;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-accent) 22%, transparent);
+}
+
+.legendInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.legendName {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.legendSub {
+  font-size: 11.5px;
+  color: var(--color-neutral-500);
+  margin-top: 1px;
+}

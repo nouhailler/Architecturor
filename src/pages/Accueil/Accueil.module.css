@@ -1,0 +1,79 @@
+.heroWrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 52px 24px 30px;
+}
+
+.hero {
+  max-width: 720px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent-300);
+  border: 1px solid var(--color-accent-800);
+  padding: 4px 11px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.h1 {
+  font-size: 46px;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  margin: 0 0 16px;
+  color: var(--color-text);
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-neutral-300);
+  max-width: 600px;
+  margin: 0;
+}
+
+.ctas {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px 24px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: 15px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-neutral-400);
+  font-weight: 500;
+  margin: 0;
+}
+
+.sectionSub {
+  font-size: 12px;
+  color: var(--color-neutral-600);
+}
+
+.friseCta {
+  text-align: center;
+  padding: 26px 0 46px;
+}
