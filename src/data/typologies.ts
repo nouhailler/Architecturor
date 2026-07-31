@@ -2035,6 +2035,720 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisondeville18e',
+    name: 'Maison de ville XVIIIe',
+    region: 'Centres historiques · France',
+    periode: '1700–1800',
+    procede: 'Pierre',
+    usage: 'Maison de ville, habitat urbain',
+    categorie: 'urbain',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Maison de ville classique du XVIIIe siècle, à la façade ordonnancée en pierre de taille, implantée entre cour et jardin selon le modèle classique français. Toiture à la Mansart en ardoise, fenêtres à petits carreaux et ferronneries élégantes composent une architecture urbaine sobre et régulière.",
+    identite: [
+      ['Période', 'XVIIIe siècle'],
+      ['Région', 'Centres historiques, France'],
+      ['Usage', 'Maison de ville, habitat urbain'],
+      ['Système', 'Murs porteurs en pierre de taille'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Toiture', 'Ardoise à la Mansart'],
+      ['Plan', 'Entre cour et jardin'],
+    ],
+    materiaux: ['Pierre de taille', 'Chaux', 'Chêne', 'Ardoise', 'Fer forgé', 'Verre'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture ardoise, brisis à la Mansart et lucarnes régulières.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre de taille appareillée, façade ordonnancée, ferronneries de balcon.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, parquet dans les pièces de réception.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre de taille, plan classique entre cour et jardin.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier d’honneur en pierre, rampe en fer forgé.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, caves voûtées fréquentes.' },
+    ],
+    sections: [
+      {
+        title: 'Composition classique de la façade',
+        icon: 'ph ph-columns',
+        intro: "La façade obéit à une ordonnance très codifiée : travées régulières, alignement strict des baies, corniche filante.",
+        groups: [
+          G(null, ['Travées régulières et symétriques', 'Encadrements de baies en pierre de taille', 'Corniche filante en couronnement']),
+        ],
+      },
+      {
+        title: 'Murs en pierre de taille',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre de taille calcaire appareillée', 'Chaînages harmoniques en façade', 'Enduit pierre apparente selon les villes']),
+        ],
+      },
+      {
+        title: 'Toiture à la Mansart',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Brisis et terrasson caractéristiques', 'Couverture en ardoise', 'Lucarnes à fronton régulièrement disposées']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'hotelparticulier',
+    name: 'Hôtel particulier',
+    region: 'Grandes villes · France',
+    periode: '1600–1900',
+    procede: 'Pierre',
+    usage: 'Hôtel particulier, résidence urbaine',
+    categorie: 'urbain',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Vaste demeure urbaine aristocratique ou bourgeoise organisée entre cour d’honneur et jardin, avec corps de logis principal, ailes en retour et portail cocher monumental. Symbole de prestige social, l’hôtel particulier réunit réception, habitation et communs dans une composition classique très codifiée.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Grandes villes, France'],
+      ['Usage', 'Hôtel particulier, résidence urbaine'],
+      ['Système', 'Murs porteurs en pierre de taille'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Cour d’honneur + jardin'],
+      ['Particularité', 'Portail cocher monumental'],
+    ],
+    materiaux: ['Pierre de taille', 'Chaux', 'Chêne', 'Ardoise', 'Fer forgé', 'Marbre'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois complexe, couverture ardoise, combles à la Mansart fréquents.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre de taille sur cour, décor sculpté, portail cocher monumental.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, parquets et plafonds ornés dans les pièces de réception.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre de taille, corps de logis et ailes en retour.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier d’honneur monumental en pierre, rampe en fer forgé ouvragée.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, caves voûtées étendues sous la cour.' },
+    ],
+    sections: [
+      {
+        title: 'Entre cour et jardin',
+        icon: 'ph ph-grid-nine',
+        intro: "Le plan classique organise la parcelle entre une cour d’honneur côté rue et un jardin à l’arrière.",
+        groups: [
+          G(null, ['Cour d’honneur desservie par un portail cocher', 'Corps de logis principal en fond de cour', 'Ailes en retour abritant communs et écuries']),
+        ],
+      },
+      {
+        title: 'Murs en pierre de taille',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre de taille finement appareillée', 'Décor sculpté : frontons, refends, mascarons', 'Façade sur jardin souvent plus sobre']),
+        ],
+      },
+      {
+        title: 'Escalier d’honneur',
+        icon: 'ph ph-steps',
+        groups: [
+          G(null, ['Escalier monumental en pierre', 'Rampe en fer forgé richement ouvragée', 'Distribution des salons de réception à l’étage noble']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'maisonbourgeoise',
+    name: 'Maison bourgeoise',
+    region: 'Centres-villes · France',
+    periode: '1800–1900',
+    procede: 'Pierre ou brique',
+    usage: 'Habitat urbain bourgeois',
+    categorie: 'urbain',
+    periodeTags: ['XIXe'],
+    resume:
+      "Maison de ville bourgeoise du XIXe siècle, plus modeste que l’hôtel particulier mais soignée dans son décor : balcon filant, corniche moulurée, façade en pierre ou en brique selon les régions. Elle loge une seule famille aisée sur plusieurs niveaux, avec un escalier d’apparat desservant les étages.",
+    identite: [
+      ['Période', 'XIXe siècle'],
+      ['Région', 'Centres-villes, France'],
+      ['Usage', 'Habitat urbain bourgeois'],
+      ['Système', 'Murs porteurs en pierre ou brique'],
+      ['Matériau dominant', 'Pierre ou brique selon les régions'],
+      ['Toiture', 'Ardoise ou tuile mécanique'],
+      ['Particularité', 'Balcon filant, décor mouluré'],
+    ],
+    materiaux: ['Pierre', 'Brique', 'Chaux', 'Chêne', 'Ardoise', 'Fer forgé'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture ardoise ou tuile mécanique, lucarnes décoratives.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre ou brique selon les régions, balcon filant, corniche moulurée.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, parquet dans les pièces principales.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre ou brique, plan étroit en profondeur sur parcelle urbaine.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier d’apparat en pierre ou bois, desservant chaque étage.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, cave voûtée fréquente.' },
+    ],
+    sections: [
+      {
+        title: 'Façade & décor',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Balcon filant au premier étage noble', 'Corniche moulurée en couronnement', 'Ferronneries de balcon soignées']),
+        ],
+      },
+      {
+        title: 'Murs porteurs',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre de taille ou brique selon la région', 'Mur mitoyen porteur, façade et mur de fond porteurs', 'Plan étroit et profond sur parcelle urbaine']),
+        ],
+      },
+      {
+        title: 'Distribution intérieure',
+        icon: 'ph ph-steps',
+        groups: [
+          G(null, ['Escalier d’apparat desservant les étages', 'Étage noble réservé à la réception', 'Chambres et communs aux niveaux supérieurs']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'maisonouvriere',
+    name: 'Maison ouvrière',
+    region: 'Villes industrielles · France',
+    periode: '1800–1900',
+    procede: 'Brique',
+    usage: 'Logement ouvrier urbain',
+    categorie: 'urbain',
+    periodeTags: ['XIXe'],
+    resume:
+      "Maison ouvrière urbaine du XIXe siècle, bâtie en brique par le patronat industriel à proximité des usines. Petite, mitoyenne et répétitive, elle associe un logis simple à un jardinet potager, dans une logique d’encadrement social et hygiéniste propre au paternalisme industriel.",
+    identite: [
+      ['Période', 'XIXe siècle'],
+      ['Région', 'Villes industrielles, France'],
+      ['Usage', 'Logement ouvrier urbain'],
+      ['Système', 'Murs porteurs en brique'],
+      ['Matériau dominant', 'Brique de terre cuite'],
+      ['Toiture', 'Tuile mécanique ou ardoise'],
+      ['Particularité', 'Cité ouvrière patronale, jardinet potager'],
+    ],
+    materiaux: ['Brique', 'Mortier de chaux', 'Chêne', 'Tuile mécanique', 'Ardoise', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois simple, couverture tuile mécanique ou ardoise.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Brique de terre cuite appareillée, façade répétitive et standardisée.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois simple, deux niveaux d’habitation.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs mitoyens porteurs en brique, bâti en bande répétitif.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois, étroit et droit.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en brique ou pierre, peu profondes.' },
+    ],
+    sections: [
+      {
+        title: 'Une architecture patronale',
+        icon: 'ph ph-grid-nine',
+        intro: "Bâties par les industriels pour loger leur main-d’œuvre, ces maisons relèvent d’une logique hygiéniste et paternaliste.",
+        groups: [
+          G(null, ['Maisons mitoyennes standardisées', 'Jardinet potager attenant', 'Proximité immédiate de l’usine']),
+        ],
+      },
+      {
+        title: 'Murs en brique',
+        icon: 'ph ph-bricks',
+        groups: [
+          G(null, ['Brique de terre cuite locale', 'Appareillage simple, peu de décor', 'Chaînages et bandeaux discrets']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Tuile mécanique ou ardoise selon les bassins industriels', 'Charpente bois simple à deux pans', 'Faible débord de toit']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'canutlyonnais',
+    name: 'Canut lyonnais',
+    region: 'Lyon · Croix-Rousse',
+    periode: '1700–1900',
+    procede: 'Pierre',
+    usage: 'Habitat-atelier de canut (soierie)',
+    categorie: 'urbain',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Immeuble de la Croix-Rousse lyonnaise conçu pour loger les canuts, ouvriers tisserands en soie, avec des plafonds exceptionnellement hauts pour accueillir les métiers à tisser Jacquard. Grandes fenêtres, traboules traversant les îlots et façades sobres caractérisent ce patrimoine industriel urbain unique.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Lyon, Croix-Rousse'],
+      ['Usage', 'Habitat-atelier de canut (soierie)'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre calcaire'],
+      ['Toiture', 'Tuile ou ardoise'],
+      ['Particularité', 'Plafonds hauts (métiers Jacquard), traboules'],
+    ],
+    materiaux: ['Pierre calcaire', 'Chaux', 'Chêne', 'Tuile', 'Fer', 'Verre'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile ou ardoise, faible débord urbain.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre calcaire sobre, grandes fenêtres pour l’éclairage des métiers à tisser.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois renforcé, plafonds de 4 à 5 mètres pour les métiers Jacquard.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre, trame structurelle adaptée aux ateliers.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en pierre ou bois, dessertes multiples par étage.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, caves voûtées sur la pente de la colline.' },
+    ],
+    sections: [
+      {
+        title: 'L’atelier-logement',
+        icon: 'ph ph-buildings',
+        intro: "Chaque logement de canut intègre l’atelier de tissage, ce qui impose des plafonds bien plus hauts que l’habitat ordinaire.",
+        groups: [
+          G(null, ['Plafonds de 4 à 5 mètres pour les métiers Jacquard', 'Grandes fenêtres multipliant la lumière naturelle', 'Atelier et logis réunis dans un même espace']),
+        ],
+      },
+      {
+        title: 'Les traboules',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Passages traversant les îlots de la colline', 'Raccourcis protégés pour le transport des pièces de soie', 'Réseau caractéristique de la Croix-Rousse']),
+        ],
+      },
+      {
+        title: 'Murs en pierre',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre calcaire locale, façade sobre', 'Peu de décor, primauté donnée à la lumière', 'Implantation dense sur la pente de la colline']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'maisontoulousaine',
+    name: 'Maison toulousaine',
+    region: 'Toulouse · Haute-Garonne',
+    periode: '1700–1900',
+    procede: 'Brique rose',
+    usage: 'Habitat urbain',
+    categorie: 'urbain',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Maison urbaine toulousaine bâtie en brique foraine rose, matériau emblématique de la « Ville Rose » faute de pierre à carrière proche. Façades sobres rythmées de bandeaux de brique, toiture de tuile canal à faible pente et cour intérieure caractérisent cette architecture de terre cuite.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Toulouse, Haute-Garonne'],
+      ['Usage', 'Habitat urbain'],
+      ['Système', 'Murs porteurs en brique'],
+      ['Matériau dominant', 'Brique foraine rose'],
+      ['Toiture', 'Tuile canal, faible pente'],
+      ['Particularité', 'Brique rose caractéristique de Toulouse'],
+    ],
+    materiaux: ['Brique foraine', 'Mortier de chaux', 'Chêne', 'Tuile canal', 'Fer forgé', 'Enduit'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture tuile canal, faible pente méridionale.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Brique foraine rose apparente, bandeaux et corniches en brique moulurée.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, voûtains de brique sur poutrelles dans les constructions tardives.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en brique foraine, chaînages verticaux et horizontaux.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois ou pierre desservant les étages.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en brique ou pierre, caves parfois voûtées en brique.' },
+    ],
+    sections: [
+      {
+        title: 'La brique, matériau de la Ville Rose',
+        icon: 'ph ph-bricks',
+        intro: "Faute de carrière de pierre à proximité, Toulouse a bâti l’essentiel de son architecture en brique de terre cuite locale.",
+        groups: [
+          G(null, ['Brique foraine cuite localement', 'Teinte rose caractéristique de l’argile toulousaine', 'Appareillage en bandeaux et corniches moulurées']),
+        ],
+      },
+      {
+        title: 'Organisation autour de la cour',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Cour intérieure desservant les pièces', 'Façade sur rue sobre, décor concentré sur la cour', 'Galeries ou escaliers extérieurs côté cour']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Tuile canal à faible pente', 'Génoise en corniche, influence méridionale', 'Charpente bois simple']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'maisonnantaise',
+    name: 'Maison nantaise',
+    region: 'Nantes · Loire-Atlantique',
+    periode: '1800–1900',
+    procede: 'Tuffeau',
+    usage: 'Habitat urbain',
+    categorie: 'urbain',
+    periodeTags: ['XIXe'],
+    resume:
+      "Maison urbaine nantaise en tuffeau, pierre calcaire blanche et tendre du val de Loire, taillée avec finesse pour les encadrements et les décors de façade. L’enrichissement du négoce nantais au XIXe siècle se lit dans la qualité de la pierre de taille et des ferronneries de balcon.",
+    identite: [
+      ['Période', 'XIXe siècle'],
+      ['Région', 'Nantes, Loire-Atlantique'],
+      ['Usage', 'Habitat urbain'],
+      ['Système', 'Murs porteurs en tuffeau'],
+      ['Matériau dominant', 'Tuffeau (calcaire blanc du val de Loire)'],
+      ['Toiture', 'Ardoise'],
+      ['Particularité', 'Décor sculpté fin dans une pierre tendre'],
+    ],
+    materiaux: ['Tuffeau', 'Chaux', 'Chêne', 'Ardoise', 'Fer forgé', 'Verre'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois, couverture ardoise, lucarnes à fronton sculpté.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Tuffeau blanc finement taillé, décors sculptés en façade.' },
+      { n: 3, el: 'Planchers', txt: 'Solivage bois, parquet dans les pièces de réception.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en tuffeau, plus tendre et plus léger que le granite.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier en pierre ou bois, rampe en fer forgé.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre dure, le tuffeau étant réservé aux élévations.' },
+    ],
+    sections: [
+      {
+        title: 'Le tuffeau, pierre du négoce',
+        icon: 'ph ph-wall',
+        intro: "L’essor du commerce nantais au XIXe siècle se traduit par des façades en tuffeau finement ouvragées.",
+        groups: [
+          G(null, ['Tuffeau blanc, pierre tendre facile à sculpter', 'Décor de façade riche : mascarons, guirlandes', 'Acheminé par voie fluviale depuis le val de Loire']),
+        ],
+      },
+      {
+        title: 'Façade & ferronneries',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Balcons filants en fer forgé', 'Lucarnes à fronton sculpté', 'Corniche moulurée en couronnement']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Couverture en ardoise', 'Pente marquée, influence des toitures ligériennes', 'Souches de cheminée en pierre']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'artnouveau',
+    name: 'Immeuble Art nouveau',
+    region: 'Grandes villes · France',
+    periode: '1890–1914',
+    procede: 'Pierre + métal',
+    usage: 'Immeuble de rapport, habitat urbain',
+    categorie: 'urbain',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Immeuble de la Belle Époque associant pierre de taille et structure métallique, aux façades ondoyantes ornées de ferronneries florales et de céramiques. Bow-windows, verrières et motifs végétaux stylisés traduisent le rejet de la ligne droite propre à l’Art nouveau.",
+    identite: [
+      ['Période', '1890–1914'],
+      ['Région', 'Grandes villes, France'],
+      ['Usage', 'Immeuble de rapport, habitat urbain'],
+      ['Système', 'Pierre + structure métallique'],
+      ['Matériau dominant', 'Pierre de taille et fer'],
+      ['Style', 'Art nouveau (courbes, motifs végétaux)'],
+      ['Particularité', 'Ferronneries florales, céramiques, bow-windows'],
+    ],
+    materiaux: ['Pierre de taille', 'Fer forgé', 'Céramique', 'Verre', 'Bois', 'Grès flammé'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture mansardée ou terrasse, ferronneries décoratives en couronnement.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre de taille ondoyante, bow-windows, ferronneries florales, céramiques.' },
+      { n: 3, el: 'Planchers', txt: 'Structure mixte pierre et métal autorisant de plus grandes portées.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature métallique associée à la maçonnerie de pierre.' },
+      { n: 5, el: 'Escalier', txt: 'Cage d’escalier avec verrière zénithale et ferronneries Art nouveau.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre ou béton, adaptées aux charges métalliques.' },
+    ],
+    sections: [
+      {
+        title: 'Le rejet de la ligne droite',
+        icon: 'ph ph-buildings',
+        intro: "L’Art nouveau puise son inspiration dans les formes végétales, refusant la symétrie rigide de l’architecture classique.",
+        groups: [
+          G(null, ['Façades ondoyantes, bow-windows en saillie', 'Ferronneries florales aux balcons et garde-corps', 'Motifs végétaux stylisés en céramique']),
+        ],
+      },
+      {
+        title: 'Pierre et métal associés',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Ossature métallique pour les grandes portées', 'Parement de pierre de taille en façade', 'Verrières zénithales sur cage d’escalier']),
+        ],
+      },
+      {
+        title: 'Décor',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Céramiques et grès flammés en frise', 'Vitraux et verres colorés', 'Ferronnerie d’art signée par les ateliers de l’époque']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'annees30',
+    name: 'Immeuble années 30',
+    region: 'Grandes villes · France',
+    periode: '1925–1939',
+    procede: 'Béton',
+    usage: 'Immeuble de rapport, habitat urbain',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Immeuble fonctionnaliste de l’entre-deux-guerres, en béton armé, aux lignes épurées et aux formes arrondies dites « style paquebot ». Bow-windows incurvés, garde-corps tubulaires et hublots traduisent l’influence de l’esthétique navale et industrielle sur l’architecture résidentielle.",
+    identite: [
+      ['Période', '1925–1939'],
+      ['Région', 'Grandes villes, France'],
+      ['Usage', 'Immeuble de rapport, habitat urbain'],
+      ['Système', 'Ossature béton armé'],
+      ['Matériau dominant', 'Béton armé'],
+      ['Style', 'Style paquebot, fonctionnalisme'],
+      ['Particularité', 'Formes arrondies, hublots, garde-corps tubulaires'],
+    ],
+    materiaux: ['Béton armé', 'Enduit lisse', 'Verre', 'Acier tubulaire', 'Céramique', 'Brique'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture-terrasse, souvent accessible, acrotère arrondi.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Béton armé enduit lisse, bow-windows incurvés, hublots.' },
+      { n: 3, el: 'Planchers', txt: 'Dalles en béton armé, portées régulières.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature poteaux-poutres en béton armé, façades allégées.' },
+      { n: 5, el: 'Escalier', txt: 'Cage d’escalier aux lignes épurées, garde-corps tubulaires métalliques.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en béton armé, adaptées à la structure poteaux-poutres.' },
+    ],
+    sections: [
+      {
+        title: 'Le style paquebot',
+        icon: 'ph ph-crane-tower',
+        intro: "L’architecture résidentielle emprunte à l’esthétique des paquebots transatlantiques : coursives, hublots, formes hydrodynamiques.",
+        groups: [
+          G(null, ['Angles arrondis et bow-windows incurvés', 'Hublots en façade ou en cage d’escalier', 'Garde-corps tubulaires métalliques']),
+        ],
+      },
+      {
+        title: 'Structure en béton armé',
+        icon: 'ph ph-building',
+        groups: [
+          G(null, ['Ossature poteaux-poutres en béton armé', 'Façades allégées, grandes baies horizontales', 'Toiture-terrasse en remplacement du toit pentu']),
+        ],
+      },
+      {
+        title: 'Sobriété fonctionnaliste',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Décor réduit à l’essentiel', 'Enduit lisse remplaçant le décor sculpté', 'Fonction et hygiène priment sur l’ornement']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'barrehlm',
+    name: 'Barre HLM',
+    region: 'Périphéries urbaines · France',
+    periode: '1955–1975',
+    procede: 'Béton préfabriqué',
+    usage: 'Logement social collectif',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Immeuble linéaire de logement social construit en panneaux de béton préfabriqués, desservi par des cages d’escalier ou des coursives réparties régulièrement. Sa répétition modulaire et sa construction rapide en ont fait la forme la plus répandue du logement de masse des Trente Glorieuses.",
+    identite: [
+      ['Période', '1955–1975'],
+      ['Région', 'Périphéries urbaines, France'],
+      ['Usage', 'Logement social collectif'],
+      ['Système', 'Voiles béton préfabriqués'],
+      ['Matériau dominant', 'Béton préfabriqué'],
+      ['Toiture', 'Toiture-terrasse'],
+      ['Particularité', 'Plan linéaire, cages d’escalier répétitives'],
+    ],
+    materiaux: ['Béton préfabriqué', 'Panneaux de façade', 'Acier (armatures)', 'Verre', 'Allège béton', 'Isolant'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture-terrasse en dalle béton, étanchéité multicouche.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Panneaux préfabriqués répétitifs, allèges béton, grandes baies.' },
+      { n: 3, el: 'Planchers', txt: 'Dalles préfabriquées ou coulées en place, trame répétitive.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Voiles béton préfabriqués, montés en filière rapide.' },
+      { n: 5, el: 'Escalier', txt: 'Cages d’escalier ou coursives réparties régulièrement le long de la barre.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles filantes en béton armé sous les voiles porteurs.' },
+    ],
+    sections: [
+      {
+        title: 'Le plan linéaire',
+        icon: 'ph ph-rows',
+        intro: "La barre déroule un même module d’appartement sur toute sa longueur, desservi par des cages d’escalier régulièrement espacées.",
+        groups: [
+          G(null, ['Répétition d’un même module de logement', 'Cages d’escalier ou coursives réparties tous les deux ou trois logements', 'Orientation optimisée pour l’ensoleillement']),
+        ],
+      },
+      {
+        title: 'Préfabrication',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Panneaux de façade coulés en usine', 'Montage rapide au chemin de grue', 'Standardisation des éléments de construction']),
+        ],
+      },
+      {
+        title: 'Structure béton',
+        icon: 'ph ph-building',
+        groups: [
+          G(null, ['Voiles béton porteurs transversaux', 'Façades légères non porteuses', 'Toiture-terrasse généralisée']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'tourhlm',
+    name: 'Tour HLM',
+    region: 'Périphéries urbaines · France',
+    periode: '1960–1980',
+    procede: 'Béton',
+    usage: 'Logement social collectif',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Immeuble de grande hauteur organisé autour d’un noyau central regroupant ascenseurs et escaliers, d’où rayonnent les logements sur un plan carré ou en étoile. Sa silhouette verticale, plus économe en emprise au sol que la barre, a marqué les grands ensembles des années 1960 et 1970.",
+    identite: [
+      ['Période', '1960–1980'],
+      ['Région', 'Périphéries urbaines, France'],
+      ['Usage', 'Logement social collectif'],
+      ['Système', 'Noyau central béton armé'],
+      ['Matériau dominant', 'Béton armé'],
+      ['Toiture', 'Toiture-terrasse'],
+      ['Particularité', 'Plan en étoile ou carré autour d’un noyau central'],
+    ],
+    materiaux: ['Béton armé', 'Panneaux préfa', 'Acier (armatures)', 'Verre', 'Allège béton', 'Isolant'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture-terrasse technique, locaux d’ascenseurs et de ventilation en superstructure.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Panneaux préfabriqués ou façade rideau, loggias ou balcons filants.' },
+      { n: 3, el: 'Planchers', txt: 'Dalles en béton armé rayonnant depuis le noyau central.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Noyau central en béton armé contreventant l’ensemble de la tour.' },
+      { n: 5, el: 'Escalier', txt: 'Batterie d’ascenseurs et escalier de secours regroupés au noyau central.' },
+      { n: 6, el: 'Fondations', txt: 'Radier général ou pieux profonds selon la portance du sol.' },
+    ],
+    sections: [
+      {
+        title: 'Le noyau central',
+        icon: 'ph ph-building',
+        intro: "Tout l’équilibre structurel et fonctionnel de la tour repose sur son noyau central, qui concentre circulations verticales et contreventement.",
+        groups: [
+          G(null, ['Ascenseurs et escaliers regroupés au centre', 'Contreventement de la tour contre le vent', 'Logements distribués en étoile ou en carré autour du noyau']),
+        ],
+      },
+      {
+        title: 'Une silhouette verticale',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Emprise au sol réduite par rapport à la barre', 'Vues dégagées à chaque étage', 'Densité de logements élevée sur une petite parcelle']),
+        ],
+      },
+      {
+        title: 'Structure béton',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Noyau et refends en béton armé', 'Fondations profondes adaptées à la charge verticale', 'Façades légères, souvent en panneaux préfabriqués']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'pavillonphenix',
+    name: 'Pavillon Phénix',
+    region: 'Zones pavillonnaires · France',
+    periode: '1970–1995',
+    procede: 'Ossature métallique',
+    usage: 'Maison individuelle standardisée',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Maison individuelle préfabriquée à ossature métallique légère, commercialisée en catalogue à partir des années 1970 et massivement diffusée dans les lotissements périurbains français. Construction rapide, plans standardisés et garage intégré caractérisent ce modèle emblématique de l’accession à la propriété de masse.",
+    identite: [
+      ['Période', '1970–1995'],
+      ['Région', 'Zones pavillonnaires, France'],
+      ['Usage', 'Maison individuelle standardisée'],
+      ['Système', 'Ossature métallique légère'],
+      ['Matériau dominant', 'Acier et parpaing de remplissage'],
+      ['Toiture', 'Tuile béton, faible à moyenne pente'],
+      ['Particularité', 'Construction sur catalogue, garage intégré'],
+    ],
+    materiaux: ['Acier (ossature)', 'Parpaing', 'Tuile béton', 'Isolant synthétique', 'Placoplâtre', 'Enduit'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente industrielle, couverture tuile béton, faible à moyenne pente.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Remplissage parpaing sur ossature métallique, enduit de finition.' },
+      { n: 3, el: 'Planchers', txt: 'Dalle béton au rez-de-chaussée, plancher léger à l’étage si présent.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature métallique légère préfabriquée, montage rapide sur chantier.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier préfabriqué en bois ou béton selon les modèles.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles filantes en béton, dalle sur terre-plein.' },
+    ],
+    sections: [
+      {
+        title: 'La maison sur catalogue',
+        icon: 'ph ph-buildings',
+        intro: "Le modèle Phénix diffuse à grande échelle des plans standardisés, choisis sur catalogue par les futurs propriétaires.",
+        groups: [
+          G(null, ['Plans standardisés proposés en catalogue', 'Garage intégré au volume principal', 'Diffusion massive dans les lotissements périurbains']),
+        ],
+      },
+      {
+        title: 'Ossature métallique légère',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Structure en acier préfabriquée en usine', 'Montage rapide sur chantier', 'Remplissage en parpaing entre les poteaux']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Tuile béton standardisée', 'Charpente industrielle légère', 'Pente modérée, faible débord de toit']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'maisonidf',
+    name: 'Maison « Île-de-France »',
+    region: 'Île-de-France',
+    periode: '1950–2000',
+    procede: 'Parpaings',
+    usage: 'Maison individuelle, habitat péri-urbain',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Pavillon individuel générique de la seconde moitié du XXe siècle, bâti en parpaings de béton enduits et couvert d’une toiture à pans en tuile mécanique. Modèle le plus répandu de l’habitat péri-urbain francilien, il se décline en variantes de plain-pied ou à étage sur des lotissements standardisés.",
+    identite: [
+      ['Période', '1950–2000'],
+      ['Région', 'Île-de-France'],
+      ['Usage', 'Maison individuelle, habitat péri-urbain'],
+      ['Système', 'Murs porteurs en parpaings'],
+      ['Matériau dominant', 'Parpaings de béton enduits'],
+      ['Toiture', 'Tuile mécanique'],
+      ['Particularité', 'Modèle générique de lotissement standardisé'],
+    ],
+    materiaux: ['Parpaing', 'Enduit', 'Béton (dalle)', 'Tuile mécanique', 'Bois (charpente)', 'Placoplâtre'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois industrielle, couverture tuile mécanique à deux ou quatre pans.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Parpaings de béton enduits, ouvertures standardisées.' },
+      { n: 3, el: 'Planchers', txt: 'Dalle béton au rez-de-chaussée, plancher bois ou béton à l’étage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en parpaings de béton, plan rectangulaire simple.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en béton ou bois selon les modèles à étage.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles filantes en béton, dalle sur terre-plein ou vide sanitaire.' },
+    ],
+    sections: [
+      {
+        title: 'Un modèle générique',
+        icon: 'ph ph-grid-nine',
+        intro: "Diffusée par centaines de milliers d’exemplaires, cette maison standardisée a façonné les lotissements franciliens de l’après-guerre.",
+        groups: [
+          G(null, ['Plans répétés à l’identique dans les lotissements', 'Variantes plain-pied ou à étage', 'Garage ou abri de jardin attenant fréquent']),
+        ],
+      },
+      {
+        title: 'Murs en parpaings',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Parpaings de béton creux, matériau économique', 'Enduit de finition en façade', 'Isolation rapportée à l’intérieur']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Tuile mécanique à deux ou quatre pans', 'Charpente industrielle standardisée', 'Pente modérée, faible débord']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))

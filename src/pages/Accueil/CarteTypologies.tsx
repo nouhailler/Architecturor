@@ -42,6 +42,19 @@ const MICRO_PINS = [
   { id: 'borie',            cx: 685, cy: 735, label: 'Borie' },
   { id: 'landaise',         cx: 290, cy: 735, label: 'Maison landaise' },
   { id: 'bearnaise',        cx: 315, cy: 805, label: 'Maison béarnaise' },
+  { id: 'maisondeville18e', cx: 480, cy: 280, label: 'Maison de ville XVIIIe' },
+  { id: 'hotelparticulier', cx: 500, cy: 300, label: 'Hôtel particulier' },
+  { id: 'maisonbourgeoise', cx: 460, cy: 320, label: 'Maison bourgeoise' },
+  { id: 'maisonouvriere',   cx: 600, cy: 100, label: 'Maison ouvrière' },
+  { id: 'canutlyonnais',    cx: 700, cy: 500, label: 'Canut lyonnais' },
+  { id: 'maisontoulousaine', cx: 460, cy: 750, label: 'Maison toulousaine' },
+  { id: 'maisonnantaise',   cx: 290, cy: 420, label: 'Maison nantaise' },
+  { id: 'artnouveau',       cx: 540, cy: 250, label: 'Immeuble Art nouveau' },
+  { id: 'annees30',         cx: 560, cy: 270, label: 'Immeuble années 30' },
+  { id: 'maisonidf',        cx: 520, cy: 240, label: 'Maison Île-de-France' },
+  { id: 'barrehlm',         cx: 700, cy: 550, label: 'Barre HLM' },
+  { id: 'tourhlm',          cx: 720, cy: 570, label: 'Tour HLM' },
+  { id: 'pavillonphenix',   cx: 420, cy: 300, label: 'Pavillon Phénix' },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */
