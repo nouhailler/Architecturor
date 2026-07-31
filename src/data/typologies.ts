@@ -5554,6 +5554,446 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'phare',
+    name: 'Phare',
+    region: 'Côtes françaises',
+    periode: '1700–1950',
+    procede: 'Granite ou pierre',
+    usage: 'Signalisation maritime nocturne',
+    categorie: 'littorale',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Tour de signalisation maritime bâtie sur les caps et îlots les plus exposés, couronnée d’une lanterne dont l’optique à lentilles de Fresnel démultiplie la portée du faisceau lumineux. Chaque phare possède un rythme d’éclat unique, véritable signature lumineuse permettant aux marins de l’identifier de nuit.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Côtes françaises'],
+      ['Usage', 'Signalisation maritime nocturne'],
+      ['Système', 'Tour maçonnée + lanterne optique'],
+      ['Matériau dominant', 'Granite ou pierre de taille'],
+      ['Hauteur', '20 à 60 mètres selon les sites'],
+      ['Particularité', 'Optique à lentilles de Fresnel, rythme d’éclat unique'],
+    ],
+    materiaux: ['Granite', 'Pierre de taille', 'Fonte (escalier, structure de lanterne)', 'Verre (optique Fresnel)', 'Cuivre (coupole)', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Coupole de la lanterne en cuivre ou fonte, vitrée sur tout le pourtour.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Granite ou pierre de taille, tour cylindrique ou tronconique très résistante.' },
+      { n: 3, el: 'Planchers', txt: 'Paliers intermédiaires desservant la salle des machines et le logement technique.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs très épais à la base, s’amincissant vers le sommet.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier en vis desservant tous les niveaux jusqu’à la lanterne.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrage direct sur le rocher, parfois en mer battue par les vagues.' },
+    ],
+    sections: [
+      {
+        title: 'L’optique à lentilles de Fresnel',
+        icon: 'ph ph-shield-check',
+        intro: "Inventée en 1822 par Augustin Fresnel, cette optique à lentilles concentre la lumière en un faisceau puissant visible à plusieurs dizaines de kilomètres.",
+        groups: [
+          G(null, ['Lentilles concentriques démultipliant la portée lumineuse', 'Rotation ou occultation créant un rythme d’éclat identifiable', 'Remplacement progressif des anciens miroirs paraboliques']),
+        ],
+      },
+      {
+        title: 'Une tour exposée',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Implantation sur les caps, îlots ou récifs les plus dangereux', 'Murs très épais résistant aux tempêtes et embruns', 'Formes aérodynamiques pour certains phares en mer']),
+        ],
+      },
+      {
+        title: 'Un patrimoine vivant',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Automatisation progressive à partir de la fin du XXe siècle', 'Certains phares ouverts à la visite touristique', 'Symbole culturel fort du patrimoine maritime français']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'maisongardien',
+    name: 'Maison de gardien',
+    region: 'Côtes françaises · sites de phares',
+    periode: '1800–1950',
+    procede: 'Pierre',
+    usage: 'Logement du gardien de phare',
+    categorie: 'littorale',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Logement de fonction attenant ou proche d’un phare, où le gardien et parfois sa famille vivaient en quasi-autarcie sur des sites souvent isolés et difficiles d’accès. La surveillance permanente de la lanterne, l’entretien du mécanisme et la tenue du registre météorologique rythmaient une vie rude, immortalisée par de nombreux récits maritimes.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle'],
+      ['Région', 'Côtes françaises, sites de phares'],
+      ['Usage', 'Logement du gardien de phare'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Plan', 'Logement attenant ou proche de la tour'],
+      ['Particularité', 'Vie isolée, autonomie du gardien'],
+    ],
+    materiaux: ['Pierre locale', 'Chaux', 'Bois (charpente, mobilier)', 'Ardoise ou tuile', 'Fer', 'Verre'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois renforcée contre le vent, couverture ardoise ou tuile.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre locale épaisse, ouvertures réduites côté vents dominants.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher bois, logement compact optimisant l’espace disponible.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs massifs, souvent accolés à la base de la tour du phare.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur simple ou passage direct vers la tour du phare.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrage rocheux, fondations renforcées contre les tempêtes.' },
+    ],
+    sections: [
+      {
+        title: 'Une vie en quasi-autarcie',
+        icon: 'ph ph-grid-nine',
+        intro: "Sur les phares les plus isolés, en mer ou sur un îlot, le gardien pouvait rester des semaines sans accès facile au continent.",
+        groups: [
+          G(null, ['Réserves de vivres et d’eau stockées sur place', 'Ravitaillement irrégulier selon la météo', 'Isolement parfois partagé en famille sur les sites terrestres']),
+        ],
+      },
+      {
+        title: 'La veille permanente',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Allumage et extinction quotidiens de la lanterne', 'Remontage régulier du mécanisme d’horlogerie rotatif', 'Tenue du registre météorologique et de navigation']),
+        ],
+      },
+      {
+        title: 'La fin du gardiennage',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Automatisation des phares à partir des années 1980', 'Disparition progressive de la profession de gardien', 'Maisons de gardien reconverties en gîtes ou musées']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'semaphore',
+    name: 'Sémaphore',
+    region: 'Côtes françaises · points hauts littoraux',
+    periode: '1800–1950',
+    procede: 'Pierre ou béton',
+    usage: 'Surveillance et signalisation maritime',
+    categorie: 'littorale',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Poste de guet naval implanté sur les points hauts du littoral, hérité du télégraphe optique Chappe et adapté à la surveillance maritime dès le XIXe siècle. Toujours armé par la Marine nationale, le sémaphore veille aujourd’hui sur le trafic maritime, la sécurité et le sauvetage en mer.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle'],
+      ['Région', 'Côtes françaises, points hauts littoraux'],
+      ['Usage', 'Surveillance et signalisation maritime'],
+      ['Système', 'Poste de guet + mât de signaux'],
+      ['Matériau dominant', 'Pierre ou béton'],
+      ['Plan', 'Bâtiment bas surmonté d’un mât'],
+      ['Particularité', 'Veille assurée par la Marine nationale'],
+    ],
+    materiaux: ['Pierre', 'Béton armé', 'Bois (mât de signaux)', 'Fer', 'Verre (vigie)', 'Peinture (signalétique)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture basse et aérodynamique résistant aux vents violents du site.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre ou béton, larges baies vitrées pour la vigie panoramique.' },
+      { n: 3, el: 'Planchers', txt: 'Salle de veille surélevée offrant un panorama dégagé sur la mer.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs bas et massifs, résistant aux tempêtes littorales.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier extérieur ou intérieur menant à la salle de veille surélevée.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrage sur le point haut rocheux, souvent une falaise ou un cap.' },
+    ],
+    sections: [
+      {
+        title: 'De Chappe à la vigie navale',
+        icon: 'ph ph-shield-check',
+        intro: "Le sémaphore hérite du principe du télégraphe optique de Chappe, adapté à la transmission de signaux entre navires et côte.",
+        groups: [
+          G(null, ['Origine dans le réseau optique Chappe du début du XIXe siècle', 'Reconversion vers la signalisation navale', 'Mât de signaux pour les communications par pavillons']),
+        ],
+      },
+      {
+        title: 'Une position stratégique',
+        icon: 'ph ph-mountains',
+        groups: [
+          G(null, ['Implantation sur les points hauts offrant la meilleure visibilité', 'Surveillance d’un large secteur de mer', 'Position souvent partagée avec un phare voisin']),
+        ],
+      },
+      {
+        title: 'Un poste toujours actif',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Surveillance du trafic maritime et de la sécurité', 'Coordination des opérations de sauvetage en mer', 'Réseau de sémaphores couvrant l’ensemble du littoral français']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'cale',
+    name: 'Cale',
+    region: 'Ports & littoral · France',
+    periode: '1700–1950',
+    procede: 'Pierre ou béton',
+    usage: 'Mise à l’eau et halage des embarcations',
+    categorie: 'littorale',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Plan incliné maçonné descendant dans l’eau, permettant de mettre à l’eau ou de haler les barques hors de la mer selon la marée. Élément le plus simple mais le plus indispensable de l’architecture portuaire, la cale organise toute la vie quotidienne d’un village de pêcheurs.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Ports et littoral, France'],
+      ['Usage', 'Mise à l’eau et halage des embarcations'],
+      ['Système', 'Plan incliné maçonné'],
+      ['Matériau dominant', 'Pierre ou béton'],
+      ['Plan', 'Rampe descendant jusqu’au niveau des basses eaux'],
+      ['Particularité', 'Parfois équipée d’un treuil de halage'],
+    ],
+    materiaux: ['Pierre', 'Béton', 'Bois (anciens rails de halage)', 'Fer (treuil, anneaux d’amarrage)', 'Algues (glissant naturel)', 'Galets'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Sans toiture ; ouvrage entièrement extérieur exposé aux éléments.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Parapets latéraux en pierre ou béton encadrant la rampe.' },
+      { n: 3, el: 'Planchers', txt: 'Surface de roulement en pierre ou béton, parfois rainurée antidérapante.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Maçonnerie massive résistant à l’érosion marine et aux marées.' },
+      { n: 5, el: 'Escalier', txt: 'Marches latérales pour l’accès piéton le long de la cale.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes ancrées sous le niveau des plus basses mers.' },
+    ],
+    sections: [
+      {
+        title: 'S’adapter à la marée',
+        icon: 'ph ph-waves',
+        intro: "La longueur de la cale doit permettre l’accès à l’eau à toute heure, quelle que soit l’amplitude de la marée du site.",
+        groups: [
+          G(null, ['Pente calculée selon le marnage local', 'Rampe s’étendant parfois sur plusieurs dizaines de mètres', 'Usage possible à toutes les heures de marée']),
+        ],
+      },
+      {
+        title: 'Le halage des barques',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Treuil manuel ou mécanique pour remonter les embarcations', 'Rails ou glissières pour faciliter le glissement', 'Effort collectif traditionnel avant la mécanisation']),
+        ],
+      },
+      {
+        title: 'Un cœur de vie portuaire',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Lieu de rassemblement quotidien des pêcheurs', 'Point de débarquement direct de la pêche', 'Usage aujourd’hui partagé avec la plaisance']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'criee',
+    name: 'Criée',
+    region: 'Ports de pêche · France',
+    periode: '1850–1950',
+    procede: 'Métal & béton',
+    usage: 'Vente aux enchères du poisson frais',
+    categorie: 'littorale',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Halle portuaire dédiée à la vente aux enchères descendantes du poisson fraîchement débarqué, directement accessible depuis le quai de déchargement. Sa grande halle réfrigérée et ses installations de tri organisent en quelques heures chaque matin tout le commerce du poisson d’un port de pêche.",
+    identite: [
+      ['Période', '1850–1950'],
+      ['Région', 'Ports de pêche, France'],
+      ['Usage', 'Vente aux enchères du poisson frais'],
+      ['Système', 'Halle réfrigérée sur quai'],
+      ['Matériau dominant', 'Métal et béton'],
+      ['Plan', 'Halle ouverte desservie par le quai'],
+      ['Particularité', 'Enchère descendante (« criée »)'],
+    ],
+    materiaux: ['Béton', 'Acier (charpente)', 'Carrelage (hygiène)', 'Verre', 'Glace (conservation)', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique de grande portée, ventilation adaptée au froid.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Béton et parois largement ouvertes côté quai pour le débarquement.' },
+      { n: 3, el: 'Planchers', txt: 'Sol carrelé ou bétonné, facile à laver, léger système d’évacuation.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Poteaux métalliques libérant un vaste espace pour les lots de poisson.' },
+      { n: 5, el: 'Escalier', txt: 'Généralement de plain-pied avec le quai de débarquement.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en béton adaptées à la proximité immédiate de l’eau.' },
+    ],
+    sections: [
+      {
+        title: 'La vente à la criée',
+        icon: 'ph ph-hammer',
+        intro: "Le crieur annonce un prix élevé qui décroît jusqu’à ce qu’un acheteur l’arrête, principe inverse de l’enchère montante classique.",
+        groups: [
+          G(null, ['Enchère descendante rapide, quelques secondes par lot', 'Mareyeurs et poissonniers regroupés face au crieur', 'Traçabilité et pesée systématique des lots']),
+        ],
+      },
+      {
+        title: 'De la mer à la halle',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Débarquement direct depuis les bateaux sur le quai attenant', 'Tri et calibrage rapide du poisson frais', 'Chaîne du froid maintenue dès le débarquement']),
+        ],
+      },
+      {
+        title: 'Un rythme quotidien',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Vente organisée tôt le matin au retour de pêche', 'Rythme calé sur les marées et les horaires de pêche', 'Certaines criées modernisées avec vente électronique']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'cabanesostreicoles',
+    name: 'Cabanes ostréicoles',
+    region: 'Bassin d’Arcachon & littoral atlantique',
+    periode: '1850–1950',
+    procede: 'Bois sur pilotis',
+    usage: 'Travail et stockage ostréicole',
+    categorie: 'littorale',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Cabane de bois colorée, dressée sur pilotis à même l’estran, où l’ostréiculteur trie, calibre et conditionne les huîtres au sortir des parcs. Alignées en rangs serrés au bord de l’eau, ces cabanes composent le paysage caractéristique du bassin d’Arcachon et des ports ostréicoles atlantiques.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle'],
+      ['Région', 'Bassin d’Arcachon et littoral atlantique'],
+      ['Usage', 'Travail et stockage ostréicole'],
+      ['Système', 'Ossature bois sur pilotis'],
+      ['Matériau dominant', 'Bois'],
+      ['Plan', 'Petite cabane rectangulaire en front d’estran'],
+      ['Particularité', 'Façades peintes de couleurs vives'],
+    ],
+    materiaux: ['Bois (pin maritime)', 'Pilotis', 'Tôle ondulée ou bardeaux', 'Peinture (façades colorées)', 'Fer (outillage, casiers)', 'Corde (filets, poches)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toit à deux pans en tôle ondulée ou bardeaux, faible pente.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Bardage de bois peint de couleurs vives, ouverture large côté estran.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher à claire-voie laissant s’écouler l’eau de rinçage des huîtres.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Pilotis de bois surélevant la cabane au-dessus du niveau des marées.' },
+      { n: 5, el: 'Escalier', txt: 'Simples marches ou plan incliné d’accès depuis le chemin ostréicole.' },
+      { n: 6, el: 'Fondations', txt: 'Pilotis enfoncés directement dans la vase ou le sable de l’estran.' },
+    ],
+    sections: [
+      {
+        title: 'Le travail de l’huître',
+        icon: 'ph ph-hammer',
+        intro: "Chaque cabane est un petit atelier où l’huître, sortie des parcs, est triée, calibrée et conditionnée avant expédition.",
+        groups: [
+          G(null, ['Tri et calibrage manuel ou mécanisé', 'Dégorgement et rinçage à l’eau de mer', 'Conditionnement en bourriches pour la vente']),
+        ],
+      },
+      {
+        title: 'Sur pilotis, face à l’estran',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Implantation directe sur la vase ou le sable', 'Accès facilité aux parcs à huîtres voisins', 'Plancher ajouré pour l’écoulement de l’eau']),
+        ],
+      },
+      {
+        title: 'Un paysage identitaire',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Alignements colorés emblématiques du bassin d’Arcachon', 'Certaines cabanes reconverties en restaurants de dégustation', 'Savoir-faire ostréicole transmis de génération en génération']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'cabanepecheur',
+    name: 'Cabane de pêcheur',
+    region: 'Littoral · France',
+    periode: '1700–1950',
+    procede: 'Bois',
+    usage: 'Abri et stockage du matériel de pêche',
+    categorie: 'littorale',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Modeste cabane de bois où le pêcheur range filets, casiers et agrès, parfois construite à partir de la coque retournée d’un vieux bateau réformé (« caloge »). Regroupées en rangs le long de la plage ou du port, ces cabanes forment un paysage vernaculaire immédiatement reconnaissable.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Littoral, France'],
+      ['Usage', 'Abri et stockage du matériel de pêche'],
+      ['Système', 'Ossature bois simple'],
+      ['Matériau dominant', 'Bois'],
+      ['Plan', 'Petit volume rectangulaire, parfois coque retournée'],
+      ['Particularité', 'Réemploi de coques de bateaux (caloges)'],
+    ],
+    materiaux: ['Bois', 'Coque de bateau réformée', 'Goudron (étanchéité)', 'Tôle', 'Filets et cordages', 'Peinture'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toit à un ou deux pans, parfois la coque retournée d’un ancien bateau.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Planches de bois goudronnées, petite porte unique.' },
+      { n: 3, el: 'Planchers', txt: 'Sol de sable, galets ou plancher sommaire selon les sites.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature bois légère ou charpente de la coque de bateau réemployée.' },
+      { n: 5, el: 'Escalier', txt: 'Sans étage ; simple accès de plain-pied.' },
+      { n: 6, el: 'Fondations', txt: 'Simple assise sur le sable, les galets ou un muret bas.' },
+    ],
+    sections: [
+      {
+        title: 'La caloge normande',
+        icon: 'ph ph-tree',
+        intro: "En Normandie, les coques de bateaux trop âgées pour naviguer trouvaient une seconde vie, retournées et posées à terre comme abri.",
+        groups: [
+          G(null, ['Réemploi de la coque comme toiture protectrice', 'Étanchéité renforcée au goudron', 'Pratique traditionnelle d’économie de matériaux']),
+        ],
+      },
+      {
+        title: 'Un abri fonctionnel',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Rangement des filets, casiers et agrès de pêche', 'Réparation du matériel à l’abri des intempéries', 'Volume minimal, strictement utilitaire']),
+        ],
+      },
+      {
+        title: 'Un paysage vernaculaire',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Alignements de cabanes le long des plages ou des ports', 'Couleurs et formes variant selon les régions', 'Certaines cabanes classées ou protégées au titre du patrimoine']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'fortmaritime',
+    name: 'Fort maritime',
+    region: 'Rades & estuaires · France',
+    periode: '1660–1870',
+    procede: 'Pierre & maçonnerie marine',
+    usage: 'Défense d’une rade ou d’un chenal',
+    categorie: 'littorale',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Fortification bâtie directement sur un rocher ou un haut-fond au milieu d’une rade, défiant les courants et les marées pour verrouiller l’accès à un port stratégique. Le chantier, souvent étalé sur plusieurs décennies en raison des conditions marines extrêmes, produit des ouvrages au plan elliptique ou circulaire limitant la prise au vent et à la houle.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Rades et estuaires, France'],
+      ['Usage', 'Défense d’une rade ou d’un chenal'],
+      ['Système', 'Maçonnerie sur fondation rocheuse immergée'],
+      ['Matériau dominant', 'Pierre et maçonnerie marine'],
+      ['Plan', 'Plan elliptique ou circulaire en pleine mer'],
+      ['Particularité', 'Construction en milieu marin extrême'],
+    ],
+    materiaux: ['Pierre de taille', 'Mortier hydraulique', 'Fer (ferrures, canons)', 'Bois (casernement intérieur)', 'Plomb (étanchéité)', 'Brique (casemates)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Terrasse d’artillerie à ciel ouvert, casemates voûtées en sous-face.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murailles courbes en pierre de taille, résistant à la houle et aux courants.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers des casernements intérieurs, plateformes d’artillerie en terrasse.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs d’escarpe très épais, plan courbe limitant la prise aux éléments.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers intérieurs desservant casemates et plateformes de tir.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations directement posées sur le rocher immergé à marée basse.' },
+    ],
+    sections: [
+      {
+        title: 'Construire en pleine mer',
+        icon: 'ph ph-waves',
+        intro: "Le chantier ne peut avancer qu’aux heures de marée basse, ce qui allonge considérablement la durée de construction de ces forts en mer.",
+        groups: [
+          G(null, ['Travaux limités aux fenêtres de marée basse', 'Fondations posées directement sur le rocher immergé', 'Chantiers pouvant s’étaler sur plusieurs décennies']),
+        ],
+      },
+      {
+        title: 'Un plan hydrodynamique',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Plan elliptique ou circulaire réduisant la prise à la houle', 'Murailles courbes dispersant l’énergie des vagues', 'Résistance pensée autant contre la mer que contre l’ennemi']),
+        ],
+      },
+      {
+        title: 'Verrouiller une rade',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Position centrale contrôlant l’accès au port ou à l’estuaire', 'Tir croisé avec d’autres forts côtiers', 'Certains forts devenus des symboles populaires (Fort Boyard)']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
