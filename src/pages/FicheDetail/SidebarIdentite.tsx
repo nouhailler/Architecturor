@@ -1,3 +1,4 @@
+import { Image } from '@phosphor-icons/react'
 import styles from './SidebarIdentite.module.css'
 
 interface Props {
@@ -37,10 +38,10 @@ export default function SidebarIdentite({ identite, materiaux }: Props) {
         <div className={styles.gallery}>
           {/* TODO: remplacer ces placeholders par <img src="..." /> */}
           <div className={styles.galleryThumb}>
-            <i className="ph ph-image" style={{ fontSize: 22, color: 'var(--color-neutral-600)' }} />
+            <Image size={22} color="var(--color-neutral-600)" />
           </div>
           <div className={styles.galleryThumb}>
-            <i className="ph ph-image" style={{ fontSize: 22, color: 'var(--color-neutral-600)' }} />
+            <Image size={22} color="var(--color-neutral-600)" />
           </div>
         </div>
         <div className={styles.galleryNote}>Emplacements à compléter avec photos, plans ou relevés.</div>

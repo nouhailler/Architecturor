@@ -1,0 +1,34 @@
+import type { Icon } from '@phosphor-icons/react'
+import {
+  Stack,
+  Rows,
+  Steps,
+  Columns,
+  HouseLine,
+  Buildings,
+  Hammer,
+  ShieldCheck,
+  Tree,
+  Cube,
+  Wall,
+  GridNine,
+  CraneTower,
+  Building,
+} from '@phosphor-icons/react'
+
+export const SECTION_ICONS: Record<string, Icon> = {
+  'ph ph-stack': Stack,
+  'ph ph-rows': Rows,
+  'ph ph-steps': Steps,
+  'ph ph-columns': Columns,
+  'ph ph-house-line': HouseLine,
+  'ph ph-buildings': Buildings,
+  'ph ph-hammer': Hammer,
+  'ph ph-shield-check': ShieldCheck,
+  'ph ph-tree': Tree,
+  'ph ph-bricks': Cube,
+  'ph ph-wall': Wall,
+  'ph ph-grid-nine': GridNine,
+  'ph ph-crane-tower': CraneTower,
+  'ph ph-building': Building,
+}

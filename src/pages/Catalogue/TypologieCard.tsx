@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { Image, MapPin } from '@phosphor-icons/react'
 import type { Typologie } from '../../data/typologies'
 import styles from './TypologieCard.module.css'
 
@@ -14,7 +15,7 @@ export default function TypologieCard({ typologie: t }: { typologie: Typologie }
     <button className={styles.card} onClick={handleClick}>
       {/* TODO: remplacer ce placeholder par <img src="..." alt={t.name} /> */}
       <div className={styles.thumb}>
-        <i className="ph ph-image" style={{ fontSize: 26, color: 'var(--color-neutral-600)' }} />
+        <Image size={26} color="var(--color-neutral-600)" />
         <span className={styles.periodeBadge}>{t.periode}</span>
       </div>
 
@@ -22,7 +23,7 @@ export default function TypologieCard({ typologie: t }: { typologie: Typologie }
         <div>
           <div className={styles.name}>{t.name}</div>
           <div className={styles.region}>
-            <i className="ph ph-map-pin" style={{ fontSize: 12 }} /> {t.region}
+            <MapPin size={12} /> {t.region}
           </div>
         </div>
         <p className={styles.resume}>{t.resume}</p>

@@ -1,3 +1,4 @@
+import { FunnelX } from '@phosphor-icons/react'
 import { useApp } from '../../context/AppContext'
 import { TYPOLOGIES } from '../../data/typologies'
 import FiltersSidebar from './FiltersSidebar'
@@ -30,7 +31,7 @@ export default function Catalogue() {
           <div className={styles.count}>{filtered.length} typologie(s)</div>
           {filtered.length === 0 ? (
             <div className={styles.empty}>
-              <i className="ph ph-funnel-x" style={{ fontSize: 30 }} />
+              <FunnelX size={30} />
               <div style={{ marginTop: 10, fontSize: 14 }}>Aucune typologie ne correspond à ces filtres.</div>
             </div>
           ) : (

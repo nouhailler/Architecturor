@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowLeft } from '@phosphor-icons/react'
+import { ArrowLeft, MapPin } from '@phosphor-icons/react'
 import { TYPOLOGIES_MAP } from '../../data/typologies'
 import { useApp } from '../../context/AppContext'
 import CoupeAnnotee from './CoupeAnnotee'
@@ -42,7 +42,7 @@ export default function FicheDetail() {
           <span className="tag tag-outline">{t.periode}</span>
           <span className="tag tag-accent">{t.procede}</span>
           <span className="tag tag-neutral">
-            <i className="ph ph-map-pin" style={{ fontSize: 11, marginRight: 4 }} />
+            <MapPin size={11} style={{ marginRight: 4 }} />
             {t.region}
           </span>
         </div>

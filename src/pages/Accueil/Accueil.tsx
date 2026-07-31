@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { SquaresFour, ClockCountdown } from '@phosphor-icons/react'
+import { SquaresFour, ClockCountdown, CompassTool, ArrowRight } from '@phosphor-icons/react'
 import CarteTypologies from './CarteTypologies'
 import FriseChronologique from './FriseChronologique'
 import styles from './Accueil.module.css'
@@ -19,7 +19,7 @@ export default function Accueil() {
       <div className={styles.heroWrap}>
         <div className={styles.hero}>
           <div className={styles.badge}>
-            <i className="ph ph-compass-tool" />
+            <CompassTool size={14} />
             Base de référence pour la maîtrise d'œuvre
           </div>
           <h1 className={styles.h1}>
@@ -61,7 +61,7 @@ export default function Accueil() {
         <div className={styles.friseCta}>
           <button className="btn btn-secondary" onClick={goCatalogue}>
             Ouvrir le catalogue complet
-            <i className="ph ph-arrow-right" />
+            <ArrowRight size={14} />
           </button>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { MagnifyingGlass, X } from '@phosphor-icons/react'
 import { useApp, type Filters } from '../../context/AppContext'
 import type { Typologie } from '../../data/typologies'
 import styles from './FiltersSidebar.module.css'
@@ -23,7 +24,7 @@ export default function FiltersSidebar({ typologies }: { typologies: Typologie[]
     <div className={styles.sidebar}>
       {/* Recherche */}
       <div className={styles.searchWrap}>
-        <i className="ph ph-magnifying-glass" style={{ position: 'absolute', left: 11, top: '50%', transform: 'translateY(-50%)', color: 'var(--color-neutral-500)', fontSize: 15, pointerEvents: 'none' }} />
+        <MagnifyingGlass size={15} color="var(--color-neutral-500)" style={{ position: 'absolute', left: 11, top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
         <input
           className="input"
           style={{ paddingLeft: 32 }}
@@ -57,7 +58,7 @@ export default function FiltersSidebar({ typologies }: { typologies: Typologie[]
       {/* Reset */}
       {hasFilters && (
         <button className="btn btn-ghost" onClick={clearAll} style={{ fontSize: '12.5px', marginTop: 4 }}>
-          <i className="ph ph-x" />
+          <X size={14} />
           Réinitialiser
         </button>
       )}

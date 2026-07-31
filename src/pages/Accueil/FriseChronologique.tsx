@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { useNavigate } from 'react-router-dom'
 import styles from './FriseChronologique.module.css'
 
@@ -45,12 +46,11 @@ export default function FriseChronologique() {
 
         {/* Lanes */}
         {LANES.map((lane, i) => (
-          <>
-            <div key={`label-${lane.id}`} className={styles.laneLabel}>
+          <Fragment key={lane.id}>
+            <div className={styles.laneLabel}>
               {lane.label}
             </div>
             <div
-              key={`track-${lane.id}`}
               className={`${styles.track} ${i < LANES.length - 1 ? styles.trackBorder : ''}`}
               onClick={() => handleLane(lane.id)}
             >
@@ -61,7 +61,7 @@ export default function FriseChronologique() {
                 {lane.from}–{String(lane.to).slice(2)}
               </div>
             </div>
-          </>
+          </Fragment>
         ))}
       </div>
     </div>

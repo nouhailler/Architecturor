@@ -1,5 +1,7 @@
+import { CaretUp, CaretDown } from '@phosphor-icons/react'
 import { useApp } from '../../context/AppContext'
 import type { Section } from '../../data/typologies'
+import { SECTION_ICONS } from '../../data/icons'
 import styles from './ProcedeSections.module.css'
 
 export default function ProcedeSections({ sections }: { sections: Section[] }) {
@@ -11,6 +13,8 @@ export default function ProcedeSections({ sections }: { sections: Section[] }) {
       <div className={styles.list}>
         {sections.map((s, i) => {
           const isOpen = !!open[i]
+          const SectionIcon = SECTION_ICONS[s.icon]
+          const CaretIcon = isOpen ? CaretUp : CaretDown
           return (
             <div key={i} className={styles.item}>
               <button
@@ -18,12 +22,9 @@ export default function ProcedeSections({ sections }: { sections: Section[] }) {
                 onClick={() => toggleSection(i)}
                 aria-expanded={isOpen}
               >
-                <i className={s.icon} style={{ fontSize: 17, color: 'var(--color-accent-300)', flexShrink: 0 }} />
+                {SectionIcon && <SectionIcon size={17} color="var(--color-accent-300)" style={{ flexShrink: 0 }} />}
                 <div className={styles.title}>{s.title}</div>
-                <i
-                  className={isOpen ? 'ph ph-caret-up' : 'ph ph-caret-down'}
-                  style={{ fontSize: 15, color: 'var(--color-neutral-500)', flexShrink: 0 }}
-                />
+                <CaretIcon size={15} color="var(--color-neutral-500)" style={{ flexShrink: 0 }} />
               </button>
 
               {isOpen && (
