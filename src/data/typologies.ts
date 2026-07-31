@@ -8364,6 +8364,446 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonbbc',
+    name: 'Maison BBC',
+    region: 'Toutes régions · lotissements périurbains',
+    periode: '2005–2020',
+    procede: 'Isolation renforcée, étanchéité à l’air',
+    usage: 'Habitat individuel basse consommation énergétique',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Maison individuelle conçue pour respecter le label Bâtiment Basse Consommation, généralisé en France avec la réglementation thermique RT 2012. Isolation renforcée par l’extérieur, étanchéité à l’air soignée, ventilation mécanique contrôlée et compacité des volumes limitent les déperditions thermiques.",
+    identite: [
+      ['Période', '2005–2020, généralisation avec la RT 2012'],
+      ['Région', 'Toutes régions, lotissements périurbains'],
+      ['Usage', 'Habitat individuel basse consommation énergétique'],
+      ['Système', 'Ossature légère, isolation renforcée par l’extérieur'],
+      ['Matériau dominant', 'Béton cellulaire ou ossature bois, isolant épais'],
+      ['Plan', 'Volumes compacts limitant les surfaces déperditives'],
+      ['Particularité', 'Consommation énergétique plafonnée à 50 kWh/m²/an'],
+    ],
+    materiaux: ['Béton cellulaire', 'Isolant biosourcé ou minéral', 'Bois (ossature ou bardage)', 'Triple vitrage', 'Membrane d’étanchéité à l’air', 'Panneaux photovoltaïques (option fréquente)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture fortement isolée, souvent équipée de panneaux solaires thermiques ou photovoltaïques.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade compacte à faible surface déperditive, isolation extérieure continue supprimant les ponts thermiques.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher bas isolé, dalle sur terre-plein avec isolation périphérique continue.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure légère (ossature bois ou béton cellulaire) optimisée pour l’inertie et l’isolation.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur classique, sans particularité thermique spécifique.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations avec rupteurs de ponts thermiques limitant les déperditions par le sol.' },
+    ],
+    sections: [
+      {
+        title: 'La réglementation thermique 2012',
+        icon: 'ph ph-buildings',
+        intro: "La RT 2012 généralise le standard BBC à toutes les constructions neuves, imposant un plafond de consommation énergétique strict dès la conception.",
+        groups: [
+          G(null, ['Consommation énergétique plafonnée à 50 kWh/m²/an', 'Généralisation à toute construction neuve depuis 2013', 'Étude thermique obligatoire dès la conception du projet']),
+        ],
+      },
+      {
+        title: 'Une enveloppe performante',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Isolation continue supprimant les ponts thermiques', 'Triple vitrage sur les façades les plus exposées', 'Compacité du volume réduisant les surfaces de déperdition']),
+        ],
+      },
+      {
+        title: 'Ventilation et confort',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Ventilation mécanique contrôlée double flux fréquente', 'Étanchéité à l’air testée et mesurée en fin de chantier', 'Confort d’été géré par protections solaires et inertie']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'maisonpassive',
+    name: 'Maison passive',
+    region: 'Toutes régions · constructions individuelles récentes',
+    periode: '1990–2020',
+    procede: 'Isolation très renforcée, absence de chauffage conventionnel',
+    usage: 'Habitat individuel à très haute performance énergétique',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Maison individuelle conçue selon le standard allemand Passivhaus, poussant la performance énergétique jusqu’à se passer quasi totalement de système de chauffage conventionnel. Isolation extrême, triple vitrage, étanchéité à l’air rigoureuse et récupération de chaleur sur l’air extrait assurent le confort thermique par les seuls apports internes et solaires.",
+    identite: [
+      ['Période', '1990–2020, standard Passivhaus importé d’Allemagne'],
+      ['Région', 'Toutes régions, constructions individuelles récentes'],
+      ['Usage', 'Habitat individuel à très haute performance énergétique'],
+      ['Système', 'Enveloppe hyper-isolée, ventilation à récupération de chaleur'],
+      ['Matériau dominant', 'Isolant très épais, ossature bois fréquente'],
+      ['Plan', 'Compacité maximale, orientation solaire optimisée'],
+      ['Particularité', 'Consommation de chauffage inférieure à 15 kWh/m²/an'],
+    ],
+    materiaux: ['Isolant biosourcé très épais', 'Bois (ossature)', 'Triple vitrage à faible émissivité', 'Membrane d’étanchéité', 'Béton (inertie thermique)', 'Panneaux solaires (appoint)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture très fortement isolée (30 à 40 cm d’isolant), aucune déperdition tolérée en toiture.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade sans aucun pont thermique, isolation continue enveloppant intégralement le volume habité.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher bas isolé en continuité totale avec les murs, absence de rupture d’isolation.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure conçue en amont pour l’étanchéité à l’air, tests d’infiltrométrie obligatoires en fin de chantier.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur classique, sans incidence thermique particulière.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations isolées en sous-face, aucune déperdition tolérée par le sol.' },
+    ],
+    sections: [
+      {
+        title: 'Le standard Passivhaus',
+        icon: 'ph ph-buildings',
+        intro: "Développé en Allemagne à la fin des années 1980, le standard Passivhaus impose des critères de performance parmi les plus exigeants au monde pour l’habitat individuel.",
+        groups: [
+          G(null, ['Norme allemande importée en France dans les années 2000', 'Critères de performance parmi les plus stricts au monde', 'Certification indépendante attestant la conformité au standard']),
+        ],
+      },
+      {
+        title: 'Se passer de chauffage',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Apports solaires et internes suffisants la majeure partie de l’année', 'Récupération de chaleur sur l’air extrait par ventilation double flux', 'Appoint de chauffage minimal, souvent électrique']),
+        ],
+      },
+      {
+        title: 'Une conception exigeante',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Orientation et compacité étudiées dès l’esquisse', 'Simulation thermique dynamique obligatoire', 'Test d’infiltrométrie validant l’étanchéité à l’air finale']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'maisonossaturebois',
+    name: 'Maison ossature bois',
+    region: 'Toutes régions · constructions individuelles récentes',
+    periode: '1970–2020',
+    procede: 'Structure en bois, panneaux préfabriqués',
+    usage: 'Habitat individuel préfabriqué en bois',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Maison individuelle construite selon un système constructif en panneaux de bois préfabriqués en atelier, assemblés rapidement sur site. Technique redécouverte en France à partir des années 1970 pour sa rapidité de mise en œuvre, ses qualités d’isolation naturelle et son bilan carbone favorable.",
+    identite: [
+      ['Période', '1970–2020'],
+      ['Région', 'Toutes régions, constructions individuelles récentes'],
+      ['Usage', 'Habitat individuel préfabriqué en bois'],
+      ['Système', 'Panneaux ossature bois préfabriqués en atelier'],
+      ['Matériau dominant', 'Bois (montants, panneaux OSB)'],
+      ['Plan', 'Trame régulière liée à la modularité des panneaux'],
+      ['Particularité', 'Montage rapide, chantier sec en quelques semaines'],
+    ],
+    materiaux: ['Bois (montants et panneaux OSB)', 'Isolant en caisson (laine ou biosourcé)', 'Bardage bois ou composite', 'Membrane pare-pluie', 'Vis et connecteurs métalliques', 'Vitrage double ou triple'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois classique ou fermettes préfabriquées, couverture légère adaptée à la structure bois.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Bardage bois, composite ou enduit sur ossature, panneaux préfabriqués intégrant déjà l’isolation.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher bois sur solivage ou dalle béton selon les projets, structure légère à chaque niveau.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Montants bois espacés régulièrement, panneaux assemblés en atelier puis levés sur site.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier bois s’intégrant naturellement à la structure générale de la maison.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations légères (plots, longrines ou dalle), adaptées au faible poids de la structure bois.' },
+    ],
+    sections: [
+      {
+        title: 'Un chantier sec et rapide',
+        icon: 'ph ph-hammer',
+        intro: "Assemblés en atelier puis montés sur site en quelques jours, les panneaux ossature bois permettent un chantier sec, propre et rapide comparé à la maçonnerie traditionnelle.",
+        groups: [
+          G(null, ['Panneaux préfabriqués en atelier hors intempéries', 'Montage sur site en quelques jours seulement', 'Chantier sec limitant les délais de séchage']),
+        ],
+      },
+      {
+        title: 'Une préfabrication en atelier',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Isolation intégrée directement dans les panneaux', 'Précision industrielle limitant les malfaçons de chantier', 'Trame modulaire facilitant la personnalisation des plans']),
+        ],
+      },
+      {
+        title: 'Le bois, matériau renouvelable',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Ressource renouvelable et stockage de carbone', 'Filière bois française en développement', 'Légèreté de la structure limitant l’impact des fondations']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'maisoncontainer',
+    name: 'Maison container',
+    region: 'Toutes régions · constructions individuelles récentes',
+    periode: '2000–2020',
+    procede: 'Conteneurs maritimes recyclés, assemblage modulaire',
+    usage: 'Habitat individuel modulaire à partir de conteneurs recyclés',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Habitat individuel construit à partir de conteneurs maritimes recyclés, assemblés et isolés pour former un volume habitable modulaire. Typologie expérimentale et économique, séduisant par son bilan environnemental de réemploi et sa rapidité de mise en œuvre, bien que nécessitant une isolation rapportée importante.",
+    identite: [
+      ['Période', '2000–2020'],
+      ['Région', 'Toutes régions, constructions individuelles récentes'],
+      ['Usage', 'Habitat individuel modulaire à partir de conteneurs recyclés'],
+      ['Système', 'Structure en acier de conteneurs assemblés'],
+      ['Matériau dominant', 'Acier corten (structure), isolant rapporté'],
+      ['Plan', 'Modules rectangulaires assemblés côte à côte ou empilés'],
+      ['Particularité', 'Réemploi de conteneurs maritimes hors d’usage'],
+    ],
+    materiaux: ['Acier corten (conteneurs)', 'Isolant rapporté (intérieur ou extérieur)', 'Bardage bois ou composite (habillage)', 'Vitrage découpé dans les parois', 'Peinture anticorrosion', 'Bois (terrasses et aménagements)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture plate héritée du conteneur, étanchéité rapportée et isolation complémentaire indispensable.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Parois d’acier corten des conteneurs, découpes pour les ouvertures, bardage d’habillage fréquent en finition.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher d’origine du conteneur renforcé ou remplacé, isolation rapportée en sous-face.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature acier autoportante du conteneur, empilement ou juxtaposition selon la surface souhaitée.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier extérieur ou intérieur métallique pour les assemblages à étage.' },
+      { n: 6, el: 'Fondations', txt: 'Plots ou longrines béton, structure légère ne nécessitant pas de fondations profondes.' },
+    ],
+    sections: [
+      {
+        title: 'Le réemploi comme matière première',
+        icon: 'ph ph-hammer',
+        intro: "Détournant des conteneurs maritimes en fin de vie, cette architecture expérimentale mise sur le réemploi et l’économie de matière pour réduire son empreinte environnementale.",
+        groups: [
+          G(null, ['Conteneurs maritimes détournés de leur usage initial', 'Coût de structure réduit comparé à une construction classique', 'Bilan carbone favorable grâce au réemploi de l’acier']),
+        ],
+      },
+      {
+        title: 'Un montage modulaire rapide',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Assemblage de modules identiques par juxtaposition ou empilement', 'Livraison de conteneurs déjà partiellement aménagés en usine', 'Chantier de montage très court comparé au bâti traditionnel']),
+        ],
+      },
+      {
+        title: 'Une isolation à rapporter',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Structure métallique nécessitant une isolation complémentaire importante', 'Traitement des ponts thermiques aux jonctions entre modules', 'Ventilation soignée pour éviter la condensation sur l’acier']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'immeublehqe',
+    name: 'Immeuble HQE',
+    region: 'Toutes régions · quartiers neufs urbains',
+    periode: '1995–2020',
+    procede: 'Béton et isolation performante, certification environnementale',
+    usage: 'Logement collectif à haute qualité environnementale',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Immeuble de logements collectifs conçu et certifié selon la démarche Haute Qualité Environnementale, formalisée en France à la fin des années 1990. Gestion de l’énergie, de l’eau et des déchets, confort acoustique et qualité de l’air intérieur guident la conception dès l’esquisse.",
+    identite: [
+      ['Période', '1995–2020, formalisation de la démarche HQE'],
+      ['Région', 'Toutes régions, quartiers neufs urbains'],
+      ['Usage', 'Logement collectif à haute qualité environnementale'],
+      ['Système', 'Ossature béton, isolation renforcée et gestion technique'],
+      ['Matériau dominant', 'Béton, isolants performants, matériaux biosourcés'],
+      ['Plan', 'Orientation optimisée, espaces extérieurs végétalisés'],
+      ['Particularité', 'Certification environnementale (HQE et labels associés)'],
+    ],
+    materiaux: ['Béton', 'Isolant biosourcé ou minéral performant', 'Bois (structure ou parements)', 'Verre à isolation renforcée', 'Végétalisation (toitures ou façades)', 'Matériaux recyclés ou recyclables'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture souvent végétalisée ou équipée de panneaux solaires, gestion des eaux pluviales intégrée.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade à forte performance thermique, brise-soleil et protections solaires limitant les surchauffes estivales.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers béton avec traitement acoustique renforcé entre logements, isolation phonique poussée.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton classique, mais conception globale optimisée pour réduire l’empreinte environnementale.' },
+      { n: 5, el: 'Escalier', txt: 'Circulations verticales éclairées naturellement, économie d’énergie sur l’éclairage commun.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations classiques, mais gestion des eaux pluviales et perméabilité des sols intégrées au projet.' },
+    ],
+    sections: [
+      {
+        title: 'Une démarche environnementale globale',
+        icon: 'ph ph-buildings',
+        intro: "La démarche HQE structure la conception autour de quatorze cibles couvrant l’énergie, l’eau, les déchets, le confort et la santé des occupants.",
+        groups: [
+          G(null, ['Quatorze cibles couvrant énergie, eau, déchets et confort', 'Certification indépendante attestant les performances du bâtiment', 'Démarche intégrée dès les premières esquisses du projet']),
+        ],
+      },
+      {
+        title: 'Confort et santé des occupants',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Qualité de l’air intérieur, matériaux à faibles émissions', 'Confort acoustique renforcé entre logements', 'Lumière naturelle maximisée par l’orientation des plans']),
+        ],
+      },
+      {
+        title: 'Une gestion responsable des ressources',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Gestion des eaux pluviales par toitures végétalisées ou noues', 'Tri sélectif intégré dès la conception des locaux communs', 'Chantier à faibles nuisances pour le voisinage']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'ecoquartier',
+    name: 'Écoquartier',
+    region: 'Toutes régions · périphérie des grandes villes',
+    periode: '2005–2020',
+    procede: 'Urbanisme durable, mixité des fonctions',
+    usage: 'Quartier neuf conçu selon des principes de développement durable',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Quartier neuf conçu à l’échelle urbaine selon des principes de développement durable : densité maîtrisée, mixité des fonctions et des logements, déplacements doux privilégiés, gestion écologique de l’eau et des espaces verts. Un label national attribué depuis 2009 encourage la diffusion du modèle dans toute la France.",
+    identite: [
+      ['Période', '2005–2020, label national depuis 2009'],
+      ['Région', 'Toutes régions, périphérie des grandes villes'],
+      ['Usage', 'Quartier neuf conçu selon des principes de développement durable'],
+      ['Système', 'Urbanisme mixte, trame viaire apaisée'],
+      ['Matériau dominant', 'Bâti hétérogène répondant à des exigences communes'],
+      ['Plan', 'Îlots mixtes, espaces publics partagés, noues paysagères'],
+      ['Particularité', 'Label national ÉcoQuartier depuis 2009'],
+    ],
+    materiaux: ['Béton bas carbone', 'Bois (structures et bardages)', 'Enrobés perméables (voiries)', 'Végétalisation (noues, toitures)', 'Matériaux biosourcés', 'Panneaux solaires (équipements collectifs)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toitures végétalisées ou photovoltaïques fréquentes sur les bâtiments collectifs et équipements publics.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Diversité architecturale encadrée par une charte commune de performance environnementale et paysagère.' },
+      { n: 3, el: 'Planchers', txt: 'Bâtiments individuels certifiés selon des standards énergétiques élevés (BBC, passif, HQE).' },
+      { n: 4, el: 'Structure porteuse', txt: 'Hétérogénéité des systèmes constructifs, unifiés par les objectifs environnementaux du cahier des charges.' },
+      { n: 5, el: 'Escalier', txt: 'Circulations douces (piétons, vélos) privilégiées dans l’organisation générale du quartier.' },
+      { n: 6, el: 'Fondations', txt: 'Gestion différenciée des eaux pluviales par noues et bassins paysagers plutôt que par réseaux enterrés.' },
+    ],
+    sections: [
+      {
+        title: 'Un urbanisme durable',
+        icon: 'ph ph-buildings',
+        intro: "Le label national ÉcoQuartier, créé en 2009, distingue les opérations d’aménagement exemplaires en matière de développement durable et encourage leur diffusion.",
+        groups: [
+          G(null, ['Densité maîtrisée limitant l’étalement urbain', 'Mixité des fonctions : logements, commerces, équipements', 'Mixité sociale intégrée dans la programmation des logements']),
+        ],
+      },
+      {
+        title: 'Mixité et déplacements doux',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Pistes cyclables et cheminements piétons prioritaires', 'Stationnement automobile limité et mutualisé', 'Trame viaire apaisée favorisant les zones de rencontre']),
+        ],
+      },
+      {
+        title: 'Gérer l’eau et la nature en ville',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Noues paysagères gérant les eaux pluviales à ciel ouvert', 'Espaces verts partagés favorisant la biodiversité urbaine', 'Perméabilité des sols préservée par des revêtements adaptés']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'residenceetudiante',
+    name: 'Résidence étudiante',
+    region: 'Toutes régions · villes universitaires',
+    periode: '2000–2020',
+    procede: 'Béton, studios individuels équipés',
+    usage: 'Logement étudiant privé ou conventionné',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Immeuble de logements individuels équipés — studio avec kitchenette et salle d’eau — destiné aux étudiants, développé massivement depuis les années 2000 par des opérateurs privés ou en partenariat public-privé pour compléter l’offre historique des cités universitaires publiques. Services mutualisés intégrés au rez-de-chaussée.",
+    identite: [
+      ['Période', '2000–2020'],
+      ['Région', 'Toutes régions, villes universitaires'],
+      ['Usage', 'Logement étudiant privé ou conventionné'],
+      ['Système', 'Ossature béton, studios modulaires répétitifs'],
+      ['Matériau dominant', 'Béton, isolation courante renforcée'],
+      ['Plan', 'Studios individuels desservis par coursive ou couloir'],
+      ['Particularité', 'Services mutualisés en rez-de-chaussée (laverie, salle commune)'],
+    ],
+    materiaux: ['Béton', 'Isolant thermique et phonique', 'Verre (baies des studios)', 'Aluminium (menuiseries)', 'Placoplâtre (cloisons)', 'Revêtements de sol résilients'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture-terrasse classique, parfois équipée de panneaux solaires pour l’eau chaude collective.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade rythmée par les fenêtres régulières des studios individuels, traitement architectural souvent contemporain.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers béton avec isolation phonique renforcée entre studios pour limiter les nuisances entre voisins.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton répétitive optimisée pour la construction en série de studios identiques.' },
+      { n: 5, el: 'Escalier', txt: 'Cages d’escalier et ascenseurs desservant plusieurs étages de studios, contrôle d’accès sécurisé.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations béton armé classiques, adaptées à un bâtiment collectif urbain dense.' },
+    ],
+    sections: [
+      {
+        title: 'Compléter l’offre publique',
+        icon: 'ph ph-buildings',
+        intro: "Face à la saturation des cités universitaires publiques historiques, des opérateurs privés développent depuis les années 2000 une offre alternative de studios étudiants équipés.",
+        groups: [
+          G(null, ['Développement par opérateurs privés ou en partenariat public-privé', 'Réponse à la saturation des cités universitaires publiques', 'Implantation proche des campus et des transports']),
+        ],
+      },
+      {
+        title: 'Le studio, unité de base',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Studio équipé : kitchenette, salle d’eau, espace couchage', 'Surface optimisée entre 18 et 25 m² en moyenne', 'Meublé et prêt à l’emploi dès l’arrivée de l’étudiant']),
+        ],
+      },
+      {
+        title: 'Des services mutualisés',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Laverie collective en rez-de-chaussée', 'Salle commune et espaces de coworking partagés', 'Sécurité et contrôle d’accès centralisés']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'residencesenior',
+    name: 'Résidence senior',
+    region: 'Toutes régions · villes moyennes et grandes',
+    periode: '2000–2020',
+    procede: 'Béton, appartements adaptés, services intégrés',
+    usage: 'Logement autonome avec services pour personnes âgées',
+    categorie: 'urbain',
+    periodeTags: ['XXe'],
+    resume:
+      "Immeuble de logements autonomes adaptés au vieillissement, destiné aux personnes âgées valides souhaitant conserver leur indépendance tout en bénéficiant de services collectifs — restauration, animations, sécurité. Typologie intermédiaire entre le logement ordinaire et l’établissement médicalisé, en fort développement depuis les années 2000.",
+    identite: [
+      ['Période', '2000–2020'],
+      ['Région', 'Toutes régions, villes moyennes et grandes'],
+      ['Usage', 'Logement autonome avec services pour personnes âgées'],
+      ['Système', 'Ossature béton, appartements accessibles'],
+      ['Matériau dominant', 'Béton, revêtements antidérapants'],
+      ['Plan', 'Appartements individuels autour d’espaces communs de services'],
+      ['Particularité', 'Accessibilité totale, téléassistance intégrée'],
+    ],
+    materiaux: ['Béton', 'Revêtements de sol antidérapants', 'Verre (baies accessibles)', 'Aluminium (menuiseries adaptées)', 'Domotique (téléassistance)', 'Ascenseurs (généralisés à tous les étages)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture-terrasse classique, parfois aménagée en jardin partagé accessible aux résidents.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade sans obstacle, accès de plain-pied ou par rampes douces depuis les espaces extérieurs.' },
+      { n: 3, el: 'Planchers', txt: 'Sols antidérapants sans ressaut, circulations larges facilitant le passage de déambulateurs et fauteuils.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton classique, dimensionnement des circulations adapté aux normes d’accessibilité.' },
+      { n: 5, el: 'Escalier', txt: 'Ascenseurs généralisés à tous les étages, escaliers secondaires réservés aux issues de secours.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations béton armé classiques, implantation privilégiant la proximité des commerces et services.' },
+    ],
+    sections: [
+      {
+        title: 'Vieillir chez soi autrement',
+        icon: 'ph ph-buildings',
+        intro: "Entre le domicile classique et l’établissement médicalisé, la résidence senior offre un cadre autonome et sécurisé aux personnes âgées valides souhaitant préserver leur indépendance.",
+        groups: [
+          G(null, ['Public de personnes âgées valides et autonomes', 'Alternative au maintien à domicile isolé', 'Distincte des établissements médicalisés (EHPAD)']),
+        ],
+      },
+      {
+        title: 'Une accessibilité totale',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Absence de ressaut, circulations larges dans tout le bâtiment', 'Ascenseurs desservant systématiquement chaque étage', 'Salles de bains adaptées, barres d’appui intégrées']),
+        ],
+      },
+      {
+        title: 'Des services du quotidien',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Restauration collective proposée en salle commune', 'Animations et activités favorisant le lien social', 'Téléassistance et surveillance discrète disponibles 24h/24']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))

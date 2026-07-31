@@ -157,6 +157,14 @@ const MICRO_PINS = [
   { id: 'etablissementthermal', cx: 300, cy: 190, label: 'Établissement thermal' },
   { id: 'villaartdeco',     cx: 250, cy: 810, label: 'Villa Art déco' },
   { id: 'pavillondeplage',  cx: 215, cy: 610, label: 'Pavillon de plage' },
+  { id: 'maisonbbc',        cx: 400, cy: 550, label: 'Maison BBC' },
+  { id: 'maisonpassive',    cx: 430, cy: 570, label: 'Maison passive' },
+  { id: 'maisonossaturebois', cx: 700, cy: 420, label: 'Maison ossature bois' },
+  { id: 'maisoncontainer',  cx: 370, cy: 570, label: 'Maison container' },
+  { id: 'immeublehqe',      cx: 500, cy: 260, label: 'Immeuble HQE' },
+  { id: 'ecoquartier',      cx: 470, cy: 280, label: 'Écoquartier' },
+  { id: 'residenceetudiante', cx: 440, cy: 610, label: 'Résidence étudiante' },
+  { id: 'residencesenior',  cx: 410, cy: 610, label: 'Résidence senior' },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */
