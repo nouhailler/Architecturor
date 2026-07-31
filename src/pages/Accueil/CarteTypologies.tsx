@@ -146,6 +146,12 @@ const MICRO_PINS = [
   { id: 'hallemedievale',   cx: 350, cy: 620, label: 'Halle médiévale' },
   { id: 'centrecommercial', cx: 610, cy: 470, label: 'Centre commercial' },
   { id: 'grandesurface',    cx: 260, cy: 480, label: 'Grande surface' },
+  { id: 'casino',           cx: 260, cy: 160, label: 'Casino' },
+  { id: 'theatreitalienne', cx: 560, cy: 350, label: 'Théâtre à l’italienne' },
+  { id: 'cinema',           cx: 590, cy: 550, label: 'Cinéma' },
+  { id: 'piscinemunicipale', cx: 620, cy: 600, label: 'Piscine municipale' },
+  { id: 'salledesfetes',    cx: 480, cy: 520, label: 'Salle des fêtes' },
+  { id: 'kiosquemusique',   cx: 450, cy: 460, label: 'Kiosque à musique' },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */

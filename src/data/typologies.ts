@@ -7759,6 +7759,336 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'casino',
+    name: 'Casino',
+    region: 'Stations balnéaires et thermales',
+    periode: '1850–1930',
+    procede: 'Structure éclectique, salles en enfilade',
+    usage: 'Loisirs, jeux et mondanités des villes d’eaux',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Édifice de loisirs et de jeux né de l’essor des villes d’eaux et des stations balnéaires au XIXe siècle, réunissant salles de jeux, salle de bal, théâtre et terrasses sous une architecture éclectique et festive. Symbole de la Belle Époque, souvent la pièce maîtresse du front de mer ou du quartier thermal.",
+    identite: [
+      ['Période', '1850–1930, apogée à la Belle Époque'],
+      ['Région', 'Stations balnéaires et thermales'],
+      ['Usage', 'Loisirs, jeux et mondanités des villes d’eaux'],
+      ['Système', 'Structure éclectique, salles en enfilade'],
+      ['Matériau dominant', 'Pierre, brique, structure métallique'],
+      ['Plan', 'Salles en enfilade, terrasse sur la mer ou le parc'],
+      ['Particularité', 'Façade festive, coupoles et frontons décoratifs'],
+    ],
+    materiaux: ['Pierre de taille', 'Brique', 'Fer (structure de salle)', 'Verre (verrières et vérandas)', 'Stuc (décor intérieur)', 'Marbre (salons de jeux)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Coupoles ou dômes décoratifs coiffant les salles principales, toiture complexe multipliant les volumes.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade éclectique très ornementée, mêlant références classiques, orientalistes ou Art nouveau selon l’époque de construction.' },
+      { n: 3, el: 'Planchers', txt: 'Parquets précieux dans les salons de jeux, marbre dans les halls d’accueil et les galeries.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure mixte pierre et métal permettant de grandes salles sans poteaux gênant la circulation des joueurs.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier d’apparat menant aux salons de jeux, souvent mis en scène comme un lieu de représentation sociale.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations adaptées à l’implantation en bord de mer ou en terrain thermal, parfois sur pilotis.' },
+    ],
+    sections: [
+      {
+        title: 'Le temple de la Belle Époque',
+        icon: 'ph ph-building',
+        intro: "Le casino incarne l’âge d’or des villes d’eaux, lieu de rencontre de l’aristocratie et de la bourgeoisie venues prendre les eaux ou profiter du bord de mer.",
+        groups: [
+          G(null, ['Pièce maîtresse du front de mer ou du quartier thermal', 'Concession municipale encadrant les jeux d’argent', 'Symbole du tourisme de villégiature naissant']),
+        ],
+      },
+      {
+        title: 'Salles de jeux et de bal',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Salle de jeux réservée aux tables de hasard', 'Grande salle de bal pour les soirées mondaines', 'Théâtre ou salle de spectacle souvent intégré à l’ensemble']),
+        ],
+      },
+      {
+        title: 'Une architecture festive',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Éclectisme stylistique affichant le prestige de l’établissement', 'Terrasses et vérandas ouvertes sur la mer ou le parc', 'Décor intérieur riche : stuc, dorures, verrières colorées']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'theatreitalienne',
+    name: 'Théâtre à l’italienne',
+    region: 'Toutes régions · villes moyennes et grandes',
+    periode: '1750–1900',
+    procede: 'Maçonnerie, auditorium en fer à cheval',
+    usage: 'Représentation théâtrale et lyrique',
+    categorie: 'publique',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Salle de spectacle organisée en fer à cheval autour de la scène, héritière du modèle milanais diffusé en France dès le XVIIIe siècle. Loges superposées sur plusieurs niveaux, plafond peint, lustre monumental et scène à l’italienne équipée d’une machinerie complexe.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Toutes régions, villes moyennes et grandes'],
+      ['Usage', 'Représentation théâtrale et lyrique'],
+      ['Système', 'Maçonnerie porteuse, auditorium en fer à cheval'],
+      ['Matériau dominant', 'Pierre de taille, structure bois pour la scène'],
+      ['Plan', 'Auditorium en fer à cheval, scène à l’italienne'],
+      ['Particularité', 'Loges superposées, plafond peint, lustre monumental'],
+    ],
+    materiaux: ['Pierre de taille', 'Bois (charpente de scène, sièges)', 'Velours (sièges et tentures)', 'Dorure (décor des loges)', 'Verre (lustre)', 'Toile peinte (décors et plafond)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente élevée au-dessus de la cage de scène pour loger les décors et la machinerie théâtrale (cintres).' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade monumentale en pierre de taille, péristyle à colonnes marquant l’entrée principale des spectateurs.' },
+      { n: 3, el: 'Planchers', txt: 'Parterre en légère pente vers la scène, planchers des loges superposées sur plusieurs étages.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre pour l’auditorium, charpente bois complexe pour la cage de scène et ses dessous.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers d’honneur desservant les différents niveaux de loges et le balcon.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes, dessous de scène excavés pour loger la machinerie de décors.' },
+    ],
+    sections: [
+      {
+        title: 'Le modèle du fer à cheval',
+        icon: 'ph ph-buildings',
+        intro: "Diffusé depuis Milan dès le XVIIIe siècle, le plan en fer à cheval optimise à la fois l’acoustique et la visibilité de la scène pour un maximum de spectateurs.",
+        groups: [
+          G(null, ['Auditorium en fer à cheval optimisant vue et acoustique', 'Loges superposées sur trois à cinq niveaux', 'Modèle diffusé dans toutes les grandes villes françaises']),
+        ],
+      },
+      {
+        title: 'La machinerie de scène',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Cintres au-dessus de la scène pour suspendre les décors', 'Dessous de scène excavés pour les trappes et machineries', 'Changements de décor à vue grâce à des systèmes de poulies']),
+        ],
+      },
+      {
+        title: 'Voir et être vu',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Loges privées, lieu de sociabilité mondaine autant que de spectacle', 'Lustre monumental central symbole de prestige', 'Plafond peint souvent orné d’une allégorie des arts']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'cinema',
+    name: 'Cinéma',
+    region: 'Toutes régions · centres-villes',
+    periode: '1920–1960',
+    procede: 'Béton, façade Art déco, grande salle obscure',
+    usage: 'Projection cinématographique',
+    categorie: 'publique',
+    periodeTags: ['XXe'],
+    resume:
+      "Salle de spectacle dédiée à la projection cinématographique, généralisée après l’essor du cinéma parlant à la fin des années 1920. Façade souvent traitée en Art déco ou en style paquebot, grande salle obscure en gradins, enseigne lumineuse signalant l’établissement dans la rue commerçante.",
+    identite: [
+      ['Période', '1920–1960'],
+      ['Région', 'Toutes régions, centres-villes'],
+      ['Usage', 'Projection cinématographique'],
+      ['Système', 'Structure béton, grande salle en gradins'],
+      ['Matériau dominant', 'Béton, enduit lisse'],
+      ['Plan', 'Hall d’entrée, salle en gradins face à l’écran'],
+      ['Particularité', 'Façade Art déco, enseigne lumineuse'],
+    ],
+    materiaux: ['Béton', 'Enduit lisse', 'Verre (façade et guichet)', 'Velours (fauteuils)', 'Néon (enseigne lumineuse)', 'Acier (structure de gradins)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture-terrasse en béton, absence de fenêtres pour garantir l’obscurité totale de la salle de projection.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade Art déco ou style paquebot, lignes horizontales épurées, enseigne lumineuse au néon signalant le nom du cinéma.' },
+      { n: 3, el: 'Planchers', txt: 'Sol en gradins progressifs assurant une vue dégagée sur l’écran depuis chaque rangée de fauteuils.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton armé libérant une vaste salle sans poteau intermédiaire gênant la vision.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers desservant le balcon dans les salles à plusieurs niveaux, issues de secours dimensionnées pour l’évacuation rapide.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en béton armé, salle souvent en contrebas pour optimiser la pente des gradins.' },
+    ],
+    sections: [
+      {
+        title: 'L’avènement du parlant',
+        icon: 'ph ph-buildings',
+        intro: "L’arrivée du cinéma parlant à la fin des années 1920 déclenche la construction de salles dédiées dans toutes les villes françaises, remplaçant les projections itinérantes.",
+        groups: [
+          G(null, ['Salle dédiée remplaçant les projections itinérantes', 'Équipement sonore intégré dès la conception', 'Diffusion rapide dans les centres-villes à partir de 1930']),
+        ],
+      },
+      {
+        title: 'Une salle obscure en gradins',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Gradins assurant une vision dégagée depuis chaque rang', 'Obscurité totale requise, absence de fenêtres', 'Grande portée structurelle libérant la salle de tout poteau']),
+        ],
+      },
+      {
+        title: 'L’Art déco au service du spectacle',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Façade épurée aux lignes horizontales caractéristiques', 'Enseigne lumineuse au néon, signal urbain la nuit', 'Hall d’entrée soigné, vitrine des affiches du moment']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'piscinemunicipale',
+    name: 'Piscine municipale',
+    region: 'Toutes régions · villes moyennes et grandes',
+    periode: '1930–1975',
+    procede: 'Béton armé, grand bassin couvert',
+    usage: 'Baignade et natation publiques',
+    categorie: 'publique',
+    periodeTags: ['XXe'],
+    resume:
+      "Établissement public dédié à la baignade et à l’apprentissage de la natation, généralisé durant l’entre-deux-guerres puis massivement construit après 1945 dans le cadre de la politique du sport pour tous. Grand bassin couvert sous charpente béton ou métallique, gradins de spectateurs, cabines de déshabillage alignées.",
+    identite: [
+      ['Période', '1930–1975'],
+      ['Région', 'Toutes régions, villes moyennes et grandes'],
+      ['Usage', 'Baignade et natation publiques'],
+      ['Système', 'Structure béton armé, grande portée sur le bassin'],
+      ['Matériau dominant', 'Béton armé, carrelage'],
+      ['Plan', 'Bassin central, gradins et cabines périphériques'],
+      ['Particularité', 'Verrières ou sheds assurant un éclairage zénithal'],
+    ],
+    materiaux: ['Béton armé', 'Carrelage (bassin et sols)', 'Verre (verrières)', 'Acier (structure de toiture)', 'Chlore (traitement de l’eau)', 'Céramique (revêtements muraux)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente béton ou métallique à grande portée libérant le bassin de tout poteau intermédiaire, souvent percée de sheds zénithaux.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade fonctionnaliste en béton, grandes baies vitrées éclairant le hall d’entrée et parfois le bassin lui-même.' },
+      { n: 3, el: 'Planchers', txt: 'Sols carrelés antidérapants, bassin étanche en béton revêtu de carrelage clair.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton armé à grande portée, structure calculée pour couvrir le bassin sans appui central.' },
+      { n: 5, el: 'Escalier', txt: 'Gradins en béton pour les spectateurs, escaliers menant aux cabines de déshabillage à l’étage dans certains établissements.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations renforcées et étanches, bassin excavé et parfaitement imperméabilisé.' },
+    ],
+    sections: [
+      {
+        title: 'Le sport pour tous',
+        icon: 'ph ph-buildings',
+        intro: "Portée par la politique publique du sport pour tous, la construction de piscines municipales se généralise après 1945 pour démocratiser l’apprentissage de la natation.",
+        groups: [
+          G(null, ['Politique publique du sport pour tous après 1945', 'Apprentissage de la natation intégré aux programmes scolaires', 'Équipement structurant financé par les communes']),
+        ],
+      },
+      {
+        title: 'Une grande portée libre',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Structure béton ou métallique sans appui central', 'Bassin dégagé pour la pratique sportive et les compétitions', 'Gradins intégrés pour les spectateurs lors des épreuves']),
+        ],
+      },
+      {
+        title: 'Lumière et hygiène',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Sheds ou verrières zénithales pour la lumière naturelle', 'Carrelage clair facilitant le nettoyage et l’hygiène', 'Traitement de l’eau chlorée selon des normes sanitaires strictes']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'salledesfetes',
+    name: 'Salle des fêtes',
+    region: 'Toutes régions · chaque commune',
+    periode: '1900–1980',
+    procede: 'Charpente bois ou métallique, grand volume libre',
+    usage: 'Réunions, bals et fêtes communales',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Grand volume communal polyvalent accueillant bals, banquets, réunions électorales et fêtes locales, présent dans la quasi-totalité des communes françaises. Scène surélevée à une extrémité, plancher de danse dégagé, souvent associée à la mairie ou à l’école dans les petites communes.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle'],
+      ['Région', 'Toutes régions, présente dans chaque commune'],
+      ['Usage', 'Réunions, bals et fêtes communales'],
+      ['Système', 'Charpente bois ou métallique, grand volume libre'],
+      ['Matériau dominant', 'Parpaing ou pierre, charpente bois'],
+      ['Plan', 'Volume unique, scène surélevée à une extrémité'],
+      ['Particularité', 'Plancher de danse et scène amovible'],
+    ],
+    materiaux: ['Parpaing enduit', 'Pierre locale', 'Bois (charpente et plancher de danse)', 'Métal (charpente légère)', 'Verre (fenêtres hautes)', 'Zinc (toiture)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente à grande portée en bois ou métal, dégageant un volume unique sans poteau intermédiaire pour la danse.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade sobre et fonctionnelle, fenêtres hautes pour la lumière sans vis-à-vis, entrée principale marquée d’un fronton simple.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher de danse en bois, estrade de scène surélevée et amovible à une extrémité de la salle.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Charpente à grande portée libérant tout le volume central pour la danse et les tablées de banquet.' },
+      { n: 5, el: 'Escalier', txt: 'Quelques marches menant à la scène, rarement d’étage dans les salles les plus modestes.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations simples en pierre ou béton, bâtiment souvent implanté près de la mairie ou de l’école.' },
+    ],
+    sections: [
+      {
+        title: 'Le cœur de la vie communale',
+        icon: 'ph ph-building',
+        intro: "Bal du 14 juillet, banquet des classes, réunion électorale : la salle des fêtes concentre toute la vie collective de la commune sous un même toit.",
+        groups: [
+          G(null, ['Bals populaires et banquets des classes d’âge', 'Réunions électorales et assemblées communales', 'Souvent associée à la mairie ou à l’école']),
+        ],
+      },
+      {
+        title: 'Un volume polyvalent',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Grand volume libre adaptable à tous les usages', 'Mobilier amovible : tables, chaises, estrade', 'Cuisine ou office attenant pour les banquets']),
+        ],
+      },
+      {
+        title: 'La scène et le bal',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Scène surélevée pour l’orchestre ou les spectacles amateurs', 'Plancher de danse au centre de la salle', 'Décor sobre laissant la part belle à l’événement']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'kiosquemusique',
+    name: 'Kiosque à musique',
+    region: 'Toutes régions · parcs et places publiques',
+    periode: '1860–1914',
+    procede: 'Structure métallique légère, fonte ornementale',
+    usage: 'Concerts publics en plein air',
+    categorie: 'publique',
+    periodeTags: ['XIXe'],
+    resume:
+      "Petit pavillon octogonal ou circulaire en fonte et bois, implanté dans un parc ou sur une place publique pour accueillir les concerts de la fanfare municipale ou du régiment local. Diffusé dans toute la France à la Belle Époque comme symbole de la vie sociale et musicale des communes.",
+    identite: [
+      ['Période', '1860–1914, apogée à la Belle Époque'],
+      ['Région', 'Toutes régions, parcs et places publiques'],
+      ['Usage', 'Concerts publics en plein air'],
+      ['Système', 'Structure métallique légère sur socle maçonné'],
+      ['Matériau dominant', 'Fonte ornementale, bois'],
+      ['Plan', 'Octogonal ou circulaire, estrade surélevée'],
+      ['Particularité', 'Garde-corps en fonte ajourée, toiture en zinc'],
+    ],
+    materiaux: ['Fonte (colonnes et garde-corps)', 'Bois (plancher d’estrade)', 'Zinc (toiture)', 'Pierre (socle)', 'Fer forgé (ornements)', 'Peinture (finition décorative)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Petite toiture conique ou en pagode couverte de zinc, souvent ornée d’un épi de faîtage décoratif.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Colonnettes de fonte ajourées soutenant la toiture, garde-corps en fonte ouvragée ceinturant l’estrade.' },
+      { n: 3, el: 'Planchers', txt: 'Estrade en plancher de bois légèrement surélevée par rapport au sol du parc ou de la place.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Fines colonnes de fonte préfabriquées supportant l’ensemble de la toiture, structure entièrement démontable.' },
+      { n: 5, el: 'Escalier', txt: 'Quelques marches de pierre ou de fonte menant à l’estrade surélevée.' },
+      { n: 6, el: 'Fondations', txt: 'Socle maçonné circulaire ou octogonal, fondations légères adaptées au faible poids de la structure.' },
+    ],
+    sections: [
+      {
+        title: 'La musique dans la ville',
+        icon: 'ph ph-building',
+        intro: "Chaque dimanche, la fanfare municipale ou la clique du régiment se produit sous le kiosque, rendez-vous social incontournable de la vie de quartier.",
+        groups: [
+          G(null, ['Concerts dominicaux de la fanfare municipale', 'Rendez-vous social des familles au parc ou sur la place', 'Symbole de la vie musicale amateur de la Belle Époque']),
+        ],
+      },
+      {
+        title: 'Une dentelle de fonte',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Colonnettes et garde-corps en fonte finement ouvragée', 'Motifs végétaux ou géométriques répétitifs', 'Structure légère mettant en valeur le savoir-faire des fonderies']),
+        ],
+      },
+      {
+        title: 'Un mobilier urbain préfabriqué',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Modèles standardisés diffusés par catalogue de fonderie', 'Structure démontable et facilement transportable', 'Diffusion nationale expliquant la grande similitude des kiosques']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
