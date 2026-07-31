@@ -5994,6 +5994,229 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'chaletalpage',
+    name: "Chalet d'alpage",
+    region: 'Alpes · Savoie, Haute-Savoie, Isère',
+    periode: '1700–1950',
+    procede: 'Bois & pierre sèche',
+    usage: "Chalet d'estive, fabrication fromagère",
+    categorie: 'montagne',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Bâtiment sommaire d’altitude occupé uniquement l’été durant l’estive, servant au logement du berger, à la traite et à la fabrication du fromage (beaufort, reblochon). Plus rustique et plus petit que le chalet savoyard permanent, il se réduit souvent à une seule pièce avec cave d’affinage attenante.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Alpes du Nord, alpages d’altitude'],
+      ['Usage', "Chalet d'alpage, estive fromagère"],
+      ['Système', 'Murs pierre sèche ou maçonnés + charpente bois'],
+      ['Matériau dominant', 'Pierre locale & bois d’épicéa'],
+      ['Toiture', 'Ancelles ou tôle, forte pente'],
+      ['Particularité', 'Occupation strictement saisonnière (estive)'],
+    ],
+    materiaux: ['Pierre locale', 'Épicéa', 'Mélèze', 'Ancelle (bardeau)', 'Terre battue', 'Tôle (toitures tardives)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente simple à forte pente, couverture d’ancelles de bois ou de tôle, lestée de pierres contre le vent.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs bas en pierre sèche ou maçonnée grossière, une seule ouverture principale.' },
+      { n: 3, el: 'Planchers', txt: 'Sol en terre battue ou dallage sommaire ; cave d’affinage en contrebas ou attenante.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs massifs bas, charpente bois reposant directement sur la maçonnerie.' },
+      { n: 5, el: 'Escalier', txt: 'Pas d’étage : bâtiment de plain-pied à volume unique ou divisé en deux pièces.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrage sommaire sur le sol rocheux de l’alpage, souvent sans réelle fondation.' },
+    ],
+    sections: [
+      {
+        title: 'Un habitat d’estive',
+        icon: 'ph ph-mountains',
+        intro: "Occupé de juin à septembre seulement, le chalet d’alpage abrite le berger et son troupeau durant la saison de pâture en altitude.",
+        groups: [
+          G(null, ['Occupation strictement saisonnière (estive)', 'Salle de traite et de fabrication fromagère', 'Cave d’affinage attenante ou en sous-sol frais']),
+        ],
+      },
+      {
+        title: 'Une construction sommaire',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Murs bas en pierre sèche ou maçonnerie grossière', 'Volume réduit, souvent une seule pièce', 'Plus rustique que le chalet savoyard permanent']),
+        ],
+      },
+      {
+        title: 'Toiture contre le vent d’altitude',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Forte pente pour l’évacuation de la neige', 'Couverture d’ancelles lestée de pierres', 'Charpente simple, peu de bois disponible en altitude']),
+        ],
+        outro: "Beaucoup de chalets d’alpage sont aujourd’hui restaurés pour l’accueil touristique estival tout en conservant leur usage pastoral.",
+      },
+    ],
+  },
+
+  {
+    id: 'refugemontagne',
+    name: 'Refuge de montagne',
+    region: 'Alpes · Pyrénées',
+    periode: '1880–1980',
+    procede: 'Pierre & bois, structure renforcée',
+    usage: 'Refuge d’altitude pour alpinistes et randonneurs',
+    categorie: 'montagne',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Bâtiment d’altitude construit par les clubs alpins à partir de la fin du XIXe siècle pour l’accueil des alpinistes et randonneurs en haute montagne. Volumétrie compacte et aérodynamique, structure renforcée contre le vent et la neige, souvent accessible uniquement à pied ou par câble de ravitaillement.",
+    identite: [
+      ['Période', 'Fin XIXe siècle – XXe siècle'],
+      ['Région', 'Alpes, Pyrénées, haute montagne'],
+      ['Usage', 'Refuge d’altitude, accueil alpin'],
+      ['Système', 'Structure renforcée pierre et bois ou métal'],
+      ['Matériau dominant', 'Pierre locale, bois, tôle ondulée'],
+      ['Toiture', 'Terrasse ou faible pente, ancrage renforcé'],
+      ['Particularité', 'Ravitaillement héliporté ou par câble'],
+    ],
+    materiaux: ['Pierre locale', 'Bois massif', 'Tôle ondulée', 'Métal (ancrages)', 'Béton (soubassement tardif)', 'Verre (baies protégées)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Terrasse ou toiture à très faible pente, fortement ancrée pour résister aux vents violents d’altitude.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs bas en pierre locale ou bardage métallique, ouvertures réduites et protégées.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois sur solivage renforcé, dortoirs superposés pour optimiser l’espace.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure massive et compacte, contreventée contre les charges de vent et de neige extrêmes.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers et échelles intérieures étroites desservant les dortoirs mezzanine.' },
+      { n: 6, el: 'Fondations', txt: 'Ancrages profonds scellés dans la roche pour résister aux vents violents d’altitude.' },
+    ],
+    sections: [
+      {
+        title: 'Un poste avancé en haute montagne',
+        icon: 'ph ph-mountains',
+        intro: "Construit par les clubs alpins, le refuge jalonne les itinéraires d’ascension et offre un abri sûr entre la vallée et le sommet.",
+        groups: [
+          G(null, ['Étape entre la vallée et les sommets', 'Dortoirs collectifs et salle commune', 'Gardiennage saisonnier, ravitaillement héliporté']),
+        ],
+      },
+      {
+        title: 'Une architecture aérodynamique',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Volumétrie compacte réduisant la prise au vent', 'Ancrages renforcés dans la roche', 'Matériaux résistants au gel et aux UV d’altitude']),
+        ],
+      },
+      {
+        title: 'Une évolution constructive',
+        icon: 'ph ph-buildings',
+        groups: [
+          G('XIXe siècle', ['Refuges pionniers en pierre sèche, très sommaires']),
+          G('XXe siècle', ['Structures métalliques préfabriquées, transportées par hélicoptère']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'grangeforaine',
+    name: 'Grange foraine',
+    region: 'Alpes · Jura · Vosges',
+    periode: '1700–1950',
+    procede: 'Bois & pierre',
+    usage: 'Grange isolée d’alpage, stockage du foin',
+    categorie: 'montagne',
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Grange isolée construite au milieu des prés de montagne éloignés de la ferme principale, pour stocker le foin fauché sur place et éviter son transport jusqu’à la vallée. Volume simple en bois sur soubassement de pierre, parfois utilisée aussi comme abri temporaire pour le bétail.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Alpes, Jura, Vosges, prés de montagne'],
+      ['Usage', 'Grange foraine, stockage du foin en alpage'],
+      ['Système', 'Charpente bois sur soubassement pierre'],
+      ['Matériau dominant', 'Bois d’épicéa ou de sapin'],
+      ['Toiture', 'Forte pente, bardeaux ou tavaillons'],
+      ['Particularité', 'Bâtiment isolé, éloigné de la ferme'],
+    ],
+    materiaux: ['Épicéa', 'Sapin', 'Pierre locale', 'Tavaillon', 'Bardeau', 'Foin (stockage)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente à forte pente couverte de tavaillons ou de bardeaux de bois, débord généreux protégeant le foin.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Bardage bois à claire-voie favorisant la ventilation du foin, soubassement en pierre sèche.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher haut en bois séparant l’aire de stockage du foin de l’abri à bétail au rez-de-chaussée.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Charpente bois simple reposant sur des murs bas en pierre ou des poteaux.' },
+      { n: 5, el: 'Escalier', txt: 'Échelle extérieure ou trappe pour accéder au fenil, pas d’escalier à proprement parler.' },
+      { n: 6, el: 'Fondations', txt: 'Soubassement sommaire en pierre sèche, posé à même la pente du pré.' },
+    ],
+    sections: [
+      {
+        title: 'Stocker le foin sur place',
+        icon: 'ph ph-mountains',
+        intro: "Isolée dans les prés d’altitude, la grange foraine évite le transport du foin jusqu’à la ferme et permet son stockage au plus près de la fauche.",
+        groups: [
+          G(null, ['Bâtiment isolé, dispersé dans les prés de montagne', 'Stockage du foin fauché sur place', 'Abri occasionnel pour le bétail en transit']),
+        ],
+      },
+      {
+        title: 'Une charpente ventilée',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Bardage à claire-voie pour aérer le foin engrangé', 'Structure bois légère sur soubassement de pierre', 'Grand volume intérieur libre de tout poteau central']),
+        ],
+      },
+      {
+        title: 'Toiture protectrice',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Forte pente évacuant rapidement la neige', 'Larges débords protégeant le bardage et le foin', 'Couverture en tavaillon ou bardeau de bois local']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'mazot',
+    name: 'Mazot',
+    region: 'Savoie · Haute-Savoie · Valais',
+    periode: '1600–1900',
+    procede: 'Bois sur pilotis de pierre',
+    usage: 'Petit grenier à provisions sur pilotis',
+    categorie: 'montagne',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Petit bâtiment annexe en madriers de bois, isolé du chalet principal et surélevé sur des pilotis de pierre plate (« pierres à rats ») pour protéger les provisions et documents précieux du feu et des rongeurs. Le mazot ponctue traditionnellement les villages alpins savoyards.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Savoie, Haute-Savoie, arc alpin'],
+      ['Usage', 'Grenier à provisions, réserve de documents'],
+      ['Système', 'Caisson bois en blockbau sur pilotis'],
+      ['Matériau dominant', 'Mélèze ou épicéa'],
+      ['Toiture', 'Tavaillons, faible pente'],
+      ['Particularité', 'Surélévation anti-rongeurs et anti-incendie'],
+    ],
+    materiaux: ['Mélèze', 'Épicéa', 'Pierre plate (pilotis)', 'Tavaillon', 'Fer forgé (ferrures)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Petite charpente à faible pente couverte de tavaillons de mélèze, très en surplomb.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Caisson en madriers de bois assemblés en blockbau, sans isolant, parois jointives.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher unique surélevé, coffre à grains ou étagères à documents.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Caisson en bois massif autoportant, indépendant du chalet principal.' },
+      { n: 5, el: 'Escalier', txt: 'Simple échelle ou marches de pierre menant à la porte surélevée.' },
+      { n: 6, el: 'Fondations', txt: 'Pilotis en pierres plates (« pierres à rats ») isolant le caisson du sol humide et des rongeurs.' },
+    ],
+    sections: [
+      {
+        title: 'Une réserve protégée',
+        icon: 'ph ph-mountains',
+        intro: "Séparé du chalet pour limiter les risques d’incendie, le mazot conserve grains, salaisons et parfois les titres de propriété de la famille.",
+        groups: [
+          G(null, ['Bâtiment annexe isolé du chalet principal', 'Réserve de grains, salaisons, documents précieux', 'Prévention des risques d’incendie domestique']),
+        ],
+      },
+      {
+        title: 'Surélevé sur pilotis',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Pilotis en pierres plates dites « pierres à rats »', 'Isolation du caisson contre l’humidité et les rongeurs', 'Accès unique par une porte surélevée']),
+        ],
+      },
+      {
+        title: 'Un caisson en blockbau',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Madriers de mélèze assemblés à mi-bois aux angles', 'Étanchéité assurée par le gonflement naturel du bois', 'Petites dimensions, grande longévité du bois de mélèze']),
+        ],
+        outro: "Encore visible dans de nombreux villages savoyards, le mazot est aujourd’hui protégé comme élément du patrimoine vernaculaire alpin.",
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
