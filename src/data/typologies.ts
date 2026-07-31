@@ -6769,6 +6769,336 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'chapellefuneraire',
+    name: 'Chapelle funéraire',
+    region: 'Toutes régions · grands cimetières urbains',
+    periode: '1800–1950',
+    procede: 'Pierre de taille, éclectisme stylistique',
+    usage: 'Chapelle privée de sépulture familiale',
+    categorie: 'religieuse',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Petite construction en forme de temple ou d’église miniature, édifiée par les familles bourgeoises dans les grands cimetières urbains depuis le décret impérial de 1804 autorisant l’achat de concessions perpétuelles. Style éclectique — néo-gothique, néoclassique ou égyptisant — avec vitrail, autel et caveau en sous-sol.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle, essor après le décret de 1804'],
+      ['Région', 'Toutes régions, grands cimetières urbains'],
+      ['Usage', 'Chapelle privée de sépulture familiale'],
+      ['Système', 'Maçonnerie porteuse, caveau en sous-sol'],
+      ['Matériau dominant', 'Pierre de taille (granite, marbre)'],
+      ['Plan', 'Temple ou église miniature, porte à vitrail'],
+      ['Particularité', 'Éclectisme stylistique (néo-gothique, égyptisant, classique)'],
+    ],
+    materiaux: ['Pierre de taille', 'Granite', 'Marbre', 'Fer forgé (grille)', 'Vitrail', 'Bronze (ornements)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Petite toiture à deux pans ou en bâtière, parfois flèche ou pinacle néo-gothique couronnant l’édifice.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade en pierre de taille travaillée en style néo-gothique, néoclassique ou égyptisant selon les moyens de la famille.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage de pierre ou de marbre au niveau du culte, trappe d’accès au caveau souterrain.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs massifs en pierre, renforcés pour soutenir le caveau enterré et son poids.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier étroit ou échelle descendant au caveau familial en sous-sol.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes creusées pour accueillir le caveau et les cercueils superposés.' },
+    ],
+    sections: [
+      {
+        title: 'Une propriété perpétuelle',
+        icon: 'ph ph-building',
+        intro: "Le décret impérial de 1804 autorise l’achat de concessions à perpétuité, donnant naissance à un véritable urbanisme funéraire bourgeois dans les grands cimetières.",
+        groups: [
+          G(null, ['Concession perpétuelle achetée par la famille', 'Chapelle transmise de génération en génération', 'Symbole de statut social au sein du cimetière']),
+        ],
+      },
+      {
+        title: 'Un éclectisme stylistique',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Néo-gothique : pinacles, arcs brisés, rosace', 'Néoclassique : fronton, colonnes, urne funéraire', 'Égyptisant : pylône, obélisque, disque solaire']),
+        ],
+      },
+      {
+        title: 'Le caveau souterrain',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Accès par une trappe dissimulée sous le dallage', 'Plusieurs niveaux de casiers pour les générations successives', 'Chapelle en surface, sépulture proprement dite enterrée']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'caveaufamilial',
+    name: 'Caveau familial',
+    region: 'Toutes régions · cimetières communaux',
+    periode: '1800–1980',
+    procede: 'Maçonnerie enterrée, dalle de couverture',
+    usage: 'Sépulture familiale souterraine à plusieurs places',
+    categorie: 'religieuse',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Fosse maçonnée souterraine à plusieurs niveaux de casiers, surmontée d’une dalle et d’un monument funéraire en surface (stèle, croix, plaque). Forme la plus répandue de sépulture familiale dans les cimetières communaux français, accueillant plusieurs générations successives.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle'],
+      ['Région', 'Toutes régions, cimetières communaux'],
+      ['Usage', 'Sépulture familiale souterraine à plusieurs places'],
+      ['Système', 'Maçonnerie enterrée, casiers superposés'],
+      ['Matériau dominant', 'Béton et pierre ou brique'],
+      ['Plan', 'Fosse rectangulaire, dalle de fermeture en surface'],
+      ['Particularité', 'Plusieurs niveaux de casiers pour générations successives'],
+    ],
+    materiaux: ['Béton', 'Brique', 'Pierre (dalle de couverture)', 'Granite (monument en surface)', 'Fer (armatures)', 'Marbre (plaque)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Pas de toiture à proprement parler : dalle de couverture en pierre ou granite affleurant le sol, portant le monument.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Aucune élévation visible hormis le monument en surface — stèle, croix ou plaque gravée du nom de famille.' },
+      { n: 3, el: 'Planchers', txt: 'Fond du caveau maçonné ou bétonné, casiers superposés séparés par des dalles intermédiaires.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Parois maçonnées en brique ou béton, voûte ou dalle supportant le poids du monument et de la terre.' },
+      { n: 5, el: 'Escalier', txt: 'Accès rare : une trappe scellée suffit en général pour les inhumations successives.' },
+      { n: 6, el: 'Fondations', txt: 'Fosse creusée en profondeur, étanchéité assurée par un enduit hydrofuge sur les parois maçonnées.' },
+    ],
+    sections: [
+      {
+        title: 'Une sépulture pour plusieurs générations',
+        icon: 'ph ph-stack',
+        intro: "Le caveau familial permet d’accueillir successivement plusieurs générations d’une même famille dans un espace unique et durable.",
+        groups: [
+          G(null, ['Concession de plusieurs décennies renouvelable', 'Plusieurs places superposées ou juxtaposées', 'Transmission du caveau au sein de la famille']),
+        ],
+      },
+      {
+        title: 'Une structure enterrée',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Parois maçonnées étanches contre les infiltrations', 'Casiers séparés par des dalles intermédiaires', 'Dalle de couverture supportant le monument en surface']),
+        ],
+      },
+      {
+        title: 'Le monument en surface',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Stèle, croix ou colonne selon les moyens de la famille', 'Plaque gravée du nom et des dates', 'Granite poli, matériau devenu dominant au XXe siècle']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'mausolee',
+    name: 'Mausolée',
+    region: 'Toutes régions · grands cimetières et nécropoles',
+    periode: '1800–1930',
+    procede: 'Pierre monumentale, coupole ou fronton',
+    usage: 'Monument funéraire d’apparat pour personnalité ou grande famille',
+    categorie: 'religieuse',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Monument funéraire de grande ampleur édifié pour des personnalités ou de grandes familles, empruntant le vocabulaire des temples antiques — coupole, colonnades, fronton sculpté. Édifice isolé et centré, souvent visible de loin dans le paysage du cimetière, dont il constitue l’un des points d’orgue architecturaux.",
+    identite: [
+      ['Période', 'XIXe – début XXe siècle'],
+      ['Région', 'Toutes régions, grands cimetières et nécropoles'],
+      ['Usage', 'Monument funéraire d’apparat pour personnalité ou grande famille'],
+      ['Système', 'Maçonnerie monumentale, coupole ou voûte'],
+      ['Matériau dominant', 'Pierre de taille, marbre'],
+      ['Plan', 'Centré, souvent circulaire ou en croix grecque'],
+      ['Particularité', 'Coupole ou fronton sculpté, statuaire allégorique'],
+    ],
+    materiaux: ['Pierre de taille', 'Marbre', 'Bronze (statuaire)', 'Granite', 'Vitrail', 'Mosaïque (décor intérieur)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Coupole hémisphérique ou toiture pyramidale en pierre, parfois couverte de plomb ou de cuivre.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade monumentale à colonnes ou pilastres, fronton sculpté d’allégories funéraires (urne, flambeau renversé, ange).' },
+      { n: 3, el: 'Planchers', txt: 'Dallage de marbre polychrome, caveau accessible par une trappe centrale ou un escalier latéral.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Maçonnerie massive supportant la coupole ou la voûte, structure centrée autour d’un axe de symétrie.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier monumental ou perron d’accès à l’entrée, escalier secondaire menant au caveau souterrain.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes et massives, proportionnées à l’ampleur et au poids du monument.' },
+    ],
+    sections: [
+      {
+        title: 'Un temple de la mémoire',
+        icon: 'ph ph-columns',
+        intro: "Le mausolée emprunte délibérément le vocabulaire des temples antiques pour conférer à la mémoire du défunt une dimension quasi sacrée.",
+        groups: [
+          G(null, ['Coupole ou dôme couronnant l’édifice', 'Colonnades et pilastres évoquant l’architecture classique', 'Édifice isolé, point d’orgue du paysage funéraire']),
+        ],
+      },
+      {
+        title: 'Une statuaire allégorique',
+        icon: 'ph ph-hand-heart',
+        groups: [
+          G(null, ['Urne voilée et flambeau renversé, symboles de la vie éteinte', 'Ange du recueillement ou de la résurrection', 'Portrait sculpté ou médaillon du défunt']),
+        ],
+      },
+      {
+        title: 'Un caveau monumental',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Caveau souterrain accessible par un escalier dédié', 'Plusieurs sarcophages ou cercueils alignés', 'Décor intérieur soigné, mosaïque ou marbre polychrome']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'columbarium',
+    name: 'Columbarium',
+    region: 'Toutes régions · cimetières contemporains',
+    periode: '1970–2020',
+    procede: 'Béton et pierre, cases cinéraires',
+    usage: 'Conservation collective des urnes cinéraires',
+    categorie: 'religieuse',
+    periodeTags: ['XXe'],
+    resume:
+      "Mur ou édicule structuré en cases individuelles destinées à recevoir des urnes cinéraires, typologie récente reflétant l’essor de la crémation dans les pratiques funéraires françaises depuis sa légalisation en 1887 et surtout sa généralisation après la loi de 2008 sur le statut des cendres.",
+    identite: [
+      ['Période', 'XXe–XXIe siècle, essor après la loi de 2008'],
+      ['Région', 'Toutes régions, cimetières contemporains'],
+      ['Usage', 'Conservation collective des urnes cinéraires'],
+      ['Système', 'Mur à cases, structure béton ou pierre'],
+      ['Matériau dominant', 'Béton et granite'],
+      ['Plan', 'Mur ou édicule à niches alignées et numérotées'],
+      ['Particularité', 'Chaque case scellée par une plaque commémorative individuelle'],
+    ],
+    materiaux: ['Béton', 'Granite', 'Marbre (plaques)', 'Bronze (lettrage)', 'Verre (certains modèles vitrés)', 'Acier inoxydable (ferrures)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Auvent ou couverture légère protégeant le mur de cases des intempéries, parfois simple corniche en pierre.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Mur structuré en grille régulière de niches individuelles, chacune fermée par une plaque de marbre ou de granite gravée.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage devant le columbarium favorisant le recueillement, jardin du souvenir attenant fréquent.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure en béton armé formant une grille de cases modulaires, revêtue de pierre ou de granite.' },
+      { n: 5, el: 'Escalier', txt: 'Généralement de plain-pied, rampe d’accès prévue pour l’accessibilité aux personnes à mobilité réduite.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations légères en béton, l’édicule n’ayant pas la masse d’un caveau traditionnel.' },
+    ],
+    sections: [
+      {
+        title: 'L’essor de la crémation',
+        icon: 'ph ph-buildings',
+        intro: "Légalisée en France en 1887 mais longtemps marginale, la crémation se généralise à partir des années 1980, imposant de nouveaux équipements funéraires dans les cimetières.",
+        groups: [
+          G(null, ['Alternative à l’inhumation traditionnelle en caveau', 'Développement accéléré à partir des années 1980-2000', 'Encadrement légal renforcé par la loi de 2008']),
+        ],
+      },
+      {
+        title: 'Une grille de niches',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Cases numérotées de taille standardisée', 'Plaque commémorative individuelle scellant chaque case', 'Disposition modulaire facilement extensible']),
+        ],
+      },
+      {
+        title: 'Le jardin du souvenir',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Espace paysager attenant pour la dispersion des cendres', 'Plaque collective portant les noms des défunts dispersés', 'Aménagement végétal apaisant, en rupture avec le cimetière minéral']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'ossuaire',
+    name: 'Ossuaire',
+    region: 'Toutes régions · anciens cimetières paroissiaux',
+    periode: '1500–1900',
+    procede: 'Pierre ou bois, galerie à claire-voie',
+    usage: 'Conservation collective des ossements exhumés',
+    categorie: 'religieuse',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Petit édifice ou galerie attenant à un ancien cimetière paroissial, destiné à recueillir les ossements exhumés faute de place lors du renouvellement des tombes. Typologie particulièrement répandue au sein des enclos paroissiaux bretons, mais aussi présente sous forme de catacombes urbaines constituées au tournant du XIXe siècle.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'Toutes régions, notamment enclos paroissiaux bretons'],
+      ['Usage', 'Conservation collective des ossements exhumés'],
+      ['Système', 'Galerie ou édicule attenant au cimetière'],
+      ['Matériau dominant', 'Granite ou pierre locale'],
+      ['Plan', 'Galerie ouverte à claire-voie ou petit édicule fermé'],
+      ['Particularité', 'Inscriptions et memento mori gravés en façade'],
+    ],
+    materiaux: ['Granite', 'Pierre locale', 'Bois (charpente)', 'Fer forgé (grilles)', 'Chaux (enduits)', 'Ardoise (toiture)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Petite toiture à deux pans en ardoise ou chaume selon la région, protégeant la galerie des intempéries.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Galerie ouverte à claire-voie en pierre ou petit édicule fermé, souvent gravé d’inscriptions memento mori.' },
+      { n: 3, el: 'Planchers', txt: 'Sol de terre battue ou dallage sommaire, ossements empilés ou rangés dans des coffres de pierre.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs bas en pierre locale, charpente légère supportant la couverture de la galerie ouverte.' },
+      { n: 5, el: 'Escalier', txt: 'Généralement de plain-pied, sans étage ni escalier.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations sommaires en pierre, édifice attenant directement au mur du cimetière paroissial.' },
+    ],
+    sections: [
+      {
+        title: 'Faute de place au cimetière',
+        icon: 'ph ph-stack',
+        intro: "Dans les cimetières paroissiaux de taille réduite, les tombes anciennes étaient régulièrement réouvertes, et les ossements exhumés rassemblés dans l’ossuaire commun.",
+        groups: [
+          G(null, ['Renouvellement périodique des concessions les plus anciennes', 'Ossements rassemblés sans distinction individuelle', 'Pratique attestée depuis le Moyen Âge']),
+        ],
+      },
+      {
+        title: 'Les enclos paroissiaux bretons',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Ossuaire associé à l’église, au calvaire et au cimetière', 'Souvent la construction la plus richement sculptée de l’enclos', 'Témoin de la ferveur religieuse bretonne des XVIe-XVIIe siècles']),
+        ],
+      },
+      {
+        title: 'Un memento mori collectif',
+        icon: 'ph ph-hand-heart',
+        groups: [
+          G(null, ['Inscriptions rappelant la fragilité de la vie humaine', 'Crânes et tibias sculptés en ornement', 'Fonction pédagogique et spirituelle pour les vivants']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'monumentauxmorts',
+    name: 'Monument aux morts',
+    region: 'Toutes régions · place publique de chaque commune',
+    periode: '1918–1925',
+    procede: 'Pierre ou granite, socle et statuaire',
+    usage: 'Mémorial civique dédié aux soldats morts pour la France',
+    categorie: 'publique',
+    periodeTags: ['XXe'],
+    resume:
+      "Mémorial édifié dans la quasi-totalité des communes françaises au lendemain de la Première Guerre mondiale, pour honorer la mémoire des soldats morts pour la France. Érigé sur la place publique, souvent face à la mairie, il associe socle de pierre, liste nominative des morts et parfois statuaire allégorique.",
+    identite: [
+      ['Période', '1918–1925, immédiat après-guerre'],
+      ['Région', 'Toutes régions, place publique de chaque commune'],
+      ['Usage', 'Mémorial civique dédié aux soldats morts pour la France'],
+      ['Système', 'Socle maçonné, statuaire rapportée'],
+      ['Matériau dominant', 'Pierre ou granite, bronze pour la statuaire'],
+      ['Plan', 'Socle isolé au centre d’une place ou d’un carrefour'],
+      ['Particularité', 'Liste nominative gravée des enfants de la commune morts au combat'],
+    ],
+    materiaux: ['Granite', 'Pierre de taille', 'Bronze (statuaire)', 'Fer forgé (grille d’enclos)', 'Marbre (plaques)', 'Ciment (monuments les plus modestes)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Absence de toiture : monument à ciel ouvert, parfois coiffé d’une urne ou d’une flamme sculptée.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Socle à degrés en pierre ou granite, faces gravées de la liste nominative des enfants de la commune morts pour la France.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage ou gravillon au pied du monument, parfois entouré d’une grille basse délimitant un enclos du souvenir.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Socle maçonné massif supportant la statuaire — poilu, victoire ailée ou figure du deuil.' },
+      { n: 5, el: 'Escalier', txt: 'Quelques marches basses menant au pied du monument pour le dépôt de gerbes.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en béton ou maçonnerie, monument implanté au centre d’une place publique très visible.' },
+    ],
+    sections: [
+      {
+        title: 'Un mémorial dans chaque commune',
+        icon: 'ph ph-building',
+        intro: "Au lendemain de la Grande Guerre, la quasi-totalité des communes françaises érigent un monument dédié à leurs morts, financé par souscription publique.",
+        groups: [
+          G(null, ['Financement par souscription publique communale', 'Implantation systématique sur la place principale', 'Inauguration solennelle au début des années 1920']),
+        ],
+      },
+      {
+        title: 'Une iconographie codifiée',
+        icon: 'ph ph-hand-heart',
+        groups: [
+          G(null, ['Le poilu victorieux, figure la plus répandue', 'Le poilu mourant ou la veuve éplorée, iconographie pacifiste', 'La victoire ailée, référence à l’Antiquité classique']),
+        ],
+      },
+      {
+        title: 'Un lieu de commémoration',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Cérémonie annuelle du 11 novembre', 'Dépôt de gerbes et lecture des noms des morts', 'Ajout ultérieur des victimes de la Seconde Guerre mondiale']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))

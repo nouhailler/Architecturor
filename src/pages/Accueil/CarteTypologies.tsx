@@ -128,6 +128,12 @@ const MICRO_PINS = [
   { id: 'casernepompiers',  cx: 420, cy: 500, label: 'Caserne de pompiers' },
   { id: 'bureauposte',      cx: 390, cy: 250, label: 'Bureau de poste' },
   { id: 'gareroutiere',     cx: 520, cy: 550, label: 'Gare routière' },
+  { id: 'chapellefuneraire', cx: 490, cy: 240, label: 'Chapelle funéraire' },
+  { id: 'caveaufamilial',   cx: 460, cy: 260, label: 'Caveau familial' },
+  { id: 'mausolee',         cx: 470, cy: 210, label: 'Mausolée' },
+  { id: 'columbarium',      cx: 500, cy: 280, label: 'Columbarium' },
+  { id: 'ossuaire',         cx: 290, cy: 250, label: 'Ossuaire' },
+  { id: 'monumentauxmorts', cx: 640, cy: 450, label: 'Monument aux morts' },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */
