@@ -2749,6 +2749,666 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'egliseromane',
+    name: 'Église romane',
+    region: 'France · art roman',
+    periode: '1000–1200',
+    procede: 'Pierre',
+    usage: 'Édifice religieux paroissial',
+    categorie: 'religieuse',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Église aux murs très épais et aux ouvertures réduites, couverte de voûtes en berceau ou d’arêtes portées par des piliers massifs. Arcs en plein cintre, chapiteaux sculptés et clocher trapu composent une architecture de la retenue et de la pénombre, héritière de la construction romaine.",
+    identite: [
+      ['Période', 'XIe–XIIe siècle'],
+      ['Région', 'France, art roman'],
+      ['Usage', 'Édifice religieux paroissial'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre calcaire ou granite'],
+      ['Couverture', 'Voûte en berceau ou d’arêtes'],
+      ['Particularité', 'Arcs en plein cintre, clocher trapu'],
+    ],
+    materiaux: ['Pierre calcaire', 'Granite', 'Chaux', 'Bois (charpente)', 'Ardoise ou lauze', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente ou voûte apparente, couverture en lauze, ardoise ou tuile selon les régions.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs très épais, portail à voussures sculptées, baies étroites en plein cintre.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage de pierre, léger dénivelé vers le chœur surélevé.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Piliers massifs et murs épais portant des voûtes en berceau ou d’arêtes.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier en vis dans l’épaisseur du mur, desservant le clocher.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles massives en pierre, souvent sur un site antérieur remployé.' },
+    ],
+    sections: [
+      {
+        title: 'Murs épais & voûtes basses',
+        icon: 'ph ph-wall',
+        intro: "L’art roman privilégie la masse et l’épaisseur : les murs portent seuls la poussée des voûtes, sans arc-boutant.",
+        groups: [
+          G(null, ['Murs porteurs très épais, peu d’ouvertures', 'Voûtes en berceau plein cintre ou en arêtes', 'Piliers massifs à chapiteaux sculptés']),
+        ],
+      },
+      {
+        title: 'Le décor sculpté',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Chapiteaux historiés (scènes bibliques, motifs végétaux)', 'Portail à voussures sculptées', 'Modillons et corniches ornées']),
+        ],
+      },
+      {
+        title: 'Le clocher trapu',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Tour massive à peu de niveaux', 'Baies géminées pour les cloches', 'Toiture en bâtière ou pyramidale basse']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'eglisegothique',
+    name: 'Église gothique',
+    region: 'France · art gothique',
+    periode: '1140–1500',
+    procede: 'Pierre',
+    usage: 'Édifice religieux paroissial',
+    categorie: 'religieuse',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Église élancée où la croisée d’ogives et l’arc-boutant reportent les charges à l’extérieur, libérant les murs pour de vastes verrières. La verticalité, la lumière colorée des vitraux et la finesse du décor sculpté marquent une rupture radicale avec la retenue romane.",
+    identite: [
+      ['Période', 'XIIe–XVe siècle'],
+      ['Région', 'France, art gothique'],
+      ['Usage', 'Édifice religieux paroissial'],
+      ['Système', 'Croisée d’ogives + arcs-boutants'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Couverture', 'Voûte sur croisée d’ogives'],
+      ['Particularité', 'Verticalité, grandes verrières'],
+    ],
+    materiaux: ['Pierre de taille', 'Verre (vitraux)', 'Plomb (résille)', 'Chaux', 'Bois (charpente)', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois à forte pente au-dessus des voûtes de pierre, couverture ardoise ou plomb.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs allégés, grandes baies en arc brisé garnies de vitraux, portails sculptés.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage de pierre, tribunes ou triforium sur certains édifices majeurs.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Croisée d’ogives reportant les charges sur des piliers fins, arcs-boutants extérieurs.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier en vis dans les contreforts, menant aux combles et au clocher.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes en pierre, adaptées aux charges concentrées des piliers.' },
+    ],
+    sections: [
+      {
+        title: 'Croisée d’ogives & arcs-boutants',
+        icon: 'ph ph-columns',
+        intro: "L’arc-boutant reporte à l’extérieur la poussée des voûtes, ce qui permet d’alléger considérablement les murs.",
+        groups: [
+          G(null, ['Croisée d’ogives concentrant les charges sur des piliers fins', 'Arcs-boutants reportant la poussée vers des culées extérieures', 'Murs libérés, largement ouverts']),
+        ],
+      },
+      {
+        title: 'La lumière et le vitrail',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Grandes verrières en arc brisé', 'Vitraux narratifs ou en rosace', 'Résille de plomb structurant le verre coloré']),
+        ],
+      },
+      {
+        title: 'La verticalité',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Élévation à plusieurs niveaux (grandes arcades, triforium, fenêtres hautes)', 'Flèches et pinacles élançant la silhouette', 'Portails sculptés en profondeur (voussures)']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'cathedralegothique',
+    name: 'Cathédrale gothique',
+    region: 'Villes épiscopales · France',
+    periode: '1150–1550',
+    procede: 'Pierre',
+    usage: 'Siège épiscopal, cathédrale',
+    categorie: 'religieuse',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Église mère d’un diocèse, abritant la cathedra de l’évêque, bâtie à une échelle monumentale sur plusieurs générations. Façade harmonique à deux tours, rosace, chevet à déambulatoire et chapelles rayonnantes en font le sommet technique et symbolique de l’art gothique.",
+    identite: [
+      ['Période', 'XIIe–XVIe siècle'],
+      ['Région', 'Villes épiscopales, France'],
+      ['Usage', 'Siège épiscopal, cathédrale'],
+      ['Système', 'Croisée d’ogives + arcs-boutants'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Déambulatoire et chapelles rayonnantes'],
+      ['Particularité', 'Façade harmonique à deux tours, rosace'],
+    ],
+    materiaux: ['Pierre de taille', 'Verre (vitraux)', 'Plomb', 'Bronze (cloches)', 'Bois (charpente)', 'Or (reliquaires)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois de très grande portée (« forêt » de charpente), couverture plomb ou ardoise.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade harmonique à deux tours, portails sculptés, grande rosace centrale.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage monumental, crypte archéologique fréquente sous le chevet.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Piliers et croisées d’ogives à très grande hauteur, arcs-boutants à double volée.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers en vis dans les tours, accessibles au public pour certaines cathédrales.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations très profondes, chantier étalé sur plusieurs générations.' },
+    ],
+    sections: [
+      {
+        title: 'Un chantier de plusieurs générations',
+        icon: 'ph ph-crane-tower',
+        intro: "La construction d’une cathédrale s’étend souvent sur un à deux siècles, mêlant plusieurs campagnes de travaux et styles.",
+        groups: [
+          G(null, ['Financement par l’évêché, la ville et les dons', 'Chantier organisé par des maîtres d’œuvre successifs', 'Évolution stylistique visible d’une campagne à l’autre']),
+        ],
+      },
+      {
+        title: 'Le chevet à déambulatoire',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Déambulatoire contournant le chœur', 'Chapelles rayonnantes pour les reliques et dévotions', 'Circulation des pèlerins sans perturber les offices']),
+        ],
+      },
+      {
+        title: 'La façade harmonique',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Deux tours encadrant un portail à triple entrée', 'Grande rosace centrale', 'Galerie des rois et statuaire monumentale']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'chapellerurale',
+    name: 'Chapelle rurale',
+    region: 'Campagnes · France',
+    periode: '1200–1900',
+    procede: 'Pierre',
+    usage: 'Chapelle de dévotion ou de pèlerinage local',
+    categorie: 'religieuse',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Petit édifice religieux à nef unique, souvent isolé en pleine campagne, sur un chemin de pèlerinage ou au cœur d’un hameau. Le clocher-mur, simple façade percée de baies pour les cloches, remplace la tour et signale l’humilité de cette architecture rurale de dévotion.",
+    identite: [
+      ['Période', 'XIIIe–XIXe siècle'],
+      ['Région', 'Campagnes, France'],
+      ['Usage', 'Chapelle de dévotion ou de pèlerinage local'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Couverture', 'Charpente et tuile ou ardoise'],
+      ['Particularité', 'Clocher-mur (clocher-peigne)'],
+    ],
+    materiaux: ['Pierre locale', 'Chaux', 'Bois (charpente)', 'Tuile ou ardoise', 'Fer (cloches)', 'Verre'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente simple à deux pans, couverture tuile ou ardoise selon la région.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade sobre en pierre locale, clocher-mur percé de baies pour les cloches.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage de pierre ou terre battue, nef unique sans bas-côtés.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre, charpente simple sans voûte complexe.' },
+      { n: 5, el: 'Escalier', txt: 'Absence d’étage la plupart du temps ; accès direct de plain-pied.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, peu profondes, souvent sur un site de dévotion ancien.' },
+    ],
+    sections: [
+      {
+        title: 'Le clocher-mur',
+        icon: 'ph ph-house-line',
+        intro: "Faute de moyens pour une tour, la chapelle rurale signale sa fonction par un simple mur pignon percé pour les cloches.",
+        groups: [
+          G(null, ['Façade pignon prolongée en clocher-mur', 'Une à trois baies pour les cloches', 'Silhouette simple et reconnaissable de loin']),
+        ],
+      },
+      {
+        title: 'Une nef unique',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Plan rectangulaire simple, sans transept ni bas-côtés', 'Chevet plat ou en abside semi-circulaire', 'Décor intérieur sobre, souvent un autel unique']),
+        ],
+      },
+      {
+        title: 'Un lieu de dévotion locale',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Implantation sur un chemin de pèlerinage ou une source', 'Pardon ou fête votive annuelle', 'Entretien communautaire par le hameau ou la paroisse']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'basilique',
+    name: 'Basilique',
+    region: 'Lieux de pèlerinage · France',
+    periode: '1870–1930',
+    procede: 'Pierre & dômes',
+    usage: 'Basilique, lieu de pèlerinage majeur',
+    categorie: 'religieuse',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Église élevée au rang de basilique par titre honorifique pontifical, souvent liée à un grand pèlerinage marial. En France, nombre de basiliques adoptent au tournant du XXe siècle un style romano-byzantin aux dômes multiples, rompant avec le vocabulaire gothique alors jugé trop identifié à l’Ancien Régime.",
+    identite: [
+      ['Période', '1870–1930'],
+      ['Région', 'Lieux de pèlerinage, France'],
+      ['Usage', 'Basilique, lieu de pèlerinage majeur'],
+      ['Système', 'Voûtes et coupoles en pierre et béton'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Style', 'Romano-byzantin'],
+      ['Particularité', 'Dômes multiples, crypte de pèlerinage'],
+    ],
+    materiaux: ['Pierre de taille', 'Béton (structure des dômes)', 'Mosaïque', 'Verre (vitraux)', 'Bronze', 'Or (décor)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Dômes multiples sur pendentifs, couverture pierre ou ardoise selon les édifices.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre de taille claire, portails monumentaux, statuaire abondante.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage en marbre ou mosaïque, crypte de pèlerinage sous le chœur.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Piliers massifs supportant des coupoles sur pendentifs d’inspiration byzantine.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers monumentaux extérieurs menant au parvis, accès à la crypte.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes, souvent sur un site de pèlerinage antérieur.' },
+    ],
+    sections: [
+      {
+        title: 'Le titre de basilique',
+        icon: 'ph ph-shield-check',
+        intro: "Le titre de basilique est accordé par le pape à un sanctuaire pour son rayonnement spirituel, indépendamment de sa forme architecturale.",
+        groups: [
+          G(null, ['Titre honorifique pontifical', 'Souvent lié à une apparition ou une relique majeure', 'Lieu de pèlerinage drainant des foules nombreuses']),
+        ],
+      },
+      {
+        title: 'Le style romano-byzantin',
+        icon: 'ph ph-buildings',
+        groups: [
+          G(null, ['Dômes sur pendentifs inspirés de Byzance', 'Mosaïques dorées en décor intérieur', 'Rupture assumée avec le vocabulaire gothique']),
+        ],
+      },
+      {
+        title: 'La crypte de pèlerinage',
+        icon: 'ph ph-stack',
+        groups: [
+          G(null, ['Crypte accueillant les grands flux de pèlerins', 'Chapelles latérales dédiées aux ex-voto', 'Circulation organisée autour d’un lieu saint']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'abbaye',
+    name: 'Abbaye',
+    region: 'France · ordres monastiques',
+    periode: '1000–1789',
+    procede: 'Pierre',
+    usage: 'Communauté monastique autonome',
+    categorie: 'religieuse',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Vaste complexe monastique autonome organisé autour de l’église abbatiale et du cloître, regroupant salle capitulaire, dortoir, réfectoire et cellier. Sous l’autorité d’un abbé, la communauté vit en quasi-autarcie, cultivant ses terres et copiant les manuscrits au scriptorium.",
+    identite: [
+      ['Période', 'XIe–XVIIIe siècle'],
+      ['Région', 'France, ordres monastiques'],
+      ['Usage', 'Communauté monastique autonome'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Église abbatiale + cloître + bâtiments conventuels'],
+      ['Particularité', 'Autarcie économique, scriptorium'],
+    ],
+    materiaux: ['Pierre de taille', 'Chaux', 'Bois (charpente)', 'Ardoise ou tuile', 'Verre', 'Parchemin (scriptorium)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois de grande portée sur l’abbatiale, couverture ardoise ou tuile.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre de taille, sobriété générale, portail de l’abbatiale plus travaillé.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage de pierre, salle capitulaire voûtée, dortoir commun à l’étage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre organisant église, cloître et bâtiments conventuels.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier de nuit reliant directement le dortoir à l’église pour les offices nocturnes.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre, caves et celliers voûtés pour les réserves.' },
+    ],
+    sections: [
+      {
+        title: 'Le plan monastique',
+        icon: 'ph ph-grid-nine',
+        intro: "L’abbaye organise ses bâtiments selon un plan très codifié hérité du modèle bénédictin de Saint-Gall.",
+        groups: [
+          G(null, ['Église abbatiale au nord du cloître', 'Salle capitulaire, dortoir et réfectoire autour du cloître', 'Cellier, hôtellerie et bâtiments agricoles en périphérie']),
+        ],
+      },
+      {
+        title: 'Une économie autarcique',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Terres agricoles et granges dépendantes de l’abbaye', 'Scriptorium pour la copie des manuscrits', 'Moulin, four et cellier assurant l’autosuffisance']),
+        ],
+      },
+      {
+        title: 'Murs en pierre',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Pierre de taille appareillée avec soin', 'Sobriété du décor selon la règle monastique', 'Église abbatiale plus richement traitée que les communs']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'monastere',
+    name: 'Monastère',
+    region: 'France · ordres monastiques',
+    periode: '1000–1800',
+    procede: 'Pierre',
+    usage: 'Communauté monastique, cellules individuelles',
+    categorie: 'religieuse',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Communauté monastique organisée, dans la tradition cartusienne, autour de cellules individuelles ouvrant sur un grand cloître plutôt que sur un dortoir commun. Chaque moine y vit en quasi-ermite, ne rejoignant la communauté que pour les offices et certains repas, dans un équilibre singulier entre solitude et vie commune.",
+    identite: [
+      ['Période', 'XIe–XVIIIe siècle'],
+      ['Région', 'France, ordres monastiques'],
+      ['Usage', 'Communauté monastique, cellules individuelles'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Cellules individuelles autour d’un grand cloître'],
+      ['Particularité', 'Vie érémitique communautaire (tradition cartusienne)'],
+    ],
+    materiaux: ['Pierre de taille', 'Chaux', 'Bois (charpente)', 'Ardoise ou tuile', 'Fer (verrous, guichets)', 'Verre'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois simple sur chaque cellule, couverture ardoise ou tuile.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre de taille sobre, façades répétitives des cellules sur le grand cloître.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage de pierre, chaque cellule disposant de son propre jardinet.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre, cellules juxtaposées autour du grand cloître.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur propre à chaque cellule, menant à l’atelier ou au jardin.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre, guichet à repas pour préserver la clôture individuelle.' },
+    ],
+    sections: [
+      {
+        title: 'La cellule individuelle',
+        icon: 'ph ph-grid-nine',
+        intro: "Contrairement au dortoir commun bénédictin, chaque moine cartusien dispose d’une petite maison autonome : chambre, atelier, jardin.",
+        groups: [
+          G(null, ['Cellule composée d’une chambre, d’un atelier et d’un jardin', 'Guichet à repas évitant tout contact direct', 'Vie de prière et de travail manuel solitaire']),
+        ],
+      },
+      {
+        title: 'Le grand cloître',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Galerie couverte distribuant toutes les cellules', 'Dimensions bien plus vastes que le cloître bénédictin', 'Silence rigoureux dans les circulations']),
+        ],
+      },
+      {
+        title: 'Vie commune limitée',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Offices communs à l’église conventuelle', 'Repas pris ensemble seulement les jours de fête', 'Chapitre hebdomadaire réunissant la communauté']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'prieure',
+    name: 'Prieuré',
+    region: 'France · dépendances monastiques',
+    periode: '1000–1500',
+    procede: 'Pierre',
+    usage: 'Petite communauté monastique dépendante',
+    categorie: 'religieuse',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Petite communauté monastique dépendant d’une abbaye mère, envoyée pour administrer un domaine éloigné ou entretenir un lieu de dévotion. Plus modeste que l’abbaye, le prieuré réunit un noyau réduit de moines autour d’une église priorale simple et d’un cloître de petites dimensions.",
+    identite: [
+      ['Période', 'XIe–XVe siècle'],
+      ['Région', 'France, dépendances monastiques'],
+      ['Usage', 'Petite communauté monastique dépendante'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Plan', 'Église priorale + petit cloître'],
+      ['Particularité', 'Dépendance d’une abbaye mère'],
+    ],
+    materiaux: ['Pierre locale', 'Chaux', 'Bois (charpente)', 'Ardoise ou tuile', 'Fer', 'Verre'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois simple, couverture ardoise ou tuile selon la région.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre locale, façade sobre, portail modeste comparé à une abbaye.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage de pierre, quelques cellules pour les moines résidents.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre, échelle réduite par rapport à l’abbaye mère.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier simple desservant les quelques cellules à l’étage.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, souvent sur un domaine agricole rattaché.' },
+    ],
+    sections: [
+      {
+        title: 'Une dépendance monastique',
+        icon: 'ph ph-grid-nine',
+        intro: "Le prieuré permet à une abbaye d’administrer un domaine éloigné ou de tenir un lieu de dévotion sans y transférer toute la communauté.",
+        groups: [
+          G(null, ['Quelques moines seulement, sous l’autorité d’un prieur', 'Dépendance directe d’une abbaye mère', 'Gestion d’un domaine agricole ou d’un lieu de pèlerinage']),
+        ],
+      },
+      {
+        title: 'Une échelle réduite',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Église priorale à nef unique', 'Petit cloître, parfois de plan irrégulier', 'Bâtiments conventuels réduits à l’essentiel']),
+        ],
+      },
+      {
+        title: 'Vie quotidienne',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Offices réguliers malgré l’effectif réduit', 'Exploitation agricole attenante', 'Accueil ponctuel de voyageurs ou de pèlerins']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'cloitre',
+    name: 'Cloître',
+    region: 'France · ensembles monastiques',
+    periode: '1000–1500',
+    procede: 'Pierre',
+    usage: 'Galerie de circulation monastique',
+    categorie: 'religieuse',
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Galerie couverte à arcades entourant un jardin central (préau), cœur silencieux de la vie monastique et lieu de circulation entre église, salle capitulaire et réfectoire. Ses colonnettes géminées et ses chapiteaux sculptés en font souvent le plus riche témoignage artistique d’un ensemble religieux.",
+    identite: [
+      ['Période', 'XIe–XVe siècle'],
+      ['Région', 'France, ensembles monastiques'],
+      ['Usage', 'Galerie de circulation monastique'],
+      ['Système', 'Arcades sur colonnettes'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Galerie en carré autour d’un jardin central'],
+      ['Particularité', 'Chapiteaux sculptés, colonnettes géminées'],
+    ],
+    materiaux: ['Pierre de taille', 'Marbre (colonnettes)', 'Chaux', 'Bois (charpente de galerie)', 'Tuile ou lauze', 'Terre (jardin)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente en appentis couvrant la galerie, couverture tuile ou lauze.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Arcades ouvertes sur le jardin, mur plein côté bâtiments conventuels.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage de pierre le long de la galerie, terre et végétation au préau central.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Arcades sur colonnettes géminées, souvent en marbre ou pierre fine.' },
+      { n: 5, el: 'Escalier', txt: 'Parfois un accès à un étage de galerie (cloîtres à deux niveaux).' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, drainage du jardin central intégré au sol du préau.' },
+    ],
+    sections: [
+      {
+        title: 'Le cœur de la vie monastique',
+        icon: 'ph ph-grid-nine',
+        intro: "Le cloître distribue tous les bâtiments essentiels de la vie religieuse : église, salle capitulaire, réfectoire, dortoir.",
+        groups: [
+          G(null, ['Galerie desservant l’ensemble des bâtiments conventuels', 'Lieu de méditation, de lecture et de silence', 'Préau central planté, parfois avec un puits ou une fontaine']),
+        ],
+      },
+      {
+        title: 'Arcades & chapiteaux',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Colonnettes géminées supportant les arcades', 'Chapiteaux sculptés, historiés ou végétaux', 'Grande cohérence stylistique sur tout le pourtour']),
+        ],
+      },
+      {
+        title: 'Un art préservé',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Décor souvent mieux conservé que celui de l’église', 'Motifs iconographiques variés selon les travées', 'Certains cloîtres démontés et remontés dans des musées']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'templeprotestant',
+    name: 'Temple protestant',
+    region: 'Communautés réformées · France',
+    periode: '1800–1900',
+    procede: 'Pierre',
+    usage: 'Lieu de culte réformé',
+    categorie: 'religieuse',
+    periodeTags: ['XIXe'],
+    resume:
+      "Édifice de culte réformé organisé en simple salle rectangulaire, sans statuaire ni image, centrée sur la chaire d’où se donne la prédication. Le Concordat de 1802 autorise la reconstruction de temples après les destructions consécutives à la révocation de l’édit de Nantes, dans une architecture volontairement sobre.",
+    identite: [
+      ['Période', 'XIXe siècle'],
+      ['Région', 'Communautés réformées, France'],
+      ['Usage', 'Lieu de culte réformé'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Salle rectangulaire centrée sur la chaire'],
+      ['Particularité', 'Absence d’images et de statuaire'],
+    ],
+    materiaux: ['Pierre de taille', 'Chaux', 'Bois (bancs, chaire)', 'Ardoise ou tuile', 'Verre (vitraux clairs)', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente bois simple, couverture ardoise ou tuile, absence de flèche ostentatoire.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade sobre en pierre, fronton classique fréquent, peu de décor sculpté.' },
+      { n: 3, el: 'Planchers', txt: 'Plancher ou dallage, bancs disposés face à la chaire centrale.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre, salle unique sans chœur ni transept.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier vers une éventuelle galerie ou tribune d’orgue.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, construction souvent financée par souscription communautaire.' },
+    ],
+    sections: [
+      {
+        title: 'La prédication au centre',
+        icon: 'ph ph-buildings',
+        intro: "L’architecture réformée organise tout l’espace autour de la Parole prêchée, non autour de l’autel.",
+        groups: [
+          G(null, ['Chaire centrale, souvent surélevée', 'Bancs disposés pour une bonne écoute et visibilité', 'Table de communion simple, sans tabernacle']),
+        ],
+      },
+      {
+        title: 'Une sobriété volontaire',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Absence de statues et d’images pieuses', 'Vitraux clairs ou à motifs géométriques simples', 'Décor limité à des inscriptions bibliques']),
+        ],
+      },
+      {
+        title: 'Une architecture de la reconstruction',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Reconstruction après les destructions post-révocation de l’édit de Nantes', 'Financement communautaire par souscription', 'Implantation discrète, parfois en retrait de la rue']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'synagogue',
+    name: 'Synagogue',
+    region: 'Communautés juives · France',
+    periode: '1800–1914',
+    procede: 'Pierre',
+    usage: 'Lieu de culte israélite',
+    categorie: 'religieuse',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Édifice de culte israélite organisé autour de l’arche sainte contenant les rouleaux de la Torah et de la bimah, estrade centrale de lecture. Les grandes synagogues bâties en France au XIXe siècle adoptent souvent un style éclectique, mêlant réminiscences orientalistes, romanes ou byzantines.",
+    identite: [
+      ['Période', '1800–1914'],
+      ['Région', 'Communautés juives, France'],
+      ['Usage', 'Lieu de culte israélite'],
+      ['Système', 'Murs porteurs en pierre'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Arche sainte orientée vers Jérusalem, bimah centrale'],
+      ['Particularité', 'Style éclectique orientaliste'],
+    ],
+    materiaux: ['Pierre de taille', 'Fer (structure des galeries)', 'Verre (vitraux)', 'Bois (arche, bimah)', 'Céramique', 'Or (décor)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique ou bois, coupole ou voûte selon les édifices majeurs.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Pierre de taille, décor éclectique mêlant influences orientales et historicistes.' },
+      { n: 3, el: 'Planchers', txt: 'Dallage ou parquet, galerie des femmes à l’étage sur les grandes synagogues.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre, parfois structure métallique intérieure pour les galeries.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier menant à la galerie des femmes, distincte de la salle principale.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en pierre, orientation soigneusement calculée vers Jérusalem.' },
+    ],
+    sections: [
+      {
+        title: 'L’arche sainte et la bimah',
+        icon: 'ph ph-buildings',
+        intro: "L’organisation de la synagogue répond à des exigences liturgiques précises : orientation, place de l’arche, lecture de la Torah.",
+        groups: [
+          G(null, ['Arche sainte (aron ha-kodesh) orientée vers Jérusalem', 'Bimah centrale pour la lecture de la Torah', 'Galerie des femmes à l’étage dans les grandes synagogues']),
+        ],
+      },
+      {
+        title: 'Un style éclectique',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Réminiscences orientalistes, mauresques ou byzantines', 'Grandes verrières et coupoles dans les édifices urbains majeurs', 'Décor peint et doré à l’intérieur']),
+        ],
+      },
+      {
+        title: 'Une architecture d’émancipation',
+        icon: 'ph ph-shield-check',
+        groups: [
+          G(null, ['Grandes synagogues urbaines construites après l’émancipation civile', 'Visibilité urbaine assumée dans certaines villes', 'Financement communautaire et parfois municipal']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'mosqueecontemporaine',
+    name: 'Mosquée contemporaine',
+    region: 'France',
+    periode: '1980–2010',
+    procede: 'Béton & céramique',
+    usage: 'Lieu de culte musulman',
+    categorie: 'religieuse',
+    periodeTags: ['XXe'],
+    resume:
+      "Édifice de culte musulman construit en France depuis les années 1980, associant structure en béton contemporaine et vocabulaire ornemental traditionnel : minaret, coupole, mihrab orienté vers La Mecque et décor géométrique ou calligraphique. Une architecture qui négocie entre codes religieux hérités et écriture architecturale résolument actuelle.",
+    identite: [
+      ['Période', '1980–2010'],
+      ['Région', 'France'],
+      ['Usage', 'Lieu de culte musulman'],
+      ['Système', 'Ossature béton armé'],
+      ['Matériau dominant', 'Béton et céramique'],
+      ['Plan', 'Salle de prière hypostyle orientée vers La Mecque'],
+      ['Particularité', 'Minaret, coupole, mihrab, décor géométrique'],
+    ],
+    materiaux: ['Béton armé', 'Céramique (zellige)', 'Verre', 'Bois (menuiserie sculptée)', 'Plâtre sculpté', 'Métal (moucharabiehs)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Coupole en béton ou charpente métallique, souvent surmontée d’un croissant.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Béton et céramique, décor géométrique et calligraphique, moucharabiehs.' },
+      { n: 3, el: 'Planchers', txt: 'Sol couvert de tapis, orientation marquée vers le mihrab.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton armé, salle de prière hypostyle ou volume unique dégagé.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier du minaret, parfois accessible pour l’appel à la prière.' },
+      { n: 6, el: 'Fondations', txt: 'Semelles en béton armé, orientation calculée vers La Mecque.' },
+    ],
+    sections: [
+      {
+        title: 'Mihrab & orientation',
+        icon: 'ph ph-buildings',
+        intro: "Toute la géométrie de la salle de prière s’organise autour de l’orientation vers La Mecque, matérialisée par le mihrab.",
+        groups: [
+          G(null, ['Mihrab en niche indiquant la direction de La Mecque', 'Minbar (chaire) pour le prêche du vendredi', 'Salle de prière hypostyle ou volume unique dégagé']),
+        ],
+      },
+      {
+        title: 'Minaret & coupole',
+        icon: 'ph ph-house-line',
+        groups: [
+          G(null, ['Minaret signalant l’édifice dans le paysage urbain', 'Coupole centrale en béton, parfois habillée de céramique', 'Silhouette contemporaine réinterprétant des formes traditionnelles']),
+        ],
+      },
+      {
+        title: 'Décor géométrique',
+        icon: 'ph ph-hammer',
+        groups: [
+          G(null, ['Zellige et céramique en frises géométriques', 'Calligraphie coranique sculptée ou peinte', 'Moucharabiehs contemporains filtrant la lumière']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))

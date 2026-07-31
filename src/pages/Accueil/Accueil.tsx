@@ -56,7 +56,7 @@ export default function Accueil() {
       <div id="frise" className={styles.section} style={{ paddingTop: 34, paddingBottom: 20 }}>
         <div className={styles.sectionHeader}>
           <h2 className={styles.sectionTitle}>Frise chronologique</h2>
-          <span className={styles.sectionSub}>1400 → 2000</span>
+          <span className={styles.sectionSub}>1000 → 2000</span>
         </div>
         <FriseChronologique />
         <div className={styles.friseCta}>

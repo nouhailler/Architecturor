@@ -55,6 +55,18 @@ const MICRO_PINS = [
   { id: 'barrehlm',         cx: 700, cy: 550, label: 'Barre HLM' },
   { id: 'tourhlm',          cx: 720, cy: 570, label: 'Tour HLM' },
   { id: 'pavillonphenix',   cx: 420, cy: 300, label: 'Pavillon Phénix' },
+  { id: 'egliseromane',     cx: 430, cy: 560, label: 'Église romane' },
+  { id: 'eglisegothique',   cx: 500, cy: 195, label: 'Église gothique' },
+  { id: 'cathedralegothique', cx: 470, cy: 225, label: 'Cathédrale gothique' },
+  { id: 'chapellerurale',   cx: 360, cy: 500, label: 'Chapelle rurale' },
+  { id: 'basilique',        cx: 355, cy: 850, label: 'Basilique' },
+  { id: 'abbaye',           cx: 400, cy: 470, label: 'Abbaye' },
+  { id: 'monastere',        cx: 780, cy: 420, label: 'Monastère' },
+  { id: 'prieure',          cx: 445, cy: 500, label: 'Prieuré' },
+  { id: 'cloitre',          cx: 405, cy: 680, label: 'Cloître' },
+  { id: 'templeprotestant', cx: 640, cy: 620, label: 'Temple protestant' },
+  { id: 'synagogue',        cx: 520, cy: 210, label: 'Synagogue' },
+  { id: 'mosqueecontemporaine', cx: 565, cy: 300, label: 'Mosquée contemporaine' },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */
