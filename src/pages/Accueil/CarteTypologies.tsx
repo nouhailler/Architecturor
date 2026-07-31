@@ -118,6 +118,16 @@ const MICRO_PINS = [
   { id: 'cabanesostreicoles', cx: 240, cy: 520, label: 'Cabanes ostréicoles' },
   { id: 'cabanepecheur',    cx: 210, cy: 250, label: 'Cabane de pêcheur' },
   { id: 'fortmaritime',     cx: 260, cy: 440, label: 'Fort maritime' },
+  { id: 'mairie',           cx: 350, cy: 400, label: 'Mairie' },
+  { id: 'ecolejulesferry',  cx: 380, cy: 440, label: 'École Jules Ferry' },
+  { id: 'prefecture',       cx: 600, cy: 250, label: 'Préfecture' },
+  { id: 'tribunal',         cx: 630, cy: 280, label: 'Tribunal' },
+  { id: 'hopital',          cx: 300, cy: 500, label: 'Hôpital' },
+  { id: 'hospice',          cx: 330, cy: 520, label: 'Hospice' },
+  { id: 'prison',           cx: 660, cy: 230, label: 'Prison' },
+  { id: 'casernepompiers',  cx: 420, cy: 500, label: 'Caserne de pompiers' },
+  { id: 'bureauposte',      cx: 390, cy: 250, label: 'Bureau de poste' },
+  { id: 'gareroutiere',     cx: 520, cy: 550, label: 'Gare routière' },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */

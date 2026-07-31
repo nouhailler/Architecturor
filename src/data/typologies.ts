@@ -6217,6 +6217,558 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'mairie',
+    name: 'Mairie',
+    region: 'Toutes régions · un exemplaire par commune',
+    periode: '1870–1940',
+    procede: 'Pierre de taille & maçonnerie',
+    usage: 'Siège de l’administration communale',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Bâtiment le plus visible de la commune, édifié massivement sous la IIIe République comme vitrine des valeurs républicaines. Plan symétrique à avant-corps central, fronton frappé du mot « Mairie » et horloge, salle des mariages en étage noble et salle du conseil.",
+    identite: [
+      ['Période', 'Fin XIXe – XXe siècle, essor sous la IIIe République'],
+      ['Région', 'Toutes régions, un exemplaire par commune'],
+      ['Usage', 'Administration communale, état civil, salle des mariages'],
+      ['Système', 'Murs porteurs en maçonnerie'],
+      ['Matériau dominant', 'Pierre de taille ou moellon enduit'],
+      ['Plan', 'Symétrique, avant-corps central, perron d’accès'],
+      ['Particularité', 'Horloge en façade, fronton « Mairie », buste de Marianne'],
+    ],
+    materiaux: ['Pierre de taille', 'Moellon enduit', 'Ardoise', 'Fer forgé (balcon)', 'Zinc (toiture)', 'Verre (verrière d’escalier)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture d’ardoise ou de tuile, souvent surmontée d’un campanile ou d’un fronton central logeant l’horloge communale.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade symétrique en pierre de taille, avant-corps central marqué par un fronton, perron d’accès solennel.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois ou métal sur solives, salle des mariages en étage noble dotée d’un parquet soigné.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs massifs en maçonnerie, complétés parfois d’une charpente métallique pour la grande salle.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier d’honneur central en pierre, menant à la salle du conseil et à la salle des mariages.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations massives en moellon, le bâtiment étant systématiquement implanté sur la place centrale.' },
+    ],
+    sections: [
+      {
+        title: 'Un symbole républicain',
+        icon: 'ph ph-building',
+        intro: "Bâtiment le plus visible de la commune, la mairie affiche les valeurs de la République par son fronton, sa devise gravée et son buste de Marianne.",
+        groups: [
+          G(null, ['Fronton frappé du mot « Mairie » et de la devise républicaine', 'Horloge publique réglant la vie du village', 'Drapeau tricolore et buste de Marianne dans le hall']),
+        ],
+      },
+      {
+        title: 'Une distribution codifiée',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Rez-de-chaussée : accueil, état civil, bureaux', 'Étage noble : salle des mariages et salle du conseil', 'Perron d’accès surélevé marquant la solennité du lieu']),
+        ],
+      },
+      {
+        title: 'Le couple mairie-école',
+        icon: 'ph ph-house-line',
+        groups: [
+          G('IIIe République', ['Mairie et école souvent réunies dans un même édifice communal', 'Architecture normalisée diffusée par les préfectures', 'Symbole conjoint de la République et de l’instruction publique']),
+        ],
+        outro: "Ce jumelage mairie-école, très répandu dans les villages français, matérialise l’alliance de la démocratie locale et de l’école laïque.",
+      },
+    ],
+  },
+
+  {
+    id: 'ecolejulesferry',
+    name: 'École Jules Ferry',
+    region: 'Toutes régions · écoles communales',
+    periode: '1880–1940',
+    procede: 'Brique ou pierre, grandes baies',
+    usage: 'École primaire publique, laïque et gratuite',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "École primaire édifiée en masse après les lois Jules Ferry de 1881-1882 instaurant l’instruction primaire gratuite, obligatoire et laïque. Plan type avec préau couvert, classes largement éclairées par de hautes fenêtres, entrées séparées pour garçons et filles gravées au fronton.",
+    identite: [
+      ['Période', '1880–1940, essor après les lois Ferry'],
+      ['Région', 'Toutes régions, une école par commune ou quartier'],
+      ['Usage', 'École primaire publique laïque et gratuite'],
+      ['Système', 'Murs porteurs en brique ou pierre'],
+      ['Matériau dominant', 'Brique, pierre de taille ou moellon enduit'],
+      ['Plan', 'Classes alignées, préau couvert, cour de récréation'],
+      ['Particularité', 'Entrées « Garçons » / « Filles » gravées en façade'],
+    ],
+    materiaux: ['Brique', 'Pierre de taille', 'Fonte (préau)', 'Verre (grandes baies)', 'Ardoise', 'Bois (mobilier, parquet)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux pans en ardoise ou tuile mécanique, charpente bois classique.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade en brique ou pierre percée de grandes fenêtres assurant un éclairage maximal des salles de classe.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois sur solivage, estrade du maître surélevée dans chaque salle de classe.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en maçonnerie, préau souvent couvert d’une charpente métallique légère sur poteaux de fonte.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier desservant l’étage des classes, parfois logement de fonction de l’instituteur à part.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en moellon, école implantée en général en bordure de la cour de récréation.' },
+    ],
+    sections: [
+      {
+        title: 'L’école de la République',
+        icon: 'ph ph-buildings',
+        intro: "Les lois Jules Ferry de 1881-1882 rendent l’école primaire gratuite, obligatoire et laïque, déclenchant une vague de constructions scolaires standardisées dans toute la France.",
+        groups: [
+          G(null, ['Inscription « Liberté Égalité Fraternité » au fronton', 'Entrées séparées « Garçons » et « Filles »', 'Logement de fonction pour l’instituteur ou l’institutrice']),
+        ],
+      },
+      {
+        title: 'Des classes largement éclairées',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Grandes baies orientées pour maximiser la lumière naturelle', 'Salles de classe rectangulaires avec estrade du maître', 'Tableau noir et poêle à bois ou charbon au centre de la pièce']),
+        ],
+      },
+      {
+        title: 'Le préau, cœur de la récréation',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Structure métallique légère sur poteaux de fonte', 'Espace couvert protégeant des intempéries', 'Cour de récréation attenante, souvent plantée d’un arbre']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'prefecture',
+    name: 'Préfecture',
+    region: 'Chef-lieu de département',
+    periode: '1800–1920',
+    procede: 'Pierre de taille, architecture monumentale',
+    usage: 'Siège du représentant de l’État dans le département',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Siège du préfet, représentant de l’État créé par Napoléon Bonaparte en 1800, occupant souvent un ancien palais épiscopal ou un hôtel particulier réaffecté, ou un édifice monumental construit spécifiquement au XIXe siècle. Façade d’apparat, cour d’honneur et salons de réception marquent l’autorité de l’État dans le département.",
+    identite: [
+      ['Période', 'XIXe – début XXe siècle'],
+      ['Région', 'Un exemplaire par chef-lieu de département'],
+      ['Usage', 'Représentation de l’État, administration départementale'],
+      ['Système', 'Maçonnerie porteuse, structure d’apparat'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Cour d’honneur, corps de logis, salons de réception'],
+      ['Particularité', 'Souvent réaffectation d’un ancien palais épiscopal'],
+    ],
+    materiaux: ['Pierre de taille', 'Ardoise', 'Fer forgé (grilles)', 'Marbre (salons)', 'Bois précieux (boiseries)', 'Verre (lustres, miroirs)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture d’ardoise à la Mansart ou à longs pans, souvent héritée du bâtiment d’origine (palais épiscopal, hôtel particulier).' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade d’apparat en pierre de taille, ordonnancement classique, grilles en fer forgé fermant la cour d’honneur.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois nobles, salons de réception aux parquets marquetés et lambris dorés.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs massifs en pierre, structure hiérarchisée entre bureaux administratifs et salons de réception.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier d’honneur monumental en pierre, desservant les salons officiels du préfet.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes en pierre, bâtiment souvent implanté sur un site historique déjà bâti.' },
+    ],
+    sections: [
+      {
+        title: 'L’autorité de l’État en province',
+        icon: 'ph ph-building',
+        intro: "Créée par Bonaparte en 1800, la préfecture incarne la présence de l’État central dans chaque département, entre administration et représentation officielle.",
+        groups: [
+          G(null, ['Souvent installée dans un ancien palais épiscopal confisqué', 'Cour d’honneur pour les cérémonies officielles', 'Salons de réception pour les visites d’État']),
+        ],
+      },
+      {
+        title: 'Une architecture d’apparat',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Ordonnancement classique, façade symétrique', 'Grilles en fer forgé et cour d’honneur pavée', 'Salons richement décorés, lustres et boiseries dorées']),
+        ],
+      },
+      {
+        title: 'Administration et réception',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Bureaux administratifs dans les ailes courantes', 'Appartement de fonction du préfet à l’étage', 'Grand salon d’honneur pour les cérémonies officielles']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'tribunal',
+    name: 'Tribunal',
+    region: 'Chef-lieu de département ou d’arrondissement',
+    periode: '1800–1930',
+    procede: 'Pierre de taille, ordre colossal',
+    usage: 'Palais de justice, rendu de la justice',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Palais de justice construit pour incarner la solennité et l’impartialité de la justice républicaine, souvent doté d’un portique à colonnes et d’un fronton sculpté. Plan basilical organisant salles d’audience, salle des pas perdus et cabinets de juges autour d’un axe symétrique.",
+    identite: [
+      ['Période', 'XIXe – début XXe siècle'],
+      ['Région', 'Chefs-lieux de département ou d’arrondissement'],
+      ['Usage', 'Rendu de la justice, tribunal civil et correctionnel'],
+      ['Système', 'Maçonnerie porteuse, ordre colossal en façade'],
+      ['Matériau dominant', 'Pierre de taille'],
+      ['Plan', 'Basilical, salle des pas perdus centrale'],
+      ['Particularité', 'Portique à colonnes et fronton sculpté « Palais de Justice »'],
+    ],
+    materiaux: ['Pierre de taille', 'Marbre (salle des pas perdus)', 'Bois (boiseries des salles d’audience)', 'Fer forgé', 'Ardoise', 'Bronze (statuaire)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à longs pans en ardoise, fronton triangulaire sculpté surmontant le portique d’entrée.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade monumentale à portique de colonnes, ordre colossal évoquant les temples antiques de la justice.' },
+      { n: 3, el: 'Planchers', txt: 'Sol de la salle des pas perdus en marbre ou dallage noble, planchers bois dans les salles d’audience.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs massifs en pierre, grande salle des pas perdus libre de tout poteau intermédiaire.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers monumentaux menant aux salles d’audience et aux cabinets des juges à l’étage.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes en pierre, adaptées au poids de la structure monumentale.' },
+    ],
+    sections: [
+      {
+        title: 'Le temple de la justice',
+        icon: 'ph ph-shield-check',
+        intro: "L’architecture du tribunal emprunte au vocabulaire des temples antiques pour incarner la solennité, l’impartialité et la permanence de la justice.",
+        groups: [
+          G(null, ['Portique à colonnes évoquant les temples grecs', 'Fronton sculpté « Palais de Justice » ou « Liberté Égalité Fraternité »', 'Statues allégoriques de la Justice en façade']),
+        ],
+      },
+      {
+        title: 'La salle des pas perdus',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Grand hall central distribuant les salles d’audience', 'Sol de marbre ou de pierre polie', 'Lieu d’attente symbolique avant le jugement']),
+        ],
+      },
+      {
+        title: 'Salles d’audience et cabinets',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Salles d’audience boisées, estrade des magistrats surélevée', 'Cabinets des juges d’instruction à l’étage', 'Circulation séparée pour magistrats, public et prévenus']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'hopital',
+    name: 'Hôpital',
+    region: 'Toutes régions · villes principales',
+    periode: '1800–1970',
+    procede: 'Système pavillonnaire, brique & pierre',
+    usage: 'Établissement public de soins',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Établissement public de soins organisé, à partir du mouvement hygiéniste du XIXe siècle, en pavillons séparés reliés par des galeries pour limiter la propagation des maladies et favoriser l’aération. Parc planté, chapelle et services techniques complètent l’ensemble hospitalier.",
+    identite: [
+      ['Période', 'XIXe – XXe siècle, système pavillonnaire hygiéniste'],
+      ['Région', 'Toutes régions, villes principales'],
+      ['Usage', 'Établissement public de soins et d’hospitalisation'],
+      ['Système', 'Pavillons indépendants reliés par galeries'],
+      ['Matériau dominant', 'Brique ou pierre, larges baies'],
+      ['Plan', 'Pavillonnaire, parc planté, orientation nord-sud'],
+      ['Particularité', 'Galeries de circulation extérieures couvertes'],
+    ],
+    materiaux: ['Brique', 'Pierre de taille', 'Fer (galeries)', 'Verre (grandes baies)', 'Carrelage (salles de soins)', 'Zinc (toiture)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toitures à longs pans en ardoise ou tuile mécanique, un pavillon par service avec sa propre couverture.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades percées de larges baies pour l’aération et l’ensoleillement des salles communes, principe hygiéniste fondamental.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers carrelés ou cimentés, faciles à désinfecter, dans les salles de soins.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Pavillons indépendants en maçonnerie porteuse, reliés par des galeries métalliques ou couvertes limitant la contagion.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers larges permettant le passage de brancards, rampes d’accès pour certains pavillons.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations adaptées à chaque pavillon, implantation espacée dans un parc planté favorisant l’air pur.' },
+    ],
+    sections: [
+      {
+        title: 'La révolution hygiéniste',
+        icon: 'ph ph-buildings',
+        intro: "Après les épidémies du XIXe siècle, la doctrine hygiéniste impose la séparation des malades en pavillons distincts, aérés et éloignés les uns des autres.",
+        groups: [
+          G(null, ['Pavillons séparés par pathologie ou par service', 'Parc arboré isolant les bâtiments les uns des autres', 'Orientation étudiée pour maximiser l’ensoleillement']),
+        ],
+      },
+      {
+        title: 'Des galeries de liaison',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Galeries couvertes reliant les pavillons entre eux', 'Circulation protégée des intempéries pour le personnel', 'Limitation des contacts directs entre services']),
+        ],
+      },
+      {
+        title: 'Vers l’hôpital-bloc',
+        icon: 'ph ph-cross',
+        groups: [
+          G('XXe siècle', ['Abandon progressif du système pavillonnaire après 1950', 'Construction de tours hospitalières verticales', 'Concentration des services techniques et plateaux médicaux']),
+        ],
+        outro: "Après 1950, l’hôpital-bloc vertical remplace peu à peu le système pavillonnaire, jugé trop coûteux en circulation et en entretien.",
+      },
+    ],
+  },
+
+  {
+    id: 'hospice',
+    name: 'Hospice',
+    region: 'Toutes régions · villes et bourgs',
+    periode: '1700–1900',
+    procede: 'Pierre & maçonnerie, plan claustral',
+    usage: 'Accueil des indigents, malades et personnes âgées',
+    categorie: 'publique',
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Établissement charitable héritier des hôtels-Dieu médiévaux, organisé autour d’une chapelle et de dortoirs communs pour accueillir indigents, orphelins, malades chroniques et personnes âgées sans ressources. Plan souvent claustral, hérité des fondations religieuses d’Ancien Régime, poursuivi et sécularisé au XIXe siècle.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Toutes régions, villes et bourgs'],
+      ['Usage', 'Accueil des indigents, malades chroniques, personnes âgées'],
+      ['Système', 'Murs porteurs en pierre, plan claustral'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Plan', 'Cour centrale, galeries, chapelle attenante'],
+      ['Particularité', 'Continuité avec les fondations charitables d’Ancien Régime'],
+    ],
+    materiaux: ['Pierre locale', 'Bois (charpente)', 'Tuile ou ardoise', 'Fer forgé (grilles)', 'Verre (vitraux de chapelle)', 'Chaux (enduits)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à longs pans en tuile ou ardoise selon la région, souvent percée de lucarnes pour aérer les dortoirs.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades sobres en pierre locale, galeries couvertes distribuant les ailes autour de la cour centrale.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois sur solivage dans les dortoirs communs, sol dallé dans les circulations.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs épais en pierre, plan organisé en ailes autour d’une cour ou d’un cloître.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers en pierre desservant les dortoirs à l’étage, souvent placés aux extrémités des ailes.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre, bâtiment implanté en cœur de ville sur une fondation charitable ancienne.' },
+    ],
+    sections: [
+      {
+        title: 'Une charité institutionnalisée',
+        icon: 'ph ph-hand-heart',
+        intro: "Héritier des hôtels-Dieu et fondations charitables religieuses, l’hospice recueille ceux que la société d’Ancien Régime puis la République ne peuvent soigner autrement.",
+        groups: [
+          G(null, ['Accueil des indigents, orphelins et malades chroniques', 'Financement par legs, dons et fondations pieuses', 'Sécularisation progressive de la gestion au XIXe siècle']),
+        ],
+      },
+      {
+        title: 'Un plan claustral',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Cour centrale distribuant les ailes de dortoirs', 'Chapelle attenante, cœur spirituel de l’établissement', 'Galeries couvertes reliant les différents services']),
+        ],
+      },
+      {
+        title: 'Des dortoirs communs',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Grandes salles communes à lits alignés', 'Peu d’intimité, surveillance centralisée', 'Infirmerie et pharmacie attenantes aux dortoirs']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'prison',
+    name: 'Prison',
+    region: 'Chef-lieu de département',
+    periode: '1800–1950',
+    procede: 'Plan cellulaire, murs d’enceinte',
+    usage: 'Établissement pénitentiaire',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Établissement pénitentiaire reconstruit au XIXe siècle selon le principe cellulaire, inspiré du panoptique, où un poste central de surveillance permet un contrôle visuel de plusieurs ailes de cellules disposées en étoile. Hauts murs d’enceinte, miradors et cour de promenade complètent le dispositif sécuritaire.",
+    identite: [
+      ['Période', 'XIXe – XXe siècle, réforme pénitentiaire cellulaire'],
+      ['Région', 'Chefs-lieux de département'],
+      ['Usage', 'Détention, maison d’arrêt ou centrale'],
+      ['Système', 'Plan en étoile, surveillance centrale'],
+      ['Matériau dominant', 'Pierre ou brique, murs très épais'],
+      ['Plan', 'Ailes cellulaires rayonnant autour d’un poste central'],
+      ['Particularité', 'Miradors et murs d’enceinte périphériques'],
+    ],
+    materiaux: ['Pierre de taille', 'Brique', 'Fer (grilles et portes cellulaires)', 'Béton (extensions XXe)', 'Ardoise', 'Verre armé (fenêtres cellulaires)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toitures à longs pans couvrant chaque aile cellulaire, verrière zénithale au-dessus du poste de surveillance central.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs très épais percés de fenêtres étroites et grillagées, hauts murs d’enceinte aveugles côté extérieur.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers ou dalles en béton armé, coursives métalliques desservant les cellules sur plusieurs niveaux.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure en étoile : ailes cellulaires rayonnant depuis un poste central offrant une vue sur toutes les coursives.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers métalliques en colimaçon ou coursives superposées reliant les niveaux de cellules.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations profondes, enceinte fortifiée délimitant nettement l’intérieur pénitentiaire de la ville.' },
+    ],
+    sections: [
+      {
+        title: 'Le principe cellulaire',
+        icon: 'ph ph-shield-check',
+        intro: "La réforme pénitentiaire du XIXe siècle impose l’isolement individuel des détenus, rompant avec les geôles communes de l’Ancien Régime.",
+        groups: [
+          G(null, ['Une cellule par détenu, principe hygiéniste et disciplinaire', 'Plan en étoile inspiré du panoptique de Bentham', 'Surveillance centralisée depuis un poste unique']),
+        ],
+      },
+      {
+        title: 'Un dispositif sécuritaire',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Hauts murs d’enceinte aveugles côté ville', 'Miradors aux angles pour la surveillance périphérique', 'Sas d’entrée unique fortement contrôlé']),
+        ],
+      },
+      {
+        title: 'Vie carcérale et travail',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Ateliers de travail pénitentiaire en rez-de-chaussée', 'Cour de promenade cloisonnée en secteurs', 'Chapelle ou salle de culte accessible aux détenus']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'casernepompiers',
+    name: 'Caserne de pompiers',
+    region: 'Toutes régions · villes et bourgs',
+    periode: '1900–1980',
+    procede: 'Structure en béton, grande travée de remise',
+    usage: 'Caserne des sapeurs-pompiers',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Bâtiment public abritant les véhicules et le personnel des sapeurs-pompiers, reconnaissable à sa grande travée de remise à portes hautes et à sa tour de manœuvre servant historiquement au séchage des tuyaux d’incendie. Locaux de vie et dortoirs de garde complètent l’équipement opérationnel.",
+    identite: [
+      ['Période', 'XXe siècle, professionnalisation du service'],
+      ['Région', 'Toutes régions, villes et bourgs'],
+      ['Usage', 'Caserne des sapeurs-pompiers, intervention d’urgence'],
+      ['Système', 'Ossature béton, grande travée dégagée'],
+      ['Matériau dominant', 'Béton armé, parpaing enduit'],
+      ['Plan', 'Remise des véhicules, tour de manœuvre, locaux de vie'],
+      ['Particularité', 'Tour de manœuvre servant au séchage des tuyaux'],
+    ],
+    materiaux: ['Béton armé', 'Parpaing enduit', 'Métal (portes de remise)', 'Verre (façade vitrée)', 'Acier (structure de la tour)', 'Peinture rouge (signalétique)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture-terrasse ou à faible pente en béton, tour de manœuvre culminant au-dessus du volume principal.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade dominée par les larges portes de la remise, permettant la sortie rapide des véhicules d’intervention.' },
+      { n: 3, el: 'Planchers', txt: 'Dalle béton au rez-de-chaussée pour la remise, planchers légers à l’étage pour les locaux de vie et dortoirs de garde.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature béton armé dégageant une grande travée libre pour le stationnement des camions.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier ou perche de descente rapide reliant les dortoirs de garde à la remise des véhicules.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en béton armé dimensionnées pour supporter le poids des véhicules lourds.' },
+    ],
+    sections: [
+      {
+        title: 'Un équipement d’urgence',
+        icon: 'ph ph-building',
+        intro: "La caserne organise l’intervention rapide : véhicules alignés prêts au départ, dortoirs de garde à proximité immédiate de la remise.",
+        groups: [
+          G(null, ['Remise ouverte permettant une sortie rapide des engins', 'Dortoirs de garde reliés à la remise par perche ou escalier direct', 'Salle d’alerte recevant les appels d’urgence']),
+        ],
+      },
+      {
+        title: 'La tour de manœuvre',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Tour élancée servant historiquement au séchage vertical des tuyaux', 'Support d’exercices d’entraînement en hauteur', 'Élément vertical identifiant la caserne dans le paysage urbain']),
+        ],
+      },
+      {
+        title: 'Une architecture fonctionnelle',
+        icon: 'ph ph-columns',
+        groups: [
+          G(null, ['Grande travée dégagée de tout poteau intermédiaire', 'Portes hautes dimensionnées pour les camions', 'Signalétique rouge caractéristique du service incendie']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'bureauposte',
+    name: 'Bureau de poste',
+    region: 'Toutes régions · villes et bourgs',
+    periode: '1880–1960',
+    procede: 'Pierre ou brique, guichets alignés',
+    usage: 'Service postal, télégraphe et téléphone (PTT)',
+    categorie: 'publique',
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Bâtiment public du service des Postes, Télégraphes et Téléphones (PTT), reconnaissable à sa façade sobre, son horloge et son enseigne, organisé autour d’une salle du public à guichets alignés. Diffusé selon des plans-types administratifs de la fin du XIXe siècle jusqu’au milieu du XXe siècle.",
+    identite: [
+      ['Période', 'Fin XIXe – milieu XXe siècle'],
+      ['Région', 'Toutes régions, villes et bourgs'],
+      ['Usage', 'Service postal, télégraphique et téléphonique (PTT)'],
+      ['Système', 'Murs porteurs en pierre ou brique'],
+      ['Matériau dominant', 'Pierre de taille ou brique enduite'],
+      ['Plan', 'Salle du public à guichets, bureaux de tri à l’arrière'],
+      ['Particularité', 'Horloge et enseigne PTT normalisées'],
+    ],
+    materiaux: ['Pierre de taille', 'Brique enduite', 'Bois (guichets et mobilier)', 'Verre (comptoirs vitrés)', 'Fer forgé (grilles de guichet)', 'Ardoise ou tuile (toiture)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à longs pans en ardoise ou tuile mécanique, sobre et fonctionnelle.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade sobre en pierre ou brique, enseigne PTT normalisée et horloge publique en applique.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers bois ou carrelage dans la salle du public, comptoirs de guichet alignés le long d’un mur.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en maçonnerie, salle du public dégagée, bureaux de tri et de service à l’arrière du bâtiment.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier de service menant aux bureaux administratifs ou au logement du receveur à l’étage.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre ou moellon, bâtiment implanté en centre-bourg à proximité de la mairie.' },
+    ],
+    sections: [
+      {
+        title: 'Le service public normalisé',
+        icon: 'ph ph-building',
+        intro: "L’administration des PTT diffuse des plans-types de bureaux de poste dans toute la France, garantissant une reconnaissance immédiate du service public postal.",
+        groups: [
+          G(null, ['Enseigne et horloge PTT identiques d’une commune à l’autre', 'Logement de fonction du receveur souvent intégré au bâtiment', 'Bureau implanté en position centrale, près de la mairie']),
+        ],
+      },
+      {
+        title: 'La salle du public',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Guichets alignés séparant public et personnel', 'Comptoirs vitrés pour le courrier et les opérations financières', 'Cabines téléphoniques publiques dans les bureaux les plus importants']),
+        ],
+      },
+      {
+        title: 'Tri et distribution',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Bureaux de tri du courrier à l’arrière du bâtiment', 'Accès dédié pour les facteurs et les tournées de distribution', 'Remises pour les vélos ou véhicules de service']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'gareroutiere',
+    name: 'Gare routière',
+    region: 'Toutes régions · villes moyennes',
+    periode: '1930–1980',
+    procede: 'Béton, grande marquise en porte-à-faux',
+    usage: 'Terminus et correspondance des lignes d’autocars',
+    categorie: 'publique',
+    periodeTags: ['XXe'],
+    resume:
+      "Équipement public organisant le terminus et la correspondance des lignes d’autocars, caractérisé par une grande marquise en porte-à-faux protégeant les quais d’embarquement des intempéries. Typologie moderniste développée avec l’essor des transports routiers de voyageurs au XXe siècle.",
+    identite: [
+      ['Période', '1930–1980, essor du transport routier'],
+      ['Région', 'Toutes régions, villes moyennes'],
+      ['Usage', 'Terminus et correspondance des lignes d’autocars'],
+      ['Système', 'Ossature béton armé, marquise en porte-à-faux'],
+      ['Matériau dominant', 'Béton armé'],
+      ['Plan', 'Quais alignés sous marquise, salle d’attente'],
+      ['Particularité', 'Grande marquise en porte-à-faux sans poteaux côté quai'],
+    ],
+    materiaux: ['Béton armé', 'Verre (salle d’attente)', 'Acier (structure de marquise)', 'Carrelage (sol des quais)', 'Métal (mobilier d’attente)', 'Peinture signalétique'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Grande marquise en béton armé en porte-à-faux, protégeant les quais sans poteaux gênant la circulation des cars.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade vitrée de la salle d’attente ouvrant largement sur les quais d’embarquement.' },
+      { n: 3, el: 'Planchers', txt: 'Quais carrelés ou bétonnés, légèrement surélevés pour faciliter l’accès aux autocars.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure en béton armé, marquise en porte-à-faux calculée pour dégager tout appui côté quai.' },
+      { n: 5, el: 'Escalier', txt: 'Rampes d’accès de plain-pied privilégiées, peu d’escaliers pour faciliter le passage des voyageurs et bagages.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en béton armé, semelles renforcées sous les points d’appui de la marquise en porte-à-faux.' },
+    ],
+    sections: [
+      {
+        title: 'L’essor du transport routier',
+        icon: 'ph ph-building',
+        intro: "Avec le développement des réseaux d’autocars au XXe siècle, les villes moyennes se dotent d’équipements dédiés à la correspondance des lignes routières de voyageurs.",
+        groups: [
+          G(null, ['Terminus et correspondance de plusieurs lignes d’autocars', 'Souvent implantée à proximité de la gare ferroviaire', 'Guichets de vente de billets et consigne à bagages']),
+        ],
+      },
+      {
+        title: 'La marquise en porte-à-faux',
+        icon: 'ph ph-crane-tower',
+        groups: [
+          G(null, ['Prouesse structurelle en béton armé sans poteaux côté quai', 'Protection continue des voyageurs sur toute la longueur des quais', 'Expression architecturale moderniste caractéristique de la typologie']),
+        ],
+      },
+      {
+        title: 'Des quais fonctionnels',
+        icon: 'ph ph-rows',
+        groups: [
+          G(null, ['Quais numérotés alignés le long de la marquise', 'Salle d’attente vitrée ouverte sur les départs', 'Signalétique claire des destinations et horaires']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
