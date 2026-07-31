@@ -1,6 +1,6 @@
 import { MagnifyingGlass, X } from '@phosphor-icons/react'
 import { useApp, type Filters } from '../../context/AppContext'
-import type { Typologie } from '../../data/typologies'
+import { CATEGORIES_MAP, type Typologie } from '../../data/typologies'
 import styles from './FiltersSidebar.module.css'
 
 const PERIODE_CHIPS = ['Avant 1800', 'XIXe', 'XXe']
@@ -9,16 +9,23 @@ function uniq<T>(arr: T[]): T[] {
   return arr.filter((v, i) => arr.indexOf(v) === i)
 }
 
+const defaultChipLabel = (val: string) => val
+const categorieChipLabel = (val: string) => {
+  const c = CATEGORIES_MAP[val]
+  return c ? `${c.emoji} ${c.label}` : val
+}
+
 export default function FiltersSidebar({ typologies }: { typologies: Typologie[] }) {
   const { q, setQ, filters, toggleFilter, clearAll } = useApp()
 
-  const groups: { label: string; key: keyof Filters; chips: string[] }[] = [
-    { label: 'Procédé de construction', key: 'procede', chips: uniq(typologies.map((t) => t.procede)) },
-    { label: "Type d'usage",            key: 'usage',   chips: uniq(typologies.map((t) => t.usage)) },
-    { label: 'Période',                 key: 'periode', chips: PERIODE_CHIPS },
+  const groups: { label: string; key: keyof Filters; chips: string[]; chipLabel: (val: string) => string }[] = [
+    { label: 'Catégorie',               key: 'categorie', chips: uniq(typologies.map((t) => t.categorie)), chipLabel: categorieChipLabel },
+    { label: 'Procédé de construction', key: 'procede',   chips: uniq(typologies.map((t) => t.procede)),   chipLabel: defaultChipLabel },
+    { label: "Type d'usage",            key: 'usage',     chips: uniq(typologies.map((t) => t.usage)),     chipLabel: defaultChipLabel },
+    { label: 'Période',                 key: 'periode',   chips: PERIODE_CHIPS,                            chipLabel: defaultChipLabel },
   ]
 
-  const hasFilters = q || filters.procede.length || filters.usage.length || filters.periode.length
+  const hasFilters = q || filters.procede.length || filters.usage.length || filters.periode.length || filters.categorie.length
 
   return (
     <div className={styles.sidebar}>
@@ -47,7 +54,7 @@ export default function FiltersSidebar({ typologies }: { typologies: Typologie[]
                   onClick={() => toggleFilter(grp.key, val)}
                   className={`${styles.chip} ${active ? styles.chipActive : styles.chipInactive}`}
                 >
-                  {val}
+                  {grp.chipLabel(val)}
                 </button>
               )
             })}

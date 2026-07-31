@@ -5,6 +5,7 @@ export interface Filters {
   procede: string[]
   usage: string[]
   periode: string[]
+  categorie: string[]
 }
 
 interface AppState {
@@ -27,7 +28,7 @@ const AppContext = createContext<AppContextValue | null>(null)
 export function AppProvider({ children }: { children: ReactNode }) {
   const navigate = useNavigate()
   const [q, setQ] = useState('')
-  const [filters, setFilters] = useState<Filters>({ procede: [], usage: [], periode: [] })
+  const [filters, setFilters] = useState<Filters>({ procede: [], usage: [], periode: [], categorie: [] })
   const [open, setOpen] = useState<Record<number, boolean>>({ 0: true })
 
   const toggleFilter = useCallback((group: keyof Filters, val: string) => {
@@ -39,7 +40,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   }, [])
 
   const clearAll = useCallback(() => {
-    setFilters({ procede: [], usage: [], periode: [] })
+    setFilters({ procede: [], usage: [], periode: [], categorie: [] })
     setQ('')
   }, [])
 

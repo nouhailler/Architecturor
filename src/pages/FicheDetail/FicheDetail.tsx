@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { ArrowLeft, MapPin } from '@phosphor-icons/react'
-import { TYPOLOGIES_MAP } from '../../data/typologies'
+import { CATEGORIES_MAP, TYPOLOGIES_MAP } from '../../data/typologies'
 import { useApp } from '../../context/AppContext'
 import CoupeAnnotee from './CoupeAnnotee'
 import ProcedeSections from './ProcedeSections'
@@ -29,6 +29,8 @@ export default function FicheDetail() {
     )
   }
 
+  const categorie = CATEGORIES_MAP[t.categorie]
+
   return (
     <div className={styles.wrap} style={{ animation: 'bfade .3s ease' }}>
       {/* En-tête */}
@@ -39,6 +41,7 @@ export default function FicheDetail() {
         </button>
 
         <div className={styles.tags}>
+          {categorie && <span className="tag tag-outline">{categorie.emoji} {categorie.label}</span>}
           <span className="tag tag-outline">{t.periode}</span>
           <span className="tag tag-accent">{t.procede}</span>
           <span className="tag tag-neutral">
@@ -61,7 +64,10 @@ export default function FicheDetail() {
 
         {/* Colonne droite sticky */}
         <div className={styles.sidebar}>
-          <SidebarIdentite identite={t.identite} materiaux={t.materiaux} />
+          <SidebarIdentite
+            identite={categorie ? [['Catégorie', `${categorie.emoji} ${categorie.label}`], ...t.identite] : t.identite}
+            materiaux={t.materiaux}
+          />
         </div>
       </div>
     </div>

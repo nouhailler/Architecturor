@@ -1,10 +1,11 @@
 import { useNavigate } from 'react-router-dom'
 import { Image, MapPin } from '@phosphor-icons/react'
-import type { Typologie } from '../../data/typologies'
+import { CATEGORIES_MAP, type Typologie } from '../../data/typologies'
 import styles from './TypologieCard.module.css'
 
 export default function TypologieCard({ typologie: t }: { typologie: Typologie }) {
   const navigate = useNavigate()
+  const categorie = CATEGORIES_MAP[t.categorie]
 
   const handleClick = () => {
     navigate(`/typologie/${t.id}`)
@@ -28,6 +29,7 @@ export default function TypologieCard({ typologie: t }: { typologie: Typologie }
         </div>
         <p className={styles.resume}>{t.resume}</p>
         <div className={styles.tags}>
+          {categorie && <span className="tag tag-outline">{categorie.emoji} {categorie.label}</span>}
           <span className="tag tag-accent">{t.procede}</span>
           <span className="tag tag-neutral">{t.usage}</span>
         </div>

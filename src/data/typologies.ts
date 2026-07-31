@@ -17,6 +17,23 @@ export interface Section {
   groups: Group[]
 }
 
+export const CATEGORIES = [
+  { id: 'rural',        emoji: '🏠', label: 'Habitat rural' },
+  { id: 'urbain',       emoji: '🏘', label: 'Habitat urbain' },
+  { id: 'religieuse',   emoji: '🏛', label: 'Architecture religieuse' },
+  { id: 'militaire',    emoji: '🏰', label: 'Architecture militaire' },
+  { id: 'industrielle', emoji: '🏭', label: 'Architecture industrielle' },
+  { id: 'transports',   emoji: '🚂', label: 'Architecture des transports' },
+  { id: 'agricole',     emoji: '🌾', label: 'Architecture agricole' },
+  { id: 'publique',     emoji: '🏫', label: 'Architecture publique' },
+  { id: 'littorale',    emoji: '🌊', label: 'Architecture littorale' },
+  { id: 'montagne',     emoji: '⛰', label: 'Architecture de montagne' },
+] as const
+
+export type CategorieId = (typeof CATEGORIES)[number]['id']
+
+export const CATEGORIES_MAP = Object.fromEntries(CATEGORIES.map((c) => [c.id, c]))
+
 export interface Typologie {
   id: string
   name: string
@@ -24,6 +41,7 @@ export interface Typologie {
   periode: string
   procede: string
   usage: string
+  categorie: CategorieId
   periodeTags: string[]
   resume: string
   identite: [string, string][]
@@ -42,6 +60,7 @@ export const TYPOLOGIES: Typologie[] = [
     periode: '1853–1870',
     procede: 'Pierre de taille',
     usage: 'Habitat urbain',
+    categorie: 'urbain',
     periodeTags: ['XIXe'],
     resume:
       "Immeuble de rapport en pierre de taille né des grands travaux du Second Empire. Murs porteurs massifs, façade strictement codifiée et toiture de zinc : une typologie qui structure encore les boulevards parisiens.",
@@ -163,6 +182,7 @@ export const TYPOLOGIES: Typologie[] = [
     periode: '1450–1650',
     procede: 'Ossature bois',
     usage: 'Habitat',
+    categorie: 'urbain',
     periodeTags: ['Avant 1800'],
     resume:
       "Maison à ossature de bois hourdée de torchis, courante du Moyen Âge à la Renaissance. L\u2019encorbellement gagne de la surface aux étages ; la structure est entièrement lisible en façade.",
@@ -235,6 +255,7 @@ export const TYPOLOGIES: Typologie[] = [
     periode: '1600–1850',
     procede: 'Moellons & chaux',
     usage: 'Habitat rural',
+    categorie: 'rural',
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme-bloc méditerranéenne en moellons calcaire liés à la chaux. Murs épais, faible pente de tuiles canal et forte inertie thermique pour résister à la chaleur estivale.",
@@ -298,6 +319,7 @@ export const TYPOLOGIES: Typologie[] = [
     periode: '1825–1914',
     procede: 'Brique',
     usage: 'Habitat ouvrier',
+    categorie: 'urbain',
     periodeTags: ['XIXe'],
     resume:
       "Habitat ouvrier minier bâti en bande, en brique de terre cuite. Maisons mitoyennes répétitives organisées autour du carreau de fosse, produites en série par les compagnies.",
@@ -361,6 +383,7 @@ export const TYPOLOGIES: Typologie[] = [
     periode: '1953–1975',
     procede: 'Béton armé',
     usage: 'Habitat collectif',
+    categorie: 'urbain',
     periodeTags: ['XXe'],
     resume:
       "Logement collectif de la reconstruction et des Trente Glorieuses. Structure en béton armé, préfabrication et chemin de grue permettent de bâtir vite, en série et en hauteur.",
@@ -431,6 +454,7 @@ export const TYPOLOGIES: Typologie[] = [
     periode: '1700–1900',
     procede: 'Granite',
     usage: 'Habitat rural',
+    categorie: 'rural',
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison rurale bretonne tout en longueur, bâtie en gros blocs de granite sous une toiture d’ardoise à forte pente. Plan simple d’une seule travée en profondeur, pignons épais orientés face aux vents et pluies atlantiques.",
@@ -496,6 +520,7 @@ export const TYPOLOGIES: Typologie[] = [
     periode: '1750–1900',
     procede: 'Bois & pierre',
     usage: 'Habitat rural montagnard',
+    categorie: 'montagne',
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Habitat de montagne combinant un soubassement en pierre (étable, cave) et un étage en madriers de bois (logis, grenier à foin). Toiture à faible pente couverte de tavaillons ou de lauzes, dimensionnée pour porter la neige.",
@@ -560,6 +585,7 @@ export const TYPOLOGIES: Typologie[] = [
     periode: '1730–1914',
     procede: 'Pierre calcaire',
     usage: 'Habitat urbain',
+    categorie: 'urbain',
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison de ville de plain-pied ou à un étage, en pierre calcaire blonde, typique des faubourgs bordelais. Façade étroite sur rue, plan en profondeur desservant les pièces en enfilade, toiture à faible pente en tuile.",
@@ -624,6 +650,7 @@ export const TYPOLOGIES: Typologie[] = [
     periode: '1600–1850',
     procede: 'Pans de bois & torchis',
     usage: 'Habitat rural',
+    categorie: 'rural',
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Grande maison rurale basque à ossature bois apparente, façade principale en pignon tourné vers l’est, colombages peints en rouge ou vert. Toit à deux pans très asymétriques abritant logis, étable et grenier sous un même volume.",
@@ -688,6 +715,7 @@ export const TYPOLOGIES: Typologie[] = [
     periode: '1920–1935',
     procede: 'Béton & brique',
     usage: 'Habitat urbain',
+    categorie: 'urbain',
     periodeTags: ['XXe'],
     resume:
       "Immeuble de la reconstruction d’après-guerre, mêlant structure en béton armé et parements de brique ou de béton mouluré. Façades géométriques, ferronneries stylisées et frises décoratives caractérisent ce style né de la reconstruction de villes comme Reims après 1918.",

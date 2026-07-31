@@ -1,6 +1,6 @@
 import { FunnelX } from '@phosphor-icons/react'
 import { useApp } from '../../context/AppContext'
-import { TYPOLOGIES } from '../../data/typologies'
+import { CATEGORIES_MAP, TYPOLOGIES } from '../../data/typologies'
 import FiltersSidebar from './FiltersSidebar'
 import TypologieCard from './TypologieCard'
 import styles from './Catalogue.module.css'
@@ -9,11 +9,13 @@ export default function Catalogue() {
   const { q, filters } = useApp()
 
   const filtered = TYPOLOGIES.filter((t) => {
+    if (filters.categorie.length && !filters.categorie.includes(t.categorie)) return false
     if (filters.procede.length && !filters.procede.includes(t.procede)) return false
     if (filters.usage.length && !filters.usage.includes(t.usage)) return false
     if (filters.periode.length && !t.periodeTags.some((x) => filters.periode.includes(x))) return false
     if (q.trim()) {
-      const hay = `${t.name} ${t.region} ${t.procede} ${t.usage} ${t.resume}`.toLowerCase()
+      const categorieLabel = CATEGORIES_MAP[t.categorie]?.label ?? ''
+      const hay = `${t.name} ${t.region} ${t.procede} ${t.usage} ${t.resume} ${categorieLabel}`.toLowerCase()
       if (!hay.includes(q.trim().toLowerCase())) return false
     }
     return true
@@ -22,7 +24,7 @@ export default function Catalogue() {
   return (
     <div className={styles.wrap}>
       <h1 className={styles.h1}>Catalogue des typologies</h1>
-      <p className={styles.sub}>Filtrez par procédé de construction, usage ou période.</p>
+      <p className={styles.sub}>Filtrez par catégorie, procédé de construction, usage ou période.</p>
 
       <div className={styles.layout}>
         <FiltersSidebar typologies={TYPOLOGIES} />
