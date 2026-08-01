@@ -8804,6 +8804,338 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'stabulationlibre',
+    name: 'Stabulation libre',
+    region: 'Toutes régions · élevage bovin',
+    periode: '1970–2020',
+    procede: 'Charpente métallique ou bois, bardage ajouré',
+    usage: 'Logement collectif du bétail en liberté',
+    categorie: 'agricole',
+    periodeTags: ['XXe'],
+    resume:
+      "Bâtiment d’élevage moderne où le bétail circule librement sur une aire paillée ou sur caillebotis, remplaçant l’ancienne étable à logettes attachées. Grande portée charpentée sans mur porteur intermédiaire, bardage largement ajouré pour une ventilation naturelle permanente, aire de raclage ou fosse à lisier intégrée.",
+    identite: [
+      ['Période', '1970–2020'],
+      ['Région', 'Toutes régions, élevage bovin'],
+      ['Usage', 'Logement collectif du bétail en liberté'],
+      ['Système', 'Charpente métallique ou bois à grande portée'],
+      ['Matériau dominant', 'Acier ou bois, bardage ajouré'],
+      ['Plan', 'Aire paillée centrale, couloirs d’alimentation latéraux'],
+      ['Particularité', 'Ventilation naturelle continue, bâtiment ouvert'],
+    ],
+    materiaux: ['Acier (charpente et bardage)', 'Bois (charpente alternative)', 'Béton (aire bétonnée, fosse à lisier)', 'Bardage bois ajouré ou filet brise-vent', 'Paille (litière)', 'Polycarbonate (translucide en toiture)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Charpente métallique ou bois à grande portée, plaques translucides ponctuelles pour l’éclairage naturel de l’aire de vie.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Bardage largement ajouré ou filets brise-vent, assurant une ventilation naturelle continue essentielle au confort du troupeau.' },
+      { n: 3, el: 'Planchers', txt: 'Aire paillée ou caillebotis béton au-dessus d’une fosse à lisier, couloirs d’alimentation bétonnés.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Charpente à grande portée sans poteau intermédiaire, dégageant un vaste volume libre pour la circulation du troupeau.' },
+      { n: 5, el: 'Escalier', txt: 'Aucun escalier, bâtiment de plain-pied par nature.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations béton armé, fosse à lisier étanche creusée sous une partie du bâtiment.' },
+    ],
+    sections: [
+      {
+        title: 'La liberté de mouvement du troupeau',
+        icon: 'ph ph-buildings',
+        intro: "En rupture avec l’étable traditionnelle à logettes attachées, la stabulation libre laisse le troupeau circuler à sa guise entre aire de couchage, d’alimentation et d’abreuvement.",
+        groups: [
+          G(null, ['Circulation libre du troupeau entre les différentes aires', 'Bien-être animal amélioré par rapport à l’attache permanente', 'Adaptation possible à l’agrandissement progressif du troupeau']),
+        ],
+      },
+      {
+        title: 'Une ventilation naturelle continue',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Bardage ajouré ou filets brise-vent réglables selon la saison', 'Renouvellement d’air permanent limitant les maladies respiratoires', 'Faîtage ouvert évacuant l’air chaud et l’humidité']),
+        ],
+      },
+      {
+        title: 'Gestion des effluents',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Fosse à lisier intégrée sous une partie du bâtiment', 'Raclage automatique ou manuel des couloirs de circulation', 'Épandage agronomique valorisant les effluents collectés']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'salledetraite',
+    name: 'Salle de traite',
+    region: 'Toutes régions · exploitations laitières',
+    periode: '1970–2020',
+    procede: 'Béton et acier inoxydable, fosse centrale',
+    usage: 'Traite mécanisée du troupeau laitier',
+    categorie: 'agricole',
+    periodeTags: ['XXe'],
+    resume:
+      "Bâtiment spécialisé attenant à la stabulation, organisé autour d’une fosse centrale abaissée permettant à l’éleveur de traire les vaches à hauteur du pis sans se baisser. Équipement de traite mécanisée (épis, roto ou robot) et salle de stockage du lait réfrigéré complètent l’ensemble.",
+    identite: [
+      ['Période', '1970–2020'],
+      ['Région', 'Toutes régions, exploitations laitières'],
+      ['Usage', 'Traite mécanisée du troupeau laitier'],
+      ['Système', 'Structure béton, fosse de traite abaissée'],
+      ['Matériau dominant', 'Béton, acier inoxydable (équipements)'],
+      ['Plan', 'Fosse centrale, quais de traite latéraux ou circulaires'],
+      ['Particularité', 'Salle de stockage du lait réfrigéré attenante'],
+    ],
+    materiaux: ['Béton (structure et sol)', 'Acier inoxydable (tank à lait, tuyauterie)', 'Carrelage (revêtement hygiénique)', 'Verre (local de commande)', 'Caoutchouc (manchons de traite)', 'Aluminium (structure de quai)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture simple à faible pente, isolation limitée mais ventilation soignée pour l’hygiène du local.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade fonctionnelle en parpaing ou béton, ouvertures réduites autour de l’espace de traite proprement dit.' },
+      { n: 3, el: 'Planchers', txt: 'Fosse centrale abaissée d’environ un mètre, sol antidérapant et pente d’écoulement vers les canalisations.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure béton simple, dimensionnée pour l’implantation des quais de traite et du tank à lait.' },
+      { n: 5, el: 'Escalier', txt: 'Quelques marches menant à la fosse de traite, sans étage.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations béton armé, étanchéité renforcée pour la fosse et les réseaux d’évacuation.' },
+    ],
+    sections: [
+      {
+        title: 'Traire sans se baisser',
+        icon: 'ph ph-buildings',
+        intro: "La fosse centrale abaissée place l’éleveur à hauteur du pis des vaches alignées sur les quais latéraux, réduisant considérablement la pénibilité de la traite quotidienne.",
+        groups: [
+          G(null, ['Fosse abaissée d’environ un mètre sous le niveau des quais', 'Vaches alignées de part et d’autre pour une traite en série', 'Réduction majeure de la pénibilité par rapport à la traite à l’attache']),
+        ],
+      },
+      {
+        title: 'Des équipements de plus en plus automatisés',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G('Épis puis roto', ['Traite en épi : quais en V facilitant l’accès aux pis']),
+          G('Robot de traite', ['Traite entièrement automatisée, sans présence humaine continue']),
+        ],
+      },
+      {
+        title: 'L’hygiène avant tout',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Carrelage et surfaces lavables sur l’ensemble du local', 'Tank à lait réfrigéré attenant, chaîne du froid ininterrompue', 'Protocoles de nettoyage automatisés après chaque traite']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'batimentavicole',
+    name: 'Bâtiment avicole',
+    region: 'Toutes régions · élevage de volailles',
+    periode: '1960–2020',
+    procede: 'Charpente métallique, bâtiment fermé climatisé',
+    usage: 'Élevage industriel de volailles',
+    categorie: 'agricole',
+    periodeTags: ['XXe'],
+    resume:
+      "Long bâtiment fermé et climatisé destiné à l’élevage intensif de volailles — poulets de chair, poules pondeuses — équipé de systèmes automatisés d’alimentation, d’abreuvement et de ventilation contrôlée. Volume simple et allongé, isolation renforcée pour maîtriser la température intérieure quelle que soit la saison.",
+    identite: [
+      ['Période', '1960–2020'],
+      ['Région', 'Toutes régions, élevage de volailles'],
+      ['Usage', 'Élevage industriel de volailles'],
+      ['Système', 'Charpente métallique, bâtiment fermé isolé'],
+      ['Matériau dominant', 'Acier, panneaux sandwich isolants'],
+      ['Plan', 'Volume allongé simple, sans cloisonnement intérieur'],
+      ['Particularité', 'Ventilation et température entièrement automatisées'],
+    ],
+    materiaux: ['Acier (charpente et bardage)', 'Panneaux sandwich isolants', 'Béton (dalle de sol)', 'Polyéthylène (litière et équipements)', 'Aluminium (gaines de ventilation)', 'Verre (local technique)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture en panneaux sandwich isolants, équipée de gaines de ventilation mécanique contrôlée sur toute la longueur.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Bardage isolant sans quasi aucune ouverture, entrées d’air automatisées régulant précisément le climat intérieur.' },
+      { n: 3, el: 'Planchers', txt: 'Dalle béton recouverte de litière, sol facilement lavable et désinfectable entre deux bandes d’élevage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Charpente métallique à grande portée, volume unique sans poteau intermédiaire gênant la circulation des animaux.' },
+      { n: 5, el: 'Escalier', txt: 'Aucun escalier, bâtiment de plain-pied.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations béton armé, dalle étanche facilitant le nettoyage sanitaire complet entre deux lots.' },
+    ],
+    sections: [
+      {
+        title: 'Un climat entièrement maîtrisé',
+        icon: 'ph ph-buildings',
+        intro: "L’isolation renforcée et la ventilation automatisée permettent de maintenir une température et une hygrométrie constantes, indispensables à la croissance rapide des volailles.",
+        groups: [
+          G(null, ['Isolation renforcée limitant les variations thermiques', 'Ventilation mécanique ajustée automatiquement selon la saison', 'Éclairage artificiel programmé calé sur les cycles de croissance']),
+        ],
+      },
+      {
+        title: 'Automatisation de l’élevage',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Alimentation distribuée automatiquement par chaînes ou pipelines', 'Abreuvement par pipettes ou lignes d’eau automatisées', 'Surveillance à distance des paramètres d’ambiance']),
+        ],
+      },
+      {
+        title: 'Biosécurité et sanitaire',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Vide sanitaire strict entre deux bandes d’élevage', 'Désinfection complète du bâtiment avant chaque nouveau lot', 'Sas d’entrée limitant l’introduction de pathogènes extérieurs']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'porcherieindustrielle',
+    name: 'Porcherie industrielle',
+    region: 'Toutes régions · élevage porcin, Bretagne notamment',
+    periode: '1960–2020',
+    procede: 'Béton et charpente métallique, caillebotis intégral',
+    usage: 'Élevage industriel de porcs',
+    categorie: 'agricole',
+    periodeTags: ['XXe'],
+    resume:
+      "Bâtiment fermé compartimenté en cases, destiné à l’élevage intensif de porcs sur caillebotis intégral au-dessus d’une fosse à lisier. Ventilation mécanique contrôlée, chauffage localisé pour les porcelets et alimentation automatisée caractérisent cette architecture agro-industrielle développée notamment en Bretagne.",
+    identite: [
+      ['Période', '1960–2020'],
+      ['Région', 'Toutes régions, élevage porcin, Bretagne notamment'],
+      ['Usage', 'Élevage industriel de porcs'],
+      ['Système', 'Structure béton, caillebotis intégral sur fosse'],
+      ['Matériau dominant', 'Béton, caillebotis en béton ou plastique'],
+      ['Plan', 'Cases compartimentées le long de couloirs de service'],
+      ['Particularité', 'Fosse à lisier intégrale sous caillebotis'],
+    ],
+    materiaux: ['Béton (structure et caillebotis)', 'Acier galvanisé (barrières de case)', 'Panneaux isolants (bardage)', 'Plastique (caillebotis alternatif)', 'Aluminium (gaines de ventilation)', 'Polyéthylène (équipements d’abreuvement)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture isolée, gaines de ventilation mécanique assurant le renouvellement constant de l’air intérieur.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Bardage isolant, ouvertures réduites et contrôlées pour maîtriser température et hygrométrie intérieures.' },
+      { n: 3, el: 'Planchers', txt: 'Caillebotis intégral en béton ou plastique au-dessus d’une fosse à lisier, évitant tout contact des animaux avec leurs déjections.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure béton compartimentée en cases individuelles ou collectives selon le stade physiologique des animaux.' },
+      { n: 5, el: 'Escalier', txt: 'Aucun escalier, bâtiment de plain-pied avec fosse en sous-face.' },
+      { n: 6, el: 'Fondations', txt: 'Fosse à lisier étanche en béton armé, capacité de stockage dimensionnée selon la réglementation environnementale.' },
+    ],
+    sections: [
+      {
+        title: 'Une architecture agro-industrielle',
+        icon: 'ph ph-buildings',
+        intro: "Développée massivement en Bretagne à partir des années 1960, la porcherie industrielle organise l’élevage porcin en filière intégrée du naissage à l’engraissement.",
+        groups: [
+          G(null, ['Compartimentage selon le stade physiologique (maternité, post-sevrage, engraissement)', 'Chauffage localisé pour les porcelets nouveau-nés', 'Filière intégrée de la naissance à l’engraissement final']),
+        ],
+      },
+      {
+        title: 'Le caillebotis intégral',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Séparation totale entre les animaux et leurs déjections', 'Fosse à lisier accessible sous le caillebotis pour la vidange', 'Confort et hygiène améliorés par rapport à la litière traditionnelle']),
+        ],
+      },
+      {
+        title: 'Gestion environnementale du lisier',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Capacité de stockage réglementaire avant épandage', 'Épandage encadré selon le plan d’épandage de l’exploitation', 'Traitement ou méthanisation du lisier en développement']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'serreagricole',
+    name: 'Serre agricole',
+    region: 'Toutes régions · maraîchage et horticulture',
+    periode: '1950–2020',
+    procede: 'Structure métallique légère, couverture plastique ou verre',
+    usage: 'Culture maraîchère et horticole sous abri',
+    categorie: 'agricole',
+    periodeTags: ['XXe'],
+    resume:
+      "Structure légère métallique couverte de verre ou de film plastique, permettant la culture maraîchère et horticole toute l’année en maîtrisant température, hygrométrie et luminosité. Des simples tunnels plastiques aux serres verre chauffées et informatisées, cette typologie couvre une large gamme d’équipements agricoles sous abri.",
+    identite: [
+      ['Période', '1950–2020'],
+      ['Région', 'Toutes régions, maraîchage et horticulture'],
+      ['Usage', 'Culture maraîchère et horticole sous abri'],
+      ['Système', 'Arceaux ou charpente métallique légère'],
+      ['Matériau dominant', 'Acier galvanisé, verre ou film plastique'],
+      ['Plan', 'Trame répétitive de travées ou tunnels juxtaposés'],
+      ['Particularité', 'Régulation automatisée du climat intérieur (serres modernes)'],
+    ],
+    materiaux: ['Acier galvanisé (structure)', 'Verre (serres horticoles)', 'Polyéthylène (film plastique des tunnels)', 'Aluminium (profilés de serres verre)', 'Béton (fondations et allées)', 'Systèmes de chauffage et brumisation'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Couverture en verre ou film plastique tendu sur arceaux, ouvrants automatisés pour la régulation thermique.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Parois vitrées ou plastifiées maximisant l’apport de lumière naturelle indispensable à la croissance des cultures.' },
+      { n: 3, el: 'Planchers', txt: 'Sol en terre cultivée, gravier drainant ou dalle béton selon le type de culture (pleine terre ou hors-sol).' },
+      { n: 4, el: 'Structure porteuse', txt: 'Arceaux métalliques légers ou charpente en acier galvanisé, structure répétitive facilement extensible.' },
+      { n: 5, el: 'Escalier', txt: 'Généralement de plain-pied, sans étage.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations légères, ancrages ponctuels pour les tunnels, semelles béton pour les serres verre permanentes.' },
+    ],
+    sections: [
+      {
+        title: 'Cultiver hors saison',
+        icon: 'ph ph-buildings',
+        intro: "En maîtrisant le climat intérieur, la serre permet de produire des cultures maraîchères et horticoles en dehors de leur saison naturelle, sécurisant les revenus de l’exploitation.",
+        groups: [
+          G(null, ['Extension du calendrier de production au-delà des saisons naturelles', 'Protection contre le gel, la grêle et les intempéries', 'Rendements accrus grâce au contrôle de l’environnement']),
+        ],
+      },
+      {
+        title: 'Du tunnel plastique à la serre informatisée',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G('Tunnel plastique', ['Structure simple et économique, arceaux et film tendu']),
+          G('Serre verre moderne', ['Régulation informatisée du chauffage, de l’aération et de l’arrosage']),
+        ],
+      },
+      {
+        title: 'Une régulation climatique fine',
+        icon: 'ph ph-wall',
+        groups: [
+          G(null, ['Ouvrants automatisés pilotés par des capteurs climatiques', 'Chauffage d’appoint pour les cultures les plus exigeantes', 'Systèmes de brumisation limitant les surchauffes estivales']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'methaniseuragricole',
+    name: 'Méthaniseur agricole',
+    region: 'Toutes régions · exploitations de polyculture-élevage',
+    periode: '2010–2020',
+    procede: 'Cuves en béton ou acier, digestion anaérobie',
+    usage: 'Production de biogaz à partir d’effluents agricoles',
+    categorie: 'agricole',
+    periodeTags: ['XXe'],
+    resume:
+      "Installation agro-énergétique transformant effluents d’élevage et résidus de culture en biogaz par digestion anaérobie, développée en France à partir des années 2010 dans le cadre de la diversification des revenus agricoles et de la transition énergétique. Cuves cylindriques coiffées d’une membrane souple de stockage du gaz, unité de cogénération ou d’injection au réseau attenante.",
+    identite: [
+      ['Période', '2010–2020'],
+      ['Région', 'Toutes régions, exploitations de polyculture-élevage'],
+      ['Usage', 'Production de biogaz à partir d’effluents agricoles'],
+      ['Système', 'Cuves de digestion en béton ou acier'],
+      ['Matériau dominant', 'Béton, acier, membrane synthétique'],
+      ['Plan', 'Cuves cylindriques jumelées, local technique attenant'],
+      ['Particularité', 'Dôme souple de stockage du biogaz'],
+    ],
+    materiaux: ['Béton (cuves de digestion)', 'Acier (cuves alternatives, structure)', 'Membrane synthétique (dôme de stockage du gaz)', 'Inox (canalisations et échangeurs)', 'Isolant (calorifugeage des cuves)', 'Verre (local de supervision)'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Dôme souple en membrane synthétique coiffant chaque cuve, gonflé par la pression du biogaz produit.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Cuves cylindriques en béton ou acier, calorifugées pour maintenir la température de digestion constante toute l’année.' },
+      { n: 3, el: 'Planchers', txt: 'Dalle béton technique au pied des cuves, canalisations enterrées reliant les différents équipements.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Cuves autoportantes en béton armé ou acier, structure calculée pour résister à la pression interne du digesteur.' },
+      { n: 5, el: 'Escalier', txt: 'Passerelles et échelles techniques permettant l’accès aux trappes de visite en partie haute des cuves.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations béton armé massives, radier étanche sous chaque cuve de digestion.' },
+    ],
+    sections: [
+      {
+        title: 'Valoriser les effluents agricoles',
+        icon: 'ph ph-buildings',
+        intro: "Plutôt que de simplement épandre le lisier et le fumier, la méthanisation les transforme en biogaz valorisable, tout en produisant un digestat utilisable comme fertilisant.",
+        groups: [
+          G(null, ['Effluents d’élevage et résidus de culture comme matière première', 'Digestat valorisé comme fertilisant sur les terres de l’exploitation', 'Diminution des odeurs et des émissions par rapport à l’épandage brut']),
+        ],
+      },
+      {
+        title: 'La digestion anaérobie',
+        icon: 'ph ph-grid-nine',
+        groups: [
+          G(null, ['Fermentation contrôlée en l’absence d’oxygène', 'Température de digestion maintenue constante dans les cuves', 'Production continue de biogaz stocké sous le dôme souple']),
+        ],
+      },
+      {
+        title: 'Diversifier les revenus de la ferme',
+        icon: 'ph ph-tree',
+        groups: [
+          G(null, ['Cogénération produisant électricité et chaleur valorisable', 'Injection du biométhane épuré dans le réseau de gaz', 'Revenu complémentaire stabilisant l’économie de l’exploitation']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
