@@ -207,6 +207,12 @@ const MICRO_PINS = [
   { id: 'porcherieindustrielle', cx: 250, cy: 250, label: 'Porcherie industrielle' },
   { id: 'serreagricole',    cx: 540, cy: 600, label: 'Serre agricole' },
   { id: 'methaniseuragricole', cx: 560, cy: 510, label: 'Méthaniseur agricole' },
+  { id: 'college',          cx: 480, cy: 490, label: 'Collège' },
+  { id: 'groupescolaire',   cx: 400, cy: 490, label: 'Groupe scolaire' },
+  { id: 'internat',         cx: 360, cy: 460, label: 'Internat' },
+  { id: 'gymnasescolaire',  cx: 500, cy: 470, label: 'Gymnase scolaire' },
+  { id: 'ecoleprimairerurale', cx: 330, cy: 500, label: 'École primaire rurale' },
+  { id: 'cantinescolaire',  cx: 460, cy: 460, label: 'Cantine scolaire' },
 ] as const
 
 /* Tracé SVG de la France métropolitaine (IGN simplifié, viewBox 0 0 1000 958) */
