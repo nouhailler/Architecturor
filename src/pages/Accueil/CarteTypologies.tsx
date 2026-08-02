@@ -1,7 +1,42 @@
 import { useNavigate } from 'react-router-dom'
 import { ArrowRight } from '@phosphor-icons/react'
-import { TYPOLOGIES } from '../../data/typologies'
+import { TYPOLOGIES, type Typologie } from '../../data/typologies'
 import styles from './CarteTypologies.module.css'
+
+/* Premiers segments de région ne désignant pas un lieu précis (portée nationale ou générique) — regroupés sous « Toutes régions » */
+const GENERIC_REGION_TOKENS = new Set([
+  'Toutes régions', 'France', 'Aires urbaines', 'Bassins miniers', 'Campagnes', 'Centres historiques', 'Centres-villes',
+  'Charentes & DOM', 'Chef-lieu de département', 'Chef-lieu de département ou d’arrondissement', 'Communautés juives',
+  'Communautés réformées', 'Côtes françaises', 'Côtes normande, basque, méditerranéenne', 'Grandes villes',
+  'Lieux de pèlerinage', 'Littoral', 'Littoral & frontières', 'Littoral atlantique', 'Massifs forestiers',
+  'Périphéries urbaines', 'Places fortes', 'Plaines & littoral', 'Ports & littoral', 'Ports & plaines céréalières',
+  'Ports & villes industrielles', 'Ports de pêche', 'Rades & estuaires', 'Stations balnéaires et thermales',
+  'Toutes côtes françaises', 'Vallées fluviales', 'Villes de garnison', 'Villes d’eaux littorales et intérieures',
+  'Villes épiscopales', 'Villes industrielles', 'Zones pavillonnaires',
+])
+
+const NATIONAL_GROUP = 'Toutes régions'
+
+const regionGroupOf = (t: Typologie) => {
+  const first = t.region.split(' · ')[0]
+  return GENERIC_REGION_TOKENS.has(first) ? NATIONAL_GROUP : first
+}
+
+const REGION_GROUPS = (() => {
+  const map = new Map<string, Typologie[]>()
+  for (const t of TYPOLOGIES) {
+    const key = regionGroupOf(t)
+    if (!map.has(key)) map.set(key, [])
+    map.get(key)!.push(t)
+  }
+  for (const list of map.values()) list.sort((a, b) => a.name.localeCompare(b.name, 'fr'))
+  const entries = [...map.entries()].sort((a, b) => {
+    if (a[0] === NATIONAL_GROUP) return 1
+    if (b[0] === NATIONAL_GROUP) return -1
+    return a[0].localeCompare(b[0], 'fr')
+  })
+  return entries
+})()
 
 /* Coordonnées des épingles dans le viewBox 0 0 1000 958 */
 const PINS = [
@@ -258,21 +293,29 @@ export default function CarteTypologies() {
         <div className={styles.mapLegend}>Tracé IGN · France métropolitaine</div>
       </div>
 
-      {/* Liste légende */}
+      {/* Liste légende, organisée par région */}
       <div className={styles.legendList}>
-        {TYPOLOGIES.map((t) => (
-          <button
-            key={t.id}
-            className={styles.legendItem}
-            onClick={() => handlePin(t.id)}
-          >
-            <div className={styles.legendDot} />
-            <div className={styles.legendInfo}>
-              <div className={styles.legendName}>{t.name}</div>
-              <div className={styles.legendSub}>{t.region.split(' · ')[0]} · {t.periode}</div>
+        {REGION_GROUPS.map(([region, items]) => (
+          <div key={region} className={styles.legendGroup}>
+            <div className={styles.legendGroupHeader}>
+              <span>{region}</span>
+              <span className={styles.legendGroupCount}>{items.length}</span>
             </div>
-            <ArrowRight size={15} color="var(--color-neutral-500)" weight="regular" />
-          </button>
+            {items.map((t) => (
+              <button
+                key={t.id}
+                className={styles.legendItem}
+                onClick={() => handlePin(t.id)}
+              >
+                <div className={styles.legendDot} />
+                <div className={styles.legendInfo}>
+                  <div className={styles.legendName}>{t.name}</div>
+                  <div className={styles.legendSub}>{t.region.split(' · ')[0]} · {t.periode}</div>
+                </div>
+                <ArrowRight size={15} color="var(--color-neutral-500)" weight="regular" />
+              </button>
+            ))}
+          </div>
         ))}
       </div>
     </div>
