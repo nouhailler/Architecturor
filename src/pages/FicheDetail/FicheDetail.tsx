@@ -67,6 +67,9 @@ export default function FicheDetail() {
           <SidebarIdentite
             identite={categorie ? [['Catégorie', `${categorie.emoji} ${categorie.label}`], ...t.identite] : t.identite}
             materiaux={t.materiaux}
+            technique={t}
+            wikipediaUrl={t.wikipediaUrl}
+            commonsUrl={t.commonsUrl}
           />
         </div>
       </div>

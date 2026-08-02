@@ -48,6 +48,25 @@
   gap: 7px;
 }
 
+.resourceLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resourceLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-accent-300);
+  text-decoration: none;
+}
+
+.resourceLink:hover {
+  text-decoration: underline;
+}
+
 /* TODO: galerie d'imagerie — remplacer par <img> quand les photos seront disponibles */
 .gallery {
   display: grid;
