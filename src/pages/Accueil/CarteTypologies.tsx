@@ -1,5 +1,6 @@
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ArrowRight } from '@phosphor-icons/react'
+import { ArrowRight, ArrowsOut, ArrowsIn } from '@phosphor-icons/react'
 import { TYPOLOGIES, type Typologie } from '../../data/typologies'
 import styles from './CarteTypologies.module.css'
 
@@ -213,17 +214,46 @@ const FRANCE_PATH = "M834.3 353.4L833 354.2L830 354.4L827.1 353.3L824.5 354.6L82
 
 export default function CarteTypologies() {
   const navigate = useNavigate()
+  const [maximized, setMaximized] = useState(false)
 
   const handlePin = (id: string) => {
     navigate(`/typologie/${id}`)
     window.scrollTo(0, 0)
   }
 
+  useEffect(() => {
+    if (!maximized) return
+
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setMaximized(false)
+    }
+    window.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      document.body.style.overflow = previousOverflow
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [maximized])
+
   return (
-    <div className={styles.grid}>
+    <div className={`${styles.grid} ${maximized ? styles.gridMaximized : ''}`}>
       {/* Carte SVG */}
-      <div className={styles.mapCard}>
-        <svg viewBox="0 0 1000 958" style={{ width: '100%', height: 'auto', display: 'block' }}>
+      <div className={`${styles.mapCard} ${maximized ? styles.mapCardMaximized : ''}`}>
+        <button
+          className={styles.maximizeBtn}
+          onClick={() => setMaximized((v) => !v)}
+          aria-label={maximized ? 'Réduire la carte' : 'Maximiser la carte'}
+        >
+          {maximized ? <ArrowsIn size={14} weight="bold" /> : <ArrowsOut size={14} weight="bold" />}
+          {maximized ? 'Réduire la carte' : 'Maximiser la carte'}
+        </button>
+        <svg
+          viewBox="0 0 1000 958"
+          style={maximized ? { width: '100%', height: '100%', display: 'block' } : { width: '100%', height: 'auto', display: 'block' }}
+        >
           <path
             d={FRANCE_PATH}
             fill="color-mix(in srgb, var(--color-accent) 7%, var(--color-neutral-900))"
