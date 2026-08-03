@@ -6373,7 +6373,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Gare',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Gare%20monumentale%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Paris_-_Gare_de_l\'Est.jpg'],
     periodeTags: ['XIXe'],
     resume:
       "Terminus ferroviaire urbain associant une façade monumentale en pierre, vitrine de prestige de la compagnie exploitante, à une immense halle métallique et vitrée abritant les voies. L’horloge géante, la statuaire allégorique et la marquise de verre affichent la fierté technique du chemin de fer naissant.",
@@ -6441,7 +6441,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Gare',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Gare%20rurale%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Paray-le-Monial_-_Gare.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Petite gare de desserte locale bâtie sur un modèle standardisé par chaque grande compagnie ferroviaire, associant guichet, salle d’attente et logement du chef de gare sous un même toit. Sa marquise protégeant le quai et sa sobriété de brique ou de pierre en font l’un des bâtiments les plus répétés du paysage ferroviaire français.",
@@ -6509,7 +6509,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Rotonde_ferroviaire',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Rotonde%20ferroviaire%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Intérieur_Rotonde_ferroviaire_de_Chambéry_en_soirée_(été_2022).JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment circulaire ou polygonal organisé autour d’une plaque tournante centrale, permettant de réorienter puis de ranger les locomotives dans des voies rayonnantes individuelles. Le lanterneau vitré au sommet de la toiture évacue la fumée tout en éclairant l’ensemble du dépôt.",
@@ -6577,7 +6577,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Gare_de_marchandises',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Halle%20marchandises%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Bâtiment_voyageurs_et_halles_aux_marchandises_d\'Aumont-Aubrac_par_Cramos.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Vaste halle desservie par une voie ferrée pénétrant à l’intérieur même du bâtiment, permettant le transbordement direct entre wagons et quais routiers. Sa structure répétitive et son grand volume dégagé en font aujourd’hui l’un des bâtiments industriels ferroviaires les plus recherchés pour la reconversion.",
@@ -6645,7 +6645,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ch%C3%A2teau_d%27eau',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ch%C3%A2teau%20d%E2%80%99eau%20SNCF%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Tricot_(60),_gare_et_château_d\'eau.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Tour hydraulique élevée le long des lignes à vapeur pour alimenter en eau le tender des locomotives, via une grue hydraulique pivotante placée en bout de quai. Rendus obsolètes par la traction diesel puis électrique, nombre de ces châteaux d’eau ferroviaires subsistent, silencieux témoins de l’ère de la vapeur.",
@@ -6781,7 +6781,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/D%C3%A9p%C3%B4t_de_locomotives',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=D%C3%A9p%C3%B4t%20locomotives%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Dépôt-de-Chambéry_-_Locomotives_-_IMG_3566.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Grand établissement technique où les locomotives sont entretenues, réparées, approvisionnées en eau et en charbon puis remisées entre deux services. Souvent organisé autour d’une rotonde, le dépôt rassemble ateliers, fosses de visite et voies de garage sur un vaste site attenant à une gare importante.",
@@ -6849,7 +6849,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Phare_(tour)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Phare%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Phare_du_portzic.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Tour de signalisation maritime bâtie sur les caps et îlots les plus exposés, couronnée d’une lanterne dont l’optique à lentilles de Fresnel démultiplie la portée du faisceau lumineux. Chaque phare possède un rythme d’éclat unique, véritable signature lumineuse permettant aux marins de l’identifier de nuit.",
@@ -6917,7 +6917,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Phare_(tour)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20gardien%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Le_Phare_de_la_Canche_et_la_maison_du_gardien.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Logement de fonction attenant ou proche d’un phare, où le gardien et parfois sa famille vivaient en quasi-autarcie sur des sites souvent isolés et difficiles d’accès. La surveillance permanente de la lanterne, l’entretien du mécanisme et la tenue du registre météorologique rythmaient une vie rude, immortalisée par de nombreux récits maritimes.",
@@ -6985,7 +6985,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/S%C3%A9maphore_(marine)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=S%C3%A9maphore%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Sémaphore_du_Cap_de_la_Chèvre.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Poste de guet naval implanté sur les points hauts du littoral, hérité du télégraphe optique Chappe et adapté à la surveillance maritime dès le XIXe siècle. Toujours armé par la Marine nationale, le sémaphore veille aujourd’hui sur le trafic maritime, la sécurité et le sauvetage en mer.",
@@ -7462,7 +7462,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Refuge_de_montagne',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Refuge%20de%20montagne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Refuge_d\'E_Capannelle.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment d’altitude construit par les clubs alpins à partir de la fin du XIXe siècle pour l’accueil des alpinistes et randonneurs en haute montagne. Volumétrie compacte et aérodynamique, structure renforcée contre le vent et la neige, souvent accessible uniquement à pied ou par câble de ravitaillement.",
@@ -7668,7 +7668,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Mairie_(France)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mairie%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Façade_de_l\'hôtel_de_ville,_Rennes,_France.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment le plus visible de la commune, édifié massivement sous la IIIe République comme vitrine des valeurs républicaines. Plan symétrique à avant-corps central, fronton frappé du mot « Mairie » et horloge, salle des mariages en étage noble et salle du conseil.",
@@ -7805,7 +7805,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Pr%C3%A9fecture_(France)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Pr%C3%A9fecture%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Bordeaux_Hôtel_de_préfecture_de_la_Gironde.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Siège du préfet, représentant de l’État créé par Napoléon Bonaparte en 1800, occupant souvent un ancien palais épiscopal ou un hôtel particulier réaffecté, ou un édifice monumental construit spécifiquement au XIXe siècle. Façade d’apparat, cour d’honneur et salons de réception marquent l’autorité de l’État dans le département.",
@@ -7873,7 +7873,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Palais_de_justice',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Tribunal%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Palais_de_Justice_de_Paris_DSC_4367.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Palais de justice construit pour incarner la solennité et l’impartialité de la justice républicaine, souvent doté d’un portique à colonnes et d’un fronton sculpté. Plan basilical organisant salles d’audience, salle des pas perdus et cabinets de juges autour d’un axe symétrique.",
@@ -7941,7 +7941,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/H%C3%B4pital',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=H%C3%B4pital%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Villefranche-sur-Saône_-_Entrée_ancien_hôpital.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Établissement public de soins organisé, à partir du mouvement hygiéniste du XIXe siècle, en pavillons séparés reliés par des galeries pour limiter la propagation des maladies et favoriser l’aération. Parc planté, chapelle et services techniques complètent l’ensemble hospitalier.",
@@ -8010,7 +8010,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Hospice',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Hospice%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Hospice_(ancien)_-_Façade_sur_la_cour_d\'honneur_-_Beaugency_-_Médiathèque_de_l\'architecture_et_du_patrimoine_-_APMH00010561.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Établissement charitable héritier des hôtels-Dieu médiévaux, organisé autour d’une chapelle et de dortoirs communs pour accueillir indigents, orphelins, malades chroniques et personnes âgées sans ressources. Plan souvent claustral, hérité des fondations religieuses d’Ancien Régime, poursuivi et sécularisé au XIXe siècle.",
@@ -8078,7 +8078,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Prison',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Prison%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Façade_de_l\'ancienne_prison_(Pont-l\'Évêque,_Calvados,_France).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Établissement pénitentiaire reconstruit au XIXe siècle selon le principe cellulaire, inspiré du panoptique, où un poste central de surveillance permet un contrôle visuel de plusieurs ailes de cellules disposées en étoile. Hauts murs d’enceinte, miradors et cour de promenade complètent le dispositif sécuritaire.",
@@ -8146,7 +8146,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Caserne_de_pompiers',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Caserne%20de%20pompiers%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Paris_19e_-_caserne_de_pompiers_quai_de_l\'Oise_-_blason_de_Paris.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment public abritant les véhicules et le personnel des sapeurs-pompiers, reconnaissable à sa grande travée de remise à portes hautes et à sa tour de manœuvre servant historiquement au séchage des tuyaux d’incendie. Locaux de vie et dortoirs de garde complètent l’équipement opérationnel.",
@@ -8214,7 +8214,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Bureau_de_poste',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Bureau%20de%20poste%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Bureau_de_poste_Saint-Jacques_(façade).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment public du service des Postes, Télégraphes et Téléphones (PTT), reconnaissable à sa façade sobre, son horloge et son enseigne, organisé autour d’une salle du public à guichets alignés. Diffusé selon des plans-types administratifs de la fin du XIXe siècle jusqu’au milieu du XXe siècle.",
@@ -8282,7 +8282,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Gare_routi%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Gare%20routi%C3%A8re%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Gare_routière_internationale_de_Paris-Gallieni_02.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Équipement public organisant le terminus et la correspondance des lignes d’autocars, caractérisé par une grande marquise en porte-à-faux protégeant les quais d’embarquement des intempéries. Typologie moderniste développée avec l’essor des transports routiers de voyageurs au XXe siècle.",
@@ -8418,7 +8418,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Caveau_(s%C3%A9pulture)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Caveau%20familial%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Tombe_(caveau_familial)_de_Jean_Beauverie.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Fosse maçonnée souterraine à plusieurs niveaux de casiers, surmontée d’une dalle et d’un monument funéraire en surface (stèle, croix, plaque). Forme la plus répandue de sépulture familiale dans les cimetières communaux français, accueillant plusieurs générations successives.",
@@ -8554,7 +8554,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Columbarium',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Columbarium%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Columbarium_at_Père-Lachaise_Cemetery.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Mur ou édicule structuré en cases individuelles destinées à recevoir des urnes cinéraires, typologie récente reflétant l’essor de la crémation dans les pratiques funéraires françaises depuis sa légalisation en 1887 et surtout sa généralisation après la loi de 2008 sur le statut des cendres.",
@@ -8622,7 +8622,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ossuaire',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ossuaire%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Nantes_-_Cimetière_Saint-Martin_nouveau_-_Ossuaire.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petit édifice ou galerie attenant à un ancien cimetière paroissial, destiné à recueillir les ossements exhumés faute de place lors du renouvellement des tombes. Typologie particulièrement répandue au sein des enclos paroissiaux bretons, mais aussi présente sous forme de catacombes urbaines constituées au tournant du XIXe siècle.",
@@ -8758,7 +8758,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Lyc%C3%A9e_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Lyc%C3%A9e%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Paris_13e_-_Lycée_Claude-Monet_-_façade.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Établissement d’enseignement secondaire créé par la loi de 1802 instaurant les lycées napoléoniens, organisé autour d’une cour d’honneur monumentale distribuant salles de classe, internat, réfectoire et gymnase. Souvent installé dans d’anciens couvents sécularisés à la Révolution ou construit ex nihilo au XIXe siècle.",
@@ -8826,7 +8826,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Universit%C3%A9_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Universit%C3%A9%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Universite_Paris_I_Pantheon-Sorbonne.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Bâtiment d’enseignement supérieur héritier des universités médiévales fondées dès le XIIIe siècle, reconstruit ou agrandi massivement au XIXe siècle sous la IIIe République. Organisé autour d’un grand amphithéâtre, d’une bibliothèque et d’une cour d’honneur, souvent orné de statuaire savante.",
@@ -8894,7 +8894,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_universitaire',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Biblioth%C3%A8que%20universitaire%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Bâtiment_de_la_Bibliothèque_La_Pérouse_à_Brest_-_Façade_sud_(série_1)_(Ifremer_00528-63960_-_6982).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment dédié à la conservation et à la consultation des collections documentaires universitaires, structuré autour d’une grande salle de lecture largement éclairée et de magasins de stockage à rayonnages métalliques. Typologie affirmée à partir du XIXe siècle avec le développement de l’enseignement supérieur de masse.",
@@ -8962,7 +8962,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cit%C3%A9_internationale_universitaire_de_Paris',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cit%C3%A9%20universitaire%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['France_Paris_Cite_Universitaire_Maison_Suede_01.JPG'],
     periodeTags: ['XXe'],
     resume:
       "Ensemble de logements collectifs destiné aux étudiants, organisé en pavillons nationaux distincts — modèle inauguré par la Cité internationale universitaire de Paris en 1925 — ou en barres et tours standardisées construites en masse durant les Trente Glorieuses pour répondre à l’explosion des effectifs universitaires.",
@@ -9030,7 +9030,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89cole_maternelle_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89cole%20maternelle%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['École_Maternelle_Alphonse_Baudin_-_Paris_XI_(FR75)_-_2024-11-23_-_3.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Établissement de plain-pied conçu à l’échelle du jeune enfant, généralisé après la loi de 1959 rendant l’école maternelle publique gratuite et développé massivement durant les Trente Glorieuses. Salles de classe largement vitrées ouvrant sur une cour de jeux, mobilier et menuiseries dimensionnés pour les tout-petits.",
@@ -9098,7 +9098,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grande_%C3%A9cole',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grande%20%C3%A9cole%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Ecole_Polytechnique_France_seen_from_lake_DSC03389.JPG'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Établissement d’enseignement supérieur sélectif né du modèle français des grandes écoles institué par la Convention en 1794 (École polytechnique), formant ingénieurs, cadres et hauts fonctionnaires hors du cadre universitaire classique. Campus dédié associant bâtiments d’enseignement monumentaux, internat et espaces sportifs.",
@@ -9302,7 +9302,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Halles_de_Paris',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=March%C3%A9%20couvert%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Lille_2016_Marché_Couvert_de_Wazemmes_(1).jpg'],
     periodeTags: ['XIXe'],
     resume:
       "Halle urbaine consacrée au commerce alimentaire, reconstruite en fer et fonte sur le modèle des halles Baltard de Paris (1852-1870) pour remplacer les marchés en plein air jugés insalubres. Grande nef métallique largement ouverte et ventilée, éclairage zénithal, étals organisés en rangées.",
@@ -9438,7 +9438,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Centre_commercial',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Centre%20commercial%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Centre_commercial_Les_Quatre_Temps.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Vaste ensemble commercial regroupant sous un même toit boutiques, grande surface alimentaire et espaces de restauration, développé en périphérie des villes françaises à partir des années 1960 sur le modèle nord-américain, favorisé par la généralisation de l’automobile et la création de vastes parkings.",
@@ -9642,7 +9642,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_%C3%A0_l%27italienne',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Th%C3%A9%C3%A2tre%20%C3%A0%20l%E2%80%99italienne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Théâtre_de_Douai_-_le_paradis.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Salle de spectacle organisée en fer à cheval autour de la scène, héritière du modèle milanais diffusé en France dès le XVIIIe siècle. Loges superposées sur plusieurs niveaux, plafond peint, lustre monumental et scène à l’italienne équipée d’une machinerie complexe.",
@@ -9778,7 +9778,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Piscine',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Piscine%20municipale%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Piscine_municipale_(La_Croix-Valmer)-3240.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Établissement public dédié à la baignade et à l’apprentissage de la natation, généralisé durant l’entre-deux-guerres puis massivement construit après 1945 dans le cadre de la politique du sport pour tous. Grand bassin couvert sous charpente béton ou métallique, gradins de spectateurs, cabines de déshabillage alignées.",
@@ -9846,7 +9846,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Salle_des_f%C3%AAtes',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Salle%20des%20f%C3%AAtes%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Salle_des_fêtes_Grassegert.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Grand volume communal polyvalent accueillant bals, banquets, réunions électorales et fêtes locales, présent dans la quasi-totalité des communes françaises. Scène surélevée à une extrémité, plancher de danse dégagé, souvent associée à la mairie ou à l’école dans les petites communes.",
@@ -9914,7 +9914,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Kiosque_%C3%A0_musique',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Kiosque%20%C3%A0%20musique%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Kiosque_à_musique_Art_Déco_de_Melle,_département_des_Deux-Sèvres,_France.jpg'],
     periodeTags: ['XIXe'],
     resume:
       "Petit pavillon octogonal ou circulaire en fonte et bois, implanté dans un parc ou sur une place publique pour accueillir les concerts de la fanfare municipale ou du régiment local. Diffusé dans toute la France à la Belle Époque comme symbole de la vie sociale et musicale des communes.",
