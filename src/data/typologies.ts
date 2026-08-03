@@ -702,7 +702,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89choppe_bordelaise',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89choppe%20bordelaise%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Echoppe.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison de ville de plain-pied ou à un étage, en pierre calcaire blonde, typique des faubourgs bordelais. Façade étroite sur rue, plan en profondeur desservant les pièces en enfilade, toiture à faible pente en tuile.",
@@ -780,7 +780,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_basque',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20basque%20%28labourdine%29%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Le_Pays_Basque_-_Maisons_Pittoresques_à_Sare_-_btv1b10570573b.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Grande maison rurale basque à ossature bois apparente, façade principale en pignon tourné vers l’est, colombages peints en rouge ou vert. Toit à deux pans très asymétriques abritant logis, étable et grenier sous un même volume.",
@@ -1070,7 +1070,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_alsacienne',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20alsacienne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Maison_à_colombages,_Altenstadt,_commune_de_Wissembourg,_Bas-Rhin.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison à colombages polychromes typique des villages alsaciens, organisée autour d’une cour intérieure fleurie. La charpente apparente, peinte de couleurs vives, et la forte pente du toit de tuile témoignent d’un savoir-faire constructif ininterrompu depuis la fin du Moyen Âge.",
@@ -1207,7 +1207,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_comtoise',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20comtoise%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Comtois_écomusee_alsace.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Grande ferme comtoise en pierre, coiffée d’un large avant-toit protégeant le bois de chauffage et les circulations. Sa masse, son plan compact et sa cave voûtée à comté témoignent d’une économie agropastorale tournée vers l’élevage et le fromage.",
@@ -1683,7 +1683,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Quercy',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20quercynoise%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Maison_quercynoise_typique.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison du causse quercynois en pierre calcaire blonde, couverte de lauzes calcaires à faible pente ou de tuile canal. Le pigeonnier, souvent intégré ou isolé, signale la richesse agricole de l’exploitation.",
@@ -2430,7 +2430,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Capitelle_(cabane)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Capitelle%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Caux_(34)_Capitelle.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petite cabane de vigne languedocienne en pierre sèche, cousine de la borie provençale, édifiée par épierrement au milieu des parcelles de garrigue. Elle abritait les outils du vigneron et offrait un abri temporaire lors des travaux de la vigne.",
@@ -3789,7 +3789,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Monast%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Monast%C3%A8re%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Refuge_des_moines_de_Abbaye_du_mont_Saint-Éloi3.JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "Communauté monastique organisée, dans la tradition cartusienne, autour de cellules individuelles ouvrant sur un grand cloître plutôt que sur un dortoir commun. Chaque moine y vit en quasi-ermite, ne rejoignant la communauté que pour les offices et certains repas, dans un équilibre singulier entre solitude et vie commune.",
@@ -5421,7 +5421,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/S%C3%A9choir_%C3%A0_tabac',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=S%C3%A9choir%20%C3%A0%20tabac%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Saint-Amand-de-Coly_séchoir_tabac_(2).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Haut bâtiment à ossature bois dont les parois en planches mobiles s’ouvrent et se referment pour régler précisément la ventilation nécessaire au séchage lent des feuilles de tabac suspendues en hauteur. Sa silhouette élancée et son essentage caractéristique marquent encore les paysages du Sud-Ouest tabacole.",
@@ -6713,7 +6713,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Passage_%C3%A0_niveau',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Passage%20%C3%A0%20niveau%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Ancre_-_CHAMPIGNY_-_Gare_et_passage_à_niveau_de_Plant-Champigny.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Point de croisement entre route et voie ferrée, surveillé depuis une petite maison de garde-barrière au modèle standardisé, où le garde actionnait manuellement les barrières par un système de roue et de câbles. Ce guetteur logé sur place veillait sur le passage, jour et nuit, avant l’automatisation progressive du XXe siècle.",
@@ -7325,7 +7325,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Fortification',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Fort%20maritime%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Fort_Boyard_1.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Fortification bâtie directement sur un rocher ou un haut-fond au milieu d’une rade, défiant les courants et les marées pour verrouiller l’accès à un port stratégique. Le chantier, souvent étalé sur plusieurs décennies en raison des conditions marines extrêmes, produit des ouvrages au plan elliptique ou circulaire limitant la prise au vent et à la houle.",
@@ -9234,7 +9234,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Passage_couvert',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Passage%20couvert%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['P1040477_Paris_II_galerie_Vivienne_coupole_rwk.JPG'],
     periodeTags: ['XIXe'],
     resume:
       "Galerie piétonne couverte reliant deux rues à travers un îlot, bordée de boutiques et couverte d’une verrière métallique protégeant les promeneurs des intempéries et de la boue des rues non pavées. Typologie parisienne emblématique du début du XIXe siècle, ancêtre direct du grand magasin et du centre commercial.",
@@ -9370,7 +9370,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Halle_(commerce)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Halle%20m%C3%A9di%C3%A9vale%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Beaumont-de-Lomagne_-_La_halle.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "Marché couvert communal établi sur la place centrale du bourg dès le Moyen Âge, formé d’une vaste charpente de bois reposant sur des piliers de pierre ou de chêne, largement ouverte sur les côtés pour le commerce hebdomadaire. Symbole des franchises et privilèges commerciaux accordés par les seigneurs aux villes marchandes.",
@@ -10186,7 +10186,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Thermalisme',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89tablissement%20thermal%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Thermes_nationaux_d\'Aix-les-Bains.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Établissement dédié aux cures thermales ou marines, organisé autour de grandes salles de bains et de soins, galeries de promenade couvertes et buvette d’eau minérale. Architecture monumentale et hygiéniste, souvent complétée d’un casino et d’un parc pour l’agrément des curistes.",
