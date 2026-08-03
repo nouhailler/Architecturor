@@ -70,6 +70,8 @@ export default function FicheDetail() {
             technique={t}
             wikipediaUrl={t.wikipediaUrl}
             commonsUrl={t.commonsUrl}
+            images={t.images}
+            name={t.name}
           />
         </div>
       </div>

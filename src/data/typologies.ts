@@ -60,6 +60,7 @@ export interface Typologie {
   difficulteIdentification: string
   wikipediaUrl: string
   commonsUrl: string
+  images: string[]
 }
 
 const G = (lead: string | null, items: string[]): Group => ({ lead, items })
@@ -85,6 +86,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Immeuble_haussmannien',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Immeuble%20haussmannien%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Immeuble_haussmannien_à_Paris_(52169315349).jpg'],
     periodeTags: ['XIXe'],
     resume:
       "Immeuble de rapport en pierre de taille né des grands travaux du Second Empire. Murs porteurs massifs, façade strictement codifiée et toiture de zinc : une typologie qui structure encore les boulevards parisiens.",
@@ -219,6 +221,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Colombage',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20%C3%A0%20pans%20de%20bois%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Maison_à_pans_de_bois_(Beaugency).JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "Maison à ossature de bois hourdée de torchis, courante du Moyen Âge à la Renaissance. L\u2019encorbellement gagne de la surface aux étages ; la structure est entièrement lisible en façade.",
@@ -304,6 +307,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Mas_(habitation)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mas%20proven%C3%A7al%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme-bloc méditerranéenne en moellons calcaire liés à la chaux. Murs épais, faible pente de tuiles canal et forte inertie thermique pour résister à la chaleur estivale.",
@@ -380,6 +384,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Coron_(habitat)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Coron%20minier%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Nœux-les-Mines_-_Cité_du_Coron_n°_3_(08).JPG'],
     periodeTags: ['XIXe'],
     resume:
       "Habitat ouvrier minier bâti en bande, en brique de terre cuite. Maisons mitoyennes répétitives organisées autour du carreau de fosse, produites en série par les compagnies.",
@@ -456,6 +461,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grand_ensemble',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grand%20ensemble%20en%20b%C3%A9ton%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Une_barre_HLM_d\'Avignon_sud.png'],
     periodeTags: ['XXe'],
     resume:
       "Logement collectif de la reconstruction et des Trente Glorieuses. Structure en béton armé, préfabrication et chemin de grue permettent de bâtir vite, en série et en hauteur.",
@@ -539,6 +545,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Long%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Long%C3%A8re%20bretonne%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison rurale bretonne tout en longueur, bâtie en gros blocs de granite sous une toiture d’ardoise à forte pente. Plan simple d’une seule travée en profondeur, pignons épais orientés face aux vents et pluies atlantiques.",
@@ -617,6 +624,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chalet',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Chalet%20savoyard%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Habitat de montagne combinant un soubassement en pierre (étable, cave) et un étage en madriers de bois (logis, grenier à foin). Toiture à faible pente couverte de tavaillons ou de lauzes, dimensionnée pour porter la neige.",
@@ -694,6 +702,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89choppe_bordelaise',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89choppe%20bordelaise%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison de ville de plain-pied ou à un étage, en pierre calcaire blonde, typique des faubourgs bordelais. Façade étroite sur rue, plan en profondeur desservant les pièces en enfilade, toiture à faible pente en tuile.",
@@ -771,6 +780,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_basque',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20basque%20%28labourdine%29%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Grande maison rurale basque à ossature bois apparente, façade principale en pignon tourné vers l’est, colombages peints en rouge ou vert. Toit à deux pans très asymétriques abritant logis, étable et grenier sous un même volume.",
@@ -848,6 +858,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Art_d%C3%A9co',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Immeuble%20Art%20d%C3%A9co%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Immeuble_Art_Déco,_quai_Louis_Blériot_(44446833331).jpg'],
     periodeTags: ['XXe'],
     resume:
       "Immeuble de la reconstruction d’après-guerre, mêlant structure en béton armé et parements de brique ou de béton mouluré. Façades géométriques, ferronneries stylisées et frises décoratives caractérisent ce style né de la reconstruction de villes comme Reims après 1918.",
@@ -923,6 +934,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Long%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Long%C3%A8re%20vend%C3%A9enne%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Longère de bocage vendéen bâtie en moellons calcaires ou granitiques enduits à la chaux, sous toiture de tuile canal ou d’ardoise selon les secteurs. Plan allongé simple, souvent adossée à la haie bocagère qui la protège du vent.",
@@ -990,6 +1002,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Sologne',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20solognote%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison des étangs solognots associant un soubassement en brique et un étage à pans de bois, sous une toiture pentue de tuile plate adaptée aux terrains humides. Le bois local, issu des forêts de Sologne, structure une architecture marquée par l’eau et l’étang.",
@@ -1057,6 +1070,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_alsacienne',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20alsacienne%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison à colombages polychromes typique des villages alsaciens, organisée autour d’une cour intérieure fleurie. La charpente apparente, peinte de couleurs vives, et la forte pente du toit de tuile témoignent d’un savoir-faire constructif ininterrompu depuis la fin du Moyen Âge.",
@@ -1125,6 +1139,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_lorraine',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20lorraine%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme-bloc lorraine regroupant sous un même faîtage le logis, l’étable et la grange, desservis par une imposante porte charretière en plein cintre. La pierre calcaire locale et le plan compact répondent aux hivers rigoureux du plateau lorrain.",
@@ -1192,6 +1207,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_comtoise',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20comtoise%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Grande ferme comtoise en pierre, coiffée d’un large avant-toit protégeant le bois de chauffage et les circulations. Sa masse, son plan compact et sa cave voûtée à comté témoignent d’une économie agropastorale tournée vers l’élevage et le fromage.",
@@ -1259,6 +1275,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_bressane',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20bressane%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme bressane à pans de bois et torchis, reconnaissable à sa cheminée sarrasine pyramidale qui domine la toiture de tuile. Ce dispositif de fumage traditionnel, hérité des influences sarrasines, caractérise l’architecture rurale de la plaine bressane.",
@@ -1326,6 +1343,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Beauce',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20beauceronne%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Ferme à cour fermée de la plaine céréalière beauceronne, organisée autour d’un vaste corps de logis, d’étables et d’une grange immense accessible par un portail monumental. L’échelle des bâtiments reflète la richesse des grandes exploitations céréalières.",
@@ -1393,6 +1411,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Bourbonnais_(province)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20bourbonnaise%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme à cour du Bourbonnais, en pierre et brique locale, associant polyculture et élevage bovin dans une région de transition entre le Massif central et le Bassin parisien. Toiture à faible pente couverte de tuile plate bourbonnaise.",
@@ -1459,6 +1478,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_normande',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20normande%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme normande organisée en cour-masure : bâtiments à pans de bois et torchis disposés autour d’une cour plantée de pommiers, entourée d’un talus planté protégeant du vent. Une architecture indissociable du bocage et de la tradition cidricole.",
@@ -1526,6 +1546,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_auvergnate',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20auvergnate%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme-bloc du plateau volcanique auvergnat, bâtie en basalte sombre et arkose, couverte de lauzes ou de chaume épais pour résister aux hivers rigoureux. Logis et étable communiquent souvent directement, la chaleur animale participant au chauffage du logis.",
@@ -1593,6 +1614,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/C%C3%A9vennes',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20c%C3%A9venole%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['wp:Maison-cevenole.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison de pente cévenole bâtie en schiste local sur les terrasses de culture (bancels), liée à l’économie de la châtaigne et à la sériciculture. Toiture de lauzes de schiste ou de tuile canal, façades étroites adaptées au relief escarpé.",
@@ -1661,6 +1683,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Quercy',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20quercynoise%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison du causse quercynois en pierre calcaire blonde, couverte de lauzes calcaires à faible pente ou de tuile canal. Le pigeonnier, souvent intégré ou isolé, signale la richesse agricole de l’exploitation.",
@@ -1728,6 +1751,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/P%C3%A9rigord',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20p%C3%A9rigourdine%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison du Périgord en pierre calcaire dorée, couverte de lauzes calcaires à forte pente ou de tuile canal. Tourelles, pigeonniers et toits complexes composent une silhouette caractéristique de la vallée de la Dordogne.",
@@ -1795,6 +1819,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Charente_(province)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20charentaise%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison charentaise en pierre de taille calcaire blanche, couverte de tuile canal et ornée d’une génoise en corniche d’influence méridionale. Souvent liée au vignoble et à la production de cognac, elle associe logis et chai.",
@@ -1862,6 +1887,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_landaise',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20landaise%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Landes_-_Maison_landaise.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison landaise à structure de poteaux de pin maritime, implantée sur l’airial, clairière herbeuse ombragée par les chênes au milieu de la forêt de pins. L’avant-toit débordant sur poteaux abrite la circulation et le matériel agricole.",
@@ -1929,6 +1955,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/B%C3%A9arn',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20b%C3%A9arnaise%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison béarnaise du piémont pyrénéen bâtie en galets de gave, associés à des chaînages de brique ou de pierre de taille. Toiture à forte pente en ardoise ou tuile, typique des vallées où les rivières fournissent la matière première.",
@@ -1996,6 +2023,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chalet',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20savoyarde%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Ferme de vallée savoyarde associant un rez-de-chaussée en pierre et un étage en pans de bois ou bardage, prolongé de larges galeries de bois. Moins haute en altitude que le chalet d’alpage, elle regroupe logis et exploitation agricole dans un même volume.",
@@ -2063,6 +2091,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Tuy%C3%A9',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20jurassienne%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Maison_pignons_redents_Jura_005.JPG'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Grande ferme du Haut-Doubs organisée autour du tuyé, vaste cheminée pyramidale en charpente de bois qui domine le volume et sert traditionnellement au fumage des salaisons. Le large avant-toit protège le bois de chauffage des rigueurs de l’hiver jurassien.",
@@ -2130,6 +2159,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Vosges_(montagnes)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20vosgienne%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['wp:Ferme_vosgienne.JPG'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Maison-bloc vosgienne en grès rose local, réunissant logis, étable et grange sous un même faîtage à forte pente. La toiture d’ardoise ou de tavaillon, très inclinée, répond aux hivers neigeux du massif vosgien.",
@@ -2196,6 +2226,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Aubrac',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Buron%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Buron_du_col_de_la_Croix-Morand.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Cabane pastorale d’estive du plateau de l’Aubrac, bâtie en pierre sèche ou hourdée à la terre, utilisée durant la transhumance estivale pour la traite et la fabrication du fromage (laguiole, cantal). Toiture très épaisse en lauzes ou en chaume pour affronter le climat rude du plateau.",
@@ -2263,6 +2294,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Pierre_s%C3%A8che',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mazet%20c%C3%A9venol%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petit abri agricole en pierre sèche des terrasses (bancels) cévenoles, lié à la culture de la châtaigne et à la viticulture de pente. Le mazet servait au rangement des outils et à l’abri temporaire du vigneron ou du châtaigneraie.",
@@ -2330,6 +2362,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Borie_(construction)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Borie%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Villages_des_Bories_By_JM_Rosier.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Cabane provençale en pierre sèche à voûte en encorbellement, sans mortier ni charpente, célèbre dans le village des Bories près de Gordes. Utilisée comme abri agricole, bergerie ou habitat saisonnier, elle illustre un art constructif millénaire.",
@@ -2397,6 +2430,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Capitelle_(cabane)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Capitelle%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petite cabane de vigne languedocienne en pierre sèche, cousine de la borie provençale, édifiée par épierrement au milieu des parcelles de garrigue. Elle abritait les outils du vigneron et offrait un abri temporaire lors des travaux de la vigne.",
@@ -2464,6 +2498,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Toit_%C3%A0_la_Mansart',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20ville%20XVIIIe%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800'],
     resume:
       "Maison de ville classique du XVIIIe siècle, à la façade ordonnancée en pierre de taille, implantée entre cour et jardin selon le modèle classique français. Toiture à la Mansart en ardoise, fenêtres à petits carreaux et ferronneries élégantes composent une architecture urbaine sobre et régulière.",
@@ -2531,6 +2566,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/H%C3%B4tel_particulier',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=H%C3%B4tel%20particulier%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Hôtel_particulier,_16_rue_de_la_Faisanderie,_Paris_16e.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Vaste demeure urbaine aristocratique ou bourgeoise organisée entre cour d’honneur et jardin, avec corps de logis principal, ailes en retour et portail cocher monumental. Symbole de prestige social, l’hôtel particulier réunit réception, habitation et communs dans une composition classique très codifiée.",
@@ -2598,6 +2634,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_bourgeoise',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20bourgeoise%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe'],
     resume:
       "Maison de ville bourgeoise du XIXe siècle, plus modeste que l’hôtel particulier mais soignée dans son décor : balcon filant, corniche moulurée, façade en pierre ou en brique selon les régions. Elle loge une seule famille aisée sur plusieurs niveaux, avec un escalier d’apparat desservant les étages.",
@@ -2664,6 +2701,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cit%C3%A9_ouvri%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20ouvri%C3%A8re%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe'],
     resume:
       "Maison ouvrière urbaine du XIXe siècle, bâtie en brique par le patronat industriel à proximité des usines. Petite, mitoyenne et répétitive, elle associe un logis simple à un jardinet potager, dans une logique d’encadrement social et hygiéniste propre au paternalisme industriel.",
@@ -2731,6 +2769,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Canut',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Canut%20lyonnais%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Immeuble de la Croix-Rousse lyonnaise conçu pour loger les canuts, ouvriers tisserands en soie, avec des plafonds exceptionnellement hauts pour accueillir les métiers à tisser Jacquard. Grandes fenêtres, traboules traversant les îlots et façades sobres caractérisent ce patrimoine industriel urbain unique.",
@@ -2798,6 +2837,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Toulouse',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20toulousaine%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Maison_toulousaine,_50_rue_Fieux_(Toulouse).jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison urbaine toulousaine bâtie en brique foraine rose, matériau emblématique de la « Ville Rose » faute de pierre à carrière proche. Façades sobres rythmées de bandeaux de brique, toiture de tuile canal à faible pente et cour intérieure caractérisent cette architecture de terre cuite.",
@@ -2865,6 +2905,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Nantes',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20nantaise%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Maison_rue_des_Carmes_(façade)_-_Nantes.jpg'],
     periodeTags: ['XIXe'],
     resume:
       "Maison urbaine nantaise en tuffeau, pierre calcaire blanche et tendre du val de Loire, taillée avec finesse pour les encadrements et les décors de façade. L’enrichissement du négoce nantais au XIXe siècle se lit dans la qualité de la pierre de taille et des ferronneries de balcon.",
@@ -2932,6 +2973,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Art_nouveau',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Immeuble%20Art%20nouveau%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Immeuble_art_nouveau_de_Jules_Lavirotte_à_Paris_(5519755116).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Immeuble de la Belle Époque associant pierre de taille et structure métallique, aux façades ondoyantes ornées de ferronneries florales et de céramiques. Bow-windows, verrières et motifs végétaux stylisés traduisent le rejet de la ligne droite propre à l’Art nouveau.",
@@ -2999,6 +3041,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Art_d%C3%A9co',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Immeuble%20ann%C3%A9es%2030%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Immeuble fonctionnaliste de l’entre-deux-guerres, en béton armé, aux lignes épurées et aux formes arrondies dites « style paquebot ». Bow-windows incurvés, garde-corps tubulaires et hublots traduisent l’influence de l’esthétique navale et industrielle sur l’architecture résidentielle.",
@@ -3066,6 +3109,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Habitation_%C3%A0_loyer_mod%C3%A9r%C3%A9',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Barre%20HLM%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Une_barre_HLM_d\'Avignon_sud.png'],
     periodeTags: ['XXe'],
     resume:
       "Immeuble linéaire de logement social construit en panneaux de béton préfabriqués, desservi par des cages d’escalier ou des coursives réparties régulièrement. Sa répétition modulaire et sa construction rapide en ont fait la forme la plus répandue du logement de masse des Trente Glorieuses.",
@@ -3133,6 +3177,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Tour_(habitation)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Tour%20HLM%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Tour_HLM_de_Bregille.JPG'],
     periodeTags: ['XXe'],
     resume:
       "Immeuble de grande hauteur organisé autour d’un noyau central regroupant ascenseurs et escaliers, d’où rayonnent les logements sur un plan carré ou en étoile. Sa silhouette verticale, plus économe en emprise au sol que la barre, a marqué les grands ensembles des années 1960 et 1970.",
@@ -3200,6 +3245,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maisons_Ph%C3%A9nix',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Pavillon%20Ph%C3%A9nix%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Maison individuelle préfabriquée à ossature métallique légère, commercialisée en catalogue à partir des années 1970 et massivement diffusée dans les lotissements périurbains français. Construction rapide, plans standardisés et garage intégré caractérisent ce modèle emblématique de l’accession à la propriété de masse.",
@@ -3267,6 +3313,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Pavillon_(habitat)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20%C2%AB%20%C3%8Ele-de-France%20%C2%BB%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Pavillon individuel générique de la seconde moitié du XXe siècle, bâti en parpaings de béton enduits et couvert d’une toiture à pans en tuile mécanique. Modèle le plus répandu de l’habitat péri-urbain francilien, il se décline en variantes de plain-pied ou à étage sur des lotissements standardisés.",
@@ -3334,6 +3381,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Art_roman',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89glise%20romane%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Gourdon_-_Eglise_Romane.JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "Église aux murs très épais et aux ouvertures réduites, couverte de voûtes en berceau ou d’arêtes portées par des piliers massifs. Arcs en plein cintre, chapiteaux sculptés et clocher trapu composent une architecture de la retenue et de la pénombre, héritière de la construction romaine.",
@@ -3401,6 +3449,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Architecture_gothique',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89glise%20gothique%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Façade_ouest_de_l\'église_gothique.JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "Église élancée où la croisée d’ogives et l’arc-boutant reportent les charges à l’extérieur, libérant les murs pour de vastes verrières. La verticalité, la lumière colorée des vitraux et la finesse du décor sculpté marquent une rupture radicale avec la retenue romane.",
@@ -3468,6 +3517,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cath%C3%A9drale',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cath%C3%A9drale%20gothique%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Cathédrale_Saint-Ètienne,_Sens-6998.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "Église mère d’un diocèse, abritant la cathedra de l’évêque, bâtie à une échelle monumentale sur plusieurs générations. Façade harmonique à deux tours, rosace, chevet à déambulatoire et chapelles rayonnantes en font le sommet technique et symbolique de l’art gothique.",
@@ -3535,6 +3585,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chapelle_(architecture)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Chapelle%20rurale%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Cumeray_-_Chapelle.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petit édifice religieux à nef unique, souvent isolé en pleine campagne, sur un chemin de pèlerinage ou au cœur d’un hameau. Le clocher-mur, simple façade percée de baies pour les cloches, remplace la tour et signale l’humilité de cette architecture rurale de dévotion.",
@@ -3602,6 +3653,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Basilique',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Basilique%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Nantes_(44)_Basilique_Saint_Donatien_et_Saint-Rogatien_-_Façade_principale.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Église élevée au rang de basilique par titre honorifique pontifical, souvent liée à un grand pèlerinage marial. En France, nombre de basiliques adoptent au tournant du XXe siècle un style romano-byzantin aux dômes multiples, rompant avec le vocabulaire gothique alors jugé trop identifié à l’Ancien Régime.",
@@ -3669,6 +3721,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Abbaye',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Abbaye%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Abbaye_de_Saint-Pierre-sur-Dives_-_façade_occidentale.JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "Vaste complexe monastique autonome organisé autour de l’église abbatiale et du cloître, regroupant salle capitulaire, dortoir, réfectoire et cellier. Sous l’autorité d’un abbé, la communauté vit en quasi-autarcie, cultivant ses terres et copiant les manuscrits au scriptorium.",
@@ -3736,6 +3789,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Monast%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Monast%C3%A8re%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800'],
     resume:
       "Communauté monastique organisée, dans la tradition cartusienne, autour de cellules individuelles ouvrant sur un grand cloître plutôt que sur un dortoir commun. Chaque moine y vit en quasi-ermite, ne rejoignant la communauté que pour les offices et certains repas, dans un équilibre singulier entre solitude et vie commune.",
@@ -3803,6 +3857,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Prieur%C3%A9',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Prieur%C3%A9%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Prieuré_Saint-Augustin-lès-Angers_-_Angers_-_20110119.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "Petite communauté monastique dépendant d’une abbaye mère, envoyée pour administrer un domaine éloigné ou entretenir un lieu de dévotion. Plus modeste que l’abbaye, le prieuré réunit un noyau réduit de moines autour d’une église priorale simple et d’un cloître de petites dimensions.",
@@ -3870,6 +3925,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Clo%C3%AEtre',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Clo%C3%AEtre%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Cloître_de_l\'Abbaye_Saint_Vincent_(Nieul-sur-l\'Autise).JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "Galerie couverte à arcades entourant un jardin central (préau), cœur silencieux de la vie monastique et lieu de circulation entre église, salle capitulaire et réfectoire. Ses colonnettes géminées et ses chapiteaux sculptés en font souvent le plus riche témoignage artistique d’un ensemble religieux.",
@@ -3937,6 +3993,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Temple_protestant',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Temple%20protestant%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Sedan,_Temple_protestant,_extérieur_1.jpg'],
     periodeTags: ['XIXe'],
     resume:
       "Édifice de culte réformé organisé en simple salle rectangulaire, sans statuaire ni image, centrée sur la chaire d’où se donne la prédication. Le Concordat de 1802 autorise la reconstruction de temples après les destructions consécutives à la révocation de l’édit de Nantes, dans une architecture volontairement sobre.",
@@ -4004,6 +4061,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Synagogue',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Synagogue%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Facade_Synagogue_Victoire_Paris_2014.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Édifice de culte israélite organisé autour de l’arche sainte contenant les rouleaux de la Torah et de la bimah, estrade centrale de lecture. Les grandes synagogues bâties en France au XIXe siècle adoptent souvent un style éclectique, mêlant réminiscences orientalistes, romanes ou byzantines.",
@@ -4071,6 +4129,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Mosqu%C3%A9e',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mosqu%C3%A9e%20contemporaine%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Grande_mosquée_Cergy_façade_sud-ouest_large_(20240118).jpg'],
     periodeTags: ['XXe'],
     resume:
       "Édifice de culte musulman construit en France depuis les années 1980, associant structure en béton contemporaine et vocabulaire ornemental traditionnel : minaret, coupole, mihrab orienté vers La Mecque et décor géométrique ou calligraphique. Une architecture qui négocie entre codes religieux hérités et écriture architecturale résolument actuelle.",
@@ -4138,6 +4197,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ch%C3%A2teau_fort',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ch%C3%A2teau%20fort%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Château_Fort_de_l\'Ebaupinay_-_Vue_Sud_Est.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "Résidence fortifiée du seigneur, organisée en enceintes successives autour d’un donjon refuge : courtines, tours de flanquement, chemin de ronde et pont-levis. Né de la motte castrale en bois, le château fort se pétrifie progressivement du XIe au XIIIe siècle pour résister au siège et affirmer un pouvoir territorial.",
@@ -4205,6 +4265,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Donjon',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Donjon%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Donjon_Tournebu.JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "Tour maîtresse du château, dernier refuge en cas de siège et résidence seigneuriale en temps de paix. D’abord carré puis majoritairement circulaire à partir du XIIe siècle pour mieux résister au sapement et aux projectiles, le donjon domine toujours la silhouette du château par sa hauteur.",
@@ -4272,6 +4333,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Tour_(fortification)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Tour%20m%C3%A9di%C3%A9vale%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Tour_médiévale_du_Fort_de_Bouc,_Martigues,_France.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "Tour isolée ou intégrée à une enceinte urbaine, dédiée au guet, à la transmission de signaux et à la défense rapprochée. Plus légère qu’un donjon seigneurial, elle ponctue les remparts de ville à intervalles réguliers pour couvrir les courtines par des tirs croisés.",
@@ -4339,6 +4401,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Bastide',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Bastide%20fortifi%C3%A9e%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800'],
     resume:
       "Ville neuve fondée sur un plan en damier autour d’une place centrale à couverts, dont le pourtour des maisons forme lui-même le rempart. Créées par centaines dans le Sud-Ouest au XIIIe siècle par les pouvoirs anglais, français et seigneuriaux rivaux, les bastides organisent peuplement, commerce et défense d’un même geste.",
@@ -4406,6 +4469,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Vauban',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Citadelle%20Vauban%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Citadelle_Vauban_Lille_fossé.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "Fortification bastionnée en étoile conçue par Vauban pour verrouiller les frontières du royaume, où chaque bastion couvre par son feu les faces voisines sans angle mort. Glacis, fossés, demi-lunes et casemates composent un système défensif méthodique, aujourd’hui classé au patrimoine mondial de l’UNESCO pour douze sites français.",
@@ -4473,6 +4537,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Fort_(fortification)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Fort%20Napol%C3%A9on%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Fort_Napoléon_dans_l\'archipel_des_Saintes.jpg'],
     periodeTags: ['XIXe'],
     resume:
       "Fort d’artillerie du XIXe siècle, hérité du système Vauban mais adapté à la portée croissante des canons : profils enterrés, casemates maçonnées et glacis étendus protègent la garnison et les pièces d’artillerie. Ces forts jalonnent le littoral et les frontières pour couvrir rades, ports et voies d’invasion.",
@@ -4540,6 +4605,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Mur_de_l%27Atlantique',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Blockhaus%20Atlantique%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Le_Grand_BlockhausIMGP4905.JPG'],
     periodeTags: ['XXe'],
     resume:
       "Casemate en béton armé massif édifiée par l’Organisation Todt entre 1942 et 1944 pour former le Mur de l’Atlantique, chaîne défensive censée repousser un débarquement allié. Murs de plusieurs mètres d’épaisseur, embrasures de tir étroites et formes standardisées (types « Regelbau ») caractérisent ces vestiges encore nombreux sur le littoral.",
@@ -4607,6 +4673,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Caserne',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Caserne%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Caserne_des_Gardes_Françaises.JPG'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Ensemble de casernement organisé autour d’une vaste cour d’exercice, logeant troupe, chevaux et matériel dans des bâtiments à façades répétitives. Généralisée à partir de Louvois sous Louis XIV pour loger les troupes permanentes hors du logement chez l’habitant, la caserne structure encore aujourd’hui de nombreuses villes de garnison françaises.",
@@ -4674,6 +4741,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grange_(agriculture)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grange%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Ferme_de_la_grange_du_clou.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Vaste bâtiment agricole dédié au stockage du foin, de la paille et des récoltes, organisé autour d’une grande aire centrale où l’on battait autrefois le grain. Sa charpente à très grande portée, souvent sans support intermédiaire, en fait l’un des plus grands volumes de la ferme traditionnelle.",
@@ -4741,6 +4809,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Bergerie',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Bergerie%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Saint_martin_de_Crau_-_Bergerie_de_l\'Opéra.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Bâtiment pastoral abritant le troupeau ovin, aux murs de pierre épais assurant fraîcheur l’été et protection l’hiver. Longue et basse, ouverte de rares baies, la bergerie surmontée d’un fenil accueille aussi la réserve de fourrage nécessaire à la mauvaise saison.",
@@ -4808,6 +4877,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89table',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89table%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Bâtiment d’élevage bovin organisé autour d’une rangée de mangeoires et d’un couloir de service, souvent adossé au logis pour que la chaleur animale participe au chauffage de la maison. Plafond bas, sol pavé en légère pente et ventilation calculée caractérisent cette architecture utilitaire.",
@@ -4875,6 +4945,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Fenil',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Fenil%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Grange_à_foin,_Le_Crêt,_Rougemont-01.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Grenier à foin ventilé, en essentage de planches à claire-voie laissant circuler l’air pour sécher et conserver le fourrage. Placé à l’étage d’une grange ou d’une étable, ou parfois bâti isolément en montagne, le fenil constitue la réserve vitale pour nourrir le bétail en hiver.",
@@ -4942,6 +5013,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Colombier_(%C3%A9difice)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Colombier%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800'],
     resume:
       "Tour d’élevage de pigeons réservée avant la Révolution aux seigneurs justiciers, dont la capacité en boulins était réglementairement proportionnée à l’étendue des terres possédées. La fiente de pigeon, engrais précieux (colombine), et la chair de l’oiseau en faisaient un symbole de prestige autant qu’un outil agronomique.",
@@ -5009,6 +5081,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Pigeonnier',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Pigeonnier%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Pigeonnier_tour_du_Foirail_de_Villeneuve.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petit bâtiment d’élevage de pigeons plus modeste que le colombier seigneurial, intégré à la ferme ou bâti sur pilotis pour protéger les nichoirs des rongeurs. Sa démocratisation après l’abolition des droits féodaux en 1789 en fait un marqueur très répandu du paysage rural du Sud-Ouest.",
@@ -5076,6 +5149,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Pressoir',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Pressoir%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Lonlay-l\'Abbaye_-_pressoir_01.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Bâtiment abritant le mécanisme de pressurage, dominé par l’imposante vis de bois ou de pierre du pressoir à levier ou à vis, dimensionné selon qu’il traite le raisin, la pomme à cidre ou l’olive. Cave voûtée attenante pour la fermentation ou le stockage complète cet outil collectif ou seigneurial.",
@@ -5143,6 +5217,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Four_%C3%A0_pain',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Four%20%C3%A0%20pain%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Four_à_pain_-_Borce.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petite construction voûtée en brique réfractaire ou pierre, chauffée par combustion directe de bois avant d’y enfourner le pain sur la sole encore chaude. Attenant à la maison ou partagé par un hameau, le four à pain rythmait la vie collective au fil des fournées hebdomadaires.",
@@ -5210,6 +5285,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Moulin_%C3%A0_vent',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Moulin%20%C3%A0%20vent%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Moulin_à_vent_de_Frouville-Pensier,_Ozoir-le-Breuil,_Eure-et-Loir,_Centre,_France.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Machine à moudre le grain actionnée par le vent, sous forme de moulin-tour en pierre à calotte pivotante ou de moulin-cavier entièrement orientable sur son pivot. Ailes toilées, mécanisme d’engrenages en bois et meules de pierre composent un ensemble technique raffiné, autrefois omniprésent dans les paysages de plaine.",
@@ -5277,6 +5353,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Moulin_%C3%A0_eau',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Moulin%20%C3%A0%20eau%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Culey_(Meuse)_moulin_à_eau.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Bâtiment de meunerie implanté sur un cours d’eau, dont la roue à aubes ou à augets, actionnée par un bief dérivé de la rivière, entraîne les meules par un jeu d’engrenages. Antérieur au moulin à vent, le moulin à eau a aussi actionné forges, scieries et foulons à mesure que l’usage de la force hydraulique s’est diversifié.",
@@ -5344,6 +5421,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/S%C3%A9choir_%C3%A0_tabac',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=S%C3%A9choir%20%C3%A0%20tabac%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Haut bâtiment à ossature bois dont les parois en planches mobiles s’ouvrent et se referment pour régler précisément la ventilation nécessaire au séchage lent des feuilles de tabac suspendues en hauteur. Sa silhouette élancée et son essentage caractéristique marquent encore les paysages du Sud-Ouest tabacole.",
@@ -5411,6 +5489,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Hangar_agricole',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Hangar%20agricole%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Grand volume industrialisé à ossature métallique ou en béton, dimensionné pour abriter machines agricoles, fourrage en grande quantité ou récoltes en vrac. Sa portée dégagée sans poteau intermédiaire et sa rapidité de montage traduisent la mécanisation et l’agrandissement des exploitations depuis l’après-guerre.",
@@ -5478,6 +5557,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Filature',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Filature%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Eyrieux_et_filature_au_moulinon.JPG'],
     periodeTags: ['XIXe'],
     resume:
       "Usine de filature textile organisée sur plusieurs niveaux au-dessus d’une halle à piliers de fonte, où de vastes rangées de fenêtres éclairaient les métiers à filer. La machine à vapeur, puis l’électricité, y remplace progressivement la roue hydraulique au fil du XIXe siècle industriel.",
@@ -5545,6 +5625,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Forge_(m%C3%A9tallurgie)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Forge%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Forge_baudin.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Établissement métallurgique isolé en forêt, où une roue hydraulique actionne à la fois le soufflet du fourneau et le lourd marteau qui corrobore le fer. La proximité du bois pour le charbon de bois et d’un cours d’eau pour la force motrice conditionne entièrement l’implantation de la forge.",
@@ -5612,6 +5693,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Haut_fourneau',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Haut-fourneau%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Tour métallurgique monumentale où le minerai de fer, le coke et le calcaire fondent en continu pour produire de la fonte liquide, dans un cycle alimenté par le sommet (gueulard) et vidé à la base. Symbole de la sidérurgie lorraine, le haut-fourneau domine ses usines de plusieurs dizaines de mètres.",
@@ -5679,6 +5761,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Shed_(architecture)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Usine%20textile%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Tourcoing_usine_caulliez.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Grande usine de tissage organisée en halles basses couvertes de sheds, ces toitures en dents de scie dont les pans vitrés orientés au nord diffusent une lumière constante sans éblouissement. Souvent flanquée d’une cité ouvrière, l’usine textile structure des quartiers entiers du Nord industriel.",
@@ -5746,6 +5829,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Sucrerie',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Sucrerie%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Complexe industriel saisonnier transformant la betterave sucrière en sucre, actif seulement quelques mois durant la « campagne » d’automne. Tours de diffusion, batteries d’évaporateurs et haute cheminée composent un ensemble technique complexe, embranché au chemin de fer pour l’acheminement massif des betteraves.",
@@ -5813,6 +5897,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Distillerie',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Distillerie%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Établissement de distillation organisé autour des alambics de cuivre et des chais de vieillissement où les eaux-de-vie murissent en fût pendant des années. Le champignon noir qui noircit les murs extérieurs des chais, nourri par la vapeur d’alcool évaporée (la « part des anges »), signale de loin la présence d’une distillerie.",
@@ -5880,6 +5965,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Manufacture_royale',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Manufacture%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Bains-les-Bains_Manufacture_Royale.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "Grand atelier centralisé regroupant sous un même toit des artisans spécialisés produisant des biens de luxe sous privilège et souvent monopole royal. Précurseur de l’usine par sa concentration de main-d’œuvre, la manufacture reste antérieure à la mécanisation, fondée sur la division du travail artisanal.",
@@ -5947,6 +6033,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Mine_de_charbon',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mine%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['La_Découverte,_une_mine_à_ciel_ouvert_à_Decazeville_(12)_-_06.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Carreau de fosse regroupant en surface l’ensemble des installations liées à l’extraction : lampisterie, bains-douches, criblage-lavage du charbon et voies ferrées d’évacuation. Le terril, colline artificielle de déblais, et le chevalement dominant le puits composent la silhouette caractéristique des bassins miniers.",
@@ -6014,6 +6101,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chevalement',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Chevalement%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Chevalement_Mine_Aumetz.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Tour métallique en treillis dominant le puits de mine, portant à son sommet les molettes autour desquelles s’enroulent les câbles remontant la cage d’extraction. Silhouette la plus emblématique du patrimoine minier, le chevalement rythme l’horizon des bassins houillers de son architecture toute en légèreté structurelle.",
@@ -6081,6 +6169,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Centrale_%C3%A9lectrique',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Centrale%20%C3%A9lectrique%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Centrale_thermique_de_Vitry-sur-Seine.JPG'],
     periodeTags: ['XXe'],
     resume:
       "Grand équipement industriel produisant l’électricité, qu’il s’agisse d’une centrale thermique à la salle des turbines vitrée et à la haute cheminée, ou d’une centrale hydroélectrique intégrée à un barrage. Certaines centrales de la première moitié du XXe siècle adoptent une architecture monumentale, revendiquant leur rôle de « cathédrales » de l’énergie moderne.",
@@ -6148,6 +6237,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Silo',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Silo%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: ['Le_silo_céréalier_Souflet_au_port_de_La_Pallice_(4).JPG'],
     periodeTags: ['XXe'],
     resume:
       "Tour ou batterie de tours cylindriques en béton armé destinées au stockage massif du grain, aux ports d’exportation comme au cœur des plaines céréalières. Leur pure géométrie fonctionnelle, sans aucun ornement, a fasciné les architectes modernistes du début du XXe siècle, qui y voyaient l’expression la plus honnête de l’architecture industrielle.",
@@ -6215,6 +6305,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Entrep%C3%B4t',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Entrep%C3%B4t%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Grand bâtiment de stockage à structure répétitive, en brique puis en béton armé, offrant de vastes plateaux libres desservis par des quais de chargement et des monte-charges. Implanté près des ports, gares ou canaux, l’entrepôt organise la logistique urbaine avant l’ère du conteneur.",
@@ -6282,6 +6373,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Gare',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Gare%20monumentale%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe'],
     resume:
       "Terminus ferroviaire urbain associant une façade monumentale en pierre, vitrine de prestige de la compagnie exploitante, à une immense halle métallique et vitrée abritant les voies. L’horloge géante, la statuaire allégorique et la marquise de verre affichent la fierté technique du chemin de fer naissant.",
@@ -6349,6 +6441,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Gare',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Gare%20rurale%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Petite gare de desserte locale bâtie sur un modèle standardisé par chaque grande compagnie ferroviaire, associant guichet, salle d’attente et logement du chef de gare sous un même toit. Sa marquise protégeant le quai et sa sobriété de brique ou de pierre en font l’un des bâtiments les plus répétés du paysage ferroviaire français.",
@@ -6416,6 +6509,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Rotonde_ferroviaire',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Rotonde%20ferroviaire%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment circulaire ou polygonal organisé autour d’une plaque tournante centrale, permettant de réorienter puis de ranger les locomotives dans des voies rayonnantes individuelles. Le lanterneau vitré au sommet de la toiture évacue la fumée tout en éclairant l’ensemble du dépôt.",
@@ -6483,6 +6577,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Gare_de_marchandises',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Halle%20marchandises%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Vaste halle desservie par une voie ferrée pénétrant à l’intérieur même du bâtiment, permettant le transbordement direct entre wagons et quais routiers. Sa structure répétitive et son grand volume dégagé en font aujourd’hui l’un des bâtiments industriels ferroviaires les plus recherchés pour la reconversion.",
@@ -6550,6 +6645,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ch%C3%A2teau_d%27eau',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ch%C3%A2teau%20d%E2%80%99eau%20SNCF%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Tour hydraulique élevée le long des lignes à vapeur pour alimenter en eau le tender des locomotives, via une grue hydraulique pivotante placée en bout de quai. Rendus obsolètes par la traction diesel puis électrique, nombre de ces châteaux d’eau ferroviaires subsistent, silencieux témoins de l’ère de la vapeur.",
@@ -6617,6 +6713,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Passage_%C3%A0_niveau',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Passage%20%C3%A0%20niveau%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Point de croisement entre route et voie ferrée, surveillé depuis une petite maison de garde-barrière au modèle standardisé, où le garde actionnait manuellement les barrières par un système de roue et de câbles. Ce guetteur logé sur place veillait sur le passage, jour et nuit, avant l’automatisation progressive du XXe siècle.",
@@ -6684,6 +6781,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/D%C3%A9p%C3%B4t_de_locomotives',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=D%C3%A9p%C3%B4t%20locomotives%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Grand établissement technique où les locomotives sont entretenues, réparées, approvisionnées en eau et en charbon puis remisées entre deux services. Souvent organisé autour d’une rotonde, le dépôt rassemble ateliers, fosses de visite et voies de garage sur un vaste site attenant à une gare importante.",
@@ -6751,6 +6849,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Phare_(tour)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Phare%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Tour de signalisation maritime bâtie sur les caps et îlots les plus exposés, couronnée d’une lanterne dont l’optique à lentilles de Fresnel démultiplie la portée du faisceau lumineux. Chaque phare possède un rythme d’éclat unique, véritable signature lumineuse permettant aux marins de l’identifier de nuit.",
@@ -6818,6 +6917,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Phare_(tour)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20gardien%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Logement de fonction attenant ou proche d’un phare, où le gardien et parfois sa famille vivaient en quasi-autarcie sur des sites souvent isolés et difficiles d’accès. La surveillance permanente de la lanterne, l’entretien du mécanisme et la tenue du registre météorologique rythmaient une vie rude, immortalisée par de nombreux récits maritimes.",
@@ -6885,6 +6985,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/S%C3%A9maphore_(marine)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=S%C3%A9maphore%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Poste de guet naval implanté sur les points hauts du littoral, hérité du télégraphe optique Chappe et adapté à la surveillance maritime dès le XIXe siècle. Toujours armé par la Marine nationale, le sémaphore veille aujourd’hui sur le trafic maritime, la sécurité et le sauvetage en mer.",
@@ -6952,6 +7053,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cale_(marine)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cale%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Plan incliné maçonné descendant dans l’eau, permettant de mettre à l’eau ou de haler les barques hors de la mer selon la marée. Élément le plus simple mais le plus indispensable de l’architecture portuaire, la cale organise toute la vie quotidienne d’un village de pêcheurs.",
@@ -7019,6 +7121,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Halle_%C3%A0_mar%C3%A9e',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cri%C3%A9e%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Halle portuaire dédiée à la vente aux enchères descendantes du poisson fraîchement débarqué, directement accessible depuis le quai de déchargement. Sa grande halle réfrigérée et ses installations de tri organisent en quelques heures chaque matin tout le commerce du poisson d’un port de pêche.",
@@ -7086,6 +7189,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ostr%C3%A9iculture',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cabanes%20ostr%C3%A9icoles%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Cabane de bois colorée, dressée sur pilotis à même l’estran, où l’ostréiculteur trie, calibre et conditionne les huîtres au sortir des parcs. Alignées en rangs serrés au bord de l’eau, ces cabanes composent le paysage caractéristique du bassin d’Arcachon et des ports ostréicoles atlantiques.",
@@ -7153,6 +7257,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cabane_de_p%C3%AAcheur',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cabane%20de%20p%C3%AAcheur%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Modeste cabane de bois où le pêcheur range filets, casiers et agrès, parfois construite à partir de la coque retournée d’un vieux bateau réformé (« caloge »). Regroupées en rangs le long de la plage ou du port, ces cabanes forment un paysage vernaculaire immédiatement reconnaissable.",
@@ -7220,6 +7325,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Fortification',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Fort%20maritime%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Fortification bâtie directement sur un rocher ou un haut-fond au milieu d’une rade, défiant les courants et les marées pour verrouiller l’accès à un port stratégique. Le chantier, souvent étalé sur plusieurs décennies en raison des conditions marines extrêmes, produit des ouvrages au plan elliptique ou circulaire limitant la prise au vent et à la houle.",
@@ -7287,6 +7393,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Alpage',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Chalet%20d%27alpage%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Bâtiment sommaire d’altitude occupé uniquement l’été durant l’estive, servant au logement du berger, à la traite et à la fabrication du fromage (beaufort, reblochon). Plus rustique et plus petit que le chalet savoyard permanent, il se réduit souvent à une seule pièce avec cave d’affinage attenante.",
@@ -7355,6 +7462,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Refuge_de_montagne',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Refuge%20de%20montagne%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment d’altitude construit par les clubs alpins à partir de la fin du XIXe siècle pour l’accueil des alpinistes et randonneurs en haute montagne. Volumétrie compacte et aérodynamique, structure renforcée contre le vent et la neige, souvent accessible uniquement à pied ou par câble de ravitaillement.",
@@ -7423,6 +7531,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grange',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grange%20foraine%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Grange isolée construite au milieu des prés de montagne éloignés de la ferme principale, pour stocker le foin fauché sur place et éviter son transport jusqu’à la vallée. Volume simple en bois sur soubassement de pierre, parfois utilisée aussi comme abri temporaire pour le bétail.",
@@ -7490,6 +7599,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grenier',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mazot%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petit bâtiment annexe en madriers de bois, isolé du chalet principal et surélevé sur des pilotis de pierre plate (« pierres à rats ») pour protéger les provisions et documents précieux du feu et des rongeurs. Le mazot ponctue traditionnellement les villages alpins savoyards.",
@@ -7558,6 +7668,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Mairie_(France)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mairie%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment le plus visible de la commune, édifié massivement sous la IIIe République comme vitrine des valeurs républicaines. Plan symétrique à avant-corps central, fronton frappé du mot « Mairie » et horloge, salle des mariages en étage noble et salle du conseil.",
@@ -7626,6 +7737,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Lois_Ferry',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89cole%20Jules%20Ferry%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "École primaire édifiée en masse après les lois Jules Ferry de 1881-1882 instaurant l’instruction primaire gratuite, obligatoire et laïque. Plan type avec préau couvert, classes largement éclairées par de hautes fenêtres, entrées séparées pour garçons et filles gravées au fronton.",
@@ -7693,6 +7805,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Pr%C3%A9fecture_(France)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Pr%C3%A9fecture%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Siège du préfet, représentant de l’État créé par Napoléon Bonaparte en 1800, occupant souvent un ancien palais épiscopal ou un hôtel particulier réaffecté, ou un édifice monumental construit spécifiquement au XIXe siècle. Façade d’apparat, cour d’honneur et salons de réception marquent l’autorité de l’État dans le département.",
@@ -7760,6 +7873,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Palais_de_justice',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Tribunal%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Palais de justice construit pour incarner la solennité et l’impartialité de la justice républicaine, souvent doté d’un portique à colonnes et d’un fronton sculpté. Plan basilical organisant salles d’audience, salle des pas perdus et cabinets de juges autour d’un axe symétrique.",
@@ -7827,6 +7941,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/H%C3%B4pital',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=H%C3%B4pital%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Établissement public de soins organisé, à partir du mouvement hygiéniste du XIXe siècle, en pavillons séparés reliés par des galeries pour limiter la propagation des maladies et favoriser l’aération. Parc planté, chapelle et services techniques complètent l’ensemble hospitalier.",
@@ -7895,6 +8010,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Hospice',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Hospice%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Établissement charitable héritier des hôtels-Dieu médiévaux, organisé autour d’une chapelle et de dortoirs communs pour accueillir indigents, orphelins, malades chroniques et personnes âgées sans ressources. Plan souvent claustral, hérité des fondations religieuses d’Ancien Régime, poursuivi et sécularisé au XIXe siècle.",
@@ -7962,6 +8078,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Prison',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Prison%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Établissement pénitentiaire reconstruit au XIXe siècle selon le principe cellulaire, inspiré du panoptique, où un poste central de surveillance permet un contrôle visuel de plusieurs ailes de cellules disposées en étoile. Hauts murs d’enceinte, miradors et cour de promenade complètent le dispositif sécuritaire.",
@@ -8029,6 +8146,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Caserne_de_pompiers',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Caserne%20de%20pompiers%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment public abritant les véhicules et le personnel des sapeurs-pompiers, reconnaissable à sa grande travée de remise à portes hautes et à sa tour de manœuvre servant historiquement au séchage des tuyaux d’incendie. Locaux de vie et dortoirs de garde complètent l’équipement opérationnel.",
@@ -8096,6 +8214,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Bureau_de_poste',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Bureau%20de%20poste%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment public du service des Postes, Télégraphes et Téléphones (PTT), reconnaissable à sa façade sobre, son horloge et son enseigne, organisé autour d’une salle du public à guichets alignés. Diffusé selon des plans-types administratifs de la fin du XIXe siècle jusqu’au milieu du XXe siècle.",
@@ -8163,6 +8282,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Gare_routi%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Gare%20routi%C3%A8re%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Équipement public organisant le terminus et la correspondance des lignes d’autocars, caractérisé par une grande marquise en porte-à-faux protégeant les quais d’embarquement des intempéries. Typologie moderniste développée avec l’essor des transports routiers de voyageurs au XXe siècle.",
@@ -8230,6 +8350,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chapelle_fun%C3%A9raire',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Chapelle%20fun%C3%A9raire%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Petite construction en forme de temple ou d’église miniature, édifiée par les familles bourgeoises dans les grands cimetières urbains depuis le décret impérial de 1804 autorisant l’achat de concessions perpétuelles. Style éclectique — néo-gothique, néoclassique ou égyptisant — avec vitrail, autel et caveau en sous-sol.",
@@ -8297,6 +8418,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Caveau_(s%C3%A9pulture)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Caveau%20familial%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Fosse maçonnée souterraine à plusieurs niveaux de casiers, surmontée d’une dalle et d’un monument funéraire en surface (stèle, croix, plaque). Forme la plus répandue de sépulture familiale dans les cimetières communaux français, accueillant plusieurs générations successives.",
@@ -8364,6 +8486,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Mausol%C3%A9e',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mausol%C3%A9e%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Monument funéraire de grande ampleur édifié pour des personnalités ou de grandes familles, empruntant le vocabulaire des temples antiques — coupole, colonnades, fronton sculpté. Édifice isolé et centré, souvent visible de loin dans le paysage du cimetière, dont il constitue l’un des points d’orgue architecturaux.",
@@ -8431,6 +8554,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Columbarium',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Columbarium%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Mur ou édicule structuré en cases individuelles destinées à recevoir des urnes cinéraires, typologie récente reflétant l’essor de la crémation dans les pratiques funéraires françaises depuis sa légalisation en 1887 et surtout sa généralisation après la loi de 2008 sur le statut des cendres.",
@@ -8498,6 +8622,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ossuaire',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ossuaire%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petit édifice ou galerie attenant à un ancien cimetière paroissial, destiné à recueillir les ossements exhumés faute de place lors du renouvellement des tombes. Typologie particulièrement répandue au sein des enclos paroissiaux bretons, mais aussi présente sous forme de catacombes urbaines constituées au tournant du XIXe siècle.",
@@ -8565,6 +8690,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Monument_aux_morts',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Monument%20aux%20morts%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Mémorial édifié dans la quasi-totalité des communes françaises au lendemain de la Première Guerre mondiale, pour honorer la mémoire des soldats morts pour la France. Érigé sur la place publique, souvent face à la mairie, il associe socle de pierre, liste nominative des morts et parfois statuaire allégorique.",
@@ -8632,6 +8758,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Lyc%C3%A9e_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Lyc%C3%A9e%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Établissement d’enseignement secondaire créé par la loi de 1802 instaurant les lycées napoléoniens, organisé autour d’une cour d’honneur monumentale distribuant salles de classe, internat, réfectoire et gymnase. Souvent installé dans d’anciens couvents sécularisés à la Révolution ou construit ex nihilo au XIXe siècle.",
@@ -8699,6 +8826,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Universit%C3%A9_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Universit%C3%A9%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Bâtiment d’enseignement supérieur héritier des universités médiévales fondées dès le XIIIe siècle, reconstruit ou agrandi massivement au XIXe siècle sous la IIIe République. Organisé autour d’un grand amphithéâtre, d’une bibliothèque et d’une cour d’honneur, souvent orné de statuaire savante.",
@@ -8766,6 +8894,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_universitaire',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Biblioth%C3%A8que%20universitaire%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment dédié à la conservation et à la consultation des collections documentaires universitaires, structuré autour d’une grande salle de lecture largement éclairée et de magasins de stockage à rayonnages métalliques. Typologie affirmée à partir du XIXe siècle avec le développement de l’enseignement supérieur de masse.",
@@ -8833,6 +8962,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cit%C3%A9_internationale_universitaire_de_Paris',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cit%C3%A9%20universitaire%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Ensemble de logements collectifs destiné aux étudiants, organisé en pavillons nationaux distincts — modèle inauguré par la Cité internationale universitaire de Paris en 1925 — ou en barres et tours standardisées construites en masse durant les Trente Glorieuses pour répondre à l’explosion des effectifs universitaires.",
@@ -8900,6 +9030,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89cole_maternelle_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89cole%20maternelle%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Établissement de plain-pied conçu à l’échelle du jeune enfant, généralisé après la loi de 1959 rendant l’école maternelle publique gratuite et développé massivement durant les Trente Glorieuses. Salles de classe largement vitrées ouvrant sur une cour de jeux, mobilier et menuiseries dimensionnés pour les tout-petits.",
@@ -8967,6 +9098,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grande_%C3%A9cole',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grande%20%C3%A9cole%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Établissement d’enseignement supérieur sélectif né du modèle français des grandes écoles institué par la Convention en 1794 (École polytechnique), formant ingénieurs, cadres et hauts fonctionnaires hors du cadre universitaire classique. Campus dédié associant bâtiments d’enseignement monumentaux, internat et espaces sportifs.",
@@ -9034,6 +9166,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grand_magasin',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grand%20magasin%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment commercial de grande ampleur né au Second Empire avec l’ouverture du Bon Marché en 1852, révolutionnant le commerce de détail par la vente à prix fixe et le libre accès aux marchandises. Structure métallique audacieuse, grand hall central sous verrière, escaliers monumentaux et balcons ouvrant sur plusieurs niveaux de vente.",
@@ -9101,6 +9234,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Passage_couvert',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Passage%20couvert%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe'],
     resume:
       "Galerie piétonne couverte reliant deux rues à travers un îlot, bordée de boutiques et couverte d’une verrière métallique protégeant les promeneurs des intempéries et de la boue des rues non pavées. Typologie parisienne emblématique du début du XIXe siècle, ancêtre direct du grand magasin et du centre commercial.",
@@ -9168,6 +9302,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Halles_de_Paris',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=March%C3%A9%20couvert%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe'],
     resume:
       "Halle urbaine consacrée au commerce alimentaire, reconstruite en fer et fonte sur le modèle des halles Baltard de Paris (1852-1870) pour remplacer les marchés en plein air jugés insalubres. Grande nef métallique largement ouverte et ventilée, éclairage zénithal, étals organisés en rangées.",
@@ -9235,6 +9370,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Halle_(commerce)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Halle%20m%C3%A9di%C3%A9vale%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800'],
     resume:
       "Marché couvert communal établi sur la place centrale du bourg dès le Moyen Âge, formé d’une vaste charpente de bois reposant sur des piliers de pierre ou de chêne, largement ouverte sur les côtés pour le commerce hebdomadaire. Symbole des franchises et privilèges commerciaux accordés par les seigneurs aux villes marchandes.",
@@ -9302,6 +9438,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Centre_commercial',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Centre%20commercial%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Vaste ensemble commercial regroupant sous un même toit boutiques, grande surface alimentaire et espaces de restauration, développé en périphérie des villes françaises à partir des années 1960 sur le modèle nord-américain, favorisé par la généralisation de l’automobile et la création de vastes parkings.",
@@ -9369,6 +9506,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Hypermarch%C3%A9',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grande%20surface%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Bâtiment commercial de plain-pied au volume simple et économique, conçu pour le libre-service à grande échelle popularisé par l’ouverture du premier hypermarché Carrefour en 1963. Grand plateau de vente sans cloisonnement, façade dominée par l’enseigne et vaste parking d’accès direct.",
@@ -9436,6 +9574,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Casino_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Casino%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Édifice de loisirs et de jeux né de l’essor des villes d’eaux et des stations balnéaires au XIXe siècle, réunissant salles de jeux, salle de bal, théâtre et terrasses sous une architecture éclectique et festive. Symbole de la Belle Époque, souvent la pièce maîtresse du front de mer ou du quartier thermal.",
@@ -9503,6 +9642,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Th%C3%A9%C3%A2tre_%C3%A0_l%27italienne',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Th%C3%A9%C3%A2tre%20%C3%A0%20l%E2%80%99italienne%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Salle de spectacle organisée en fer à cheval autour de la scène, héritière du modèle milanais diffusé en France dès le XVIIIe siècle. Loges superposées sur plusieurs niveaux, plafond peint, lustre monumental et scène à l’italienne équipée d’une machinerie complexe.",
@@ -9570,6 +9710,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Salle_de_cin%C3%A9ma',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cin%C3%A9ma%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Salle de spectacle dédiée à la projection cinématographique, généralisée après l’essor du cinéma parlant à la fin des années 1920. Façade souvent traitée en Art déco ou en style paquebot, grande salle obscure en gradins, enseigne lumineuse signalant l’établissement dans la rue commerçante.",
@@ -9637,6 +9778,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Piscine',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Piscine%20municipale%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Établissement public dédié à la baignade et à l’apprentissage de la natation, généralisé durant l’entre-deux-guerres puis massivement construit après 1945 dans le cadre de la politique du sport pour tous. Grand bassin couvert sous charpente béton ou métallique, gradins de spectateurs, cabines de déshabillage alignées.",
@@ -9704,6 +9846,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Salle_des_f%C3%AAtes',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Salle%20des%20f%C3%AAtes%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Grand volume communal polyvalent accueillant bals, banquets, réunions électorales et fêtes locales, présent dans la quasi-totalité des communes françaises. Scène surélevée à une extrémité, plancher de danse dégagé, souvent associée à la mairie ou à l’école dans les petites communes.",
@@ -9771,6 +9914,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Kiosque_%C3%A0_musique',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Kiosque%20%C3%A0%20musique%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe'],
     resume:
       "Petit pavillon octogonal ou circulaire en fonte et bois, implanté dans un parc ou sur une place publique pour accueillir les concerts de la fanfare municipale ou du régiment local. Diffusé dans toute la France à la Belle Époque comme symbole de la vie sociale et musicale des communes.",
@@ -9838,6 +9982,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Belle_%C3%89poque',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Villa%20Belle%20%C3%89poque%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Résidence secondaire cossue édifiée par la bourgeoisie et l’aristocratie sur le front de mer des stations balnéaires naissantes, mêlant éclectisme régionaliste — chalet normand, cottage anglais, style basque — et fantaisie décorative. Tourelles, bow-windows, vérandas et jardins clos affirment le statut social du propriétaire.",
@@ -9905,6 +10050,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Art_d%C3%A9co',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Villa%20Art%20d%C3%A9co%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Résidence secondaire balnéaire à la géométrie épurée, héritière du style paquebot et du mouvement Art déco de l’entre-deux-guerres. Volumes cubiques, angles arrondis évoquant les ponts de navire, larges baies horizontales et terrasses tournées vers la mer.",
@@ -9972,6 +10118,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/H%C3%B4tellerie',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grand%20h%C3%B4tel%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Établissement hôtelier de grand luxe édifié en front de mer pour accueillir la clientèle internationale des stations balnéaires à la Belle Époque, avec façade monumentale à répétition de travées, hall d’apparat, salons de réception et longue terrasse ou promenade couverte face à l’océan.",
@@ -10039,6 +10186,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Thermalisme',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89tablissement%20thermal%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Établissement dédié aux cures thermales ou marines, organisé autour de grandes salles de bains et de soins, galeries de promenade couvertes et buvette d’eau minérale. Architecture monumentale et hygiéniste, souvent complétée d’un casino et d’un parc pour l’agrément des curistes.",
@@ -10106,6 +10254,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cabine_de_bain',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Pavillon%20de%20plage%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Petit établissement léger en bois implanté directement sur le sable ou la digue, louant cabines de bain, transats et parasols aux baigneurs. Architecture éphémère et colorée, souvent démontée hors saison, symbole populaire des vacances balnéaires françaises du XXe siècle.",
@@ -10173,6 +10322,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/B%C3%A2timent_basse_consommation',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20BBC%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Maison individuelle conçue pour respecter le label Bâtiment Basse Consommation, généralisé en France avec la réglementation thermique RT 2012. Isolation renforcée par l’extérieur, étanchéité à l’air soignée, ventilation mécanique contrôlée et compacité des volumes limitent les déperditions thermiques.",
@@ -10240,6 +10390,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_passive',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20passive%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Maison individuelle conçue selon le standard allemand Passivhaus, poussant la performance énergétique jusqu’à se passer quasi totalement de système de chauffage conventionnel. Isolation extrême, triple vitrage, étanchéité à l’air rigoureuse et récupération de chaleur sur l’air extrait assurent le confort thermique par les seuls apports internes et solaires.",
@@ -10307,6 +10458,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ossature_l%C3%A9g%C3%A8re_en_bois',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20ossature%20bois%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Maison individuelle construite selon un système constructif en panneaux de bois préfabriqués en atelier, assemblés rapidement sur site. Technique redécouverte en France à partir des années 1970 pour sa rapidité de mise en œuvre, ses qualités d’isolation naturelle et son bilan carbone favorable.",
@@ -10374,6 +10526,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Conteneur',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20container%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Habitat individuel construit à partir de conteneurs maritimes recyclés, assemblés et isolés pour former un volume habitable modulaire. Typologie expérimentale et économique, séduisant par son bilan environnemental de réemploi et sa rapidité de mise en œuvre, bien que nécessitant une isolation rapportée importante.",
@@ -10441,6 +10594,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Haute_qualit%C3%A9_environnementale',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Immeuble%20HQE%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Immeuble de logements collectifs conçu et certifié selon la démarche Haute Qualité Environnementale, formalisée en France à la fin des années 1990. Gestion de l’énergie, de l’eau et des déchets, confort acoustique et qualité de l’air intérieur guident la conception dès l’esquisse.",
@@ -10508,6 +10662,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89coquartier',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89coquartier%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Quartier neuf conçu à l’échelle urbaine selon des principes de développement durable : densité maîtrisée, mixité des fonctions et des logements, déplacements doux privilégiés, gestion écologique de l’eau et des espaces verts. Un label national attribué depuis 2009 encourage la diffusion du modèle dans toute la France.",
@@ -10575,6 +10730,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Logement_%C3%A9tudiant',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=R%C3%A9sidence%20%C3%A9tudiante%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Immeuble de logements individuels équipés — studio avec kitchenette et salle d’eau — destiné aux étudiants, développé massivement depuis les années 2000 par des opérateurs privés ou en partenariat public-privé pour compléter l’offre historique des cités universitaires publiques. Services mutualisés intégrés au rez-de-chaussée.",
@@ -10642,6 +10798,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/R%C3%A9sidence_services_seniors',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=R%C3%A9sidence%20senior%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Immeuble de logements autonomes adaptés au vieillissement, destiné aux personnes âgées valides souhaitant conserver leur indépendance tout en bénéficiant de services collectifs — restauration, animations, sécurité. Typologie intermédiaire entre le logement ordinaire et l’établissement médicalisé, en fort développement depuis les années 2000.",
@@ -10709,6 +10866,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Stabulation',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Stabulation%20libre%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Bâtiment d’élevage moderne où le bétail circule librement sur une aire paillée ou sur caillebotis, remplaçant l’ancienne étable à logettes attachées. Grande portée charpentée sans mur porteur intermédiaire, bardage largement ajouré pour une ventilation naturelle permanente, aire de raclage ou fosse à lisier intégrée.",
@@ -10776,6 +10934,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Traite_(agriculture)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Salle%20de%20traite%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Bâtiment spécialisé attenant à la stabulation, organisé autour d’une fosse centrale abaissée permettant à l’éleveur de traire les vaches à hauteur du pis sans se baisser. Équipement de traite mécanisée (épis, roto ou robot) et salle de stockage du lait réfrigéré complètent l’ensemble.",
@@ -10844,6 +11003,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Aviculture',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=B%C3%A2timent%20avicole%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Long bâtiment fermé et climatisé destiné à l’élevage intensif de volailles — poulets de chair, poules pondeuses — équipé de systèmes automatisés d’alimentation, d’abreuvement et de ventilation contrôlée. Volume simple et allongé, isolation renforcée pour maîtriser la température intérieure quelle que soit la saison.",
@@ -10911,6 +11071,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89levage_porcin',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Porcherie%20industrielle%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Bâtiment fermé compartimenté en cases, destiné à l’élevage intensif de porcs sur caillebotis intégral au-dessus d’une fosse à lisier. Ventilation mécanique contrôlée, chauffage localisé pour les porcelets et alimentation automatisée caractérisent cette architecture agro-industrielle développée notamment en Bretagne.",
@@ -10978,6 +11139,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Serre_(agriculture)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Serre%20agricole%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Structure légère métallique couverte de verre ou de film plastique, permettant la culture maraîchère et horticole toute l’année en maîtrisant température, hygrométrie et luminosité. Des simples tunnels plastiques aux serres verre chauffées et informatisées, cette typologie couvre une large gamme d’équipements agricoles sous abri.",
@@ -11046,6 +11208,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/M%C3%A9thanisation',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=M%C3%A9thaniseur%20agricole%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Installation agro-énergétique transformant effluents d’élevage et résidus de culture en biogaz par digestion anaérobie, développée en France à partir des années 2010 dans le cadre de la diversification des revenus agricoles et de la transition énergétique. Cuves cylindriques coiffées d’une membrane souple de stockage du gaz, unité de cogénération ou d’injection au réseau attenante.",
@@ -11113,6 +11276,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Coll%C3%A8ge_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Coll%C3%A8ge%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Établissement d’enseignement secondaire du premier cycle, généralisé après la réforme du collège unique de 1975 unifiant les filières. Construction souvent standardisée et préfabriquée durant les Trente Glorieuses pour répondre rapidement à la démocratisation scolaire, certains modèles industrialisés (type Pailleron) ayant depuis été largement décriés et reconstruits.",
@@ -11180,6 +11344,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89cole_primaire_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Groupe%20scolaire%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Complexe scolaire communal réunissant école primaire et école maternelle autour d’une cour commune, souvent complété d’un logement de fonction pour les enseignants. Modèle diffusé tout au long du XXe siècle par les communes pour rationaliser l’accueil scolaire local.",
@@ -11247,6 +11412,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Internat_(%C3%A9tablissement_scolaire)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Internat%20scolaire%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment d’hébergement collectif attenant à un établissement scolaire, accueillant les élèves domiciliés trop loin pour un aller-retour quotidien. Dortoirs communs à l’origine, progressivement remplacés par des chambres individuelles ou collectives réduites au cours du XXe siècle.",
@@ -11315,6 +11481,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Gymnase_(sport)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Gymnase%20scolaire%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Bâtiment sportif attenant à un établissement scolaire, généralisé après l’inscription de l’éducation physique et sportive au programme obligatoire. Grande halle dégagée sans poteau intermédiaire, gradins rétractables et vestiaires attenants.",
@@ -11382,6 +11549,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89cole_primaire_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89cole%20rurale%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Petite école communale à classe unique, réunissant plusieurs niveaux d’âge sous l’autorité d’un seul instituteur, caractéristique des petites communes rurales avant les regroupements pédagogiques du XXe siècle. Logement de fonction généralement intégré au même bâtiment que la salle de classe.",
@@ -11449,6 +11617,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Restauration_scolaire',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cantine%20scolaire%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
     periodeTags: ['XXe'],
     resume:
       "Bâtiment ou aile dédiée à la restauration collective des élèves, généralisé avec l’allongement de la journée scolaire et la généralisation du transport scolaire éloignant les élèves de leur domicile à l’heure du déjeuner. Cuisine, salle de restauration et parfois self-service organisent l’espace.",
