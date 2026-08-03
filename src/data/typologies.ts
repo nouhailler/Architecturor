@@ -5013,7 +5013,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Colombier_(%C3%A9difice)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Colombier%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Grand_Colombier,_Ain,_France.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "Tour d’élevage de pigeons réservée avant la Révolution aux seigneurs justiciers, dont la capacité en boulins était réglementairement proportionnée à l’étendue des terres possédées. La fiente de pigeon, engrais précieux (colombine), et la chair de l’oiseau en faisaient un symbole de prestige autant qu’un outil agronomique.",
@@ -5693,7 +5693,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Haut_fourneau',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Haut-fourneau%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Uckange_-_Parc_du_haut-fourneau_U4_-_11.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Tour métallurgique monumentale où le minerai de fer, le coke et le calcaire fondent en continu pour produire de la fonte liquide, dans un cycle alimenté par le sommet (gueulard) et vidé à la base. Symbole de la sidérurgie lorraine, le haut-fourneau domine ses usines de plusieurs dizaines de mètres.",
@@ -5897,7 +5897,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Distillerie',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Distillerie%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Distillerie_Sécrestat_2012-10-05_15-56-59.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Établissement de distillation organisé autour des alambics de cuivre et des chais de vieillissement où les eaux-de-vie murissent en fût pendant des années. Le champignon noir qui noircit les murs extérieurs des chais, nourri par la vapeur d’alcool évaporée (la « part des anges »), signale de loin la présence d’une distillerie.",
@@ -6305,7 +6305,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Entrep%C3%B4t',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Entrep%C3%B4t%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Dock_des_Suds_in_Marseille_-_France.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Grand bâtiment de stockage à structure répétitive, en brique puis en béton armé, offrant de vastes plateaux libres desservis par des quais de chargement et des monte-charges. Implanté près des ports, gares ou canaux, l’entrepôt organise la logistique urbaine avant l’ère du conteneur.",
@@ -7053,7 +7053,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cale_(marine)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cale%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Port_de_la_Cale.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Plan incliné maçonné descendant dans l’eau, permettant de mettre à l’eau ou de haler les barques hors de la mer selon la marée. Élément le plus simple mais le plus indispensable de l’architecture portuaire, la cale organise toute la vie quotidienne d’un village de pêcheurs.",
@@ -8486,7 +8486,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Mausol%C3%A9e',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mausol%C3%A9e%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Lille_tombeau_du_général_Faidherbe_cimetière_de_l\'Est_(2).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Monument funéraire de grande ampleur édifié pour des personnalités ou de grandes familles, empruntant le vocabulaire des temples antiques — coupole, colonnades, fronton sculpté. Édifice isolé et centré, souvent visible de loin dans le paysage du cimetière, dont il constitue l’un des points d’orgue architecturaux.",
@@ -8690,7 +8690,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Monument_aux_morts',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Monument%20aux%20morts%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Verna_-_Monument_aux_morts_1914-1918.JPG'],
     periodeTags: ['XXe'],
     resume:
       "Mémorial édifié dans la quasi-totalité des communes françaises au lendemain de la Première Guerre mondiale, pour honorer la mémoire des soldats morts pour la France. Érigé sur la place publique, souvent face à la mairie, il associe socle de pierre, liste nominative des morts et parfois statuaire allégorique.",
@@ -9574,7 +9574,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Casino_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Casino%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Casino_Cabourg.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Édifice de loisirs et de jeux né de l’essor des villes d’eaux et des stations balnéaires au XIXe siècle, réunissant salles de jeux, salle de bal, théâtre et terrasses sous une architecture éclectique et festive. Symbole de la Belle Époque, souvent la pièce maîtresse du front de mer ou du quartier thermal.",
@@ -9710,7 +9710,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Salle_de_cin%C3%A9ma',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cin%C3%A9ma%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['GrandRexFacade90ans.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Salle de spectacle dédiée à la projection cinématographique, généralisée après l’essor du cinéma parlant à la fin des années 1920. Façade souvent traitée en Art déco ou en style paquebot, grande salle obscure en gradins, enseigne lumineuse signalant l’établissement dans la rue commerçante.",
@@ -9982,7 +9982,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Belle_%C3%89poque',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Villa%20Belle%20%C3%89poque%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Villa_La_Belle_Époque_01.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Résidence secondaire cossue édifiée par la bourgeoisie et l’aristocratie sur le front de mer des stations balnéaires naissantes, mêlant éclectisme régionaliste — chalet normand, cottage anglais, style basque — et fantaisie décorative. Tourelles, bow-windows, vérandas et jardins clos affirment le statut social du propriétaire.",
@@ -10118,7 +10118,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/H%C3%B4tellerie',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grand%20h%C3%B4tel%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Le_Grand_Hôtel_de_Dinard.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Établissement hôtelier de grand luxe édifié en front de mer pour accueillir la clientèle internationale des stations balnéaires à la Belle Époque, avec façade monumentale à répétition de travées, hall d’apparat, salons de réception et longue terrasse ou promenade couverte face à l’océan.",
@@ -10254,7 +10254,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cabine_de_bain',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Pavillon%20de%20plage%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Fréhel_-_Sables-d\'Or-les-Pins_coin_de_plage_et_cabines_de_bain_-_AD22_-_16FI1279.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Petit établissement léger en bois implanté directement sur le sable ou la digue, louant cabines de bain, transats et parasols aux baigneurs. Architecture éphémère et colorée, souvent démontée hors saison, symbole populaire des vacances balnéaires françaises du XXe siècle.",
@@ -11071,7 +11071,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89levage_porcin',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Porcherie%20industrielle%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Bais_(35)_Porche_13.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Bâtiment fermé compartimenté en cases, destiné à l’élevage intensif de porcs sur caillebotis intégral au-dessus d’une fosse à lisier. Ventilation mécanique contrôlée, chauffage localisé pour les porcelets et alimentation automatisée caractérisent cette architecture agro-industrielle développée notamment en Bretagne.",
@@ -11344,7 +11344,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89cole_primaire_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Groupe%20scolaire%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Lyon_3e_-_Passage_Roger_Bréchan_-_Groupe_scolaire_Professeur_Gabriel_Nové_Josserand.jpeg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Complexe scolaire communal réunissant école primaire et école maternelle autour d’une cour commune, souvent complété d’un logement de fonction pour les enseignants. Modèle diffusé tout au long du XXe siècle par les communes pour rationaliser l’accueil scolaire local.",
@@ -11412,7 +11412,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Internat_(%C3%A9tablissement_scolaire)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Internat%20scolaire%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Lycée_Descartes_-_Intérieur,_le_dortoir_-_Tours_-_Médiathèque_de_l\'architecture_et_du_patrimoine_-_APZ0006576.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment d’hébergement collectif attenant à un établissement scolaire, accueillant les élèves domiciliés trop loin pour un aller-retour quotidien. Dortoirs communs à l’origine, progressivement remplacés par des chambres individuelles ou collectives réduites au cours du XXe siècle.",
@@ -11481,7 +11481,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Gymnase_(sport)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Gymnase%20scolaire%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Lyon_8e_-_Gymnase_Colbert,_vue_façade_ouest_(août_2025).jpg'],
     periodeTags: ['XXe'],
     resume:
       "Bâtiment sportif attenant à un établissement scolaire, généralisé après l’inscription de l’éducation physique et sportive au programme obligatoire. Grande halle dégagée sans poteau intermédiaire, gradins rétractables et vestiaires attenants.",
