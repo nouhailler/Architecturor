@@ -238,6 +238,8 @@ const groupByCategorie = (items: Typologie[]) => {
 export default function CarteTypologies() {
   const navigate = useNavigate()
   const [maximized, setMaximized] = useState(false)
+  const [selectedRegion, setSelectedRegion] = useState(REGION_GROUPS[0][0])
+  const selectedItems = REGION_GROUPS.find(([region]) => region === selectedRegion)?.[1] ?? []
 
   const handlePin = (id: string) => {
     navigate(`/typologie/${id}`)
@@ -346,55 +348,67 @@ export default function CarteTypologies() {
         <div className={styles.mapLegend}>Tracé IGN · France métropolitaine</div>
       </div>
 
-      {/* Liste légende, organisée par région */}
-      <div className={styles.legendList}>
-        {REGION_GROUPS.map(([region, items]) => (
-          <div key={region} className={styles.legendGroup}>
-            <div className={styles.legendGroupHeader}>
-              <span>{region}</span>
-              <span className={styles.legendGroupCount}>{items.length}</span>
-            </div>
-            {items.length > COMBO_THRESHOLD ? (
-              <div className={styles.comboWrap}>
-                <select
-                  className={styles.comboSelect}
-                  defaultValue=""
-                  onChange={(e) => {
-                    if (e.target.value) handlePin(e.target.value)
-                  }}
-                  aria-label={`Choisir une typologie parmi « ${region} »`}
-                >
-                  <option value="" disabled>
-                    Choisir parmi les {items.length} typologies…
-                  </option>
-                  {groupByCategorie(items).map(([cat, catItems]) => (
-                    <optgroup key={cat} label={CATEGORIES_MAP[cat]?.label ?? cat}>
-                      {catItems.map((t) => (
-                        <option key={t.id} value={t.id}>{t.name}</option>
-                      ))}
-                    </optgroup>
-                  ))}
-                </select>
-                <CaretDown size={13} className={styles.comboCaret} />
-              </div>
-            ) : (
-              items.map((t) => (
-                <button
-                  key={t.id}
-                  className={styles.legendItem}
-                  onClick={() => handlePin(t.id)}
-                >
-                  <div className={styles.legendDot} />
-                  <div className={styles.legendInfo}>
-                    <div className={styles.legendName}>{t.name}</div>
-                    <div className={styles.legendSub}>{t.region.split(' · ')[0]} · {t.periode}</div>
-                  </div>
-                  <ArrowRight size={15} color="var(--color-neutral-500)" weight="regular" />
-                </button>
-              ))
-            )}
+      {/* Sélecteur de région + typologies de la région choisie */}
+      <div className={styles.regionSection}>
+        <div className={styles.regionPickerRow}>
+          <label htmlFor="region-picker" className={styles.regionPickerLabel}>Région</label>
+          <div className={styles.comboWrap}>
+            <select
+              id="region-picker"
+              className={styles.comboSelect}
+              value={selectedRegion}
+              onChange={(e) => setSelectedRegion(e.target.value)}
+            >
+              {REGION_GROUPS.map(([region, items]) => (
+                <option key={region} value={region}>{region} · {items.length}</option>
+              ))}
+            </select>
+            <CaretDown size={13} className={styles.comboCaret} />
           </div>
-        ))}
+        </div>
+
+        {selectedItems.length > COMBO_THRESHOLD ? (
+          <div className={styles.comboWrap}>
+            <select
+              key={selectedRegion}
+              className={styles.comboSelect}
+              defaultValue=""
+              onChange={(e) => {
+                if (e.target.value) handlePin(e.target.value)
+              }}
+              aria-label={`Choisir une typologie parmi « ${selectedRegion} »`}
+            >
+              <option value="" disabled>
+                Choisir parmi les {selectedItems.length} typologies…
+              </option>
+              {groupByCategorie(selectedItems).map(([cat, catItems]) => (
+                <optgroup key={cat} label={CATEGORIES_MAP[cat]?.label ?? cat}>
+                  {catItems.map((t) => (
+                    <option key={t.id} value={t.id}>{t.name}</option>
+                  ))}
+                </optgroup>
+              ))}
+            </select>
+            <CaretDown size={13} className={styles.comboCaret} />
+          </div>
+        ) : (
+          <div className={styles.legendGroup}>
+            {selectedItems.map((t) => (
+              <button
+                key={t.id}
+                className={styles.legendItem}
+                onClick={() => handlePin(t.id)}
+              >
+                <div className={styles.legendDot} />
+                <div className={styles.legendInfo}>
+                  <div className={styles.legendName}>{t.name}</div>
+                  <div className={styles.legendSub}>{t.region.split(' · ')[0]} · {t.periode}</div>
+                </div>
+                <ArrowRight size={15} color="var(--color-neutral-500)" weight="regular" />
+              </button>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

@@ -1,8 +1,7 @@
 .grid {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 18px;
-  align-items: stretch;
 }
 
 .gridMaximized {
@@ -11,8 +10,6 @@
   z-index: 200;
   background: var(--color-bg);
   padding: 16px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
   overflow: hidden;
 }
 
@@ -86,10 +83,26 @@
   pointer-events: none;
 }
 
-.legendList {
+.regionSection {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 14px;
+}
+
+.regionPickerRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.regionPickerLabel {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-neutral-500);
+  flex-shrink: 0;
 }
 
 .legendGroup {
@@ -98,30 +111,10 @@
   gap: 8px;
 }
 
-.legendGroupHeader {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 0 2px;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color-neutral-500);
-}
-
-.legendGroupCount {
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 11px;
-  color: var(--color-neutral-600);
-}
-
 .comboWrap {
   position: relative;
   display: flex;
+  flex: 1;
 }
 
 .comboSelect {
