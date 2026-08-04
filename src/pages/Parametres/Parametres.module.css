@@ -177,6 +177,18 @@
   color: #f0a3a3;
 }
 
+.resultWarning {
+  background: color-mix(in srgb, #e0a852 14%, transparent);
+  border: 1px solid color-mix(in srgb, #e0a852 35%, transparent);
+  color: #f0cf8f;
+}
+
+.pendingActions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
 .resultErrorHeader {
   display: flex;
   align-items: center;

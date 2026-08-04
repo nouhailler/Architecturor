@@ -1,9 +1,10 @@
 import { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { DownloadSimple, UploadSimple, CheckCircle, WarningCircle, Trash, ArrowRight, CaretDown, CaretUp } from '@phosphor-icons/react'
-import { TYPOLOGIES, CATEGORIES } from '../../data/typologies'
+import { TYPOLOGIES, CATEGORIES, type Typologie } from '../../data/typologies'
 import { TYPOLOGIE_TEMPLATE, VALID_SECTION_ICONS, validateTypologieImport } from '../../data/typologieSchema'
 import { useCustomTypologies, addCustomTypologie, removeCustomTypologie } from '../../utils/customTypologies'
+import { findDuplicates, type DuplicateMatch } from '../../utils/duplicates'
 import styles from './Parametres.module.css'
 
 function download(filename: string, content: string) {
@@ -25,9 +26,11 @@ export default function Parametres() {
   const [pasted, setPasted] = useState('')
   const [showGabarit, setShowGabarit] = useState(false)
   const [result, setResult] = useState<{ ok: boolean; errors: string[]; name?: string } | null>(null)
+  const [pending, setPending] = useState<{ typologie: Typologie; exact: DuplicateMatch[]; similar: DuplicateMatch[] } | null>(null)
 
   const allTypologies = [...TYPOLOGIES, ...customTypologies]
   const existingIds = new Set(allTypologies.map((t) => t.id))
+  const builtInIds = new Set(TYPOLOGIES.map((t) => t.id))
 
   const handleExport = () => {
     download('typologies-inventaire-du-bati.json', JSON.stringify(allTypologies, null, 2))
@@ -37,7 +40,16 @@ export default function Parametres() {
     download('typologie-gabarit.json', JSON.stringify(TYPOLOGIE_TEMPLATE, null, 2))
   }
 
+  const commitImport = (typologie: Typologie) => {
+    addCustomTypologie(typologie)
+    setResult({ ok: true, errors: [], name: typologie.name })
+    setPending(null)
+    setPasted('')
+    if (fileInputRef.current) fileInputRef.current.value = ''
+  }
+
   const runImport = (raw: string) => {
+    setPending(null)
     let parsed: unknown
     try {
       parsed = JSON.parse(raw)
@@ -50,10 +62,15 @@ export default function Parametres() {
       setResult({ ok: false, errors: validation.errors })
       return
     }
-    addCustomTypologie(validation.typologie)
-    setResult({ ok: true, errors: [], name: validation.typologie.name })
-    setPasted('')
-    if (fileInputRef.current) fileInputRef.current.value = ''
+
+    const { exact, similar } = findDuplicates(validation.typologie.name, allTypologies)
+    if (exact.length > 0 || similar.length > 0) {
+      setResult(null)
+      setPending({ typologie: validation.typologie, exact, similar })
+      return
+    }
+
+    commitImport(validation.typologie)
   }
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -141,6 +158,39 @@ export default function Parametres() {
             Valider et importer ce texte
           </button>
         </div>
+
+        {pending && (
+          <div className={`${styles.resultBox} ${styles.resultWarning}`}>
+            <div>
+              <div className={styles.resultErrorHeader}>
+                <WarningCircle size={18} weight="fill" />
+                <span>{pending.exact.length > 0 ? 'Doublon probable détecté' : 'Nom très proche d\'une typologie existante'}</span>
+              </div>
+              <ul className={styles.errorList}>
+                {[...pending.exact, ...pending.similar].map((m) => (
+                  <li key={m.typologie.id}>
+                    « {pending.typologie.name} » a un nom {m.reason} à « {m.typologie.name} » (id : {m.typologie.id}
+                    {!builtInIds.has(m.typologie.id) ? ', importée' : ''}
+                    ).
+                  </li>
+                ))}
+              </ul>
+              <p style={{ margin: '10px 0', fontSize: 13 }}>
+                {pending.exact.length > 0
+                  ? "Il s'agit probablement de la même typologie. Vérifiez avant de continuer — importer quand même créera une deuxième fiche distincte."
+                  : 'Vérifiez qu\'il ne s\'agit pas du même bâtiment sous un nom légèrement différent avant de continuer.'}
+              </p>
+              <div className={styles.pendingActions}>
+                <button className="btn btn-secondary" onClick={() => commitImport(pending.typologie)}>
+                  Importer quand même
+                </button>
+                <button className="btn btn-ghost" onClick={() => setPending(null)}>
+                  Annuler
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
 
         {result && (
           <div className={`${styles.resultBox} ${result.ok ? styles.resultOk : styles.resultError}`}>
