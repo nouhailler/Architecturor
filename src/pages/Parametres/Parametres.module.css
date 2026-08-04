@@ -1,0 +1,246 @@
+.wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 38px 24px 60px;
+}
+
+.h1 {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 4px;
+}
+
+.sub {
+  color: var(--color-neutral-400);
+  font-size: 15px;
+  margin: 0 0 26px;
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 22px 24px;
+  margin-bottom: 20px;
+}
+
+.cardLabel {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent-300);
+  margin-bottom: 12px;
+}
+
+.text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--color-neutral-300);
+  margin: 0 0 16px;
+}
+
+.gabaritRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.toggleGabarit {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: var(--color-accent-300);
+  font-size: 12.5px;
+  cursor: pointer;
+  padding: 4px 2px;
+}
+
+.toggleGabarit:hover {
+  text-decoration: underline;
+}
+
+.gabaritBox {
+  margin: 14px 0;
+  padding: 14px 16px;
+  background: var(--color-neutral-900);
+  border-radius: var(--radius-md);
+}
+
+.fieldList {
+  margin: 0 0 14px;
+  padding-left: 18px;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--color-neutral-300);
+}
+
+.fieldList code {
+  color: var(--color-accent-300);
+  font-size: 12px;
+}
+
+.pre {
+  max-height: 360px;
+  overflow: auto;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: var(--color-neutral-300);
+  background: var(--color-bg);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.importZone {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.fileLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--color-neutral-700);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.14s ease;
+}
+
+.fileLabel:hover {
+  background: var(--color-neutral-900);
+}
+
+.fileInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.orDivider {
+  font-size: 11.5px;
+  color: var(--color-neutral-600);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 110px;
+  background: var(--color-neutral-900);
+  border: 1px solid var(--color-neutral-700);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--color-text);
+  resize: vertical;
+}
+
+.textarea:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.resultBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.resultOk {
+  background: color-mix(in srgb, #3ba55d 18%, transparent);
+  border: 1px solid color-mix(in srgb, #3ba55d 40%, transparent);
+  color: #7fd99a;
+}
+
+.resultError {
+  background: color-mix(in srgb, #e05252 14%, transparent);
+  border: 1px solid color-mix(in srgb, #e05252 35%, transparent);
+  color: #f0a3a3;
+}
+
+.resultErrorHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.errorList {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.note {
+  font-size: 12px;
+  color: var(--color-neutral-500);
+  line-height: 1.6;
+  margin: 18px 0 0;
+}
+
+.customList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.customItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-neutral-900);
+  border-radius: 10px;
+  padding: 4px 4px 4px 14px;
+}
+
+.customItemName {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-size: 13.5px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.customItemDelete {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background: none;
+  color: var(--color-neutral-500);
+  cursor: pointer;
+}
+
+.customItemDelete:hover {
+  background: color-mix(in srgb, #e05252 18%, transparent);
+  color: #f0a3a3;
+}

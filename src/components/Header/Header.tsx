@@ -1,4 +1,4 @@
-import { Buildings } from '@phosphor-icons/react'
+import { Buildings, Gear } from '@phosphor-icons/react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import styles from './Header.module.css'
 
@@ -8,6 +8,7 @@ export default function Header() {
 
   const goHome = () => { navigate('/'); window.scrollTo(0, 0) }
   const goCatalogue = () => { navigate('/catalogue'); window.scrollTo(0, 0) }
+  const goParametres = () => { navigate('/parametres'); window.scrollTo(0, 0) }
 
   return (
     <header className={styles.header}>
@@ -34,6 +35,13 @@ export default function Header() {
             onClick={goCatalogue}
           >
             Catalogue
+          </button>
+          <button
+            className={`${styles.navLink} ${location.pathname === '/parametres' ? styles.navLinkActive : ''}`}
+            onClick={goParametres}
+            aria-label="Paramètres"
+          >
+            <Gear size={16} weight="regular" />
           </button>
         </nav>
       </div>

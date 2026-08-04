@@ -1,14 +1,17 @@
 import { FunnelX, X } from '@phosphor-icons/react'
 import { useApp } from '../../context/AppContext'
 import { CATEGORIES_MAP, TYPOLOGIES } from '../../data/typologies'
+import { useCustomTypologies } from '../../utils/customTypologies'
 import FiltersSidebar from './FiltersSidebar'
 import TypologieCard from './TypologieCard'
 import styles from './Catalogue.module.css'
 
 export default function Catalogue() {
   const { q, filters, identiteMatch, clearIdentiteMatch, toggleFilter } = useApp()
+  const customTypologies = useCustomTypologies()
+  const allTypologies = customTypologies.length > 0 ? [...TYPOLOGIES, ...customTypologies] : TYPOLOGIES
 
-  const filtered = TYPOLOGIES.filter((t) => {
+  const filtered = allTypologies.filter((t) => {
     if (filters.categorie.length && !filters.categorie.includes(t.categorie)) return false
     if (filters.procede.length && !filters.procede.includes(t.procede)) return false
     if (filters.usage.length && !filters.usage.includes(t.usage)) return false
@@ -29,7 +32,7 @@ export default function Catalogue() {
       <p className={styles.sub}>Filtrez par catégorie, procédé de construction, usage ou période.</p>
 
       <div className={styles.layout}>
-        <FiltersSidebar typologies={TYPOLOGIES} />
+        <FiltersSidebar typologies={allTypologies} />
 
         <div>
           {(filters.region.length > 0 || identiteMatch) && (

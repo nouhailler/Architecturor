@@ -43,6 +43,20 @@
   border-radius: 20px;
 }
 
+.importedBadge {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-accent-100);
+  background: color-mix(in srgb, var(--color-accent) 55%, var(--color-bg) 45%);
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
 .body {
   padding: 14px;
   display: flex;

@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { ArrowLeft, MapPin } from '@phosphor-icons/react'
 import { CATEGORIES_MAP, TYPOLOGIES_MAP } from '../../data/typologies'
 import { useApp } from '../../context/AppContext'
+import { useCustomTypologies } from '../../utils/customTypologies'
 import CoupeAnnotee from './CoupeAnnotee'
 import ProcedeSections from './ProcedeSections'
 import SidebarIdentite from './SidebarIdentite'
@@ -12,7 +13,9 @@ export default function FicheDetail() {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
   const { setOpen } = useApp()
-  const t = id ? TYPOLOGIES_MAP[id] : null
+  const customTypologies = useCustomTypologies()
+  const t = id ? (TYPOLOGIES_MAP[id] ?? customTypologies.find((c) => c.id === id) ?? null) : null
+  const isImported = Boolean(t && !(t.id in TYPOLOGIES_MAP))
 
   useEffect(() => {
     setOpen({ 0: true })
@@ -48,6 +51,7 @@ export default function FicheDetail() {
             <MapPin size={11} style={{ marginRight: 4 }} />
             {t.region}
           </span>
+          {isImported && <span className="tag tag-accent">Importée localement</span>}
         </div>
 
         <h1 className={styles.h1}>{t.name}</h1>

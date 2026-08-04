@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer'
 import Accueil from './pages/Accueil/Accueil'
 import Catalogue from './pages/Catalogue/Catalogue'
 import FicheDetail from './pages/FicheDetail/FicheDetail'
+import Parametres from './pages/Parametres/Parametres'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
             <Route path="/" element={<Accueil />} />
             <Route path="/catalogue" element={<Catalogue />} />
             <Route path="/typologie/:id" element={<FicheDetail />} />
+            <Route path="/parametres" element={<Parametres />} />
             <Route path="*" element={<Accueil />} />
           </Routes>
         </main>

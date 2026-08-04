@@ -133,21 +133,23 @@ export default function SidebarIdentite({ typologie, identite, materiaux, techni
       </div>
 
       {/* Matériaux */}
-      <div className={styles.card}>
-        <div className={styles.cardLabel}>Matériaux caractéristiques</div>
-        <div className={styles.tags}>
-          {materiaux.map((m) => (
-            <button
-              key={m}
-              type="button"
-              className={`tag tag-neutral ${styles.materialTag}`}
-              onClick={() => setActiveMaterial(m)}
-            >
-              {m}
-            </button>
-          ))}
+      {materiaux.length > 0 && (
+        <div className={styles.card}>
+          <div className={styles.cardLabel}>Matériaux caractéristiques</div>
+          <div className={styles.tags}>
+            {materiaux.map((m) => (
+              <button
+                key={m}
+                type="button"
+                className={`tag tag-neutral ${styles.materialTag}`}
+                onClick={() => setActiveMaterial(m)}
+              >
+                {m}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       <Modal
         open={materialInfo !== null}
@@ -174,30 +176,38 @@ export default function SidebarIdentite({ typologie, identite, materiaux, techni
       </Modal>
 
       {/* Données techniques et de terrain */}
-      <div className={styles.card}>
-        <div className={styles.cardLabel}>Données techniques &amp; de terrain</div>
-        <div className={styles.identiteList}>
-          {techniqueRows.map(([k, v]) => (
-            <div key={k} className={styles.row}>
-              <div className={styles.key}>{k}</div>
-              <div className={styles.value}>{v}</div>
-            </div>
-          ))}
+      {techniqueRows.some(([, v]) => v) && (
+        <div className={styles.card}>
+          <div className={styles.cardLabel}>Données techniques &amp; de terrain</div>
+          <div className={styles.identiteList}>
+            {techniqueRows.filter(([, v]) => v).map(([k, v]) => (
+              <div key={k} className={styles.row}>
+                <div className={styles.key}>{k}</div>
+                <div className={styles.value}>{v}</div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Ressources externes */}
-      <div className={styles.card}>
-        <div className={styles.cardLabel}>Ressources externes</div>
-        <div className={styles.resourceLinks}>
-          <a className={styles.resourceLink} href={wikipediaUrl} target="_blank" rel="noopener noreferrer">
-            Article Wikipédia <ArrowSquareOut size={13} />
-          </a>
-          <a className={styles.resourceLink} href={commonsUrl} target="_blank" rel="noopener noreferrer">
-            Rechercher des photos sur Wikimedia Commons <ArrowSquareOut size={13} />
-          </a>
+      {(wikipediaUrl || commonsUrl) && (
+        <div className={styles.card}>
+          <div className={styles.cardLabel}>Ressources externes</div>
+          <div className={styles.resourceLinks}>
+            {wikipediaUrl && (
+              <a className={styles.resourceLink} href={wikipediaUrl} target="_blank" rel="noopener noreferrer">
+                Article Wikipédia <ArrowSquareOut size={13} />
+              </a>
+            )}
+            {commonsUrl && (
+              <a className={styles.resourceLink} href={commonsUrl} target="_blank" rel="noopener noreferrer">
+                Rechercher des photos sur Wikimedia Commons <ArrowSquareOut size={13} />
+              </a>
+            )}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Galerie */}
       <div className={styles.card} style={{ padding: 14 }}>
