@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ArrowRight, ArrowsOut, ArrowsIn, CaretDown } from '@phosphor-icons/react'
-import { TYPOLOGIES, CATEGORIES_MAP, type Typologie } from '../../data/typologies'
+import { TYPOLOGIES, TYPOLOGIES_MAP, CATEGORIES_MAP, type Typologie } from '../../data/typologies'
+import { commonsFilePath } from '../../utils/commons'
 import styles from './CarteTypologies.module.css'
 
 /* Au-delà de ce nombre d'éléments, un groupe de région affiche une combo box
@@ -235,16 +236,51 @@ const groupByCategorie = (items: Typologie[]) => {
   })
 }
 
+interface HoverState {
+  id: string
+  x: number
+  y: number
+}
+
 export default function CarteTypologies() {
   const navigate = useNavigate()
   const [maximized, setMaximized] = useState(false)
   const [selectedRegion, setSelectedRegion] = useState(REGION_GROUPS[0][0])
   const selectedItems = REGION_GROUPS.find(([region]) => region === selectedRegion)?.[1] ?? []
+  const [hover, setHover] = useState<HoverState | null>(null)
+  const [thumbFailed, setThumbFailed] = useState(false)
+  const mapCardRef = useRef<HTMLDivElement>(null)
+  const svgRef = useRef<SVGSVGElement>(null)
 
   const handlePin = (id: string) => {
     navigate(`/typologie/${id}`)
     window.scrollTo(0, 0)
   }
+
+  const showTooltipAtMouse = (id: string, e: React.MouseEvent) => {
+    const cardRect = mapCardRef.current?.getBoundingClientRect()
+    if (!cardRect) return
+    setThumbFailed(false)
+    setHover({ id, x: e.clientX - cardRect.left, y: e.clientY - cardRect.top })
+  }
+
+  const showTooltipAtPin = (id: string, cx: number, cy: number) => {
+    const cardRect = mapCardRef.current?.getBoundingClientRect()
+    const svgRect = svgRef.current?.getBoundingClientRect()
+    if (!cardRect || !svgRect) return
+    const scaleX = svgRect.width / 1000
+    const scaleY = svgRect.height / 958
+    setThumbFailed(false)
+    setHover({
+      id,
+      x: svgRect.left - cardRect.left + cx * scaleX,
+      y: svgRect.top - cardRect.top + cy * scaleY,
+    })
+  }
+
+  const hideTooltip = () => setHover(null)
+
+  const hoveredTypologie = hover ? TYPOLOGIES_MAP[hover.id] : null
 
   useEffect(() => {
     if (!maximized) return
@@ -266,7 +302,7 @@ export default function CarteTypologies() {
   return (
     <div className={`${styles.grid} ${maximized ? styles.gridMaximized : ''}`}>
       {/* Carte SVG */}
-      <div className={`${styles.mapCard} ${maximized ? styles.mapCardMaximized : ''}`}>
+      <div ref={mapCardRef} className={`${styles.mapCard} ${maximized ? styles.mapCardMaximized : ''}`}>
         <button
           className={styles.maximizeBtn}
           onClick={() => setMaximized((v) => !v)}
@@ -276,6 +312,7 @@ export default function CarteTypologies() {
           {maximized ? 'Réduire la carte' : 'Maximiser la carte'}
         </button>
         <svg
+          ref={svgRef}
           viewBox="0 0 1000 958"
           style={maximized ? { width: '100%', height: '100%', display: 'block' } : { width: '100%', height: 'auto', display: 'block' }}
         >
@@ -291,8 +328,17 @@ export default function CarteTypologies() {
               key={pin.id}
               className={styles.pin}
               onClick={() => handlePin(pin.id)}
+              onMouseEnter={(e) => showTooltipAtMouse(pin.id, e)}
+              onMouseMove={(e) => showTooltipAtMouse(pin.id, e)}
+              onMouseLeave={hideTooltip}
+              onFocus={() => showTooltipAtPin(pin.id, pin.cx, pin.cy)}
+              onBlur={hideTooltip}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handlePin(pin.id) }
+              }}
               style={{ cursor: 'pointer' }}
               role="button"
+              tabIndex={0}
               aria-label={pin.label}
             >
               {pin.pulse && (
@@ -338,14 +384,39 @@ export default function CarteTypologies() {
               opacity={0.75}
               style={{ cursor: 'pointer' }}
               onClick={() => handlePin(pin.id)}
+              onMouseEnter={(e) => showTooltipAtMouse(pin.id, e)}
+              onMouseMove={(e) => showTooltipAtMouse(pin.id, e)}
+              onMouseLeave={hideTooltip}
+              onFocus={() => showTooltipAtPin(pin.id, pin.cx, pin.cy)}
+              onBlur={hideTooltip}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handlePin(pin.id) }
+              }}
               role="button"
+              tabIndex={0}
               aria-label={pin.label}
-            >
-              <title>{pin.label}</title>
-            </circle>
+            />
           ))}
         </svg>
         <div className={styles.mapLegend}>Tracé IGN · France métropolitaine</div>
+
+        {/* Infobulle : nom + miniature au survol/focus d'un point */}
+        {hover && hoveredTypologie && (
+          <div
+            className={styles.mapTooltip}
+            style={{ left: hover.x, top: hover.y }}
+          >
+            <div className={styles.mapTooltipName}>{hoveredTypologie.name}</div>
+            {hoveredTypologie.images.length > 0 && !thumbFailed && (
+              <img
+                className={styles.mapTooltipImg}
+                src={commonsFilePath(hoveredTypologie.images[0], 160)}
+                alt={hoveredTypologie.name}
+                onError={() => setThumbFailed(true)}
+              />
+            )}
+          </div>
+        )}
       </div>
 
       {/* Sélecteur de région + typologies de la région choisie */}

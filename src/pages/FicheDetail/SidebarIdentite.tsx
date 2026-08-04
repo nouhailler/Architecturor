@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Image, ArrowSquareOut } from '@phosphor-icons/react'
 import type { Typologie } from '../../data/typologies'
 import { getMaterialInfo, wikipediaSearchUrl } from '../../data/materiaux'
+import { commonsFilePath, commonsFilePage } from '../../utils/commons'
 import Modal from '../../components/Modal/Modal'
 import styles from './SidebarIdentite.module.css'
 
@@ -56,22 +57,6 @@ interface Props {
   name: string
 }
 
-// Un nom d'image préfixé par "wp:" désigne un fichier hébergé localement sur
-// fr.wikipedia.org plutôt que sur Wikimedia Commons (rare, cas des fichiers non partagés).
-function resolveImageRef(ref: string): { host: string; fileName: string } {
-  if (ref.startsWith('wp:')) return { host: 'fr.wikipedia.org', fileName: ref.slice(3) }
-  return { host: 'commons.wikimedia.org', fileName: ref }
-}
-
-function commonsFilePath(ref: string, width = 480): string {
-  const { host, fileName } = resolveImageRef(ref)
-  return `https://${host}/wiki/Special:FilePath/${encodeURIComponent(fileName)}?width=${width}`
-}
-
-function commonsFilePage(ref: string): string {
-  const { host, fileName } = resolveImageRef(ref)
-  return `https://${host}/wiki/File:${encodeURIComponent(fileName)}`
-}
 
 export default function SidebarIdentite({ identite, materiaux, technique, wikipediaUrl, commonsUrl, images, name }: Props) {
   const [activeMaterial, setActiveMaterial] = useState<string | null>(null)
