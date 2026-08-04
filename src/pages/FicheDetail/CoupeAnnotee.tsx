@@ -1,7 +1,21 @@
+import { useState } from 'react'
 import type { Annotation } from '../../data/typologies'
 import styles from './CoupeAnnotee.module.css'
 
+const PIN_POSITIONS: Record<number, { cx: number; cy: number }> = {
+  1: { cx: 278, cy: 80 },
+  2: { cx: 34, cy: 150 },
+  3: { cx: 34, cy: 238 },
+  4: { cx: 286, cy: 150 },
+  5: { cx: 286, cy: 250 },
+  6: { cx: 34, cy: 340 },
+}
+
 export default function CoupeAnnotee({ annotations }: { annotations: Annotation[] }) {
+  const [active, setActive] = useState<number | null>(null)
+
+  const toggle = (n: number) => setActive((cur) => (cur === n ? null : n))
+
   return (
     <div className={styles.card}>
       <div className={styles.label}>Coupe schématique annotée</div>
@@ -39,27 +53,55 @@ export default function CoupeAnnotee({ annotations }: { annotations: Annotation[
             <line x1="203" y1="285" x2="276" y2="250" />
             <line x1="90" y1="335" x2="44" y2="340" />
           </g>
-          {/* Pastilles numérotées */}
+          {/* Pastilles numérotées — cliquables */}
           <g fontSize="15" fontFamily="var(--font-heading)" fontWeight="600">
-            <circle cx="278" cy="80"  r="13" fill="var(--color-accent)" /><text x="278" y="85"  textAnchor="middle" fill="var(--color-bg)">1</text>
-            <circle cx="34"  cy="150" r="13" fill="var(--color-accent)" /><text x="34"  y="155" textAnchor="middle" fill="var(--color-bg)">2</text>
-            <circle cx="34"  cy="238" r="13" fill="var(--color-accent)" /><text x="34"  y="243" textAnchor="middle" fill="var(--color-bg)">3</text>
-            <circle cx="286" cy="150" r="13" fill="var(--color-accent)" /><text x="286" y="155" textAnchor="middle" fill="var(--color-bg)">4</text>
-            <circle cx="286" cy="250" r="13" fill="var(--color-accent)" /><text x="286" y="255" textAnchor="middle" fill="var(--color-bg)">5</text>
-            <circle cx="34"  cy="340" r="13" fill="var(--color-accent)" /><text x="34"  y="345" textAnchor="middle" fill="var(--color-bg)">6</text>
+            {annotations.map((a) => {
+              const pos = PIN_POSITIONS[a.n]
+              if (!pos) return null
+              const isActive = active === a.n
+              return (
+                <g
+                  key={a.n}
+                  className={styles.pin}
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`${a.n}. ${a.el}`}
+                  aria-pressed={isActive}
+                  onClick={() => toggle(a.n)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault()
+                      toggle(a.n)
+                    }
+                  }}
+                >
+                  {isActive && (
+                    <circle cx={pos.cx} cy={pos.cy} r="18" fill="none" stroke="var(--color-accent)" strokeWidth="1.5" opacity={0.55} />
+                  )}
+                  <circle className={styles.pinCircle} cx={pos.cx} cy={pos.cy} r="13" fill={isActive ? 'var(--color-accent-300)' : 'var(--color-accent)'} />
+                  <text x={pos.cx} y={pos.cy + 5} textAnchor="middle" fill="var(--color-bg)">{a.n}</text>
+                </g>
+              )
+            })}
           </g>
         </svg>
 
         {/* Annotations */}
         <div className={styles.annotations}>
           {annotations.map((a) => (
-            <div key={a.n} className={styles.annotation}>
+            <button
+              key={a.n}
+              type="button"
+              className={`${styles.annotation} ${active === a.n ? styles.annotationActive : ''}`}
+              onClick={() => toggle(a.n)}
+              aria-pressed={active === a.n}
+            >
               <div className={styles.annotationNum}>{a.n}</div>
               <div>
                 <div className={styles.annotationEl}>{a.el}</div>
                 <div className={styles.annotationTxt}>{a.txt}</div>
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>
