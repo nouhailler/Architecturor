@@ -1,5 +1,6 @@
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { CaretDown } from '@phosphor-icons/react'
 import styles from './FriseChronologique.module.css'
 
 /* Année de départ et durée totale de la frise */
@@ -182,16 +183,58 @@ const LANES = [
 
 const TICKS = [900, 1100, 1300, 1500, 1700, 1900, 2000]
 
+/* Regroupement des typologies par grande période, pour éviter d'afficher
+   les 168 lignes en une seule fois — voir la combo box « Période ». */
+const ERAS = [
+  { id: 'moyenage',   label: 'Moyen Âge',                               from: 900,  to: 1500 },
+  { id: 'renaissance', label: 'Renaissance & Grand Siècle',             from: 1500, to: 1700 },
+  { id: 'lumieres',   label: 'Siècle des Lumières',                     from: 1700, to: 1800 },
+  { id: 'xixe1',      label: 'Premier XIXe siècle',                     from: 1800, to: 1850 },
+  { id: 'xixe2',      label: 'Second XIXe siècle',                      from: 1850, to: 1900 },
+  { id: 'xxe1',       label: 'Belle Époque & entre-deux-guerres',       from: 1900, to: 1950 },
+  { id: 'xxe2',       label: 'Époque contemporaine',                    from: 1950, to: 2021 },
+] as const
+
+const eraOf = (from: number) => ERAS.find((e) => from >= e.from && from < e.to)?.id ?? ERAS[ERAS.length - 1].id
+
+const ERA_LANES = ERAS.map((era) => ({
+  era,
+  lanes: LANES.filter((l) => eraOf(l.from) === era.id),
+}))
+
 export default function FriseChronologique() {
   const navigate = useNavigate()
+  const [selectedEra, setSelectedEra] = useState<string>(ERAS[0].id)
 
   const handleLane = (id: string) => {
     navigate(`/typologie/${id}`)
     window.scrollTo(0, 0)
   }
 
+  const current = ERA_LANES.find((e) => e.era.id === selectedEra) ?? ERA_LANES[0]
+
   return (
     <div className={styles.surface}>
+      {/* Sélecteur de période */}
+      <div className={styles.pickerRow}>
+        <label htmlFor="era-picker" className={styles.pickerLabel}>Période</label>
+        <div className={styles.comboWrap}>
+          <select
+            id="era-picker"
+            className={styles.comboSelect}
+            value={selectedEra}
+            onChange={(e) => setSelectedEra(e.target.value)}
+          >
+            {ERA_LANES.map(({ era, lanes }) => (
+              <option key={era.id} value={era.id}>
+                {era.label} ({era.from}–{era.to === 2021 ? 2020 : era.to}) · {lanes.length}
+              </option>
+            ))}
+          </select>
+          <CaretDown size={13} className={styles.comboCaret} />
+        </div>
+      </div>
+
       <div className={styles.grid}>
         {/* Axe temporel */}
         <div />
@@ -207,14 +250,14 @@ export default function FriseChronologique() {
           ))}
         </div>
 
-        {/* Lanes */}
-        {LANES.map((lane, i) => (
+        {/* Lanes de la période sélectionnée */}
+        {current.lanes.map((lane, i) => (
           <Fragment key={lane.id}>
             <div className={styles.laneLabel}>
               {lane.label}
             </div>
             <div
-              className={`${styles.track} ${i < LANES.length - 1 ? styles.trackBorder : ''}`}
+              className={`${styles.track} ${i < current.lanes.length - 1 ? styles.trackBorder : ''}`}
               onClick={() => handleLane(lane.id)}
             >
               <div
