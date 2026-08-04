@@ -119,6 +119,45 @@
   color: var(--color-neutral-600);
 }
 
+.comboWrap {
+  position: relative;
+  display: flex;
+}
+
+.comboSelect {
+  width: 100%;
+  background: var(--color-surface);
+  border: none;
+  border-radius: 10px;
+  box-shadow: var(--shadow-sm);
+  padding: 13px 36px 13px 14px;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--color-text);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.comboSelect:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.comboSelect option:disabled {
+  color: var(--color-neutral-500);
+}
+
+.comboCaret {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-neutral-500);
+  pointer-events: none;
+}
+
 .legendItem {
   cursor: pointer;
   background: var(--color-surface);
