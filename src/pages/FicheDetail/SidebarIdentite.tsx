@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Image, ArrowSquareOut } from '@phosphor-icons/react'
 import type { Typologie } from '../../data/typologies'
+import { getMaterialInfo, wikipediaSearchUrl } from '../../data/materiaux'
+import Modal from '../../components/Modal/Modal'
 import styles from './SidebarIdentite.module.css'
 
 function GalleryImage({ fileName, alt }: { fileName: string; alt: string }) {
@@ -72,6 +74,9 @@ function commonsFilePage(ref: string): string {
 }
 
 export default function SidebarIdentite({ identite, materiaux, technique, wikipediaUrl, commonsUrl, images, name }: Props) {
+  const [activeMaterial, setActiveMaterial] = useState<string | null>(null)
+  const materialInfo = activeMaterial ? getMaterialInfo(activeMaterial) : null
+
   const techniqueRows: [string, string][] = [
     ['Coordonnées GPS moyennes', technique.gps],
     ['Altitude habituelle', technique.altitude],
@@ -105,10 +110,41 @@ export default function SidebarIdentite({ identite, materiaux, technique, wikipe
         <div className={styles.cardLabel}>Matériaux caractéristiques</div>
         <div className={styles.tags}>
           {materiaux.map((m) => (
-            <span key={m} className="tag tag-neutral">{m}</span>
+            <button
+              key={m}
+              type="button"
+              className={`tag tag-neutral ${styles.materialTag}`}
+              onClick={() => setActiveMaterial(m)}
+            >
+              {m}
+            </button>
           ))}
         </div>
       </div>
+
+      <Modal
+        open={materialInfo !== null}
+        onClose={() => setActiveMaterial(null)}
+        title={materialInfo?.title ?? ''}
+        subtitle={materialInfo?.detail ?? undefined}
+      >
+        {materialInfo && (
+          <>
+            <p>{materialInfo.description}</p>
+            {!materialInfo.found && (
+              <a
+                className={styles.resourceLink}
+                href={wikipediaSearchUrl(materialInfo.title)}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ marginTop: 10 }}
+              >
+                Rechercher « {materialInfo.title} » sur Wikipédia <ArrowSquareOut size={13} />
+              </a>
+            )}
+          </>
+        )}
+      </Modal>
 
       {/* Données techniques et de terrain */}
       <div className={styles.card}>

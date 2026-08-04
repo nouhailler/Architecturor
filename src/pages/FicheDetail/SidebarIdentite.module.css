@@ -48,6 +48,17 @@
   gap: 7px;
 }
 
+.materialTag {
+  cursor: pointer;
+  transition: background 0.14s ease, border-color 0.14s ease, color 0.14s ease;
+}
+
+.materialTag:hover {
+  background: color-mix(in srgb, var(--color-accent) 16%, transparent);
+  border-color: var(--color-accent-700);
+  color: var(--color-accent-300);
+}
+
 .resourceLinks {
   display: flex;
   flex-direction: column;
