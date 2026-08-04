@@ -4,7 +4,7 @@ import { DownloadSimple, UploadSimple, CheckCircle, WarningCircle, Trash, ArrowR
 import { TYPOLOGIES, CATEGORIES, type Typologie } from '../../data/typologies'
 import { TYPOLOGIE_TEMPLATE, VALID_SECTION_ICONS, validateTypologieImport } from '../../data/typologieSchema'
 import { useCustomTypologies, addCustomTypologie, removeCustomTypologie } from '../../utils/customTypologies'
-import { findDuplicates, type DuplicateMatch } from '../../utils/duplicates'
+import { findDuplicates, type DuplicateMatch, type IdentityMatch } from '../../utils/duplicates'
 import styles from './Parametres.module.css'
 
 function download(filename: string, content: string) {
@@ -26,7 +26,7 @@ export default function Parametres() {
   const [pasted, setPasted] = useState('')
   const [showGabarit, setShowGabarit] = useState(false)
   const [result, setResult] = useState<{ ok: boolean; errors: string[]; name?: string } | null>(null)
-  const [pending, setPending] = useState<{ typologie: Typologie; exact: DuplicateMatch[]; similar: DuplicateMatch[] } | null>(null)
+  const [pending, setPending] = useState<{ typologie: Typologie; exact: DuplicateMatch[]; similar: DuplicateMatch[]; identity: IdentityMatch[] } | null>(null)
 
   const allTypologies = [...TYPOLOGIES, ...customTypologies]
   const existingIds = new Set(allTypologies.map((t) => t.id))
@@ -63,10 +63,10 @@ export default function Parametres() {
       return
     }
 
-    const { exact, similar } = findDuplicates(validation.typologie.name, allTypologies)
-    if (exact.length > 0 || similar.length > 0) {
+    const { exact, similar, identity } = findDuplicates(validation.typologie, allTypologies)
+    if (exact.length > 0 || similar.length > 0 || identity.length > 0) {
       setResult(null)
-      setPending({ typologie: validation.typologie, exact, similar })
+      setPending({ typologie: validation.typologie, exact, similar, identity })
       return
     }
 
@@ -105,7 +105,9 @@ export default function Parametres() {
         <div className={styles.cardLabel}>Importer une typologie</div>
         <p className={styles.text}>
           L'import attend un fichier JSON décrivant <strong>une seule typologie</strong>, dans un format précis. Les
-          champs marqués optionnels peuvent être omis.
+          champs marqués optionnels peuvent être omis. Avant tout ajout, le nom est comparé à celui des typologies
+          existantes, et la fiche d'identité (catégorie, région, usage, période) est comparée à celle des typologies
+          déjà cataloguées, pour repérer un éventuel doublon même sous un nom différent.
         </p>
 
         <div className={styles.gabaritRow}>
@@ -164,19 +166,30 @@ export default function Parametres() {
             <div>
               <div className={styles.resultErrorHeader}>
                 <WarningCircle size={18} weight="fill" />
-                <span>{pending.exact.length > 0 ? 'Doublon probable détecté' : 'Nom très proche d\'une typologie existante'}</span>
+                <span>
+                  {pending.exact.length > 0 || pending.identity.length > 0
+                    ? 'Doublon probable détecté'
+                    : 'Nom très proche d\'une typologie existante'}
+                </span>
               </div>
               <ul className={styles.errorList}>
                 {[...pending.exact, ...pending.similar].map((m) => (
-                  <li key={m.typologie.id}>
+                  <li key={`name-${m.typologie.id}`}>
                     « {pending.typologie.name} » a un nom {m.reason} à « {m.typologie.name} » (id : {m.typologie.id}
                     {!builtInIds.has(m.typologie.id) ? ', importée' : ''}
                     ).
                   </li>
                 ))}
+                {pending.identity.map((m) => (
+                  <li key={`identity-${m.typologie.id}`}>
+                    Même fiche d'identité que « {m.typologie.name} » (id : {m.typologie.id}
+                    {!builtInIds.has(m.typologie.id) ? ', importée' : ''}
+                    ) : {m.matchedFields.join(', ')} correspondent, bien que le nom diffère.
+                  </li>
+                ))}
               </ul>
               <p style={{ margin: '10px 0', fontSize: 13 }}>
-                {pending.exact.length > 0
+                {pending.exact.length > 0 || pending.identity.length > 0
                   ? "Il s'agit probablement de la même typologie. Vérifiez avant de continuer — importer quand même créera une deuxième fiche distincte."
                   : 'Vérifiez qu\'il ne s\'agit pas du même bâtiment sous un nom légèrement différent avant de continuer.'}
               </p>
