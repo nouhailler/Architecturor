@@ -29,6 +29,38 @@
   border-bottom: none;
 }
 
+.rowClickable {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-text) 6%, transparent);
+  border-radius: 6px;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  margin: 0 -6px;
+  padding: 8px 6px;
+  transition: background 0.14s ease;
+}
+
+.rowClickable:last-child {
+  border-bottom: none;
+}
+
+.rowClickable:hover {
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+}
+
+.rowClickable:hover .value {
+  color: var(--color-accent-300);
+}
+
+.rowClickable:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
 .key {
   width: 120px;
   flex-shrink: 0;

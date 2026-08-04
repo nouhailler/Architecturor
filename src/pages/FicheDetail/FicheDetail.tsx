@@ -65,6 +65,7 @@ export default function FicheDetail() {
         {/* Colonne droite sticky */}
         <div className={styles.sidebar}>
           <SidebarIdentite
+            typologie={t}
             identite={categorie ? [['Catégorie', `${categorie.emoji} ${categorie.label}`], ...t.identite] : t.identite}
             materiaux={t.materiaux}
             technique={t}

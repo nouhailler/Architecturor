@@ -16,7 +16,7 @@ const categorieChipLabel = (val: string) => {
 }
 
 export default function FiltersSidebar({ typologies }: { typologies: Typologie[] }) {
-  const { q, setQ, filters, toggleFilter, clearAll } = useApp()
+  const { q, setQ, filters, toggleFilter, clearAll, identiteMatch } = useApp()
 
   const groups: { label: string; key: keyof Filters; chips: string[]; chipLabel: (val: string) => string }[] = [
     { label: 'Catégorie',               key: 'categorie', chips: uniq(typologies.map((t) => t.categorie)), chipLabel: categorieChipLabel },
@@ -25,7 +25,10 @@ export default function FiltersSidebar({ typologies }: { typologies: Typologie[]
     { label: 'Période',                 key: 'periode',   chips: PERIODE_CHIPS,                            chipLabel: defaultChipLabel },
   ]
 
-  const hasFilters = q || filters.procede.length || filters.usage.length || filters.periode.length || filters.categorie.length
+  const hasFilters = Boolean(
+    q || filters.procede.length || filters.usage.length || filters.periode.length || filters.categorie.length
+    || filters.region.length || identiteMatch,
+  )
 
   return (
     <div className={styles.sidebar}>

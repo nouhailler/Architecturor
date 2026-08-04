@@ -30,6 +30,42 @@
   margin-bottom: 14px;
 }
 
+.activeFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.activeFilterChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 6px 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  background: color-mix(in srgb, var(--color-accent) 18%, transparent);
+  color: var(--color-accent-300);
+  border: 1px solid var(--color-accent-700);
+}
+
+.activeFilterChip button {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  background: color-mix(in srgb, var(--color-accent) 25%, transparent);
+  color: inherit;
+  cursor: pointer;
+}
+
+.activeFilterChip button:hover {
+  background: color-mix(in srgb, var(--color-accent) 40%, transparent);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));

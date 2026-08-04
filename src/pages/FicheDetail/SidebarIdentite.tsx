@@ -3,8 +3,14 @@ import { Image, ArrowSquareOut } from '@phosphor-icons/react'
 import type { Typologie } from '../../data/typologies'
 import { getMaterialInfo, wikipediaSearchUrl } from '../../data/materiaux'
 import { commonsFilePath, commonsFilePage } from '../../utils/commons'
+import { useApp } from '../../context/AppContext'
 import Modal from '../../components/Modal/Modal'
 import styles from './SidebarIdentite.module.css'
+
+// Champs de la fiche d'identité pour lesquels un clic filtre le catalogue.
+// "Particularité", "Plan", etc. restent du texte libre non cliquable : trop
+// spécifiques à chaque typologie pour constituer un regroupement pertinent.
+const CLICKABLE_IDENTITE_KEYS = new Set(['Catégorie', 'Période', 'Région', 'Usage', 'Système', 'Matériau dominant', 'Toiture'])
 
 function GalleryImage({ fileName, alt }: { fileName: string; alt: string }) {
   const [failed, setFailed] = useState(false)
@@ -36,6 +42,7 @@ function GalleryImage({ fileName, alt }: { fileName: string; alt: string }) {
 }
 
 interface Props {
+  typologie: Typologie
   identite: [string, string][]
   materiaux: string[]
   technique: Pick<
@@ -58,9 +65,31 @@ interface Props {
 }
 
 
-export default function SidebarIdentite({ identite, materiaux, technique, wikipediaUrl, commonsUrl, images, name }: Props) {
+export default function SidebarIdentite({ typologie, identite, materiaux, technique, wikipediaUrl, commonsUrl, images, name }: Props) {
+  const { goToFilteredCatalogue } = useApp()
   const [activeMaterial, setActiveMaterial] = useState<string | null>(null)
   const materialInfo = activeMaterial ? getMaterialInfo(activeMaterial) : null
+
+  const handleIdentiteClick = (key: string, value: string) => {
+    switch (key) {
+      case 'Catégorie':
+        goToFilteredCatalogue({ categorie: [typologie.categorie] })
+        break
+      case 'Période':
+        goToFilteredCatalogue({ periode: [...typologie.periodeTags] })
+        break
+      case 'Région':
+        goToFilteredCatalogue({ region: [typologie.region] })
+        break
+      case 'Usage':
+        goToFilteredCatalogue({ usage: [typologie.usage] })
+        break
+      default:
+        // Système, Matériau dominant, Toiture : pas de champ canonique dédié —
+        // on retrouve les typologies qui partagent exactement ce texte.
+        goToFilteredCatalogue({}, { key, value })
+    }
+  }
 
   const techniqueRows: [string, string][] = [
     ['Coordonnées GPS moyennes', technique.gps],
@@ -82,10 +111,23 @@ export default function SidebarIdentite({ identite, materiaux, technique, wikipe
         <div className={styles.cardLabel}>Fiche d'identité</div>
         <div className={styles.identiteList}>
           {identite.map(([k, v]) => (
-            <div key={k} className={styles.row}>
-              <div className={styles.key}>{k}</div>
-              <div className={styles.value}>{v}</div>
-            </div>
+            CLICKABLE_IDENTITE_KEYS.has(k) ? (
+              <button
+                key={k}
+                type="button"
+                className={`${styles.row} ${styles.rowClickable}`}
+                onClick={() => handleIdentiteClick(k, v)}
+                title={`Voir les typologies partageant ce champ « ${k} »`}
+              >
+                <div className={styles.key}>{k}</div>
+                <div className={styles.value}>{v}</div>
+              </button>
+            ) : (
+              <div key={k} className={styles.row}>
+                <div className={styles.key}>{k}</div>
+                <div className={styles.value}>{v}</div>
+              </div>
+            )
           ))}
         </div>
       </div>
