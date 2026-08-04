@@ -36,8 +36,8 @@ const REGION_GROUPS = (() => {
   }
   for (const list of map.values()) list.sort((a, b) => a.name.localeCompare(b.name, 'fr'))
   const entries = [...map.entries()].sort((a, b) => {
-    if (a[0] === NATIONAL_GROUP) return 1
-    if (b[0] === NATIONAL_GROUP) return -1
+    if (a[0] === NATIONAL_GROUP) return -1
+    if (b[0] === NATIONAL_GROUP) return 1
     return a[0].localeCompare(b[0], 'fr')
   })
   return entries
