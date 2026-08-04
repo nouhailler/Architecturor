@@ -3041,7 +3041,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Art_d%C3%A9co',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Immeuble%20ann%C3%A9es%2030%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['90_bis_chaussée_de_l\'étang,_St-Mandé_94160,_France.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Immeuble fonctionnaliste de l’entre-deux-guerres, en béton armé, aux lignes épurées et aux formes arrondies dites « style paquebot ». Bow-windows incurvés, garde-corps tubulaires et hublots traduisent l’influence de l’esthétique navale et industrielle sur l’architecture résidentielle.",
@@ -4401,7 +4401,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Bastide',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Bastide%20fortifi%C3%A9e%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Monpazier_-_Place_des_cornières_-_Panoramique_-1.JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "Ville neuve fondée sur un plan en damier autour d’une place centrale à couverts, dont le pourtour des maisons forme lui-même le rempart. Créées par centaines dans le Sud-Ouest au XIIIe siècle par les pouvoirs anglais, français et seigneuriaux rivaux, les bastides organisent peuplement, commerce et défense d’un même geste.",
@@ -7257,7 +7257,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cabane_de_p%C3%AAcheur',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cabane%20de%20p%C3%AAcheur%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Cabane_de_Port-Douzième.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Modeste cabane de bois où le pêcheur range filets, casiers et agrès, parfois construite à partir de la coque retournée d’un vieux bateau réformé (« caloge »). Regroupées en rangs le long de la plage ou du port, ces cabanes forment un paysage vernaculaire immédiatement reconnaissable.",
@@ -7737,7 +7737,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Lois_Ferry',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89cole%20Jules%20Ferry%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['École_Jules_Ferry.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "École primaire édifiée en masse après les lois Jules Ferry de 1881-1882 instaurant l’instruction primaire gratuite, obligatoire et laïque. Plan type avec préau couvert, classes largement éclairées par de hautes fenêtres, entrées séparées pour garçons et filles gravées au fronton.",
@@ -9166,7 +9166,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grand_magasin',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grand%20magasin%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Le_Bon_Marché,_Paris_3_November_2008_-_panoramio.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Bâtiment commercial de grande ampleur né au Second Empire avec l’ouverture du Bon Marché en 1852, révolutionnant le commerce de détail par la vente à prix fixe et le libre accès aux marchandises. Structure métallique audacieuse, grand hall central sous verrière, escaliers monumentaux et balcons ouvrant sur plusieurs niveaux de vente.",
@@ -9506,7 +9506,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Hypermarch%C3%A9',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grande%20surface%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Supermarché_Lidl_Rue_Roger_Salengro_Fontenay_Bois_1.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Bâtiment commercial de plain-pied au volume simple et économique, conçu pour le libre-service à grande échelle popularisé par l’ouverture du premier hypermarché Carrefour en 1963. Grand plateau de vente sans cloisonnement, façade dominée par l’enseigne et vaste parking d’accès direct.",
@@ -10662,7 +10662,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89coquartier',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89coquartier%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['La_Caserne_De_Bonne_-_Grenoble.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Quartier neuf conçu à l’échelle urbaine selon des principes de développement durable : densité maîtrisée, mixité des fonctions et des logements, déplacements doux privilégiés, gestion écologique de l’eau et des espaces verts. Un label national attribué depuis 2009 encourage la diffusion du modèle dans toute la France.",
