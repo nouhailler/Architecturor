@@ -1,15 +1,20 @@
+# 🏛️ Inventaire du bâti — Typologies architecturales françaises
+
 <div align="center">
 
-<img src="public/icon.svg" width="72" height="72" alt="Icône Inventaire du bâti" />
+<img src="public/icon.svg" width="96" height="96" alt="Icône Inventaire du bâti" />
 
-# 🏛️ Inventaire du bâti
+<br/>
 
-**Typologies architecturales du bâti français — par période et par procédé de construction**
+[![Licence](https://img.shields.io/github/license/nouhailler/architecturor)](https://github.com/nouhailler/architecturor/blob/main/LICENSE) 
+[![Release](https://img.shields.io/github/v/release/nouhailler/architecturor)](https://github.com/nouhailler/architecturor/releases) 
+[![Build (CI)](https://img.shields.io/github/actions/workflow/status/nouhailler/architecturor/ci.yml?branch=main)](https://github.com/nouhailler/architecturor/actions) 
+[![Coverage](https://img.shields.io/codecov/c/github/nouhailler/architecturor)](https://codecov.io/gh/nouhailler/architecturor) 
+[![Stars](https://img.shields.io/github/stars/nouhailler/architecturor?style=social)](https://github.com/nouhailler/architecturor/stargazers)
 
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=white&labelColor=161826)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?logo=typescript&logoColor=white&labelColor=161826)](https://www.typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white&labelColor=161826)](https://vitejs.dev)
-[![React Router](https://img.shields.io/badge/React_Router-6.26-CA4245?logo=reactrouter&logoColor=white&labelColor=161826)](https://reactrouter.com)
 
 </div>
 
@@ -17,91 +22,184 @@
 
 ## ✨ À propos
 
-**Inventaire du bâti** est une base de référence à destination de la maîtrise d'œuvre : elle
-recense des **typologies constructives françaises** (immeuble haussmannien, maison à pans de
-bois, mas provençal, coron minier, grand ensemble en béton…) avec, pour chacune, sa **structure
-porteuse**, ses **matériaux**, ses **planchers** et sa **toiture**.
+Inventaire du bâti est une base de référence destinée à la maîtrise d'œuvre : elle recense des typologies constructives françaises (immeuble haussmannien, mas provençal, maison à pans de bois, grand ensemble, etc.) avec, pour chacune : structure porteuse, matériaux, planchers et toiture.
 
-Trois points d'entrée :
+Points d'entrée principaux :
+- 🗺️ Carte de France géolocalisant chaque typologie
+- ⏳ Frise chronologique (1400 → 2000)
+- 🔍 Catalogue filtrable (procédé de construction, usage, période)
 
-- 🗺️ **une carte de France** géolocalisant chaque typologie,
-- ⏳ **une frise chronologique** (1400 → 2000) pour situer les procédés dans le temps,
-- 🔍 **un catalogue filtrable** par procédé de construction, usage ou période.
+## Table des matières
 
-## 📸 Aperçu
+- [Aperçu / Démo](#aperçu--démo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Structure du projet](#structure-du-projet)
+- [Données et contenu](#données-et-contenu)
+- [Contribuer](#contribuer)
+- [Tests & CI](#tests--ci)
+- [Licence](#licence)
+- [Contact & crédits](#contact--crédits)
+
+## 📸 Aperçu / Démo
+
+Capture d'écran et exemple animé :
 
 | Accueil | Catalogue | Fiche détail |
-|---|---|---|
+|---:|:---:|:---:|
 | ![Accueil](docs/screenshots/accueil.png) | ![Catalogue](docs/screenshots/catalogue.png) | ![Fiche détail](docs/screenshots/fiche-detail.png) |
 
-## 🚀 Démarrage
+Démo animée (exemple) :  
+![Démo (GIF)](docs/demo/demo.gif)
+
+Remarques :
+- Si vous n'avez pas encore de GIF, ajoutez docs/demo/demo.gif (capture animée ~5–10s).
+- Pensez à fournir des alternatives (alt text) accessibles pour chaque image.
+
+## Features
+
+- ✅ Catalogue filtrable par période, procédé, usage
+- ✅ Carte interactive des typologies
+- ✅ Fiches détaillées avec coupes annotées
+- ✅ Thème sombre / design tokens
+- ✅ Données en TypeScript (src/data/typologies.ts) comme source de vérité
+
+## 🚀 Installation
+
+Prérequis : Node.js (>= 18), npm ou pnpm
 
 ```bash
-# Installer les dépendances
+# cloner
+git clone https://github.com/nouhailler/architecturor.git
+cd architecturor
+
+# installer dépendances
 npm install
 
-# Lancer le serveur de développement
+# dev
 npm run dev
 
-# Build de production
+# build prod
 npm run build
 
-# Prévisualiser le build de production
+# prévisualiser le build
 npm run preview
 ```
 
+Tips :
+- Pour pnpm : pnpm install
+- Ajoutez un .env.local si vous avez des clés (ex. API maps) — voir [Configuration](#configuration)
+
+## 🧭 Usage rapide
+
+- Accéder à http://localhost:5173 (ou l'URL indiquée par Vite)
+- Ouvrir la carte pour filtrer par régions / période
+- Cliquer sur une typologie pour ouvrir la fiche détaillée
+
 ## 🗂️ Structure du projet
+
+Arborescence principale (extrait) :
 
 ```
 src/
-├── components/         # Header, Footer (composants partagés)
-├── context/             # AppContext : recherche, filtres, sections ouvertes
+├── components/       # Composants réutilisables (Header, Footer, Card, etc.)
+├── pages/            # Accueil, Catalogue, FicheDetail
+├── context/          # App context : filtres, recherche
 ├── data/
-│   ├── typologies.ts    # Données des typologies (source de vérité)
-│   └── icons.tsx         # Correspondance icône (data) → composant Phosphor
-├── pages/
-│   ├── Accueil/          # Hero, carte de France, frise chronologique
-│   ├── Catalogue/         # Filtres + grille de typologies
-│   └── FicheDetail/       # Coupe annotée, procédé de construction, identité
-└── styles/               # Tokens de design (couleurs, rayons, ombres) & styles globaux
+│   ├── typologies.ts # Données source
+│   └── icons.tsx     # Mappage icônes → composants Phosphor
+├── styles/           # Tokens & styles globaux
+└── docs/             # Screenshots, demo GIFs, documentation
 ```
 
-## 🧱 Typologies incluses
+## 🧾 Données & contenu
 
-| Typologie | Période | Région | Procédé |
-|---|---|---|---|
-| 🏢 Immeuble haussmannien | 1853–1870 | Paris · Île-de-France | Pierre de taille |
-| 🌳 Maison à pans de bois | 1450–1650 | Normandie · Val de Loire | Ossature bois |
-| 🌾 Mas provençal | 1600–1850 | Provence · Méditerranée | Moellons & chaux |
-| ⛏️ Coron minier | 1825–1914 | Nord · Hauts-de-France | Brique |
-| 🏗️ Grand ensemble en béton | 1953–1975 | Aires urbaines · France | Béton armé |
-| 🌊 Longère bretonne | 1700–1900 | Bretagne · Côtes-d'Armor | Granite |
-| 🏔️ Chalet savoyard | 1750–1900 | Savoie · Alpes | Bois & pierre |
-| 🍷 Échoppe bordelaise | 1730–1914 | Bordeaux · Gironde | Pierre calcaire |
-| 🎨 Maison basque (labourdine) | 1600–1850 | Pays basque · Aquitaine | Pans de bois & torchis |
-| 🏛️ Immeuble Art déco | 1920–1935 | Reims · Champagne | Béton & brique |
-
-## 🎨 Design
-
-Palette et rayons définis comme design tokens CSS dans [`src/styles/tokens.css`](src/styles/tokens.css)
-(thème sombre « Nocturne », accent violet). Les icônes utilisent
-[`@phosphor-icons/react`](https://phosphoricons.com).
+- Les typologies sont définies dans src/data/typologies.ts — format TypeScript pour assurer la cohérence.
+- Si vous voulez importer/exporter vers CSV/JSON pour interchangeabilité, je peux ajouter des scripts.
 
 ## 🛠️ Stack technique
 
-- [React 18](https://react.dev) + [TypeScript](https://www.typescriptlang.org)
-- [Vite](https://vitejs.dev) — bundler & serveur de dev
-- [React Router](https://reactrouter.com) — routage SPA
-- [Phosphor Icons](https://phosphoricons.com) — iconographie
-- CSS Modules — styles scopés par composant
+- React 18 + TypeScript
+- Vite
+- React Router
+- Phosphor Icons
+- CSS Modules (design tokens dans src/styles)
 
-## 📄 Documentation complémentaire
+## Tests, CI & Qualité
 
-- [`CONTEXT.md`](CONTEXT.md) — contexte métier, architecture et conventions du projet
-- [`CHANGELOG.md`](CHANGELOG.md) — historique des changements
+- Ajouter un workflow GitHub Actions (ex. .github/workflows/ci.yml) pour :
+  - lint (eslint)
+  - build
+  - tests (vitest / jest si présents)
+  - coverage (upload vers Codecov)
+
+Exemple de badge CI (remplacer le nom du workflow / branche si besoin) :
+
+```
+[![Build (CI)](https://img.shields.io/github/actions/workflow/status/nouhailler/architecturor/ci.yml?branch=main)](https://github.com/nouhailler/architecturor/actions)
+```
+
+Coverage (exemple Codecov) :
+
+```
+[![Coverage](https://img.shields.io/codecov/c/github/nouhailler/architecturor)](https://codecov.io/gh/nouhailler/architecturor)
+```
+
+## 🔧 Configuration
+
+- Fichiers d'environnement : .env.example
+- Clés externes :
+  - API carte (ex. Mapbox, Leaflet + tiles) — définissez MAP_API_KEY dans .env.local
+- Personnalisation du thème : src/styles/tokens.css
+
+## 🧩 Déploiement
+
+- Hébergement recommandé : Netlify, Vercel ou GitHub Pages (build statique).
+- Exemple (Vercel) : branch main → déploiement automatique.
+- Pour GitHub Pages, configurer la cible de build et la branche gh-pages.
+
+## 🤝 Contribuer
+
+Merci pour votre intérêt ! Quelques règles pour contribuer :
+
+1. Forkez le dépôt et créez une branche feature/bugfix : git checkout -b feat/ma-feature
+2. Respectez les conventions (lint + formatting)
+3. Ouvrez une Pull Request claire avec description & capture d'écran
+4. Pour les contributions de données (typologies), vérifiez le format TypeScript dans src/data/typologies.ts
+
+Template de PR suggéré :
+- Contexte / problème résolu
+- Ce qui a été modifié
+- Screenshots / GIFs (si UI)
+- Checklist (lint, build, tests)
+
+## 📄 Licence
+
+Remplacez par la licence effective si différente. Exemple MIT :
+
+```
+MIT © Nouhailler
+```
+
+Badge licence :
+
+```
+[![Licence](https://img.shields.io/github/license/nouhailler/architecturor)](https://github.com/nouhailler/architecturor/blob/main/LICENSE)
+```
+
+## ✉️ Contact & crédits
+
+- Auteur : nouhailler — https://github.com/nouhailler
+- Contact : (mettez votre email / profil)
+- Inspirations et ressources :
+  - Phosphor Icons — https://phosphoricons.com
+  - Vite — https://vitejs.dev
 
 ---
 
-<div align="center">
-<sub>Inventaire du bâti — prototype de référence · Données constructives à visée technique</sub>
-</div>
+Notes / To‑do suggérées (optionnelles)
+- [ ] Ajouter un GIF de démonstration dans docs/demo/demo.gif
+- [ ] Mettre en place GitHub Actions (ci.yml) et lier Codecov
+- [ ] Compléter le fichier LICENSE si absent
+- [ ] Ajouter badges pour issues ouvertes, dependabot, et release cadence
