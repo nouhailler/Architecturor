@@ -11664,6 +11664,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'fermeblocalsacienne',
+    name: 'Ferme-bloc alsacienne',
+    region: 'Alsace · Bas-Rhin · Haut-Rhin',
+    periode: 'XVIIe–XIXe siècle',
+    procede: "Ossature en colombage sur soubassement maçonné, bâtiments organisés autour d’une cour fermée.",
+    usage: 'Exploitation agricole familiale',
+    categorie: 'rural',
+    gps: '48.45° N, 7.55° E',
+    altitude: '120–350 m',
+    climat: 'Semi-continental',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Soubassement maçonné en grès',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme-bloc%20alsacienne%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La ferme-bloc alsacienne est la principale typologie agricole traditionnelle d’Alsace. Elle regroupe sous un même ensemble l’habitation, les étables, la grange et les espaces de stockage, organisés autour d’une cour accessible par un portail charretier monumental. Les variantes locales (Kochersberg, Ried, Sundgau, Outre-Forêt) conservent cette organisation générale tout en adaptant les matériaux et les dimensions aux ressources du territoire.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Alsace · Bas-Rhin · Haut-Rhin'],
+      ['Usage', 'Ferme polyculture-élevage'],
+      ['Système', 'Colombage sur soubassement maçonné organisé autour d’une cour'],
+      ['Matériau dominant', 'Bois de chêne'],
+      ['Toiture', 'Deux pans à forte pente en tuiles plates'],
+      ['Particularité', 'Cour fermée desservie par un portail charretier et bâtiments agricoles intégrés'],
+    ],
+    materiaux: ['Chêne', 'Torchis', 'Grès des Vosges', 'Brique cuite', 'Chaux', 'Tuile plate en terre cuite'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Grande toiture à deux pans fortement inclinés couvrant les différents volumes agricoles. Charpente en chêne traditionnelle avec couverture en tuiles plates.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades à colombages apparents ou partiellement enduits. Les soubassements sont réalisés en grès afin de protéger l’ossature bois de l’humidité.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en bois massif reposant sur des poutres en chêne. Les combles servent fréquemment au stockage du fourrage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature en colombages assemblée par tenons et mortaises chevillés. Les bâtiments agricoles utilisent de larges travées permettant le stockage et la circulation des charrettes.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois desservant les niveaux d’habitation, parfois complété par un accès indépendant aux combles agricoles.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre de grès ou en moellons, avec soubassement maçonné supportant l’ensemble de la structure en bois.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation de la ferme',
+        icon: 'ph ph-house-line',
+        intro: 'La ferme-bloc est conçue pour réunir toutes les fonctions agricoles dans un ensemble cohérent.',
+        groups: [
+          G(null, ['Habitation implantée sur rue.', 'Cour intérieure fermée.', 'Grange traversante.', 'Étable attenante.', 'Espaces de stockage du fourrage.', 'Accès principal par un portail charretier.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture privilégie la fonctionnalité tout en conservant les caractéristiques du colombage alsacien.',
+        groups: [
+          G('Éléments caractéristiques', ['Colombages apparents.', 'Grand volume agricole.', 'Charpente traditionnelle en chêne.', 'Toiture couvrant plusieurs fonctions.', 'Façades régulièrement percées.']),
+        ],
+      },
+      {
+        title: 'Fonction agricole',
+        icon: 'ph ph-barn',
+        intro: 'L’organisation répond aux besoins de la polyculture traditionnelle alsacienne.',
+        groups: [
+          G(null, ['Stockage des récoltes.', 'Élevage bovin et équin.', 'Remisage des charrettes.', 'Protection des animaux durant l’hiver.', 'Circulation directe entre habitation et bâtiments agricoles.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est présente sur l’ensemble du territoire alsacien.',
+        groups: [
+          G('Principales variantes régionales', ['Kochersberg.', 'Ried.', 'Outre-Forêt.', 'Sundgau.', 'Piémont vosgien.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
