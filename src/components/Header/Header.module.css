@@ -98,3 +98,71 @@
 .navLinkActive {
   color: var(--color-neutral-200);
 }
+
+.burgerBtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  border-radius: var(--radius-md);
+  color: var(--color-neutral-300);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.burgerBtn:hover {
+  background: var(--color-neutral-900);
+  color: var(--color-text);
+}
+
+.burgerBtn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.mobileBackdrop {
+  position: fixed;
+  inset: 0;
+  top: 0;
+  z-index: 19;
+  background: color-mix(in srgb, black 55%, transparent);
+}
+
+.mobilePanel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 16px 16px;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-divider);
+  max-height: calc(100vh - 64px);
+  overflow-y: auto;
+}
+
+.mobilePanel .navLink {
+  width: 100%;
+  text-align: left;
+  padding: 12px 10px;
+  font-size: 15px;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    display: none;
+  }
+
+  .burgerBtn {
+    display: flex;
+  }
+
+  .logoSub {
+    display: none;
+  }
+}
