@@ -11742,6 +11742,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisontisserandalsacienne',
+    name: 'Maison de tisserand alsacienne',
+    region: 'Alsace · Bas-Rhin · Haut-Rhin',
+    periode: 'XVIIIe–XIXe siècle',
+    procede: "Ossature en colombage sur soubassement maçonné, adaptée à une activité artisanale textile intégrée à l’habitation.",
+    usage: 'Habitation et atelier de tissage',
+    categorie: 'rural',
+    gps: '48.28° N, 7.42° E',
+    altitude: '180–450 m',
+    climat: 'Semi-continental',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Soubassement maçonné en grès',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20tisserand%20alsacienne%20architecture%20France&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La maison de tisserand alsacienne est une variante fonctionnelle de la maison à colombages, développée dans les villages où le tissage à domicile constituait une activité économique importante. Elle se distingue par des pièces de travail bénéficiant d’un éclairage naturel abondant grâce à de larges ouvertures, tout en conservant les caractéristiques de l’architecture vernaculaire alsacienne.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Alsace · Bas-Rhin · Haut-Rhin'],
+      ['Usage', 'Habitation et atelier de tissage'],
+      ['Système', 'Colombage sur soubassement maçonné'],
+      ['Matériau dominant', 'Bois de chêne'],
+      ['Toiture', 'Deux pans à forte pente en tuiles plates'],
+      ['Particularité', 'Présence de grandes fenêtres destinées à éclairer l’atelier de tissage'],
+    ],
+    materiaux: ['Chêne', 'Torchis', 'Grès des Vosges', 'Brique cuite', 'Enduit à la chaux', 'Tuile plate en terre cuite'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture traditionnelle à deux versants fortement inclinés. Charpente en chêne et couverture en tuiles plates assurant une bonne protection contre les précipitations et la neige.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade à colombages apparents avec remplissage en torchis ou en briques. Les façades de l’atelier présentent généralement des baies plus larges afin d’améliorer l’éclairage nécessaire au travail du textile.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en bois reposant sur des poutres en chêne. Les pièces de travail sont dimensionnées pour recevoir les métiers à tisser.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature en colombages assemblée selon les techniques traditionnelles par tenons, mortaises et chevilles de bois, avec contreventements assurant la stabilité de l’ensemble.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois reliant les espaces d’habitation aux niveaux supérieurs et aux combles de stockage.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations et soubassement en grès protégeant la structure en bois de l’humidité du sol.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La maison combine les fonctions d’habitation familiale et d’atelier artisanal.',
+        groups: [
+          G(null, ['Logement principal intégré au bâtiment.', 'Atelier de tissage installé au rez-de-chaussée ou au premier étage.', 'Combles utilisés pour le stockage des fibres, des tissus ou des outils.', 'Organisation intérieure adaptée à une activité artisanale familiale.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture reprend les principes de la maison alsacienne tout en répondant aux besoins spécifiques du tissage.',
+        groups: [
+          G('Caractéristiques', ['Colombages apparents.', 'Fenêtres plus larges que sur les maisons agricoles.', 'Façade régulièrement ordonnancée.', 'Soubassement en pierre de grès.', 'Toiture à forte pente.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Plusieurs indices permettent d’identifier cette variante.',
+        groups: [
+          G(null, ['Grandes ouvertures destinées à l’éclairage naturel.', 'Absence de vaste portail charretier agricole.', 'Volumes plus compacts qu’une ferme-bloc.', 'Implantation dans des villages ayant une tradition textile.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est particulièrement présente dans les secteurs où le tissage domestique s’est développé avant l’industrialisation.',
+        groups: [
+          G(null, ['Vallées vosgiennes.', 'Piémont alsacien.', 'Villages du Bas-Rhin.', 'Villages du Haut-Rhin.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
