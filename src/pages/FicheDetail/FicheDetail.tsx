@@ -12,7 +12,7 @@ import styles from './FicheDetail.module.css'
 export default function FicheDetail() {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
-  const { setOpen } = useApp()
+  const { setOpen, goToFilteredCatalogue } = useApp()
   const customTypologies = useCustomTypologies()
   const t = id ? (TYPOLOGIES_MAP[id] ?? customTypologies.find((c) => c.id === id) ?? null) : null
   const isImported = Boolean(t && !(t.id in TYPOLOGIES_MAP))
@@ -44,13 +44,41 @@ export default function FicheDetail() {
         </button>
 
         <div className={styles.tags}>
-          {categorie && <span className="tag tag-outline">{categorie.emoji} {categorie.label}</span>}
-          <span className="tag tag-outline">{t.periode}</span>
-          <span className="tag tag-accent">{t.procede}</span>
-          <span className="tag tag-neutral">
+          {categorie && (
+            <button
+              type="button"
+              className={`tag tag-outline ${styles.tagClickable}`}
+              onClick={() => goToFilteredCatalogue({ categorie: [t.categorie] })}
+              title="Voir les typologies de cette catégorie"
+            >
+              {categorie.emoji} {categorie.label}
+            </button>
+          )}
+          <button
+            type="button"
+            className={`tag tag-outline ${styles.tagClickable}`}
+            onClick={() => goToFilteredCatalogue({ periode: [...t.periodeTags] })}
+            title="Voir les typologies de la même période"
+          >
+            {t.periode}
+          </button>
+          <button
+            type="button"
+            className={`tag tag-accent ${styles.tagClickable}`}
+            onClick={() => goToFilteredCatalogue({ procede: [t.procede] })}
+            title="Voir les typologies du même procédé"
+          >
+            {t.procede}
+          </button>
+          <button
+            type="button"
+            className={`tag tag-neutral ${styles.tagClickable}`}
+            onClick={() => goToFilteredCatalogue({ region: [t.region] })}
+            title="Voir les typologies de la même région"
+          >
             <MapPin size={11} style={{ marginRight: 4 }} />
             {t.region}
-          </span>
+          </button>
           {isImported && <span className="tag tag-accent">Importée localement</span>}
         </div>
 
