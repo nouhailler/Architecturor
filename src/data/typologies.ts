@@ -11820,6 +11820,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonforestierealsacienne',
+    name: 'Maison forestière alsacienne',
+    region: 'Alsace · Massif des Vosges',
+    periode: 'XIXe–XXe siècle',
+    procede: 'Maçonnerie en pierre avec charpente traditionnelle en bois adaptée au milieu forestier.',
+    usage: 'Logement des gardes forestiers et bâtiment de gestion forestière',
+    categorie: 'rural',
+    gps: '48.25° N, 7.20° E',
+    altitude: '350–900 m',
+    climat: 'Montagnard à influence semi-continentale',
+    typeToiture: 'Deux pans',
+    penteToit: '45–60°',
+    essenceBois: 'Sapin, Épicéa, Chêne',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20foresti%C3%A8re%20Vosges%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "La maison forestière alsacienne est un bâtiment de service construit principalement par l’administration des Eaux et Forêts puis par l’Office national des forêts. Implantée au cœur des massifs forestiers vosgiens, elle sert de logement au garde forestier tout en accueillant des locaux techniques liés à l’exploitation et à la surveillance de la forêt.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle'],
+      ['Région', 'Alsace · Massif des Vosges'],
+      ['Usage', 'Logement forestier'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Grès des Vosges'],
+      ['Toiture', 'Deux pans à forte pente en tuiles plates'],
+      ['Particularité', 'Bâtiment isolé implanté en milieu forestier avec dépendances'],
+    ],
+    materiaux: ['Grès des Vosges', 'Moellons', 'Chêne', 'Sapin', 'Enduit à la chaux', 'Tuile plate en terre cuite'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux versants fortement inclinés afin de favoriser l’évacuation de la neige. Charpente traditionnelle en bois local couverte de tuiles plates ou mécaniques selon la période.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades sobres en maçonnerie de grès ou de moellons enduits. Les ouvertures sont régulières et adaptées à un usage résidentiel permanent.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers constitués de poutres et solives en bois résineux ou en chêne avec plancher massif.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre assurant la stabilité de l’édifice. Les planchers et la charpente sont réalisés en bois provenant généralement des forêts voisines.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois reliant les différents niveaux d’habitation. Les bâtiments les plus modestes disposent parfois d’un escalier droit unique.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre directement ancrées dans le substrat rocheux ou sur un terrain compact afin de résister aux conditions climatiques montagnardes.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La maison forestière répond avant tout à une fonction de service public en milieu naturel.',
+        groups: [
+          G(null, ['Logement du garde forestier.', 'Petits locaux de stockage pour les outils.', 'Implantation isolée au cœur du massif forestier.', 'Présence fréquente d’un jardin et d’un bâtiment annexe.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture privilégie la robustesse et la simplicité.',
+        groups: [
+          G('Caractéristiques', ['Plan rectangulaire.', 'Façades symétriques.', 'Murs en pierre locale.', 'Toiture à forte pente.', 'Ouvertures régulières et peu décorées.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Plusieurs éléments permettent de reconnaître cette typologie.',
+        groups: [
+          G(null, ['Situation isolée en forêt.', 'Architecture administrative sobre.', 'Utilisation du grès vosgien.', 'Absence de bâtiments agricoles importants.', 'Présence fréquente d’un ancien panneau forestier ou d’une borne domaniale.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Les maisons forestières sont réparties dans les principaux massifs boisés d’Alsace.',
+        groups: [
+          G(null, ['Vosges du Nord.', 'Massif du Champ du Feu.', 'Vallée de Munster.', 'Vallée de Sainte-Marie-aux-Mines.', 'Forêts domaniales du Haut-Rhin.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
