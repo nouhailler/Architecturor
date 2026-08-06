@@ -1,12 +1,16 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Image, MapPin } from '@phosphor-icons/react'
 import { CATEGORIES_MAP, TYPOLOGIES_MAP, type Typologie } from '../../data/typologies'
+import { commonsFilePath } from '../../utils/commons'
 import styles from './TypologieCard.module.css'
 
 export default function TypologieCard({ typologie: t }: { typologie: Typologie }) {
   const navigate = useNavigate()
   const categorie = CATEGORIES_MAP[t.categorie]
   const isImported = !(t.id in TYPOLOGIES_MAP)
+  const [imageFailed, setImageFailed] = useState(false)
+  const thumbImage = t.images[0]
 
   const handleClick = () => {
     navigate(`/typologie/${t.id}`)
@@ -15,9 +19,18 @@ export default function TypologieCard({ typologie: t }: { typologie: Typologie }
 
   return (
     <button className={styles.card} onClick={handleClick}>
-      {/* TODO: remplacer ce placeholder par <img src="..." alt={t.name} /> */}
       <div className={styles.thumb}>
-        <Image size={26} color="var(--color-neutral-600)" />
+        {thumbImage && !imageFailed ? (
+          <img
+            className={styles.thumbImage}
+            src={commonsFilePath(thumbImage, 400)}
+            alt={t.name}
+            loading="lazy"
+            onError={() => setImageFailed(true)}
+          />
+        ) : (
+          <Image size={26} color="var(--color-neutral-600)" />
+        )}
         <span className={styles.periodeBadge}>{t.periode}</span>
         {isImported && <span className={styles.importedBadge}>Importée</span>}
       </div>
