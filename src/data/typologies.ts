@@ -11762,8 +11762,8 @@ export const TYPOLOGIES: Typologie[] = [
     epoqueDominante: 'XVIIIe siècle',
     difficulteIdentification: 'Modérée',
     wikipediaUrl: '',
-    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20tisserand%20alsacienne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Rue_des_Tisserands_(Colmar)',
+    images: ['Rue_des_Tisserands_(Colmar)_(1).JPG', 'Rue_des_Tisserands_(Colmar)_(3).JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La maison de tisserand alsacienne est une variante fonctionnelle de la maison à colombages, développée dans les villages où le tissage à domicile constituait une activité économique importante. Elle se distingue par des pièces de travail bénéficiant d’un éclairage naturel abondant grâce à de larges ouvertures, tout en conservant les caractéristiques de l’architecture vernaculaire alsacienne.",
