@@ -12430,6 +12430,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'manoirbreton',
+    name: 'Manoir breton',
+    region: 'Bretagne · Ensemble de la région historique',
+    periode: 'XVe–XVIIe siècle',
+    procede: 'Maçonnerie en granite ou schiste avec charpente traditionnelle en bois.',
+    usage: 'Résidence seigneuriale rurale',
+    categorie: 'rural',
+    gps: '48.20° N, 2.90° O',
+    altitude: '0–300 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux ou quatre pans',
+    penteToit: '45–60°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: 'https://fr.wikipedia.org/wiki/Manoir_breton',
+    commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Manors_in_Brittany',
+    images: [],
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Le manoir breton est la résidence de la petite et moyenne noblesse bretonne. Plus modeste qu’un château mais plus prestigieux qu’une ferme, il constitue une exploitation agricole et un lieu de résidence seigneuriale. Son architecture privilégie la pierre locale, les volumes compacts et une organisation autour d’une cour avec dépendances.",
+    identite: [
+      ['Période', 'XVe–XVIIe siècle'],
+      ['Région', 'Bretagne · Région historique'],
+      ['Usage', 'Résidence seigneuriale rurale'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Granite'],
+      ['Toiture', 'Toiture à forte pente en ardoise'],
+      ['Particularité', 'Corps de logis noble accompagné de dépendances agricoles organisées autour d’une cour'],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Moellons', 'Chaux', 'Chêne', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux ou quatre pans couverte d’ardoises. Les fortes pentes favorisent l’évacuation rapide des pluies abondantes.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades en granite ou schiste avec encadrements en pierre de taille. Les ouvertures sont plus nombreuses et plus soignées que dans l’habitat rural.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en chêne reposant sur de fortes poutres. Les pièces nobles occupent généralement l’étage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en maçonnerie de pierre locale recevant directement les planchers et la charpente traditionnelle.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier en pierre à vis ou escalier droit monumental selon l’époque et le niveau de prestige du manoir.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre directement établies sur le substrat rocheux ou un terrain compact.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'Le manoir constitue le centre d’un domaine agricole et seigneurial.',
+        groups: [
+          G(null, ['Corps de logis principal.', 'Cour centrale.', 'Dépendances agricoles.', 'Puits ou fontaine.', 'Jardin et verger.', 'Accès monumental.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture recherche un équilibre entre prestige et sobriété.',
+        groups: [
+          G(null, ['Maçonnerie en granite.', 'Baies à meneaux.', 'Lucarnes sculptées.', 'Cheminées monumentales.', 'Tourelle d’escalier fréquente.', 'Décor héraldique.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Le manoir breton possède plusieurs caractéristiques facilement identifiables.',
+        groups: [
+          G(null, ['Corps de logis noble.', 'Cour fermée.', 'Tourelle d’escalier.', 'Baies à meneaux.', 'Armoiries sculptées.', 'Présence de dépendances agricoles.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Le manoir breton est présent dans l’ensemble de la Bretagne historique.',
+        groups: [
+          G(null, ['Léon.', 'Cornouaille.', 'Trégor.', 'Vannetais.', 'Pays de Saint-Brieuc.', 'Pays de Fougères.', 'Pays de Rennes.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
