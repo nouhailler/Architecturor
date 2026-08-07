@@ -13288,6 +13288,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'manoircauchois',
+    name: 'Manoir cauchois',
+    region: 'Normandie · Pays de Caux',
+    periode: 'XVe–XVIIe siècle',
+    procede: 'Maçonnerie en silex et brique associée à des pans de bois avec charpente traditionnelle.',
+    usage: 'Résidence seigneuriale rurale',
+    categorie: 'rural',
+    gps: '49.72° N, 0.65° E',
+    altitude: '50–180 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '50–60°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en silex',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Manoir%20cauchois%20Pays%20de%20Caux%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Le manoir cauchois est une résidence seigneuriale caractéristique du Pays de Caux. Il associe un logis noble, des communs agricoles et parfois un colombier ou un pressoir, dans un ensemble implanté au sein d’un clos planté. Son architecture mêle silex, brique, pans de bois et hautes toitures normandes.",
+    identite: [
+      ['Période', 'XVe–XVIIe siècle'],
+      ['Région', 'Normandie · Pays de Caux'],
+      ['Usage', 'Résidence seigneuriale'],
+      ['Système', 'Murs porteurs maçonnés et pans de bois'],
+      ['Matériau dominant', 'Silex et brique'],
+      ['Toiture', 'Toiture à deux pans fortement inclinés en ardoise ou tuile plate'],
+      ['Particularité', 'Association caractéristique de silex, brique et pans de bois dans un ensemble seigneurial rural'],
+    ],
+    materiaux: ['Silex', 'Brique', 'Chêne', 'Torchis', 'Pierre calcaire', 'Ardoise', 'Tuile plate'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toitures hautes à deux versants couvertes d’ardoises ou de tuiles plates, souvent percées de lucarnes.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades mêlant silex appareillé, chaînages de brique et parfois pans de bois décoratifs. Les encadrements sont fréquemment en pierre calcaire.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en chêne reposant sur de fortes poutres. Les pièces nobles occupent les étages.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs maçonnés associés localement à une ossature en pans de bois selon les bâtiments.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois ou en pierre distribuant les niveaux du logis.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en silex et pierre calcaire adaptées aux sols limoneux du plateau cauchois.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'Le manoir constitue le centre d’un domaine agricole et résidentiel.',
+        groups: [
+          G(null, ['Logis principal.', 'Cour.', 'Communs.', 'Colombier.', 'Pressoir.', 'Jardin.', 'Verger.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture exprime le statut social de la petite noblesse normande.',
+        groups: [
+          G(null, ['Alternance de silex et de brique.', 'Pans de bois.', 'Lucarnes.', 'Cheminées monumentales.', 'Volumes équilibrés.', 'Toitures pentues.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Le traitement des matériaux constitue l’une des signatures du manoir cauchois.',
+        groups: [
+          G(null, ['Décor en damier de silex et brique.', 'Corps de logis noble.', 'Communs agricoles.', 'Organisation seigneuriale.', 'Environnement arboré.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est concentrée dans le Pays de Caux.',
+        groups: [
+          G(null, ['Pays de Caux.', 'Fécamp.', 'Yvetot.', 'Bolbec.', 'Lillebonne.', 'Dieppe.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
