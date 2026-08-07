@@ -12586,6 +12586,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'metairiebretonne',
+    name: 'Métairie bretonne',
+    region: 'Bretagne · Haute-Bretagne · Pays de Rennes · Pays de Vitré · Pays de Redon',
+    periode: 'XVIe–XIXe siècle',
+    procede: 'Maçonnerie en moellons de granite ou de schiste avec charpente traditionnelle en bois.',
+    usage: 'Exploitation agricole en métayage',
+    categorie: 'rural',
+    gps: '48.12° N, 1.70° O',
+    altitude: '20–250 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '40–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=M%C3%A9tairie%20bretonne%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La métairie bretonne est une exploitation agricole exploitée par un métayer pour le compte d’un propriétaire. Plus vaste que la closerie, elle associe un logis principal à plusieurs bâtiments agricoles organisés autour d’une cour. Elle constitue l’une des formes majeures de l’habitat rural de Haute-Bretagne jusqu’au XIXe siècle.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'Bretagne · Haute-Bretagne'],
+      ['Usage', 'Exploitation agricole'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Granite ou schiste'],
+      ['Toiture', 'Deux pans en ardoise'],
+      ['Particularité', 'Ensemble agricole organisé autour d’une cour avec plusieurs dépendances'],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Moellons', 'Chaux', 'Chêne', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toitures à deux versants couvertes d’ardoises, présentant une pente adaptée au climat océanique. Les différents bâtiments possèdent généralement une couverture homogène.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades en moellons de granite ou de schiste avec encadrements en pierre de taille. Les bâtiments agricoles privilégient une architecture fonctionnelle.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en bois massif dans le logis. Les bâtiments agricoles comportent souvent des niveaux de stockage accessibles directement depuis les combles.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre locale associés à une charpente traditionnelle en chêne recevant la couverture en ardoise.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur simple en bois reliant les niveaux du logis. Les bâtiments agricoles disposent d’échelles ou d’escaliers utilitaires.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations superficielles en pierre directement implantées sur le terrain naturel.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La métairie est organisée comme une exploitation agricole complète.',
+        groups: [
+          G(null, ['Logis principal.', 'Étable.', 'Grange.', 'Remises agricoles.', 'Cour centrale.', 'Puits.', 'Verger ou jardin.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'Les bâtiments privilégient la robustesse et la fonctionnalité.',
+        groups: [
+          G(null, ['Maçonnerie en pierre locale.', 'Toitures homogènes en ardoise.', 'Volumes simples.', 'Façades sobres.', 'Ouvertures adaptées aux usages agricoles.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La métairie se reconnaît à son organisation agricole complète.',
+        groups: [
+          G(null, ['Cour agricole centrale.', 'Nombreuses dépendances.', 'Logis distinct des bâtiments d’exploitation.', 'Architecture sobre.', 'Ensemble cohérent construit progressivement.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est principalement présente dans les secteurs de grande agriculture de Haute-Bretagne.',
+        groups: [
+          G(null, ['Pays de Rennes.', 'Pays de Vitré.', 'Pays de Fougères.', 'Pays de Redon.', 'Vallée de la Vilaine.', 'Nord du Morbihan.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
