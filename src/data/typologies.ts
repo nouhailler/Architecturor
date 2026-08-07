@@ -13952,6 +13952,92 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonpecheurcotentin',
+    name: 'Maison de pêcheur du Cotentin',
+    region: 'Normandie · Cotentin · Manche',
+    periode: 'XVIIIe–XIXe siècle',
+    procede: 'Murs porteurs en maçonnerie de pierre locale liés à la chaux, avec charpente traditionnelle en bois.',
+    usage: 'Habitation de pêcheur',
+    categorie: 'littorale',
+    gps: '49.65° N, -1.55° E',
+    altitude: '0–100 m',
+    climat: 'Océanique littoral',
+    typeToiture: 'Deux pans',
+    penteToit: '40–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en maçonnerie de pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La maison de pêcheur du Cotentin est un habitat littoral vernaculaire de petite dimension, adapté aux conditions climatiques de la Manche et aux modes de vie des communautés côtières. Elle associe généralement une maçonnerie épaisse en pierre, une organisation intérieure simple et une toiture à forte pente destinée à résister aux intempéries.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Normandie · Cotentin · Manche'],
+      ['Usage', 'Habitation de pêcheur'],
+      ['Système', 'Murs porteurs en maçonnerie de pierre'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Toiture', 'Toiture à deux pans couverte de schiste, tuile ou ardoise selon le secteur'],
+      ['Particularité', 'Petite maison compacte, généralement implantée au plus près des villages et ports littoraux'],
+    ],
+    materiaux: ['Grès', 'Granite', 'Schiste', 'Chaux', 'Bois', 'Ardoise', 'Tuile'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture à deux pans présente généralement une pente importante adaptée au climat humide et venteux du Cotentin. Les couvertures varient selon les ressources et les traditions locales.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les murs épais sont construits en pierre locale avec des joints à la chaux. Les ouvertures sont relativement petites et régulièrement disposées afin de limiter les déperditions thermiques.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont généralement constitués de solives et de planches en bois. Dans les maisons les plus modestes, le rez-de-chaussée peut conserver des sols minéraux.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure est principalement constituée de murs porteurs en maçonnerie de pierre, complétés par une charpente traditionnelle en bois.' },
+      { n: 5, el: 'Escalier', txt: "L'escalier est généralement simple et compact, souvent en bois, et dessert un étage ou un comble sous toiture." },
+      { n: 6, el: 'Fondations', txt: "Les fondations sont constituées de maçonnerie profonde en pierre, adaptée aux terrains littoraux et aux fortes sollicitations liées au vent et à l'humidité." },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: "L'habitation privilégie la compacité et une organisation intérieure simple.",
+        groups: [
+          G(null, ['Plan généralement rectangulaire.', 'Faible emprise au sol.', 'Pièce principale au rez-de-chaussée.', 'Chambres à l’étage ou sous comble.', 'Accès direct depuis la rue ou la cour.']),
+        ],
+      },
+      {
+        title: 'Structure porteuse',
+        icon: 'ph ph-columns',
+        intro: 'La construction utilise principalement les matériaux minéraux disponibles localement.',
+        groups: [
+          G(null, ['Murs porteurs épais.', 'Pierre locale.', 'Mortier de chaux.', 'Charpente en bois.', 'Encadrements d’ouvertures en pierre.']),
+        ],
+      },
+      {
+        title: 'Architecture littorale',
+        icon: 'ph ph-waves',
+        intro: "La forme du bâtiment répond aux contraintes du climat maritime et aux besoins d'une population vivant de la pêche.",
+        groups: [
+          G(null, ['Volume compact.', 'Ouvertures relativement réduites.', 'Toiture fortement inclinée.', 'Murs épais.', 'Implantation protégée dans le tissu villageois.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La simplicité constructive constitue l’une des principales caractéristiques de cette architecture vernaculaire.',
+        groups: [
+          G(null, ['Petite échelle.', 'Maçonnerie de pierre apparente ou enduite.', 'Toiture à deux pans.', 'Façade sobre.', 'Organisation compacte.', 'Relation étroite avec les villages et ports.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette architecture est liée aux villages et petits ports du littoral du Cotentin.',
+        groups: [
+          G(null, ['Barfleur.', 'Saint-Vaast-la-Hougue.', 'Port-Bail.', 'Carteret.', 'Cherbourg-en-Cotentin.', 'La Hague.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
