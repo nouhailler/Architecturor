@@ -11976,6 +11976,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonbrasseuralsacienne',
+    name: 'Maison de brasseur alsacienne',
+    region: 'Alsace · Plaine d’Alsace et villes brassicoles',
+    periode: 'XVIIIe–XXe siècle',
+    procede: 'Maçonnerie et colombage avec caves profondes adaptées au brassage et au stockage de la bière.',
+    usage: 'Habitation et production brassicole',
+    categorie: 'urbain',
+    gps: '48.60° N, 7.75° E',
+    altitude: '130–250 m',
+    climat: 'Semi-continental',
+    typeToiture: 'Deux pans',
+    penteToit: '40–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre avec caves voûtées',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20brasseur%20Alsace%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "La maison de brasseur alsacienne est une habitation associée à une activité brassicole familiale ou artisanale. Elle comprend généralement des caves voûtées destinées à la fermentation et au stockage, ainsi que des bâtiments annexes organisés autour d’une cour. Son architecture reflète l’importance historique du brassage en Alsace.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Alsace · Plaine d’Alsace et villes brassicoles'],
+      ['Usage', 'Habitation et production brassicole'],
+      ['Système', 'Maçonnerie et colombage avec caves voûtées'],
+      ['Matériau dominant', 'Grès des Vosges'],
+      ['Toiture', 'Deux pans en tuiles plates'],
+      ['Particularité', 'Présence de caves profondes destinées au brassage et au stockage de la bière'],
+    ],
+    materiaux: ['Grès des Vosges', 'Chêne', 'Brique cuite', 'Torchis', 'Enduit à la chaux', 'Tuile plate en terre cuite'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux versants de pente moyenne à forte, couverte de tuiles plates. Les combles servent fréquemment au stockage des matières premières.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades en maçonnerie ou à colombages selon les secteurs. Les ouvertures permettent l’accès aux espaces de production et aux caves.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en bois massif reposant sur des poutres en chêne. Les caves sont voûtées en maçonnerie.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre ou structure mixte pierre-bois. Les caves voûtées assurent une température stable favorable au brassage.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois reliant les espaces d’habitation, complété par un accès vers les caves de brassage.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre avec caves semi-enterrées ou enterrées destinées à maintenir une température constante.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La maison de brasseur associe habitat et activité brassicole.',
+        groups: [
+          G(null, ['Habitation principale.', 'Cour de service.', 'Locaux de brassage.', 'Grandes caves voûtées.', 'Espaces de stockage.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture est adaptée aux contraintes de la fabrication de la bière.',
+        groups: [
+          G(null, ['Façades sobres.', 'Volumes importants.', 'Accès direct aux caves.', 'Organisation fonctionnelle des bâtiments.', 'Combles de stockage.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Plusieurs indices permettent d’identifier cette typologie.',
+        groups: [
+          G(null, ['Caves voûtées profondes.', 'Cour intérieure.', 'Volumes destinés au brassage.', 'Implantation dans les villes et villages brassicoles.', 'Présence historique d’une activité de production.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est principalement présente dans les secteurs brassicoles historiques.',
+        groups: [
+          G(null, ['Strasbourg.', 'Obernai.', 'Mutzig.', 'Saverne.', 'Schiltigheim.', 'Haguenau.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
