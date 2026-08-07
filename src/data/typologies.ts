@@ -12186,6 +12186,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'malouiniere',
+    name: 'Malouinière',
+    region: 'Bretagne · Pays malouin (Ille-et-Vilaine)',
+    periode: '1650–1789',
+    procede: 'Maçonnerie en pierre de granite avec charpente traditionnelle en bois.',
+    usage: 'Demeure de campagne d’armateurs et négociants',
+    categorie: 'rural',
+    gps: '48.66° N, 1.99° O',
+    altitude: '10–80 m',
+    climat: 'Océanique',
+    typeToiture: 'Quatre pans',
+    penteToit: '40–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en granite',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: 'https://fr.wikipedia.org/wiki/Malouini%C3%A8re',
+    commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Malouini%C3%A8res',
+    images: [],
+    periodeTags: ['Avant 1800'],
+    resume:
+      "La malouinière est une demeure de campagne construite par les armateurs, corsaires et négociants de Saint-Malo entre le XVIIe et le XVIIIe siècle. Implantée dans de vastes domaines clos, elle se distingue par une architecture classique sobre, une composition parfaitement symétrique et des matériaux locaux, principalement le granite.",
+    identite: [
+      ['Période', '1650–1789'],
+      ['Région', 'Bretagne · Pays malouin'],
+      ['Usage', 'Résidence de campagne'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Granite'],
+      ['Toiture', 'Toit à quatre pans en ardoise'],
+      ['Particularité', 'Façade parfaitement symétrique avec pavillon central'],
+    ],
+    materiaux: ['Granite', 'Moellons', 'Chaux', 'Chêne', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à quatre pans couverte d’ardoises, percée de lucarnes régulièrement espacées. Les cheminées monumentales constituent un élément caractéristique.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades ordonnancées en granite, organisées selon une composition symétrique. Les encadrements des baies sont en pierre de taille.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en bois massif reposant sur des poutres de chêne. Les pièces principales sont distribuées de manière symétrique autour d’un axe central.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en maçonnerie de granite avec refends intérieurs. Charpente traditionnelle à fermes et pannes.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier principal en pierre ou en bois noble situé dans l’axe de la composition.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en maçonnerie de granite adaptées aux terrains du littoral breton.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La malouinière est conçue comme une résidence de prestige implantée au cœur d’un vaste domaine.',
+        groups: [
+          G(null, ['Plan rectangulaire très régulier.', 'Composition symétrique.', 'Domaine clos de murs.', 'Dépendances agricoles et domestiques.', 'Avenue d’accès monumentale.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture est influencée par le classicisme français tout en utilisant les matériaux bretons.',
+        groups: [
+          G(null, ['Façade symétrique.', 'Toiture en ardoise.', 'Granite de taille.', 'Lucarnes alignées.', 'Cheminées monumentales.', 'Décor sobre.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Plusieurs éléments permettent de reconnaître immédiatement une malouinière.',
+        groups: [
+          G(null, ['Plan classique.', 'Façade parfaitement symétrique.', 'Corps principal isolé.', 'Grand parc clos.', 'Granite apparent.', 'Influence des demeures d’armateurs.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est presque exclusivement présente autour de Saint-Malo.',
+        groups: [
+          G(null, ['Saint-Malo.', 'Saint-Coulomb.', 'Cancale.', 'Saint-Méloir-des-Ondes.', 'La Gouesnière.', 'Saint-Jouan-des-Guérets.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
