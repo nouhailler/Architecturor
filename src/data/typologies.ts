@@ -13210,6 +13210,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'closmasurecauchois',
+    name: 'Clos-masure cauchois',
+    region: 'Normandie · Pays de Caux',
+    periode: 'XVIe–XIXe siècle',
+    procede: 'Maçonnerie en brique, silex et colombages avec charpente traditionnelle en bois.',
+    usage: 'Exploitation agricole',
+    categorie: 'rural',
+    gps: '49.70° N, 0.60° E',
+    altitude: '80–180 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en silex et pierre calcaire',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: 'https://fr.wikipedia.org/wiki/Clos-masure',
+    commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Clos-masures',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Le clos-masure cauchois est une exploitation agricole caractéristique du Pays de Caux, organisée autour d’une vaste cour plantée de pommiers et protégée par des talus arborés appelés fossés plantés. Les bâtiments agricoles et le logis s’organisent librement au sein de cet enclos paysager, véritable signature du paysage cauchois.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'Normandie · Pays de Caux'],
+      ['Usage', 'Exploitation agricole'],
+      ['Système', 'Ensemble de bâtiments maçonnés et à pans de bois organisés dans une cour plantée'],
+      ['Matériau dominant', 'Brique, silex et bois'],
+      ['Toiture', 'Toitures à deux pans en ardoise ou chaume selon les bâtiments'],
+      ['Particularité', 'Cour fermée par des talus plantés de hêtres protégeant l’exploitation du vent'],
+    ],
+    materiaux: ['Brique', 'Silex', 'Chêne', 'Torchis', 'Chaux', 'Ardoise', 'Chaume'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Les différents bâtiments présentent des couvertures en ardoise ou en chaume selon leur époque et leur fonction.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades alternent pans de bois, remplissage en torchis, silex appareillé et brique. Les bâtiments sont répartis autour d’une vaste cour.' },
+      { n: 3, el: 'Planchers', txt: 'Les logis disposent de planchers en bois tandis que les bâtiments agricoles utilisent des sols en terre battue, pierre ou brique.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les bâtiments combinent murs maçonnés et ossatures en pans de bois selon leur destination.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers simples en bois dans les logis ; les bâtiments agricoles disposent de circulations fonctionnelles vers les combles.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en silex ou en pierre calcaire, adaptées aux sols limoneux du plateau cauchois.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'Le clos-masure est conçu comme un ensemble agricole protégé des vents dominants.',
+        groups: [
+          G(null, ['Grande cour centrale.', 'Talus plantés de hêtres.', 'Verger de pommiers.', 'Logis indépendant.', 'Granges et étables réparties autour de la cour.', 'Accès unique à l’exploitation.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'Les bâtiments reflètent les matériaux disponibles sur le plateau cauchois.',
+        groups: [
+          G(null, ['Pans de bois.', 'Silex appareillé.', 'Brique rouge.', 'Torchis.', 'Toitures en ardoise ou chaume.', 'Charpentes traditionnelles.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Le paysage constitue un élément indissociable de cette typologie.',
+        groups: [
+          G(null, ['Talus arborés (fossés plantés).', 'Protection contre les vents.', 'Verger cidricole.', 'Organisation libre des bâtiments.', 'Ensemble agricole paysager.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Le clos-masure est caractéristique du Pays de Caux.',
+        groups: [
+          G(null, ['Pays de Caux.', 'Yvetot.', 'Fécamp.', 'Bolbec.', 'Saint-Valery-en-Caux.', 'Lillebonne.', 'Goderville.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
