@@ -12264,6 +12264,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'pennti',
+    name: 'Penn Ti',
+    region: 'Bretagne · Finistère · Cornouaille',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Maçonnerie en moellons de granite avec charpente traditionnelle en bois et couverture en ardoise.',
+    usage: 'Habitation rurale',
+    categorie: 'rural',
+    gps: '48.05° N, 4.10° O',
+    altitude: '0–250 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne, Châtaignier',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Penn%20ti%20Bretagne%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Le Penn Ti est une petite maison rurale traditionnelle de Basse-Bretagne. Construite en granite et couverte d’ardoises, elle est destinée aux petits exploitants, journaliers ou pêcheurs-paysans. Son plan simple, ses faibles dimensions et son adaptation au climat océanique en font une typologie emblématique de l’habitat vernaculaire breton.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Bretagne · Finistère · Cornouaille'],
+      ['Usage', 'Habitation rurale'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Granite'],
+      ['Toiture', 'Deux pans en ardoise'],
+      ['Particularité', 'Habitation de très petites dimensions à plan rectangulaire simple'],
+    ],
+    materiaux: ['Granite', 'Moellons', 'Chaux', 'Chêne', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux versants couverte d’ardoises épaisses. Les débords sont limités afin de mieux résister aux vents océaniques.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs en moellons de granite liés à la chaux. Les ouvertures sont peu nombreuses et de dimensions modestes afin de limiter les déperditions thermiques.' },
+      { n: 3, el: 'Planchers', txt: 'Le rez-de-chaussée repose sur un dallage ou un sol en terre battue dans les bâtiments les plus anciens. Les combles sont accessibles par une échelle ou un escalier simple lorsqu’ils sont aménagés.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en granite supportant une charpente traditionnelle en chêne ou en châtaignier.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier en bois très simple lorsqu’un étage ou des combles sont utilisés. De nombreux Penn Ti sont entièrement de plain-pied.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations superficielles en pierre locale directement établies sur le substrat rocheux ou un terrain compact.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'Le Penn Ti répond aux besoins d’un habitat modeste mais durable.',
+        groups: [
+          G(null, ['Plan rectangulaire simple.', 'Une ou deux pièces principales.', 'Faible hauteur sous plafond.', 'Cheminée centrale ou pignon.', 'Combles de stockage.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture privilégie la simplicité constructive et l’utilisation des ressources locales.',
+        groups: [
+          G(null, ['Maçonnerie en granite.', 'Toiture en ardoise.', 'Façades sobres.', 'Ouvertures réduites.', 'Volume compact.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Le Penn Ti est facilement identifiable par sa simplicité.',
+        groups: [
+          G(null, ['Très petites dimensions.', 'Façades peu percées.', 'Construction en granite.', 'Toiture en ardoise.', 'Implantation isolée ou en hameau.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Le Penn Ti est principalement présent en Basse-Bretagne.',
+        groups: [
+          G(null, ['Cornouaille.', 'Pays Bigouden.', 'Cap Sizun.', 'Monts d’Arrée.', 'Presqu’île de Crozon.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
