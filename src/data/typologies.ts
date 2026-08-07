@@ -13866,6 +13866,92 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'immeublereconstructionperrethavre',
+    name: 'Immeuble de reconstruction Perret du Havre',
+    region: 'Normandie · Le Havre',
+    periode: '1945–1964',
+    procede: 'Béton armé sur trame modulaire avec éléments préfabriqués et remplissages maçonnés.',
+    usage: 'Habitation collective et usage mixte',
+    categorie: 'urbain',
+    gps: '49.494° N, 0.107° E',
+    altitude: '0–40 m',
+    climat: 'Océanique littoral',
+    typeToiture: 'Toiture-terrasse ou faible pente',
+    penteToit: '0–15°',
+    essenceBois: 'Non déterminante',
+    typeFondation: 'Fondations en béton armé',
+    typeCharpente: 'Structure poteaux-dalles en béton armé',
+    epoqueDominante: 'Après-guerre',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XXe'],
+    resume:
+      "L'immeuble de reconstruction Perret du Havre appartient au vaste ensemble urbain reconstruit après les destructions de la Seconde Guerre mondiale sous la direction d'Auguste Perret. Il associe une structure en béton armé lisible, une trame modulaire rigoureuse et une expression architecturale inspirée d'un classicisme moderne.",
+    identite: [
+      ['Période', '1945–1964'],
+      ['Région', 'Normandie · Le Havre'],
+      ['Usage', 'Habitation collective et usage mixte'],
+      ['Système', 'Ossature poteaux-dalles en béton armé'],
+      ['Matériau dominant', 'Béton armé'],
+      ['Toiture', 'Toiture-terrasse ou toiture à faible pente selon les bâtiments'],
+      ['Particularité', 'Trame modulaire de 6,24 m et expression architecturale fondée sur la lisibilité de la structure en béton'],
+    ],
+    materiaux: ['Béton armé', 'Béton préfabriqué', 'Pierre', 'Brique', 'Verre', 'Bois'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Les bâtiments utilisent principalement des toitures-terrasses ou des couvertures à faible pente, participant à la composition géométrique des volumes.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades présentent une composition régulière organisée par la trame structurelle en béton. Les remplissages et panneaux de façade sont disposés selon un module répétitif.' },
+      { n: 3, el: 'Planchers', txt: "Les planchers en béton armé s'intègrent au système structurel modulaire et permettent une organisation relativement libre des espaces intérieurs." },
+      { n: 4, el: 'Structure porteuse', txt: "La structure porteuse en béton armé repose sur une trame régulière de poteaux et de dalles. La lisibilité de cette structure constitue une caractéristique majeure de l'architecture Perret." },
+      { n: 5, el: 'Escalier', txt: "Les cages d'escalier sont généralement intégrées aux noyaux de circulation des immeubles et réalisées en béton armé ou en éléments préfabriqués." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations en béton armé sont adaptées aux contraintes du sol havrais et aux charges importantes des immeubles reconstruits.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-buildings',
+        intro: "Les immeubles s'inscrivent dans une composition urbaine conçue à l'échelle du centre reconstruit.",
+        groups: [
+          G(null, ['Îlots urbains réguliers.', 'Immeubles alignés sur rue.', 'Rez-de-chaussée pouvant accueillir commerces ou services.', 'Logements répartis sur plusieurs niveaux.', 'Cours intérieures selon les îlots.']),
+        ],
+      },
+      {
+        title: 'Structure porteuse',
+        icon: 'ph ph-columns',
+        intro: 'La structure en béton armé constitue le principe constructif fondamental de la reconstruction.',
+        groups: [
+          G(null, ['Trame structurelle régulière.', 'Poteaux en béton armé.', 'Dalles en béton armé.', 'Éléments préfabriqués.', 'Structure volontairement lisible en façade.']),
+        ],
+      },
+      {
+        title: 'Expression architecturale',
+        icon: 'ph ph-buildings',
+        intro: "Auguste Perret associe les possibilités techniques du béton à une composition architecturale d'inspiration classique.",
+        groups: [
+          G(null, ['Ordonnancement régulier.', 'Rythme vertical des poteaux.', 'Trame modulaire.', 'Proportions classiques.', 'Béton laissé apparent ou traité avec soin.', "Façades homogènes à l'échelle de l'îlot."]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La répétition modulaire et la structure apparente constituent les principaux critères d'identification.",
+        groups: [
+          G(null, ['Trame de 6,24 m.', 'Béton armé.', 'Poteaux et dalles lisibles.', 'Façades régulières.', 'Îlots reconstruits homogènes.', "Architecture de l'après-guerre."]),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie constitue l’élément dominant du centre reconstruit du Havre.',
+        groups: [
+          G(null, ['Centre reconstruit du Havre.', 'Quartier Saint-François.', 'Avenue Foch.', 'Rue de Paris.', 'Quartier de l’Hôtel de Ville.', 'Front de mer.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
