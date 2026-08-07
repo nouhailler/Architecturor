@@ -12820,6 +12820,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'logisetablebreton',
+    name: 'Logis-étable breton',
+    region: 'Bretagne · Centre-Bretagne · Monts d’Arrée · Cornouaille · Trégor',
+    periode: 'XVe–XIXe siècle',
+    procede: 'Maçonnerie en moellons de granite ou de schiste avec charpente traditionnelle en bois.',
+    usage: 'Habitation paysanne avec étable intégrée',
+    categorie: 'rural',
+    gps: '48.30° N, 3.70° O',
+    altitude: '120–380 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Logis-%C3%A9table%20Bretagne%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Le logis-étable breton est une forme d’habitat rural où le logement des habitants et l’étable occupent un même bâtiment. Cette organisation, caractéristique de nombreuses exploitations modestes de Bretagne intérieure, permettait de limiter les coûts de construction et de bénéficier de la chaleur dégagée par les animaux durant l’hiver.",
+    identite: [
+      ['Période', 'XVe–XIXe siècle'],
+      ['Région', 'Bretagne · Centre-Bretagne'],
+      ['Usage', 'Habitation et exploitation agricole'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Granite ou schiste'],
+      ['Toiture', 'Deux pans en ardoise'],
+      ['Particularité', 'Logement et étable réunis sous une même toiture'],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Moellons', 'Chaux', 'Chêne', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux versants couverte d’ardoises. Le volume unique couvre simultanément la partie habitation et la partie agricole.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades en moellons de granite ou de schiste avec peu d’ouvertures. Les portes du logis et de l’étable sont généralement distinctes mais implantées sur la même façade.' },
+      { n: 3, el: 'Planchers', txt: 'Le logis dispose de planchers en bois, tandis que l’étable possède un sol dallé ou en terre battue. Les combles servent au stockage du fourrage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs continus en pierre supportant une charpente traditionnelle unique couvrant l’ensemble du bâtiment.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur simple permettant l’accès aux combles lorsque ceux-ci sont aménagés pour le stockage.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations superficielles en pierre locale directement établies sur le terrain naturel.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'Le bâtiment associe dans un même volume les espaces d’habitation et les espaces destinés aux animaux.',
+        groups: [
+          G(null, ['Logement et étable sous un même toit.', 'Entrées distinctes pour les hommes et le bétail.', 'Combles destinés au stockage du foin.', 'Cheminée centrale ou en pignon.', 'Plan rectangulaire allongé.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'La conception privilégie la fonctionnalité et l’économie des moyens.',
+        groups: [
+          G(null, ['Maçonnerie en granite ou schiste.', 'Toiture en ardoise.', 'Volume unique.', 'Façades sobres.', 'Charpente continue.', 'Ouvertures limitées.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Le logis-étable est facilement identifiable par son organisation interne.',
+        groups: [
+          G(null, ['Habitation et étable réunies.', 'Deux portes principales en façade.', 'Combles de stockage.', 'Volume compact.', 'Organisation fonctionnelle adaptée aux petites exploitations.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est particulièrement fréquente dans les secteurs d’élevage de Bretagne intérieure.',
+        groups: [
+          G(null, ['Monts d’Arrée.', 'Cornouaille intérieure.', 'Centre-Bretagne.', 'Trégor.', 'Pays du Poher.', 'Montagnes Noires.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
