@@ -12054,6 +12054,60 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonrenaissancerhenane',
+    name: 'Maison Renaissance rhénane',
+    region: 'Alsace · Centres historiques',
+    periode: 'XVIe–XVIIe siècle',
+    procede: 'Maçonnerie en grès ou colombage enrichi d’éléments sculptés de la Renaissance rhénane.',
+    usage: 'Habitation urbaine',
+    categorie: 'urbain',
+    gps: '48.58° N, 7.75° E',
+    altitude: '130–250 m',
+    climat: 'Semi-continental',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle',
+    epoqueDominante: 'XVIe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20Renaissance%20rh%C3%A9nane%20Alsace&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800'],
+    resume:
+      "La maison Renaissance rhénane apparaît en Alsace au XVIe siècle sous l’influence des villes du Rhin supérieur. Elle se caractérise par une architecture plus monumentale que la maison médiévale, intégrant baies à meneaux, décors sculptés, oriels et éléments inspirés de la Renaissance germanique.",
+    identite: [
+      ['Période', 'XVIe–XVIIe siècle'],
+      ['Région', 'Alsace · Centres historiques'],
+      ['Usage', 'Habitation urbaine'],
+      ['Système', 'Maçonnerie ou colombage à décor Renaissance'],
+      ['Matériau dominant', 'Grès des Vosges'],
+      ['Toiture', 'Deux pans en tuiles plates'],
+      ['Particularité', 'Décors sculptés Renaissance, baies à meneaux et parfois oriels'],
+    ],
+    materiaux: ['Grès des Vosges', 'Chêne', 'Brique cuite', 'Torchis', 'Verre', 'Tuile plate'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux pans couverte de tuiles plates, souvent ponctuée de lucarnes.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades en pierre de taille ou à colombages, enrichies de décors sculptés, encadrements moulurés et baies à meneaux.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en bois reposant sur des poutres maîtresses.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre ou ossature bois selon les édifices.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers en pierre ou en bois, parfois logés dans une tourelle d’escalier.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre adaptées au tissu urbain ancien.' },
+    ],
+    sections: [
+      {
+        title: 'Architecture',
+        icon: 'ph ph-house-line',
+        intro: 'Cette typologie traduit l’influence de la Renaissance sur les villes du Rhin supérieur.',
+        groups: [
+          G(null, ['Décors sculptés.', 'Baies à meneaux.', 'Influence germanique.', 'Volumes urbains étroits.', 'Façades monumentales.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
