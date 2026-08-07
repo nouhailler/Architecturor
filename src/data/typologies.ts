@@ -12508,6 +12508,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'closeriebretonne',
+    name: 'Closerie bretonne',
+    region: 'Bretagne · Haute-Bretagne (Ille-et-Vilaine, est des Côtes-d’Armor, Loire-Atlantique historique)',
+    periode: 'XVIe–XIXe siècle',
+    procede: 'Maçonnerie en moellons de schiste ou de granite avec charpente traditionnelle en bois.',
+    usage: 'Petite exploitation agricole',
+    categorie: 'rural',
+    gps: '48.15° N, 1.75° O',
+    altitude: '30–250 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Closerie%20bretonne%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La closerie bretonne est une petite exploitation agricole exploitée par un closier, généralement dans le cadre d’un bail rural. Plus modeste qu’une ferme, elle comprend un logis simple accompagné de quelques dépendances destinées à une agriculture vivrière. Cette typologie est particulièrement représentative de la Haute-Bretagne.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'Bretagne · Haute-Bretagne'],
+      ['Usage', 'Petite exploitation agricole'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Schiste ou granite'],
+      ['Toiture', 'Deux pans en ardoise'],
+      ['Particularité', 'Logis modeste accompagné de dépendances agricoles réduites'],
+    ],
+    materiaux: ['Schiste', 'Granite', 'Moellons', 'Chaux', 'Chêne', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux versants couverte d’ardoises. Les combles sont souvent utilisés pour le stockage du fourrage ou des récoltes.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades sobres en moellons de schiste ou de granite, parfois enduites à la chaux. Les ouvertures restent limitées afin de conserver une bonne inertie thermique.' },
+      { n: 3, el: 'Planchers', txt: 'Rez-de-chaussée en dallage de pierre ou terre battue dans les bâtiments anciens. Les planchers des combles reposent sur des poutres en chêne.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre locale supportant directement la charpente traditionnelle.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois lorsqu’un étage existe. Certaines closeries demeurent entièrement de plain-pied.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations superficielles en pierre directement implantées sur le terrain naturel.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La closerie est conçue pour une exploitation familiale de dimensions modestes.',
+        groups: [
+          G(null, ['Logis principal compact.', 'Petite grange ou remise.', 'Étable de capacité limitée.', 'Cour agricole.', 'Jardin vivrier.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture privilégie la simplicité et les matériaux locaux.',
+        groups: [
+          G(null, ['Maçonnerie en schiste ou granite.', 'Toiture en ardoise.', 'Façades peu décorées.', 'Ouvertures de taille réduite.', 'Volume rectangulaire.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La closerie se distingue par son échelle et son organisation économique.',
+        groups: [
+          G(null, ['Exploitation de petite taille.', 'Habitation et dépendances modestes.', 'Matériaux locaux.', 'Organisation simple.', 'Association historique au système du closage.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'La closerie est principalement présente dans la Haute-Bretagne.',
+        groups: [
+          G(null, ['Pays de Rennes.', 'Pays de Fougères.', 'Pays de Vitré.', 'Vallée de la Vilaine.', 'Est des Côtes-d’Armor.', 'Pays de Redon.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
