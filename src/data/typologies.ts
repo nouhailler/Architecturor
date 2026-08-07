@@ -13522,6 +13522,92 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'chaumierenormande',
+    name: 'Chaumière normande',
+    region: 'Normandie · Pays d’Auge · Roumois · Lieuvin',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Ossature en pans de bois avec remplissage en torchis, sur soubassement maçonné, et couverture traditionnelle en chaume.',
+    usage: 'Habitation rurale',
+    categorie: 'rural',
+    gps: '49.15° N, 0.20° E',
+    altitude: '20–180 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans à forte pente',
+    penteToit: '45–60°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Soubassement maçonné en pierre ou silex',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chaumi%C3%A8re',
+    commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Thatched_cottages_in_Normandy',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La chaumière normande est une habitation rurale caractérisée par une structure en pans de bois, des murs en torchis et une épaisse couverture de chaume. Sa silhouette basse et allongée, ses larges débords de toiture et l’emploi de matériaux locaux lui confèrent une forte identité dans les paysages ruraux normands.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Normandie · Pays d’Auge · Roumois · Lieuvin'],
+      ['Usage', 'Habitation rurale'],
+      ['Système', 'Ossature en pans de bois avec remplissage en torchis'],
+      ['Matériau dominant', 'Bois et torchis'],
+      ['Toiture', 'Toiture à forte pente couverte de chaume'],
+      ['Particularité', 'Épaisse couverture végétale formant de larges débords et silhouette basse caractéristique'],
+    ],
+    materiaux: ['Chêne', 'Torchis', 'Chaume', 'Silex', 'Pierre calcaire', 'Chaux'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture à forte pente est traditionnellement couverte de chaume. Son épaisseur importante et ses larges débords protègent les murs en torchis des intempéries.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades reposent généralement sur une ossature en pans de bois dont les intervalles sont remplis de torchis. Le soubassement est souvent réalisé en pierre ou en silex.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers des niveaux habitables sont principalement constitués de solives et de planches en bois. Les constructions sont généralement de faible hauteur.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure principale est constituée d’une ossature en pans de bois, généralement en chêne, reposant sur un soubassement maçonné.' },
+      { n: 5, el: 'Escalier', txt: 'L’escalier intérieur est généralement en bois et dessert un étage partiel ou des combles aménagés sous la vaste toiture.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations reposent généralement sur un soubassement maçonné en pierre, silex ou brique protégeant l’ossature bois de l’humidité du sol.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La chaumière est une habitation rurale compacte adaptée aux conditions climatiques de la Normandie.',
+        groups: [
+          G(null, ['Plan généralement rectangulaire.', 'Faible hauteur du bâtiment.', 'Logis organisé autour d’une pièce principale.', 'Combles sous une toiture volumineuse.', 'Dépendances agricoles souvent associées.']),
+        ],
+      },
+      {
+        title: 'Structure porteuse',
+        icon: 'ph ph-columns',
+        intro: 'Le système constructif associe une ossature bois à un remplissage traditionnel.',
+        groups: [
+          G(null, ['Ossature principale en chêne.', 'Pans de bois apparents ou enduits.', 'Remplissage en torchis.', 'Soubassement maçonné.', 'Charpente en bois.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house',
+        intro: 'La couverture de chaume constitue l’un des éléments les plus caractéristiques de la typologie.',
+        groups: [
+          G(null, ['Forte pente.', 'Couverture végétale épaisse.', 'Large débord de toiture.', 'Faîtage traditionnel.', 'Lucarnes éventuelles.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La combinaison entre pans de bois, torchis et chaume permet généralement une identification rapide.',
+        groups: [
+          G(null, ['Silhouette basse.', 'Toiture très couvrante.', 'Chaume.', 'Pans de bois.', 'Torchis.', 'Soubassement en pierre ou silex.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Les chaumières sont particulièrement représentées dans les secteurs bocagers et humides de Normandie.',
+        groups: [
+          G(null, ['Pays d’Auge.', 'Roumois.', 'Lieuvin.', 'Pays de Risle.', 'Vallée de la Seine normande.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
