@@ -12108,6 +12108,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'fermemontagnevosgiennealsacienne',
+    name: 'Ferme de montagne vosgienne alsacienne',
+    region: 'Alsace · Hautes-Vosges',
+    periode: 'XVIIIe–XIXe siècle',
+    procede: 'Maçonnerie en pierre locale avec charpente en bois et bâtiments regroupés sous un même toit.',
+    usage: 'Exploitation agro-pastorale de montagne',
+    categorie: 'rural',
+    gps: '48.05° N, 7.05° E',
+    altitude: '600–1200 m',
+    climat: 'Montagnard',
+    typeToiture: 'Deux pans',
+    penteToit: '50–60°',
+    essenceBois: 'Sapin, Épicéa',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle en résineux',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20vosgienne%20Hautes-Vosges%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La ferme de montagne vosgienne alsacienne est une exploitation d’altitude adaptée aux conditions climatiques des Hautes-Vosges. L’habitation, l’étable et les espaces de stockage sont regroupés dans un même volume afin de limiter les déperditions thermiques et de faciliter l’exploitation en hiver.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Alsace · Hautes-Vosges'],
+      ['Usage', 'Ferme d’altitude'],
+      ['Système', 'Murs porteurs en pierre avec charpente bois'],
+      ['Matériau dominant', 'Grès des Vosges'],
+      ['Toiture', 'Deux pans à forte pente'],
+      ['Particularité', 'Habitation, étable et fenil réunis sous une même toiture'],
+    ],
+    materiaux: ['Grès des Vosges', 'Granite', 'Chêne', 'Sapin', 'Épicéa', 'Tuile plate'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture fortement inclinée afin d’évacuer rapidement la neige. Les débords sont généralement limités pour résister aux vents d’altitude.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Murs épais en pierre locale, peu ouverts afin de limiter les pertes thermiques. Les ouvertures sont principalement orientées au sud.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en bois massif reposant sur de fortes poutres. Le fenil occupe généralement tout le volume sous toiture.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre avec charpente traditionnelle en résineux provenant des forêts vosgiennes.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur simple reliant le logement aux combles de stockage.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations directement ancrées dans le substrat rocheux afin d’assurer la stabilité sur les terrains en pente.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La ferme est conçue pour fonctionner toute l’année dans un climat montagnard rigoureux.',
+        groups: [
+          G(null, ['Habitation et étable communicantes.', 'Fenil sous toiture.', 'Accès facilité aux animaux en hiver.', 'Implantation sur les versants ensoleillés.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture privilégie la robustesse et la compacité.',
+        groups: [
+          G(null, ['Volume compact.', 'Murs épais.', 'Faibles ouvertures.', 'Toiture très pentue.', 'Matériaux extraits localement.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Les caractéristiques suivantes permettent son identification.',
+        groups: [
+          G(null, ['Implantation en altitude.', 'Étable intégrée.', 'Fenil sous combles.', 'Maçonnerie en pierre.', 'Architecture adaptée à la neige.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est présente dans les Hautes-Vosges alsaciennes.',
+        groups: [
+          G(null, ['Vallée de Munster.', 'Vallée de la Weiss.', 'Orbey.', 'Lac Blanc.', 'Hohneck.', 'Massif des Ballons.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
