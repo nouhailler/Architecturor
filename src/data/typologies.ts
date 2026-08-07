@@ -11898,6 +11898,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonvigneronalsacienne',
+    name: 'Maison de vigneron alsacienne',
+    region: 'Alsace · Vignoble d’Alsace',
+    periode: 'XVIe–XIXe siècle',
+    procede: 'Ossature en colombage sur soubassement maçonné avec cour viticole fermée.',
+    usage: 'Habitation et exploitation viticole',
+    categorie: 'rural',
+    gps: '48.15° N, 7.35° E',
+    altitude: '180–350 m',
+    climat: 'Semi-continental',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Soubassement en grès',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_alsacienne',
+    commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Half-timbered_houses_in_Alsace',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La maison de vigneron alsacienne est une variante spécialisée de la maison alsacienne, développée dans les villages du vignoble. Elle associe logement, cave, espaces de vinification et dépendances autour d’une cour fermée accessible par un portail charretier. Son implantation et son organisation répondent directement aux besoins de la production viticole.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'Alsace · Vignoble d’Alsace'],
+      ['Usage', 'Habitation et exploitation viticole'],
+      ['Système', 'Colombage sur soubassement maçonné'],
+      ['Matériau dominant', 'Bois de chêne'],
+      ['Toiture', 'Deux pans à forte pente en tuiles plates'],
+      ['Particularité', 'Portail charretier donnant accès à une cour viticole avec cave et dépendances'],
+    ],
+    materiaux: ['Chêne', 'Torchis', 'Grès des Vosges', 'Brique cuite', 'Enduit à la chaux', 'Tuile plate en terre cuite'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux pans de forte pente, couverte de tuiles plates traditionnelles. Les combles sont utilisés pour le stockage du matériel et parfois pour le séchage.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façade à colombages avec remplissage en torchis ou en briques. Les façades sur rue sont généralement soignées, tandis que les bâtiments de cour sont plus fonctionnels.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en bois portés par des poutres en chêne. Les caves voûtées sont fréquemment construites en maçonnerie de grès.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Ossature traditionnelle en colombages assemblés par tenons et mortaises. Les bâtiments annexes peuvent présenter une structure mixte pierre-bois.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois reliant les niveaux d’habitation. Un accès indépendant aux combles peut exister dans certaines exploitations.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre de grès avec soubassement maçonné destiné à protéger l’ossature bois de l’humidité.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'L’organisation de la maison répond directement aux besoins de l’exploitation viticole familiale.',
+        groups: [
+          G(null, ['Habitation implantée en bord de rue.', 'Cour intérieure fermée.', 'Portail charretier monumental.', 'Cave de vinification.', 'Dépendances agricoles.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'La maison reprend les codes de l’architecture vernaculaire alsacienne tout en intégrant les fonctions liées au vin.',
+        groups: [
+          G(null, ['Colombages apparents.', 'Façade ordonnancée.', 'Grand portail sur rue.', 'Volumes organisés autour de la cour.', 'Toiture à forte pente.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Plusieurs éléments permettent de distinguer cette typologie de la maison alsacienne classique.',
+        groups: [
+          G(null, ['Présence d’une cave viticole.', 'Cour fermée.', 'Portail charretier.', 'Dépendances dédiées au travail de la vigne.', 'Implantation dans les villages viticoles.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est caractéristique du vignoble alsacien.',
+        groups: [
+          G(null, ['Marlenheim.', 'Obernai.', 'Barr.', 'Ribeauvillé.', 'Riquewihr.', 'Kaysersberg.', 'Eguisheim.', 'Turckheim.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
