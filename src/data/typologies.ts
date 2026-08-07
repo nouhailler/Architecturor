@@ -12898,6 +12898,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'abricanotsauvetage',
+    name: 'Abri du canot de sauvetage',
+    region: 'Bretagne · Littoral de la Manche et de l’Atlantique',
+    periode: 'XIXe–XXe siècle',
+    procede: 'Maçonnerie en pierre ou brique avec charpente en bois ou métallique.',
+    usage: 'Abri et mise à l’eau d’un canot de sauvetage',
+    categorie: 'littorale',
+    gps: '48.25° N, 4.60° O',
+    altitude: '0–15 m',
+    climat: 'Océanique littoral',
+    typeToiture: 'Deux pans',
+    penteToit: '30–45°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre ou béton',
+    typeCharpente: 'Charpente traditionnelle ou métallique',
+    epoqueDominante: 'Fin XIXe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Abri%20canot%20de%20sauvetage%20Bretagne&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "L’abri du canot de sauvetage est un bâtiment spécialisé destiné à protéger un canot de sauvetage tout en permettant sa mise à l’eau rapide. Implanté à proximité immédiate du rivage, il constitue une composante emblématique des stations de sauvetage maritimes bretonnes développées à partir de la seconde moitié du XIXe siècle.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle'],
+      ['Région', 'Bretagne · Littoral'],
+      ['Usage', 'Sauvetage maritime'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Granite'],
+      ['Toiture', 'Deux pans en ardoise ou couverture métallique'],
+      ['Particularité', 'Grande porte orientée vers la cale de mise à l’eau'],
+    ],
+    materiaux: ['Granite', 'Moellons', 'Brique', 'Chaux', 'Chêne', 'Acier', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture simple à deux versants permettant un grand volume intérieur pour accueillir le canot et son chariot.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades en maçonnerie de granite ou de brique, largement ouvertes côté mer afin de permettre la sortie rapide du canot.' },
+      { n: 3, el: 'Planchers', txt: 'Le bâtiment comporte généralement un rez-de-chaussée unique. Le sol est renforcé pour supporter le poids du canot et de son ber roulant.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en maçonnerie recevant une charpente bois ou métallique offrant une grande portée libre.' },
+      { n: 5, el: 'Escalier', txt: 'Lorsqu’une salle de veille ou un local technique existe en mezzanine, il est desservi par un escalier simple en bois ou en métal.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre ou en béton adaptées aux contraintes du littoral et aux charges importantes du matériel de sauvetage.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'L’édifice est conçu pour permettre une intervention immédiate en mer.',
+        groups: [
+          G(null, ['Grand volume intérieur libre.', 'Porte monumentale tournée vers la mer.', 'Rampe ou cale de mise à l’eau.', 'Local de stockage du matériel.', 'Espace de préparation des équipages.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture privilégie la fonctionnalité et la résistance au climat marin.',
+        groups: [
+          G(null, ['Maçonnerie massive.', 'Charpente de grande portée.', 'Ouverture frontale de grandes dimensions.', 'Implantation en bord de mer.', 'Peu d’ornementation.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Plusieurs caractéristiques permettent d’identifier immédiatement cette typologie.',
+        groups: [
+          G(null, ['Grande porte axée sur la cale.', 'Volume unique très haut.', 'Proximité immédiate du rivage.', 'Absence de cloisonnement intérieur.', 'Fonction exclusivement liée au sauvetage maritime.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Les abris sont répartis le long des côtes bretonnes, au niveau des anciennes stations de sauvetage.',
+        groups: [
+          G(null, ['Île de Sein.', 'Ouessant.', 'Camaret-sur-Mer.', 'Douarnenez.', 'Audierne.', 'Concarneau.', 'Belle-Île-en-Mer.', 'Saint-Malo.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
