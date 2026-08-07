@@ -13366,6 +13366,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'pressoirmanoirnormand',
+    name: 'Pressoir-manoir normand',
+    region: 'Normandie · Pays d’Auge · Pays de Caux',
+    periode: 'XVIe–XIXe siècle',
+    procede: 'Ossature en pans de bois sur solin de pierre avec remplissage en torchis, brique ou silex selon les secteurs.',
+    usage: 'Production cidricole et stockage',
+    categorie: 'agricole',
+    gps: '49.18° N, 0.10° E',
+    altitude: '30–220 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '50–60°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes renforcées',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Pressoir%20manoir%20Normandie%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Le pressoir-manoir normand est un bâtiment agricole monumental destiné au pressage des pommes et à la production de cidre. Son architecture soignée, ses grands volumes et sa puissante charpente témoignent de l’importance économique de la cidriculture dans les domaines normands.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'Normandie · Pays d’Auge · Pays de Caux'],
+      ['Usage', 'Production cidricole'],
+      ['Système', 'Ossature en pans de bois avec murs de remplissage'],
+      ['Matériau dominant', 'Bois de chêne'],
+      ['Toiture', 'Toiture à deux pans fortement inclinés'],
+      ['Particularité', 'Grand volume intérieur destiné à accueillir un pressoir à longue étreinte ou à vis'],
+    ],
+    materiaux: ['Chêne', 'Torchis', 'Brique', 'Silex', 'Pierre calcaire', 'Ardoise', 'Tuile plate'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture très haute permet de dégager le volume nécessaire au fonctionnement du pressoir et au stockage des pommes et des tonneaux.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades associent pans de bois, torchis, brique ou silex selon les ressources locales. Les larges portes facilitent l’entrée des charrettes.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont limités aux espaces de stockage. Le rez-de-chaussée est largement dégagé afin d’accueillir le pressoir.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Une puissante charpente en chêne constitue l’élément majeur du bâtiment et supporte les importantes charges de la toiture.' },
+      { n: 5, el: 'Escalier', txt: 'Escaliers simples permettant l’accès aux greniers destinés au stockage des récoltes ou des matériels.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre assurant la stabilité des importantes charges transmises par la charpente et le pressoir.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'Le bâtiment est organisé autour de l’installation de pressage.',
+        groups: [
+          G(null, ['Grande salle du pressoir.', 'Aire de stockage des pommes.', 'Cellier.', 'Grenier.', 'Accès charretier de grandes dimensions.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'Les volumes sont dictés par les besoins de la production cidricole.',
+        groups: [
+          G(null, ['Charpente monumentale.', 'Pans de bois.', 'Grandes portes.', 'Toiture très pentue.', 'Façades sobres mais soignées.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Plusieurs caractéristiques distinguent cette typologie des autres bâtiments agricoles.',
+        groups: [
+          G(null, ['Présence d’un pressoir monumental.', 'Très grand volume libre.', 'Accès charretier.', 'Cellier intégré.', 'Architecture plus soignée que celle d’une grange.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie accompagne les grands domaines cidricoles normands.',
+        groups: [
+          G(null, ['Pays d’Auge.', 'Pays de Caux.', 'Lieuvin.', 'Roumois.', 'Bessin oriental.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
