@@ -12342,6 +12342,94 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonpaludierguerandaise',
+    name: 'Maison de paludier guérandaise',
+    region: 'Bretagne historique · Presqu’île guérandaise · Marais salants de Guérande',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Maçonnerie porteuse en moellons de granite avec charpente traditionnelle en bois et couverture en ardoise.',
+    usage: 'Habitation de paludier liée à l’exploitation des marais salants',
+    categorie: 'rural',
+    gps: '47.33° N, 2.43° O',
+    altitude: '2–30 m',
+    climat: 'Océanique littoral',
+    typeToiture: 'Deux pans',
+    penteToit: '40–50°',
+    essenceBois: 'Chêne, Châtaignier',
+    typeFondation: 'Fondations superficielles en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe–XIXe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20paludier%20Gu%C3%A9rande%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La maison de paludier guérandaise est un habitat vernaculaire associé à l’exploitation traditionnelle des marais salants de la presqu’île de Guérande. Généralement compacte, construite en pierre locale et couverte d’ardoise, elle combine logement familial, espaces de rangement et dépendances nécessaires au travail du sel, tout en s’adaptant aux vents et à l’humidité du littoral.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Bretagne historique · Presqu’île guérandaise'],
+      ['Usage', 'Habitation et activité salicole'],
+      ['Système', 'Murs porteurs maçonnés en pierre locale'],
+      ['Matériau dominant', 'Granite'],
+      ['Toiture', 'Deux pans à forte pente couverts d’ardoise'],
+      ['Particularité', 'Habitat spécialisé implanté au contact des marais salants et adapté à l’activité des paludiers'],
+    ],
+    materiaux: ['Granite', 'Moellons de pierre locale', 'Chaux', 'Chêne', 'Châtaignier', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux versants de pente marquée, traditionnellement couverte d’ardoises. Sa forme simple et relativement compacte offre une bonne résistance aux vents du littoral.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades massives en moellons de granite ou de pierre locale, laissées apparentes ou protégées par un enduit à la chaux. Les ouvertures restent relativement limitées et sont principalement disposées sur la façade principale.' },
+      { n: 3, el: 'Planchers', txt: 'Les constructions anciennes possèdent un sol de rez-de-chaussée dallé de pierre ou historiquement en terre battue. Lorsqu’un niveau supérieur existe, son plancher est constitué de poutres et solives en bois.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Structure reposant sur d’épais murs porteurs en maçonnerie de pierre, recevant directement les planchers éventuels et la charpente traditionnelle.' },
+      { n: 5, el: 'Escalier', txt: 'Dans les maisons disposant d’un étage ou de combles accessibles, la circulation verticale est assurée par un escalier intérieur simple en bois, parfois particulièrement raide afin d’occuper peu d’espace.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations superficielles en pierre, adaptées au substrat local. L’implantation privilégie les terrains légèrement surélevés par rapport aux zones humides des marais.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'L’organisation de la maison est étroitement liée au mode de vie des familles travaillant dans les marais salants.',
+        groups: [
+          G(null, ['Volume d’habitation compact de plan généralement rectangulaire.', 'Pièce commune constituant historiquement le cœur du logement.', 'Cheminée importante utilisée pour le chauffage et la cuisson.', 'Combles pouvant servir au stockage.', 'Présence possible de petites dépendances destinées au matériel professionnel.']),
+          G('Relation avec l’exploitation', ['Implantation à proximité immédiate des marais salants.', 'Organisation permettant le rangement des outils utilisés par le paludier.', 'Habitat regroupé dans des villages ou hameaux liés à l’exploitation du sel.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'La maison utilise des techniques et matériaux vernaculaires adaptés aux contraintes climatiques de la presqu’île guérandaise.',
+        groups: [
+          G(null, ['Murs épais en pierre locale.', 'Volume simple et compact.', 'Toiture à deux versants.', 'Couverture traditionnelle en ardoise.', 'Faible débord de toiture.', 'Pignons maçonnés.']),
+          G('Façade', ['Composition généralement sobre.', 'Ouvertures relativement petites.', 'Encadrements de baies en pierre.', 'Décoration architecturale limitée.', 'Orientation privilégiant l’ensoleillement tout en réduisant l’exposition aux vents dominants lorsque le site le permet.']),
+        ],
+      },
+      {
+        title: 'Adaptation au milieu',
+        icon: 'ph ph-waves',
+        intro: 'L’architecture est directement conditionnée par la proximité des marais, l’humidité et l’exposition aux vents océaniques.',
+        groups: [
+          G(null, ['Maçonnerie massive offrant une forte inertie thermique.', 'Nombre limité d’ouvertures sur les façades les plus exposées.', 'Toiture conçue pour résister aux vents du littoral.', 'Utilisation de matériaux disponibles localement.', 'Implantation préférentielle hors des secteurs directement inondables.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'L’identification repose autant sur les caractéristiques architecturales que sur le contexte paysager et fonctionnel.',
+        groups: [
+          G(null, ['Maison basse et compacte.', 'Maçonnerie de granite ou de pierre locale.', 'Couverture en ardoise.', 'Façade sobre.', 'Association historique avec le métier de paludier.', 'Proximité immédiate des marais salants.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'La typologie est concentrée autour des grands ensembles salicoles de la presqu’île guérandaise.',
+        groups: [
+          G(null, ['Guérande.', 'Saillé.', 'Clis.', 'Careil.', 'Batz-sur-Mer.', 'Le Croisic.', 'La Turballe.', 'Mesquer.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
