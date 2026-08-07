@@ -12976,6 +12976,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonmarchandmalouine',
+    name: 'Maison de marchand malouine',
+    region: 'Bretagne · Saint-Malo',
+    periode: 'XVIIe–XVIIIe siècle',
+    procede: 'Maçonnerie en granite de taille avec planchers en bois et charpente traditionnelle.',
+    usage: 'Habitation et commerce maritime',
+    categorie: 'urbain',
+    gps: '48.649° N, 2.025° O',
+    altitude: '0–20 m',
+    climat: 'Océanique littoral',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20marchand%20Saint-Malo%20intra-muros&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800'],
+    resume:
+      "La maison de marchand malouine est une demeure urbaine construite durant l’âge d’or du commerce maritime de Saint-Malo. Étroite, élevée sur plusieurs niveaux et bâtie en granite, elle associe logement, bureaux commerciaux et espaces de stockage destinés aux activités des armateurs et négociants.",
+    identite: [
+      ['Période', 'XVIIe–XVIIIe siècle'],
+      ['Région', 'Bretagne · Saint-Malo'],
+      ['Usage', 'Habitation et commerce'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Granite'],
+      ['Toiture', 'Deux pans en ardoise'],
+      ['Particularité', 'Façade étroite, élévation importante et organisation verticale adaptée au commerce maritime'],
+    ],
+    materiaux: ['Granite', 'Pierre de taille', 'Chaux', 'Chêne', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux versants couverte d’ardoises avec lucarnes. Les combles servent souvent au stockage.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades en granite appareillé présentant plusieurs niveaux de baies régulièrement ordonnancées. Les rez-de-chaussée comportent fréquemment des ouvertures commerciales.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en bois massif soutenus par de fortes poutres. Les étages accueillent les espaces résidentiels tandis que les niveaux inférieurs sont consacrés aux activités commerciales.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en granite recevant les planchers et une charpente traditionnelle.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois ou en pierre distribuant les nombreux niveaux du bâtiment.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre adaptées aux terrains littoraux et au tissu urbain dense de Saint-Malo.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La maison est conçue pour combiner habitation et activités commerciales.',
+        groups: [
+          G(null, ['Rez-de-chaussée commercial.', 'Étages résidentiels.', 'Combles de stockage.', 'Parcelle étroite et profonde.', 'Organisation verticale.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture reflète la prospérité du grand commerce maritime malouin.',
+        groups: [
+          G(null, ['Granite de taille.', 'Façades régulières.', 'Baies alignées.', 'Lucarnes.', 'Cheminées en pignon.', 'Corniches sobres.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La verticalité constitue l’une des principales caractéristiques de cette typologie.',
+        groups: [
+          G(null, ['Façade étroite.', 'Quatre à cinq niveaux.', 'Rez-de-chaussée commercial.', 'Construction en granite.', 'Implantation en front de rue.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est caractéristique de Saint-Malo.',
+        groups: [
+          G(null, ['Intra-Muros.', 'Saint-Servan.', 'Saint-Malo historique.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
