@@ -13132,6 +13132,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'logisfermecourfermeebreton',
+    name: 'Logis de ferme à cour fermée breton',
+    region: 'Bretagne · Haute-Bretagne · Ille-et-Vilaine · Morbihan oriental',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Maçonnerie en moellons de granite ou de schiste avec charpente traditionnelle en bois.',
+    usage: 'Exploitation agricole',
+    categorie: 'rural',
+    gps: '48.10° N, 1.60° O',
+    altitude: '30–220 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '40–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20cour%20ferm%C3%A9e%20Bretagne%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Le logis de ferme à cour fermée breton est une exploitation agricole dont les bâtiments sont organisés autour d’une cour centrale protégée. Cette disposition améliore la circulation, protège les activités agricoles des vents dominants et constitue une évolution des exploitations rurales les plus importantes.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Bretagne · Haute-Bretagne'],
+      ['Usage', 'Exploitation agricole'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Granite ou schiste'],
+      ['Toiture', 'Deux pans en ardoise'],
+      ['Particularité', 'Organisation des bâtiments autour d’une cour fermée'],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Moellons', 'Chaux', 'Chêne', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Les différents bâtiments présentent des toitures à deux versants en ardoise, formant un ensemble architectural homogène.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades sont construites en moellons de granite ou de schiste. Les ouvertures sont plus nombreuses sur le logis que sur les bâtiments agricoles.' },
+      { n: 3, el: 'Planchers', txt: 'Le logis comporte des planchers en bois tandis que les dépendances privilégient des sols en pierre ou en terre battue selon leur usage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs porteurs en pierre supportent des charpentes traditionnelles indépendantes pour chaque bâtiment.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur simple dans le logis principal. Les bâtiments agricoles disposent d’accès fonctionnels aux combles.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre adaptées au terrain naturel, formant un ensemble cohérent autour de la cour.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'L’ensemble est structuré autour d’une cour centrale.',
+        groups: [
+          G(null, ['Logis principal.', 'Cour centrale.', 'Étable.', 'Grange.', 'Remises.', 'Accès contrôlé à la cour.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'Les bâtiments forment un ensemble cohérent construit progressivement.',
+        groups: [
+          G(null, ['Maçonnerie en pierre locale.', 'Toitures en ardoise.', 'Volumes simples.', 'Organisation autour de la cour.', 'Façades sobres.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'L’organisation spatiale est le principal critère d’identification.',
+        groups: [
+          G(null, ['Cour fermée.', 'Bâtiments disposés en U ou en quadrilatère.', 'Logis dominant.', 'Protection contre les vents.', 'Fonction agricole complète.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est principalement présente dans les secteurs agricoles de Haute-Bretagne.',
+        groups: [
+          G(null, ['Pays de Rennes.', 'Pays de Vitré.', 'Pays de Redon.', 'Est du Morbihan.', 'Bassin de la Vilaine.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
