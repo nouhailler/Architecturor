@@ -13444,6 +13444,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'villabalneairenormande',
+    name: 'Villa balnéaire normande',
+    region: 'Normandie · Côte Fleurie · Côte d’Albâtre',
+    periode: '1850–1930',
+    procede: 'Maçonnerie en brique et pierre avec pans de bois décoratifs et charpente traditionnelle.',
+    usage: 'Résidence de villégiature',
+    categorie: 'littorale',
+    gps: '49.29° N, 0.06° E',
+    altitude: '0–60 m',
+    climat: 'Océanique littoral',
+    typeToiture: 'Toitures complexes à forte pente',
+    penteToit: '45–65°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en maçonnerie',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'Belle Époque',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Villa%20baln%C3%A9aire%20Deauville%20Trouville%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "La villa balnéaire normande apparaît avec le développement des stations balnéaires au XIXe siècle. Destinée à la villégiature, elle adopte une architecture pittoresque mêlant influences normandes, éclectiques et anglo-normandes, avec une recherche de confort, de lumière et de vues sur la mer.",
+    identite: [
+      ['Période', '1850–1930'],
+      ['Région', 'Normandie · Côte Fleurie · Côte d’Albâtre'],
+      ['Usage', 'Résidence de villégiature'],
+      ['Système', 'Murs porteurs maçonnés avec pans de bois décoratifs'],
+      ['Matériau dominant', 'Brique'],
+      ['Toiture', 'Toitures complexes à forte pente en ardoise'],
+      ['Particularité', 'Architecture pittoresque avec bow-windows, vérandas et pans de bois décoratifs'],
+    ],
+    materiaux: ['Brique', 'Pierre calcaire', 'Chêne', 'Ardoise', 'Céramique', 'Fonte'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Les toitures présentent souvent plusieurs volumes, avec lucarnes, épis de faîtage, débords et couvertures en ardoise.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades associent brique, pierre et pans de bois décoratifs. Elles comportent fréquemment des balcons, vérandas et bow-windows destinés à profiter de la vue.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers en bois distribuent plusieurs niveaux comprenant salons, chambres et pièces de réception.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure repose sur des murs porteurs maçonnés, complétés par des éléments décoratifs en pans de bois non structurels dans de nombreux exemples.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en bois noble, souvent mis en valeur dans le hall d’entrée.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en maçonnerie adaptées aux terrains littoraux, parfois renforcées selon la nature du sol.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La villa est conçue pour le confort et les loisirs de la villégiature.',
+        groups: [
+          G(null, ['Hall d’entrée.', 'Grand salon.', 'Véranda.', 'Chambres à l’étage.', 'Jardin paysager.', 'Dépendances éventuelles.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture privilégie une composition pittoresque et éclectique.',
+        groups: [
+          G(null, ['Pans de bois décoratifs.', 'Toitures complexes.', 'Lucarnes.', 'Bow-windows.', 'Balcons.', 'Décors en céramique.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La silhouette de ces villas est immédiatement reconnaissable.',
+        groups: [
+          G(null, ['Composition asymétrique.', 'Volumes multiples.', 'Orientation vers la mer.', 'Décor régionaliste.', 'Jardin d’agrément.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'La typologie accompagne le développement des stations balnéaires normandes.',
+        groups: [
+          G(null, ['Deauville.', 'Trouville-sur-Mer.', 'Cabourg.', 'Houlgate.', 'Villers-sur-Mer.', 'Étretat.', 'Le Tréport.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
