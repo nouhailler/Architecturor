@@ -12664,6 +12664,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'enclosparoissialbreton',
+    name: 'Enclos paroissial breton',
+    region: 'Bretagne · Léon · Cornouaille · Trégor',
+    periode: 'XVIe–XVIIe siècle',
+    procede: 'Maçonnerie en granite de taille et moellons avec charpentes traditionnelles en bois.',
+    usage: 'Ensemble religieux paroissial',
+    categorie: 'religieuse',
+    gps: '48.45° N, 3.95° O',
+    altitude: '20–250 m',
+    climat: 'Océanique',
+    typeToiture: 'Ardoise',
+    penteToit: '45–60°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: 'https://fr.wikipedia.org/wiki/Enclos_paroissial',
+    commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Parish_closes_in_Brittany',
+    images: [],
+    periodeTags: ['Avant 1800'],
+    resume:
+      "L’enclos paroissial breton est un ensemble monumental propre à la Basse-Bretagne, réunissant dans un espace clos une église, un cimetière, un calvaire monumental, une porte triomphale et souvent un ossuaire. Développé durant la prospérité économique des XVIe et XVIIe siècles, il constitue l’une des expressions les plus originales du patrimoine architectural breton.",
+    identite: [
+      ['Période', 'XVIe–XVIIe siècle'],
+      ['Région', 'Bretagne · Léon · Cornouaille · Trégor'],
+      ['Usage', 'Ensemble religieux paroissial'],
+      ['Système', 'Maçonnerie porteuse en pierre'],
+      ['Matériau dominant', 'Granite'],
+      ['Toiture', 'Toitures en ardoise selon les bâtiments'],
+      ['Particularité', 'Association d’une église, d’un calvaire monumental, d’un ossuaire et d’une enceinte'],
+    ],
+    materiaux: ['Granite', 'Kersanton', 'Schiste', 'Chaux', 'Chêne', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Les bâtiments de l’enclos possèdent des couvertures en ardoise reposant sur des charpentes traditionnelles en bois.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades sont réalisées en granite ou en pierre de kersanton, matériau privilégié pour les éléments sculptés grâce à sa finesse de taille.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont limités aux bâtiments clos comme l’église ou l’ossuaire ; les espaces extérieurs constituent une composante essentielle de la composition.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Chaque édifice repose sur des murs porteurs en pierre massive recevant une charpente traditionnelle.' },
+      { n: 5, el: 'Escalier', txt: 'Les circulations verticales sont limitées, hormis les accès aux tribunes ou aux clochers de l’église.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en maçonnerie de pierre adaptées aux terrains granitiques de Bretagne occidentale.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'L’enclos paroissial constitue un ensemble architectural cohérent organisé autour de l’église.',
+        groups: [
+          G(null, ['Église paroissiale.', 'Enceinte de pierre.', 'Porte triomphale.', 'Calvaire monumental.', 'Ossuaire.', 'Cimetière.', 'Placître.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'Chaque composant participe à une composition monumentale unique.',
+        groups: [
+          G(null, ['Granite et pierre de kersanton.', 'Décor sculpté très développé.', 'Calvaires monumentaux.', 'Charpentes traditionnelles.', 'Couvertures en ardoise.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'L’enclos paroissial se distingue par la réunion de plusieurs édifices dans une enceinte unique.',
+        groups: [
+          G(null, ['Mur d’enceinte.', 'Porte monumentale.', 'Calvaire sculpté.', 'Ossuaire indépendant.', 'Placître.', 'Composition religieuse complète.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Les enclos paroissiaux sont concentrés en Bretagne occidentale.',
+        groups: [
+          G(null, ['Saint-Thégonnec.', 'Guimiliau.', 'Lampaul-Guimiliau.', 'Pleyben.', 'Plougastel-Daoulas.', 'La Martyre.', 'Commana.', 'Sizun.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
