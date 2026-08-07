@@ -13694,6 +13694,92 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonpercheronne',
+    name: 'Maison percheronne',
+    region: 'Normandie · Perche',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Murs porteurs en maçonnerie de pierre locale avec charpente traditionnelle en bois.',
+    usage: 'Habitation rurale',
+    categorie: 'rural',
+    gps: '48.45° N, 0.55° E',
+    altitude: '150–300 m',
+    climat: 'Océanique dégradé',
+    typeToiture: 'Deux pans',
+    penteToit: '40–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en maçonnerie de pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La maison percheronne est une habitation rurale caractéristique du Perche normand. Elle se distingue par son plan généralement allongé, sa faible hauteur, sa façade principale orientée au sud, ses murs latéraux peu ouverts et son vaste comble sous une toiture à deux pans.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Normandie · Perche'],
+      ['Usage', 'Habitation rurale'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Toiture', 'Toiture à deux pans à forte pente'],
+      ['Particularité', 'Plan en longueur, faible hauteur et vaste comble accessible par une lucarne en façade'],
+    ],
+    materiaux: ['Grès', 'Calcaire', 'Silex', 'Chêne', 'Chaux', 'Tuile plate', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "Une toiture à deux pans couvre généralement l'ensemble du bâtiment et ménage un vaste volume de comble utilisé comme espace de stockage." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'La façade principale concentre l’essentiel des ouvertures et est généralement orientée au sud. Les élévations postérieure et latérales sont beaucoup plus fermées.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont principalement constitués de poutres, solives et planches en bois. Le rez-de-chaussée concentre les espaces habitables.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs porteurs en pierre locale supportent directement la charpente traditionnelle et les planchers en bois.' },
+      { n: 5, el: 'Escalier', txt: "Un escalier intérieur simple dessert le comble et les éventuels niveaux supérieurs. L'accès au grenier peut également être assuré par une lucarne aménagée." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont constituées de maçonnerie de pierre adaptée aux terrains du Perche.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: "La maison percheronne privilégie une organisation simple et longitudinale adaptée à l'habitat rural.",
+        groups: [
+          G(null, ['Plan rectangulaire allongé.', 'Faible hauteur.', 'Façade principale orientée au sud.', 'Pièces distribuées longitudinalement.', 'Vaste comble de stockage.']),
+        ],
+      },
+      {
+        title: 'Structure porteuse',
+        icon: 'ph ph-columns',
+        intro: 'La construction repose principalement sur une maçonnerie traditionnelle en pierre locale.',
+        groups: [
+          G(null, ['Murs porteurs en pierre.', 'Chaînages et encadrements en pierre de taille.', 'Charpente traditionnelle en bois.', 'Planchers en bois.', 'Murs latéraux peu ouverts.']),
+        ],
+      },
+      {
+        title: 'Toiture et combles',
+        icon: 'ph ph-house',
+        intro: 'Le volume important de la toiture constitue une caractéristique majeure de la maison percheronne.',
+        groups: [
+          G(null, ['Toiture à deux pans.', 'Comble spacieux.', "Lucarne d'accès au grenier.", 'Couverture en tuile plate ou ardoise selon les secteurs.', 'Charpente traditionnelle.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison du plan allongé, de la faible hauteur et de la façade sud constitue un bon faisceau de critères d'identification.",
+        groups: [
+          G(null, ['Plan en longueur.', 'Façade principale au sud.', 'Élévations latérales peu ouvertes.', 'Vaste comble.', 'Lucarne à jambages en pierre.', 'Absence générale de décor ostentatoire.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie appartient au territoire historique du Perche, à cheval sur plusieurs départements.',
+        groups: [
+          G(null, ['Orne.', 'Perche ornais.', 'Secteurs normands du Perche.', 'Environs de Mortagne-au-Perche.', 'Environs de Bellême.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
