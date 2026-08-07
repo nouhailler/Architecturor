@@ -13780,6 +13780,92 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'filaturecathedralenormande',
+    name: 'Filature-cathédrale normande',
+    region: "Normandie · Vallée de l'Andelle",
+    periode: '1850–1870',
+    procede: 'Maçonnerie monumentale en brique et pierre avec structure industrielle et charpente métallique.',
+    usage: 'Filature textile',
+    categorie: 'industrielle',
+    gps: '49.33° N, 1.28° E',
+    altitude: '20–80 m',
+    climat: 'Océanique',
+    typeToiture: 'Toiture industrielle à longs pans',
+    penteToit: '20–35°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées',
+    typeCharpente: 'Structure industrielle mixte',
+    epoqueDominante: 'Second Empire',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XIXe'],
+    resume:
+      "La filature-cathédrale normande est une forme monumentale d'architecture industrielle développée au XIXe siècle dans la vallée de l'Andelle. Elle transpose au bâtiment industriel un vocabulaire néogothique monumental, avec grandes baies ogivales, contreforts, rosaces et tours d'angle, donnant à l'usine l'apparence d'un édifice religieux.",
+    identite: [
+      ['Période', '1850–1870'],
+      ['Région', "Normandie · Vallée de l'Andelle"],
+      ['Usage', 'Filature textile'],
+      ['Système', 'Structure industrielle maçonnée à plusieurs niveaux'],
+      ['Matériau dominant', 'Brique et pierre calcaire'],
+      ['Toiture', 'Toiture industrielle à longs pans'],
+      ['Particularité', "Architecture monumentale néogothique transformant l'usine en véritable édifice-symbole"],
+    ],
+    materiaux: ['Brique', 'Pierre calcaire', 'Fer', 'Fonte', 'Verre', 'Bois'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La couverture industrielle protège de vastes espaces de production répartis sur plusieurs niveaux. La composition générale privilégie la monumentalité des murs-pignons et des façades.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les façades associent brique et pierre calcaire, avec de grandes baies ogivales, des contreforts, des rosaces et des décors inspirés de l'architecture religieuse néogothique." },
+      { n: 3, el: 'Planchers', txt: 'Les planchers industriels sont conçus pour supporter les machines et les charges importantes liées à la production textile.' },
+      { n: 4, el: 'Structure porteuse', txt: "La structure associe maçonnerie porteuse et éléments industriels en métal. Les quatre tours d'angle participent à la composition architecturale et accueillent notamment les circulations." },
+      { n: 5, el: 'Escalier', txt: 'Les circulations verticales sont intégrées dans les tours d’angle, permettant de desservir les différents niveaux de production.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont dimensionnées pour supporter une construction industrielle de très grande hauteur et les charges importantes liées aux équipements de production.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-buildings',
+        intro: 'Le bâtiment concentre une importante production textile dans un édifice de dimensions monumentales.',
+        groups: [
+          G(null, ['Vaste bâtiment de production.', 'Plusieurs niveaux de travail.', 'Circulations verticales intégrées aux tours.', 'Espaces techniques associés.', 'Implantation au bord du système hydraulique.']),
+        ],
+      },
+      {
+        title: 'Architecture monumentale',
+        icon: 'ph ph-church',
+        intro: "Le vocabulaire architectural transpose volontairement les formes de l'architecture religieuse au monde industriel.",
+        groups: [
+          G(null, ['Grandes baies ogivales.', 'Rosaces.', 'Contreforts.', 'Balustrades en pierre.', "Tours d'angle.", 'Décor néogothique.']),
+        ],
+      },
+      {
+        title: 'Structure industrielle',
+        icon: 'ph ph-factory',
+        intro: "L'architecture monumentale masque en partie la fonction strictement industrielle du bâtiment.",
+        groups: [
+          G(null, ['Vastes plateaux de production.', 'Structure adaptée aux machines textiles.', 'Circulations verticales.', 'Éclairage naturel abondant.', 'Organisation rationnelle des espaces de travail.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La combinaison du programme industriel et du vocabulaire néogothique constitue la signature de cette typologie.',
+        groups: [
+          G(null, ['Silhouette de cathédrale.', 'Baies ogivales monumentales.', 'Rosaces.', "Tours d'angle.", 'Brique et pierre.', 'Architecture industrielle historiciste.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: "Cette forme monumentale est particulièrement associée à la vallée industrielle de l'Andelle.",
+        groups: [
+          G(null, ["Vallée de l'Andelle.", 'Pont-Saint-Pierre.', 'Radepont.', 'Romilly-sur-Andelle.', 'Fontaine-Guérard.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
