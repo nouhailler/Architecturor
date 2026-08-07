@@ -13054,6 +13054,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonnegociantmorlaisienne',
+    name: 'Maison de négociant morlaisienne',
+    region: 'Bretagne · Morlaix',
+    periode: 'XVe–XVIIe siècle',
+    procede: 'Maçonnerie en granite avec structure intérieure en pans de bois et charpente traditionnelle.',
+    usage: 'Habitation et négoce',
+    categorie: 'urbain',
+    gps: '48.577° N, 3.828° O',
+    altitude: '0–60 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_%C3%A0_pondalez',
+    commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Maisons_%C3%A0_pondalez',
+    images: [],
+    periodeTags: ['Avant 1800'],
+    resume:
+      "La maison de négociant morlaisienne est une demeure urbaine développée durant l’essor commercial de Morlaix. Elle se caractérise par une façade étroite, plusieurs niveaux, un remarquable volume intérieur organisé autour d’un pondalez, ainsi que des espaces destinés au commerce et au stockage des marchandises.",
+    identite: [
+      ['Période', 'XVe–XVIIe siècle'],
+      ['Région', 'Bretagne · Morlaix'],
+      ['Usage', 'Habitation et commerce'],
+      ['Système', 'Murs porteurs maçonnés avec structure intérieure en pans de bois'],
+      ['Matériau dominant', 'Granite'],
+      ['Toiture', 'Deux pans en ardoise'],
+      ['Particularité', 'Présence d’un pondalez distribuant les étages autour d’un vaste volume central'],
+    ],
+    materiaux: ['Granite', 'Chêne', 'Chaux', 'Ardoise', 'Bois de châtaignier'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux pans couverte d’ardoises avec lucarnes éclairant les combles.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades en granite de taille relativement sobres. Les grandes baies commerciales occupent fréquemment le rez-de-chaussée.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers en bois s’organisent autour du pondalez, vaste cage verticale distribuant les différents niveaux.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs périphériques sont maçonnés tandis que la structure intérieure repose largement sur une ossature en bois.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier monumental en bois intégré au pondalez, élément emblématique de cette typologie.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en pierre adaptées au tissu urbain dense du centre ancien de Morlaix.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'L’organisation intérieure constitue la principale originalité de cette typologie.',
+        groups: [
+          G(null, ['Rez-de-chaussée commercial.', 'Pondalez central.', 'Escalier monumental en bois.', 'Étages résidentiels.', 'Combles de stockage.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture associe une façade relativement sobre à un intérieur exceptionnel.',
+        groups: [
+          G(null, ['Façade en granite.', 'Structure intérieure en pans de bois.', 'Grand volume central.', 'Charpente traditionnelle.', 'Toiture en ardoise.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Le pondalez constitue la signature architecturale de cette typologie.',
+        groups: [
+          G(null, ['Pondalez.', 'Escalier en bois sculpté.', 'Façade étroite.', 'Maison profonde.', 'Usage mixte habitation-commerce.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est propre au centre ancien de Morlaix.',
+        groups: [
+          G(null, ['Centre historique de Morlaix.', 'Quartier Saint-Mathieu.', 'Quartier Saint-Melaine.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
