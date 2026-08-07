@@ -12742,6 +12742,84 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonmaitretoiliere',
+    name: 'Maison de maître toilière',
+    region: 'Bretagne · Léon · Trégor',
+    periode: 'XVIe–XVIIIe siècle',
+    procede: 'Maçonnerie en granite de taille avec charpente traditionnelle en bois et couverture en ardoise.',
+    usage: 'Résidence de marchand-toilier',
+    categorie: 'rural',
+    gps: '48.48° N, 3.98° O',
+    altitude: '20–220 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en granite',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIe siècle',
+    difficulteIdentification: 'Modérée',
+    wikipediaUrl: '',
+    commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20Juloded%20L%C3%A9on%20architecture&title=Special:MediaSearch&type=image',
+    images: [],
+    periodeTags: ['Avant 1800'],
+    resume:
+      "La maison de maître toilière est la demeure des riches marchands de toile du Léon et du Trégor, appelés Juloded. Construite durant l’essor du commerce du lin, elle se distingue par une architecture plus ambitieuse que l’habitat rural traditionnel, avec des façades ordonnancées, des encadrements soignés et des volumes imposants.",
+    identite: [
+      ['Période', 'XVIe–XVIIIe siècle'],
+      ['Région', 'Bretagne · Léon · Trégor'],
+      ['Usage', 'Résidence de marchand-toilier'],
+      ['Système', 'Murs porteurs maçonnés en pierre de taille'],
+      ['Matériau dominant', 'Granite'],
+      ['Toiture', 'Deux pans en ardoise'],
+      ['Particularité', 'Demeure des Juloded avec façade ordonnancée et architecture inspirée des maisons de notables'],
+    ],
+    materiaux: ['Granite', 'Kersanton', 'Chaux', 'Chêne', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Toiture à deux versants couverte d’ardoises, percée de lucarnes selon l’importance de la demeure.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Façades en granite soigneusement appareillé. Les encadrements de baies, corniches et chaînages d’angle témoignent du niveau social élevé des propriétaires.' },
+      { n: 3, el: 'Planchers', txt: 'Planchers en chêne supportés par une forte structure de poutres. Les pièces nobles occupent généralement le premier étage.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Murs porteurs en pierre de taille recevant une charpente traditionnelle à fermes et pannes.' },
+      { n: 5, el: 'Escalier', txt: 'Escalier intérieur en pierre ou en bois noble, distribuant les différents niveaux de la demeure.' },
+      { n: 6, el: 'Fondations', txt: 'Fondations en maçonnerie de granite adaptées aux terrains du Léon et du Trégor.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La demeure est conçue pour affirmer la réussite économique de son propriétaire.',
+        groups: [
+          G(null, ['Corps de logis principal.', 'Cour d’accès.', 'Dépendances agricoles ou commerciales.', 'Jardin.', 'Espaces de stockage liés au commerce des toiles.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'L’architecture traduit l’influence de la prospérité du commerce du lin.',
+        groups: [
+          G(null, ['Façade ordonnancée.', 'Granite de qualité.', 'Encadrements sculptés.', 'Lucarnes.', 'Cheminées monumentales.', 'Volumes plus importants que l’habitat paysan.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Plusieurs caractéristiques permettent de distinguer cette typologie.',
+        groups: [
+          G(null, ['Architecture de notable rural.', 'Pierre de taille soignée.', 'Implantation dans les régions linières.', 'Association historique avec les Juloded.', 'Façade symétrique ou quasi symétrique.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'La typologie est principalement concentrée dans les régions productrices de lin.',
+        groups: [
+          G(null, ['Pays de Léon.', 'Morlaix.', 'Landivisiau.', 'Lampaul-Guimiliau.', 'Guimiliau.', 'Saint-Thégonnec.', 'Ploudiry.', 'Sizun.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
