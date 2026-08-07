@@ -13608,6 +13608,92 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisoncolombagesrouennaise',
+    name: 'Maison à colombages rouennaise',
+    region: 'Normandie · Rouen',
+    periode: 'XVe–XVIIIe siècle',
+    procede: 'Ossature en pans de bois avec remplissage en torchis ou briques, reposant sur un soubassement maçonné.',
+    usage: 'Habitation urbaine et commerce',
+    categorie: 'urbain',
+    gps: '49.442° N, 1.099° E',
+    altitude: '5–80 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '45–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Soubassement maçonné',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_%C3%A0_pans_de_bois',
+    commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Half-timbered_houses_in_Rouen',
+    images: [],
+    periodeTags: ['Avant 1800'],
+    resume:
+      "La maison à colombages rouennaise constitue une forme majeure de l’habitat urbain ancien de Rouen. Construite principalement en pans de bois, elle se caractérise par des façades étroites, des encorbellements successifs, des décors géométriques et une organisation verticale adaptée aux parcelles urbaines.",
+    identite: [
+      ['Période', 'XVe–XVIIIe siècle'],
+      ['Région', 'Normandie · Rouen'],
+      ['Usage', 'Habitation urbaine et commerce'],
+      ['Système', 'Ossature en pans de bois'],
+      ['Matériau dominant', 'Bois de chêne'],
+      ['Toiture', 'Toiture à deux pans couverte d’ardoise'],
+      ['Particularité', 'Façade étroite en pans de bois avec encorbellements et décor géométrique'],
+    ],
+    materiaux: ['Chêne', 'Torchis', 'Brique', 'Pierre calcaire', 'Ardoise', 'Chaux'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture à deux versants est généralement couverte d’ardoise et s’inscrit dans la profondeur de la parcelle étroite.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades présentent une ossature en pans de bois apparente ou partiellement enduite, avec des encorbellements pouvant augmenter légèrement la surface des étages.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont constitués de solives et de planches en bois et s’intègrent à la structure générale en pans de bois.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure repose sur une ossature principale en bois de chêne, complétée par des murs mitoyens et un soubassement maçonné.' },
+      { n: 5, el: 'Escalier', txt: 'Un escalier intérieur en bois distribue les différents niveaux, généralement organisés en profondeur depuis la rue.' },
+      { n: 6, el: 'Fondations', txt: 'Le bâtiment repose sur des fondations maçonnées et un soubassement en pierre protégeant la structure bois contre l’humidité.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La maison s’adapte à la forte densité du tissu urbain historique rouennais.',
+        groups: [
+          G(null, ['Parcelle étroite et profonde.', 'Façade sur rue.', 'Rez-de-chaussée commercial fréquent.', 'Plusieurs niveaux habitables.', 'Cour arrière ou puits de lumière éventuel.']),
+        ],
+      },
+      {
+        title: 'Structure porteuse',
+        icon: 'ph ph-columns',
+        intro: 'Le pan de bois constitue à la fois la structure et un élément majeur de l’expression architecturale.',
+        groups: [
+          G(null, ['Poteaux et sablières en chêne.', 'Décharges et croix de Saint-André.', 'Remplissage en torchis ou brique.', 'Soubassement maçonné.', 'Murs mitoyens en maçonnerie.']),
+        ],
+      },
+      {
+        title: 'Façade',
+        icon: 'ph ph-buildings',
+        intro: 'Le décor du pan de bois varie selon les périodes et les quartiers.',
+        groups: [
+          G(null, ['Encadrements en bois.', 'Motifs géométriques.', 'Poteaux sculptés sur certains édifices.', 'Encourbellements.', 'Façades étroites et verticales.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La combinaison de la structure en bois et de la morphologie parcellaire permet de reconnaître cette architecture urbaine.',
+        groups: [
+          G(null, ['Pans de bois apparents.', 'Parcelle étroite.', 'Verticalité.', 'Encourbellement des étages.', 'Décor géométrique.', 'Alignement sur rue.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'La typologie est particulièrement représentée dans le centre historique de Rouen.',
+        groups: [
+          G(null, ['Centre historique de Rouen.', 'Quartier Saint-Maclou.', 'Quartier Saint-Vivien.', 'Quartier Saint-Ouen.', 'Vieux Rouen.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
