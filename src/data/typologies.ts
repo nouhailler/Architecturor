@@ -15419,6 +15419,116 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'cabanegardiancamarguaise',
+    name: 'Cabane de gardian camarguaise',
+    region: 'Provence · Camargue · Bouches-du-Rhône · Petite Camargue',
+    periode: 'XIXe–XXe siècle',
+    procede: "Structure légère en bois, murs constitués traditionnellement de roseaux et d'une ossature en bois, avec toiture à forte pente couverte de sagne ou de matériaux végétaux.",
+    usage: "Habitation saisonnière, abri de gardian et bâtiment d'exploitation camarguaise",
+    categorie: 'rural',
+    gps: '43.55° N, 4.60° E',
+    altitude: '0–20 m',
+    climat: 'Méditerranéen littoral humide',
+    typeToiture: 'Deux pans fortement inclinés',
+    penteToit: '35–50°',
+    essenceBois: 'Pin',
+    typeFondation: 'Fondations légères ou soubassement maçonné',
+    typeCharpente: 'Charpente légère en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "La cabane de gardian camarguaise est une construction emblématique des paysages de Camargue, associée aux gardians et à l'élevage extensif des taureaux et chevaux. Son architecture légère est directement adaptée aux matériaux disponibles dans les zones humides du delta, notamment le bois et le roseau. Sa façade principale et sa toiture fortement inclinée constituent ses principaux éléments caractéristiques.",
+    identite: [
+      ['Période', 'XIXe–XXe siècle'],
+      ['Région', 'Provence · Camargue · Bouches-du-Rhône · Petite Camargue'],
+      ['Usage', "Habitation saisonnière, abri de gardian et bâtiment d'exploitation camarguaise"],
+      ['Système', 'Ossature légère en bois avec remplissage traditionnel en roseaux'],
+      ['Matériau dominant', 'Roseau de Camargue et bois'],
+      ['Toiture', 'Toiture à forte pente traditionnellement couverte de sagne'],
+      ['Particularité', 'Mur pignon orienté vers les vents dominants et toiture fortement inclinée formant une silhouette caractéristique des cabanes camarguaises'],
+    ],
+    materiaux: ['Roseau', 'Bois', 'Sagne', 'Terre', 'Chaux', 'Pierre'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "La toiture présente une pente importante permettant l'évacuation rapide des eaux de pluie. Elle est traditionnellement couverte de sagne, terme local désignant le roseau utilisé en couverture." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les parois traditionnelles sont constituées d'une ossature en bois associée à des panneaux de roseaux. Certaines cabanes plus récentes utilisent des maçonneries ou des matériaux contemporains." },
+      { n: 3, el: 'Planchers', txt: 'Le plancher est généralement simple et peut être constitué de bois posé sur une structure légère. Certaines constructions directement implantées sur le sol présentent un niveau intérieur très peu surélevé.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure traditionnelle repose sur une ossature en bois formant les murs et la charpente. Cette construction légère est particulièrement adaptée aux terrains humides et aux ressources locales.' },
+      { n: 5, el: 'Escalier', txt: "La cabane est généralement de plain-pied et ne nécessite donc pas d'escalier intérieur. Les accès sont simples et directement reliés au terrain environnant." },
+      { n: 6, el: 'Fondations', txt: "Les constructions traditionnelles reposent sur des dispositifs simples adaptés aux sols meubles de Camargue. Des pierres, plots ou fondations légères peuvent être utilisés pour isoler l'ossature du sol humide." },
+    ],
+    sections: [
+      {
+        title: 'Morphologie générale',
+        icon: 'ph ph-house-line',
+        intro: 'La cabane de gardian possède une silhouette immédiatement reconnaissable dominée par sa toiture fortement inclinée.',
+        groups: [
+          G(null, ['Plan généralement rectangulaire.', 'Construction de plain-pied.', 'Volume étroit et allongé.', 'Toiture fortement inclinée.', 'Pignon caractéristique.', 'Construction de faible hauteur.']),
+        ],
+      },
+      {
+        title: 'Le pignon',
+        icon: 'ph ph-caret-up',
+        intro: "Le pignon constitue l'un des éléments les plus caractéristiques de la cabane traditionnelle.",
+        groups: [
+          G(null, ['Pignon fortement marqué.', 'Forme triangulaire ou légèrement courbe selon les variantes.', "Ouverture principale souvent placée dans le pignon.", "Protection de l'entrée contre les vents.", 'Orientation étudiée en fonction des conditions locales.']),
+        ],
+      },
+      {
+        title: 'Toiture en sagne',
+        icon: 'ph ph-tree',
+        intro: 'La couverture traditionnelle utilise le roseau abondant dans les zones humides du delta.',
+        groups: [
+          G(null, ['Roseau local.', 'Épaisseur importante de couverture.', 'Forte pente.', 'Protection contre la pluie.', 'Entretien et remplacement périodique.', 'Adaptation aux ressources de la zone humide.']),
+        ],
+      },
+      {
+        title: 'Matériaux locaux',
+        icon: 'ph ph-cube',
+        intro: 'La cabane constitue un exemple particulièrement intéressant d’architecture vernaculaire utilisant directement les ressources du territoire.',
+        groups: [
+          G(null, ['Roseau de Camargue.', 'Bois.', 'Sagne.', 'Terre.', 'Pierre pour certains éléments de soubassement.', 'Chaux dans certaines variantes.']),
+        ],
+      },
+      {
+        title: 'Fonction de gardian',
+        icon: 'ph ph-horse',
+        intro: 'La cabane est directement associée au mode de vie des gardians et à l’élevage extensif pratiqué dans les espaces camarguais.',
+        groups: [
+          G(null, ['Abri du gardian.', 'Logement saisonnier.', 'Proximité des pâturages.', 'Surveillance des troupeaux.', 'Rangement du petit matériel.', 'Relation avec les manades.']),
+        ],
+      },
+      {
+        title: 'Adaptation au milieu humide',
+        icon: 'ph ph-drop',
+        intro: 'La construction répond aux contraintes particulières des zones basses et humides de la Camargue.',
+        groups: [
+          G(null, ['Structure légère.', 'Matériaux disponibles localement.', "Protection du bois contre l'humidité.", 'Fondations simples.', 'Toiture fortement drainante.', 'Implantation adaptée aux variations du terrain.']),
+        ],
+      },
+      {
+        title: 'Évolution contemporaine',
+        icon: 'ph ph-arrows-clockwise',
+        intro: 'Les cabanes actuelles peuvent reprendre la forme traditionnelle tout en utilisant des matériaux et équipements contemporains.',
+        groups: [
+          G(null, ['Ossature bois moderne.', 'Isolation contemporaine.', 'Couvertures rénovées.', 'Équipements sanitaires.', 'Usage touristique ou patrimonial.', 'Conservation de la silhouette traditionnelle.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La silhouette de la toiture, le pignon caractéristique et l’emploi traditionnel du roseau permettent de distinguer facilement la cabane de gardian.',
+        groups: [
+          G(null, ['Construction de plain-pied.', 'Volume étroit et allongé.', 'Toiture fortement inclinée.', 'Couverture traditionnelle en sagne.', 'Ossature en bois.', 'Parois en roseaux.', 'Association historique avec les gardians et les manades.', 'Implantation dans les paysages de Camargue.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
