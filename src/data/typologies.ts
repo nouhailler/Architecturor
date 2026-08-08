@@ -15105,6 +15105,116 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'villagepercheprovencal',
+    name: 'Village perché provençal',
+    region: 'Provence · Vaucluse · Alpes-de-Haute-Provence · Var',
+    periode: 'Moyen Âge–XIXe siècle',
+    procede: 'Maçonnerie porteuse en pierre et moellons, organisée en tissu bâti dense et étagé sur le relief.',
+    usage: 'Habitat groupé, commerce, artisanat et fonctions communautaires',
+    categorie: 'urbain',
+    gps: '43.95° N, 5.20° E',
+    altitude: '200–800 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux pans',
+    penteToit: '20–35°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations sur substrat rocheux ou maçonnerie de soutènement',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'Moyen Âge',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Le village perché provençal est une forme d'habitat groupé implantée sur un relief défensif ou dominant, caractéristique de nombreux territoires de Provence. Le bâti compact s'organise autour de rues étroites, de passages couverts, de places et d'édifices communautaires, en s'adaptant directement à la pente.",
+    identite: [
+      ['Période', 'Moyen Âge–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Alpes-de-Haute-Provence · Var'],
+      ['Usage', 'Habitat groupé, commerce, artisanat et fonctions communautaires'],
+      ['Système', 'Bâti dense en maçonnerie de pierre adapté au relief'],
+      ['Matériau dominant', 'Pierre et moellons calcaires'],
+      ['Toiture', 'Toitures à deux pans ou à faible pente, généralement couvertes de tuiles canal'],
+      ['Particularité', 'Implantation compacte sur un relief dominant avec adaptation des rues, maisons et équipements à la pente'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Terre cuite', 'Bois', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "Les maisons présentent généralement des toitures à deux pans couvertes de tuiles canal. Les volumes s'adaptent à la pente et peuvent produire une succession de niveaux de toiture." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades sont généralement constituées de maçonneries de pierre ou de moellons enduits à la chaux. Les constructions peuvent être directement implantées contre la roche ou les murs de soutènement.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont traditionnellement réalisés en bois et permettent de développer les maisons sur plusieurs niveaux afin de compenser la contrainte de la pente.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les maisons reposent sur des murs porteurs en maçonnerie. Les murs mitoyens et les murs de soutènement jouent un rôle important dans la stabilité du tissu bâti.' },
+      { n: 5, el: 'Escalier', txt: 'Les escaliers sont essentiels à la circulation dans le village et peuvent être intérieurs, extérieurs ou intégrés aux ruelles et passages du tissu bâti.' },
+      { n: 6, el: 'Fondations', txt: 'Les bâtiments sont souvent directement fondés sur le substrat rocheux ou sur des maçonneries adaptées aux fortes différences de niveau.' },
+    ],
+    sections: [
+      {
+        title: 'Implantation sur le relief',
+        icon: 'ph ph-mountains',
+        intro: 'Le relief constitue le principe fondateur du village perché et détermine la disposition des rues et des constructions.',
+        groups: [
+          G(null, ['Implantation sur une hauteur.', 'Adaptation directe à la pente.', 'Maisons étagées.', 'Murs de soutènement.', 'Points hauts occupés par les bâtiments majeurs.']),
+        ],
+      },
+      {
+        title: 'Tissu bâti',
+        icon: 'ph ph-buildings',
+        intro: "La recherche de protection et l'adaptation au relief produisent un tissu urbain particulièrement compact.",
+        groups: [
+          G(null, ['Maisons mitoyennes.', 'Fronts bâtis continus.', 'Ruelles étroites.', 'Passages couverts.', 'Escaliers publics.', 'Petites places.']),
+        ],
+      },
+      {
+        title: 'Architecture des maisons',
+        icon: 'ph ph-house-line',
+        intro: "Les maisons s'adaptent à la pente en développant fréquemment plusieurs niveaux accessibles depuis des rues situées à des altitudes différentes.",
+        groups: [
+          G(null, ['Murs épais en pierre.', 'Façades enduites.', 'Plusieurs niveaux.', 'Rez-de-chaussée commercial ou agricole.', "Étages d'habitation.", 'Combles de stockage.']),
+        ],
+      },
+      {
+        title: 'Défense et fortifications',
+        icon: 'ph ph-shield',
+        intro: 'De nombreux villages perchés possèdent une origine ou une organisation liée à la défense du territoire.',
+        groups: [
+          G(null, ['Remparts éventuels.', 'Portes fortifiées.', 'Tours défensives.', 'Position dominante.', 'Rue d’accès contrôlée.', 'Église ou château occupant un point stratégique.']),
+        ],
+      },
+      {
+        title: 'Eau et équipements',
+        icon: 'ph ph-drop',
+        intro: 'La gestion de l’eau est essentielle dans les villages implantés sur des reliefs où les ressources sont parfois éloignées.',
+        groups: [
+          G(null, ['Fontaine.', 'Citerne.', 'Lavoir.', 'Puits.', 'Canalisation ou conduite d’eau.', 'Bassin communal.']),
+        ],
+      },
+      {
+        title: 'Espaces communautaires',
+        icon: 'ph ph-users-three',
+        intro: 'Le village est structuré par des équipements et espaces collectifs qui organisent la vie communautaire.',
+        groups: [
+          G(null, ['Place centrale.', 'Église.', 'Chapelle.', 'Mairie ou bâtiment communal.', 'Four communal.', 'Lavoir.', 'Fontaine.']),
+        ],
+      },
+      {
+        title: 'Relation au paysage',
+        icon: 'ph ph-binoculars',
+        intro: 'La position dominante donne au village une relation particulière avec son territoire environnant.',
+        groups: [
+          G(null, ['Vue sur les vallées.', 'Relation avec les cultures et terrasses.', 'Vignobles ou oliveraies selon les secteurs.', 'Terrasses agricoles.', 'Chemins reliant le village aux terres cultivées.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison du relief, de la densité du bâti et du réseau de ruelles constitue le principal critère d'identification.",
+        groups: [
+          G(null, ['Implantation sur une hauteur.', 'Tissu bâti dense.', 'Ruelles étroites et souvent pentues.', 'Maisons mitoyennes en pierre.', 'Église ou édifice majeur dominant le village.', 'Adaptation très forte au relief.', 'Relation panoramique avec le paysage.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
