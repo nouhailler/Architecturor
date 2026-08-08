@@ -14603,6 +14603,100 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonavanceebretonne',
+    name: 'Maison à avancée bretonne',
+    region: 'Bretagne · Léon · Trégor · Finistère',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Murs porteurs en maçonnerie de pierre, avec corps principal prolongé par une avancée ou un pignon en saillie.',
+    usage: 'Habitation rurale et agricole',
+    categorie: 'rural',
+    gps: '48.55° N, -3.65° E',
+    altitude: '20–180 m',
+    climat: 'Océanique',
+    typeToiture: 'Toitures à deux pans combinées',
+    penteToit: '40–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe–XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La maison à avancée bretonne est une forme d'habitat rural caractérisée par la présence d'un ou plusieurs volumes en saillie par rapport au corps principal du bâtiment. Ces avancées peuvent correspondre à des extensions du logis, à des pièces particulières ou à des distributions différenciées, et constituent un élément morphologique important de certaines architectures rurales du nord et de l'ouest de la Bretagne.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Bretagne · Léon · Trégor · Finistère'],
+      ['Usage', 'Habitation rurale et agricole'],
+      ['Système', 'Murs porteurs maçonnés en pierre'],
+      ['Matériau dominant', 'Granite et schiste'],
+      ['Toiture', 'Toitures à deux pans en ardoise, avec volumes secondaires correspondant aux avancées'],
+      ['Particularité', "Présence d'un volume en saillie sur le corps principal, formant une avancée identifiable dans le plan et la silhouette du bâtiment"],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Grès', 'Bois', 'Chaux', 'Ardoise', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La couverture est généralement réalisée en ardoise et se compose de plusieurs pans correspondant au corps principal et aux volumes en avancée.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les murs sont principalement constitués de maçonnerie de pierre locale. L'avancée forme une rupture dans l'alignement de la façade et peut être traitée comme un volume autonome." },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont traditionnellement constitués de poutres et solives en bois. Les volumes en avancée peuvent accueillir une pièce supplémentaire ou un espace fonctionnel particulier.' },
+      { n: 4, el: 'Structure porteuse', txt: "La structure repose sur des murs porteurs en pierre. L'avancée possède généralement ses propres murs porteurs et peut être construite dans le prolongement ou en complément du corps principal." },
+      { n: 5, el: 'Escalier', txt: "L'escalier est généralement implanté dans le corps principal ou à proximité de l'avancée. Il est réalisé en bois ou en maçonnerie selon les périodes et les constructions." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont constituées de maçonnerie de pierre. Les volumes en saillie disposent généralement d’une assise maçonnée propre.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation du plan',
+        icon: 'ph ph-house-line',
+        intro: "La caractéristique principale de cette maison réside dans la dissymétrie créée par l'ajout d'un ou plusieurs volumes en saillie.",
+        groups: [
+          G(null, ['Corps principal généralement rectangulaire.', 'Volume secondaire en saillie.', 'Avancée pouvant accueillir une pièce spécifique.', 'Organisation intérieure adaptée à la topographie et aux fonctions agricoles.', 'Dépendances fréquemment associées.']),
+        ],
+      },
+      {
+        title: 'L’avancée',
+        icon: 'ph ph-arrows-out-cardinal',
+        intro: "L'avancée constitue l'élément morphologique qui donne son identité à cette forme d'habitat.",
+        groups: [
+          G(null, ['Volume construit en saillie.', 'Pignon ou façade avancée par rapport au corps principal.', "Rupture de l'alignement de la façade.", 'Toiture propre ou raccordée au volume principal.', 'Possibilité de plusieurs avancées selon les bâtiments.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-wall',
+        intro: 'La construction utilise principalement les pierres disponibles localement dans les différents terroirs bretons.',
+        groups: [
+          G(null, ['Granite.', 'Schiste.', 'Grès.', 'Moellons de pierre.', 'Mortier de chaux.', 'Pierre de taille pour les encadrements.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house',
+        intro: 'La multiplication des volumes peut produire une silhouette de toiture particulièrement complexe.',
+        groups: [
+          G(null, ['Couverture traditionnelle en ardoise.', 'Toitures à deux pans.', 'Raccords entre corps principal et avancée.', 'Pignons généralement couverts.', 'Cheminées en maçonnerie.']),
+        ],
+      },
+      {
+        title: "Relation avec l'exploitation agricole",
+        icon: 'ph ph-tractor',
+        intro: 'La maison s’inscrit généralement dans une organisation rurale associant habitation, stockage et activités agricoles.',
+        groups: [
+          G(null, ['Grange ou étable à proximité.', 'Cour agricole.', 'Dépendances maçonnées.', 'Espaces de stockage.', 'Jardin et verger.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La présence d'un volume nettement en saillie permet de distinguer cette organisation des maisons rurales bretonnes à plan simple.",
+        groups: [
+          G(null, ['Avancée visible dans le plan.', 'Rupture de l’alignement de façade.', 'Volume secondaire maçonné.', 'Toiture en ardoise.', 'Maçonnerie de pierre locale.', 'Organisation rurale.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
