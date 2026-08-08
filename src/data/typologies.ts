@@ -14501,6 +14501,108 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonpecheurbretonne',
+    name: 'Maison de pêcheur bretonne',
+    region: 'Bretagne · Littoral · Villages et ports côtiers',
+    periode: 'XVIIe–XXe siècle',
+    procede: 'Murs porteurs en maçonnerie de pierre locale, généralement granite ou schiste, avec charpente traditionnelle en bois.',
+    usage: 'Habitation de pêcheur et logement familial',
+    categorie: 'littorale',
+    gps: '48.20° N, -3.80° E',
+    altitude: '0–100 m',
+    climat: 'Océanique littoral',
+    typeToiture: 'Deux pans',
+    penteToit: '40–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "La maison de pêcheur bretonne est un habitat vernaculaire des villages et ports du littoral breton. Généralement construite en pierre et couverte d'ardoise, elle adopte souvent un volume étroit et compact, organisé sur rue ou directement au contact des quais et des espaces liés aux activités maritimes.",
+    identite: [
+      ['Période', 'XVIIe–XXe siècle'],
+      ['Région', 'Bretagne · Littoral · Villages et ports côtiers'],
+      ['Usage', 'Habitation de pêcheur et logement familial'],
+      ['Système', 'Murs porteurs maçonnés en pierre'],
+      ['Matériau dominant', 'Granite ou schiste'],
+      ['Toiture', "Toiture à deux pans fortement inclinée couverte d'ardoise"],
+      ['Particularité', 'Volume compact et souvent étroit, directement associé aux rues, venelles, ports ou quais des villages littoraux'],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Grès', 'Chaux', 'Bois', 'Ardoise', 'Fer', 'Verre'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "La toiture est généralement à deux pans et fortement inclinée afin de faciliter l'écoulement des pluies. L'ardoise constitue la couverture traditionnelle dominante." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades sont généralement constituées de maçonnerie de pierre locale, souvent en granite, schiste ou grès. Les murs peuvent être laissés apparents ou recevoir un enduit à la chaux.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont traditionnellement constitués de poutres et solives en bois. Les maisons étroites peuvent comporter plusieurs niveaux superposés.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure repose principalement sur des murs porteurs épais en maçonnerie. Les murs mitoyens peuvent participer à la stabilité des maisons implantées en alignement.' },
+      { n: 5, el: 'Escalier', txt: "L'escalier intérieur est généralement compact, en bois ou en maçonnerie, afin de préserver la surface habitable limitée des maisons étroites." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement constituées de maçonnerie de pierre et peuvent être particulièrement robustes dans les secteurs directement exposés à l’humidité et aux embruns.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-house-line',
+        intro: 'La maison de pêcheur est conçue comme un habitat compact adapté aux contraintes économiques et foncières des villages littoraux.',
+        groups: [
+          G(null, ['Plan généralement étroit et profond.', 'Façade principale donnant sur la rue ou le quai.', 'Un ou plusieurs niveaux habitables.', 'Combles utilisés pour le stockage.', 'Petites dépendances selon la configuration du terrain.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie littorale',
+        icon: 'ph ph-wall',
+        intro: 'La pierre locale constitue le matériau structurel dominant et donne aux villages littoraux leur aspect minéral caractéristique.',
+        groups: [
+          G(null, ['Granite dans de nombreux secteurs.', 'Schiste dans certaines zones littorales.', 'Grès selon les ressources locales.', 'Mortier de chaux.', "Encadrements d'ouvertures en pierre."]),
+        ],
+      },
+      {
+        title: 'Toiture et charpente',
+        icon: 'ph ph-house',
+        intro: 'La couverture en ardoise et la pente de toiture répondent au climat humide et venteux du littoral breton.',
+        groups: [
+          G(null, ['Toiture à deux pans.', 'Pente relativement forte.', 'Couverture traditionnelle en ardoise.', 'Charpente en bois.', 'Cheminée fréquemment située près du faîtage.']),
+        ],
+      },
+      {
+        title: 'Implantation portuaire',
+        icon: 'ph ph-anchor',
+        intro: 'La maison entretient une relation directe avec les espaces de travail et de circulation liés aux activités maritimes.',
+        groups: [
+          G(null, ['Implantation dans les villages côtiers.', 'Présence possible en bord de quai.', 'Alignement sur rue ou venelle.', 'Proximité des ports et cales.', 'Relations avec les espaces de stockage et de préparation du matériel.']),
+        ],
+      },
+      {
+        title: 'Adaptation au climat',
+        icon: 'ph ph-wind',
+        intro: 'La construction privilégie la robustesse face aux vents, aux pluies et aux embruns.',
+        groups: [
+          G(null, ['Murs maçonnés épais.', 'Ouvertures relativement réduites dans les constructions anciennes.', 'Toiture fortement inclinée.', 'Matériaux résistants aux intempéries.', 'Façades parfois protégées par enduit ou peinture.']),
+        ],
+      },
+      {
+        title: 'Évolution de l’habitat',
+        icon: 'ph ph-clock',
+        intro: "La typologie évolue avec la transformation des villages maritimes et l'amélioration progressive des conditions de logement.",
+        groups: [
+          G(null, ['Maisons anciennes de petite dimension.', 'Surélévation possible au XIXe siècle.', 'Ouvertures plus grandes dans les constructions récentes.', 'Développement des façades colorées dans certains ports.', "Transformation progressive des logements avec l'évolution des activités maritimes."]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'un volume compact, d'une maçonnerie de pierre et d'une toiture d'ardoise permet d'identifier cette famille d'habitat littoral.",
+        groups: [
+          G(null, ['Maison étroite et compacte.', 'Murs en pierre locale.', 'Toiture en ardoise.', 'Implantation en alignement.', 'Relation directe avec rue, quai ou venelle.', 'Cheminée visible.', 'Adaptation au climat maritime.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
