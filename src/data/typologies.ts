@@ -12928,7 +12928,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Abri%20canot%20de%20sauvetage%20Bretagne&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Erquy_-_Abandoned_Lifeboat_House_-_panoramio.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "L’abri du canot de sauvetage est un bâtiment spécialisé destiné à protéger un canot de sauvetage tout en permettant sa mise à l’eau rapide. Implanté à proximité immédiate du rivage, il constitue une composante emblématique des stations de sauvetage maritimes bretonnes développées à partir de la seconde moitié du XIXe siècle.",
@@ -13006,7 +13006,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20marchand%20Saint-Malo%20intra-muros&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Saint-Malo_(35)_Maison_du_Gouverneur_01.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "La maison de marchand malouine est une demeure urbaine construite durant l’âge d’or du commerce maritime de Saint-Malo. Étroite, élevée sur plusieurs niveaux et bâtie en granite, elle associe logement, bureaux commerciaux et espaces de stockage destinés aux activités des armateurs et négociants.",
@@ -13084,7 +13084,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_%C3%A0_pondalez',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Maisons_%C3%A0_pondalez',
-    images: [],
+    images: ['Maison_à_Pondalez,_Morlaix.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "La maison de négociant morlaisienne est une demeure urbaine développée durant l’essor commercial de Morlaix. Elle se caractérise par une façade étroite, plusieurs niveaux, un remarquable volume intérieur organisé autour d’un pondalez, ainsi que des espaces destinés au commerce et au stockage des marchandises.",
@@ -13240,7 +13240,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Clos-masure',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Clos-masures',
-    images: [],
+    images: ['Manoir-clos-masure.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Le clos-masure cauchois est une exploitation agricole caractéristique du Pays de Caux, organisée autour d’une vaste cour plantée de pommiers et protégée par des talus arborés appelés fossés plantés. Les bâtiments agricoles et le logis s’organisent librement au sein de cet enclos paysager, véritable signature du paysage cauchois.",
@@ -13318,7 +13318,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Manoir%20cauchois%20Pays%20de%20Caux%20architecture&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ["0_Varengeville-sur-Mer_-_Manoir_d'Ango_(1).JPG"],
     periodeTags: ['Avant 1800'],
     resume:
       "Le manoir cauchois est une résidence seigneuriale caractéristique du Pays de Caux. Il associe un logis noble, des communs agricoles et parfois un colombier ou un pressoir, dans un ensemble implanté au sein d’un clos planté. Son architecture mêle silex, brique, pans de bois et hautes toitures normandes.",
@@ -13474,7 +13474,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Villa%20baln%C3%A9aire%20Deauville%20Trouville%20architecture&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Villa_Argentine_(Cabourg).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "La villa balnéaire normande apparaît avec le développement des stations balnéaires au XIXe siècle. Destinée à la villégiature, elle adopte une architecture pittoresque mêlant influences normandes, éclectiques et anglo-normandes, avec une recherche de confort, de lumière et de vues sur la mer.",
