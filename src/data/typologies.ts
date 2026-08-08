@@ -14218,6 +14218,92 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'grenierselnormand',
+    name: 'Grenier à sel normand',
+    region: 'Normandie · Littoral de la Manche',
+    periode: 'XVIe–XVIIIe siècle',
+    procede: 'Maçonnerie porteuse en pierre ou brique, avec charpente traditionnelle en bois et planchers dimensionnés pour le stockage.',
+    usage: 'Stockage, contrôle et distribution du sel',
+    categorie: 'publique',
+    gps: '49.50° N, -1.20° E',
+    altitude: '0–80 m',
+    climat: 'Océanique littoral',
+    typeToiture: 'Deux pans ou longs pans',
+    penteToit: '35–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800'],
+    resume:
+      "Le grenier à sel est un bâtiment spécialisé destiné au stockage et à la gestion du sel dans le cadre de la gabelle. Dans les villes normandes concernées par le commerce maritime, ces édifices s'intègrent au tissu administratif et portuaire et associent robustesse constructive, volumes de stockage et dispositifs de contrôle.",
+    identite: [
+      ['Période', 'XVIe–XVIIIe siècle'],
+      ['Région', 'Normandie · Littoral de la Manche'],
+      ['Usage', 'Stockage, contrôle et distribution du sel'],
+      ['Système', 'Murs porteurs maçonnés'],
+      ['Matériau dominant', 'Pierre ou brique'],
+      ['Toiture', "Toiture à deux pans ou à longs pans couverte d'ardoise ou de tuile"],
+      ['Particularité', 'Bâtiment administratif et commercial spécialisé dans le stockage du sel soumis au contrôle fiscal de la gabelle'],
+    ],
+    materiaux: ['Pierre', 'Brique', 'Bois', 'Chaux', 'Ardoise', 'Tuile', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture à deux pans ou à longs pans protège les vastes volumes de stockage. La couverture est généralement réalisée en ardoise ou en tuile selon le secteur.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades sont principalement maçonnées et présentent des ouvertures relativement limitées, adaptées à un bâtiment de stockage. Les accès sont dimensionnés pour la manutention des marchandises.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers et poutres sont dimensionnés pour supporter les charges importantes liées au stockage du sel.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure repose principalement sur des murs porteurs épais en pierre ou en brique associés à une charpente traditionnelle en bois.' },
+      { n: 5, el: 'Escalier', txt: 'Les escaliers desservent les différents niveaux ou espaces de stockage et sont conçus avant tout pour un usage fonctionnel.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement réalisées en maçonnerie de pierre afin de supporter les murs épais et les importantes charges de stockage.' },
+    ],
+    sections: [
+      {
+        title: 'Fonction administrative',
+        icon: 'ph ph-seal-check',
+        intro: "Le grenier à sel n'est pas un simple entrepôt : il participe au système fiscal et administratif de l'Ancien Régime.",
+        groups: [
+          G(null, ['Réception du sel.', 'Stockage contrôlé.', 'Pesée et mesure.', 'Perception de la gabelle.', 'Distribution réglementée.']),
+        ],
+      },
+      {
+        title: 'Organisation du stockage',
+        icon: 'ph ph-warehouse',
+        intro: "L'architecture est principalement déterminée par les exigences du stockage et de la manutention.",
+        groups: [
+          G(null, ['Vastes espaces intérieurs.', 'Planchers fortement dimensionnés.', 'Accès permettant la manutention.', 'Locaux administratifs associés.', 'Espaces de stockage séparés selon les besoins.']),
+        ],
+      },
+      {
+        title: 'Structure porteuse',
+        icon: 'ph ph-columns',
+        intro: 'La robustesse constitue une caractéristique essentielle de ces bâtiments.',
+        groups: [
+          G(null, ['Murs épais en pierre ou brique.', 'Poutres en bois.', 'Planchers renforcés.', 'Charpente traditionnelle.', 'Fondations maçonnées.']),
+        ],
+      },
+      {
+        title: 'Relation au port',
+        icon: 'ph ph-anchor',
+        intro: "Les greniers à sel sont étroitement liés aux réseaux de transport et de commerce de l'Ancien Régime.",
+        groups: [
+          G(null, ['Implantation dans les villes commerciales.', 'Proximité des quais ou voies de circulation.', 'Accès adapté aux marchandises.', 'Relations avec les services fiscaux.', 'Intégration au tissu urbain ancien.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La fonction administrative et fiscale constitue le principal critère permettant de distinguer le grenier à sel d'un entrepôt ordinaire.",
+        groups: [
+          G(null, ['Architecture robuste.', 'Vastes espaces de stockage.', 'Ouvertures limitées.', 'Accès de manutention.', 'Fonction fiscale.', 'Implantation dans les villes de commerce du sel.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
