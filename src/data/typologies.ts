@@ -15003,6 +15003,108 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'fermecourprovencale',
+    name: 'Ferme à cour provençale',
+    region: 'Provence · Provence intérieure · Crau · Comtat',
+    periode: 'XVIIIe–XIXe siècle',
+    procede: 'Murs porteurs en maçonnerie de pierre et de moellons, avec charpente traditionnelle en bois et couverture en tuiles canal.',
+    usage: 'Exploitation agricole, élevage et habitation',
+    categorie: 'rural',
+    gps: '43.85° N, 5.05° E',
+    altitude: '20–250 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux pans',
+    penteToit: '20–35°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La ferme à cour provençale est un ensemble agricole organisé autour d'une cour intérieure qui distribue les différents bâtiments de l'exploitation. Le logis, les étables, granges, remises et espaces de stockage peuvent former un ensemble compact adapté au climat méditerranéen et aux pratiques agricoles locales.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Provence · Provence intérieure · Crau · Comtat'],
+      ['Usage', 'Exploitation agricole, élevage et habitation'],
+      ['Système', "Murs porteurs maçonnés organisés autour d'une cour"],
+      ['Matériau dominant', 'Pierre et moellons calcaires'],
+      ['Toiture', 'Toitures à deux pans couvertes de tuiles canal'],
+      ['Particularité', "Organisation des bâtiments agricoles et du logis autour d'une cour intérieure servant d'espace de travail et de distribution"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Terre cuite', 'Bois', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Les bâtiments sont généralement couverts de tuiles canal. Les différents corps peuvent présenter des pentes et orientations variables selon leur position autour de la cour.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les murs sont construits en pierre ou en moellons et peuvent être enduits à la chaux. Les façades extérieures sont souvent plus sobres que celles donnant sur la cour.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers du logis sont généralement constitués de poutres et solives en bois. Les bâtiments agricoles peuvent présenter des planchers simples, des dallages ou des sols en terre battue.' },
+      { n: 4, el: 'Structure porteuse', txt: "Les différents bâtiments reposent sur des murs porteurs en maçonnerie. Leur disposition en retour forme progressivement l'espace protégé de la cour." },
+      { n: 5, el: 'Escalier', txt: 'Les escaliers sont généralement implantés dans le logis ou contre les façades. Ils peuvent être réalisés en pierre ou en bois selon la fonction et la période.' },
+      { n: 6, el: 'Fondations', txt: 'Les bâtiments reposent sur des fondations maçonnées en pierre, généralement peu profondes et adaptées aux sols locaux.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation autour de la cour',
+        icon: 'ph ph-square',
+        intro: "La cour constitue le principe organisateur de l'ensemble et assure la distribution des différentes fonctions agricoles.",
+        groups: [
+          G(null, ['Cour centrale ou semi-fermée.', "Logis placé sur l'un des côtés.", 'Bâtiments agricoles disposés en retour.', 'Accès principal depuis un chemin rural.', 'Espace de circulation et de travail.']),
+        ],
+      },
+      {
+        title: 'Logis',
+        icon: 'ph ph-house-line',
+        intro: "Le logement des exploitants occupe généralement une partie identifiable de l'ensemble bâti.",
+        groups: [
+          G(null, ["Pièces d'habitation orientées vers la cour ou vers l'extérieur.", 'Cheminée maçonnée.', 'Rez-de-chaussée fonctionnel.', 'Étage ou combles selon les bâtiments.', 'Relation directe avec les espaces agricoles.']),
+        ],
+      },
+      {
+        title: 'Bâtiments agricoles',
+        icon: 'ph ph-warehouse',
+        intro: "Les différents corps de bâtiment répondent aux besoins de l'exploitation et peuvent être spécialisés.",
+        groups: [
+          G(null, ['Étable.', 'Grange.', 'Remise.', 'Écurie.', 'Bergerie.', 'Cellier.', 'Aire de stockage.']),
+        ],
+      },
+      {
+        title: 'Cour agricole',
+        icon: 'ph ph-sun',
+        intro: 'La cour constitue un espace multifonctionnel protégé du vent et permettant la réalisation de nombreuses tâches agricoles.',
+        groups: [
+          G(null, ['Aire de circulation des animaux.', 'Stockage temporaire.', 'Travail agricole.', 'Accès aux différentes dépendances.', 'Espace protégé des vents dominants.']),
+        ],
+      },
+      {
+        title: 'Adaptation climatique',
+        icon: 'ph ph-thermometer',
+        intro: 'La disposition compacte et la cour contribuent à protéger les bâtiments des conditions climatiques méditerranéennes.',
+        groups: [
+          G(null, ['Murs épais.', 'Forte inertie thermique.', 'Ouvertures limitées sur les façades exposées.', 'Espaces ombragés dans la cour.', 'Enduits à la chaux.', 'Toitures débordantes.']),
+        ],
+      },
+      {
+        title: 'Eau et exploitation',
+        icon: 'ph ph-drop',
+        intro: 'Les installations hydrauliques et agricoles complètent fréquemment l’ensemble.',
+        groups: [
+          G(null, ['Puits.', 'Citerne.', 'Bassin éventuel.', "Canal d'irrigation à proximité selon le terroir.", 'Abreuvoir.', 'Aire de lavage ou de travail.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La présence d'une cour structurante associée à plusieurs fonctions agricoles permet de distinguer cette forme d'exploitation du mas isolé.",
+        groups: [
+          G(null, ['Cour centrale ou semi-fermée.', 'Plusieurs corps de bâtiment.', "Logis intégré à l'exploitation.", 'Étables et granges.', 'Maçonnerie de pierre.', 'Toitures en tuiles canal.', 'Organisation compacte.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
