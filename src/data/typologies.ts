@@ -14922,7 +14922,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Aix-Bastide_du_Jas_de_Bouffan-bjs180816-01.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La bastide provençale est une demeure rurale généralement implantée au cœur d'un domaine agricole. Sa composition régulière, souvent symétrique, ses façades enduites, ses ouvertures ordonnées et sa relation avec les jardins, vergers ou cultures constituent les principaux traits de cette architecture de domaine en Provence.",
@@ -15024,7 +15024,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Moyenne',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Mas_(Provencal_Farmhouse).jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La ferme à cour provençale est un ensemble agricole organisé autour d'une cour intérieure qui distribue les différents bâtiments de l'exploitation. Le logis, les étables, granges, remises et espaces de stockage peuvent former un ensemble compact adapté au climat méditerranéen et aux pratiques agricoles locales.",
@@ -15126,7 +15126,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['0_Gordes_sur_son_piton_rocheux.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Le village perché provençal est une forme d'habitat groupé implantée sur un relief défensif ou dominant, caractéristique de nombreux territoires de Provence. Le bâti compact s'organise autour de rues étroites, de passages couverts, de places et d'édifices communautaires, en s'adaptant directement à la pente.",
@@ -15236,7 +15236,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Cabanon_de_berger_vue_ext.JPG'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Le cabanon provençal est une petite construction rurale associée aux cultures, aux jardins et aux anciennes propriétés agricoles de Provence. De dimensions modestes, il sert notamment d'abri, de remise à outils ou de lieu de repos saisonnier et se caractérise par une architecture simple en pierre enduite et une toiture traditionnelle en tuiles.",
@@ -15338,7 +15338,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Moyenne',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Martigues_-_Quai_Brescon.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "La maison de pêcheur provençale est un habitat modeste associé aux anciens villages et hameaux littoraux de Provence. Généralement compacte et directement tournée vers la mer, elle associe logement et petites fonctions liées à la pêche dans une architecture adaptée au climat méditerranéen.",
@@ -15440,7 +15440,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Façade_cabane_de_gardian_Pont_de_Rousty.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "La cabane de gardian camarguaise est une construction emblématique des paysages de Camargue, associée aux gardians et à l'élevage extensif des taureaux et chevaux. Son architecture légère est directement adaptée aux matériaux disponibles dans les zones humides du delta, notamment le bois et le roseau. Sa façade principale et sa toiture fortement inclinée constituent ses principaux éléments caractéristiques.",
