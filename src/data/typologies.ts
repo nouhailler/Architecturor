@@ -14428,7 +14428,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['004_Loctudy_Moulin_à_marée_du_Suler.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Le moulin à marée breton est un bâtiment de meunerie utilisant l'énergie produite par la montée et la descente des marées. Installé sur des anses, rias ou estuaires, il associe un bâtiment maçonné à un bassin de retenue, une digue et un dispositif hydraulique permettant d'exploiter le mouvement de l'eau.",
@@ -14522,7 +14522,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Moyenne',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Kerity_(Penmarch)_Rue_Ernest_Renan.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "La maison de pêcheur bretonne est un habitat vernaculaire des villages et ports du littoral breton. Généralement construite en pierre et couverte d'ardoise, elle adopte souvent un volume étroit et compact, organisé sur rue ou directement au contact des quais et des espaces liés aux activités maritimes.",
@@ -14718,7 +14718,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Habitat_troglodyte,_Rochemeunier,_France.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "L'habitat troglodytique saumurois est une forme d'architecture directement liée aux plateaux calcaires et aux falaises de tuffeau du Val de Loire. Les espaces habitables sont creusés dans la roche ou aménagés dans d'anciennes carrières, avec des façades maçonnées ou des ouvertures directement taillées dans le tuffeau.",
