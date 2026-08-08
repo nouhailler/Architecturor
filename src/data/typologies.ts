@@ -13517,7 +13517,7 @@ export const TYPOLOGIES: Typologie[] = [
         icon: 'ph ph-map-pin',
         intro: 'La typologie accompagne le développement des stations balnéaires normandes.',
         groups: [
-          G(null, ['Deauville.', 'Trouville-sur-Mer.', 'Cabourg.', 'Houlgate.', 'Villers-sur-Mer.', 'Étretat.', 'Le Tréport.']),
+          G(null, ['Deauville.', 'Trouville-sur-Mer.', 'Cabourg.', 'Houlgate.', 'Villers-sur-Mer.', 'Blonville-sur-Mer.', 'Dives-sur-Mer.', 'Étretat.', 'Le Tréport.']),
         ],
       },
     ],
