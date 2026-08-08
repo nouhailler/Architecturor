@@ -12138,7 +12138,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20vosgienne%20Hautes-Vosges%20architecture&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Anould_-_La_Mangoutte_-_farmhouse.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La ferme de montagne vosgienne alsacienne est une exploitation d’altitude adaptée aux conditions climatiques des Hautes-Vosges. L’habitation, l’étable et les espaces de stockage sont regroupés dans un même volume afin de limiter les déperditions thermiques et de faciliter l’exploitation en hiver.",
@@ -12216,7 +12216,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Malouini%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Malouini%C3%A8res',
-    images: [],
+    images: ['Saint-Malo_-_Valmarin_20140730-01.JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "La malouinière est une demeure de campagne construite par les armateurs, corsaires et négociants de Saint-Malo entre le XVIIe et le XVIIIe siècle. Implantée dans de vastes domaines clos, elle se distingue par une architecture classique sobre, une composition parfaitement symétrique et des matériaux locaux, principalement le granite.",
@@ -12372,7 +12372,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20paludier%20Gu%C3%A9rande%20architecture&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Saillé_maison_paludiers_3.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La maison de paludier guérandaise est un habitat vernaculaire associé à l’exploitation traditionnelle des marais salants de la presqu’île de Guérande. Généralement compacte, construite en pierre locale et couverte d’ardoise, elle combine logement familial, espaces de rangement et dépendances nécessaires au travail du sel, tout en s’adaptant aux vents et à l’humidité du littoral.",
@@ -12460,7 +12460,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Manoir_breton',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Manors_in_Brittany',
-    images: [],
+    images: ['Landerneau_-_manoir_de_Keranden_01.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "Le manoir breton est la résidence de la petite et moyenne noblesse bretonne. Plus modeste qu’un château mais plus prestigieux qu’une ferme, il constitue une exploitation agricole et un lieu de résidence seigneuriale. Son architecture privilégie la pierre locale, les volumes compacts et une organisation autour d’une cour avec dépendances.",
@@ -12694,7 +12694,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Enclos_paroissial',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Parish_closes_in_Brittany',
-    images: [],
+    images: ["Guimiliau_-_Les_abords_de_l'enclos.jpg"],
     periodeTags: ['Avant 1800'],
     resume:
       "L’enclos paroissial breton est un ensemble monumental propre à la Basse-Bretagne, réunissant dans un espace clos une église, un cimetière, un calvaire monumental, une porte triomphale et souvent un ossuaire. Développé durant la prospérité économique des XVIe et XVIIe siècles, il constitue l’une des expressions les plus originales du patrimoine architectural breton.",
