@@ -11148,7 +11148,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Serre_(agriculture)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Serre%20agricole%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Violaines_serres_à_fraises_(2).jpg'],
     periodeTags: ['XXe'],
     resume:
       "Structure légère métallique couverte de verre ou de film plastique, permettant la culture maraîchère et horticole toute l’année en maîtrisant température, hygrométrie et luminosité. Des simples tunnels plastiques aux serres verre chauffées et informatisées, cette typologie couvre une large gamme d’équipements agricoles sous abri.",
@@ -11285,7 +11285,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Coll%C3%A8ge_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Coll%C3%A8ge%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Collège_Maryse_Bastié_76114.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Établissement d’enseignement secondaire du premier cycle, généralisé après la réforme du collège unique de 1975 unifiant les filières. Construction souvent standardisée et préfabriquée durant les Trente Glorieuses pour répondre rapidement à la démocratisation scolaire, certains modèles industrialisés (type Pailleron) ayant depuis été largement décriés et reconstruits.",
@@ -11558,7 +11558,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89cole_primaire_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89cole%20rurale%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['École_primaire_St-Didier_Aussiat_1.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Petite école communale à classe unique, réunissant plusieurs niveaux d’âge sous l’autorité d’un seul instituteur, caractéristique des petites communes rurales avant les regroupements pédagogiques du XXe siècle. Logement de fonction généralement intégré au même bâtiment que la salle de classe.",
@@ -11694,7 +11694,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme-bloc%20alsacienne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['ALSACE_189_(7345152232).jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La ferme-bloc alsacienne est la principale typologie agricole traditionnelle d’Alsace. Elle regroupe sous un même ensemble l’habitation, les étables, la grange et les espaces de stockage, organisés autour d’une cour accessible par un portail charretier monumental. Les variantes locales (Kochersberg, Ried, Sundgau, Outre-Forêt) conservent cette organisation générale tout en adaptant les matériaux et les dimensions aux ressources du territoire.",
@@ -11850,7 +11850,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20foresti%C3%A8re%20Vosges%20architecture&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Ohlungen_Maison_forestière1.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "La maison forestière alsacienne est un bâtiment de service construit principalement par l’administration des Eaux et Forêts puis par l’Office national des forêts. Implantée au cœur des massifs forestiers vosgiens, elle sert de logement au garde forestier tout en accueillant des locaux techniques liés à l’exploitation et à la surveillance de la forêt.",
@@ -11928,7 +11928,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_alsacienne',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Half-timbered_houses_in_Alsace',
-    images: [],
+    images: ['15_Rue_du_General_de_Gaulle_in_Riquewihr.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La maison de vigneron alsacienne est une variante spécialisée de la maison alsacienne, développée dans les villages du vignoble. Elle associe logement, cave, espaces de vinification et dépendances autour d’une cour fermée accessible par un portail charretier. Son implantation et son organisation répondent directement aux besoins de la production viticole.",
