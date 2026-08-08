@@ -14124,6 +14124,100 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'batibaugecotentin',
+    name: 'Bâti en bauge du Cotentin',
+    region: 'Normandie · Cotentin · Marais du Cotentin et du Bessin',
+    periode: 'XVIe–XIXe siècle',
+    procede: 'Construction en terre crue par levées successives de bauge sur soubassement maçonné.',
+    usage: 'Habitation et bâtiments agricoles',
+    categorie: 'rural',
+    gps: '49.20° N, -1.30° E',
+    altitude: '0–100 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans ou longs pans',
+    penteToit: '35–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Soubassement maçonné en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe–XIXe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Le bâti en bauge du Cotentin constitue une architecture en terre crue particulièrement représentative du centre et de l'ouest de la Manche. La bauge, mélange de terre argileuse et limoneuse, d'eau et de fibres végétales, est mise en œuvre par levées successives pour former des murs massifs, généralement protégés par un soubassement et un enduit.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'Normandie · Cotentin · Marais du Cotentin et du Bessin'],
+      ['Usage', 'Habitation et bâtiments agricoles'],
+      ['Système', 'Murs massifs en terre crue par levées successives'],
+      ['Matériau dominant', 'Bauge'],
+      ['Toiture', "Toiture à deux pans ou à longs pans couverte d'ardoise ou de tuile"],
+      ['Particularité', 'Murs épais en terre crue formés directement par empilement de levées de bauge'],
+    ],
+    materiaux: ['Terre argileuse', 'Limon', 'Paille', 'Eau', 'Grès', 'Schiste', 'Chaux', 'Ardoise'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "Les bâtiments en bauge sont généralement couverts de toitures à deux pans ou à longs pans. L'ardoise domine dans de nombreux secteurs de la Manche, tandis que la tuile est également présente." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les murs sont constitués de bauge, matériau obtenu par mélange de terre argileuse et limoneuse, d'eau et de fibres végétales. Ils sont généralement protégés par un enduit à la chaux." },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont principalement constitués de poutres et solives en bois. Les bâtiments agricoles peuvent présenter des sols directement liés à leur fonction.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs massifs en bauge assurent directement une fonction porteuse. Ils sont construits par levées successives sans recours systématique à une ossature porteuse indépendante.' },
+      { n: 5, el: 'Escalier', txt: "Les escaliers des habitations sont généralement en bois ou en maçonnerie et desservent le rez-de-chaussée, l'étage et les combles." },
+      { n: 6, el: 'Fondations', txt: "Les murs en bauge reposent sur un soubassement en pierre ou en moellons qui les protège de l'humidité du sol." },
+    ],
+    sections: [
+      {
+        title: 'Technique de la bauge',
+        icon: 'ph ph-wall',
+        intro: 'La bauge constitue une technique traditionnelle de construction en terre crue particulièrement développée dans la Manche.',
+        groups: [
+          G(null, ["Terre argileuse et limoneuse mélangée à de l'eau.", 'Ajout de fibres végétales.', 'Mise en œuvre par levées successives.', 'Murs construits directement sur le soubassement.', 'Séchage progressif des levées.']),
+        ],
+      },
+      {
+        title: 'Structure porteuse',
+        icon: 'ph ph-columns',
+        intro: 'La terre crue constitue ici le principal système porteur, contrairement aux constructions à pans de bois.',
+        groups: [
+          G(null, ['Murs massifs en bauge.', 'Épaisseur importante des murs.', 'Soubassement en pierre.', "Encadrements d'ouvertures en pierre ou en brique.", 'Charpente indépendante en bois.']),
+        ],
+      },
+      {
+        title: 'Protection des murs',
+        icon: 'ph ph-shield-check',
+        intro: "La protection contre l'eau constitue une condition essentielle de conservation des constructions en terre crue.",
+        groups: [
+          G(null, ['Soubassement maçonné.', 'Enduit à la chaux.', 'Débord de toiture.', 'Entretien régulier des enduits.', 'Évacuation efficace des eaux pluviales.']),
+        ],
+      },
+      {
+        title: 'Usages',
+        icon: 'ph ph-house-line',
+        intro: 'La bauge a permis de construire une grande variété de bâtiments dans les campagnes du Cotentin.',
+        groups: [
+          G(null, ['Maisons rurales.', 'Fermes.', 'Étables.', 'Granges.', 'Presbytères.', 'Fours à pain.', 'Murs de clôture.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La matérialité des murs constitue le principal critère d'identification.",
+        groups: [
+          G(null, ['Murs massifs en terre.', 'Aspect légèrement irrégulier des levées.', 'Soubassement en pierre.', 'Enduit à la chaux.', 'Ouvertures relativement limitées.', 'Forte inertie thermique.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: "Le bâti en bauge est particulièrement bien représenté dans le centre et l'ouest du département de la Manche.",
+        groups: [
+          G(null, ['Marais du Cotentin et du Bessin.', 'Sèves-Taute.', 'Périers.', 'Marchésieux.', 'Gorges.', 'Le Plessis-Lastelle.', 'Saint-Germain-sur-Sèves.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
