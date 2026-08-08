@@ -14407,6 +14407,100 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'moulinmareebreton',
+    name: 'Moulin à marée breton',
+    region: 'Bretagne · Littoral · Rias et estuaires',
+    periode: 'XIIe–XIXe siècle',
+    procede: 'Maçonnerie porteuse en pierre, associée à un dispositif hydraulique utilisant un bassin de retenue alimenté par les marées.',
+    usage: 'Meunerie et transformation des céréales',
+    categorie: 'agricole',
+    gps: '48.55° N, -2.05° E',
+    altitude: '0–20 m',
+    climat: 'Océanique littoral',
+    typeToiture: 'Deux pans',
+    penteToit: '35–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées adaptées aux ouvrages hydrauliques',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "Le moulin à marée breton est un bâtiment de meunerie utilisant l'énergie produite par la montée et la descente des marées. Installé sur des anses, rias ou estuaires, il associe un bâtiment maçonné à un bassin de retenue, une digue et un dispositif hydraulique permettant d'exploiter le mouvement de l'eau.",
+    identite: [
+      ['Période', 'XIIe–XIXe siècle'],
+      ['Région', 'Bretagne · Littoral · Rias et estuaires'],
+      ['Usage', 'Meunerie et transformation des céréales'],
+      ['Système', 'Maçonnerie porteuse associée à un dispositif hydraulique de retenue'],
+      ['Matériau dominant', 'Pierre'],
+      ['Toiture', "Toiture à deux pans couverte d'ardoise"],
+      ['Particularité', 'Utilisation du marnage par remplissage puis vidange d’un bassin de retenue pour actionner les mécanismes du moulin'],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Grès', 'Pierre', 'Bois', 'Fer', 'Ardoise', 'Chaux'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "La toiture est généralement constituée de deux pans couverts d'ardoise, matériau particulièrement répandu dans l'architecture bretonne." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les murs sont principalement construits en maçonnerie de pierre locale. Les façades sont robustes et présentent des ouvertures adaptées à la fonction technique du bâtiment.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers intérieurs sont dimensionnés pour supporter les équipements de meunerie, les mécanismes et les charges de céréales.' },
+      { n: 4, el: 'Structure porteuse', txt: "La structure repose sur des murs porteurs en maçonnerie et sur des éléments hydrauliques intégrés au bâtiment, notamment les passages d'eau et les conduits alimentant la roue ou les turbines." },
+      { n: 5, el: 'Escalier', txt: "Les escaliers sont principalement fonctionnels et permettent d'accéder aux différents niveaux de travail, de stockage et aux mécanismes du moulin." },
+      { n: 6, el: 'Fondations', txt: "Les fondations sont fortement maçonnées afin de résister à l'humidité permanente, aux variations du niveau d'eau et aux contraintes exercées par les ouvrages hydrauliques." },
+    ],
+    sections: [
+      {
+        title: 'Principe hydraulique',
+        icon: 'ph ph-waves',
+        intro: 'Le moulin à marée exploite la différence de niveau créée par le cycle des marées.',
+        groups: [
+          G(null, ['Bassin de retenue alimenté par la marée montante.', 'Fermeture du bassin à marée haute.', 'Accumulation d’eau pendant la phase de retenue.', 'Vidange contrôlée à marée descendante.', 'Mise en mouvement d’une roue hydraulique ou d’un dispositif équivalent.']),
+        ],
+      },
+      {
+        title: 'Bassin et digue',
+        icon: 'ph ph-drop',
+        intro: "L'ouvrage hydraulique constitue une partie essentielle de la typologie et complète le bâtiment du moulin.",
+        groups: [
+          G(null, ['Bassin de retenue.', 'Digue ou chaussée.', 'Vannes de régulation.', 'Canal ou passage hydraulique.', "Communication avec l'estran ou l'estuaire."]),
+        ],
+      },
+      {
+        title: 'Bâtiment du moulin',
+        icon: 'ph ph-factory',
+        intro: 'Le bâtiment regroupe les mécanismes de production et les espaces nécessaires à la transformation des céréales.',
+        groups: [
+          G(null, ['Rez-de-chaussée technique.', 'Espace consacré aux mécanismes.', 'Meules ou équipements de broyage.', 'Espaces de stockage.', 'Zones de réception des céréales.', 'Zones d’expédition de la farine.']),
+        ],
+      },
+      {
+        title: 'Mécanismes',
+        icon: 'ph ph-gear',
+        intro: "Les mécanismes transmettent l'énergie hydraulique au système de mouture.",
+        groups: [
+          G(null, ['Roue hydraulique ou turbine.', 'Arbre de transmission.', 'Engrenages.', 'Meules.', 'Système de régulation du débit.', 'Équipements de mouture.']),
+        ],
+      },
+      {
+        title: 'Implantation littorale',
+        icon: 'ph ph-map-pin',
+        intro: "L'implantation dépend directement de la présence d'un site permettant de retenir et de libérer l'eau de mer.",
+        groups: [
+          G(null, ['Anse littorale.', 'Ria.', 'Estuaire.', 'Fond de baie.', 'Bassin naturellement fermé ou aménagé.', "Proximité immédiate de l'estran."]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La présence simultanée du bâtiment de meunerie, du bassin et des ouvrages hydrauliques constitue le principal critère d’identification.',
+        groups: [
+          G(null, ['Bâtiment maçonné.', 'Bassin de retenue.', 'Digue ou chaussée.', 'Vannes.', 'Passage hydraulique.', 'Implantation directement liée au littoral.', 'Mécanismes de meunerie.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
