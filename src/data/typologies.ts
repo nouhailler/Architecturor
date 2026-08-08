@@ -5744,7 +5744,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'usinetextile',
     name: 'Usine textile',
-    region: 'Nord · Hauts-de-France',
+    region: 'Nord · Hauts-de-France · Normandie (Pays de Caux, vallées de l’Andelle et de la Bresle)',
     periode: '1850–1950',
     procede: 'Brique & sheds métalliques',
     usage: 'Tissage industriel',
@@ -5764,15 +5764,15 @@ export const TYPOLOGIES: Typologie[] = [
     images: ['Tourcoing_usine_caulliez.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
-      "Grande usine de tissage organisée en halles basses couvertes de sheds, ces toitures en dents de scie dont les pans vitrés orientés au nord diffusent une lumière constante sans éblouissement. Souvent flanquée d’une cité ouvrière, l’usine textile structure des quartiers entiers du Nord industriel.",
+      "Grande usine de tissage organisée en halles basses couvertes de sheds, ces toitures en dents de scie dont les pans vitrés orientés au nord diffusent une lumière constante sans éblouissement. Souvent flanquée d’une cité ouvrière, l’usine textile structure des quartiers entiers du Nord industriel. La même morphologie à sheds caractérise aussi la filature normande, développée dans les vallées industrielles du Pays de Caux et de la vallée de l’Andelle à partir de la seconde moitié du XIXe siècle.",
     identite: [
       ['Période', '1850–1950'],
-      ['Région', 'Nord, Hauts-de-France'],
+      ['Région', 'Nord, Hauts-de-France ; Normandie (Pays de Caux, vallées de l’Andelle et de la Bresle)'],
       ['Usage', 'Tissage industriel'],
       ['Système', 'Halles à sheds métalliques'],
       ['Matériau dominant', 'Brique et structure métallique'],
       ['Toiture', 'Sheds vitrés orientés au nord'],
-      ['Particularité', 'Cité ouvrière associée à l’usine'],
+      ['Particularité', 'Cité ouvrière associée à l’usine ; en Normandie, filatures de coton implantées le long des cours d’eau des vallées industrielles'],
     ],
     materiaux: ['Brique', 'Acier (charpente des sheds)', 'Verre (vitrage nord)', 'Fonte (poteaux)', 'Bois (planchers)', 'Fer'],
     annotations: [
@@ -5804,6 +5804,15 @@ export const TYPOLOGIES: Typologie[] = [
         icon: 'ph ph-shield-check',
         groups: [
           G(null, ['Nombreuses friches après le déclin textile du XXe siècle', 'Reconversions en logements, bureaux ou équipements culturels', 'Sheds emblématiques souvent conservés lors des réhabilitations']),
+        ],
+      },
+      {
+        title: 'Diffusion régionale',
+        icon: 'ph ph-map-pin',
+        intro: 'Au-delà du Nord industriel, la même morphologie à sheds se retrouve dans les vallées textiles normandes.',
+        groups: [
+          G('Nord · Hauts-de-France', ['Roubaix.', 'Tourcoing.', 'Lille.']),
+          G('Normandie', ['Filature normande à sheds, notamment dans le Pays de Caux et la vallée de l’Andelle.', 'Elbeuf et Louviers (draperie).', 'Darnétal.', 'Flers (Orne), surnommée « petite Manchester normande ».']),
         ],
       },
     ],
