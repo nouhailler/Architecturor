@@ -13896,7 +13896,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Architecture_Perret_Au_Havre_(180697579).jpeg'],
     periodeTags: ['XXe'],
     resume:
       "L'immeuble de reconstruction Perret du Havre appartient au vaste ensemble urbain reconstruit après les destructions de la Seconde Guerre mondiale sous la direction d'Auguste Perret. Il associe une structure en béton armé lisible, une trame modulaire rigoureuse et une expression architecturale inspirée d'un classicisme moderne.",
@@ -13982,7 +13982,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Moyenne',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Barfleur_-_Maison_de_Julie_Postel.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La maison de pêcheur du Cotentin est un habitat littoral vernaculaire de petite dimension, adapté aux conditions climatiques de la Manche et aux modes de vie des communautés côtières. Elle associe généralement une maçonnerie épaisse en pierre, une organisation intérieure simple et une toiture à forte pente destinée à résister aux intempéries.",
@@ -14068,7 +14068,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Moyenne',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Mandeville-en-Bessin,_Ferme-manoir_de_Douville.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La ferme-manoir normande est un domaine agricole organisé autour d'un logis de maître associé à plusieurs bâtiments d'exploitation. Héritière de l'ancien manoir rural, elle combine fonction résidentielle, organisation agricole et composition autour d'une cour.",
@@ -14334,7 +14334,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Église_Saint-Vigor_de_Champeaux.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "L'église à clocher-mur du Cotentin est une forme d'architecture religieuse caractérisée par un clocher directement intégré à un mur-pignon, généralement à l'ouest de la nef. Cette disposition compacte, souvent associée à des édifices ruraux modestes, s'inscrit dans la longue tradition de l'architecture paroissiale de la Manche.",
