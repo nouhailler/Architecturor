@@ -5489,7 +5489,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Hangar_agricole',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Hangar%20agricole%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['2022-10_-_Hangars_Bellefleur_(Lure)_-_01.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Grand volume industrialisé à ossature métallique ou en béton, dimensionné pour abriter machines agricoles, fourrage en grande quantité ou récoltes en vrac. Sa portée dégagée sans poteau intermédiaire et sa rapidité de montage traduisent la mécanisation et l’agrandissement des exploitations depuis l’après-guerre.",
@@ -5838,7 +5838,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Sucrerie',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Sucrerie%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ["Sucrerie_d'Eppeville.jpg"],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Complexe industriel saisonnier transformant la betterave sucrière en sucre, actif seulement quelques mois durant la « campagne » d’automne. Tours de diffusion, batteries d’évaporateurs et haute cheminée composent un ensemble technique complexe, embranché au chemin de fer pour l’acheminement massif des betteraves.",
@@ -7130,7 +7130,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Halle_%C3%A0_mar%C3%A9e',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cri%C3%A9e%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Seteport_peche_peche_criée.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Halle portuaire dédiée à la vente aux enchères descendantes du poisson fraîchement débarqué, directement accessible depuis le quai de déchargement. Sa grande halle réfrigérée et ses installations de tri organisent en quelques heures chaque matin tout le commerce du poisson d’un port de pêche.",
@@ -7198,7 +7198,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ostr%C3%A9iculture',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cabanes%20ostr%C3%A9icoles%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Cabanes_Ostréicoles,_Fort_Royer_HDR_(511180256).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Cabane de bois colorée, dressée sur pilotis à même l’estran, où l’ostréiculteur trie, calibre et conditionne les huîtres au sortir des parcs. Alignées en rangs serrés au bord de l’eau, ces cabanes composent le paysage caractéristique du bassin d’Arcachon et des ports ostréicoles atlantiques.",
@@ -7402,7 +7402,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Alpage',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Chalet%20d%27alpage%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Chalets_de_Miage_(50730451503).jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Bâtiment sommaire d’altitude occupé uniquement l’été durant l’estive, servant au logement du berger, à la traite et à la fabrication du fromage (beaufort, reblochon). Plus rustique et plus petit que le chalet savoyard permanent, il se réduit souvent à une seule pièce avec cave d’affinage attenante.",
@@ -7540,7 +7540,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grange',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grange%20foraine%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['024CHAM-Fev2012-Moussoux.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Grange isolée construite au milieu des prés de montagne éloignés de la ferme principale, pour stocker le foin fauché sur place et éviter son transport jusqu’à la vallée. Volume simple en bois sur soubassement de pierre, parfois utilisée aussi comme abri temporaire pour le bétail.",
@@ -7608,7 +7608,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grenier',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mazot%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Mazot_(Samoens).jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petit bâtiment annexe en madriers de bois, isolé du chalet principal et surélevé sur des pilotis de pierre plate (« pierres à rats ») pour protéger les provisions et documents précieux du feu et des rongeurs. Le mazot ponctue traditionnellement les villages alpins savoyards.",
@@ -8359,7 +8359,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chapelle_fun%C3%A9raire',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Chapelle%20fun%C3%A9raire%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Cimetière_de_Lay_-_Chapelle_funéraire_famille_de_Berchoux_(juin_2023).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Petite construction en forme de temple ou d’église miniature, édifiée par les familles bourgeoises dans les grands cimetières urbains depuis le décret impérial de 1804 autorisant l’achat de concessions perpétuelles. Style éclectique — néo-gothique, néoclassique ou égyptisant — avec vitrail, autel et caveau en sous-sol.",
