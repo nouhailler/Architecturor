@@ -14304,6 +14304,100 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'egliseclochermurcotentin',
+    name: 'Église à clocher-mur du Cotentin',
+    region: 'Normandie · Cotentin · Manche',
+    periode: 'XIe–XIXe siècle',
+    procede: 'Maçonnerie porteuse en pierre locale, avec clocher intégré à un mur-pignon ou à la façade occidentale.',
+    usage: 'Église paroissiale',
+    categorie: 'religieuse',
+    gps: '49.55° N, -1.45° E',
+    altitude: '0–150 m',
+    climat: 'Océanique littoral',
+    typeToiture: 'Deux pans',
+    penteToit: '40–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'Moyen Âge',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "L'église à clocher-mur du Cotentin est une forme d'architecture religieuse caractérisée par un clocher directement intégré à un mur-pignon, généralement à l'ouest de la nef. Cette disposition compacte, souvent associée à des édifices ruraux modestes, s'inscrit dans la longue tradition de l'architecture paroissiale de la Manche.",
+    identite: [
+      ['Période', 'XIe–XIXe siècle'],
+      ['Région', 'Normandie · Cotentin · Manche'],
+      ['Usage', 'Église paroissiale'],
+      ['Système', 'Murs porteurs maçonnés en pierre'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Toiture', 'Toiture à deux pans sur la nef avec couverture en ardoise'],
+      ['Particularité', 'Clocher intégré dans le mur-pignon, formant une silhouette compacte caractéristique des petites églises rurales'],
+    ],
+    materiaux: ['Grès', 'Granite', 'Calcaire', 'Schiste', 'Pierre de taille', 'Chaux', 'Ardoise', 'Bois'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "La nef est généralement couverte d'une toiture à deux pans en ardoise. Le clocher-mur constitue le principal élément vertical et peut être surmonté d'une petite couverture ou d'une flèche." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les murs sont principalement construits en pierre locale, souvent avec une maçonnerie de moellons. Le mur occidental est renforcé pour supporter les charges du clocher.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers des tribunes ou des espaces annexes peuvent être réalisés en bois. La nef principale présente généralement un sol maçonné ou dallé.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs gouttereaux et le mur-pignon assurent la fonction porteuse. Le clocher est directement intégré à la maçonnerie du pignon, sans tour indépendante.' },
+      { n: 5, el: 'Escalier', txt: 'Un escalier ou une échelle intérieure permet généralement d’accéder aux niveaux du clocher et aux dispositifs de sonnerie.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont constituées de maçonnerie de pierre, avec un renforcement particulier au niveau du mur portant le clocher.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-church',
+        intro: "L'église à clocher-mur privilégie une organisation compacte adaptée aux petites communautés paroissiales.",
+        groups: [
+          G(null, ['Nef unique ou nef simple.', 'Chœur généralement plus étroit.', 'Mur-pignon occidental surmonté du clocher.', 'Sacristie ajoutée selon les périodes.', 'Cimetière paroissial fréquemment associé.']),
+        ],
+      },
+      {
+        title: 'Clocher-mur',
+        icon: 'ph ph-bell-ringing',
+        intro: "Le clocher constitue un élément intégré à la structure du bâtiment plutôt qu'une tour indépendante.",
+        groups: [
+          G(null, ['Clocher directement intégré au pignon.', 'Ouvertures destinées aux cloches.', 'Mur fortement dimensionné.', 'Accès intérieur ou extérieur.', 'Petite flèche ou couverture possible.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-wall',
+        intro: 'La pierre locale domine la construction et donne aux édifices une forte relation avec leur terroir.',
+        groups: [
+          G(null, ['Moellons de pierre.', 'Pierre de taille pour certains encadrements.', 'Mortier de chaux.', "Chaînages d'angle.", 'Contreforts éventuels.']),
+        ],
+      },
+      {
+        title: 'Évolution historique',
+        icon: 'ph ph-clock',
+        intro: 'Le type s’est maintenu sur une longue période et peut présenter des éléments appartenant à plusieurs campagnes de construction.',
+        groups: [
+          G(null, ['Nef médiévale.', 'Remaniements gothiques.', 'Réfections des XVIIe et XVIIIe siècles.', 'Reconstruction partielle après les guerres.', 'Restauration des XIXe et XXe siècles.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La silhouette du clocher intégré au pignon constitue le principal critère d'identification.",
+        groups: [
+          G(null, ['Clocher-mur.', 'Absence de tour-clocher indépendante.', 'Nef compacte.', 'Maçonnerie de pierre.', 'Ouvertures de cloches dans le pignon.', 'Silhouette particulièrement lisible.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette configuration se rencontre dans plusieurs secteurs ruraux de la Manche et du Cotentin.',
+        groups: [
+          G(null, ['Cotentin.', 'Bessin occidental.', 'Manche.', 'Hague.', 'Val de Saire.', 'Marais du Cotentin.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
