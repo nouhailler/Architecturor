@@ -14697,6 +14697,108 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'habitattroglodytiquesaumurois',
+    name: 'Habitat troglodytique saumurois',
+    region: 'Pays de la Loire · Anjou · Saumurois',
+    periode: 'Moyen Âge–XXe siècle',
+    procede: 'Excavation et aménagement de cavités dans le tuffeau, complétés par des maçonneries en pierre pour les façades et extensions.',
+    usage: 'Habitation, dépendance agricole et activité artisanale',
+    categorie: 'rural',
+    gps: '47.26° N, -0.08° E',
+    altitude: '30–100 m',
+    climat: 'Océanique à influence continentale',
+    typeToiture: 'Sans toiture sur les parties excavées ; deux pans sur les extensions',
+    penteToit: '35–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Ancrage direct dans le massif rocheux',
+    typeCharpente: 'Charpente traditionnelle en bois pour les parties construites',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "L'habitat troglodytique saumurois est une forme d'architecture directement liée aux plateaux calcaires et aux falaises de tuffeau du Val de Loire. Les espaces habitables sont creusés dans la roche ou aménagés dans d'anciennes carrières, avec des façades maçonnées ou des ouvertures directement taillées dans le tuffeau.",
+    identite: [
+      ['Période', 'Moyen Âge–XXe siècle'],
+      ['Région', 'Pays de la Loire · Anjou · Saumurois'],
+      ['Usage', 'Habitation, dépendance agricole et activité artisanale'],
+      ['Système', 'Cavité creusée dans le tuffeau et façade maçonnée'],
+      ['Matériau dominant', 'Tuffeau calcaire'],
+      ['Toiture', 'Toiture traditionnelle à deux pans sur les parties construites en façade ; couverture minérale ou terre sur certaines extensions'],
+      ['Particularité', 'Intégration directe des espaces intérieurs dans la masse rocheuse des coteaux et anciennes carrières de tuffeau'],
+    ],
+    materiaux: ['Tuffeau', 'Pierre calcaire', 'Chaux', 'Bois', 'Ardoise', 'Terre cuite', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "Les espaces directement creusés dans la roche ne nécessitent pas toujours de toiture traditionnelle. Les extensions bâties en façade sont généralement couvertes d'une toiture à deux pans, souvent en ardoise." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'La façade peut être constituée d’un mur en tuffeau ou d’une maçonnerie rapportée devant la cavité. Les ouvertures donnent directement accès aux espaces excavés.' },
+      { n: 3, el: 'Planchers', txt: 'Les sols sont directement aménagés dans la cavité ou constitués de planchers en bois dans les parties à plusieurs niveaux. La roche naturelle peut former une partie des parois et des sols.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La masse rocheuse constitue elle-même la structure porteuse principale des espaces troglodytiques. Les façades maçonnées et les extensions reposent sur des structures traditionnelles en pierre et en bois.' },
+      { n: 5, el: 'Escalier', txt: 'Les circulations verticales peuvent être taillées directement dans le tuffeau ou réalisées en bois ou en maçonnerie lorsque plusieurs niveaux de cavités sont aménagés.' },
+      { n: 6, el: 'Fondations', txt: 'Les espaces troglodytiques ne reposent pas sur des fondations conventionnelles : ils sont directement intégrés dans le massif rocheux. Les constructions rapportées en façade disposent de fondations maçonnées.' },
+    ],
+    sections: [
+      {
+        title: 'Architecture troglodytique',
+        icon: 'ph ph-mountains',
+        intro: "L'architecture troglodytique utilise directement le massif de tuffeau comme enveloppe et structure du bâtiment.",
+        groups: [
+          G(null, ['Cavités creusées dans le coteau.', 'Parois constituées de roche naturelle.', 'Espaces intérieurs protégés par la masse du tuffeau.', 'Ouvertures concentrées sur la façade.', 'Possibilité d’aménagement de plusieurs pièces successives.']),
+        ],
+      },
+      {
+        title: 'Tuffeau',
+        icon: 'ph ph-cube',
+        intro: 'Le tuffeau constitue à la fois la matière géologique du site et un matériau de construction majeur du Saumurois.',
+        groups: [
+          G(null, ['Calcaire tendre et facilement excavable.', 'Utilisation pour les façades.', 'Utilisation historique comme pierre de construction.', "Parois pouvant conserver les traces d'extraction.", 'Association fréquente avec les maçonneries en pierre de taille.']),
+        ],
+      },
+      {
+        title: 'Façade et ouvertures',
+        icon: 'ph ph-door-open',
+        intro: "La façade constitue l'interface entre l'espace excavé et le paysage extérieur.",
+        groups: [
+          G(null, ['Portes directement ouvertes dans le coteau.', 'Fenêtres percées dans la façade.', 'Encadrements en pierre de taille.', 'Murs de façade rapportés.', 'Possibilité de plusieurs ouvertures alignées.']),
+        ],
+      },
+      {
+        title: 'Confort climatique',
+        icon: 'ph ph-thermometer',
+        intro: "L'inertie thermique du tuffeau procure aux espaces troglodytiques une température relativement stable au cours de l'année.",
+        groups: [
+          G(null, ['Forte inertie thermique.', 'Protection contre les variations de température.', 'Humidité naturellement élevée.', 'Ventilation nécessaire par les ouvertures.', 'Conditions favorables au stockage de certains produits.']),
+        ],
+      },
+      {
+        title: 'Usages traditionnels',
+        icon: 'ph ph-house-line',
+        intro: 'Les cavités du Saumurois ont accueilli des fonctions très diverses au cours de leur histoire.',
+        groups: [
+          G(null, ['Habitation.', 'Cave viticole.', 'Cellier.', 'Étable ou dépendance agricole.', 'Atelier artisanal.', 'Lieu de stockage.', 'Carrière souterraine réutilisée.']),
+        ],
+      },
+      {
+        title: 'Relation au paysage',
+        icon: 'ph ph-tree',
+        intro: "L'habitat est directement lié aux coteaux calcaires qui bordent la Loire et ses affluents.",
+        groups: [
+          G(null, ['Implantation dans les coteaux.', 'Façades orientées vers les vallées.', 'Intégration visuelle au relief.', 'Présence de villages troglodytiques.', 'Proximité des vignobles et espaces agricoles.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'intégration du bâtiment dans la masse rocheuse constitue le critère d'identification principal.",
+        groups: [
+          G(null, ['Cavité creusée dans le tuffeau.', 'Façade directement intégrée au coteau.', 'Parois rocheuses intérieures.', 'Ouvertures regroupées sur la façade.', 'Forte relation avec les coteaux calcaires.', 'Possibilité de réutilisation d’anciennes carrières.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
