@@ -13535,7 +13535,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'chaumierenormande',
     name: 'Chaumière normande',
-    region: 'Normandie · Pays d’Auge · Roumois · Lieuvin',
+    region: 'Normandie · Pays d’Auge · Roumois · Lieuvin · Marais-Vernier',
     periode: 'XVIIe–XIXe siècle',
     procede: 'Ossature en pans de bois avec remplissage en torchis, sur soubassement maçonné, et couverture traditionnelle en chaume.',
     usage: 'Habitation rurale',
@@ -13555,15 +13555,15 @@ export const TYPOLOGIES: Typologie[] = [
     images: [],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
-      "La chaumière normande est une habitation rurale caractérisée par une structure en pans de bois, des murs en torchis et une épaisse couverture de chaume. Sa silhouette basse et allongée, ses larges débords de toiture et l’emploi de matériaux locaux lui confèrent une forte identité dans les paysages ruraux normands.",
+      "La chaumière normande est une habitation rurale caractérisée par une structure en pans de bois, des murs en torchis et une épaisse couverture de chaume. Sa silhouette basse et allongée, ses larges débords de toiture et l’emploi de matériaux locaux lui confèrent une forte identité dans les paysages ruraux normands. Dans les secteurs les plus humides comme le Marais-Vernier, en Risle maritime, le soubassement maçonné est généralement surélevé afin de protéger le torchis des remontées d’humidité.",
     identite: [
       ['Période', 'XVIIe–XIXe siècle'],
-      ['Région', 'Normandie · Pays d’Auge · Roumois · Lieuvin'],
+      ['Région', 'Normandie · Pays d’Auge · Roumois · Lieuvin · Marais-Vernier'],
       ['Usage', 'Habitation rurale'],
       ['Système', 'Ossature en pans de bois avec remplissage en torchis'],
       ['Matériau dominant', 'Bois et torchis'],
       ['Toiture', 'Toiture à forte pente couverte de chaume'],
-      ['Particularité', 'Épaisse couverture végétale formant de larges débords et silhouette basse caractéristique'],
+      ['Particularité', 'Épaisse couverture végétale formant de larges débords et silhouette basse caractéristique ; soubassement surélevé dans les secteurs humides du Marais-Vernier'],
     ],
     materiaux: ['Chêne', 'Torchis', 'Chaume', 'Silex', 'Pierre calcaire', 'Chaux'],
     annotations: [
@@ -13612,7 +13612,7 @@ export const TYPOLOGIES: Typologie[] = [
         icon: 'ph ph-map-pin',
         intro: 'Les chaumières sont particulièrement représentées dans les secteurs bocagers et humides de Normandie.',
         groups: [
-          G(null, ['Pays d’Auge.', 'Roumois.', 'Lieuvin.', 'Pays de Risle.', 'Vallée de la Seine normande.']),
+          G(null, ['Pays d’Auge.', 'Roumois.', 'Lieuvin.', 'Pays de Risle.', 'Marais-Vernier.', 'Vallée de la Seine normande.']),
         ],
       },
     ],
