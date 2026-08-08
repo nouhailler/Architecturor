@@ -307,7 +307,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Mas_(habitation)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mas%20proven%C3%A7al%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Mas_01.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme-bloc méditerranéenne en moellons calcaire liés à la chaux. Murs épais, faible pente de tuiles canal et forte inertie thermique pour résister à la chaleur estivale.",
@@ -545,7 +545,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Long%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Long%C3%A8re%20bretonne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Farms_near_Tonquédec.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison rurale bretonne tout en longueur, bâtie en gros blocs de granite sous une toiture d’ardoise à forte pente. Plan simple d’une seule travée en profondeur, pignons épais orientés face aux vents et pluies atlantiques.",
@@ -624,7 +624,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chalet',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Chalet%20savoyard%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Farmhouse_les_Confins.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Habitat de montagne combinant un soubassement en pierre (étable, cave) et un étage en madriers de bois (logis, grenier à foin). Toiture à faible pente couverte de tavaillons ou de lauzes, dimensionnée pour porter la neige.",
@@ -934,7 +934,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Long%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Long%C3%A8re%20vend%C3%A9enne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['La_Goyère_-_St_Georges_Montaigu.png'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Longère de bocage vendéen bâtie en moellons calcaires ou granitiques enduits à la chaux, sous toiture de tuile canal ou d’ardoise selon les secteurs. Plan allongé simple, souvent adossée à la haie bocagère qui la protège du vent.",
@@ -1002,7 +1002,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Sologne',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20solognote%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Chateau_de_St-Agil_Ferme.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison des étangs solognots associant un soubassement en brique et un étage à pans de bois, sous une toiture pentue de tuile plate adaptée aux terrains humides. Le bois local, issu des forêts de Sologne, structure une architecture marquée par l’eau et l’étang.",
@@ -1139,7 +1139,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_lorraine',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20lorraine%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Rochesson,_ferme_-_img_46242.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme-bloc lorraine regroupant sous un même faîtage le logis, l’étable et la grange, desservis par une imposante porte charretière en plein cintre. La pierre calcaire locale et le plan compact répondent aux hivers rigoureux du plateau lorrain.",
@@ -1275,7 +1275,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_bressane',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20bressane%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Musée_-_Ferme_bressane_-_Saint-Trivier-de-Courtes.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme bressane à pans de bois et torchis, reconnaissable à sa cheminée sarrasine pyramidale qui domine la toiture de tuile. Ce dispositif de fumage traditionnel, hérité des influences sarrasines, caractérise l’architecture rurale de la plaine bressane.",
@@ -1343,7 +1343,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Beauce',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20beauceronne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['La_ferme_du_château_de_Marmousse_(28).jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Ferme à cour fermée de la plaine céréalière beauceronne, organisée autour d’un vaste corps de logis, d’étables et d’une grange immense accessible par un portail monumental. L’échelle des bâtiments reflète la richesse des grandes exploitations céréalières.",
@@ -1411,7 +1411,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Bourbonnais_(province)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20bourbonnaise%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Jaligny_052.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme à cour du Bourbonnais, en pierre et brique locale, associant polyculture et élevage bovin dans une région de transition entre le Massif central et le Bassin parisien. Toiture à faible pente couverte de tuile plate bourbonnaise.",
@@ -1478,7 +1478,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_normande',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20normande%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Porche_de_la_ferme_026.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme normande organisée en cour-masure : bâtiments à pans de bois et torchis disposés autour d’une cour plantée de pommiers, entourée d’un talus planté protégeant du vent. Une architecture indissociable du bocage et de la tradition cidricole.",
@@ -1546,7 +1546,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_auvergnate',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20auvergnate%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['005_Grande_ferme_Margeride.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme-bloc du plateau volcanique auvergnat, bâtie en basalte sombre et arkose, couverte de lauzes ou de chaume épais pour résister aux hivers rigoureux. Logis et étable communiquent souvent directement, la chaleur animale participant au chauffage du logis.",
@@ -1751,7 +1751,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/P%C3%A9rigord',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20p%C3%A9rigourdine%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ["Creyssac_Gué_de_l'éperon_ferme.JPG"],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison du Périgord en pierre calcaire dorée, couverte de lauzes calcaires à forte pente ou de tuile canal. Tourelles, pigeonniers et toits complexes composent une silhouette caractéristique de la vallée de la Dordogne.",
@@ -1819,7 +1819,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Charente_(province)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20charentaise%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Balzac_ferme.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison charentaise en pierre de taille calcaire blanche, couverte de tuile canal et ornée d’une génoise en corniche d’influence méridionale. Souvent liée au vignoble et à la production de cognac, elle associe logis et chai.",
@@ -1955,7 +1955,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/B%C3%A9arn',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20b%C3%A9arnaise%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Udapet_Bonnemasou.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison béarnaise du piémont pyrénéen bâtie en galets de gave, associés à des chaînages de brique ou de pierre de taille. Toiture à forte pente en ardoise ou tuile, typique des vallées où les rivières fournissent la matière première.",
@@ -2023,7 +2023,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chalet',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20savoyarde%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Chalet_Chappuis_Parmelan.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Ferme de vallée savoyarde associant un rez-de-chaussée en pierre et un étage en pans de bois ou bardage, prolongé de larges galeries de bois. Moins haute en altitude que le chalet d’alpage, elle regroupe logis et exploitation agricole dans un même volume.",
@@ -2294,7 +2294,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Pierre_s%C3%A8che',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mazet%20c%C3%A9venol%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Mas_des_Abeillères_au_printemps.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petit abri agricole en pierre sèche des terrasses (bancels) cévenoles, lié à la culture de la châtaigne et à la viticulture de pente. Le mazet servait au rangement des outils et à l’abri temporaire du vigneron ou du châtaigneraie.",
@@ -2498,7 +2498,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Toit_%C3%A0_la_Mansart',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20ville%20XVIIIe%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Sarlat_-_Immeuble_9_place_de_la_Liberté_-521.JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "Maison de ville classique du XVIIIe siècle, à la façade ordonnancée en pierre de taille, implantée entre cour et jardin selon le modèle classique français. Toiture à la Mansart en ardoise, fenêtres à petits carreaux et ferronneries élégantes composent une architecture urbaine sobre et régulière.",
@@ -2634,7 +2634,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_bourgeoise',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20bourgeoise%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Caen_hoteldescroisiers.jpg'],
     periodeTags: ['XIXe'],
     resume:
       "Maison de ville bourgeoise du XIXe siècle, plus modeste que l’hôtel particulier mais soignée dans son décor : balcon filant, corniche moulurée, façade en pierre ou en brique selon les régions. Elle loge une seule famille aisée sur plusieurs niveaux, avec un escalier d’apparat desservant les étages.",
@@ -2701,7 +2701,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cit%C3%A9_ouvri%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20ouvri%C3%A8re%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ["Lallaing_-_Cités_de_la_fosse_Bonnel_des_mines_d'Aniche_(01).JPG"],
     periodeTags: ['XIXe'],
     resume:
       "Maison ouvrière urbaine du XIXe siècle, bâtie en brique par le patronat industriel à proximité des usines. Petite, mitoyenne et répétitive, elle associe un logis simple à un jardinet potager, dans une logique d’encadrement social et hygiéniste propre au paternalisme industriel.",
@@ -2769,7 +2769,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Canut',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Canut%20lyonnais%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Lyon_4e_-_Grande_Rue_de_la_Croix-Rousse,_immeubles_au_niveau_de_la_rue_Rosset,_vers_le_nord.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Immeuble de la Croix-Rousse lyonnaise conçu pour loger les canuts, ouvriers tisserands en soie, avec des plafonds exceptionnellement hauts pour accueillir les métiers à tisser Jacquard. Grandes fenêtres, traboules traversant les îlots et façades sobres caractérisent ce patrimoine industriel urbain unique.",
