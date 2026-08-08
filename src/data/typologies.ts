@@ -15215,6 +15215,108 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'cabanonprovencal',
+    name: 'Cabanon provençal',
+    region: 'Provence · Marseille · Bouches-du-Rhône · Var',
+    periode: 'XVIIIe–XXe siècle',
+    procede: 'Murs porteurs en maçonnerie de pierre ou de moellons, avec charpente traditionnelle en bois.',
+    usage: 'Abri agricole, remise et habitat saisonnier',
+    categorie: 'rural',
+    gps: '43.30° N, 5.40° E',
+    altitude: '0–250 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux pans ou un pan',
+    penteToit: '15–30°',
+    essenceBois: 'Pin et chêne',
+    typeFondation: 'Assise maçonnée en pierre',
+    typeCharpente: 'Charpente simple en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "Le cabanon provençal est une petite construction rurale associée aux cultures, aux jardins et aux anciennes propriétés agricoles de Provence. De dimensions modestes, il sert notamment d'abri, de remise à outils ou de lieu de repos saisonnier et se caractérise par une architecture simple en pierre enduite et une toiture traditionnelle en tuiles.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Provence · Marseille · Bouches-du-Rhône · Var'],
+      ['Usage', 'Abri agricole, remise et habitat saisonnier'],
+      ['Système', 'Murs porteurs maçonnés en pierre'],
+      ['Matériau dominant', 'Moellons calcaires et enduit à la chaux'],
+      ['Toiture', 'Toiture à deux pans ou à un pan, généralement couverte de tuiles canal'],
+      ['Particularité', 'Petit bâtiment agricole isolé associé à une parcelle cultivée, un jardin ou une ancienne propriété rurale'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Terre cuite', 'Bois', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture est généralement simple, à deux pans ou parfois à un seul pan, avec une couverture traditionnelle en tuiles canal.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les murs sont construits en pierre ou en moellons et peuvent être laissés apparents ou recouverts d'un enduit à la chaux. Les ouvertures sont généralement peu nombreuses." },
+      { n: 3, el: 'Planchers', txt: 'Le bâtiment est généralement de plain-pied. Le sol peut être constitué de terre battue, de pierre ou de carreaux de terre cuite.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs maçonnés assurent directement la fonction porteuse. La charpente en bois porte une couverture légère en tuiles.' },
+      { n: 5, el: 'Escalier', txt: "Le cabanon étant généralement de plain-pied, aucun escalier intérieur n'est nécessaire. De petits dispositifs extérieurs peuvent desservir une mezzanine ou un espace de stockage." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement constituées d’une assise maçonnée en pierre adaptée à la faible dimension et au faible poids du bâtiment.' },
+    ],
+    sections: [
+      {
+        title: 'Fonction agricole',
+        icon: 'ph ph-tractor',
+        intro: "Le cabanon est avant tout lié à une petite parcelle agricole ou horticole et aux besoins quotidiens de son exploitant.",
+        groups: [
+          G(null, ['Stockage des outils.', 'Abri contre les intempéries.', 'Repos pendant les travaux agricoles.', 'Stockage de petites récoltes.', 'Abri pour le matériel léger.']),
+        ],
+      },
+      {
+        title: 'Organisation intérieure',
+        icon: 'ph ph-house-line',
+        intro: 'Le plan intérieur est généralement très simple et privilégie la polyvalence.',
+        groups: [
+          G(null, ['Une pièce principale.', 'Petite réserve.', 'Établi ou espace de travail.', 'Cheminée ou foyer dans certains exemplaires.', 'Mezzanine éventuelle.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: "Le cabanon est directement associé à la parcelle qu'il dessert.",
+        groups: [
+          G(null, ["Implantation au milieu ou en bordure d'une parcelle.", "Proximité d'un jardin ou d'une oliveraie.", 'Relation directe avec les chemins ruraux.', "Orientation adaptée à l'usage et au climat.", 'Présence possible dans les anciennes campagnes périurbaines.']),
+        ],
+      },
+      {
+        title: 'Adaptation climatique',
+        icon: 'ph ph-sun',
+        intro: 'Les petits volumes et les murs maçonnés procurent une protection efficace contre les fortes chaleurs estivales.',
+        groups: [
+          G(null, ['Murs relativement épais.', 'Petites ouvertures.', 'Protection solaire naturelle.', 'Inertie thermique de la maçonnerie.', 'Toiture débordante.', 'Espaces ombragés autour du bâtiment.']),
+        ],
+      },
+      {
+        title: 'Matériaux',
+        icon: 'ph ph-cube',
+        intro: 'Le cabanon utilise principalement les matériaux disponibles à proximité de la parcelle.',
+        groups: [
+          G(null, ['Pierre locale.', 'Moellons calcaires.', 'Mortier de chaux.', 'Tuiles canal.', 'Bois.', 'Fer pour les éléments secondaires.']),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-arrows-clockwise',
+        intro: 'De nombreux cabanons ont évolué avec la transformation des campagnes périurbaines et des pratiques agricoles.',
+        groups: [
+          G(null, ['Transformation en résidence secondaire.', 'Aménagement en lieu de repos.', 'Extension ponctuelle.', "Ajout d'une terrasse ou d'un appentis.", 'Réhabilitation patrimoniale.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La petite dimension, la simplicité constructive et le lien direct avec une parcelle agricole constituent les principaux critères d'identification.",
+        groups: [
+          G(null, ['Petit volume isolé.', 'Construction généralement de plain-pied.', 'Murs en pierre ou moellons.', 'Toiture simple en tuiles canal.', 'Une ou quelques ouvertures.', 'Fonction agricole ou saisonnière.', 'Implantation dans une parcelle cultivée.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
