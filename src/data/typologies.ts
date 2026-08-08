@@ -307,7 +307,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Mas_(habitation)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mas%20proven%C3%A7al%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Mas_01.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme-bloc méditerranéenne en moellons calcaire liés à la chaux. Murs épais, faible pente de tuiles canal et forte inertie thermique pour résister à la chaleur estivale.",
@@ -545,7 +545,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Long%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Long%C3%A8re%20bretonne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Farms_near_Tonquédec.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison rurale bretonne tout en longueur, bâtie en gros blocs de granite sous une toiture d’ardoise à forte pente. Plan simple d’une seule travée en profondeur, pignons épais orientés face aux vents et pluies atlantiques.",
@@ -624,7 +624,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chalet',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Chalet%20savoyard%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Farmhouse_les_Confins.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Habitat de montagne combinant un soubassement en pierre (étable, cave) et un étage en madriers de bois (logis, grenier à foin). Toiture à faible pente couverte de tavaillons ou de lauzes, dimensionnée pour porter la neige.",
@@ -934,7 +934,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Long%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Long%C3%A8re%20vend%C3%A9enne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['La_Goyère_-_St_Georges_Montaigu.png'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Longère de bocage vendéen bâtie en moellons calcaires ou granitiques enduits à la chaux, sous toiture de tuile canal ou d’ardoise selon les secteurs. Plan allongé simple, souvent adossée à la haie bocagère qui la protège du vent.",
@@ -1002,7 +1002,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Sologne',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20solognote%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Chateau_de_St-Agil_Ferme.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison des étangs solognots associant un soubassement en brique et un étage à pans de bois, sous une toiture pentue de tuile plate adaptée aux terrains humides. Le bois local, issu des forêts de Sologne, structure une architecture marquée par l’eau et l’étang.",
@@ -1139,7 +1139,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_lorraine',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20lorraine%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Rochesson,_ferme_-_img_46242.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme-bloc lorraine regroupant sous un même faîtage le logis, l’étable et la grange, desservis par une imposante porte charretière en plein cintre. La pierre calcaire locale et le plan compact répondent aux hivers rigoureux du plateau lorrain.",
@@ -1275,7 +1275,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_bressane',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20bressane%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Musée_-_Ferme_bressane_-_Saint-Trivier-de-Courtes.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme bressane à pans de bois et torchis, reconnaissable à sa cheminée sarrasine pyramidale qui domine la toiture de tuile. Ce dispositif de fumage traditionnel, hérité des influences sarrasines, caractérise l’architecture rurale de la plaine bressane.",
@@ -1343,7 +1343,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Beauce',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20beauceronne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['La_ferme_du_château_de_Marmousse_(28).jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Ferme à cour fermée de la plaine céréalière beauceronne, organisée autour d’un vaste corps de logis, d’étables et d’une grange immense accessible par un portail monumental. L’échelle des bâtiments reflète la richesse des grandes exploitations céréalières.",
@@ -1411,7 +1411,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Bourbonnais_(province)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20bourbonnaise%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Jaligny_052.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme à cour du Bourbonnais, en pierre et brique locale, associant polyculture et élevage bovin dans une région de transition entre le Massif central et le Bassin parisien. Toiture à faible pente couverte de tuile plate bourbonnaise.",
@@ -1478,7 +1478,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_normande',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20normande%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Porche_de_la_ferme_026.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme normande organisée en cour-masure : bâtiments à pans de bois et torchis disposés autour d’une cour plantée de pommiers, entourée d’un talus planté protégeant du vent. Une architecture indissociable du bocage et de la tradition cidricole.",
@@ -1546,7 +1546,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ferme_auvergnate',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20auvergnate%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['005_Grande_ferme_Margeride.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Ferme-bloc du plateau volcanique auvergnat, bâtie en basalte sombre et arkose, couverte de lauzes ou de chaume épais pour résister aux hivers rigoureux. Logis et étable communiquent souvent directement, la chaleur animale participant au chauffage du logis.",
@@ -1751,7 +1751,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/P%C3%A9rigord',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20p%C3%A9rigourdine%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ["Creyssac_Gué_de_l'éperon_ferme.JPG"],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison du Périgord en pierre calcaire dorée, couverte de lauzes calcaires à forte pente ou de tuile canal. Tourelles, pigeonniers et toits complexes composent une silhouette caractéristique de la vallée de la Dordogne.",
@@ -1819,7 +1819,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Charente_(province)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20charentaise%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Balzac_ferme.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison charentaise en pierre de taille calcaire blanche, couverte de tuile canal et ornée d’une génoise en corniche d’influence méridionale. Souvent liée au vignoble et à la production de cognac, elle associe logis et chai.",
@@ -1955,7 +1955,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/B%C3%A9arn',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20b%C3%A9arnaise%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Udapet_Bonnemasou.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Maison béarnaise du piémont pyrénéen bâtie en galets de gave, associés à des chaînages de brique ou de pierre de taille. Toiture à forte pente en ardoise ou tuile, typique des vallées où les rivières fournissent la matière première.",
@@ -2023,7 +2023,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chalet',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20savoyarde%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Chalet_Chappuis_Parmelan.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Ferme de vallée savoyarde associant un rez-de-chaussée en pierre et un étage en pans de bois ou bardage, prolongé de larges galeries de bois. Moins haute en altitude que le chalet d’alpage, elle regroupe logis et exploitation agricole dans un même volume.",
@@ -2294,7 +2294,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Pierre_s%C3%A8che',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mazet%20c%C3%A9venol%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Mas_des_Abeillères_au_printemps.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petit abri agricole en pierre sèche des terrasses (bancels) cévenoles, lié à la culture de la châtaigne et à la viticulture de pente. Le mazet servait au rangement des outils et à l’abri temporaire du vigneron ou du châtaigneraie.",
@@ -2498,7 +2498,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Toit_%C3%A0_la_Mansart',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20ville%20XVIIIe%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Sarlat_-_Immeuble_9_place_de_la_Liberté_-521.JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "Maison de ville classique du XVIIIe siècle, à la façade ordonnancée en pierre de taille, implantée entre cour et jardin selon le modèle classique français. Toiture à la Mansart en ardoise, fenêtres à petits carreaux et ferronneries élégantes composent une architecture urbaine sobre et régulière.",
@@ -2634,7 +2634,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_bourgeoise',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20bourgeoise%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Caen_hoteldescroisiers.jpg'],
     periodeTags: ['XIXe'],
     resume:
       "Maison de ville bourgeoise du XIXe siècle, plus modeste que l’hôtel particulier mais soignée dans son décor : balcon filant, corniche moulurée, façade en pierre ou en brique selon les régions. Elle loge une seule famille aisée sur plusieurs niveaux, avec un escalier d’apparat desservant les étages.",
@@ -2701,7 +2701,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Cit%C3%A9_ouvri%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20ouvri%C3%A8re%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ["Lallaing_-_Cités_de_la_fosse_Bonnel_des_mines_d'Aniche_(01).JPG"],
     periodeTags: ['XIXe'],
     resume:
       "Maison ouvrière urbaine du XIXe siècle, bâtie en brique par le patronat industriel à proximité des usines. Petite, mitoyenne et répétitive, elle associe un logis simple à un jardinet potager, dans une logique d’encadrement social et hygiéniste propre au paternalisme industriel.",
@@ -2769,7 +2769,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Canut',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Canut%20lyonnais%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Lyon_4e_-_Grande_Rue_de_la_Croix-Rousse,_immeubles_au_niveau_de_la_rue_Rosset,_vers_le_nord.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Immeuble de la Croix-Rousse lyonnaise conçu pour loger les canuts, ouvriers tisserands en soie, avec des plafonds exceptionnellement hauts pour accueillir les métiers à tisser Jacquard. Grandes fenêtres, traboules traversant les îlots et façades sobres caractérisent ce patrimoine industriel urbain unique.",
@@ -5489,7 +5489,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Hangar_agricole',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Hangar%20agricole%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['2022-10_-_Hangars_Bellefleur_(Lure)_-_01.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Grand volume industrialisé à ossature métallique ou en béton, dimensionné pour abriter machines agricoles, fourrage en grande quantité ou récoltes en vrac. Sa portée dégagée sans poteau intermédiaire et sa rapidité de montage traduisent la mécanisation et l’agrandissement des exploitations depuis l’après-guerre.",
@@ -5838,7 +5838,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Sucrerie',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Sucrerie%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ["Sucrerie_d'Eppeville.jpg"],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Complexe industriel saisonnier transformant la betterave sucrière en sucre, actif seulement quelques mois durant la « campagne » d’automne. Tours de diffusion, batteries d’évaporateurs et haute cheminée composent un ensemble technique complexe, embranché au chemin de fer pour l’acheminement massif des betteraves.",
@@ -7130,7 +7130,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Halle_%C3%A0_mar%C3%A9e',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cri%C3%A9e%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Seteport_peche_peche_criée.JPG'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Halle portuaire dédiée à la vente aux enchères descendantes du poisson fraîchement débarqué, directement accessible depuis le quai de déchargement. Sa grande halle réfrigérée et ses installations de tri organisent en quelques heures chaque matin tout le commerce du poisson d’un port de pêche.",
@@ -7198,7 +7198,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Ostr%C3%A9iculture',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Cabanes%20ostr%C3%A9icoles%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Cabanes_Ostréicoles,_Fort_Royer_HDR_(511180256).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Cabane de bois colorée, dressée sur pilotis à même l’estran, où l’ostréiculteur trie, calibre et conditionne les huîtres au sortir des parcs. Alignées en rangs serrés au bord de l’eau, ces cabanes composent le paysage caractéristique du bassin d’Arcachon et des ports ostréicoles atlantiques.",
@@ -7402,7 +7402,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Alpage',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Chalet%20d%27alpage%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Chalets_de_Miage_(50730451503).jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Bâtiment sommaire d’altitude occupé uniquement l’été durant l’estive, servant au logement du berger, à la traite et à la fabrication du fromage (beaufort, reblochon). Plus rustique et plus petit que le chalet savoyard permanent, il se réduit souvent à une seule pièce avec cave d’affinage attenante.",
@@ -7540,7 +7540,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grange',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Grange%20foraine%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['024CHAM-Fev2012-Moussoux.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Grange isolée construite au milieu des prés de montagne éloignés de la ferme principale, pour stocker le foin fauché sur place et éviter son transport jusqu’à la vallée. Volume simple en bois sur soubassement de pierre, parfois utilisée aussi comme abri temporaire pour le bétail.",
@@ -7608,7 +7608,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Difficile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Grenier',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Mazot%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Mazot_(Samoens).jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Petit bâtiment annexe en madriers de bois, isolé du chalet principal et surélevé sur des pilotis de pierre plate (« pierres à rats ») pour protéger les provisions et documents précieux du feu et des rongeurs. Le mazot ponctue traditionnellement les villages alpins savoyards.",
@@ -8359,7 +8359,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Chapelle_fun%C3%A9raire',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Chapelle%20fun%C3%A9raire%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Cimetière_de_Lay_-_Chapelle_funéraire_famille_de_Berchoux_(juin_2023).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Petite construction en forme de temple ou d’église miniature, édifiée par les familles bourgeoises dans les grands cimetières urbains depuis le décret impérial de 1804 autorisant l’achat de concessions perpétuelles. Style éclectique — néo-gothique, néoclassique ou égyptisant — avec vitrail, autel et caveau en sous-sol.",
@@ -11148,7 +11148,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Serre_(agriculture)',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Serre%20agricole%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Violaines_serres_à_fraises_(2).jpg'],
     periodeTags: ['XXe'],
     resume:
       "Structure légère métallique couverte de verre ou de film plastique, permettant la culture maraîchère et horticole toute l’année en maîtrisant température, hygrométrie et luminosité. Des simples tunnels plastiques aux serres verre chauffées et informatisées, cette typologie couvre une large gamme d’équipements agricoles sous abri.",
@@ -11285,7 +11285,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Coll%C3%A8ge_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Coll%C3%A8ge%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Collège_Maryse_Bastié_76114.jpg'],
     periodeTags: ['XXe'],
     resume:
       "Établissement d’enseignement secondaire du premier cycle, généralisé après la réforme du collège unique de 1975 unifiant les filières. Construction souvent standardisée et préfabriquée durant les Trente Glorieuses pour répondre rapidement à la démocratisation scolaire, certains modèles industrialisés (type Pailleron) ayant depuis été largement décriés et reconstruits.",
@@ -11558,7 +11558,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/%C3%89cole_primaire_en_France',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=%C3%89cole%20rurale%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['École_primaire_St-Didier_Aussiat_1.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "Petite école communale à classe unique, réunissant plusieurs niveaux d’âge sous l’autorité d’un seul instituteur, caractéristique des petites communes rurales avant les regroupements pédagogiques du XXe siècle. Logement de fonction généralement intégré au même bâtiment que la salle de classe.",
@@ -11694,7 +11694,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme-bloc%20alsacienne%20architecture%20France&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['ALSACE_189_(7345152232).jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La ferme-bloc alsacienne est la principale typologie agricole traditionnelle d’Alsace. Elle regroupe sous un même ensemble l’habitation, les étables, la grange et les espaces de stockage, organisés autour d’une cour accessible par un portail charretier monumental. Les variantes locales (Kochersberg, Ried, Sundgau, Outre-Forêt) conservent cette organisation générale tout en adaptant les matériaux et les dimensions aux ressources du territoire.",
@@ -11850,7 +11850,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20foresti%C3%A8re%20Vosges%20architecture&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Ohlungen_Maison_forestière1.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "La maison forestière alsacienne est un bâtiment de service construit principalement par l’administration des Eaux et Forêts puis par l’Office national des forêts. Implantée au cœur des massifs forestiers vosgiens, elle sert de logement au garde forestier tout en accueillant des locaux techniques liés à l’exploitation et à la surveillance de la forêt.",
@@ -11928,7 +11928,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_alsacienne',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Half-timbered_houses_in_Alsace',
-    images: [],
+    images: ['15_Rue_du_General_de_Gaulle_in_Riquewihr.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La maison de vigneron alsacienne est une variante spécialisée de la maison alsacienne, développée dans les villages du vignoble. Elle associe logement, cave, espaces de vinification et dépendances autour d’une cour fermée accessible par un portail charretier. Son implantation et son organisation répondent directement aux besoins de la production viticole.",
@@ -12138,7 +12138,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Ferme%20vosgienne%20Hautes-Vosges%20architecture&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Anould_-_La_Mangoutte_-_farmhouse.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La ferme de montagne vosgienne alsacienne est une exploitation d’altitude adaptée aux conditions climatiques des Hautes-Vosges. L’habitation, l’étable et les espaces de stockage sont regroupés dans un même volume afin de limiter les déperditions thermiques et de faciliter l’exploitation en hiver.",
@@ -12216,7 +12216,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Malouini%C3%A8re',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Malouini%C3%A8res',
-    images: [],
+    images: ['Saint-Malo_-_Valmarin_20140730-01.JPG'],
     periodeTags: ['Avant 1800'],
     resume:
       "La malouinière est une demeure de campagne construite par les armateurs, corsaires et négociants de Saint-Malo entre le XVIIe et le XVIIIe siècle. Implantée dans de vastes domaines clos, elle se distingue par une architecture classique sobre, une composition parfaitement symétrique et des matériaux locaux, principalement le granite.",
@@ -12372,7 +12372,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20paludier%20Gu%C3%A9rande%20architecture&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Saillé_maison_paludiers_3.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La maison de paludier guérandaise est un habitat vernaculaire associé à l’exploitation traditionnelle des marais salants de la presqu’île de Guérande. Généralement compacte, construite en pierre locale et couverte d’ardoise, elle combine logement familial, espaces de rangement et dépendances nécessaires au travail du sel, tout en s’adaptant aux vents et à l’humidité du littoral.",
@@ -12460,7 +12460,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Manoir_breton',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Manors_in_Brittany',
-    images: [],
+    images: ['Landerneau_-_manoir_de_Keranden_01.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "Le manoir breton est la résidence de la petite et moyenne noblesse bretonne. Plus modeste qu’un château mais plus prestigieux qu’une ferme, il constitue une exploitation agricole et un lieu de résidence seigneuriale. Son architecture privilégie la pierre locale, les volumes compacts et une organisation autour d’une cour avec dépendances.",
@@ -12694,7 +12694,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Enclos_paroissial',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Parish_closes_in_Brittany',
-    images: [],
+    images: ["Guimiliau_-_Les_abords_de_l'enclos.jpg"],
     periodeTags: ['Avant 1800'],
     resume:
       "L’enclos paroissial breton est un ensemble monumental propre à la Basse-Bretagne, réunissant dans un espace clos une église, un cimetière, un calvaire monumental, une porte triomphale et souvent un ossuaire. Développé durant la prospérité économique des XVIe et XVIIe siècles, il constitue l’une des expressions les plus originales du patrimoine architectural breton.",
@@ -12928,7 +12928,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Abri%20canot%20de%20sauvetage%20Bretagne&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Erquy_-_Abandoned_Lifeboat_House_-_panoramio.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "L’abri du canot de sauvetage est un bâtiment spécialisé destiné à protéger un canot de sauvetage tout en permettant sa mise à l’eau rapide. Implanté à proximité immédiate du rivage, il constitue une composante emblématique des stations de sauvetage maritimes bretonnes développées à partir de la seconde moitié du XIXe siècle.",
@@ -13006,7 +13006,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Maison%20de%20marchand%20Saint-Malo%20intra-muros&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Saint-Malo_(35)_Maison_du_Gouverneur_01.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "La maison de marchand malouine est une demeure urbaine construite durant l’âge d’or du commerce maritime de Saint-Malo. Étroite, élevée sur plusieurs niveaux et bâtie en granite, elle associe logement, bureaux commerciaux et espaces de stockage destinés aux activités des armateurs et négociants.",
@@ -13084,7 +13084,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Modérée',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Maison_%C3%A0_pondalez',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Maisons_%C3%A0_pondalez',
-    images: [],
+    images: ['Maison_à_Pondalez,_Morlaix.jpg'],
     periodeTags: ['Avant 1800'],
     resume:
       "La maison de négociant morlaisienne est une demeure urbaine développée durant l’essor commercial de Morlaix. Elle se caractérise par une façade étroite, plusieurs niveaux, un remarquable volume intérieur organisé autour d’un pondalez, ainsi que des espaces destinés au commerce et au stockage des marchandises.",
@@ -13240,7 +13240,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: 'https://fr.wikipedia.org/wiki/Clos-masure',
     commonsUrl: 'https://commons.wikimedia.org/wiki/Category:Clos-masures',
-    images: [],
+    images: ['Manoir-clos-masure.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Le clos-masure cauchois est une exploitation agricole caractéristique du Pays de Caux, organisée autour d’une vaste cour plantée de pommiers et protégée par des talus arborés appelés fossés plantés. Les bâtiments agricoles et le logis s’organisent librement au sein de cet enclos paysager, véritable signature du paysage cauchois.",
@@ -13318,7 +13318,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Manoir%20cauchois%20Pays%20de%20Caux%20architecture&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ["0_Varengeville-sur-Mer_-_Manoir_d'Ango_(1).JPG"],
     periodeTags: ['Avant 1800'],
     resume:
       "Le manoir cauchois est une résidence seigneuriale caractéristique du Pays de Caux. Il associe un logis noble, des communs agricoles et parfois un colombier ou un pressoir, dans un ensemble implanté au sein d’un clos planté. Son architecture mêle silex, brique, pans de bois et hautes toitures normandes.",
@@ -13474,7 +13474,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: 'https://commons.wikimedia.org/w/index.php?search=Villa%20baln%C3%A9aire%20Deauville%20Trouville%20architecture&title=Special:MediaSearch&type=image',
-    images: [],
+    images: ['Villa_Argentine_(Cabourg).jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "La villa balnéaire normande apparaît avec le développement des stations balnéaires au XIXe siècle. Destinée à la villégiature, elle adopte une architecture pittoresque mêlant influences normandes, éclectiques et anglo-normandes, avec une recherche de confort, de lumière et de vues sur la mer.",
@@ -13896,7 +13896,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Architecture_Perret_Au_Havre_(180697579).jpeg'],
     periodeTags: ['XXe'],
     resume:
       "L'immeuble de reconstruction Perret du Havre appartient au vaste ensemble urbain reconstruit après les destructions de la Seconde Guerre mondiale sous la direction d'Auguste Perret. Il associe une structure en béton armé lisible, une trame modulaire rigoureuse et une expression architecturale inspirée d'un classicisme moderne.",
@@ -13982,7 +13982,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Moyenne',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Barfleur_-_Maison_de_Julie_Postel.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La maison de pêcheur du Cotentin est un habitat littoral vernaculaire de petite dimension, adapté aux conditions climatiques de la Manche et aux modes de vie des communautés côtières. Elle associe généralement une maçonnerie épaisse en pierre, une organisation intérieure simple et une toiture à forte pente destinée à résister aux intempéries.",
@@ -14068,7 +14068,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Moyenne',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Mandeville-en-Bessin,_Ferme-manoir_de_Douville.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La ferme-manoir normande est un domaine agricole organisé autour d'un logis de maître associé à plusieurs bâtiments d'exploitation. Héritière de l'ancien manoir rural, elle combine fonction résidentielle, organisation agricole et composition autour d'une cour.",
@@ -14334,7 +14334,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Église_Saint-Vigor_de_Champeaux.JPG'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "L'église à clocher-mur du Cotentin est une forme d'architecture religieuse caractérisée par un clocher directement intégré à un mur-pignon, généralement à l'ouest de la nef. Cette disposition compacte, souvent associée à des édifices ruraux modestes, s'inscrit dans la longue tradition de l'architecture paroissiale de la Manche.",
@@ -14428,7 +14428,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['004_Loctudy_Moulin_à_marée_du_Suler.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Le moulin à marée breton est un bâtiment de meunerie utilisant l'énergie produite par la montée et la descente des marées. Installé sur des anses, rias ou estuaires, il associe un bâtiment maçonné à un bassin de retenue, une digue et un dispositif hydraulique permettant d'exploiter le mouvement de l'eau.",
@@ -14522,7 +14522,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Moyenne',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Kerity_(Penmarch)_Rue_Ernest_Renan.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "La maison de pêcheur bretonne est un habitat vernaculaire des villages et ports du littoral breton. Généralement construite en pierre et couverte d'ardoise, elle adopte souvent un volume étroit et compact, organisé sur rue ou directement au contact des quais et des espaces liés aux activités maritimes.",
@@ -14718,7 +14718,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Habitat_troglodyte,_Rochemeunier,_France.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "L'habitat troglodytique saumurois est une forme d'architecture directement liée aux plateaux calcaires et aux falaises de tuffeau du Val de Loire. Les espaces habitables sont creusés dans la roche ou aménagés dans d'anciennes carrières, avec des façades maçonnées ou des ouvertures directement taillées dans le tuffeau.",
@@ -14922,7 +14922,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Aix-Bastide_du_Jas_de_Bouffan-bjs180816-01.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La bastide provençale est une demeure rurale généralement implantée au cœur d'un domaine agricole. Sa composition régulière, souvent symétrique, ses façades enduites, ses ouvertures ordonnées et sa relation avec les jardins, vergers ou cultures constituent les principaux traits de cette architecture de domaine en Provence.",
@@ -15024,7 +15024,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Moyenne',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Mas_(Provencal_Farmhouse).jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "La ferme à cour provençale est un ensemble agricole organisé autour d'une cour intérieure qui distribue les différents bâtiments de l'exploitation. Le logis, les étables, granges, remises et espaces de stockage peuvent former un ensemble compact adapté au climat méditerranéen et aux pratiques agricoles locales.",
@@ -15126,7 +15126,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['0_Gordes_sur_son_piton_rocheux.jpg'],
     periodeTags: ['Avant 1800', 'XIXe'],
     resume:
       "Le village perché provençal est une forme d'habitat groupé implantée sur un relief défensif ou dominant, caractéristique de nombreux territoires de Provence. Le bâti compact s'organise autour de rues étroites, de passages couverts, de places et d'édifices communautaires, en s'adaptant directement à la pente.",
@@ -15236,7 +15236,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Cabanon_de_berger_vue_ext.JPG'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "Le cabanon provençal est une petite construction rurale associée aux cultures, aux jardins et aux anciennes propriétés agricoles de Provence. De dimensions modestes, il sert notamment d'abri, de remise à outils ou de lieu de repos saisonnier et se caractérise par une architecture simple en pierre enduite et une toiture traditionnelle en tuiles.",
@@ -15338,7 +15338,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Moyenne',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Martigues_-_Quai_Brescon.jpg'],
     periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
     resume:
       "La maison de pêcheur provençale est un habitat modeste associé aux anciens villages et hameaux littoraux de Provence. Généralement compacte et directement tournée vers la mer, elle associe logement et petites fonctions liées à la pêche dans une architecture adaptée au climat méditerranéen.",
@@ -15440,7 +15440,7 @@ export const TYPOLOGIES: Typologie[] = [
     difficulteIdentification: 'Facile',
     wikipediaUrl: '',
     commonsUrl: '',
-    images: [],
+    images: ['Façade_cabane_de_gardian_Pont_de_Rousty.jpg'],
     periodeTags: ['XIXe', 'XXe'],
     resume:
       "La cabane de gardian camarguaise est une construction emblématique des paysages de Camargue, associée aux gardians et à l'élevage extensif des taureaux et chevaux. Son architecture légère est directement adaptée aux matériaux disponibles dans les zones humides du delta, notamment le bois et le roseau. Sa façade principale et sa toiture fortement inclinée constituent ses principaux éléments caractéristiques.",
