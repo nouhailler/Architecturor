@@ -14038,6 +14038,92 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'fermemanoirnormande',
+    name: 'Ferme-manoir normande',
+    region: "Normandie · Pays d'Auge · Bessin · Cotentin",
+    periode: 'XVIe–XIXe siècle',
+    procede: 'Murs porteurs en pierre, brique ou pans de bois selon les secteurs, associés à une charpente traditionnelle en bois.',
+    usage: 'Domaine agricole et résidence de maître',
+    categorie: 'rural',
+    gps: '49.15° N, 0.25° E',
+    altitude: '20–180 m',
+    climat: 'Océanique',
+    typeToiture: 'Deux pans',
+    penteToit: '40–55°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIe–XVIIIe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La ferme-manoir normande est un domaine agricole organisé autour d'un logis de maître associé à plusieurs bâtiments d'exploitation. Héritière de l'ancien manoir rural, elle combine fonction résidentielle, organisation agricole et composition autour d'une cour.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', "Normandie · Pays d'Auge · Bessin · Cotentin"],
+      ['Usage', 'Domaine agricole et résidence de maître'],
+      ['Système', 'Murs porteurs maçonnés ou pans de bois selon les secteurs'],
+      ['Matériau dominant', 'Pierre, brique ou bois'],
+      ['Toiture', "Toitures à deux pans couvertes de tuile plate ou d'ardoise"],
+      ['Particularité', "Ensemble organisé autour d'une cour associant logis principal et bâtiments agricoles"],
+    ],
+    materiaux: ['Pierre', 'Brique', 'Bois', 'Torchis', 'Tuile plate', 'Ardoise', 'Chaux'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Les différents bâtiments sont généralement couverts de toitures à deux pans. Le logis peut présenter une couverture plus élaborée que les bâtiments agricoles.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Le logis présente une façade plus soignée que les bâtiments d'exploitation. Les matériaux varient selon le terroir entre pierre, brique, pans de bois et torchis." },
+      { n: 3, el: 'Planchers', txt: 'Les planchers du logis sont généralement en bois, tandis que certains bâtiments agricoles disposent de sols adaptés au stockage et au travail.' },
+      { n: 4, el: 'Structure porteuse', txt: "La structure varie selon les bâtiments et les secteurs : maçonnerie porteuse pour certains édifices, pans de bois pour d'autres, avec charpentes traditionnelles en bois." },
+      { n: 5, el: 'Escalier', txt: "Le logis possède généralement un escalier intérieur desservant les niveaux d'habitation. Les bâtiments agricoles disposent de circulations fonctionnelles distinctes." },
+      { n: 6, el: 'Fondations', txt: 'Les bâtiments reposent sur des fondations maçonnées en pierre adaptées aux sols locaux.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation du domaine',
+        icon: 'ph ph-house-line',
+        intro: "La ferme-manoir associe résidence et exploitation agricole dans un ensemble architectural cohérent.",
+        groups: [
+          G(null, ['Logis principal.', 'Grange.', 'Étable.', 'Écurie.', 'Charreterie.', 'Cour centrale ou cour agricole.']),
+        ],
+      },
+      {
+        title: 'Logis de maître',
+        icon: 'ph ph-house',
+        intro: "Le logis constitue l'élément résidentiel et architectural dominant de l'ensemble.",
+        groups: [
+          G(null, ['Volume plus important que les bâtiments agricoles.', 'Façade plus régulièrement ordonnancée.', 'Cheminée importante.', 'Pièces d’habitation superposées.', 'Comble destiné au stockage ou partiellement aménagé.']),
+        ],
+      },
+      {
+        title: 'Bâtiments agricoles',
+        icon: 'ph ph-warehouse',
+        intro: 'Les bâtiments d’exploitation sont disposés autour du logis ou à proximité immédiate.',
+        groups: [
+          G(null, ['Grange.', 'Étable.', 'Écurie.', 'Charreterie.', 'Cellier.', 'Pigeonnier éventuel.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'identification repose principalement sur l'association entre résidence de maître et exploitation agricole structurée.",
+        groups: [
+          G(null, ['Logis dominant.', 'Cour organisée.', 'Bâtiments agricoles multiples.', 'Accès contrôlé à la cour.', 'Hiérarchie claire entre habitation et exploitation.']),
+        ],
+      },
+      {
+        title: 'Répartition',
+        icon: 'ph ph-map-pin',
+        intro: 'Les fermes-manoirs sont particulièrement représentées dans les régions agricoles de Normandie.',
+        groups: [
+          G(null, ["Pays d'Auge.", 'Bessin.', 'Cotentin.', 'Perche normand.', 'Pays de Caux.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
