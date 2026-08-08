@@ -14799,6 +14799,108 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'closerieangevine',
+    name: 'Closerie angevine',
+    region: 'Pays de la Loire · Anjou · Saumurois',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Maçonnerie porteuse en pierre locale, principalement tuffeau et moellons calcaires, avec charpente traditionnelle en bois.',
+    usage: 'Petit domaine rural, habitation et exploitation viticole ou agricole',
+    categorie: 'rural',
+    gps: '47.30° N, -0.30° E',
+    altitude: '30–120 m',
+    climat: 'Océanique à influence continentale',
+    typeToiture: 'Deux pans',
+    penteToit: '35–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle à fermes et pannes',
+    epoqueDominante: 'XVIIIe–XIXe siècle',
+    difficulteIdentification: 'Difficile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La closerie angevine désigne un petit domaine rural organisé autour d'une habitation et de bâtiments liés à l'exploitation agricole ou viticole. Dans l'Anjou et le Saumurois, cet ensemble peut associer maison, cellier ou cave, dépendances et cour, avec une architecture utilisant largement le tuffeau et les matériaux calcaires locaux.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Pays de la Loire · Anjou · Saumurois'],
+      ['Usage', 'Petit domaine rural, habitation et exploitation viticole ou agricole'],
+      ['Système', 'Murs porteurs maçonnés en pierre'],
+      ['Matériau dominant', 'Tuffeau et moellons calcaires'],
+      ['Toiture', "Toiture à deux pans couverte d'ardoise"],
+      ['Particularité', 'Organisation en petit domaine associant habitation, cour et dépendances agricoles ou viticoles'],
+    ],
+    materiaux: ['Tuffeau', 'Calcaire', 'Chaux', 'Bois', 'Ardoise', 'Terre cuite', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'Les bâtiments sont généralement couverts de toitures à deux pans en ardoise, avec des volumes et des pentes adaptés aux différents corps de bâtiment.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les façades utilisent le tuffeau et les maçonneries de moellons calcaires. La pierre de taille peut être réservée aux encadrements, chaînes d'angle et éléments de décor." },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont principalement réalisés en bois dans le logis. Les bâtiments agricoles peuvent présenter des sols en terre battue ou des dallages en pierre.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les bâtiments reposent principalement sur des murs porteurs maçonnés. Les charpentes et planchers sont traditionnellement réalisés en bois.' },
+      { n: 5, el: 'Escalier', txt: "L'escalier du logis est généralement réalisé en bois ou en maçonnerie. Les dépendances peuvent ne comporter que des escaliers fonctionnels simples." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement constituées de maçonnerie de pierre, adaptées aux sols calcaires et aux bâtiments de faible hauteur.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation du domaine',
+        icon: 'ph ph-house-line',
+        intro: "La closerie se définit davantage par l'organisation de plusieurs bâtiments que par une forme unique de maison.",
+        groups: [
+          G(null, ["Maison d'habitation.", 'Cour ou espace central.', 'Dépendances agricoles.', 'Cellier ou cave.', 'Jardin et espaces cultivés.', 'Parcelle généralement de taille limitée par rapport aux grands domaines.']),
+        ],
+      },
+      {
+        title: 'Logis',
+        icon: 'ph ph-house',
+        intro: 'Le logis constitue le bâtiment résidentiel principal de la closerie.',
+        groups: [
+          G(null, ['Volume généralement simple.', 'Maçonnerie en pierre locale.', 'Façade ordonnée.', 'Cheminée en maçonnerie.', 'Combles pouvant servir au stockage.']),
+        ],
+      },
+      {
+        title: 'Vigne et cellier',
+        icon: 'ph ph-wine',
+        intro: 'Dans les secteurs viticoles, la closerie est étroitement liée à la production et au stockage du vin.',
+        groups: [
+          G(null, ['Cellier.', 'Cave de conservation.', 'Pressoir.', 'Espace de vinification.', 'Stockage des tonneaux.', 'Accès facilité aux espaces de production.']),
+        ],
+      },
+      {
+        title: 'Dépendances agricoles',
+        icon: 'ph ph-warehouse',
+        intro: "Les bâtiments annexes permettent d'assurer les différentes fonctions de l'exploitation.",
+        groups: [
+          G(null, ['Grange.', 'Étable.', 'Remise.', 'Grangeau ou petit bâtiment agricole.', 'Four à pain éventuel.', 'Poulailler ou petite dépendance.']),
+        ],
+      },
+      {
+        title: 'Matériaux angevins',
+        icon: 'ph ph-cube',
+        intro: "La construction reflète l'abondance locale du calcaire et du tuffeau.",
+        groups: [
+          G(null, ['Tuffeau blanc.', 'Moellons calcaires.', 'Pierre de taille.', 'Mortier de chaux.', 'Ardoise.', 'Bois de chêne.']),
+        ],
+      },
+      {
+        title: 'Relation au paysage',
+        icon: 'ph ph-tree',
+        intro: "La closerie s'inscrit généralement dans un paysage rural ou viticole caractéristique de l'Anjou.",
+        groups: [
+          G(null, ['Proximité des vignobles.', 'Jardins et vergers.', 'Parcelles agricoles.', "Implantation à proximité d'un village ou d'un hameau.", 'Relation directe avec les chemins ruraux.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison du petit logis, de la cour et des dépendances constitue le principal critère d'identification.",
+        groups: [
+          G(null, ['Petit domaine rural.', "Maison d'habitation.", 'Cour organisée.', 'Dépendances agricoles ou viticoles.', 'Cellier ou cave fréquent.', 'Architecture en tuffeau et pierre calcaire.', 'Couverture traditionnelle en ardoise.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
