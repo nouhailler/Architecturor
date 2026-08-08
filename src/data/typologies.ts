@@ -14901,6 +14901,108 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'bastideprovencale',
+    name: 'Bastide provençale',
+    region: "Provence · Pays d'Aix · Provence intérieure",
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Murs porteurs en maçonnerie de pierre et de moellons, avec charpente traditionnelle en bois.',
+    usage: 'Demeure rurale, domaine agricole et résidence de villégiature',
+    categorie: 'rural',
+    gps: '43.53° N, 5.45° E',
+    altitude: '100–500 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux ou quatre pans',
+    penteToit: '20–35°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      "La bastide provençale est une demeure rurale généralement implantée au cœur d'un domaine agricole. Sa composition régulière, souvent symétrique, ses façades enduites, ses ouvertures ordonnées et sa relation avec les jardins, vergers ou cultures constituent les principaux traits de cette architecture de domaine en Provence.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', "Provence · Pays d'Aix · Provence intérieure"],
+      ['Usage', 'Demeure rurale, domaine agricole et résidence de villégiature'],
+      ['Système', 'Murs porteurs maçonnés en pierre'],
+      ['Matériau dominant', 'Pierre et enduit à la chaux'],
+      ['Toiture', 'Toiture à quatre pans ou à deux pans, couverte de tuiles canal'],
+      ['Particularité', "Composition régulière et symétrique d'une demeure implantée au sein d'un domaine agricole ou d'un jardin"],
+    ],
+    materiaux: ['Pierre', 'Moellons calcaires', 'Chaux', 'Terre cuite', 'Bois', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture est généralement couverte de tuiles canal et présente deux ou quatre pans selon la composition du bâtiment. Les débords de toiture contribuent à protéger les façades des intempéries et du soleil.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les murs sont construits en pierre ou en moellons et généralement recouverts d'un enduit à la chaux. Les façades principales sont souvent ordonnées et symétriques." },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont traditionnellement constitués de poutres et solives en bois, avec des sols en terre cuite, pierre ou carreaux dans les pièces principales.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure repose sur des murs porteurs en maçonnerie. Les murs de refend participent à la stabilité et organisent la distribution intérieure.' },
+      { n: 5, el: 'Escalier', txt: "L'escalier principal est généralement intégré au corps du bâtiment et peut être réalisé en pierre ou en bois. Dans les demeures plus importantes, il peut constituer un élément architectural majeur." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont constituées de maçonnerie de pierre et reposent généralement sur les terrains calcaires ou rocheux des domaines provençaux.' },
+    ],
+    sections: [
+      {
+        title: 'Composition architecturale',
+        icon: 'ph ph-house-line',
+        intro: "La bastide se distingue par une organisation régulière du corps de logis et une recherche de symétrie plus importante que dans l'habitat rural ordinaire.",
+        groups: [
+          G(null, ['Corps de bâtiment généralement rectangulaire.', 'Façade principale ordonnée.', 'Travées régulièrement espacées.', "Distribution intérieure organisée autour d'un axe.", 'Plusieurs niveaux possibles.']),
+        ],
+      },
+      {
+        title: 'Façades',
+        icon: 'ph ph-buildings',
+        intro: "Les façades enduites et régulièrement percées constituent l'un des éléments les plus reconnaissables de la bastide.",
+        groups: [
+          G(null, ['Enduit à la chaux.', 'Fenêtres régulièrement disposées.', 'Encadrements en pierre.', 'Volets en bois.', "Porte d'entrée souvent mise en valeur.", 'Balcons ou garde-corps dans certaines demeures.']),
+        ],
+      },
+      {
+        title: 'Organisation du domaine',
+        icon: 'ph ph-tree',
+        intro: 'La bastide est généralement indissociable d’un domaine comprenant jardins, cultures et bâtiments annexes.',
+        groups: [
+          G(null, ["Jardin d'agrément.", 'Verger.', 'Oliviers.', 'Vignes.', 'Potager.', "Allée d'accès.", 'Dépendances agricoles.']),
+        ],
+      },
+      {
+        title: 'Adaptation climatique',
+        icon: 'ph ph-sun',
+        intro: "L'architecture de la bastide répond au climat méditerranéen par la protection solaire et la recherche de fraîcheur intérieure.",
+        groups: [
+          G(null, ['Murs épais à forte inertie thermique.', 'Volets extérieurs.', 'Ouvertures protégées du soleil.', 'Débords de toiture.', 'Espaces ombragés.', 'Orientation recherchée selon le site.']),
+        ],
+      },
+      {
+        title: 'Eau et dépendances',
+        icon: 'ph ph-drop',
+        intro: "L'exploitation du domaine nécessite traditionnellement des équipements liés à l'eau et aux activités agricoles.",
+        groups: [
+          G(null, ['Puits ou citerne.', 'Bassin ou fontaine.', 'Grange.', 'Écurie.', 'Remise agricole.', 'Cave.', 'Pigeonnier éventuel.']),
+        ],
+      },
+      {
+        title: 'Matériaux provençaux',
+        icon: 'ph ph-cube',
+        intro: 'La construction utilise principalement les matériaux disponibles localement et privilégie les solutions adaptées au climat méditerranéen.',
+        groups: [
+          G(null, ['Pierre calcaire.', 'Moellons.', 'Chaux.', 'Tuiles canal.', 'Bois.', 'Terre cuite.', 'Fer forgé.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La régularité du corps de logis, l'enduit clair, la toiture en tuiles canal et l'intégration dans un domaine constituent les principaux critères d'identification.",
+        groups: [
+          G(null, ['Demeure rurale de grande dimension.', 'Façade régulière et souvent symétrique.', 'Toiture en tuiles canal.', 'Murs enduits à la chaux.', 'Domaine agricole ou jardin.', 'Dépendances.', 'Relation forte avec le paysage provençal.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
