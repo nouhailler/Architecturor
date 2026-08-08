@@ -15317,6 +15317,108 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonpecheurprovencale',
+    name: 'Maison de pêcheur provençale',
+    region: 'Provence · Littoral méditerranéen · Bouches-du-Rhône · Var',
+    periode: 'XVIIIe–XXe siècle',
+    procede: 'Murs porteurs en maçonnerie de pierre ou de moellons, enduits à la chaux, avec charpente traditionnelle en bois.',
+    usage: 'Habitation de pêcheur et activité maritime artisanale',
+    categorie: 'littorale',
+    gps: '43.28° N, 5.35° E',
+    altitude: '0–50 m',
+    climat: 'Méditerranéen littoral',
+    typeToiture: 'Deux pans',
+    penteToit: '15–30°',
+    essenceBois: 'Pin et chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle simple en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Avant 1800', 'XIXe', 'XXe'],
+    resume:
+      "La maison de pêcheur provençale est un habitat modeste associé aux anciens villages et hameaux littoraux de Provence. Généralement compacte et directement tournée vers la mer, elle associe logement et petites fonctions liées à la pêche dans une architecture adaptée au climat méditerranéen.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Provence · Littoral méditerranéen · Bouches-du-Rhône · Var'],
+      ['Usage', 'Habitation de pêcheur et activité maritime artisanale'],
+      ['Système', 'Murs porteurs maçonnés en pierre'],
+      ['Matériau dominant', 'Moellons calcaires et enduit à la chaux'],
+      ['Toiture', 'Toiture à deux pans à faible pente, couverte de tuiles canal'],
+      ['Particularité', 'Habitat compact implanté dans un tissu littoral dense et associé directement aux activités de pêche'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Terre cuite', 'Bois', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture est généralement simple, à deux pans et à faible pente, avec une couverture traditionnelle en tuiles canal. Les volumes sont adaptés aux vents et aux contraintes du littoral.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les façades sont généralement enduites à la chaux et présentent des ouvertures relativement réduites. Les teintes claires contribuent à limiter l'échauffement solaire." },
+      { n: 3, el: 'Planchers', txt: "Les planchers sont traditionnellement réalisés en bois dans les niveaux d'habitation. Les rez-de-chaussée peuvent présenter des sols en pierre ou en terre cuite." },
+      { n: 4, el: 'Structure porteuse', txt: "La structure principale repose sur des murs porteurs en maçonnerie de pierre. Les murs mitoyens peuvent participer à la stabilité de l'ensemble dans les villages densément bâtis." },
+      { n: 5, el: 'Escalier', txt: "Dans les maisons à plusieurs niveaux, l'escalier est généralement compact et peut être réalisé en pierre ou en bois." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement constituées de maçonnerie en pierre, parfois directement implantée sur un substrat rocheux ou sur des terrains aménagés à proximité du rivage.' },
+    ],
+    sections: [
+      {
+        title: 'Implantation littorale',
+        icon: 'ph ph-waves',
+        intro: 'La maison est étroitement liée au tissu des anciens villages et hameaux de pêcheurs.',
+        groups: [
+          G(null, ['Proximité immédiate du rivage.', 'Implantation dans un tissu bâti dense.', 'Accès direct aux quais ou aux plages.', 'Rues étroites.', 'Relation directe avec les espaces de stockage et de travail.']),
+        ],
+      },
+      {
+        title: 'Organisation du logement',
+        icon: 'ph ph-house-line',
+        intro: 'La faible dimension de la parcelle conduit généralement à une organisation compacte et parfois verticale.',
+        groups: [
+          G(null, ['Rez-de-chaussée polyvalent.', "Un ou plusieurs niveaux d'habitation.", 'Combles éventuels.', 'Pièces de dimensions modestes.', 'Circulation verticale compacte.']),
+        ],
+      },
+      {
+        title: 'Activités de pêche',
+        icon: 'ph ph-fish',
+        intro: "L'habitation entretient une relation directe avec les activités maritimes artisanales.",
+        groups: [
+          G(null, ['Stockage de filets.', 'Rangement du petit matériel.', 'Réparation des équipements.', 'Stockage temporaire des produits de la pêche.', "Proximité d'un point de débarquement."]),
+        ],
+      },
+      {
+        title: 'Façades et climat',
+        icon: 'ph ph-sun',
+        intro: "L'architecture répond simultanément au soleil méditerranéen et à l'exposition aux vents marins.",
+        groups: [
+          G(null, ['Murs épais.', 'Enduits à la chaux.', 'Volets en bois.', 'Petites ouvertures.', 'Teintes claires.', 'Protection des ouvertures contre le vent.']),
+        ],
+      },
+      {
+        title: 'Tissu villageois',
+        icon: 'ph ph-buildings',
+        intro: 'La maison de pêcheur participe généralement à un front bâti continu proche du rivage.',
+        groups: [
+          G(null, ['Maisons mitoyennes.', 'Façades alignées sur la rue.', 'Ruelles étroites.', 'Petites places.', 'Proximité des quais ou des ports.']),
+        ],
+      },
+      {
+        title: 'Matériaux littoraux',
+        icon: 'ph ph-cube',
+        intro: "Les matériaux sont principalement issus des ressources locales et adaptés à l'environnement marin.",
+        groups: [
+          G(null, ['Pierre locale.', 'Moellons calcaires.', 'Mortier de chaux.', 'Tuiles canal.', 'Bois.', 'Fer pour les équipements et garde-corps.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison du petit volume, de la proximité de la mer et de l'intégration au tissu des anciens villages littoraux constitue le principal critère d'identification.",
+        groups: [
+          G(null, ['Habitat modeste.', 'Implantation littorale.', 'Bâti compact.', 'Murs enduits à la chaux.', 'Toiture en tuiles canal.', 'Lien direct avec la pêche artisanale.', "Proximité d'un port, d'un quai ou d'une plage."]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
