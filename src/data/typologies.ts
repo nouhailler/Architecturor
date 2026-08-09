@@ -15953,6 +15953,116 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'grangeetablemontagneprovencale',
+    name: 'Grange-étable de montagne provençale',
+    region: 'Provence alpine · Alpes-de-Haute-Provence · Hautes-Alpes',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Murs porteurs en pierre ou moellons, charpente traditionnelle en bois et couverture adaptée aux fortes contraintes climatiques de moyenne et haute montagne.',
+    usage: 'Hivernage du bétail, stockage du foin et abri du matériel agricole',
+    categorie: 'agricole',
+    gps: '44.65° N, 6.20° E',
+    altitude: '700–1600 m',
+    climat: 'Montagnard à méditerranéen montagnard',
+    typeToiture: 'Deux pans',
+    penteToit: '30–50°',
+    essenceBois: 'Mélèze, pin sylvestre et sapin',
+    typeFondation: 'Fondations maçonnées en pierre, adaptées au terrain rocheux',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Grange_en_Valgau_27.JPG'],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "La grange-étable de montagne provençale est un bâtiment agropastoral destiné à regrouper sous un même volume les animaux et les réserves de fourrage nécessaires à leur hivernage. Présente dans les vallées et les secteurs montagnards des Alpes du Sud, elle associe une construction robuste en pierre à une charpente en bois et s'adapte aux fortes pentes, à la neige et aux contraintes de l'élevage saisonnier.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Provence alpine · Alpes-de-Haute-Provence · Hautes-Alpes'],
+      ['Usage', 'Hivernage du bétail, stockage du foin et matériel agricole'],
+      ['Système', 'Maçonnerie porteuse associée à une charpente traditionnelle en bois'],
+      ['Matériau dominant', 'Pierre locale et bois'],
+      ['Toiture', 'Toiture à deux pans à pente relativement forte, couverte selon le secteur de lauzes, d\'ardoises ou de tuiles'],
+      ['Particularité', 'Association fonctionnelle de l\'étable et du stockage du fourrage dans un bâtiment compact adapté au climat montagnard'],
+    ],
+    materiaux: ['Pierre locale', 'Moellons', 'Bois', 'Chaux', 'Lauze', 'Ardoise', 'Terre cuite'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "La toiture présente généralement deux pans avec une pente supérieure à celle des bâtiments de basse Provence afin de faciliter l'évacuation de la neige et des précipitations. Le matériau de couverture varie selon l'altitude et les ressources locales." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les murs sont généralement construits en pierre locale ou en moellons. Les ouvertures sont limitées afin de protéger les animaux du froid et de réduire les déperditions thermiques.' },
+      { n: 3, el: 'Planchers', txt: "Le niveau supérieur destiné au fourrage peut être constitué d'une structure de poutres et solives en bois. Le niveau inférieur reçoit généralement un sol robuste adapté au passage des animaux." },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs maçonnés portent une charpente en bois dimensionnée pour supporter les charges importantes de la couverture et, selon la configuration, celles du stockage du fourrage.' },
+      { n: 5, el: 'Accès', txt: 'Les accès sont souvent différenciés selon les fonctions : entrée des animaux au niveau inférieur et accès au stockage du foin depuis un niveau supérieur ou une façade adaptée à la pente.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement constituées de maçonnerie en pierre et peuvent être directement adaptées au terrain rocheux ou à une implantation en pente.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation agropastorale',
+        icon: 'ph ph-cow',
+        intro: 'Le bâtiment répond à la nécessité de protéger le troupeau pendant la période hivernale tout en conservant à proximité les réserves de fourrage.',
+        groups: [
+          G(null, ['Étable au niveau inférieur.', 'Stockage du foin au niveau supérieur.', 'Abri du matériel agricole.', 'Hivernage du bétail.', "Réduction des déplacements pendant l'hiver."]),
+        ],
+      },
+      {
+        title: 'Adaptation à la montagne',
+        icon: 'ph ph-mountains',
+        intro: 'La construction est directement conditionnée par le relief et les contraintes climatiques des Alpes du Sud.',
+        groups: [
+          G(null, ['Implantation en vallée ou sur versant.', 'Adaptation à la pente.', 'Protection contre les vents froids.', 'Toiture adaptée à la neige.', 'Murs épais à forte inertie thermique.', 'Accès parfois différenciés selon le niveau du terrain.']),
+        ],
+      },
+      {
+        title: 'Étable',
+        icon: 'ph ph-horse',
+        intro: "Le niveau inférieur constitue l'espace protégé destiné aux animaux durant la mauvaise saison.",
+        groups: [
+          G(null, ['Bovins.', 'Ovins.', 'Caprins.', 'Équidés.', 'Aires de circulation limitées.', 'Râteliers ou mangeoires.']),
+        ],
+      },
+      {
+        title: 'Stockage du fourrage',
+        icon: 'ph ph-haystack',
+        intro: "Le stockage du foin est étroitement associé à la fonction d'hivernage du bâtiment.",
+        groups: [
+          G(null, ['Fenil supérieur.', 'Grande capacité de stockage.', 'Chargement depuis une façade haute.', "Déchargement vers l'étable.", 'Protection du fourrage contre l\'humidité.']),
+        ],
+      },
+      {
+        title: 'Implantation dans la pente',
+        icon: 'ph ph-arrows-down-up',
+        intro: 'La topographie peut être utilisée pour desservir plusieurs niveaux du bâtiment sans recourir à des dispositifs complexes.',
+        groups: [
+          G(null, ["Accès au fenil depuis l'amont.", "Accès à l'étable depuis l'aval.", 'Bâtiment semi-enterré possible.', 'Mur arrière partiellement contre le terrain.', 'Économie des circulations verticales.']),
+        ],
+      },
+      {
+        title: 'Matériaux alpins',
+        icon: 'ph ph-cube',
+        intro: 'La construction utilise prioritairement les matériaux disponibles dans les vallées et les massifs environnants.',
+        groups: [
+          G(null, ['Pierre locale.', 'Moellons.', 'Bois de conifères.', 'Mortier de chaux.', 'Lauze.', 'Ardoise.', 'Tuile dans les secteurs moins élevés.']),
+        ],
+      },
+      {
+        title: 'Climat et conservation',
+        icon: 'ph ph-snowflake',
+        intro: "L'enveloppe massive et la faible proportion d'ouvertures contribuent à maintenir des conditions relativement stables pour les animaux et le fourrage.",
+        groups: [
+          G(null, ['Murs épais.', 'Ouvertures limitées.', 'Protection contre les vents.', 'Toiture résistante aux précipitations.', 'Ventilation contrôlée du stockage.', 'Protection du fourrage contre l\'humidité.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'association d'une étable protégée et d'un volume de stockage du fourrage dans une architecture montagnarde constitue le principal critère d'identification.",
+        groups: [
+          G(null, ['Bâtiment agricole de montagne.', 'Étable au niveau inférieur.', 'Fenil ou stockage du fourrage au-dessus.', 'Murs épais en pierre.', 'Toiture adaptée aux chutes de neige.', 'Implantation possible dans une pente.', 'Accès différenciés selon les niveaux.', "Fonction d'hivernage du bétail."]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
