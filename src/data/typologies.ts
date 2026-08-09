@@ -15851,6 +15851,108 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'grangefenilprovencale',
+    name: 'Grange provençale à fenil',
+    region: 'Provence · Vaucluse · Alpes-de-Haute-Provence · Hautes-Alpes',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Murs porteurs en pierre ou moellons, charpente traditionnelle en bois et couverture en tuiles canal ou, dans les secteurs plus élevés, en matériaux adaptés au climat montagnard.',
+    usage: 'Stockage du foin, des récoltes et abri du bétail',
+    categorie: 'agricole',
+    gps: '44.10° N, 5.80° E',
+    altitude: '300–1200 m',
+    climat: 'Méditerranéen à montagnard',
+    typeToiture: 'Deux pans',
+    penteToit: '25–45°',
+    essenceBois: 'Mélèze, pin et chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Grange_au_Chaffaut.JPG'],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "La grange provençale à fenil est un bâtiment agricole spécialisé dans le stockage du foin au-dessus d'un niveau inférieur destiné au bétail, au matériel ou au stockage. Cette organisation verticale permet de conserver le fourrage à l'abri tout en facilitant son utilisation pour les animaux. Elle constitue une composante fréquente des exploitations rurales de Provence et de ses zones de transition vers les Alpes.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Alpes-de-Haute-Provence · Hautes-Alpes'],
+      ['Usage', 'Stockage du foin, des récoltes et abri du bétail'],
+      ['Système', 'Maçonnerie porteuse avec organisation verticale des fonctions'],
+      ['Matériau dominant', 'Pierre et moellons'],
+      ['Toiture', 'Toiture à deux pans avec couverture en tuiles canal ou matériaux adaptés à l’altitude'],
+      ['Particularité', 'Fenil placé au-dessus du niveau agricole inférieur et accessible par une large ouverture ou une rampe'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Bois', 'Terre cuite', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "La toiture protège le volume important du fenil et présente généralement deux pans. La couverture traditionnelle varie selon l'altitude, avec une forte présence de tuiles canal dans les secteurs bas de Provence." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les murs sont généralement construits en pierre ou en moellons. La façade du fenil peut comporter une large ouverture permettant le chargement du foin." },
+      { n: 3, el: 'Planchers', txt: 'Le plancher séparant le niveau inférieur du fenil est généralement constitué de poutres et solives en bois capables de supporter une charge importante.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs maçonnés portent la charpente et les planchers. Des poutres de forte section peuvent renforcer le niveau du fenil.' },
+      { n: 5, el: 'Accès au fenil', txt: "Le fenil est fréquemment desservi par une grande ouverture en façade ou par une rampe extérieure permettant d'acheminer directement le foin depuis le terrain." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement réalisées en pierre et dimensionnées pour supporter les murs épais ainsi que les charges importantes du stockage agricole.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-vertical',
+        intro: 'La séparation des fonctions entre le niveau inférieur et le fenil supérieur constitue le principe essentiel du bâtiment.',
+        groups: [
+          G(null, ['Rez-de-chaussée agricole.', "Fenil à l'étage.", 'Stockage vertical du fourrage.', 'Séparation entre animaux et foin.', 'Accès indépendant au fenil.']),
+        ],
+      },
+      {
+        title: 'Fenil',
+        icon: 'ph ph-haystack',
+        intro: 'Le niveau supérieur est spécialement conçu pour recevoir et conserver le fourrage.',
+        groups: [
+          G(null, ['Volume intérieur important.', 'Grande capacité de stockage.', 'Large ouverture de chargement.', 'Plancher renforcé.', 'Ventilation naturelle.', 'Accès facilité depuis le terrain.']),
+        ],
+      },
+      {
+        title: 'Chargement du foin',
+        icon: 'ph ph-arrow-up',
+        intro: 'La circulation du fourrage influence directement la forme du bâtiment et la disposition de ses ouvertures.',
+        groups: [
+          G(null, ['Grande porte de fenil.', "Rampe d'accès.", 'Chargement depuis un chemin supérieur.', 'Déchargement gravitaire vers le niveau inférieur.', 'Organisation adaptée au relief.']),
+        ],
+      },
+      {
+        title: 'Niveau inférieur',
+        icon: 'ph ph-cow',
+        intro: 'Le rez-de-chaussée accueille les animaux, le matériel ou différentes fonctions agricoles.',
+        groups: [
+          G(null, ['Étable.', 'Bergerie.', 'Écurie.', 'Remise.', 'Atelier.', 'Stockage secondaire.']),
+        ],
+      },
+      {
+        title: 'Adaptation au relief',
+        icon: 'ph ph-mountains',
+        intro: "Dans les régions vallonnées, la pente peut être utilisée pour faciliter directement l'accès au fenil.",
+        groups: [
+          G(null, ['Implantation dans une pente.', 'Accès supérieur au fenil.', 'Accès inférieur aux étables.', 'Utilisation de la topographie.', 'Réduction des efforts de manutention.']),
+        ],
+      },
+      {
+        title: 'Structure et matériaux',
+        icon: 'ph ph-cube',
+        intro: 'La construction combine la robustesse de la maçonnerie et la légèreté relative des structures en bois.',
+        groups: [
+          G(null, ['Murs en pierre.', 'Moellons calcaires.', 'Mortier de chaux.', 'Poutres en bois.', 'Charpente traditionnelle.', 'Couverture en tuiles ou matériaux locaux.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La présence d'un grand volume de stockage du foin au-dessus d'un niveau agricole constitue le principal critère d'identification.",
+        groups: [
+          G(null, ['Bâtiment agricole massif.', 'Fenil à l\'étage.', 'Grande ouverture de chargement.', 'Plancher renforcé.', 'Rez-de-chaussée destiné au bétail ou au matériel.', 'Adaptation possible à la pente.', 'Murs épais en pierre.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
