@@ -15529,6 +15529,108 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'pigeonnierprovencal',
+    name: 'Pigeonnier provençal',
+    region: 'Provence · Vaucluse · Bouches-du-Rhône · Var · Alpes-de-Haute-Provence',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Maçonnerie porteuse en pierre ou moellons, généralement enduite à la chaux, avec charpente traditionnelle en bois et couverture en tuiles canal.',
+    usage: 'Élevage de pigeons, production de fumier et bâtiment agricole associé à un domaine rural',
+    categorie: 'agricole',
+    gps: '43.90° N, 5.20° E',
+    altitude: '50–600 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux ou quatre pans',
+    penteToit: '20–40°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Pigeonnier_en_Luberon.JPG'],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      'Le pigeonnier provençal est un bâtiment agricole spécialisé destiné à l’élevage des pigeons. Il se rencontre notamment dans les domaines agricoles, bastides et grandes exploitations de Provence. Sa volumétrie verticale, ses ouvertures spécifiques et ses dispositifs destinés à empêcher l’accès des prédateurs constituent ses principaux caractères architecturaux.',
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Bouches-du-Rhône · Var · Alpes-de-Haute-Provence'],
+      ['Usage', 'Élevage de pigeons et bâtiment agricole'],
+      ['Système', 'Murs porteurs en maçonnerie de pierre'],
+      ['Matériau dominant', 'Pierre, moellons et enduit à la chaux'],
+      ['Toiture', 'Toiture à deux ou quatre pans couverte de tuiles canal'],
+      ['Particularité', 'Volumétrie souvent verticale et présence de trous de boulin ou niches de pigeons ainsi qu’un dispositif anti-prédateurs'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Terre cuite', 'Bois', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La couverture est généralement réalisée en tuiles canal. La toiture peut être à deux ou quatre pans selon la forme et l’importance du pigeonnier.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les murs épais en pierre ou moellons sont fréquemment enduits à la chaux. Des ouvertures spécifiques permettent aux pigeons d’accéder à leurs niches.' },
+      { n: 3, el: 'Planchers', txt: 'Les niveaux intérieurs sont généralement constitués de planchers en bois ou de dispositifs maçonnés permettant d’organiser les différents espaces de nidification.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure repose principalement sur des murs porteurs en maçonnerie. Leur forte épaisseur assure stabilité et inertie thermique.' },
+      { n: 5, el: 'Escalier', txt: 'L’accès aux niveaux supérieurs peut être assuré par un escalier intérieur, une échelle ou des dispositifs permettant l’entretien des niches.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement réalisées en maçonnerie de pierre et adaptées au poids important des murs.' },
+    ],
+    sections: [
+      {
+        title: 'Morphologie',
+        icon: 'ph ph-buildings',
+        intro: 'Le pigeonnier se distingue par une architecture spécialisée qui privilégie la hauteur et la protection des oiseaux.',
+        groups: [
+          G(null, ['Volume généralement indépendant.', 'Plan carré, rectangulaire ou circulaire selon les variantes.', 'Développement vertical fréquent.', 'Murs épais.', 'Accès contrôlé.']),
+        ],
+      },
+      {
+        title: 'Niches à pigeons',
+        icon: 'ph ph-bird',
+        intro: 'Les parois intérieures sont organisées pour accueillir les pigeons et permettre leur reproduction.',
+        groups: [
+          G(null, ['Niches de nidification.', 'Trou de boulin.', 'Organisation régulière des niches.', 'Accès pour l’entretien.', 'Protection contre les prédateurs.']),
+        ],
+      },
+      {
+        title: 'Dispositifs anti-prédateurs',
+        icon: 'ph ph-shield-check',
+        intro: 'L’architecture extérieure comporte fréquemment des dispositifs destinés à empêcher les rats, fouines et autres prédateurs d’atteindre les pigeons.',
+        groups: [
+          G(null, ['Bandeau ou larmier saillant.', 'Surface extérieure difficile à franchir.', 'Ouvertures placées en hauteur.', 'Porte d’accès contrôlée.', 'Soubassement maçonné.']),
+        ],
+      },
+      {
+        title: 'Ouvertures',
+        icon: 'ph ph-arrows-in',
+        intro: 'Les ouvertures sont principalement fonctionnelles et destinées aux pigeons plutôt qu’à l’éclairage intérieur.',
+        groups: [
+          G(null, ['Trouées d’envol.', 'Ouvertures sous toiture.', 'Petites baies.', 'Orientation adaptée aux conditions locales.', 'Protection contre les intempéries.']),
+        ],
+      },
+      {
+        title: 'Relation au domaine agricole',
+        icon: 'ph ph-farm',
+        intro: 'Le pigeonnier est généralement intégré à un domaine agricole et participe à son économie traditionnelle.',
+        groups: [
+          G(null, ['Proximité d’une bastide.', 'Implantation dans une cour agricole.', 'Production de pigeons.', 'Production de fumier.', 'Relation avec les cultures.']),
+        ],
+      },
+      {
+        title: 'Matériaux provençaux',
+        icon: 'ph ph-cube',
+        intro: 'Le bâtiment reprend les matériaux traditionnels de l’architecture rurale provençale.',
+        groups: [
+          G(null, ['Pierre calcaire.', 'Moellons.', 'Mortier de chaux.', 'Tuiles canal.', 'Bois.', 'Terre cuite.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La fonction spécialisée et la présence de nombreuses niches de nidification permettent de distinguer immédiatement le pigeonnier des autres bâtiments agricoles.',
+        groups: [
+          G(null, ['Bâtiment spécialisé.', 'Volume souvent vertical.', 'Niches nombreuses.', 'Ouvertures d’envol.', 'Dispositif anti-prédateurs.', 'Murs épais.', 'Implantation fréquente dans un domaine agricole.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
