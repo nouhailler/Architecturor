@@ -15741,6 +15741,116 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'habitattroglodytiqueprovencal',
+    name: 'Habitat troglodytique provençal',
+    region: 'Provence · Vaucluse · Drôme provençale · Alpes-de-Haute-Provence',
+    periode: 'Moyen Âge–XIXe siècle',
+    procede: 'Aménagement de cavités naturelles ou creusées dans des falaises et formations rocheuses, complété par des maçonneries en pierre et des éléments de charpente en bois.',
+    usage: 'Habitation, stockage agricole, étable et activités artisanales',
+    categorie: 'rural',
+    gps: '44.35° N, 5.00° E',
+    altitude: '100–700 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Roche naturelle ou couverture complémentaire',
+    penteToit: 'Variable',
+    essenceBois: 'Chêne et pin',
+    typeFondation: 'Appui direct sur le substrat rocheux',
+    typeCharpente: 'Charpente bois pour les parties construites',
+    epoqueDominante: 'Moyen Âge',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Bollène_maison_troglodyte_du_village_de_Barry.jpg'],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      'L’habitat troglodytique provençal utilise directement les reliefs rocheux pour créer des espaces habitables ou agricoles. Les cavités peuvent être naturelles ou creusées dans la roche puis complétées par des façades maçonnées, des planchers et des couvertures. Cette architecture bénéficie de l’inertie thermique du rocher et s’inscrit particulièrement dans certains secteurs calcaires de Provence et de la Drôme provençale.',
+    identite: [
+      ['Période', 'Moyen Âge–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Drôme provençale · Alpes-de-Haute-Provence'],
+      ['Usage', 'Habitation, stockage agricole, étable et activités artisanales'],
+      ['Système', 'Cavité naturelle ou creusée dans la roche complétée par des éléments maçonnés'],
+      ['Matériau dominant', 'Roche naturelle et pierre locale'],
+      ['Toiture', 'Toiture naturelle constituée par la roche ou couverture complémentaire en tuiles selon les parties construites'],
+      ['Particularité', 'La roche constitue directement une partie des murs, du plafond ou de l’enveloppe thermique du bâtiment'],
+    ],
+    materiaux: ['Roche calcaire', 'Pierre', 'Moellons', 'Chaux', 'Bois', 'Terre cuite'],
+    annotations: [
+      { n: 1, el: 'Couverture', txt: 'La partie troglodytique est naturellement protégée par la masse rocheuse. Les extensions construites peuvent recevoir une couverture traditionnelle en tuiles canal.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'La façade constitue souvent la principale partie construite. Elle peut être réalisée en pierre ou en moellons et comporte les ouvertures nécessaires à l’accès, à l’éclairage et à la ventilation.' },
+      { n: 3, el: 'Planchers', txt: 'Les niveaux peuvent être directement aménagés dans la cavité ou complétés par des planchers en bois. Des sols en pierre ou en terre battue sont également possibles.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La masse rocheuse assure directement une grande partie de la fonction porteuse. Les maçonneries de façade et les structures en bois complètent l’ensemble lorsque la cavité est aménagée.' },
+      { n: 5, el: 'Escalier', txt: 'Les différences de niveau à l’intérieur des cavités peuvent être franchies par des escaliers taillés dans la roche, maçonnés ou réalisés en bois.' },
+      { n: 6, el: 'Fondations', txt: 'La construction troglodytique repose directement sur le substrat rocheux, ce qui limite les besoins en fondations classiques pour les parties creusées.' },
+    ],
+    sections: [
+      {
+        title: 'Principe troglodytique',
+        icon: 'ph ph-mountains',
+        intro: 'Le principe fondamental consiste à utiliser la roche comme partie intégrante du bâtiment.',
+        groups: [
+          G(null, ['Cavité naturelle ou artificielle.', 'Roche formant les parois.', 'Plafond rocheux.', 'Façade construite en avant de la cavité.', 'Aménagement progressif de la cavité.']),
+        ],
+      },
+      {
+        title: 'Façade',
+        icon: 'ph ph-house-line',
+        intro: 'La façade constitue l’interface entre l’espace troglodytique et l’extérieur.',
+        groups: [
+          G(null, ['Mur en pierre.', 'Porte d’entrée.', 'Petites fenêtres.', 'Encadrements en pierre.', 'Enduit à la chaux dans certaines variantes.', 'Extensions maçonnées possibles.']),
+        ],
+      },
+      {
+        title: 'Organisation intérieure',
+        icon: 'ph ph-layout',
+        intro: 'Les espaces sont directement déterminés par la géométrie de la cavité et peuvent recevoir différentes fonctions.',
+        groups: [
+          G(null, ['Pièce d’habitation.', 'Cellier.', 'Cave.', 'Étable.', 'Espace de stockage.', 'Atelier.', 'Réserve alimentaire.']),
+        ],
+      },
+      {
+        title: 'Confort thermique',
+        icon: 'ph ph-thermometer',
+        intro: 'La masse rocheuse fournit une forte inertie thermique et limite les variations de température intérieure.',
+        groups: [
+          G(null, ['Température intérieure relativement stable.', 'Protection contre les fortes chaleurs estivales.', 'Protection contre le froid hivernal.', 'Faible exposition solaire directe.', 'Masse thermique importante.']),
+        ],
+      },
+      {
+        title: 'Éclairage et ventilation',
+        icon: 'ph ph-windows',
+        intro: 'L’éclairage naturel et le renouvellement de l’air constituent les principales contraintes de l’architecture troglodytique.',
+        groups: [
+          G(null, ['Ouvertures concentrées sur la façade.', 'Petites fenêtres.', 'Ventilation par les ouvertures.', 'Possibilité de conduits ou ouvertures secondaires.', 'Espaces intérieurs parfois peu éclairés.']),
+        ],
+      },
+      {
+        title: 'Relation au territoire',
+        icon: 'ph ph-map-trifold',
+        intro: 'Les habitats troglodytiques sont directement liés à la géologie et au relief des territoires où ils apparaissent.',
+        groups: [
+          G(null, ['Implantation dans des falaises ou escarpements.', 'Utilisation de formations calcaires.', 'Adaptation à la topographie.', 'Relation avec les chemins et terrasses agricoles.', 'Regroupement possible en hameaux troglodytiques.']),
+        ],
+      },
+      {
+        title: 'Usages agricoles',
+        icon: 'ph ph-tractor',
+        intro: 'Les cavités troglodytiques ont également été utilisées pour les besoins de l’exploitation agricole.',
+        groups: [
+          G(null, ['Cave à vin.', 'Cellier.', 'Stockage des récoltes.', 'Étable.', 'Bergerie.', 'Abri pour le matériel.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'L’intégration directe de la construction dans le relief rocheux constitue le critère essentiel d’identification.',
+        groups: [
+          G(null, ['Cavité naturelle ou creusée.', 'Roche constituant une partie de l’enveloppe.', 'Façade maçonnée en avant de la cavité.', 'Forte inertie thermique.', 'Ouvertures concentrées sur la façade.', 'Adaptation directe à la géologie.', 'Usages résidentiels ou agricoles.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
