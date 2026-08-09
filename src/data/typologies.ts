@@ -15631,6 +15631,116 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonprovencaleescalierexterieur',
+    name: 'Maison provençale à escalier extérieur',
+    region: 'Provence · Vaucluse · Alpes-de-Haute-Provence · Drôme provençale',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Murs porteurs en maçonnerie de pierre et de moellons, généralement enduits à la chaux, avec charpente traditionnelle en bois.',
+    usage: 'Habitation rurale ou villageoise, avec fonctions agricoles ou artisanales au rez-de-chaussée',
+    categorie: 'rural',
+    gps: '44.05° N, 5.20° E',
+    altitude: '100–700 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux pans',
+    penteToit: '15–30°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Belle_escalier_ancien.JPG'],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      'La maison provençale à escalier extérieur est une forme d’habitat traditionnel dans laquelle l’accès au niveau d’habitation s’effectue par un escalier placé à l’extérieur du volume principal. Cette disposition permet de séparer les fonctions agricoles ou artisanales du rez-de-chaussée des espaces domestiques situés à l’étage et constitue un caractère particulièrement lisible de certains habitats ruraux et villageois de Provence.',
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Alpes-de-Haute-Provence · Drôme provençale'],
+      ['Usage', 'Habitation rurale ou villageoise et activités agricoles ou artisanales'],
+      ['Système', 'Murs porteurs en maçonnerie de pierre'],
+      ['Matériau dominant', 'Pierre, moellons et enduit à la chaux'],
+      ['Toiture', 'Toiture à deux pans couverte de tuiles canal'],
+      ['Particularité', 'Accès au logement par un escalier extérieur desservant directement l’étage d’habitation'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Terre cuite', 'Bois', 'Fer forgé'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture est généralement à deux pans et couverte de tuiles canal. Sa pente relativement faible est adaptée au climat méditerranéen.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades sont constituées de pierre ou de moellons généralement recouverts d’un enduit à la chaux. La façade principale intègre fréquemment l’escalier donnant accès à l’étage.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont traditionnellement constitués de poutres et solives en bois. Le rez-de-chaussée peut recevoir un sol en pierre, en terre battue ou en carreaux de terre cuite.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs porteurs en maçonnerie assurent la stabilité du bâtiment. Les murs mitoyens peuvent également participer à la structure dans les implantations villageoises.' },
+      { n: 5, el: 'Escalier', txt: 'L’escalier extérieur constitue l’élément architectural caractéristique. Il peut être droit ou comporter un palier et être construit en pierre ou en maçonnerie.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement constituées de maçonnerie en pierre et peuvent être directement adaptées à un terrain en pente ou à un substrat rocheux.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-vertical',
+        intro: 'La séparation verticale des fonctions constitue le principe essentiel de cette forme d’habitat.',
+        groups: [
+          G(null, ['Rez-de-chaussée destiné au travail ou au stockage.', 'Étage réservé principalement à l’habitation.', 'Combles ou niveau de stockage éventuel.', 'Accès indépendant au logement.', 'Séparation entre fonctions domestiques et agricoles.']),
+        ],
+      },
+      {
+        title: 'Escalier extérieur',
+        icon: 'ph ph-stairs',
+        intro: 'L’escalier extérieur constitue le principal élément distinctif de la maison.',
+        groups: [
+          G(null, ['Escalier en pierre ou maçonnerie.', 'Volée droite fréquente.', 'Palier devant l’entrée.', 'Garde-corps en pierre ou métal.', 'Accès direct à l’étage.', 'Implantation contre la façade.']),
+        ],
+      },
+      {
+        title: 'Rez-de-chaussée',
+        icon: 'ph ph-warehouse',
+        intro: 'Le niveau inférieur est généralement associé aux activités nécessitant un accès direct au terrain ou à la rue.',
+        groups: [
+          G(null, ['Étable.', 'Remise.', 'Atelier.', 'Cellier.', 'Cave.', 'Stockage des récoltes.']),
+        ],
+      },
+      {
+        title: 'Étage d’habitation',
+        icon: 'ph ph-house-line',
+        intro: 'L’étage protège les espaces domestiques de l’humidité et des activités du rez-de-chaussée.',
+        groups: [
+          G(null, ['Cuisine.', 'Pièce commune.', 'Chambres.', 'Cheminée.', 'Ouvertures donnant sur la rue ou la cour.', 'Accès indépendant par l’escalier extérieur.']),
+        ],
+      },
+      {
+        title: 'Adaptation au climat',
+        icon: 'ph ph-sun',
+        intro: 'La construction en maçonnerie épaisse et l’organisation des ouvertures répondent aux conditions méditerranéennes.',
+        groups: [
+          G(null, ['Murs à forte inertie thermique.', 'Enduits à la chaux.', 'Volets en bois.', 'Ouvertures relativement protégées.', 'Espaces extérieurs ombragés.', 'Toiture en tuiles canal.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette disposition peut apparaître aussi bien dans les villages que dans des habitats ruraux isolés.',
+        groups: [
+          G(null, ['Maison intégrée à un front bâti.', 'Implantation en bordure de chemin.', 'Adaptation aux terrains en pente.', 'Relation avec une cour ou un espace agricole.', 'Accès séparé entre logement et exploitation.']),
+        ],
+      },
+      {
+        title: 'Matériaux et détails',
+        icon: 'ph ph-cube',
+        intro: 'Les matériaux traditionnels sont ceux de l’architecture vernaculaire provençale.',
+        groups: [
+          G(null, ['Pierre locale.', 'Moellons calcaires.', 'Mortier de chaux.', 'Tuiles canal.', 'Bois.', 'Fer forgé pour certains garde-corps.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La présence d’un escalier extérieur donnant directement accès à l’étage d’habitation permet de distinguer cette forme des maisons provençales à circulation intérieure.',
+        groups: [
+          G(null, ['Escalier extérieur visible en façade.', 'Entrée d’habitation à l’étage.', 'Rez-de-chaussée agricole ou artisanal.', 'Murs en pierre ou moellons.', 'Enduit à la chaux.', 'Toiture en tuiles canal.', 'Organisation verticale des fonctions.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
