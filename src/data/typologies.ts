@@ -15529,6 +15529,430 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'pigeonnierprovencal',
+    name: 'Pigeonnier provençal',
+    region: 'Provence · Vaucluse · Bouches-du-Rhône · Var · Alpes-de-Haute-Provence',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Maçonnerie porteuse en pierre ou moellons, généralement enduite à la chaux, avec charpente traditionnelle en bois et couverture en tuiles canal.',
+    usage: 'Élevage de pigeons, production de fumier et bâtiment agricole associé à un domaine rural',
+    categorie: 'agricole',
+    gps: '43.90° N, 5.20° E',
+    altitude: '50–600 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux ou quatre pans',
+    penteToit: '20–40°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Pigeonnier_en_Luberon.JPG'],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      'Le pigeonnier provençal est un bâtiment agricole spécialisé destiné à l’élevage des pigeons. Il se rencontre notamment dans les domaines agricoles, bastides et grandes exploitations de Provence. Sa volumétrie verticale, ses ouvertures spécifiques et ses dispositifs destinés à empêcher l’accès des prédateurs constituent ses principaux caractères architecturaux.',
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Bouches-du-Rhône · Var · Alpes-de-Haute-Provence'],
+      ['Usage', 'Élevage de pigeons et bâtiment agricole'],
+      ['Système', 'Murs porteurs en maçonnerie de pierre'],
+      ['Matériau dominant', 'Pierre, moellons et enduit à la chaux'],
+      ['Toiture', 'Toiture à deux ou quatre pans couverte de tuiles canal'],
+      ['Particularité', 'Volumétrie souvent verticale et présence de trous de boulin ou niches de pigeons ainsi qu’un dispositif anti-prédateurs'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Terre cuite', 'Bois', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La couverture est généralement réalisée en tuiles canal. La toiture peut être à deux ou quatre pans selon la forme et l’importance du pigeonnier.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les murs épais en pierre ou moellons sont fréquemment enduits à la chaux. Des ouvertures spécifiques permettent aux pigeons d’accéder à leurs niches.' },
+      { n: 3, el: 'Planchers', txt: 'Les niveaux intérieurs sont généralement constitués de planchers en bois ou de dispositifs maçonnés permettant d’organiser les différents espaces de nidification.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure repose principalement sur des murs porteurs en maçonnerie. Leur forte épaisseur assure stabilité et inertie thermique.' },
+      { n: 5, el: 'Escalier', txt: 'L’accès aux niveaux supérieurs peut être assuré par un escalier intérieur, une échelle ou des dispositifs permettant l’entretien des niches.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement réalisées en maçonnerie de pierre et adaptées au poids important des murs.' },
+    ],
+    sections: [
+      {
+        title: 'Morphologie',
+        icon: 'ph ph-buildings',
+        intro: 'Le pigeonnier se distingue par une architecture spécialisée qui privilégie la hauteur et la protection des oiseaux.',
+        groups: [
+          G(null, ['Volume généralement indépendant.', 'Plan carré, rectangulaire ou circulaire selon les variantes.', 'Développement vertical fréquent.', 'Murs épais.', 'Accès contrôlé.']),
+        ],
+      },
+      {
+        title: 'Niches à pigeons',
+        icon: 'ph ph-bird',
+        intro: 'Les parois intérieures sont organisées pour accueillir les pigeons et permettre leur reproduction.',
+        groups: [
+          G(null, ['Niches de nidification.', 'Trou de boulin.', 'Organisation régulière des niches.', 'Accès pour l’entretien.', 'Protection contre les prédateurs.']),
+        ],
+      },
+      {
+        title: 'Dispositifs anti-prédateurs',
+        icon: 'ph ph-shield-check',
+        intro: 'L’architecture extérieure comporte fréquemment des dispositifs destinés à empêcher les rats, fouines et autres prédateurs d’atteindre les pigeons.',
+        groups: [
+          G(null, ['Bandeau ou larmier saillant.', 'Surface extérieure difficile à franchir.', 'Ouvertures placées en hauteur.', 'Porte d’accès contrôlée.', 'Soubassement maçonné.']),
+        ],
+      },
+      {
+        title: 'Ouvertures',
+        icon: 'ph ph-arrows-in',
+        intro: 'Les ouvertures sont principalement fonctionnelles et destinées aux pigeons plutôt qu’à l’éclairage intérieur.',
+        groups: [
+          G(null, ['Trouées d’envol.', 'Ouvertures sous toiture.', 'Petites baies.', 'Orientation adaptée aux conditions locales.', 'Protection contre les intempéries.']),
+        ],
+      },
+      {
+        title: 'Relation au domaine agricole',
+        icon: 'ph ph-farm',
+        intro: 'Le pigeonnier est généralement intégré à un domaine agricole et participe à son économie traditionnelle.',
+        groups: [
+          G(null, ['Proximité d’une bastide.', 'Implantation dans une cour agricole.', 'Production de pigeons.', 'Production de fumier.', 'Relation avec les cultures.']),
+        ],
+      },
+      {
+        title: 'Matériaux provençaux',
+        icon: 'ph ph-cube',
+        intro: 'Le bâtiment reprend les matériaux traditionnels de l’architecture rurale provençale.',
+        groups: [
+          G(null, ['Pierre calcaire.', 'Moellons.', 'Mortier de chaux.', 'Tuiles canal.', 'Bois.', 'Terre cuite.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La fonction spécialisée et la présence de nombreuses niches de nidification permettent de distinguer immédiatement le pigeonnier des autres bâtiments agricoles.',
+        groups: [
+          G(null, ['Bâtiment spécialisé.', 'Volume souvent vertical.', 'Niches nombreuses.', 'Ouvertures d’envol.', 'Dispositif anti-prédateurs.', 'Murs épais.', 'Implantation fréquente dans un domaine agricole.']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'maisonprovencaleescalierexterieur',
+    name: 'Maison provençale à escalier extérieur',
+    region: 'Provence · Vaucluse · Alpes-de-Haute-Provence · Drôme provençale',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Murs porteurs en maçonnerie de pierre et de moellons, généralement enduits à la chaux, avec charpente traditionnelle en bois.',
+    usage: 'Habitation rurale ou villageoise, avec fonctions agricoles ou artisanales au rez-de-chaussée',
+    categorie: 'rural',
+    gps: '44.05° N, 5.20° E',
+    altitude: '100–700 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux pans',
+    penteToit: '15–30°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Belle_escalier_ancien.JPG'],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      'La maison provençale à escalier extérieur est une forme d’habitat traditionnel dans laquelle l’accès au niveau d’habitation s’effectue par un escalier placé à l’extérieur du volume principal. Cette disposition permet de séparer les fonctions agricoles ou artisanales du rez-de-chaussée des espaces domestiques situés à l’étage et constitue un caractère particulièrement lisible de certains habitats ruraux et villageois de Provence.',
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Alpes-de-Haute-Provence · Drôme provençale'],
+      ['Usage', 'Habitation rurale ou villageoise et activités agricoles ou artisanales'],
+      ['Système', 'Murs porteurs en maçonnerie de pierre'],
+      ['Matériau dominant', 'Pierre, moellons et enduit à la chaux'],
+      ['Toiture', 'Toiture à deux pans couverte de tuiles canal'],
+      ['Particularité', 'Accès au logement par un escalier extérieur desservant directement l’étage d’habitation'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Terre cuite', 'Bois', 'Fer forgé'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture est généralement à deux pans et couverte de tuiles canal. Sa pente relativement faible est adaptée au climat méditerranéen.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les façades sont constituées de pierre ou de moellons généralement recouverts d’un enduit à la chaux. La façade principale intègre fréquemment l’escalier donnant accès à l’étage.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers sont traditionnellement constitués de poutres et solives en bois. Le rez-de-chaussée peut recevoir un sol en pierre, en terre battue ou en carreaux de terre cuite.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs porteurs en maçonnerie assurent la stabilité du bâtiment. Les murs mitoyens peuvent également participer à la structure dans les implantations villageoises.' },
+      { n: 5, el: 'Escalier', txt: 'L’escalier extérieur constitue l’élément architectural caractéristique. Il peut être droit ou comporter un palier et être construit en pierre ou en maçonnerie.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement constituées de maçonnerie en pierre et peuvent être directement adaptées à un terrain en pente ou à un substrat rocheux.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-vertical',
+        intro: 'La séparation verticale des fonctions constitue le principe essentiel de cette forme d’habitat.',
+        groups: [
+          G(null, ['Rez-de-chaussée destiné au travail ou au stockage.', 'Étage réservé principalement à l’habitation.', 'Combles ou niveau de stockage éventuel.', 'Accès indépendant au logement.', 'Séparation entre fonctions domestiques et agricoles.']),
+        ],
+      },
+      {
+        title: 'Escalier extérieur',
+        icon: 'ph ph-stairs',
+        intro: 'L’escalier extérieur constitue le principal élément distinctif de la maison.',
+        groups: [
+          G(null, ['Escalier en pierre ou maçonnerie.', 'Volée droite fréquente.', 'Palier devant l’entrée.', 'Garde-corps en pierre ou métal.', 'Accès direct à l’étage.', 'Implantation contre la façade.']),
+        ],
+      },
+      {
+        title: 'Rez-de-chaussée',
+        icon: 'ph ph-warehouse',
+        intro: 'Le niveau inférieur est généralement associé aux activités nécessitant un accès direct au terrain ou à la rue.',
+        groups: [
+          G(null, ['Étable.', 'Remise.', 'Atelier.', 'Cellier.', 'Cave.', 'Stockage des récoltes.']),
+        ],
+      },
+      {
+        title: 'Étage d’habitation',
+        icon: 'ph ph-house-line',
+        intro: 'L’étage protège les espaces domestiques de l’humidité et des activités du rez-de-chaussée.',
+        groups: [
+          G(null, ['Cuisine.', 'Pièce commune.', 'Chambres.', 'Cheminée.', 'Ouvertures donnant sur la rue ou la cour.', 'Accès indépendant par l’escalier extérieur.']),
+        ],
+      },
+      {
+        title: 'Adaptation au climat',
+        icon: 'ph ph-sun',
+        intro: 'La construction en maçonnerie épaisse et l’organisation des ouvertures répondent aux conditions méditerranéennes.',
+        groups: [
+          G(null, ['Murs à forte inertie thermique.', 'Enduits à la chaux.', 'Volets en bois.', 'Ouvertures relativement protégées.', 'Espaces extérieurs ombragés.', 'Toiture en tuiles canal.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette disposition peut apparaître aussi bien dans les villages que dans des habitats ruraux isolés.',
+        groups: [
+          G(null, ['Maison intégrée à un front bâti.', 'Implantation en bordure de chemin.', 'Adaptation aux terrains en pente.', 'Relation avec une cour ou un espace agricole.', 'Accès séparé entre logement et exploitation.']),
+        ],
+      },
+      {
+        title: 'Matériaux et détails',
+        icon: 'ph ph-cube',
+        intro: 'Les matériaux traditionnels sont ceux de l’architecture vernaculaire provençale.',
+        groups: [
+          G(null, ['Pierre locale.', 'Moellons calcaires.', 'Mortier de chaux.', 'Tuiles canal.', 'Bois.', 'Fer forgé pour certains garde-corps.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La présence d’un escalier extérieur donnant directement accès à l’étage d’habitation permet de distinguer cette forme des maisons provençales à circulation intérieure.',
+        groups: [
+          G(null, ['Escalier extérieur visible en façade.', 'Entrée d’habitation à l’étage.', 'Rez-de-chaussée agricole ou artisanal.', 'Murs en pierre ou moellons.', 'Enduit à la chaux.', 'Toiture en tuiles canal.', 'Organisation verticale des fonctions.']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'habitattroglodytiqueprovencal',
+    name: 'Habitat troglodytique provençal',
+    region: 'Provence · Vaucluse · Drôme provençale · Alpes-de-Haute-Provence',
+    periode: 'Moyen Âge–XIXe siècle',
+    procede: 'Aménagement de cavités naturelles ou creusées dans des falaises et formations rocheuses, complété par des maçonneries en pierre et des éléments de charpente en bois.',
+    usage: 'Habitation, stockage agricole, étable et activités artisanales',
+    categorie: 'rural',
+    gps: '44.35° N, 5.00° E',
+    altitude: '100–700 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Roche naturelle ou couverture complémentaire',
+    penteToit: 'Variable',
+    essenceBois: 'Chêne et pin',
+    typeFondation: 'Appui direct sur le substrat rocheux',
+    typeCharpente: 'Charpente bois pour les parties construites',
+    epoqueDominante: 'Moyen Âge',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Bollène_maison_troglodyte_du_village_de_Barry.jpg'],
+    periodeTags: ['Avant 1800', 'XIXe'],
+    resume:
+      'L’habitat troglodytique provençal utilise directement les reliefs rocheux pour créer des espaces habitables ou agricoles. Les cavités peuvent être naturelles ou creusées dans la roche puis complétées par des façades maçonnées, des planchers et des couvertures. Cette architecture bénéficie de l’inertie thermique du rocher et s’inscrit particulièrement dans certains secteurs calcaires de Provence et de la Drôme provençale.',
+    identite: [
+      ['Période', 'Moyen Âge–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Drôme provençale · Alpes-de-Haute-Provence'],
+      ['Usage', 'Habitation, stockage agricole, étable et activités artisanales'],
+      ['Système', 'Cavité naturelle ou creusée dans la roche complétée par des éléments maçonnés'],
+      ['Matériau dominant', 'Roche naturelle et pierre locale'],
+      ['Toiture', 'Toiture naturelle constituée par la roche ou couverture complémentaire en tuiles selon les parties construites'],
+      ['Particularité', 'La roche constitue directement une partie des murs, du plafond ou de l’enveloppe thermique du bâtiment'],
+    ],
+    materiaux: ['Roche calcaire', 'Pierre', 'Moellons', 'Chaux', 'Bois', 'Terre cuite'],
+    annotations: [
+      { n: 1, el: 'Couverture', txt: 'La partie troglodytique est naturellement protégée par la masse rocheuse. Les extensions construites peuvent recevoir une couverture traditionnelle en tuiles canal.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'La façade constitue souvent la principale partie construite. Elle peut être réalisée en pierre ou en moellons et comporte les ouvertures nécessaires à l’accès, à l’éclairage et à la ventilation.' },
+      { n: 3, el: 'Planchers', txt: 'Les niveaux peuvent être directement aménagés dans la cavité ou complétés par des planchers en bois. Des sols en pierre ou en terre battue sont également possibles.' },
+      { n: 4, el: 'Structure porteuse', txt: 'La masse rocheuse assure directement une grande partie de la fonction porteuse. Les maçonneries de façade et les structures en bois complètent l’ensemble lorsque la cavité est aménagée.' },
+      { n: 5, el: 'Escalier', txt: 'Les différences de niveau à l’intérieur des cavités peuvent être franchies par des escaliers taillés dans la roche, maçonnés ou réalisés en bois.' },
+      { n: 6, el: 'Fondations', txt: 'La construction troglodytique repose directement sur le substrat rocheux, ce qui limite les besoins en fondations classiques pour les parties creusées.' },
+    ],
+    sections: [
+      {
+        title: 'Principe troglodytique',
+        icon: 'ph ph-mountains',
+        intro: 'Le principe fondamental consiste à utiliser la roche comme partie intégrante du bâtiment.',
+        groups: [
+          G(null, ['Cavité naturelle ou artificielle.', 'Roche formant les parois.', 'Plafond rocheux.', 'Façade construite en avant de la cavité.', 'Aménagement progressif de la cavité.']),
+        ],
+      },
+      {
+        title: 'Façade',
+        icon: 'ph ph-house-line',
+        intro: 'La façade constitue l’interface entre l’espace troglodytique et l’extérieur.',
+        groups: [
+          G(null, ['Mur en pierre.', 'Porte d’entrée.', 'Petites fenêtres.', 'Encadrements en pierre.', 'Enduit à la chaux dans certaines variantes.', 'Extensions maçonnées possibles.']),
+        ],
+      },
+      {
+        title: 'Organisation intérieure',
+        icon: 'ph ph-layout',
+        intro: 'Les espaces sont directement déterminés par la géométrie de la cavité et peuvent recevoir différentes fonctions.',
+        groups: [
+          G(null, ['Pièce d’habitation.', 'Cellier.', 'Cave.', 'Étable.', 'Espace de stockage.', 'Atelier.', 'Réserve alimentaire.']),
+        ],
+      },
+      {
+        title: 'Confort thermique',
+        icon: 'ph ph-thermometer',
+        intro: 'La masse rocheuse fournit une forte inertie thermique et limite les variations de température intérieure.',
+        groups: [
+          G(null, ['Température intérieure relativement stable.', 'Protection contre les fortes chaleurs estivales.', 'Protection contre le froid hivernal.', 'Faible exposition solaire directe.', 'Masse thermique importante.']),
+        ],
+      },
+      {
+        title: 'Éclairage et ventilation',
+        icon: 'ph ph-windows',
+        intro: 'L’éclairage naturel et le renouvellement de l’air constituent les principales contraintes de l’architecture troglodytique.',
+        groups: [
+          G(null, ['Ouvertures concentrées sur la façade.', 'Petites fenêtres.', 'Ventilation par les ouvertures.', 'Possibilité de conduits ou ouvertures secondaires.', 'Espaces intérieurs parfois peu éclairés.']),
+        ],
+      },
+      {
+        title: 'Relation au territoire',
+        icon: 'ph ph-map-trifold',
+        intro: 'Les habitats troglodytiques sont directement liés à la géologie et au relief des territoires où ils apparaissent.',
+        groups: [
+          G(null, ['Implantation dans des falaises ou escarpements.', 'Utilisation de formations calcaires.', 'Adaptation à la topographie.', 'Relation avec les chemins et terrasses agricoles.', 'Regroupement possible en hameaux troglodytiques.']),
+        ],
+      },
+      {
+        title: 'Usages agricoles',
+        icon: 'ph ph-tractor',
+        intro: 'Les cavités troglodytiques ont également été utilisées pour les besoins de l’exploitation agricole.',
+        groups: [
+          G(null, ['Cave à vin.', 'Cellier.', 'Stockage des récoltes.', 'Étable.', 'Bergerie.', 'Abri pour le matériel.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'L’intégration directe de la construction dans le relief rocheux constitue le critère essentiel d’identification.',
+        groups: [
+          G(null, ['Cavité naturelle ou creusée.', 'Roche constituant une partie de l’enveloppe.', 'Façade maçonnée en avant de la cavité.', 'Forte inertie thermique.', 'Ouvertures concentrées sur la façade.', 'Adaptation directe à la géologie.', 'Usages résidentiels ou agricoles.']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'grangefenilprovencale',
+    name: 'Grange provençale à fenil',
+    region: 'Provence · Vaucluse · Alpes-de-Haute-Provence · Hautes-Alpes',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Murs porteurs en pierre ou moellons, charpente traditionnelle en bois et couverture en tuiles canal ou, dans les secteurs plus élevés, en matériaux adaptés au climat montagnard.',
+    usage: 'Stockage du foin, des récoltes et abri du bétail',
+    categorie: 'agricole',
+    gps: '44.10° N, 5.80° E',
+    altitude: '300–1200 m',
+    climat: 'Méditerranéen à montagnard',
+    typeToiture: 'Deux pans',
+    penteToit: '25–45°',
+    essenceBois: 'Mélèze, pin et chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Grange_au_Chaffaut.JPG'],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "La grange provençale à fenil est un bâtiment agricole spécialisé dans le stockage du foin au-dessus d'un niveau inférieur destiné au bétail, au matériel ou au stockage. Cette organisation verticale permet de conserver le fourrage à l'abri tout en facilitant son utilisation pour les animaux. Elle constitue une composante fréquente des exploitations rurales de Provence et de ses zones de transition vers les Alpes.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Alpes-de-Haute-Provence · Hautes-Alpes'],
+      ['Usage', 'Stockage du foin, des récoltes et abri du bétail'],
+      ['Système', 'Maçonnerie porteuse avec organisation verticale des fonctions'],
+      ['Matériau dominant', 'Pierre et moellons'],
+      ['Toiture', 'Toiture à deux pans avec couverture en tuiles canal ou matériaux adaptés à l’altitude'],
+      ['Particularité', 'Fenil placé au-dessus du niveau agricole inférieur et accessible par une large ouverture ou une rampe'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Bois', 'Terre cuite', 'Fer'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "La toiture protège le volume important du fenil et présente généralement deux pans. La couverture traditionnelle varie selon l'altitude, avec une forte présence de tuiles canal dans les secteurs bas de Provence." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les murs sont généralement construits en pierre ou en moellons. La façade du fenil peut comporter une large ouverture permettant le chargement du foin." },
+      { n: 3, el: 'Planchers', txt: 'Le plancher séparant le niveau inférieur du fenil est généralement constitué de poutres et solives en bois capables de supporter une charge importante.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs maçonnés portent la charpente et les planchers. Des poutres de forte section peuvent renforcer le niveau du fenil.' },
+      { n: 5, el: 'Accès au fenil', txt: "Le fenil est fréquemment desservi par une grande ouverture en façade ou par une rampe extérieure permettant d'acheminer directement le foin depuis le terrain." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement réalisées en pierre et dimensionnées pour supporter les murs épais ainsi que les charges importantes du stockage agricole.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-vertical',
+        intro: 'La séparation des fonctions entre le niveau inférieur et le fenil supérieur constitue le principe essentiel du bâtiment.',
+        groups: [
+          G(null, ['Rez-de-chaussée agricole.', "Fenil à l'étage.", 'Stockage vertical du fourrage.', 'Séparation entre animaux et foin.', 'Accès indépendant au fenil.']),
+        ],
+      },
+      {
+        title: 'Fenil',
+        icon: 'ph ph-haystack',
+        intro: 'Le niveau supérieur est spécialement conçu pour recevoir et conserver le fourrage.',
+        groups: [
+          G(null, ['Volume intérieur important.', 'Grande capacité de stockage.', 'Large ouverture de chargement.', 'Plancher renforcé.', 'Ventilation naturelle.', 'Accès facilité depuis le terrain.']),
+        ],
+      },
+      {
+        title: 'Chargement du foin',
+        icon: 'ph ph-arrow-up',
+        intro: 'La circulation du fourrage influence directement la forme du bâtiment et la disposition de ses ouvertures.',
+        groups: [
+          G(null, ['Grande porte de fenil.', "Rampe d'accès.", 'Chargement depuis un chemin supérieur.', 'Déchargement gravitaire vers le niveau inférieur.', 'Organisation adaptée au relief.']),
+        ],
+      },
+      {
+        title: 'Niveau inférieur',
+        icon: 'ph ph-cow',
+        intro: 'Le rez-de-chaussée accueille les animaux, le matériel ou différentes fonctions agricoles.',
+        groups: [
+          G(null, ['Étable.', 'Bergerie.', 'Écurie.', 'Remise.', 'Atelier.', 'Stockage secondaire.']),
+        ],
+      },
+      {
+        title: 'Adaptation au relief',
+        icon: 'ph ph-mountains',
+        intro: "Dans les régions vallonnées, la pente peut être utilisée pour faciliter directement l'accès au fenil.",
+        groups: [
+          G(null, ['Implantation dans une pente.', 'Accès supérieur au fenil.', 'Accès inférieur aux étables.', 'Utilisation de la topographie.', 'Réduction des efforts de manutention.']),
+        ],
+      },
+      {
+        title: 'Structure et matériaux',
+        icon: 'ph ph-cube',
+        intro: 'La construction combine la robustesse de la maçonnerie et la légèreté relative des structures en bois.',
+        groups: [
+          G(null, ['Murs en pierre.', 'Moellons calcaires.', 'Mortier de chaux.', 'Poutres en bois.', 'Charpente traditionnelle.', 'Couverture en tuiles ou matériaux locaux.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La présence d'un grand volume de stockage du foin au-dessus d'un niveau agricole constitue le principal critère d'identification.",
+        groups: [
+          G(null, ['Bâtiment agricole massif.', 'Fenil à l\'étage.', 'Grande ouverture de chargement.', 'Plancher renforcé.', 'Rez-de-chaussée destiné au bétail ou au matériel.', 'Adaptation possible à la pente.', 'Murs épais en pierre.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
