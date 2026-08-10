@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { ArrowRight, ArrowsOut, ArrowsIn, CaretDown } from '@phosphor-icons/react'
 import { TYPOLOGIES, TYPOLOGIES_MAP, CATEGORIES_MAP, type Typologie } from '../../data/typologies'
 import { commonsFilePath } from '../../utils/commons'
+import Modal from '../../components/Modal/Modal'
 import styles from './CarteTypologies.module.css'
 
 /* Au-delà de ce nombre d'éléments, un groupe de région affiche une combo box
@@ -22,6 +23,14 @@ const GENERIC_REGION_TOKENS = new Set([
 ])
 
 const NATIONAL_GROUP = 'Toutes régions'
+
+/* Libellé affiché pour le groupe NATIONAL_GROUP : dans un sélecteur de région,
+   « Toutes régions » se lit comme « pas de filtre, tout afficher » alors qu'il
+   ne regroupe en réalité que les typologies sans région précise (portée
+   nationale). On garde la clé interne (utilisée par regionGroupOf, l'état
+   selectedRegion, etc.) mais on affiche un libellé moins ambigu. */
+const NATIONAL_GROUP_LABEL = 'Portée nationale'
+const regionDisplayLabel = (region: string) => (region === NATIONAL_GROUP ? NATIONAL_GROUP_LABEL : region)
 
 const regionGroupOf = (t: Typologie) => {
   const first = t.region.split(' · ')[0]
@@ -247,6 +256,7 @@ export default function CarteTypologies() {
   const [maximized, setMaximized] = useState(false)
   const [selectedRegion, setSelectedRegion] = useState(REGION_GROUPS[0][0])
   const selectedItems = REGION_GROUPS.find(([region]) => region === selectedRegion)?.[1] ?? []
+  const [pickerOpen, setPickerOpen] = useState(false)
   const [hover, setHover] = useState<HoverState | null>(null)
   const [thumbFailed, setThumbFailed] = useState(false)
   const mapCardRef = useRef<HTMLDivElement>(null)
@@ -431,7 +441,7 @@ export default function CarteTypologies() {
               onChange={(e) => setSelectedRegion(e.target.value)}
             >
               {REGION_GROUPS.map(([region, items]) => (
-                <option key={region} value={region}>{region} · {items.length}</option>
+                <option key={region} value={region}>{regionDisplayLabel(region)} · {items.length}</option>
               ))}
             </select>
             <CaretDown size={13} className={styles.comboCaret} />
@@ -439,29 +449,51 @@ export default function CarteTypologies() {
         </div>
 
         {selectedItems.length > COMBO_THRESHOLD ? (
-          <div className={styles.comboWrap}>
-            <select
-              key={selectedRegion}
-              className={styles.comboSelect}
-              defaultValue=""
-              onChange={(e) => {
-                if (e.target.value) handlePin(e.target.value)
-              }}
-              aria-label={`Choisir une typologie parmi « ${selectedRegion} »`}
-            >
-              <option value="" disabled>
+          <>
+            <div className={styles.comboWrap}>
+              <button
+                type="button"
+                className={`${styles.comboSelect} ${styles.comboButton}`}
+                onClick={() => setPickerOpen(true)}
+                aria-haspopup="dialog"
+                aria-label={`Choisir une typologie parmi « ${regionDisplayLabel(selectedRegion)} »`}
+              >
                 Choisir parmi les {selectedItems.length} typologies…
-              </option>
-              {groupByCategorie(selectedItems).map(([cat, catItems]) => (
-                <optgroup key={cat} label={CATEGORIES_MAP[cat]?.label ?? cat}>
-                  {catItems.map((t) => (
-                    <option key={t.id} value={t.id}>{t.name}</option>
-                  ))}
-                </optgroup>
-              ))}
-            </select>
-            <CaretDown size={13} className={styles.comboCaret} />
-          </div>
+              </button>
+              <CaretDown size={13} className={styles.comboCaret} />
+            </div>
+
+            <Modal
+              open={pickerOpen}
+              onClose={() => setPickerOpen(false)}
+              title={regionDisplayLabel(selectedRegion)}
+              subtitle={`${selectedItems.length} typologie${selectedItems.length > 1 ? 's' : ''}`}
+            >
+              <div className={styles.pickerList}>
+                {groupByCategorie(selectedItems).map(([cat, catItems]) => (
+                  <div key={cat} className={styles.pickerGroup}>
+                    <div className={styles.pickerGroupLabel}>{CATEGORIES_MAP[cat]?.label ?? cat}</div>
+                    <div className={styles.legendGroup}>
+                      {catItems.map((t) => (
+                        <button
+                          key={t.id}
+                          className={styles.legendItem}
+                          onClick={() => { setPickerOpen(false); handlePin(t.id) }}
+                        >
+                          <div className={styles.legendDot} />
+                          <div className={styles.legendInfo}>
+                            <div className={styles.legendName}>{t.name}</div>
+                            <div className={styles.legendSub}>{t.region.split(' · ')[0]} · {t.periode}</div>
+                          </div>
+                          <ArrowRight size={15} color="var(--color-neutral-500)" weight="regular" />
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Modal>
+          </>
         ) : (
           <div className={styles.legendGroup}>
             {selectedItems.map((t) => (

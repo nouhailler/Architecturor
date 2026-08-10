@@ -176,6 +176,32 @@
   color: var(--color-neutral-500);
 }
 
+.comboButton {
+  text-align: left;
+  color: var(--color-neutral-400);
+}
+
+.pickerList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pickerGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pickerGroupLabel {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-neutral-500);
+}
+
 .comboCaret {
   position: absolute;
   right: 14px;
