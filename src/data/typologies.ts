@@ -16173,6 +16173,116 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonvillageprovencalehauteur',
+    name: 'Maison de village provençale en hauteur',
+    region: 'Provence · Vaucluse · Bouches-du-Rhône · Var · Alpes-de-Haute-Provence',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Murs mitoyens porteurs en pierre ou moellons, généralement enduits à la chaux, avec planchers en bois et toiture traditionnelle en tuiles canal.',
+    usage: 'Habitation villageoise, avec activités artisanales ou commerciales au rez-de-chaussée',
+    categorie: 'urbain',
+    gps: '43.95° N, 5.05° E',
+    altitude: '20–700 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux pans',
+    penteToit: '15–30°',
+    essenceBois: 'Chêne et pin',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Séguret1.JPG'],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "La maison de village provençale en hauteur constitue une forme d'habitat dense caractéristique des villages anciens de Provence. Étroite et développée sur plusieurs niveaux, elle permet de concentrer l'habitation sur une faible emprise au sol. Le rez-de-chaussée peut accueillir une boutique, un atelier, une remise ou une activité agricole tandis que les niveaux supérieurs sont réservés à l'habitation.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Bouches-du-Rhône · Var · Alpes-de-Haute-Provence'],
+      ['Usage', 'Habitation villageoise, artisanat et commerce'],
+      ['Système', 'Murs mitoyens porteurs en maçonnerie'],
+      ['Matériau dominant', 'Pierre, moellons et enduit à la chaux'],
+      ['Toiture', 'Toiture à deux pans couverte de tuiles canal'],
+      ['Particularité', 'Maison étroite développée sur plusieurs niveaux, implantée directement sur la rue et intégrée à un front bâti continu'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Terre cuite', 'Bois', 'Fer forgé'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture est généralement à deux pans et couverte de tuiles canal. Elle est souvent peu visible depuis la rue en raison de la hauteur et de la densité du bâti.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'La façade est étroite et directement alignée sur la rue. Elle est généralement enduite à la chaux et comporte des ouvertures superposées correspondant aux différents niveaux.' },
+      { n: 3, el: 'Planchers', txt: 'Les planchers intermédiaires sont traditionnellement constitués de poutres et solives en bois. Ils permettent de superposer les fonctions domestiques et professionnelles.' },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs latéraux mitoyens assurent une part importante de la stabilité de la maison. Les façades avant et arrière complètent le système porteur.' },
+      { n: 5, el: 'Escalier', txt: 'Un escalier intérieur compact dessert les différents niveaux. Dans les maisons les plus étroites, il peut être particulièrement raide et occuper une faible emprise.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations reposent généralement sur des maçonneries en pierre. Dans les villages anciens, elles peuvent être directement liées aux constructions voisines ou à des structures plus anciennes.' },
+    ],
+    sections: [
+      {
+        title: 'Morphologie générale',
+        icon: 'ph ph-buildings',
+        intro: 'La maison se caractérise par une faible largeur et un développement vertical important.',
+        groups: [
+          G(null, ['Façade étroite.', 'Plan généralement profond.', 'Deux à quatre niveaux fréquents.', 'Emprise au sol réduite.', 'Bâtiment mitoyen.']),
+        ],
+      },
+      {
+        title: 'Organisation par niveaux',
+        icon: 'ph ph-arrows-vertical',
+        intro: 'La superposition des fonctions permet une forte densité d\'habitation dans les villages historiques.',
+        groups: [
+          G(null, ['Rez-de-chaussée professionnel ou agricole.', 'Premier étage habité.', 'Niveaux supérieurs destinés aux chambres.', 'Combles éventuels.', 'Fonctions réparties verticalement.']),
+        ],
+      },
+      {
+        title: 'Façade sur rue',
+        icon: 'ph ph-storefront',
+        intro: "La façade constitue l'interface principale avec l'espace public et révèle l'organisation intérieure.",
+        groups: [
+          G(null, ['Alignement sur la rue.', 'Porte d\'entrée au rez-de-chaussée.', 'Fenêtres superposées.', 'Volets en bois.', 'Enduit à la chaux.', 'Balcon possible.']),
+        ],
+      },
+      {
+        title: 'Rez-de-chaussée',
+        icon: 'ph ph-storefront',
+        intro: 'Le niveau inférieur peut accueillir une activité directement accessible depuis la rue.',
+        groups: [
+          G(null, ['Boutique.', 'Atelier.', 'Remise.', 'Cellier.', 'Étable dans certains contextes ruraux.', 'Accès direct depuis la rue.']),
+        ],
+      },
+      {
+        title: 'Habitation',
+        icon: 'ph ph-house-line',
+        intro: 'Les étages supérieurs concentrent les espaces domestiques et bénéficient d\'une meilleure protection vis-à-vis de la rue.',
+        groups: [
+          G(null, ['Cuisine.', 'Pièce commune.', 'Chambres.', 'Espaces de rangement.', 'Ouvertures sur rue ou cour.', 'Combles éventuels.']),
+        ],
+      },
+      {
+        title: 'Densité villageoise',
+        icon: 'ph ph-users-three',
+        intro: 'Cette forme résulte directement de la nécessité de construire dans un espace villageois contraint.',
+        groups: [
+          G(null, ['Parcelles étroites.', 'Murs mitoyens.', 'Front bâti continu.', 'Rues étroites.', 'Faible emprise au sol.', 'Développement vertical.']),
+        ],
+      },
+      {
+        title: 'Adaptation climatique',
+        icon: 'ph ph-sun',
+        intro: 'La compacité du bâtiment et la maçonnerie épaisse participent à la protection contre les fortes variations thermiques.',
+        groups: [
+          G(null, ['Murs à forte inertie.', 'Façades relativement compactes.', 'Volets extérieurs.', 'Ouvertures protégées.', 'Espaces intérieurs ombragés.', 'Enduits à la chaux.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La combinaison entre parcelle étroite, développement vertical et implantation mitoyenne permet de reconnaître cette forme d\'habitat.',
+        groups: [
+          G(null, ['Maison étroite et profonde.', 'Développement sur plusieurs étages.', 'Façade directement sur rue.', 'Murs mitoyens.', 'Rez-de-chaussée commercial, artisanal ou agricole.', 'Habitation aux niveaux supérieurs.', 'Toiture en tuiles canal.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
