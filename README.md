@@ -22,12 +22,14 @@
 
 ## ✨ À propos
 
-Inventaire du bâti est une base de référence destinée à la maîtrise d'œuvre : elle recense des typologies constructives françaises (immeuble haussmannien, mas provençal, maison à pans de bois, grand ensemble, etc.) avec, pour chacune : structure porteuse, matériaux, planchers et toiture.
+Inventaire du bâti est une base de référence destinée à la maîtrise d'œuvre : elle recense **219 typologies constructives françaises** (immeuble haussmannien, mas provençal, maison à pans de bois, grand ensemble, bastide, borie, pigeonnier, grange à fenil, village perché, etc.) réparties en 10 catégories (rural, urbain, religieux, militaire, industriel, transports, agricole, public, littoral, montagne), avec pour chacune : structure porteuse, matériaux, planchers, toiture — et, pour la plupart, une photo.
 
 Points d'entrée principaux :
 - 🗺️ Carte de France géolocalisant chaque typologie
 - ⏳ Frise chronologique (1400 → 2000)
-- 🔍 Catalogue filtrable (procédé de construction, usage, période)
+- 🔍 Catalogue filtrable (procédé de construction, usage, période, catégorie)
+- 📖 Glossaire des termes d'architecture et de construction
+- ⚙️ Paramètres : export JSON du catalogue, import de vos propres typologies
 
 ## Table des matières
 
@@ -59,11 +61,17 @@ Remarques :
 
 ## Features
 
-- ✅ Catalogue filtrable par période, procédé, usage
-- ✅ Carte interactive des typologies
-- ✅ Fiches détaillées avec coupes annotées
+- ✅ 219 typologies documentées, sur 10 catégories (rural, urbain, religieux, militaire,
+  industriel, transports, agricole, public, littoral, montagne)
+- ✅ Catalogue filtrable par catégorie, période, procédé, usage, avec recherche texte
+- ✅ Carte interactive et frise chronologique des typologies
+- ✅ Fiches détaillées avec coupes annotées, procédé de construction en accordéon
+- ✅ Photos Wikimedia Commons pour la majorité des typologies (vignettes + galerie)
+- ✅ Glossaire des termes d'architecture, recherche incluse
+- ✅ Export JSON de tout le catalogue et import de vos propres typologies (avec gabarit,
+  validation et détection de doublons), stockées localement — pas de backend
 - ✅ Thème sombre / design tokens
-- ✅ Données en TypeScript (src/data/typologies.ts) comme source de vérité
+- ✅ Données en TypeScript (`src/data/typologies.ts`) comme source de vérité
 
 ## 🚀 Installation
 
@@ -103,20 +111,39 @@ Arborescence principale (extrait) :
 
 ```
 src/
-├── components/       # Composants réutilisables (Header, Footer, Card, etc.)
-├── pages/            # Accueil, Catalogue, FicheDetail
+├── components/       # Composants réutilisables (Header, Footer, Modal)
+├── pages/
+│   ├── Accueil/      # Carte de France + frise chronologique
+│   ├── Catalogue/    # Liste filtrable des typologies
+│   ├── FicheDetail/  # Fiche par typologie (coupe, procédé, identité)
+│   ├── Glossaire/    # Lexique des termes d'architecture
+│   └── Parametres/   # Export JSON, import de typologies personnalisées
 ├── context/          # App context : filtres, recherche
 ├── data/
-│   ├── typologies.ts # Données source
-│   └── icons.tsx     # Mappage icônes → composants Phosphor
+│   ├── typologies.ts      # 219 typologies natives — source de vérité
+│   ├── typologieSchema.ts # Gabarit + validation des typologies importées
+│   ├── glossaire.ts       # Termes du glossaire
+│   └── icons.tsx          # Mappage icônes → composants Phosphor
+├── utils/
+│   ├── commons.ts          # Résolution des URLs d'images Wikimedia Commons
+│   ├── duplicates.ts       # Détection de doublons à l'import
+│   └── customTypologies.ts # Persistance localStorage des typologies importées
 ├── styles/           # Tokens & styles globaux
 └── docs/             # Screenshots, demo GIFs, documentation
 ```
 
 ## 🧾 Données & contenu
 
-- Les typologies sont définies dans src/data/typologies.ts — format TypeScript pour assurer la cohérence.
-- Si vous voulez importer/exporter vers CSV/JSON pour interchangeabilité, je peux ajouter des scripts.
+- Les 219 typologies natives sont définies dans `src/data/typologies.ts` — format TypeScript
+  pour assurer la cohérence (voir la section « Modèle de données » de [CONTEXT.md](CONTEXT.md)
+  pour le détail des champs).
+- La plupart référencent une photo Wikimedia Commons (`images: string[]`), résolue à l'affichage
+  par `src/utils/commons.ts` — aucune image n'est copiée dans le dépôt.
+- Vous pouvez enrichir le catalogue sans toucher au code : page **Paramètres** → coller ou
+  importer un JSON respectant le gabarit fourni. La typologie est validée, vérifiée contre les
+  doublons, puis stockée dans votre navigateur (`localStorage`) et visible immédiatement dans le
+  catalogue et les fiches. L'export JSON permet de récupérer l'ensemble (natives + importées) à
+  tout moment.
 
 ## 🛠️ Stack technique
 
@@ -166,7 +193,15 @@ Merci pour votre intérêt ! Quelques règles pour contribuer :
 1. Forkez le dépôt et créez une branche feature/bugfix : git checkout -b feat/ma-feature
 2. Respectez les conventions (lint + formatting)
 3. Ouvrez une Pull Request claire avec description & capture d'écran
-4. Pour les contributions de données (typologies), vérifiez le format TypeScript dans src/data/typologies.ts
+4. Pour les contributions de données (typologies) dans `src/data/typologies.ts` :
+   - `id` en minuscules sans séparateur, unique dans le fichier ;
+   - respectez le format `Typologie` (voir le gabarit `TYPOLOGIE_TEMPLATE` dans
+     `src/data/typologieSchema.ts`, aussi téléchargeable depuis la page Paramètres) ;
+   - vérifiez qu'il ne s'agit pas d'un doublon d'une typologie existante (nom, catégorie, région,
+     usage, période) ;
+   - si vous ajoutez une image, référencez un fichier Wikimedia Commons sous licence libre
+     (`images: ['Nom_du_fichier.jpg']`) et vérifiez-le visuellement avant de l'intégrer ;
+   - `npm run build` (tsc + vite build) doit passer sans erreur.
 
 Template de PR suggéré :
 - Contexte / problème résolu

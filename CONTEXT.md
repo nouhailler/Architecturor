@@ -37,8 +37,8 @@ types) car il s'agit de terminologie métier, pas d'infrastructure technique gé
 - **État applicatif global minimal** via `src/context/AppContext.tsx` (React Context + hooks) :
   recherche texte, filtres du catalogue, état ouvert/fermé des sections d'une fiche. Pas de
   librairie de state management externe — le besoin ne le justifie pas.
-- **Routage** avec `react-router-dom` : 3 routes (`/`, `/catalogue`, `/typologie/:id`), fallback
-  vers l'accueil.
+- **Routage** avec `react-router-dom` : 5 routes (`/`, `/catalogue`, `/typologie/:id`,
+  `/glossaire`, `/parametres`), fallback vers l'accueil.
 - **Styles** : CSS Modules par composant + design tokens globaux (`src/styles/tokens.css`) — pas
   de framework CSS (Tailwind, etc.).
 - **Icônes** : composants React de `@phosphor-icons/react`. Pour les icônes pilotées par la
@@ -50,27 +50,68 @@ types) car il s'agit de terminologie métier, pas d'infrastructure technique gé
 
 ## 🗺️ Modèle de données
 
-`Typologie` (dans `src/data/typologies.ts`) est la source de vérité unique. Chaque entrée porte :
+`Typologie` (dans `src/data/typologies.ts`) est la source de vérité unique pour les typologies
+natives — actuellement **219 entrées**, exportées sous forme de tableau (`TYPOLOGIES`) et de map
+par id (`TYPOLOGIES_MAP`). Chaque entrée porte :
 
-- des métadonnées de listing/filtrage (`region`, `periode`, `procede`, `usage`, `periodeTags`),
+- des métadonnées de listing/filtrage (`region`, `periode`, `procede`, `usage`, `periodeTags`,
+  `categorie` — l'une des 10 valeurs de `CATEGORIES`),
 - un résumé et une fiche d'identité (`resume`, `identite`),
 - les `annotations` de la coupe schématique (numérotées, affichées par `CoupeAnnotee`),
 - les `materiaux` caractéristiques,
-- les `sections` détaillées du procédé constructif (accordéon dans `ProcedeSections`).
+- les `sections` détaillées du procédé constructif (accordéon dans `ProcedeSections`),
+- des données techniques ponctuelles (`gps`, `altitude`, `climat`, `typeToiture`, `penteToit`,
+  `essenceBois`, `typeFondation`, `typeCharpente`, `epoqueDominante`, `difficulteIdentification`),
+- `images: string[]` — noms de fichiers Wikimedia Commons (voir section suivante), potentiellement
+  vide pour les typologies pas encore illustrées.
 
-Ajouter une typologie = ajouter une entrée à ce tableau ; aucune autre modification de code n'est
-nécessaire (catalogue, carte, frise et fiches se génèrent à partir de cette liste).
+Ajouter une typologie native = ajouter une entrée à ce tableau ; aucune autre modification de
+code n'est nécessaire (catalogue, carte, frise et fiches se génèrent à partir de cette liste).
+Convention d'`id` : minuscules sans séparateur (ex. `bastideprovencale`, `pigeonnierprovencal`),
+unique dans tout le fichier.
+
+### Typologies importées par l'utilisateur
+
+En plus des 219 typologies natives, un·e utilisateur·rice peut importer ses propres typologies
+depuis la page **Paramètres** (`/parametres`) : import d'un fichier JSON ou collage direct,
+validé contre le schéma de `src/data/typologieSchema.ts` (avec gabarit `TYPOLOGIE_TEMPLATE`
+téléchargeable et liste blanche `VALID_SECTION_ICONS`). Avant tout import, une détection de
+doublons (`src/utils/duplicates.ts`) compare la typologie candidate aux typologies existantes
+— sur le nom (distance de Levenshtein normalisée, seuil de similarité 0,85) et sur la fiche
+d'identité (catégorie + région + usage + période) — et affiche un avertissement bloquant en cas
+de correspondance avant confirmation de l'utilisateur·rice.
+
+Les typologies importées sont persistées dans `localStorage`
+(`src/utils/customTypologies.ts`, clé `inventaire-bati:typologies-importees`) — **jamais**
+envoyées à un serveur, il n'y en a pas. Le hook `useCustomTypologies()` les rend réactives :
+`Catalogue`, `FicheDetail` et `Parametres` les fusionnent avec `TYPOLOGIES` à l'affichage
+(`[...TYPOLOGIES, ...customTypologies]`), sans écriture dans `src/data/typologies.ts`. La page
+Paramètres permet aussi d'exporter l'ensemble (natives + importées) en un seul fichier JSON.
+
+## 🖼️ Images (Wikimedia Commons)
+
+Le champ `images: string[]` d'une typologie contient des noms de fichiers Wikimedia Commons
+(ex. `'Pigeonnier_en_Luberon.JPG'`), résolus en URL par `src/utils/commons.ts` :
+- `commonsFilePath(ref, width)` → URL `Special:FilePath` (utilisée pour l'affichage),
+- `commonsFilePage(ref)` → URL de la page `File:` (crédit / licence).
+
+Un préfixe `wp:` sur la référence bascule la résolution vers `fr.wikipedia.org` plutôt que
+`commons.wikimedia.org`, pour les rares fichiers non partagés sur Commons. Les images sont
+chargées directement depuis Wikimedia à l'affichage (pas de copie locale, pas de backend) — un
+accès réseau externe est donc nécessaire pour les voir. Chaque image ajoutée doit être vérifiée
+individuellement (licence libre, cohérence visuelle avec la typologie) avant d'être référencée ;
+environ 180 des 219 typologies en possèdent une à ce jour, les autres retombent sur un
+placeholder (icône `Image`).
 
 ## 📌 État actuel / limitations connues
 
-- **Aucune image réelle** : les vignettes de typologies et la galerie d'imagerie (fiche détail)
-  sont des placeholders (icône `Image`). Les emplacements sont marqués dans le code
-  (`SidebarIdentite.tsx`, `TypologieCard.tsx`) pour un remplacement futur par de vraies photos,
-  plans ou relevés.
 - **Pas de tests automatisés** pour le moment (ni unitaires, ni end-to-end).
-- **Pas de CI configurée** dans le dépôt (aucun workflow GitHub Actions).
-- Les polices sont chargées depuis Google Fonts (`Inter`) via `<link>` dans `index.html` — nécessite
-  un accès réseau externe en production.
+- **Pas de CI configurée** dans le dépôt (aucun workflow GitHub Actions) — les vérifications
+  (`tsc --noEmit`, `vite build`) sont à lancer manuellement avant de fusionner.
+- Une quarantaine de typologies n'ont pas encore de photo (`images: []`) et affichent un
+  placeholder.
+- Les polices sont chargées depuis Google Fonts (`Inter`) via `<link>` dans `index.html` —
+  nécessite un accès réseau externe en production, tout comme les images Wikimedia Commons.
 
 ## 🧑‍💻 Conventions de code
 
