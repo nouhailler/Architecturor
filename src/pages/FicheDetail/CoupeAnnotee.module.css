@@ -21,6 +21,12 @@
   align-items: center;
 }
 
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .annotations {
   display: flex;
   flex-direction: column;
