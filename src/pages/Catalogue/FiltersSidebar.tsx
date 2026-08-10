@@ -20,6 +20,9 @@ const categorieChipLabel = (val: string) => {
 export default function FiltersSidebar({ typologies }: { typologies: Typologie[] }) {
   const { q, setQ, filters, toggleFilter, clearAll, identiteMatch } = useApp()
   const [openFamilies, setOpenFamilies] = useState<Set<string>>(new Set())
+  // Sections repliées par défaut (Catégorie, Procédé, Usage) pour laisser de la place
+  // aux résultats sur petit écran ; une section avec un filtre actif reste visible.
+  const [openGroups, setOpenGroups] = useState<Set<string>>(new Set())
 
   const toggleFamily = (id: string) => {
     setOpenFamilies((prev) => {
@@ -30,7 +33,16 @@ export default function FiltersSidebar({ typologies }: { typologies: Typologie[]
     })
   }
 
-  const categorieGroup = { label: 'Catégorie', key: 'categorie' as const, chips: uniq(typologies.map((t) => t.categorie)), chipLabel: categorieChipLabel }
+  const toggleGroup = (id: string) => {
+    setOpenGroups((prev) => {
+      const next = new Set(prev)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }
+
+  const categorieChips = uniq(typologies.map((t) => t.categorie))
   const periodeGroup = { label: 'Période', key: 'periode' as const, chips: PERIODE_CHIPS, chipLabel: defaultChipLabel }
 
   // Le procédé de construction (120 valeurs) et le type d'usage (147 valeurs)
@@ -60,29 +72,32 @@ export default function FiltersSidebar({ typologies }: { typologies: Typologie[]
     || filters.region.length || identiteMatch,
   )
 
-  const renderFlatGroup = (grp: { label: string; key: keyof Filters; chips: string[]; chipLabel: (val: string) => string }) => (
-    <div key={grp.key} className={styles.group}>
-      <div className={styles.groupLabel}>{grp.label}</div>
-      <div className={styles.chips}>
-        {grp.chips.map((val) => {
-          const active = filters[grp.key].includes(val)
-          return (
-            <button
-              key={val}
-              onClick={() => toggleFilter(grp.key, val)}
-              className={`${styles.chip} ${active ? styles.chipActive : styles.chipInactive}`}
-            >
-              {grp.chipLabel(val)}
-            </button>
-          )
-        })}
-      </div>
+  const renderChips = (key: keyof Filters, chips: string[], chipLabel: (val: string) => string) => (
+    <div className={styles.chips}>
+      {chips.map((val) => {
+        const active = filters[key].includes(val)
+        return (
+          <button
+            key={val}
+            onClick={() => toggleFilter(key, val)}
+            className={`${styles.chip} ${active ? styles.chipActive : styles.chipInactive}`}
+          >
+            {chipLabel(val)}
+          </button>
+        )
+      })}
     </div>
   )
 
-  const renderFamilyGroup = (label: string, key: keyof Filters, familles: Famille[], familyChips: Map<string, string[]>) => (
-    <div className={styles.group}>
-      <div className={styles.groupLabel}>{label}</div>
+  const renderFlatGroup = (grp: { label: string; key: keyof Filters; chips: string[]; chipLabel: (val: string) => string }) => (
+    <div key={grp.key} className={styles.group}>
+      <div className={styles.groupLabel}>{grp.label}</div>
+      {renderChips(grp.key, grp.chips, grp.chipLabel)}
+    </div>
+  )
+
+  const renderFamilyBlocks = (key: keyof Filters, familles: Famille[], familyChips: Map<string, string[]>) => (
+    <>
       {familles
         .filter((f) => (familyChips.get(f.id)?.length ?? 0) > 0)
         .map((f) => {
@@ -124,8 +139,31 @@ export default function FiltersSidebar({ typologies }: { typologies: Typologie[]
             </div>
           )
         })}
-    </div>
+    </>
   )
+
+  // Groupe de premier niveau repliable (Catégorie, Procédé, Usage) : replié par
+  // défaut, ouvert automatiquement dès qu'un filtre de ce groupe est actif.
+  const renderAccordionGroup = (id: string, label: string, activeCount: number, content: React.ReactNode) => {
+    const open = openGroups.has(id) || activeCount > 0
+    return (
+      <div className={styles.group} key={id}>
+        <button
+          type="button"
+          className={styles.groupHeader}
+          onClick={() => toggleGroup(id)}
+          aria-expanded={open}
+        >
+          <span className={styles.groupHeaderLabel}>{label}</span>
+          <span className={styles.groupHeaderRight}>
+            {activeCount > 0 && <span className={styles.groupCount}>{activeCount}</span>}
+            {open ? <CaretUp size={13} /> : <CaretDown size={13} />}
+          </span>
+        </button>
+        {open && <div className={styles.groupBody}>{content}</div>}
+      </div>
+    )
+  }
 
   return (
     <div className={styles.sidebar}>
@@ -142,9 +180,9 @@ export default function FiltersSidebar({ typologies }: { typologies: Typologie[]
       </div>
 
       {/* Groupes de chips */}
-      {renderFlatGroup(categorieGroup)}
-      {renderFamilyGroup('Procédé de construction', 'procede', PROCEDE_FAMILLES, procedeFamilyChips)}
-      {renderFamilyGroup("Type d'usage", 'usage', USAGE_FAMILLES, usageFamilyChips)}
+      {renderAccordionGroup('categorie', 'Catégorie', filters.categorie.length, renderChips('categorie', categorieChips, categorieChipLabel))}
+      {renderAccordionGroup('procede', 'Procédé de construction', filters.procede.length, renderFamilyBlocks('procede', PROCEDE_FAMILLES, procedeFamilyChips))}
+      {renderAccordionGroup('usage', "Type d'usage", filters.usage.length, renderFamilyBlocks('usage', USAGE_FAMILLES, usageFamilyChips))}
       {renderFlatGroup(periodeGroup)}
 
       {/* Reset */}
