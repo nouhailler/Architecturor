@@ -31,6 +31,12 @@ v1.0.0.
   - la persistance locale des typologies importées (`localStorage`,
     `src/utils/customTypologies.ts`), prises en compte immédiatement dans le catalogue et les
     fiches détail sans rechargement ni backend.
+- **Installation en PWA** : manifeste (`public/manifest.webmanifest`), icônes dédiées
+  (`public/pwa-192.png`, `public/pwa-512.png`, variante *maskable* pour Android, icône Apple
+  Touch pour iOS/iPadOS) et balises associées dans `index.html` — l'application apparaît avec sa
+  propre icône une fois installée sur l'écran d'accueil ou en app de bureau. Pas de service
+  worker : pas de fonctionnement hors-ligne, choix délibéré tant que l'app dépend de ressources
+  distantes (polices, images Wikimedia Commons).
 - `README.md`, `CONTEXT.md` et ce `CHANGELOG.md`.
 - Icône de l'application (`public/icon.svg`) et balises favicon associées dans `index.html`.
 - Captures d'écran de démonstration (`docs/screenshots/`).

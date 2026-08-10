@@ -37,6 +37,7 @@ Points d'entrée principaux :
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [📲 Progressive Web App](#-progressive-web-app)
 - [Structure du projet](#structure-du-projet)
 - [Données et contenu](#données-et-contenu)
 - [Contribuer](#contribuer)
@@ -72,6 +73,7 @@ Remarques :
   validation et détection de doublons), stockées localement — pas de backend
 - ✅ Thème sombre / design tokens
 - ✅ Données en TypeScript (`src/data/typologies.ts`) comme source de vérité
+- ✅ **Installable en PWA** 📲 — icône dédiée sur l'écran d'accueil (mobile & desktop), lancement en mode autonome (`standalone`), sans barre d'adresse
 
 ## 🚀 Installation
 
@@ -105,6 +107,45 @@ Tips :
 - Ouvrir la carte pour filtrer par régions / période
 - Cliquer sur une typologie pour ouvrir la fiche détaillée
 
+## 📲 Progressive Web App
+
+L'application est **installable** comme une app native, sur mobile comme sur desktop, avec sa propre icône et un lancement sans barre d'adresse (`display: standalone`).
+
+<div align="center">
+
+| 🖼️ Icône (192×192) | 🎭 Maskable (Android) | 🍎 Apple Touch Icon |
+|:---:|:---:|:---:|
+| <img src="public/pwa-192.png" width="72" height="72" alt="Icône PWA 192×192" /> | <img src="public/pwa-maskable-512.png" width="72" height="72" alt="Icône PWA maskable" style="border-radius:16px" /> | <img src="public/apple-touch-icon.png" width="72" height="72" alt="Icône Apple Touch" /> |
+
+</div>
+
+| Fichier | Rôle |
+|---|---|
+| `public/manifest.webmanifest` | Manifeste PWA — nom, couleurs, icônes, mode d'affichage |
+| `public/pwa-192.png`, `public/pwa-512.png` | Icônes d'installation (Android, desktop) |
+| `public/pwa-maskable-512.png` | Variante *maskable* (fond plein bord à bord, respecte la zone de sécurité pour le découpage adaptatif Android) |
+| `public/apple-touch-icon.png` | Icône 180×180 pour « Ajouter à l'écran d'accueil » sur iOS/iPadOS |
+| `public/icon.svg`, `public/icon-maskable.svg` | Sources vectorielles des icônes ci-dessus |
+
+**Installer l'app :**
+- 🖥️ Chrome/Edge desktop : icône ⊕ dans la barre d'adresse, ou menu → *Installer Inventaire du bâti*
+- 📱 Android (Chrome) : menu ⋮ → *Ajouter à l'écran d'accueil*
+- 📱 iOS/iPadOS (Safari) : bouton *Partager* → *Sur l'écran d'accueil*
+
+**Régénérer les icônes** après modification de `public/icon.svg` (nécessite `cairosvg`, `pip install cairosvg`) :
+
+```bash
+python3 -c "
+import cairosvg
+for size in (192, 512):
+    cairosvg.svg2png(url='public/icon.svg', write_to=f'public/pwa-{size}.png', output_width=size, output_height=size)
+cairosvg.svg2png(url='public/icon-maskable.svg', write_to='public/pwa-maskable-512.png', output_width=512, output_height=512)
+cairosvg.svg2png(url='public/icon-maskable.svg', write_to='public/apple-touch-icon.png', output_width=180, output_height=180)
+"
+```
+
+> ℹ️ Il n'y a pas de service worker : la PWA est installable et fonctionne comme un onglet dédié, mais **ne fonctionne pas hors-ligne**. C'est un choix délibéré tant que l'app ne charge que des ressources statiques et des images distantes (Wikimedia Commons) — voir [CONTEXT.md](CONTEXT.md) pour les limitations connues.
+
 ## 🗂️ Structure du projet
 
 Arborescence principale (extrait) :
@@ -130,6 +171,13 @@ src/
 │   └── customTypologies.ts # Persistance localStorage des typologies importées
 ├── styles/           # Tokens & styles globaux
 └── docs/             # Screenshots, demo GIFs, documentation
+
+public/
+├── icon.svg               # Favicon / logo source
+├── icon-maskable.svg       # Source de l'icône maskable (fond plein bord à bord)
+├── manifest.webmanifest    # Manifeste PWA
+├── pwa-192.png, pwa-512.png, pwa-maskable-512.png  # Icônes d'installation
+└── apple-touch-icon.png    # Icône iOS/iPadOS
 ```
 
 ## 🧾 Données & contenu

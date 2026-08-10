@@ -1,0 +1,32 @@
+{
+  "id": "/",
+  "name": "Inventaire du bâti — Typologies architecturales",
+  "short_name": "Inventaire du bâti",
+  "description": "Inventaire des typologies architecturales du bâti français — matériaux, structure porteuse, planchers, toiture, par période et par procédé de construction.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#161826",
+  "theme_color": "#161826",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/pwa-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
