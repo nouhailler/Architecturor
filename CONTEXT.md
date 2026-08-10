@@ -39,6 +39,10 @@ types) car il s'agit de terminologie métier, pas d'infrastructure technique gé
   librairie de state management externe — le besoin ne le justifie pas.
 - **Routage** avec `react-router-dom` : 5 routes (`/`, `/catalogue`, `/typologie/:id`,
   `/glossaire`, `/parametres`), fallback vers l'accueil.
+- **PWA installable** (manifeste `public/manifest.webmanifest`, icônes `public/pwa-*.png` +
+  `apple-touch-icon.png`, liens dans `index.html`) : icône dédiée sur l'écran d'accueil, mode
+  `standalone`. Pas de service worker ni de cache applicatif — voir « État actuel / limitations
+  connues ».
 - **Styles** : CSS Modules par composant + design tokens globaux (`src/styles/tokens.css`) — pas
   de framework CSS (Tailwind, etc.).
 - **Icônes** : composants React de `@phosphor-icons/react`. Pour les icônes pilotées par la
@@ -105,6 +109,8 @@ placeholder (icône `Image`).
 
 ## 📌 État actuel / limitations connues
 
+- **Pas de service worker** : l'app est installable (PWA) mais ne fonctionne pas hors-ligne — un
+  accès réseau est requis à chaque lancement (polices Google Fonts, images Wikimedia Commons).
 - **Pas de tests automatisés** pour le moment (ni unitaires, ni end-to-end).
 - **Pas de CI configurée** dans le dépôt (aucun workflow GitHub Actions) — les vérifications
   (`tsc --noEmit`, `vite build`) sont à lancer manuellement avant de fusionner.
