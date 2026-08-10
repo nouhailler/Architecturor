@@ -16063,6 +16063,116 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisontourelleprovencale',
+    name: 'Maison à tourelle provençale',
+    region: 'Provence · Vaucluse · Bouches-du-Rhône · Var · Alpes-de-Haute-Provence',
+    periode: 'XVIe–XIXe siècle',
+    procede: 'Maçonnerie porteuse en pierre ou moellons, généralement enduite à la chaux, associée à une tourelle maçonnée contenant fréquemment un escalier en vis ou une circulation verticale.',
+    usage: 'Habitation rurale, demeure de village ou maison de petite notabilité',
+    categorie: 'rural',
+    gps: '43.95° N, 5.10° E',
+    altitude: '50–800 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux ou quatre pans pour le corps principal, conique ou polygonale pour la tourelle',
+    penteToit: '20–45°',
+    essenceBois: 'Chêne et pin',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Maison_avec_tourelle.aux_Mées.jpg'],
+    periodeTags: ['XVIe', 'XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "La maison à tourelle provençale est une forme d'habitation traditionnelle dans laquelle une tourelle verticale est intégrée ou accolée au corps principal. Elle peut abriter un escalier desservant les différents niveaux et constitue souvent un élément majeur de la silhouette du bâtiment. Cette disposition se rencontre dans des maisons rurales, des demeures villageoises et certaines petites maisons de notables de Provence.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Bouches-du-Rhône · Var · Alpes-de-Haute-Provence'],
+      ['Usage', 'Habitation rurale, demeure villageoise ou maison de petite notabilité'],
+      ['Système', 'Murs porteurs en maçonnerie avec tourelle maçonnée indépendante ou intégrée'],
+      ['Matériau dominant', 'Pierre, moellons et enduit à la chaux'],
+      ['Toiture', 'Toiture en tuiles canal ou couverture conique ou polygonale sur la tourelle'],
+      ['Particularité', 'Tourelle verticale abritant fréquemment un escalier et permettant de desservir plusieurs niveaux'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Terre cuite', 'Bois', 'Fer forgé'],
+    annotations: [
+      { n: 1, el: 'Toiture du corps principal', txt: "Le corps principal est généralement couvert d'une toiture à deux ou quatre pans en tuiles canal. La tourelle possède une couverture indépendante pouvant être conique, pyramidale ou polygonale." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les murs sont généralement constitués de pierre ou de moellons recouverts d'un enduit à la chaux. La tourelle crée une saillie verticale clairement identifiable sur la façade." },
+      { n: 3, el: 'Planchers', txt: "Les planchers sont traditionnellement réalisés avec des poutres et solives en bois. Les différents niveaux sont reliés par l'escalier situé dans la tourelle ou par une circulation intérieure complémentaire." },
+      { n: 4, el: 'Structure porteuse', txt: 'Le corps principal repose sur des murs porteurs en maçonnerie. La tourelle possède ses propres murs porteurs et peut être construite simultanément ou ajoutée à une construction préexistante.' },
+      { n: 5, el: "Tourelle d'escalier", txt: "La tourelle abrite fréquemment un escalier en vis ou un escalier à volées courtes. Elle permet de desservir plusieurs niveaux tout en conservant une organisation compacte." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont réalisées en maçonnerie de pierre et doivent supporter la masse importante de la tourelle ainsi que les poussées et charges liées aux planchers et à l\'escalier.' },
+    ],
+    sections: [
+      {
+        title: 'Composition générale',
+        icon: 'ph ph-buildings',
+        intro: 'La maison associe un volume principal d\'habitation à une tourelle verticale qui modifie fortement sa silhouette.',
+        groups: [
+          G(null, ['Corps de bâtiment rectangulaire ou irrégulier.', 'Tourelle accolée ou intégrée.', 'Développement sur plusieurs niveaux.', 'Organisation compacte.', 'Silhouette verticale caractéristique.']),
+        ],
+      },
+      {
+        title: "Tourelle d'escalier",
+        icon: 'ph ph-stairs',
+        intro: 'La fonction de circulation verticale constitue souvent la raison principale de la présence de la tourelle.',
+        groups: [
+          G(null, ['Escalier en vis fréquent.', 'Escalier à noyau central possible.', 'Accès à plusieurs niveaux.', "Petites ouvertures d'éclairage.", 'Circulation séparée des pièces principales.']),
+        ],
+      },
+      {
+        title: 'Volumétrie',
+        icon: 'ph ph-cube',
+        intro: 'La juxtaposition du volume horizontal de la maison et du volume vertical de la tourelle crée une silhouette particulièrement reconnaissable.',
+        groups: [
+          G(null, ['Corps principal relativement bas.', 'Tourelle plus haute.', 'Contraste horizontal-vertical.', 'Tourelle circulaire, polygonale ou quadrangulaire.', 'Implantation variable selon le plan.']),
+        ],
+      },
+      {
+        title: 'Organisation intérieure',
+        icon: 'ph ph-house-line',
+        intro: 'La tourelle permet de libérer les pièces principales de certaines contraintes de circulation.',
+        groups: [
+          G(null, ["Pièces d'habitation distribuées autour de la circulation.", 'Cuisine.', 'Salle commune.', 'Chambres.', 'Espaces de stockage.', 'Accès indépendant possible.']),
+        ],
+      },
+      {
+        title: 'Toitures',
+        icon: 'ph ph-house',
+        intro: 'Le contraste entre la toiture du corps principal et celle de la tourelle renforce la lisibilité de la composition.',
+        groups: [
+          G(null, ['Tuiles canal sur le corps principal.', 'Toiture conique possible sur la tourelle.', 'Toiture pyramidale ou polygonale.', 'Couverture en terre cuite.', 'Débord de toiture protecteur.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette forme peut apparaître dans des contextes ruraux comme dans les villages anciens.',
+        groups: [
+          G(null, ['Maison isolée.', 'Maison intégrée à un village.', 'Implantation en bordure de rue.', 'Relation avec une cour.', 'Adaptation aux terrains irréguliers.']),
+        ],
+      },
+      {
+        title: 'Évolution et variantes',
+        icon: 'ph ph-arrows-clockwise',
+        intro: "La tourelle peut être conçue dès l'origine ou résulter d'une transformation du bâtiment principal.",
+        groups: [
+          G(null, ['Tourelle construite avec le corps principal.', 'Tourelle ajoutée ultérieurement.', "Tourelle d'escalier.", 'Tourelle de distribution.', 'Tourelle pouvant également intégrer des espaces secondaires.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La présence d'une tourelle fonctionnelle et intégrée à l'organisation du bâtiment constitue le principal critère d'identification.",
+        groups: [
+          G(null, ['Tourelle maçonnée.', 'Fonction de circulation verticale fréquente.', 'Escalier en vis ou à volées courtes.', 'Corps principal en maçonnerie.', 'Toiture indépendante de la tourelle.', 'Silhouette verticale caractéristique.', "Petites ouvertures d'éclairage de l'escalier."]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
