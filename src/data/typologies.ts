@@ -16283,6 +16283,116 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'moulineauprovencal',
+    name: 'Moulin à eau provençal',
+    region: 'Provence · Vaucluse · Bouches-du-Rhône · Alpes-de-Haute-Provence · Var',
+    periode: 'Moyen Âge–XIXe siècle',
+    procede: "Bâtiment maçonné en pierre ou moellons implanté au bord d'un cours d'eau ou d'un canal, associé à un système hydraulique comprenant généralement bief, canal d'amenée, roue ou turbine et canal de fuite.",
+    usage: "Mouture des céréales, production d'huile, sciage du bois ou autres activités artisanales utilisant l'énergie hydraulique",
+    categorie: 'industrielle',
+    gps: '43.95° N, 5.10° E',
+    altitude: '20–700 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux pans',
+    penteToit: '20–35°',
+    essenceBois: 'Chêne et pin',
+    typeFondation: "Fondations maçonnées renforcées au contact de l'eau",
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['L\'Isle-sur-la-Sorgue_Roue_à_aubes_01.jpg'],
+    periodeTags: ['Moyen Âge', 'XVIe', 'XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "Le moulin à eau provençal est un bâtiment de production utilisant l'énergie hydraulique des rivières, canaux ou dérivations aménagées. La construction associe une enveloppe maçonnée robuste à un dispositif hydraulique destiné à transformer l'énergie de l'eau en mouvement mécanique. Selon les territoires et les périodes, les moulins ont servi à moudre les céréales, produire de l'huile, scier le bois ou actionner différents équipements artisanaux.",
+    identite: [
+      ['Période', 'Moyen Âge–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Bouches-du-Rhône · Alpes-de-Haute-Provence · Var'],
+      ['Usage', 'Mouture, huilerie, sciage et autres activités mécaniques'],
+      ['Système', 'Maçonnerie porteuse associée à une installation hydraulique'],
+      ['Matériau dominant', 'Pierre et moellons'],
+      ['Toiture', 'Toiture à deux pans généralement couverte de tuiles canal'],
+      ["Particularité", "Présence d'un dispositif hydraulique permettant de convertir l'énergie de l'eau en énergie mécanique"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Bois', 'Fer', 'Terre cuite'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "La couverture traditionnelle est généralement constituée de tuiles canal sur une toiture à deux pans. Les bâtiments peuvent présenter des extensions liées à l'évolution des équipements." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les murs épais en pierre ou en moellons protègent les espaces de production et résistent aux vibrations et aux contraintes liées aux équipements mécaniques.' },
+      { n: 3, el: 'Planchers', txt: "Les planchers sont dimensionnés pour supporter les machines, les meules, les arbres de transmission et les charges liées au stockage des matières premières." },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure repose principalement sur une maçonnerie massive. Les parties soumises directement à l\'eau nécessitent des maçonneries particulièrement résistantes.' },
+      { n: 5, el: 'Système hydraulique', txt: "L'eau est amenée vers le bâtiment par un bief ou un canal. Elle actionne une roue hydraulique ou, dans les installations plus récentes, une turbine avant d'être évacuée par un canal de fuite." },
+      { n: 6, el: 'Fondations', txt: "Les fondations et les parties basses sont particulièrement robustes afin de résister à l'humidité, aux variations du niveau de l'eau et aux poussées exercées par les aménagements hydrauliques." },
+    ],
+    sections: [
+      {
+        title: 'Implantation hydraulique',
+        icon: 'ph ph-drop',
+        intro: "Le choix du site est directement déterminé par la disponibilité et la maîtrise d'une ressource hydraulique suffisante.",
+        groups: [
+          G(null, ["Implantation au bord d'un cours d'eau.", 'Implantation sur un canal dérivé.', "Bief d'alimentation.", "Canal d'amenée.", 'Canal de fuite.', 'Différence de niveau exploitée.']),
+        ],
+      },
+      {
+        title: 'Roue hydraulique',
+        icon: 'ph ph-arrows-clockwise',
+        intro: "La roue hydraulique transforme l'énergie du courant ou de la chute d'eau en mouvement mécanique.",
+        groups: [
+          G(null, ['Roue verticale ou horizontale selon les installations.', 'Aubes ou pales.', 'Arbre de transmission.', 'Transmission mécanique.', 'Régulation du débit.', 'Remplacement progressif par des turbines dans certaines installations.']),
+        ],
+      },
+      {
+        title: 'Mouture des céréales',
+        icon: 'ph ph-grains',
+        intro: 'Une grande partie des moulins provençaux était destinée à transformer les céréales en farine.',
+        groups: [
+          G(null, ['Meules en pierre.', 'Trémie.', 'Système de transmission.', 'Stockage des grains.', 'Stockage de la farine.', 'Chargement et déchargement des sacs.']),
+        ],
+      },
+      {
+        title: 'Architecture productive',
+        icon: 'ph ph-factory',
+        intro: 'Le bâtiment est conçu avant tout autour de son processus de production et de la circulation des matières.',
+        groups: [
+          G(null, ['Espaces de production.', 'Locaux de stockage.', 'Accès aux machines.', 'Ouvertures de chargement.', 'Planchers renforcés.', 'Organisation verticale possible.']),
+        ],
+      },
+      {
+        title: 'Autres usages',
+        icon: 'ph ph-gear',
+        intro: 'La force hydraulique pouvait être utilisée pour différentes activités selon les ressources et besoins locaux.',
+        groups: [
+          G(null, ['Huilerie.', 'Scierie.', 'Foulon.', 'Production artisanale.', 'Pompage.', 'Mécanismes agricoles.']),
+        ],
+      },
+      {
+        title: 'Relation aux canaux provençaux',
+        icon: 'ph ph-waves',
+        intro: "Dans les territoires aménagés pour l'irrigation, les réseaux de canaux ont également fourni des possibilités d'exploitation énergétique.",
+        groups: [
+          G(null, ["Canaux d'irrigation.", 'Dérivations artificielles.', 'Biefs.', 'Ouvrages de régulation.', "Gestion collective de l'eau.", 'Relation avec les terres agricoles.']),
+        ],
+      },
+      {
+        title: 'Matériaux et construction',
+        icon: 'ph ph-cube',
+        intro: "La construction privilégie la robustesse afin de supporter les équipements et l'environnement humide.",
+        groups: [
+          G(null, ['Pierre locale.', 'Moellons.', 'Mortier de chaux.', 'Bois pour les mécanismes.', 'Fer pour les pièces mécaniques.', 'Tuiles canal.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison entre bâtiment maçonné et infrastructure hydraulique permet d'identifier facilement le moulin à eau.",
+        groups: [
+          G(null, ["Implantation près de l'eau.", "Bief ou canal d'amenée.", 'Roue ou turbine.', 'Canal de fuite.', 'Bâtiment maçonné massif.', 'Équipements mécaniques.', 'Fonction productive.', 'Meules ou autres machines selon l\'usage.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
