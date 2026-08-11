@@ -11,6 +11,8 @@ export interface Filters {
 
 const EMPTY_FILTERS: Filters = { procede: [], usage: [], periode: [], categorie: [], region: [] }
 
+const ONBOARDING_SEEN_KEY = 'inventaire-bati:onboarding-vu'
+
 export interface IdentiteMatch {
   key: string
   value: string
@@ -32,6 +34,9 @@ interface AppContextValue extends AppState {
   setOpen: (open: Record<number, boolean>) => void
   toggleSection: (index: number) => void
   navigateTo: (path: string) => void
+  onboardingOpen: boolean
+  closeOnboarding: () => void
+  openOnboarding: () => void
 }
 
 const AppContext = createContext<AppContextValue | null>(null)
@@ -42,6 +47,15 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [filters, setFilters] = useState<Filters>(EMPTY_FILTERS)
   const [identiteMatch, setIdentiteMatch] = useState<IdentiteMatch | null>(null)
   const [open, setOpen] = useState<Record<number, boolean>>({ 0: true })
+  // Affiché automatiquement au tout premier lancement (rien enregistré pour
+  // cette clé), puis seulement à la demande depuis les Paramètres.
+  const [onboardingOpen, setOnboardingOpen] = useState(() => {
+    try {
+      return !localStorage.getItem(ONBOARDING_SEEN_KEY)
+    } catch {
+      return false
+    }
+  })
 
   const toggleFilter = useCallback((group: keyof Filters, val: string) => {
     setFilters((prev) => {
@@ -82,6 +96,18 @@ export function AppProvider({ children }: { children: ReactNode }) {
     [navigate],
   )
 
+  const closeOnboarding = useCallback(() => {
+    setOnboardingOpen(false)
+    try {
+      localStorage.setItem(ONBOARDING_SEEN_KEY, '1')
+    } catch {
+      // stockage indisponible (navigation privée, quota…) : tant pis, la
+      // présentation réapparaîtra simplement au prochain lancement.
+    }
+  }, [])
+
+  const openOnboarding = useCallback(() => setOnboardingOpen(true), [])
+
   return (
     <AppContext.Provider
       value={{
@@ -97,6 +123,9 @@ export function AppProvider({ children }: { children: ReactNode }) {
         setOpen,
         toggleSection,
         navigateTo,
+        onboardingOpen,
+        closeOnboarding,
+        openOnboarding,
       }}
     >
       {children}

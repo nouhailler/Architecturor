@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { AppProvider } from './context/AppContext'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import Onboarding from './components/Onboarding/Onboarding'
 import Accueil from './pages/Accueil/Accueil'
 import Catalogue from './pages/Catalogue/Catalogue'
 import FicheDetail from './pages/FicheDetail/FicheDetail'
@@ -25,6 +26,7 @@ export default function App() {
         </main>
         <Footer />
       </div>
+      <Onboarding />
     </AppProvider>
   )
 }
