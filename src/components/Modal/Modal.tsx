@@ -9,9 +9,10 @@ interface Props {
   title: string
   subtitle?: string
   children: React.ReactNode
+  size?: 'sm' | 'lg'
 }
 
-export default function Modal({ open, onClose, title, subtitle, children }: Props) {
+export default function Modal({ open, onClose, title, subtitle, children, size = 'sm' }: Props) {
   const closeBtnRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
@@ -35,7 +36,7 @@ export default function Modal({ open, onClose, title, subtitle, children }: Prop
   return createPortal(
     <div className={styles.overlay} onMouseDown={onClose}>
       <div
-        className={styles.dialog}
+        className={`${styles.dialog} ${size === 'lg' ? styles.dialogLg : ''}`}
         role="dialog"
         aria-modal="true"
         aria-label={title}
