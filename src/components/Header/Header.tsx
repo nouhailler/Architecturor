@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { Buildings, Gear, BookOpen, List, X } from '@phosphor-icons/react'
 import { useNavigate, useLocation } from 'react-router-dom'
+import HelpButton from '../Help/HelpButton'
 import styles from './Header.module.css'
 
 export default function Header() {
@@ -82,6 +83,7 @@ export default function Header() {
           <button className={isActive(location.pathname === '/parametres')} onClick={goParametres} aria-label="Paramètres">
             <Gear size={16} weight="regular" />
           </button>
+          <HelpButton className={styles.navLink} />
         </nav>
 
         {/* Déclencheur menu mobile */}
@@ -113,6 +115,9 @@ export default function Header() {
               <Gear size={16} weight="regular" style={{ marginRight: 7, verticalAlign: -3 }} />
               Paramètres
             </button>
+            <HelpButton className={styles.navLink}>
+              Aide de cet écran
+            </HelpButton>
           </nav>
         </>,
         document.body,

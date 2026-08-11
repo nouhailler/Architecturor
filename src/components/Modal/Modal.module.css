@@ -22,6 +22,11 @@
   animation: modalSlideIn 0.18s ease;
 }
 
+.dialogLg {
+  max-width: 680px;
+  max-height: min(85vh, 760px);
+}
+
 .header {
   display: flex;
   align-items: flex-start;
