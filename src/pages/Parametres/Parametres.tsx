@@ -1,10 +1,11 @@
 import { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { DownloadSimple, UploadSimple, CheckCircle, WarningCircle, Trash, ArrowRight, CaretDown, CaretUp } from '@phosphor-icons/react'
+import { DownloadSimple, UploadSimple, CheckCircle, WarningCircle, Trash, ArrowRight, CaretDown, CaretUp, Sparkle } from '@phosphor-icons/react'
 import { TYPOLOGIES, CATEGORIES, type Typologie } from '../../data/typologies'
 import { TYPOLOGIE_TEMPLATE, VALID_SECTION_ICONS, validateTypologieImport } from '../../data/typologieSchema'
 import { useCustomTypologies, addCustomTypologie, removeCustomTypologie } from '../../utils/customTypologies'
 import { findDuplicates, type DuplicateMatch, type IdentityMatch } from '../../utils/duplicates'
+import { useApp } from '../../context/AppContext'
 import styles from './Parametres.module.css'
 
 function download(filename: string, content: string) {
@@ -21,6 +22,7 @@ function download(filename: string, content: string) {
 
 export default function Parametres() {
   const navigate = useNavigate()
+  const { openOnboarding } = useApp()
   const customTypologies = useCustomTypologies()
   const fileInputRef = useRef<HTMLInputElement>(null)
   const [pasted, setPasted] = useState('')
@@ -85,6 +87,18 @@ export default function Parametres() {
     <div className={styles.wrap}>
       <h1 className={styles.h1}>Paramètres</h1>
       <p className={styles.sub}>Exportez l'ensemble des typologies ou importez-en une nouvelle au format JSON.</p>
+
+      {/* Présentation de l'application */}
+      <div className={styles.card}>
+        <div className={styles.cardLabel}>Découvrir l'application</div>
+        <p className={styles.text}>
+          Une présentation rapide s'affiche automatiquement au premier lancement. Vous pouvez la revoir à tout moment.
+        </p>
+        <button className="btn btn-secondary" onClick={openOnboarding}>
+          <Sparkle size={15} weight="regular" />
+          Revoir l'introduction
+        </button>
+      </div>
 
       {/* Export */}
       <div className={styles.card}>
