@@ -16283,6 +16283,226 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'moulineauprovencal',
+    name: 'Moulin à eau provençal',
+    region: 'Provence · Vaucluse · Bouches-du-Rhône · Alpes-de-Haute-Provence · Var',
+    periode: 'Moyen Âge–XIXe siècle',
+    procede: "Bâtiment maçonné en pierre ou moellons implanté au bord d'un cours d'eau ou d'un canal, associé à un système hydraulique comprenant généralement bief, canal d'amenée, roue ou turbine et canal de fuite.",
+    usage: "Mouture des céréales, production d'huile, sciage du bois ou autres activités artisanales utilisant l'énergie hydraulique",
+    categorie: 'industrielle',
+    gps: '43.95° N, 5.10° E',
+    altitude: '20–700 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux pans',
+    penteToit: '20–35°',
+    essenceBois: 'Chêne et pin',
+    typeFondation: "Fondations maçonnées renforcées au contact de l'eau",
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['L\'Isle-sur-la-Sorgue_Roue_à_aubes_01.jpg'],
+    periodeTags: ['Moyen Âge', 'XVIe', 'XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "Le moulin à eau provençal est un bâtiment de production utilisant l'énergie hydraulique des rivières, canaux ou dérivations aménagées. La construction associe une enveloppe maçonnée robuste à un dispositif hydraulique destiné à transformer l'énergie de l'eau en mouvement mécanique. Selon les territoires et les périodes, les moulins ont servi à moudre les céréales, produire de l'huile, scier le bois ou actionner différents équipements artisanaux.",
+    identite: [
+      ['Période', 'Moyen Âge–XIXe siècle'],
+      ['Région', 'Provence · Vaucluse · Bouches-du-Rhône · Alpes-de-Haute-Provence · Var'],
+      ['Usage', 'Mouture, huilerie, sciage et autres activités mécaniques'],
+      ['Système', 'Maçonnerie porteuse associée à une installation hydraulique'],
+      ['Matériau dominant', 'Pierre et moellons'],
+      ['Toiture', 'Toiture à deux pans généralement couverte de tuiles canal'],
+      ["Particularité", "Présence d'un dispositif hydraulique permettant de convertir l'énergie de l'eau en énergie mécanique"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Bois', 'Fer', 'Terre cuite'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "La couverture traditionnelle est généralement constituée de tuiles canal sur une toiture à deux pans. Les bâtiments peuvent présenter des extensions liées à l'évolution des équipements." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les murs épais en pierre ou en moellons protègent les espaces de production et résistent aux vibrations et aux contraintes liées aux équipements mécaniques.' },
+      { n: 3, el: 'Planchers', txt: "Les planchers sont dimensionnés pour supporter les machines, les meules, les arbres de transmission et les charges liées au stockage des matières premières." },
+      { n: 4, el: 'Structure porteuse', txt: 'La structure repose principalement sur une maçonnerie massive. Les parties soumises directement à l\'eau nécessitent des maçonneries particulièrement résistantes.' },
+      { n: 5, el: 'Système hydraulique', txt: "L'eau est amenée vers le bâtiment par un bief ou un canal. Elle actionne une roue hydraulique ou, dans les installations plus récentes, une turbine avant d'être évacuée par un canal de fuite." },
+      { n: 6, el: 'Fondations', txt: "Les fondations et les parties basses sont particulièrement robustes afin de résister à l'humidité, aux variations du niveau de l'eau et aux poussées exercées par les aménagements hydrauliques." },
+    ],
+    sections: [
+      {
+        title: 'Implantation hydraulique',
+        icon: 'ph ph-drop',
+        intro: "Le choix du site est directement déterminé par la disponibilité et la maîtrise d'une ressource hydraulique suffisante.",
+        groups: [
+          G(null, ["Implantation au bord d'un cours d'eau.", 'Implantation sur un canal dérivé.', "Bief d'alimentation.", "Canal d'amenée.", 'Canal de fuite.', 'Différence de niveau exploitée.']),
+        ],
+      },
+      {
+        title: 'Roue hydraulique',
+        icon: 'ph ph-arrows-clockwise',
+        intro: "La roue hydraulique transforme l'énergie du courant ou de la chute d'eau en mouvement mécanique.",
+        groups: [
+          G(null, ['Roue verticale ou horizontale selon les installations.', 'Aubes ou pales.', 'Arbre de transmission.', 'Transmission mécanique.', 'Régulation du débit.', 'Remplacement progressif par des turbines dans certaines installations.']),
+        ],
+      },
+      {
+        title: 'Mouture des céréales',
+        icon: 'ph ph-grains',
+        intro: 'Une grande partie des moulins provençaux était destinée à transformer les céréales en farine.',
+        groups: [
+          G(null, ['Meules en pierre.', 'Trémie.', 'Système de transmission.', 'Stockage des grains.', 'Stockage de la farine.', 'Chargement et déchargement des sacs.']),
+        ],
+      },
+      {
+        title: 'Architecture productive',
+        icon: 'ph ph-factory',
+        intro: 'Le bâtiment est conçu avant tout autour de son processus de production et de la circulation des matières.',
+        groups: [
+          G(null, ['Espaces de production.', 'Locaux de stockage.', 'Accès aux machines.', 'Ouvertures de chargement.', 'Planchers renforcés.', 'Organisation verticale possible.']),
+        ],
+      },
+      {
+        title: 'Autres usages',
+        icon: 'ph ph-gear',
+        intro: 'La force hydraulique pouvait être utilisée pour différentes activités selon les ressources et besoins locaux.',
+        groups: [
+          G(null, ['Huilerie.', 'Scierie.', 'Foulon.', 'Production artisanale.', 'Pompage.', 'Mécanismes agricoles.']),
+        ],
+      },
+      {
+        title: 'Relation aux canaux provençaux',
+        icon: 'ph ph-waves',
+        intro: "Dans les territoires aménagés pour l'irrigation, les réseaux de canaux ont également fourni des possibilités d'exploitation énergétique.",
+        groups: [
+          G(null, ["Canaux d'irrigation.", 'Dérivations artificielles.', 'Biefs.', 'Ouvrages de régulation.', "Gestion collective de l'eau.", 'Relation avec les terres agricoles.']),
+        ],
+      },
+      {
+        title: 'Matériaux et construction',
+        icon: 'ph ph-cube',
+        intro: "La construction privilégie la robustesse afin de supporter les équipements et l'environnement humide.",
+        groups: [
+          G(null, ['Pierre locale.', 'Moellons.', 'Mortier de chaux.', 'Bois pour les mécanismes.', 'Fer pour les pièces mécaniques.', 'Tuiles canal.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison entre bâtiment maçonné et infrastructure hydraulique permet d'identifier facilement le moulin à eau.",
+        groups: [
+          G(null, ["Implantation près de l'eau.", "Bief ou canal d'amenée.", 'Roue ou turbine.', 'Canal de fuite.', 'Bâtiment maçonné massif.', 'Équipements mécaniques.', 'Fonction productive.', 'Meules ou autres machines selon l\'usage.']),
+        ],
+      },
+    ],
+  },
+
+  {
+    id: 'sechoirfruitsprovencal',
+    name: 'Séchoir à fruits provençal',
+    region: 'Provence · Vaucluse · Bouches-du-Rhône · Alpes-de-Haute-Provence · Drôme provençale',
+    periode: 'XVIIIe–XXe siècle',
+    procede: "Construction légère ou maçonnée destinée à favoriser la circulation naturelle de l'air autour des récoltes, avec claustras, persiennes, ouvertures protégées ou façades ajourées.",
+    usage: 'Séchage et conservation des fruits, notamment figues, raisins, prunes, poires et autres productions fruitières',
+    categorie: 'agricole',
+    gps: '44.05° N, 5.10° E',
+    altitude: '50–700 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Deux pans',
+    penteToit: '20–35°',
+    essenceBois: 'Chêne et pin',
+    typeFondation: 'Fondations légères ou soubassement maçonné',
+    typeCharpente: 'Charpente légère traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le séchoir à fruits provençal est une petite architecture agricole spécialisée conçue pour déshydrater naturellement les récoltes grâce à la chaleur et à la circulation de l'air. Il peut prendre la forme d'un bâtiment indépendant ou d'une partie spécialisée d'une exploitation. Ses ouvertures largement ajourées, ses claustras et sa protection contre la pluie et le soleil direct constituent ses principaux caractères architecturaux.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Provence · Vaucluse · Bouches-du-Rhône · Alpes-de-Haute-Provence · Drôme provençale'],
+      ['Usage', 'Séchage et conservation des fruits'],
+      ['Système', 'Construction légère ou maçonnée largement ventilée'],
+      ['Matériau dominant', 'Bois, pierre, terre cuite et matériaux végétaux selon les variantes'],
+      ['Toiture', 'Toiture légère à deux pans, généralement couverte de tuiles canal'],
+      ['Particularité', 'Façades ajourées ou protégées permettant une ventilation permanente des récoltes'],
+    ],
+    materiaux: ['Bois', 'Pierre', 'Moellons', 'Chaux', 'Terre cuite', 'Roseau'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "La toiture protège les récoltes des précipitations tout en limitant l'exposition directe au soleil. Les tuiles canal constituent une couverture traditionnelle fréquente dans les constructions maçonnées." },
+      { n: 2, el: 'Façades ajourées', txt: "Les façades sont conçues pour favoriser la circulation de l'air. Elles peuvent utiliser des claustras, des lames de bois, des persiennes ou des ouvertures protégées." },
+      { n: 3, el: 'Planchers', txt: "Les niveaux de séchage utilisent généralement des claies ou des planchers ajourés permettant à l'air de circuler autour des fruits." },
+      { n: 4, el: 'Structure porteuse', txt: "La structure peut être constituée d'une ossature légère en bois ou de murs maçonnés selon l'importance et l'implantation du séchoir." },
+      { n: 5, el: 'Claies de séchage', txt: "Les fruits sont disposés sur des claies, plateaux ou supports permettant de maximiser la surface exposée à l'air tout en évitant le contact direct avec le sol." },
+      { n: 6, el: 'Fondations', txt: 'Les petits séchoirs peuvent reposer sur des fondations très simples. Les bâtiments maçonnés disposent généralement d\'un soubassement en pierre.' },
+    ],
+    sections: [
+      {
+        title: 'Principe du séchage',
+        icon: 'ph ph-sun',
+        intro: "Le bâtiment exploite la chaleur et surtout la circulation naturelle de l'air pour réduire progressivement l'humidité des fruits.",
+        groups: [
+          G(null, ['Séchage naturel.', 'Ventilation permanente.', 'Protection contre la pluie.', "Protection contre l'humidité du sol.", 'Exposition contrôlée aux rayonnements solaires.']),
+        ],
+      },
+      {
+        title: 'Façades ventilées',
+        icon: 'ph ph-wind',
+        intro: "L'ouverture des parois constitue l'élément architectural fondamental du séchoir.",
+        groups: [
+          G(null, ['Claustras.', 'Persiennes.', 'Lames de bois.', 'Ouvertures grillagées.', 'Baies protégées.', 'Parois partiellement ajourées.']),
+        ],
+      },
+      {
+        title: 'Organisation intérieure',
+        icon: 'ph ph-layout',
+        intro: 'L\'espace intérieur est organisé autour des surfaces nécessaires au séchage et à la manipulation des récoltes.',
+        groups: [
+          G(null, ['Claies horizontales.', 'Rayonnages.', 'Plateaux de séchage.', 'Circulation pour la manutention.', 'Possibilité de plusieurs niveaux.']),
+        ],
+      },
+      {
+        title: 'Productions méditerranéennes',
+        icon: 'ph ph-leaf',
+        intro: 'Le séchage permet de conserver une partie des productions fruitières au-delà de la période de récolte.',
+        groups: [
+          G(null, ['Figues.', 'Raisins.', 'Prunes.', 'Poires.', 'Abricots.', 'Amandes selon les installations.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'Le séchoir est généralement implanté à proximité des vergers, des bâtiments agricoles ou des lieux de transformation.',
+        groups: [
+          G(null, ["À proximité d'un verger.", 'Dans une exploitation agricole.', "En bordure d'une cour.", 'Bâtiment indépendant possible.', 'Orientation favorisant la ventilation.']),
+        ],
+      },
+      {
+        title: 'Protection des récoltes',
+        icon: 'ph ph-shield-check',
+        intro: "L'architecture doit assurer un compromis entre ventilation, protection contre les intempéries et protection des fruits.",
+        groups: [
+          G(null, ['Protection contre la pluie.', 'Protection contre les oiseaux.', 'Protection contre les insectes.', 'Éloignement du sol.', 'Ventilation continue.', "Contrôle de l'exposition solaire."]),
+        ],
+      },
+      {
+        title: 'Matériaux',
+        icon: 'ph ph-cube',
+        intro: 'Les matériaux sont choisis en fonction de la nécessité de maintenir une bonne ventilation tout en assurant la durabilité du bâtiment.',
+        groups: [
+          G(null, ['Bois.', 'Pierre locale.', 'Moellons.', 'Tuiles canal.', 'Claustras en terre cuite.', 'Roseau dans certaines constructions.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La ventilation permanente des espaces de séchage permet de distinguer le séchoir des autres dépendances agricoles.',
+        groups: [
+          G(null, ['Façades largement ajourées.', 'Claies ou plateaux de séchage.', 'Ventilation naturelle.', 'Protection contre la pluie.', 'Construction généralement de faible profondeur.', 'Relation directe avec les productions fruitières.', 'Bâtiment indépendant ou dépendance agricole.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
