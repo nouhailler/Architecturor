@@ -16621,6 +16621,124 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'grangeetablequercynoise',
+    name: 'Grange-étable quercynoise',
+    region: 'Occitanie · Quercy · Lot · Tarn-et-Garonne · nord du Lot-et-Garonne',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Murs porteurs en pierre calcaire ou moellons, charpente traditionnelle en bois et couverture à deux pans. Le bâtiment associe généralement une étable au niveau inférieur et un espace de stockage du foin ou des récoltes.',
+    usage: 'Élevage, hivernage du bétail, stockage du foin et des récoltes',
+    categorie: 'agricole',
+    gps: '44.65° N, 1.75° E',
+    altitude: '100–500 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans',
+    penteToit: '30–50°',
+    essenceBois: 'Chêne et châtaignier',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "La grange-étable quercynoise est un bâtiment agricole majeur des exploitations traditionnelles du Quercy. Elle associe sous un même volume une étable destinée au bétail et un espace supérieur consacré au stockage du foin. Construite principalement en pierre calcaire locale, elle présente des volumes importants, une grande porte charretière et une organisation adaptée aux exploitations d'élevage et de polyculture du Quercy.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Quercy · Lot · Tarn-et-Garonne · nord du Lot-et-Garonne'],
+      ['Usage', 'Élevage, hivernage du bétail et stockage du fourrage'],
+      ['Système', 'Maçonnerie porteuse en pierre avec charpente traditionnelle en bois'],
+      ['Matériau dominant', 'Pierre calcaire locale'],
+      ['Toiture', 'Toiture à deux pans, couverte selon les secteurs de tuiles canal, tuiles plates ou parfois de lauzes'],
+      ['Particularité', "Association d'une étable et d'un important volume de stockage du foin dans un bâtiment agricole massif"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Pierre de taille', 'Chaux', 'Bois', 'Terre cuite', 'Lauze'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: "La toiture à deux pans couvre un volume agricole important. Le matériau varie selon les secteurs du Quercy, avec une présence de tuiles canal, de tuiles plates et, dans certains territoires, de lauzes." },
+      { n: 2, el: 'Façade & murs extérieurs', txt: "Les façades sont généralement constituées de maçonnerie en pierre calcaire. Les murs épais assurent la stabilité du bâtiment et contribuent à la protection thermique de l'étable." },
+      { n: 3, el: 'Planchers', txt: "Le plancher du fenil repose traditionnellement sur des poutres et solives en bois et doit supporter des charges importantes liées au stockage du fourrage." },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs gouttereaux et pignons en maçonnerie portent la charpente en bois. La grande largeur du bâtiment nécessite une structure de toiture robuste.' },
+      { n: 5, el: 'Porte charretière', txt: 'Une large porte permet l\'entrée des charrettes, du matériel agricole et le chargement ou déchargement du fourrage. Elle constitue souvent un élément majeur de la façade.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement réalisées en pierre et adaptées aux sols calcaires ou argileux du Quercy.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation générale',
+        icon: 'ph ph-buildings',
+        intro: 'La grange-étable rassemble plusieurs fonctions agricoles dans un volume unique et robuste.',
+        groups: [
+          G(null, ['Étable.', 'Fenil.', 'Stockage du fourrage.', 'Stockage des récoltes.', 'Circulation du bétail.', 'Accès du matériel agricole.']),
+        ],
+      },
+      {
+        title: 'Étable',
+        icon: 'ph ph-cow',
+        intro: "Le niveau inférieur est principalement consacré aux animaux et aux activités directement liées à l'élevage.",
+        groups: [
+          G(null, ['Bovins.', 'Ovins.', 'Équidés.', 'Râteliers.', 'Mangeoires.', 'Aires de circulation.', 'Stockage de la litière.']),
+        ],
+      },
+      {
+        title: 'Fenil',
+        icon: 'ph ph-haystack',
+        intro: "Le volume supérieur permet de conserver le fourrage nécessaire à l'alimentation du troupeau.",
+        groups: [
+          G(null, ['Stockage du foin.', 'Grande hauteur sous charpente.', 'Plancher renforcé.', 'Chargement par ouverture haute.', "Distribution du fourrage vers l'étable."]),
+        ],
+      },
+      {
+        title: 'Porte charretière',
+        icon: 'ph ph-truck',
+        intro: 'La grande porte répond aux besoins de circulation des véhicules agricoles et du fourrage.',
+        groups: [
+          G(null, ['Grande largeur.', 'Grande hauteur.', 'Encadrement en pierre.', "Accès direct à l'espace agricole.", 'Manutention du foin.', 'Passage des charrettes.']),
+        ],
+      },
+      {
+        title: 'Pierre du Quercy',
+        icon: 'ph ph-cube',
+        intro: "La pierre calcaire locale constitue l'un des principaux marqueurs visuels de ces bâtiments agricoles.",
+        groups: [
+          G(null, ['Calcaire local.', 'Moellons.', 'Pierre de taille.', 'Encadrements en pierre.', 'Mortier de chaux.', 'Enduit ou pierre apparente.']),
+        ],
+      },
+      {
+        title: 'Implantation agricole',
+        icon: 'ph ph-map-pin',
+        intro: "La grange-étable peut être indépendante ou intégrée à un ensemble organisé autour d'une cour.",
+        groups: [
+          G(null, ['Cour de ferme.', 'À proximité de la maison.', 'Bâtiment indépendant.', 'Relation avec les pâtures.', 'Proximité des chemins agricoles.', 'Organisation en L ou en U possible.']),
+        ],
+      },
+      {
+        title: 'Charpente et toiture',
+        icon: 'ph ph-house',
+        intro: 'La couverture doit protéger un volume agricole important tout en résistant aux charges du climat local.',
+        groups: [
+          G(null, ['Charpente en bois.', 'Deux pans.', 'Forte hauteur intérieure.', 'Tuiles canal.', 'Tuiles plates selon le secteur.', 'Lauze dans certaines zones.']),
+        ],
+      },
+      {
+        title: "Fonctionnement de l'exploitation",
+        icon: 'ph ph-arrows-clockwise',
+        intro: 'La disposition du bâtiment facilite le stockage et la distribution du fourrage ainsi que la gestion du bétail.',
+        groups: [
+          G(null, ['Récolte du foin.', 'Stockage dans le fenil.', 'Hivernage du bétail.', 'Distribution du fourrage.', 'Gestion de la litière.', 'Évacuation des déjections.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'un volume agricole massif, de la pierre calcaire et de l'association étable-fenil permet de reconnaître cette typologie.",
+        groups: [
+          G(null, ['Grande grange en pierre.', 'Étable au niveau inférieur.', 'Fenil ou stockage supérieur.', 'Grande porte charretière.', 'Charpente en bois.', 'Pierre calcaire locale.', 'Toiture à deux pans.', 'Implantation dans une exploitation rurale.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
