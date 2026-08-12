@@ -16621,6 +16621,116 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'grangeetablequercynoise',
+    name: 'Grange-étable quercynoise',
+    region: 'Occitanie · Quercy · Lot · nord du Tarn-et-Garonne',
+    periode: 'XVIIe–XIXe siècle',
+    procede: 'Murs porteurs en pierre calcaire, généralement hourdés à la chaux, délimitant un vaste volume associant étable et fenil, avec une charpente traditionnelle en bois de grande portée.',
+    usage: 'Bâtiment agricole associant étable et stockage du fourrage',
+    categorie: 'agricole',
+    gps: '44.55° N, 1.55° E',
+    altitude: '100–450 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans',
+    penteToit: '30–45°',
+    essenceBois: 'Chêne et châtaignier',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois à grande portée',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "La grange-étable quercynoise est un vaste bâtiment agricole en pierre calcaire, caractéristique des fermes du Quercy, qui réunit sous un même volume l'étable et le stockage du fourrage. Sa grande hauteur intérieure, sa porte charretière imposante et son implantation autour de la cour de ferme la distinguent nettement des granges-étables de montagne des Alpes du Sud : elle appartient au système agricole quercynois, marqué par de grands volumes de pierre calcaire et une relation forte avec la maison rurale et les autres dépendances.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Quercy · Lot · nord du Tarn-et-Garonne'],
+      ['Usage', 'Bâtiment agricole associant étable et fenil'],
+      ['Système', 'Murs porteurs en pierre calcaire et charpente traditionnelle en bois de grande portée'],
+      ['Matériau dominant', 'Pierre calcaire'],
+      ['Toiture', 'Toiture à deux pans couverte de tuiles canal, de tuiles plates ou de lauzes selon le secteur'],
+      ['Particularité', 'Association de l\'étable et du fenil dans un vaste volume unique, ouvert par une porte charretière importante'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Bois', 'Terre cuite', 'Lauze'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture à deux pans couvre un volume de grande ampleur. Selon les secteurs du Quercy, elle peut être couverte de tuiles canal, de tuiles plates ou de lauzes.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les murs sont construits en pierre calcaire locale, souvent laissée apparente. La porte charretière, largement dimensionnée pour le passage des attelages et des chars de foin, marque fortement la façade principale.' },
+      { n: 3, el: 'Planchers', txt: "Le fenil occupe un niveau supérieur ou un volume haut, porté par une structure de poutres et de solives en bois dimensionnée pour recevoir une charge importante de fourrage." },
+      { n: 4, el: 'Structure porteuse', txt: "Les murs épais en pierre calcaire constituent le système porteur principal, dégageant une grande hauteur intérieure utile à l'étable comme au stockage du fourrage." },
+      { n: 5, el: 'Porte charretière', txt: "La porte charretière constitue l'accès principal du bâtiment. Son grand gabarit permet l'entrée des attelages et facilite le chargement et le déchargement du foin." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont réalisées en maçonnerie de pierre calcaire et supportent des murs porteurs de forte épaisseur adaptés au volume important du bâtiment.' },
+    ],
+    sections: [
+      {
+        title: 'Organisation agricole',
+        icon: 'ph ph-cow',
+        intro: "Le bâtiment associe dans un même volume les fonctions d'étable et de stockage du fourrage, au service de l'exploitation quercynoise.",
+        groups: [
+          G(null, ['Étable au rez-de-chaussée.', 'Fenil dans le volume supérieur.', 'Grande hauteur intérieure.', 'Circulation facilitée entre étable et fenil.', 'Bâtiment central de l\'exploitation.']),
+        ],
+      },
+      {
+        title: 'La porte charretière',
+        icon: 'ph ph-door',
+        intro: "La porte charretière constitue l'élément le plus caractéristique de la façade de la grange-étable quercynoise.",
+        groups: [
+          G(null, ['Large ouverture pour les attelages.', 'Accès direct au volume principal.', 'Facilite le chargement du foin.', 'Souvent surmontée d\'un linteau ou d\'un arc en pierre.', 'Position dominante sur la façade principale.']),
+        ],
+      },
+      {
+        title: 'Système constructif',
+        icon: 'ph ph-cube',
+        intro: 'La construction repose sur une maçonnerie massive en pierre calcaire et une charpente en bois de grande portée.',
+        groups: [
+          G(null, ['Murs porteurs en pierre calcaire.', 'Charpente traditionnelle en bois.', 'Grande portée de toiture.', 'Toiture à deux pans.', 'Fondations maçonnées en pierre.']),
+        ],
+      },
+      {
+        title: 'Stockage du fourrage',
+        icon: 'ph ph-haystack',
+        intro: 'Le fenil occupe une part importante du volume bâti et conditionne la hauteur générale de la construction.',
+        groups: [
+          G(null, ['Volume haut réservé au foin.', 'Structure de plancher en bois.', 'Chargement depuis la porte charretière ou une ouverture haute.', 'Déchargement vers l\'étable.', 'Grande capacité de stockage.']),
+        ],
+      },
+      {
+        title: "L'étable",
+        icon: 'ph ph-horse',
+        intro: "L'étable occupe le niveau bas du bâtiment et bénéficie de la grande hauteur intérieure caractéristique de cette grange.",
+        groups: [
+          G(null, ['Bovins.', 'Ovins.', 'Aires de circulation dégagées.', 'Râteliers ou mangeoires.', 'Accès facilité par la porte charretière.']),
+        ],
+      },
+      {
+        title: 'Implantation dans la ferme',
+        icon: 'ph ph-map-pin',
+        intro: 'La grange-étable quercynoise entretient une relation étroite avec la maison rurale et les autres dépendances agricoles.',
+        groups: [
+          G(null, ['Implantation autour d\'une cour de ferme.', 'Relation directe avec la maison rurale.', 'Proximité avec les autres dépendances.', 'Orientation adaptée à la circulation des attelages.', 'Bâtiment souvent visible depuis la cour.']),
+        ],
+      },
+      {
+        title: 'Matériaux quercynois',
+        icon: 'ph ph-mountains',
+        intro: 'La pierre calcaire locale domine très largement la construction, en cohérence avec le bâti rural du Quercy.',
+        groups: [
+          G(null, ['Pierre calcaire.', 'Moellons.', 'Chaux.', 'Bois de charpente.', 'Tuile canal, tuile plate ou lauze selon le secteur.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'un grand volume en pierre calcaire, d'une porte charretière importante et de l'association étable-fenil permet de distinguer cette grange-étable des granges de montagne provençales.",
+        groups: [
+          G(null, ['Vaste bâtiment en pierre calcaire.', 'Association étable et fenil.', 'Grande hauteur intérieure.', 'Porte charretière importante.', 'Toiture à deux pans.', 'Implantation autour d\'une cour agricole.', 'Système agricole du Quercy, distinct de l\'agropastoralisme alpin.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
