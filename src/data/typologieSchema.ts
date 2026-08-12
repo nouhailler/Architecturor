@@ -1,4 +1,5 @@
 import { CATEGORIES, type Typologie } from './typologies'
+import { SECTION_ICONS } from './icons'
 
 const VALID_CATEGORIES = new Set(CATEGORIES.map((c) => c.id))
 const ID_PATTERN = /^[a-z0-9]+$/
@@ -61,13 +62,10 @@ export const TYPOLOGIE_TEMPLATE: Typologie = {
 }
 
 /** Icônes reconnues pour `sections[].icon` — une icône non reconnue est
- * acceptée mais ne s'affichera simplement pas dans la fiche. */
-export const VALID_SECTION_ICONS = [
-  'ph ph-stack', 'ph ph-rows', 'ph ph-steps', 'ph ph-columns', 'ph ph-house-line',
-  'ph ph-buildings', 'ph ph-hammer', 'ph ph-shield-check', 'ph ph-tree', 'ph ph-bricks',
-  'ph ph-wall', 'ph ph-grid-nine', 'ph ph-crane-tower', 'ph ph-building', 'ph ph-mountains',
-  'ph ph-waves', 'ph ph-cross', 'ph ph-hand-heart',
-]
+ * acceptée mais ne s'affichera simplement pas dans la fiche. Dérivée de
+ * SECTION_ICONS pour rester automatiquement à jour avec les icônes
+ * réellement prises en charge par l'affichage. */
+export const VALID_SECTION_ICONS = Object.keys(SECTION_ICONS)
 
 export interface ValidationResult {
   ok: boolean
