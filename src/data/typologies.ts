@@ -16739,6 +16739,116 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonquercynoisepigeonniertour',
+    name: 'Maison quercynoise à pigeonnier-tour',
+    region: 'Occitanie · Quercy · Lot · Tarn-et-Garonne',
+    periode: 'XVIe–XIXe siècle',
+    procede: 'Ensemble composé d\'un corps de logis en maçonnerie de pierre calcaire et d\'une tour-pigeonnier intégrée, accolée ou implantée à proximité immédiate. La tour possède une organisation intérieure spécifique destinée à l\'élevage des pigeons.',
+    usage: 'Habitation rurale, exploitation agricole et élevage de pigeons',
+    categorie: 'rural',
+    gps: '44.45° N, 1.75° E',
+    altitude: '100–400 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans pour le logis, quatre pans ou pyramidale pour la tour',
+    penteToit: '30–50°',
+    essenceBois: 'Chêne et châtaignier',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Maison_avec_pigeonnier_accolé.JPG'],
+    periodeTags: ['XVIe', 'XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "La maison quercynoise à pigeonnier-tour associe un corps de logis rural à une tour destinée à l'élevage des pigeons. Cette composition est particulièrement représentative des domaines et exploitations rurales du Quercy. La tour constitue un volume vertical distinct du logis, avec des murs épais, des ouvertures limitées et un dispositif intérieur de nichoirs. Sa présence témoigne également du statut économique de certaines exploitations anciennes.",
+    identite: [
+      ['Période', 'XVIe–XIXe siècle'],
+      ['Région', 'Quercy · Lot · Tarn-et-Garonne'],
+      ['Usage', 'Habitation rurale, exploitation agricole et colombiculture'],
+      ['Système', 'Corps de logis maçonné associé à une tour-pigeonnier'],
+      ['Matériau dominant', 'Pierre calcaire et moellons'],
+      ['Toiture', 'Toiture du logis à deux pans, tour couverte d\'une toiture indépendante à quatre pans, pyramidale ou conique selon les variantes'],
+      ['Particularité', "Volume vertical du pigeonnier associé directement au bâtiment d'habitation ou intégré à l'ensemble rural"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Pierre de taille', 'Chaux', 'Bois', 'Terre cuite'],
+    annotations: [
+      { n: 1, el: 'Toiture du logis', txt: 'Le corps de logis possède généralement une toiture à deux pans couverte de tuiles. La couverture varie selon les secteurs et les périodes.' },
+      { n: 2, el: 'Toiture du pigeonnier', txt: 'La tour possède une couverture indépendante, souvent à quatre pans ou pyramidale. Certaines variantes présentent une toiture conique ou un dispositif de couverture plus élaboré.' },
+      { n: 3, el: 'Façade du pigeonnier', txt: "Les murs de la tour sont généralement épais et percés de petites ouvertures destinées à l'accès et à la circulation des pigeons." },
+      { n: 4, el: 'Nichoirs', txt: 'L\'intérieur de la tour comporte des niches ou boulins disposés sur les parois. Leur nombre et leur organisation dépendent de la taille du pigeonnier.' },
+      { n: 5, el: 'Corps de logis', txt: 'Le bâtiment principal accueille les espaces d\'habitation et peut être associé à des dépendances agricoles. La construction repose généralement sur une maçonnerie calcaire épaisse.' },
+      { n: 6, el: 'Fondations', txt: 'Les fondations de la tour sont particulièrement robustes en raison de sa hauteur et de ses murs épais. Elles sont généralement réalisées en pierre locale.' },
+    ],
+    sections: [
+      {
+        title: 'Composition architecturale',
+        icon: 'ph ph-buildings',
+        intro: "La typologie repose sur l'association clairement lisible entre le logis et le volume vertical du pigeonnier.",
+        groups: [
+          G(null, ['Corps de logis.', 'Tour-pigeonnier.', 'Dépendances agricoles possibles.', 'Cour ou espace agricole.', 'Composition compacte ou dissociée.']),
+        ],
+      },
+      {
+        title: 'Tour-pigeonnier',
+        icon: 'ph ph-crane-tower',
+        intro: 'La tour constitue le principal élément vertical de l\'ensemble et possède une organisation fonctionnelle spécifique.',
+        groups: [
+          G(null, ['Plan carré fréquent.', 'Plans circulaire ou polygonal possibles.', 'Murs épais.', 'Volume vertical.', 'Ouvertures limitées.', 'Niveaux intérieurs possibles.']),
+        ],
+      },
+      {
+        title: 'Colombiculture',
+        icon: 'ph ph-grid-nine',
+        intro: 'Le pigeonnier est conçu pour accueillir et protéger une population importante de pigeons.',
+        groups: [
+          G(null, ['Nichoirs ou boulins.', 'Accès contrôlé.', 'Ouvertures pour les oiseaux.', 'Protection contre les prédateurs.', 'Collecte de la fiente.', 'Production de pigeonneaux.']),
+        ],
+      },
+      {
+        title: 'Corps de logis',
+        icon: 'ph ph-house-line',
+        intro: "Le bâtiment principal conserve les caractéristiques de l'habitat rural traditionnel du Quercy.",
+        groups: [
+          G(null, ['Cuisine.', 'Salle commune.', 'Chambres.', 'Cellier.', 'Combles.', 'Espaces de stockage.']),
+        ],
+      },
+      {
+        title: "Relation avec l'exploitation",
+        icon: 'ph ph-building',
+        intro: "Le pigeonnier s'inscrit dans une organisation rurale plus large comprenant souvent des bâtiments agricoles.",
+        groups: [
+          G(null, ['Grange.', 'Étable.', 'Remise.', 'Fournil.', 'Cour agricole.', 'Jardins et vergers.']),
+        ],
+      },
+      {
+        title: 'Matériaux du Quercy',
+        icon: 'ph ph-bricks',
+        intro: 'La pierre calcaire locale donne au bâtiment son aspect massif et assure une forte continuité avec les autres architectures rurales du territoire.',
+        groups: [
+          G(null, ['Calcaire local.', 'Moellons.', 'Pierre de taille.', 'Encadrements en pierre.', 'Mortier de chaux.', 'Bois pour les planchers et la charpente.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-wall',
+        intro: "Le pigeonnier peut être directement intégré au logis ou constituer un volume indépendant dans la cour de l'exploitation.",
+        groups: [
+          G(null, ['Tour accolée au logis.', 'Tour intégrée au bâtiment.', 'Tour indépendante dans la cour.', 'Implantation à proximité des cultures.', 'Relation avec les autres dépendances.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-shield-check',
+        intro: "Le volume vertical du pigeonnier et ses dispositifs spécifiques permettent d'identifier cette composition architecturale.",
+        groups: [
+          G(null, ['Tour-pigeonnier.', 'Corps de logis rural.', 'Nichoirs intérieurs.', 'Petites ouvertures.', 'Murs épais.', 'Toiture indépendante.', 'Pierre calcaire locale.', "Ensemble associé à une exploitation rurale."]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
