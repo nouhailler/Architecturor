@@ -16503,6 +16503,124 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+
+  {
+    id: 'maisonquercynoisebolet',
+    name: 'Maison quercynoise à bolet',
+    region: 'Occitanie · Quercy · Lot · nord du Tarn-et-Garonne · Dordogne méridionale',
+    periode: 'XVIIe–XIXe siècle',
+    procede: "Murs porteurs en pierre calcaire, généralement hourdés à la chaux, avec étage d'habitation desservi par un escalier extérieur couvert formant bolet et toiture traditionnelle à forte présence visuelle.",
+    usage: 'Habitation rurale, parfois associée à des fonctions agricoles',
+    categorie: 'rural',
+    gps: '44.65° N, 1.70° E',
+    altitude: '100–500 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans',
+    penteToit: '30–50°',
+    essenceBois: 'Chêne et châtaignier',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: ['Maison_du_Quercy_à_bolet.jpg'],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "La maison quercynoise à bolet est une forme d'habitat rural caractéristique du Quercy, reconnaissable à son escalier extérieur couvert donnant accès à l'étage d'habitation. Le bolet constitue une véritable extension fonctionnelle de la maison : il protège l'accès aux pièces de vie, sert d'espace de transition entre extérieur et intérieur et peut également fonctionner comme une petite galerie. La construction utilise principalement la pierre calcaire locale et des matériaux adaptés aux fortes variations climatiques du Sud-Ouest.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', "Quercy · Lot · nord du Tarn-et-Garonne · Dordogne méridionale"],
+      ['Usage', 'Habitation rurale'],
+      ['Système', "Maçonnerie porteuse en pierre avec accès extérieur couvert à l'étage"],
+      ['Matériau dominant', 'Pierre calcaire'],
+      ['Toiture', 'Toiture à forte pente couverte de tuiles canal, tuiles plates ou lauzes selon le secteur'],
+      ['Particularité', "Bolet formant escalier extérieur couvert et accès principal à l'étage d'habitation"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Bois', 'Terre cuite', 'Lauze'],
+    annotations: [
+      { n: 1, el: 'Toiture', txt: 'La toiture à deux pans constitue un élément majeur de la silhouette de la maison. Selon les secteurs du Quercy et les périodes, elle peut être couverte de tuiles canal, de tuiles plates ou de lauzes.' },
+      { n: 2, el: 'Façade & murs extérieurs', txt: 'Les murs sont généralement construits en pierre calcaire locale. La maçonnerie peut rester apparente ou recevoir un enduit à la chaux.' },
+      { n: 3, el: 'Planchers', txt: "L'étage d'habitation repose traditionnellement sur un plancher en bois. Le rez-de-chaussée peut être consacré aux fonctions agricoles, aux réserves ou aux espaces de service." },
+      { n: 4, el: 'Structure porteuse', txt: 'Les murs épais en pierre constituent le système porteur principal. La structure de la toiture et les planchers utilisent traditionnellement le bois.' },
+      { n: 5, el: 'Bolet', txt: "Le bolet est un escalier extérieur couvert donnant accès à l'étage. Il peut prendre la forme d'un escalier droit aboutissant à une petite galerie ou à un espace de distribution protégé." },
+      { n: 6, el: 'Fondations', txt: 'Les fondations sont généralement constituées de maçonnerie en pierre et peuvent être directement adaptées au terrain naturel ou à une implantation en pente.' },
+    ],
+    sections: [
+      {
+        title: 'Le bolet',
+        icon: 'ph ph-stairs',
+        intro: 'Le bolet constitue l\'élément architectural le plus caractéristique de cette forme de maison quercynoise.',
+        groups: [
+          G(null, ["Escalier extérieur.", "Accès direct à l'étage.", 'Protection contre les intempéries.', 'Petite galerie ou palier.', 'Espace de transition entre extérieur et intérieur.']),
+        ],
+      },
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-vertical',
+        intro: 'La distribution sur deux niveaux permet de séparer les fonctions domestiques des fonctions agricoles ou de stockage.',
+        groups: [
+          G(null, ['Rez-de-chaussée agricole ou de service.', "Étage consacré à l'habitation.", 'Accès extérieur à l\'étage.', 'Combles sous toiture.', 'Séparation des fonctions.']),
+        ],
+      },
+      {
+        title: 'Rez-de-chaussée',
+        icon: 'ph ph-warehouse',
+        intro: "Le niveau inférieur peut accueillir différentes fonctions liées à l'exploitation rurale.",
+        groups: [
+          G(null, ['Étable.', 'Cellier.', 'Remise.', 'Cave.', 'Stockage des récoltes.', 'Atelier.']),
+        ],
+      },
+      {
+        title: "Étage d'habitation",
+        icon: 'ph ph-house-line',
+        intro: 'L\'étage est généralement mieux protégé et accueille les espaces de vie de la famille.',
+        groups: [
+          G(null, ['Cuisine.', 'Salle commune.', 'Chambres.', 'Espaces de rangement.', 'Cheminée.', 'Accès depuis le bolet.']),
+        ],
+      },
+      {
+        title: 'Architecture du bolet',
+        icon: 'ph ph-house',
+        intro: 'Le dispositif peut être réalisé avec différents matériaux mais conserve toujours une fonction de circulation extérieure protégée.',
+        groups: [
+          G(null, ['Escalier maçonné.', 'Escalier en pierre.', 'Escalier en bois selon les variantes.', 'Dallage ou pavage du palier.', 'Mur de protection.', 'Auvent ou couverture.']),
+        ],
+      },
+      {
+        title: 'Pierre du Quercy',
+        icon: 'ph ph-cube',
+        intro: 'La pierre calcaire locale donne à ces maisons une apparence massive et contribue à leur intégration dans le paysage rural.',
+        groups: [
+          G(null, ['Calcaire local.', 'Moellons.', 'Pierre de taille pour certaines parties.', 'Mortier de chaux.', 'Enduit traditionnel.', 'Encadrements en pierre.']),
+        ],
+      },
+      {
+        title: 'Adaptation au climat',
+        icon: 'ph ph-cloud-sun',
+        intro: 'La maison combine masse thermique, protection des ouvertures et espace extérieur couvert pour répondre aux conditions climatiques du Sud-Ouest.',
+        groups: [
+          G(null, ['Murs épais.', 'Ouvertures relativement limitées.', 'Protection solaire.', 'Bolet ombragé.', 'Ventilation naturelle.', 'Toiture protectrice.']),
+        ],
+      },
+      {
+        title: 'Implantation rurale',
+        icon: 'ph ph-map-pin',
+        intro: "La maison peut être isolée dans une exploitation ou associée à d'autres bâtiments agricoles.",
+        groups: [
+          G(null, ['Maison isolée.', 'Hameau.', 'Cour agricole.', 'Implantation en pente.', 'Relation avec grange et dépendances.', 'Orientation adaptée au terrain.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'une maison rurale en pierre et d'un accès extérieur couvert à l'étage permet de reconnaître cette typologie.",
+        groups: [
+          G(null, ['Bolet extérieur.', "Escalier donnant à l'étage.", 'Maison en pierre calcaire.', 'Rez-de-chaussée agricole ou utilitaire.', "Étage d'habitation.", 'Toiture à deux pans.', 'Implantation rurale.', 'Galerie ou palier couvert.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
