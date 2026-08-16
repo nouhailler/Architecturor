@@ -17891,6 +17891,188 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisonelementairequercynoise',
+    name: 'Maison élémentaire quercynoise',
+    region: 'Occitanie · Quercy · Lot',
+    periode: 'XVIIIe–XIXe siècle',
+    procede:
+      "Petite habitation rurale de plan généralement rectangulaire, construite en moellons de calcaire liés au mortier de chaux. Son organisation intérieure est extrêmement simple et peut se limiter à une unique pièce de vie regroupant les principales fonctions domestiques.",
+    usage: 'Habitation paysanne, logement rural familial',
+    categorie: 'rural',
+    gps: '44.55° N, 1.75° E',
+    altitude: '150–450 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans',
+    penteToit: '30–45°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe'],
+    resume:
+      "La maison élémentaire quercynoise constitue une forme particulièrement simple de l'habitation paysanne traditionnelle du Quercy. De petit volume et généralement construite de plain-pied, elle rassemble les fonctions essentielles de la vie domestique dans un espace réduit. L'exemple conservé à Reyrevignes présente une unique pièce de vie avec cheminée, évier en pierre et sol en terre battue. Sa simplicité constructive et son faible niveau de transformation en font un témoin précieux de l'habitat rural modeste du Lot.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Quercy · Lot'],
+      ['Usage', 'Habitation paysanne'],
+      ['Organisation', 'Petit logement généralement de plain-pied à distribution très simple'],
+      ['Matériau dominant', 'Moellons de calcaire et mortier de chaux'],
+      ['Toiture', 'Deux pans, avec variantes locales de couverture'],
+      ['Particularité', "Une pièce de vie pouvant regrouper l'ensemble des fonctions domestiques essentielles"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Chaux', 'Sable', 'Bois', 'Lauze calcaire', 'Terre cuite'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Volume principal',
+        txt: 'La maison présente généralement un petit volume rectangulaire compact, adapté à une habitation familiale de taille réduite.',
+      },
+      {
+        n: 2,
+        el: 'Pièce de vie',
+        txt: "L'espace intérieur peut se limiter à une seule pièce regroupant les fonctions essentielles du logement.",
+      },
+      {
+        n: 3,
+        el: 'Cheminée',
+        txt: 'La cheminée constitue le principal équipement domestique : elle assure la cuisson, le chauffage et participe à l\'organisation de la pièce de vie.',
+      },
+      {
+        n: 4,
+        el: 'Évier en pierre',
+        txt: "Un évier monolithique ou maçonné en pierre peut être intégré à la pièce principale.",
+      },
+      {
+        n: 5,
+        el: 'Ouvertures',
+        txt: "Les ouvertures sont peu nombreuses et de dimensions modestes, répondant aux besoins essentiels d'éclairage et d'accès.",
+      },
+      {
+        n: 6,
+        el: 'Sol',
+        txt: 'Les maisons les plus anciennes ou les moins transformées peuvent conserver un sol en terre battue.',
+      },
+      {
+        n: 7,
+        el: 'Murs',
+        txt: 'Les murs sont généralement constitués de moellons de calcaire recouverts d\'un enduit à la chaux.',
+      },
+      {
+        n: 8,
+        el: 'Couverture',
+        txt: 'La toiture traditionnelle repose sur une charpente en bois et peut recevoir des tuiles ou des éléments de lauze selon le secteur.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe architectural',
+        icon: 'ph ph-house-line',
+        intro: 'La maison élémentaire repose sur une organisation extrêmement compacte et sur la concentration des fonctions domestiques dans un espace réduit.',
+        groups: [
+          G(null, ['Petit volume rectangulaire.', 'Construction généralement de plain-pied.', 'Distribution intérieure minimale.', 'Une pièce principale.', 'Fonctions domestiques regroupées.']),
+        ],
+      },
+      {
+        title: 'Pièce unique',
+        icon: 'ph ph-square',
+        intro: 'La pièce principale constitue le cœur de la maison et peut concentrer l\'ensemble de la vie familiale.',
+        groups: [
+          G(null, ['Vie quotidienne.', 'Préparation des repas.', 'Repas familiaux.', 'Chauffage.', 'Repos.', 'Stockage domestique.']),
+        ],
+      },
+      {
+        title: 'Cheminée et foyer',
+        icon: 'ph ph-fire',
+        intro: "Le foyer occupe une place centrale dans l'organisation de la maison traditionnelle.",
+        groups: [
+          G(null, ['Cuisson.', 'Chauffage.', 'Éclairage complémentaire.', 'Cheminée maçonnée.', 'Âtre.', 'Hotte éventuelle.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-cube',
+        intro: 'La construction utilise les ressources minérales disponibles localement.',
+        groups: [
+          G(null, ['Moellons de calcaire.', 'Pierre locale.', 'Mortier de chaux.', 'Enduit à la chaux.', 'Encadrements en pierre.', 'Chaînages d\'angle.']),
+        ],
+      },
+      {
+        title: 'Façades',
+        icon: 'ph ph-wall',
+        intro: "La façade est généralement sobre et peu ouverte, conséquence de la petite taille du logement et des contraintes de l'habitat rural ancien.",
+        groups: [
+          G(null, ['Petite fenêtre.', "Porte d'entrée.", 'Ouvertures limitées.', 'Enduit blanc à la chaux.', 'Encadrements en pierre.', 'Façade fonctionnelle.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house',
+        intro: "La couverture protège un volume simple dont la toiture constitue l'un des principaux éléments visibles.",
+        groups: [
+          G(null, ['Deux pans.', 'Charpente en bois.', 'Tuiles plates selon le secteur.', 'Tuiles canal selon les variantes locales.', 'Lauzes calcaires sur certains éléments.', 'Rangs de lauzes sur pignons ou rives.']),
+        ],
+      },
+      {
+        title: 'Habitat paysan',
+        icon: 'ph ph-users',
+        intro: "La maison élémentaire correspond à un habitat rural modeste dont les dimensions répondent aux besoins essentiels d'un petit ménage.",
+        groups: [
+          G(null, ['Petite exploitation.', 'Famille rurale.', 'Autonomie domestique.', 'Faible emprise au sol.', 'Construction économique.', 'Utilisation de matériaux locaux.']),
+        ],
+      },
+      {
+        title: 'Relation avec les dépendances',
+        icon: 'ph ph-warehouse',
+        intro: 'Les fonctions agricoles plus importantes peuvent être assurées par des bâtiments distincts plutôt que par le logement lui-même.',
+        groups: [
+          G(null, ['Grange indépendante.', 'Étable.', 'Remise.', 'Four à pain.', 'Pigeonnier.', 'Jardin potager.']),
+        ],
+      },
+      {
+        title: 'Exemple de Reyrevignes',
+        icon: 'ph ph-map-pin',
+        intro: 'Un exemple documenté à Reyrevignes permet de comprendre concrètement cette forme d\'habitat.',
+        groups: [
+          G(null, ['Petit bâtiment rectangulaire.', 'Moellons de calcaire.', 'Enduit de chaux et sable.', 'Une seule pièce de vie.', 'Petite fenêtre.', 'Évier en pierre.', 'Cheminée.', 'Sol en terre battue.']),
+        ],
+      },
+      {
+        title: 'Variantes',
+        icon: 'ph ph-git-branch',
+        intro: "La simplicité du modèle n'empêche pas certaines adaptations locales ou l'ajout de petits éléments annexes.",
+        groups: [
+          G(null, ['Comble accessible.', 'Petit pigeonnier latéral.', 'Extension secondaire.', 'Petite dépendance accolée.', 'Variations de couverture.', 'Variations d\'enduit.']),
+        ],
+      },
+      {
+        title: 'Distinction avec les autres maisons quercynoises',
+        icon: 'ph ph-info',
+        intro: "La maison élémentaire doit être distinguée des formes plus complexes de l'habitat rural du Quercy.",
+        groups: [
+          G(null, [
+            'Maison élémentaire : petit logement à organisation minimale.',
+            'Maison en hauteur : fonctions organisées verticalement.',
+            'Maison à bolet : habitation accessible par un perron ou bolet extérieur.',
+            'Maison-bloc : logement et fonctions agricoles regroupés dans un même bâtiment.',
+            "Logis double : plusieurs unités d'habitation réunies dans un même ensemble.",
+          ]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La petite taille, la simplicité du plan et la concentration des fonctions domestiques permettent d'identifier cette forme d'habitat.",
+        groups: [
+          G(null, ['Petit volume rectangulaire.', 'Plain-pied.', 'Une pièce de vie.', 'Cheminée.', 'Évier en pierre.', 'Ouvertures réduites.', 'Maçonnerie en calcaire.', 'Toiture simple à deux pans.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
