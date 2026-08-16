@@ -17571,6 +17571,162 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisonblocquercynoise',
+    name: 'Maison-bloc quercynoise',
+    region: 'Occitanie · Quercy · Lot',
+    periode: 'Fin XVIIIe–début XXe siècle',
+    procede:
+      "Ferme regroupant dans un même bâtiment, généralement construit en une seule phase, les fonctions d'habitation et de grange-étable. La construction repose sur une maçonnerie porteuse en pierre locale et une charpente traditionnelle en bois.",
+    usage: 'Habitation rurale, élevage, stockage agricole et exploitation familiale',
+    categorie: 'rural',
+    gps: '44.80° N, 1.60° E',
+    altitude: '150–450 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans',
+    penteToit: '30–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La maison-bloc quercynoise est une forme de ferme rurale dans laquelle le logement et les fonctions agricoles, notamment la grange-étable, sont regroupés dans un même bâtiment construit au cours d'une même phase. Dans le Lot, ce modèle apparaît principalement entre la fin du XVIIIe siècle et le début du XXe siècle et connaît un développement important au XIXe siècle avec la multiplication des petites exploitations agricoles. Contrairement à une interprétation ancienne qui en ferait une forme archaïque, cette proximité entre habitat et élevage correspond à une organisation rationnelle de petites exploitations.",
+    identite: [
+      ['Période', 'Fin XVIIIe–début XXe siècle'],
+      ['Région', 'Quercy · Lot'],
+      ['Usage', 'Habitation et exploitation agricole'],
+      ['Organisation', 'Habitation et grange-étable réunies dans un même bâtiment'],
+      ['Matériau dominant', 'Pierre calcaire locale et moellons'],
+      ['Toiture', 'Généralement à deux pans'],
+      ['Particularité', 'Regroupement des fonctions domestiques et agricoles dans un volume bâti unique'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Pierre de taille', 'Chaux', 'Bois', 'Terre cuite'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Logis',
+        txt: "Une partie du bâtiment est réservée à l'habitation familiale, avec les pièces de vie et éventuellement les chambres regroupées dans un secteur distinct.",
+      },
+      {
+        n: 2,
+        el: 'Grange-étable',
+        txt: "L'autre partie accueille les animaux, le fourrage et les fonctions de stockage agricole. La proximité immédiate avec le logement caractérise la maison-bloc.",
+      },
+      {
+        n: 3,
+        el: 'Séparation fonctionnelle',
+        txt: 'Les espaces domestiques et agricoles sont regroupés dans le même volume mais peuvent être séparés par des murs, des cloisons ou des différences de niveaux.',
+      },
+      {
+        n: 4,
+        el: 'Grande ouverture agricole',
+        txt: "Les portes agricoles sont dimensionnées pour permettre l'entrée du fourrage, du matériel et des animaux.",
+      },
+      {
+        n: 5,
+        el: 'Charpente',
+        txt: 'Une charpente traditionnelle en bois porte généralement une toiture à deux pans couvrant l\'ensemble du bâtiment.',
+      },
+      {
+        n: 6,
+        el: 'Fondations',
+        txt: 'Les murs porteurs reposent sur des fondations maçonnées adaptées au poids de la construction et aux contraintes du terrain.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe de la maison-bloc',
+        icon: 'ph ph-buildings',
+        intro: 'La caractéristique fondamentale est le regroupement de plusieurs fonctions de l\'exploitation dans un bâtiment unique.',
+        groups: [
+          G(null, ['Habitation.', 'Grange.', 'Étable.', 'Stockage du fourrage.', 'Activités agricoles.', 'Construction en une même phase.']),
+        ],
+      },
+      {
+        title: 'Organisation du logis',
+        icon: 'ph ph-house-line',
+        intro: 'Le logement familial occupe une partie identifiable du bâtiment.',
+        groups: [
+          G(null, ['Cuisine.', 'Salle commune.', 'Chambres.', 'Cellier.', 'Rangements.', 'Accès indépendant ou partagé.']),
+        ],
+      },
+      {
+        title: 'Grange et étable',
+        icon: 'ph ph-tractor',
+        intro: 'Les espaces agricoles sont directement associés au logement.',
+        groups: [
+          G(null, ['Étable.', 'Grange.', 'Fenil.', 'Stockage du foin.', 'Remise.', 'Aire de travail.']),
+        ],
+      },
+      {
+        title: 'Organisation longitudinale',
+        icon: 'ph ph-arrows-horizontal',
+        intro: 'La juxtaposition des fonctions peut produire un bâtiment allongé où les espaces domestiques et agricoles sont disposés côte à côte.',
+        groups: [
+          G(null, ['Logis d\'un côté.', 'Grange-étable de l\'autre.', 'Entrées différenciées.', 'Murs de séparation.', 'Circulations agricoles.', 'Volume unitaire.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-cube',
+        intro: 'La construction utilise principalement les matériaux disponibles localement.',
+        groups: [
+          G(null, ['Calcaire local.', 'Moellons.', 'Pierre de taille.', 'Mortier de chaux.', 'Encadrements en pierre.', 'Chaînages d\'angle.']),
+        ],
+      },
+      {
+        title: 'Toiture et charpente',
+        icon: 'ph ph-house',
+        intro: 'La couverture unitaire participe à la perception du bâtiment comme un seul volume architectural.',
+        groups: [
+          G(null, ['Toiture à deux pans.', 'Charpente en bois.', 'Pannes.', 'Chevrons.', 'Couverture en tuile.', 'Débord de toiture.']),
+        ],
+      },
+      {
+        title: 'Contexte agricole',
+        icon: 'ph ph-plant',
+        intro: 'La maison-bloc répond particulièrement bien aux besoins des petites exploitations rurales.',
+        groups: [
+          G(null, ['Petite exploitation.', 'Élevage familial.', 'Cultures diversifiées.', 'Stockage des récoltes.', 'Élevage à proximité du logement.', 'Autonomie de l\'exploitation.']),
+        ],
+      },
+      {
+        title: 'Évolution historique',
+        icon: 'ph ph-clock',
+        intro: 'Dans le Lot, le développement de la maison-bloc accompagne notamment la multiplication des petites exploitations au XIXe siècle.',
+        groups: [
+          G(null, ['Fin XVIIIe siècle.', 'Développement au XIXe siècle.', 'Maintien au début du XXe siècle.', 'Évolution des exploitations.', 'Transformation progressive des bâtiments.', 'Réaffectation contemporaine.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la maison en hauteur',
+        icon: 'ph ph-info',
+        intro: "La maison-bloc ne doit pas être confondue avec la maison en hauteur : le principe d'organisation des fonctions est différent.",
+        groups: [
+          G(null, [
+            'Maison en hauteur : superposition verticale des fonctions.',
+            'Maison-bloc : regroupement des fonctions dans un même bâtiment.',
+            'La maison-bloc peut organiser les fonctions horizontalement.',
+            "L'habitation et l'exploitation partagent le même volume.",
+            'Les deux typologies peuvent cependant présenter des niveaux superposés.',
+          ]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La présence simultanée du logement et des fonctions agricoles dans un bâtiment unique constitue le principal critère d\'identification.',
+        groups: [
+          G(null, ['Bâtiment unique.', 'Logement intégré.', 'Grange-étable intégrée.', 'Volume généralement longitudinal.', 'Grande ouverture agricole.', 'Maçonnerie en pierre.', 'Toiture commune.', 'Relation directe entre habitat et exploitation.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
