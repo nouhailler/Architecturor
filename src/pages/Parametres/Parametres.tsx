@@ -1,11 +1,12 @@
 import { useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { DownloadSimple, UploadSimple, CheckCircle, WarningCircle, Trash, ArrowRight, CaretDown, CaretUp, Sparkle } from '@phosphor-icons/react'
+import { DownloadSimple, UploadSimple, CheckCircle, WarningCircle, Trash, ArrowRight, CaretDown, CaretUp, Sparkle, ArrowClockwise, CircleNotch, Info } from '@phosphor-icons/react'
 import { TYPOLOGIES, CATEGORIES, type Typologie } from '../../data/typologies'
 import { TYPOLOGIE_TEMPLATE, VALID_SECTION_ICONS, validateTypologieImport } from '../../data/typologieSchema'
 import { useCustomTypologies, addCustomTypologie, removeCustomTypologie } from '../../utils/customTypologies'
 import { findDuplicates, type DuplicateMatch, type IdentityMatch } from '../../utils/duplicates'
 import { useApp } from '../../context/AppContext'
+import { useUpdate } from '../../lib/useUpdate'
 import styles from './Parametres.module.css'
 
 function download(filename: string, content: string) {
@@ -23,6 +24,7 @@ function download(filename: string, content: string) {
 export default function Parametres() {
   const navigate = useNavigate()
   const { openOnboarding } = useApp()
+  const update = useUpdate()
   const customTypologies = useCustomTypologies()
   const fileInputRef = useRef<HTMLInputElement>(null)
   const [pasted, setPasted] = useState('')
@@ -98,6 +100,52 @@ export default function Parametres() {
           <Sparkle size={15} weight="regular" />
           Revoir l'introduction
         </button>
+      </div>
+
+      {/* Mise à jour de l'application. Une app installée sur un téléphone est
+          rouverte plutôt que rechargée : sans ce bloc, rien ne dit quelle
+          version tourne ni comment passer à la suivante. */}
+      <div className={styles.card}>
+        <div className={styles.cardLabel}>Mise à jour de l'application</div>
+        <p className={styles.text}>
+          Une nouvelle version se télécharge en arrière-plan, mais ne s'applique qu'au redémarrage
+          de l'application. Ce bouton la cherche et l'installe tout de suite.
+        </p>
+        <div className={styles.versionLine}>
+          <Info size={14} weight="regular" />
+          <span>
+            Version installée : <strong>{update.buildId}</strong> · {update.buildDate}
+          </span>
+        </div>
+        <button
+          className={update.ready ? 'btn btn-primary' : 'btn btn-secondary'}
+          onClick={update.ready ? update.apply : update.check}
+          disabled={update.checking}
+        >
+          {update.checking ? (
+            <CircleNotch size={15} weight="regular" className={styles.spin} />
+          ) : (
+            <ArrowClockwise size={15} weight="regular" />
+          )}
+          {update.checking
+            ? 'Recherche…'
+            : update.ready
+              ? 'Installer la nouvelle version'
+              : 'Vérifier les mises à jour'}
+        </button>
+        {update.status && (
+          <p className={`${styles.updateStatus} ${update.ready ? styles.updateStatusReady : ''}`}>
+            {update.status}
+          </p>
+        )}
+        <p className={styles.note}>
+          Rien ne bouge ?{' '}
+          <button className={styles.linkButton} onClick={update.reset}>
+            Forcer le rechargement complet
+          </button>{' '}
+          — vide le cache de l'application et recharge tout depuis le serveur. Vos typologies
+          importées ne sont pas touchées : elles vivent dans le stockage local du navigateur.
+        </p>
       </div>
 
       {/* Export */}

@@ -74,6 +74,8 @@ Remarques :
 - ✅ Thème sombre / design tokens
 - ✅ Données en TypeScript (`src/data/typologies.ts`) comme source de vérité
 - ✅ **Installable en PWA** 📲 — icône dédiée sur l'écran d'accueil (mobile & desktop), lancement en mode autonome (`standalone`), sans barre d'adresse
+- ✅ **Fonctionne hors-ligne** et **se met à jour toute seule** — l'app détecte les nouvelles
+  versions et propose de les appliquer d'un clic
 
 ## 🚀 Installation
 
@@ -121,7 +123,7 @@ L'application est **installable** comme une app native, sur mobile comme sur des
 
 | Fichier | Rôle |
 |---|---|
-| `public/manifest.webmanifest` | Manifeste PWA — nom, couleurs, icônes, mode d'affichage |
+| `vite.config.ts` (`VitePWA`) | Manifeste PWA (généré au build) et service worker — nom, couleurs, icônes, mode d'affichage, précache |
 | `public/pwa-192.png`, `public/pwa-512.png` | Icônes d'installation (Android, desktop) |
 | `public/pwa-maskable-512.png` | Variante *maskable* (fond plein bord à bord, respecte la zone de sécurité pour le découpage adaptatif Android) |
 | `public/apple-touch-icon.png` | Icône 180×180 pour « Ajouter à l'écran d'accueil » sur iOS/iPadOS |
@@ -144,7 +146,32 @@ cairosvg.svg2png(url='public/icon-maskable.svg', write_to='public/apple-touch-ic
 "
 ```
 
-> ℹ️ Il n'y a pas de service worker : la PWA est installable et fonctionne comme un onglet dédié, mais **ne fonctionne pas hors-ligne**. C'est un choix délibéré tant que l'app ne charge que des ressources statiques et des images distantes (Wikimedia Commons) — voir [CONTEXT.md](CONTEXT.md) pour les limitations connues.
+### 🔄 Mise à jour automatique
+
+L'application embarque un **service worker** ([`vite-plugin-pwa`](https://vite-pwa-org.netlify.app),
+mode `prompt`) : elle fonctionne **hors-ligne** et **détecte elle-même les nouvelles versions**.
+
+- À chaque retour au premier plan, l'app interroge le serveur — c'est le moment utile : une app
+  installée est *rouverte*, jamais rechargée, et le code déjà en mémoire continuerait sinon de
+  tourner indéfiniment.
+- Quand un nouveau build est téléchargé et prêt, une **bannière « Nouvelle version disponible »**
+  propose de l'appliquer. Le rechargement n'a **jamais** lieu sans clic (d'où le mode `prompt`
+  plutôt qu'`autoUpdate`).
+- **Paramètres → Mise à jour de l'application** affiche la version installée (hash du commit +
+  date de build), un bouton *Vérifier les mises à jour* et, en dernier recours, *Forcer le
+  rechargement complet* (vide les caches du service worker ; les typologies importées, stockées
+  dans `localStorage`, ne sont pas touchées). Le pied de page rappelle la version en cours.
+
+| Fichier | Rôle |
+|---|---|
+| `src/lib/pwa.ts` | Enregistrement du service worker, détection, application d'une mise à jour, rechargement forcé |
+| `src/lib/useUpdate.ts` | Hook React exposant cet état à l'interface |
+| `src/components/UpdateBanner/` | Bannière « Nouvelle version disponible » |
+
+> ℹ️ Le service worker est **absent en développement** (`npm run dev`) : pour tester la mise à
+> jour, passer par `npm run build && npm run preview`. Sur GitHub Pages, les fichiers sont servis
+> avec un cache court (~10 min) : une nouvelle version peut donc mettre quelques minutes à être
+> visible après un déploiement.
 
 ## 🗂️ Structure du projet
 
@@ -152,13 +179,16 @@ Arborescence principale (extrait) :
 
 ```
 src/
-├── components/       # Composants réutilisables (Header, Footer, Modal)
+├── components/       # Composants réutilisables (Header, Footer, Modal, UpdateBanner)
 ├── pages/
 │   ├── Accueil/      # Carte de France + frise chronologique
 │   ├── Catalogue/    # Liste filtrable des typologies
 │   ├── FicheDetail/  # Fiche par typologie (coupe, procédé, identité)
 │   ├── Glossaire/    # Lexique des termes d'architecture
-│   └── Parametres/   # Export JSON, import de typologies personnalisées
+│   └── Parametres/   # Export JSON, import de typologies, mise à jour de l'app
+├── lib/
+│   ├── pwa.ts             # Service worker : détection & application des mises à jour
+│   └── useUpdate.ts       # Hook React exposant l'état de mise à jour
 ├── context/          # App context : filtres, recherche
 ├── data/
 │   ├── typologies.ts      # 219 typologies natives — source de vérité
@@ -175,7 +205,6 @@ src/
 public/
 ├── icon.svg               # Favicon / logo source
 ├── icon-maskable.svg       # Source de l'icône maskable (fond plein bord à bord)
-├── manifest.webmanifest    # Manifeste PWA
 ├── pwa-192.png, pwa-512.png, pwa-maskable-512.png  # Icônes d'installation
 └── apple-touch-icon.png    # Icône iOS/iPadOS
 ```

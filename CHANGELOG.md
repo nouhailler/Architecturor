@@ -10,6 +10,22 @@ v1.0.0.
 
 ### Ajouté
 
+- **Mise à jour automatique de l'application**, sur le modèle du projet *Musculator* : un service
+  worker (`vite-plugin-pwa`, mode `prompt`) permet à l'app de détecter les nouvelles versions et
+  de les appliquer d'un clic — indispensable pour une PWA installée, qui est *rouverte* et jamais
+  rechargée, et resterait donc indéfiniment sur l'ancien code.
+  - `src/lib/pwa.ts` : enregistrement explicite du service worker, vérification à chaque retour au
+    premier plan, application d'une mise à jour en attente (avec filet de sécurité si le navigateur
+    ne rend jamais la main), et rechargement forcé qui vide les caches.
+  - `src/lib/useUpdate.ts` : hook exposant cet état à l'interface.
+  - `src/components/UpdateBanner/` : bannière « Nouvelle version disponible » — le rechargement
+    n'a jamais lieu sans clic.
+  - Paramètres → carte « Mise à jour de l'application » : version installée (hash du commit + date
+    de build), vérification manuelle et « Forcer le rechargement complet ». Le pied de page
+    rappelle la version en cours et renvoie vers cette carte.
+- **Fonctionnement hors-ligne** : le code, les polices et les images Wikimedia déjà consultées
+  sont mis en cache par le service worker.
+
 - Catalogue étendu de 5 à **219 typologies**, réparties sur les 10 catégories du domaine
   (habitat rural, urbain, architecture religieuse, militaire, industrielle, des transports,
   agricole, publique, littorale et de montagne), avec une forte extension du corpus provençal
@@ -31,18 +47,21 @@ v1.0.0.
   - la persistance locale des typologies importées (`localStorage`,
     `src/utils/customTypologies.ts`), prises en compte immédiatement dans le catalogue et les
     fiches détail sans rechargement ni backend.
-- **Installation en PWA** : manifeste (`public/manifest.webmanifest`), icônes dédiées
-  (`public/pwa-192.png`, `public/pwa-512.png`, variante *maskable* pour Android, icône Apple
-  Touch pour iOS/iPadOS) et balises associées dans `index.html` — l'application apparaît avec sa
-  propre icône une fois installée sur l'écran d'accueil ou en app de bureau. Pas de service
-  worker : pas de fonctionnement hors-ligne, choix délibéré tant que l'app dépend de ressources
-  distantes (polices, images Wikimedia Commons).
+- **Installation en PWA** : manifeste, icônes dédiées (`public/pwa-192.png`,
+  `public/pwa-512.png`, variante *maskable* pour Android, icône Apple Touch pour iOS/iPadOS) et
+  balises associées dans `index.html` — l'application apparaît avec sa propre icône une fois
+  installée sur l'écran d'accueil ou en app de bureau.
 - `README.md`, `CONTEXT.md` et ce `CHANGELOG.md`.
 - Icône de l'application (`public/icon.svg`) et balises favicon associées dans `index.html`.
 - Captures d'écran de démonstration (`docs/screenshots/`).
 
 ### Corrigé
 
+- **Manifeste PWA cassé sur GitHub Pages** : `public/manifest.webmanifest` déclarait ses icônes,
+  son `scope` et son `start_url` en chemins absolus (`/pwa-192.png`, `/`), introuvables sous la
+  base de déploiement `/Architecturor/`. Le manifeste est désormais généré au build par
+  `vite-plugin-pwa` (configuré dans `vite.config.ts`), avec des chemins d'icônes relatifs et un
+  `scope` aligné sur la base.
 - **Icônes invisibles sur tout le site** : le code utilisait des classes CSS `ph ph-*` (webfont
   Phosphor Icons), jamais chargées dans le projet — seul le package `@phosphor-icons/react` est
   installé. Remplacement par les composants React correspondants, avec une table de

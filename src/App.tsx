@@ -3,6 +3,7 @@ import { AppProvider } from './context/AppContext'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Onboarding from './components/Onboarding/Onboarding'
+import UpdateBanner from './components/UpdateBanner/UpdateBanner'
 import Accueil from './pages/Accueil/Accueil'
 import Catalogue from './pages/Catalogue/Catalogue'
 import FicheDetail from './pages/FicheDetail/FicheDetail'
@@ -27,6 +28,7 @@ export default function App() {
         <Footer />
       </div>
       <Onboarding />
+      <UpdateBanner />
     </AppProvider>
   )
 }

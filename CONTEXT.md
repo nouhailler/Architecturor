@@ -39,10 +39,20 @@ types) car il s'agit de terminologie métier, pas d'infrastructure technique gé
   librairie de state management externe — le besoin ne le justifie pas.
 - **Routage** avec `react-router-dom` : 5 routes (`/`, `/catalogue`, `/typologie/:id`,
   `/glossaire`, `/parametres`), fallback vers l'accueil.
-- **PWA installable** (manifeste `public/manifest.webmanifest`, icônes `public/pwa-*.png` +
-  `apple-touch-icon.png`, liens dans `index.html`) : icône dédiée sur l'écran d'accueil, mode
-  `standalone`. Pas de service worker ni de cache applicatif — voir « État actuel / limitations
-  connues ».
+- **PWA installable et hors-ligne** via `vite-plugin-pwa` : le manifeste est **généré au build**
+  (configuré dans `vite.config.ts`) et non plus servi statiquement, pour que ses chemins suivent
+  la base de déploiement — l'ancien `public/manifest.webmanifest`, avec ses chemins absolus en
+  `/`, était cassé sous `/Architecturor/`. Icônes : `public/pwa-*.png` + `apple-touch-icon.png`.
+- **Mise à jour automatique** : service worker en mode `prompt` avec `injectRegister: null` —
+  l'enregistrement est fait par l'app elle-même (`src/lib/pwa.ts`) pour garder l'objet
+  `registration` sous la main : lui seul peut réinterroger le serveur et savoir qu'un nouveau
+  build attend. Le mode `autoUpdate` a été écarté volontairement : une app installée est
+  *rouverte* et non rechargée, la mise à jour s'appliquerait donc à un moment imprévisible. Le
+  build est estampillé (`__BUILD_ID__`, `__BUILD_TIME__` définis dans `vite.config.ts` depuis
+  `GITHUB_SHA` ou `git rev-parse`) et affiché dans les Paramètres et le pied de page — seul moyen
+  de trancher « suis-je sur la dernière version ? ». L'UI se limite à `src/lib/useUpdate.ts`
+  (hook), `src/components/UpdateBanner/` (bannière) et la carte « Mise à jour » des Paramètres.
+  Système repris du projet *Musculator*, adapté à GitHub Pages (base variable, `HashRouter`).
 - **Styles** : CSS Modules par composant + design tokens globaux (`src/styles/tokens.css`) — pas
   de framework CSS (Tailwind, etc.).
 - **Icônes** : composants React de `@phosphor-icons/react`. Pour les icônes pilotées par la
@@ -109,8 +119,11 @@ placeholder (icône `Image`).
 
 ## 📌 État actuel / limitations connues
 
-- **Pas de service worker** : l'app est installable (PWA) mais ne fonctionne pas hors-ligne — un
-  accès réseau est requis à chaque lancement (polices Google Fonts, images Wikimedia Commons).
+- **Hors-ligne partiel** : l'app (code, polices, images déjà consultées) est mise en cache par le
+  service worker, mais une photo Wikimedia Commons jamais affichée reste indisponible sans réseau.
+- **Cache GitHub Pages** : l'hébergeur sert les fichiers avec un cache d'environ 10 minutes et ne
+  permet pas de configurer les en-têtes ; une nouvelle version peut donc mettre quelques minutes
+  à être détectée après un déploiement.
 - **Pas de tests automatisés** pour le moment (ni unitaires, ni end-to-end).
 - **Pas de CI configurée** dans le dépôt (aucun workflow GitHub Actions) — les vérifications
   (`tsc --noEmit`, `vite build`) sont à lancer manuellement avant de fusionner.
