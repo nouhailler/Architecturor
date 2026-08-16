@@ -17415,6 +17415,162 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'grangeabsidialequercynoise',
+    name: 'Grange absidiale quercynoise',
+    region: 'Occitanie · Quercy · Lot',
+    periode: 'XVIIIe–XIXe siècle',
+    procede:
+      "Bâtiment agricole maçonné en pierre locale, caractérisé par un volume longitudinal dont l'une des extrémités se termine par une forme arrondie ou semi-circulaire. La construction associe murs porteurs en maçonnerie, charpente traditionnelle en bois et couverture adaptée à la géométrie particulière du bâtiment.",
+    usage: "Stockage agricole, grange, fenil et activités liées à l'exploitation rurale",
+    categorie: 'agricole',
+    gps: '44.55° N, 1.75° E',
+    altitude: '150–500 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: "Toiture à deux pans avec adaptation à l'extrémité absidiale",
+    penteToit: '30–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe'],
+    resume:
+      "La grange absidiale quercynoise constitue une forme particulière de bâtiment agricole caractérisée par une extrémité arrondie ou semi-circulaire. Cette disposition produit une silhouette très différente de celle des granges traditionnelles à pignons droits. Construite principalement en pierre calcaire locale, elle pouvait accueillir du matériel, du fourrage et différentes activités agricoles. Sa morphologie originale en fait une forme remarquable du patrimoine rural ancien du Lot.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Quercy · Lot'],
+      ['Usage', "Stockage agricole, fenil et activités d'exploitation"],
+      ['Système', 'Maçonnerie porteuse en pierre avec charpente traditionnelle'],
+      ['Matériau dominant', 'Pierre calcaire locale'],
+      ['Toiture', "Toiture adaptée au plan longitudinal et à l'extrémité arrondie"],
+      ['Particularité', 'Extrémité absidiale semi-circulaire constituant le principal marqueur morphologique'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Pierre de taille', 'Chaux', 'Bois', 'Terre cuite'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Extrémité absidiale',
+        txt: "L'extrémité arrondie ou semi-circulaire constitue l'élément architectural le plus caractéristique de la grange et distingue son plan des granges à pignons droits.",
+      },
+      {
+        n: 2,
+        el: 'Murs extérieurs',
+        txt: 'Les murs sont généralement construits en pierre calcaire locale, avec une maçonnerie épaisse adaptée aux contraintes du bâtiment agricole.',
+      },
+      {
+        n: 3,
+        el: 'Charpente',
+        txt: "La charpente traditionnelle en bois doit accompagner la géométrie particulière de l'extrémité arrondie.",
+      },
+      {
+        n: 4,
+        el: 'Couverture',
+        txt: 'La couverture épouse la forme du bâtiment et nécessite une disposition spécifique au niveau de l\'extrémité absidiale.',
+      },
+      {
+        n: 5,
+        el: 'Ouverture agricole',
+        txt: 'Les accès sont dimensionnés pour permettre la circulation du matériel, le stockage du fourrage et les opérations agricoles.',
+      },
+      {
+        n: 6,
+        el: 'Fondations',
+        txt: 'Les fondations maçonnées suivent le plan du bâtiment et doivent notamment reprendre les charges concentrées de la structure de toiture.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Morphologie absidiale',
+        icon: 'ph ph-arch',
+        intro: "La forme arrondie de l'une des extrémités constitue la signature architecturale de cette grange.",
+        groups: [
+          G(null, ['Extrémité semi-circulaire.', 'Plan longitudinal.', 'Absence de pignon droit à une extrémité.', 'Volume agricole compact.', 'Silhouette caractéristique.']),
+        ],
+      },
+      {
+        title: 'Organisation agricole',
+        icon: 'ph ph-tractor',
+        intro: "Le bâtiment rassemble différentes fonctions nécessaires au fonctionnement de l'exploitation.",
+        groups: [
+          G(null, ['Stockage du foin.', 'Stockage des récoltes.', 'Remisage du matériel.', 'Fenil.', 'Circulation agricole.', 'Protection des récoltes.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-cube',
+        intro: 'La pierre calcaire du Quercy constitue le matériau principal de l\'enveloppe.',
+        groups: [
+          G(null, ['Calcaire local.', 'Moellons.', 'Pierre de taille.', 'Mortier de chaux.', 'Chaînages d\'angle.', 'Encadrements en pierre.']),
+        ],
+      },
+      {
+        title: 'Charpente',
+        icon: 'ph ph-tree',
+        intro: "La charpente doit s'adapter à la géométrie spécifique de l'extrémité arrondie.",
+        groups: [
+          G(null, ['Bois de chêne.', 'Pannes.', 'Chevrons.', 'Fermes traditionnelles.', 'Adaptation à la partie arrondie.', 'Structure porteuse de la couverture.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house',
+        intro: 'La couverture constitue une contrainte technique particulière en raison de la géométrie absidiale.',
+        groups: [
+          G(null, ['Couverture en terre cuite.', 'Tuiles locales.', 'Adaptation de la couverture à la courbure.', 'Évacuation des eaux.', 'Débord de toiture.']),
+        ],
+      },
+      {
+        title: 'Accès et manutention',
+        icon: 'ph ph-door-open',
+        intro: 'Les ouvertures répondent avant tout aux nécessités du travail agricole et de la manutention.',
+        groups: [
+          G(null, ['Grande porte agricole.', 'Accès au fenil.', 'Chargement du foin.', 'Déchargement des récoltes.', 'Passage du matériel.']),
+        ],
+      },
+      {
+        title: 'Implantation rurale',
+        icon: 'ph ph-map-pin',
+        intro: "La grange s'inscrit dans l'organisation d'une exploitation agricole et peut être associée à d'autres bâtiments.",
+        groups: [
+          G(null, ['Cour agricole.', "Proximité de l'habitation.", 'Relation avec les pâtures.', 'Relation avec les cultures.', 'Dépendances rurales.', 'Implantation indépendante possible.']),
+        ],
+      },
+      {
+        title: 'Patrimoine menacé',
+        icon: 'ph ph-warning',
+        intro: 'La disparition progressive des usages agricoles traditionnels fragilise la conservation de ces formes bâties particulières.',
+        groups: [
+          G(null, ['Abandon agricole.', 'Transformation en habitation.', 'Modification des couvertures.', 'Démolition des bâtiments vétustes.', 'Perte des charpentes traditionnelles.', 'Nécessité de documentation patrimoniale.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la grange-étable',
+        icon: 'ph ph-info',
+        intro: 'La grange absidiale appartient à la famille des bâtiments agricoles mais possède un critère morphologique suffisamment spécifique pour être distinguée d\'une grange-étable ordinaire.',
+        groups: [
+          G(null, [
+            'La grange-étable quercynoise est définie principalement par l\'association étable-fenil.',
+            'La grange absidiale quercynoise est définie principalement par sa morphologie absidiale.',
+            'Le plan arrondi constitue le critère architectural déterminant.',
+            'Les deux typologies peuvent partager des fonctions agricoles.',
+            'La distinction repose donc sur la forme et non uniquement sur l\'usage.',
+          ]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La silhouette arrondie de l'extrémité et son intégration dans un bâtiment agricole longitudinal permettent de reconnaître cette typologie.",
+        groups: [
+          G(null, ['Extrémité arrondie.', 'Plan longitudinal.', 'Pierre calcaire.', 'Charpente traditionnelle.', 'Grande capacité de stockage.', 'Fonction agricole.', 'Toiture adaptée à la courbure.', 'Implantation rurale.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
