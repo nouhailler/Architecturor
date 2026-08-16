@@ -16983,6 +16983,140 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'cazellequercynoise',
+    name: 'Cazelle quercynoise',
+    region: 'Occitanie · Quercy · Causses du Quercy · Lot · causse de Gramat · causse de Limogne',
+    periode: 'XVIIIe–XXe siècle',
+    procede:
+      "Construction entièrement réalisée en pierre sèche, sans mortier, avec murs épais et couverture constituée d'une voûte en encorbellement formée par assises successives de pierres.",
+    usage: 'Abri agricole et pastoral, remise, refuge temporaire et protection du matériel ou des animaux',
+    categorie: 'rural',
+    gps: '44.65° N, 1.65° E',
+    altitude: '250–450 m',
+    climat: 'Océanique dégradé à influence continentale',
+    typeToiture: 'Voûte en encorbellement',
+    penteToit: 'N/A',
+    essenceBois: 'N/A',
+    typeFondation: 'Assise directe sur substrat rocheux ou fondation en pierre sèche',
+    typeCharpente: 'Sans charpente traditionnelle',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La cazelle quercynoise est une petite construction en pierre sèche caractéristique des causses du Quercy. Elle est construite sans mortier par empilement de pierres calcaires soigneusement choisies. Sa couverture est généralement constituée d'une voûte en encorbellement, obtenue par le retrait progressif des assises jusqu'à la fermeture du sommet. Ces abris étaient utilisés par les agriculteurs et les bergers pour se protéger des intempéries, ranger du matériel ou abriter temporairement des animaux.",
+    identite: [
+      ['Période', 'XVIIIe–XXe siècle'],
+      ['Région', 'Causses du Quercy · Lot · causse de Gramat · causse de Limogne'],
+      ['Usage', 'Abri pastoral, remise et protection du matériel'],
+      ['Système', 'Maçonnerie traditionnelle en pierre sèche avec voûte en encorbellement'],
+      ['Matériau dominant', 'Calcaire local'],
+      ['Toiture', 'Voûte en encorbellement entièrement réalisée en pierre sèche'],
+      ['Particularité', 'Absence de mortier et couverture constituée par des assises de pierres se chevauchant progressivement'],
+    ],
+    materiaux: ['Pierre calcaire', 'Dalles calcaires', 'Pierres de récupération', 'Terre locale pour le sol'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Voûte en encorbellement',
+        txt: "La couverture est réalisée par des assises successives de pierres disposées en léger débord vers l'intérieur jusqu'à la fermeture de la voûte. Elle ne repose pas sur une charpente traditionnelle.",
+      },
+      {
+        n: 2,
+        el: 'Murs en pierre sèche',
+        txt: 'Les murs sont constitués de pierres empilées sans mortier. Leur épaisseur importante assure la stabilité de l\'ensemble.',
+      },
+      {
+        n: 3,
+        el: 'Entrée',
+        txt: "L'ouverture est généralement basse et étroite afin de limiter les pertes de chaleur et de préserver la stabilité des murs.",
+      },
+      {
+        n: 4,
+        el: 'Assises de couverture',
+        txt: 'Les pierres de la couverture sont disposées en encorbellement, chaque assise avançant légèrement vers l\'intérieur par rapport à la précédente.',
+      },
+      {
+        n: 5,
+        el: 'Soubassement',
+        txt: 'Le soubassement utilise les pierres les plus importantes et les plus stables afin de constituer une base résistante pour les murs.',
+      },
+      {
+        n: 6,
+        el: 'Fondation',
+        txt: 'La construction repose généralement directement sur le substrat rocheux ou sur une assise préparée avec de grosses pierres.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Construction en pierre sèche',
+        icon: 'ph ph-stack',
+        intro: "La cazelle repose entièrement sur une technique de maçonnerie sans mortier, utilisant l'organisation et le poids des pierres pour assurer la stabilité.",
+        groups: [
+          G(null, ['Absence de mortier.', 'Pierres locales.', 'Murs épais.', 'Assises soigneusement organisées.', 'Calage des pierres.', 'Stabilité par gravité.']),
+        ],
+      },
+      {
+        title: 'Voûte en encorbellement',
+        icon: 'ph ph-arch',
+        intro: 'La couverture constitue l\'élément technique le plus remarquable de la cazelle.',
+        groups: [
+          G(null, ['Assises horizontales.', 'Débord progressif vers l\'intérieur.', 'Réduction progressive du diamètre.', 'Fermeture au sommet.', 'Absence de charpente.', 'Couverture entièrement minérale.']),
+        ],
+      },
+      {
+        title: 'Architecture pastorale',
+        icon: 'ph ph-sheep',
+        intro: 'La cazelle répond aux besoins quotidiens des activités agricoles et pastorales sur les causses.',
+        groups: [
+          G(null, ['Abri du berger.', 'Protection contre la pluie.', 'Protection contre le vent.', 'Repos temporaire.', 'Abri du petit matériel.', 'Usage ponctuel.']),
+        ],
+      },
+      {
+        title: 'Relation au paysage',
+        icon: 'ph ph-mountains',
+        intro: 'La cazelle utilise directement la pierre abondante des plateaux calcaires et s\'intègre étroitement au paysage des causses.',
+        groups: [
+          G(null, ['Plateaux calcaires.', 'Murets en pierre sèche.', 'Parcelles agricoles.', 'Pâturages.', 'Clapas et épierrements.', 'Implantation dispersée.']),
+        ],
+      },
+      {
+        title: 'Gestion des pierres',
+        icon: 'ph ph-cube',
+        intro: 'La construction des cazelles participe au système traditionnel d\'épierrement des terres agricoles.',
+        groups: [
+          G(null, ['Ramassage des pierres.', 'Tri des blocs.', 'Utilisation des pierres disponibles sur place.', 'Construction des murets.', 'Construction des abris.', 'Réutilisation des matériaux.']),
+        ],
+      },
+      {
+        title: 'Usages',
+        icon: 'ph ph-toolbox',
+        intro: "La petite taille du bâtiment n'empêche pas une grande diversité d'utilisations rurales.",
+        groups: [
+          G(null, ['Abri du berger.', 'Remise agricole.', 'Stockage temporaire.', 'Protection du matériel.', 'Abri ponctuel des animaux.', 'Refuge contre les intempéries.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'La cazelle est généralement implantée directement dans les espaces exploités plutôt qu\'au centre du village.',
+        groups: [
+          G(null, ['Parcelle agricole.', 'Pâturage.', 'Lisière de chemin.', "À proximité d'un muret.", 'Plateau calcaire.', "Zone d'épierrement."]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La combinaison de la pierre sèche et de la voûte en encorbellement constitue la signature architecturale de la cazelle.',
+        groups: [
+          G(null, ['Petite construction.', 'Pierre sèche.', 'Absence de mortier.', 'Murs épais.', 'Voûte en encorbellement.', 'Ouverture étroite.', 'Calcaire local.', 'Implantation dans les causses.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
