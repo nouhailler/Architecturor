@@ -18073,6 +18073,170 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'oustalquercynois',
+    name: 'Oustal quercynois',
+    region: 'Occitanie · Quercy · Lot',
+    periode: 'XVIIIe–XIXe siècle',
+    procede:
+      "Ensemble rural organisé autour d'un logis principal auquel sont progressivement associées différentes dépendances agricoles et domestiques. L'oustal constitue une unité fonctionnelle regroupant habitation, production agricole, élevage, stockage et activités domestiques.",
+    usage: 'Habitation familiale, exploitation agricole, élevage, stockage et activités domestiques',
+    categorie: 'rural',
+    gps: '44.55° N, 1.65° E',
+    altitude: '100–500 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans, avec variantes selon les bâtiments',
+    penteToit: 'Variable selon les bâtiments et les secteurs',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe'],
+    resume:
+      "L'oustal quercynois désigne l'ensemble des bâtiments d'une ferme traditionnelle organisé autour de la maison paysanne. Le logis constitue le centre de la vie familiale, sociale et agricole ; au fil du temps, des bâtiments spécialisés viennent compléter l'ensemble : grange-étable, soue à cochon, galinière, séchoir, pigeonnier ou autres dépendances. Cette organisation traduit une exploitation rurale relativement autonome dans laquelle les différentes fonctions sont réparties entre plusieurs bâtiments formant un même ensemble domestique et agricole.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Quercy · Lot'],
+      ['Usage', 'Habitation et exploitation agricole'],
+      ['Organisation', 'Ensemble de bâtiments organisé autour du logis'],
+      ['Élément central', 'Maison paysanne'],
+      ['Dépendances', 'Grange-étable, soue, galinière, séchoir, pigeonnier'],
+      ['Particularité', "Organisation fonctionnelle de plusieurs bâtiments autour du lieu de vie familial"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Pierre de taille', 'Chaux', 'Bois', 'Tuile', 'Lauze', 'Terre cuite'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Logis principal',
+        txt: "La maison paysanne constitue le centre de l'oustal et concentre la vie familiale, domestique et sociale.",
+      },
+      {
+        n: 2,
+        el: 'Grange-étable',
+        txt: "La grange-étable assure le logement des animaux et le stockage du fourrage et constitue l'une des principales dépendances de l'exploitation.",
+      },
+      {
+        n: 3,
+        el: 'Pigeonnier',
+        txt: "Le pigeonnier peut constituer une dépendance indépendante ou être intégré à l'un des bâtiments de l'oustal.",
+      },
+      {
+        n: 4,
+        el: 'Dépendances domestiques',
+        txt: 'Des bâtiments plus modestes peuvent accueillir le petit élevage, le stockage ou différentes activités domestiques.',
+      },
+      {
+        n: 5,
+        el: 'Cour',
+        txt: 'La cour assure la circulation entre les différents bâtiments et constitue un espace essentiel au fonctionnement quotidien de la ferme.',
+      },
+      {
+        n: 6,
+        el: 'Organisation progressive',
+        txt: "L'ensemble peut s'être constitué progressivement par l'ajout de bâtiments spécialisés autour du logis principal.",
+      },
+    ],
+    sections: [
+      {
+        title: "Principe de l'oustal",
+        icon: 'ph ph-buildings',
+        intro: "L'oustal n'est pas un bâtiment isolé mais un ensemble architectural et fonctionnel regroupant les composantes essentielles d'une ferme traditionnelle.",
+        groups: [
+          G(null, ['Logis principal.', 'Dépendances agricoles.', 'Espaces domestiques.', 'Cour.', 'Aires de stockage.', "Espaces d'élevage."]),
+        ],
+      },
+      {
+        title: 'Le logis',
+        icon: 'ph ph-house-line',
+        intro: 'La maison paysanne constitue le cœur de l\'organisation familiale et agricole.',
+        groups: [
+          G(null, ['Habitation familiale.', 'Cuisine.', 'Salle commune.', 'Chambres.', 'Cellier.', 'Accès aux espaces agricoles.']),
+        ],
+      },
+      {
+        title: 'Grange-étable',
+        icon: 'ph ph-tractor',
+        intro: "La grange-étable assure les fonctions principales liées à l'élevage et au stockage.",
+        groups: [
+          G(null, ['Étable.', 'Grange.', 'Fenil.', 'Stockage du foin.', 'Stockage des récoltes.', 'Remisage.']),
+        ],
+      },
+      {
+        title: 'Dépendances',
+        icon: 'ph ph-warehouse',
+        intro: "L'oustal peut réunir de nombreuses constructions spécialisées selon la taille et les activités de l'exploitation.",
+        groups: [
+          G(null, ['Pigeonnier.', 'Soue à cochon.', 'Galinière.', 'Séchoir.', 'Four à pain.', 'Remise.', 'Petites étables.']),
+        ],
+      },
+      {
+        title: 'Organisation de la cour',
+        icon: 'ph ph-arrows-out-cardinal',
+        intro: 'La disposition des bâtiments autour d\'une cour facilite la circulation des personnes, des animaux et des récoltes.',
+        groups: [
+          G(null, ['Cour centrale ou latérale.', 'Accès aux dépendances.', 'Circulation agricole.', 'Aire de travail.', 'Stockage temporaire.', 'Relations visuelles entre les bâtiments.']),
+        ],
+      },
+      {
+        title: "Autonomie de l'exploitation",
+        icon: 'ph ph-plant',
+        intro: 'La concentration des fonctions autour du logis permettait à la ferme de couvrir une grande partie des besoins de la famille.',
+        groups: [
+          G(null, ['Élevage.', 'Cultures.', 'Stockage.', 'Transformation des produits.', 'Petit élevage.', 'Conservation des récoltes.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: "L'oustal s'inscrit dans le paysage rural et entretient des relations étroites avec les terres exploitées.",
+        groups: [
+          G(null, ['Proximité des parcelles.', 'Accès aux pâtures.', 'Accès aux chemins ruraux.', 'Jardin potager.', 'Vergers.', 'Prés et terres cultivées.']),
+        ],
+      },
+      {
+        title: 'Matériaux',
+        icon: 'ph ph-cube',
+        intro: 'Les différents bâtiments utilisent principalement les matériaux disponibles localement.',
+        groups: [
+          G(null, ['Calcaire.', 'Moellons.', 'Pierre de taille.', 'Mortier de chaux.', 'Bois.', 'Tuile.', 'Lauze.']),
+        ],
+      },
+      {
+        title: "Évolution de l'ensemble",
+        icon: 'ph ph-clock',
+        intro: "L'oustal est un ensemble évolutif dont la composition peut s'enrichir ou se modifier au fil des générations.",
+        groups: [
+          G(null, ['Ajout de dépendances.', 'Transformation des bâtiments.', 'Extension du logis.', 'Modification des couvertures.', 'Changement des usages.', 'Abandon de certaines dépendances.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la maison-bloc',
+        icon: 'ph ph-info',
+        intro: 'La distinction est importante pour éviter un doublon dans Architecturor.',
+        groups: [
+          G(null, [
+            'Oustal : ensemble de plusieurs bâtiments.',
+            'Maison-bloc : fonctions regroupées dans un seul bâtiment.',
+            'Oustal : organisation autour du logis.',
+            "Maison-bloc : coexistence de l'habitation et de l'exploitation dans un même volume.",
+            'Un oustal peut donc comprendre une maison-bloc parmi ses bâtiments.',
+          ]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'identification repose davantage sur l'organisation de l'ensemble que sur la forme d'un bâtiment isolé.",
+        groups: [
+          G(null, ['Logis central ou dominant.', 'Plusieurs bâtiments.', 'Dépendances spécialisées.', 'Cour organisée.', 'Fonctions agricoles réparties.', 'Relation étroite entre habitat et exploitation.', 'Organisation familiale.', 'Unité fonctionnelle de la ferme.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
