@@ -16849,6 +16849,140 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'fourapainquercynois',
+    name: 'Four à pain quercynois',
+    region: 'Occitanie · Quercy · Lot · Tarn-et-Garonne · nord du Lot-et-Garonne',
+    periode: 'XVIIe–XIXe siècle',
+    procede:
+      "Petit bâtiment maçonné en pierre locale, généralement constitué d'une chambre de cuisson voûtée précédée d'un espace de travail et protégée par une toiture traditionnelle.",
+    usage: 'Cuisson du pain, préparation alimentaire et parfois usage communautaire',
+    categorie: 'agricole',
+    gps: '44.65° N, 1.75° E',
+    altitude: '100–500 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans',
+    penteToit: '25–45°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "Le four à pain quercynois est une petite construction spécialisée destinée à la cuisson du pain dans les exploitations rurales, les hameaux et certains villages. Sa structure repose sur une chambre de cuisson voûtée en maçonnerie, généralement construite avec la pierre locale et des matériaux réfractaires. Le four peut être privé ou collectif et constitue parfois un élément important de l'organisation communautaire du hameau.",
+    identite: [
+      ['Période', 'XVIIe–XIXe siècle'],
+      ['Région', 'Quercy · Lot · Tarn-et-Garonne · nord du Lot-et-Garonne'],
+      ['Usage', 'Cuisson du pain et usages alimentaires'],
+      ['Système', 'Maçonnerie massive avec chambre de cuisson voûtée'],
+      ['Matériau dominant', 'Pierre calcaire et matériaux réfractaires'],
+      ['Toiture', 'Toiture à deux pans généralement couverte de tuiles ou de lauzes selon le secteur'],
+      ['Particularité', 'Chambre de cuisson voûtée constituant le cœur fonctionnel du bâtiment'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Brique réfractaire', 'Terre cuite', 'Chaux', 'Bois'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Toiture',
+        txt: "Une petite toiture protège la construction et l'espace de travail. Elle peut être couverte de tuiles canal, de tuiles plates ou de lauzes selon le secteur du Quercy.",
+      },
+      {
+        n: 2,
+        el: 'Façade',
+        txt: "La façade principale comporte généralement l'ouverture du four et un espace de travail permettant de préparer et manipuler les pains.",
+      },
+      {
+        n: 3,
+        el: 'Voûte de cuisson',
+        txt: 'La chambre de cuisson est constituée d\'une voûte maçonnée capable d\'accumuler puis de restituer la chaleur nécessaire à la cuisson.',
+      },
+      {
+        n: 4,
+        el: 'Bouche du four',
+        txt: "L'ouverture de cuisson permet l'introduction du bois, le retrait des braises et l'enfournement des pains. Elle est généralement encadrée par une maçonnerie résistante à la chaleur.",
+      },
+      {
+        n: 5,
+        el: 'Sole',
+        txt: 'La sole constitue la surface horizontale sur laquelle sont déposés les pains. Elle est réalisée dans un matériau résistant aux températures élevées.',
+      },
+      {
+        n: 6,
+        el: 'Fondations',
+        txt: "Le bâtiment repose sur une base maçonnée robuste capable de supporter le poids important de la voûte et de l'ensemble de la chambre de cuisson.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Chambre de cuisson',
+        icon: 'ph ph-fire',
+        intro: 'La chambre de cuisson constitue le cœur technique du bâtiment et concentre les caractéristiques constructives les plus spécifiques.',
+        groups: [
+          G(null, ['Voûte maçonnée.', 'Sole de cuisson.', 'Bouche du four.', 'Accumulation thermique.', 'Isolation par épaisseur de maçonnerie.']),
+        ],
+      },
+      {
+        title: 'Fonctionnement',
+        icon: 'ph ph-flame',
+        intro: 'Le four fonctionne traditionnellement par accumulation de chaleur dans la maçonnerie.',
+        groups: [
+          G(null, ['Chauffage au bois.', 'Montée en température.', 'Retrait des braises.', 'Nettoyage de la sole.', 'Enfournement du pain.', 'Cuisson par chaleur accumulée.']),
+        ],
+      },
+      {
+        title: 'Architecture maçonnée',
+        icon: 'ph ph-cube',
+        intro: 'La forte inertie thermique nécessite une construction épaisse et particulièrement robuste.',
+        groups: [
+          G(null, ['Pierre calcaire.', 'Moellons.', 'Brique réfractaire.', 'Mortier de chaux.', 'Maçonnerie épaisse.', 'Voûte en matériaux réfractaires.']),
+        ],
+      },
+      {
+        title: 'Espace de travail',
+        icon: 'ph ph-cooking-pot',
+        intro: 'Un espace situé devant ou autour du four facilite les différentes opérations nécessaires à la préparation et à la cuisson.',
+        groups: [
+          G(null, ['Préparation des pâtons.', 'Stockage du bois.', 'Manipulation des braises.', 'Enfournement.', 'Défournement.', 'Stockage temporaire du pain.']),
+        ],
+      },
+      {
+        title: 'Four privé ou collectif',
+        icon: 'ph ph-users-three',
+        intro: "Le four peut appartenir à une exploitation ou servir plusieurs familles d'un hameau ou d'un village.",
+        groups: [
+          G(null, ['Four domestique.', "Four d'exploitation.", 'Four de hameau.', 'Four communautaire.', 'Usage partagé.', 'Entretien collectif possible.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'La construction peut être intégrée à un ensemble bâti ou constituer un petit bâtiment indépendant.',
+        groups: [
+          G(null, ['Cour de ferme.', 'Hameau.', 'Village.', "À proximité de l'habitation.", 'Bâtiment indépendant.', 'Implantation à l\'écart des espaces d\'habitation pour des raisons de sécurité.']),
+        ],
+      },
+      {
+        title: 'Relation au village',
+        icon: 'ph ph-house-line',
+        intro: "Le four peut constituer un élément structurant de l'organisation traditionnelle des communautés rurales.",
+        groups: [
+          G(null, ['Espace collectif.', 'Lieu de rencontre.', 'Organisation communautaire.', 'Cuisson périodique.', 'Gestion collective du bois.', 'Entretien partagé.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La combinaison d\'un petit volume maçonné et d\'une chambre de cuisson voûtée permet de distinguer le four à pain des autres dépendances agricoles.',
+        groups: [
+          G(null, ['Petit bâtiment maçonné.', 'Voûte de cuisson.', 'Bouche du four.', 'Sole réfractaire.', 'Maçonnerie épaisse.', 'Espace de travail.', 'Toiture protectrice.', 'Usage domestique ou communautaire.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
