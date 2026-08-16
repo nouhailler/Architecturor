@@ -17259,6 +17259,162 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisonenhauteurquercynoise',
+    name: 'Maison en hauteur quercynoise',
+    region: 'Occitanie · Quercy · Lot · Tarn-et-Garonne',
+    periode: 'XVe–XIXe siècle',
+    procede:
+      "Maison rurale organisée verticalement, avec un niveau inférieur réservé aux fonctions agricoles, utilitaires ou de stockage et un étage destiné principalement à l'habitation. La construction repose généralement sur des murs porteurs en pierre locale et une charpente traditionnelle en bois.",
+    usage: 'Habitation rurale, exploitation agricole, stockage et activités domestiques',
+    categorie: 'rural',
+    gps: '44.55° N, 1.75° E',
+    altitude: '100–500 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans',
+    penteToit: '30–55°',
+    essenceBois: 'Chêne et châtaignier',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Facile',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVe', 'XVIe', 'XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "La maison en hauteur quercynoise constitue l'un des grands modèles de l'habitat rural du Quercy. Elle superpose les fonctions agricoles et domestiques : les parties basses accueillent notamment cave, étable, remise ou espaces de stockage tandis que l'étage est consacré au logement. Cette organisation verticale permet de regrouper les différentes fonctions de l'exploitation dans un bâtiment compact. Le modèle est particulièrement représentatif de l'architecture rurale du Lot, même si d'autres formes d'habitat, notamment les maisons en rez-de-chaussée, ont également été très présentes.",
+    identite: [
+      ['Période', 'XVe–XIXe siècle'],
+      ['Région', 'Quercy · Lot · Tarn-et-Garonne'],
+      ['Usage', 'Habitation et exploitation agricole'],
+      ['Organisation', 'Superposition verticale des fonctions agricoles et domestiques'],
+      ['Matériau dominant', 'Pierre calcaire locale et moellons'],
+      ['Toiture', 'Deux pans, avec variations locales de pente et de couverture'],
+      ['Particularité', "Niveau d'habitation implanté au-dessus de parties utilitaires ou agricoles"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Pierre de taille', 'Chaux', 'Bois', 'Terre cuite', 'Lauze selon les secteurs'],
+    annotations: [
+      {
+        n: 1,
+        el: "Étage d'habitation",
+        txt: "L'étage principal accueille généralement le logement familial. Il peut comprendre une salle commune, une cuisine et des chambres.",
+      },
+      {
+        n: 2,
+        el: 'Parties basses',
+        txt: "Le niveau inférieur rassemble les fonctions utilitaires : cave, étable, remise, stockage ou espaces liés à l'exploitation.",
+      },
+      {
+        n: 3,
+        el: 'Accès extérieur',
+        txt: 'L\'accès à l\'étage peut être assuré par un perron ou bolet en bois ou en pierre. Ce dispositif constitue un élément architectural associé à la maison en hauteur mais ne définit pas à lui seul la typologie.',
+      },
+      {
+        n: 4,
+        el: 'Façade',
+        txt: "La façade présente généralement une organisation différenciée entre le niveau bas, plus fermé et robuste, et l'étage d'habitation, davantage ouvert.",
+      },
+      {
+        n: 5,
+        el: 'Plancher intermédiaire',
+        txt: 'Un plancher en bois sépare les fonctions agricoles du niveau inférieur et les espaces domestiques de l\'étage.',
+      },
+      {
+        n: 6,
+        el: 'Fondations',
+        txt: 'Les murs porteurs reposent généralement sur des fondations maçonnées en pierre adaptées au terrain local.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-vertical',
+        intro: 'La superposition des fonctions constitue le principe architectural fondamental de la maison en hauteur.',
+        groups: [
+          G(null, ['Niveau bas utilitaire.', "Étage d'habitation.", 'Combles de stockage possibles.', 'Circulation verticale.', 'Séparation des fonctions.']),
+        ],
+      },
+      {
+        title: 'Niveau inférieur',
+        icon: 'ph ph-warehouse',
+        intro: "La partie basse accueille les activités liées à l'exploitation et les espaces nécessitant une construction particulièrement robuste.",
+        groups: [
+          G(null, ['Cave.', 'Étable.', 'Remise.', 'Stockage.', 'Cellier.', 'Espace agricole.']),
+        ],
+      },
+      {
+        title: "Étage d'habitation",
+        icon: 'ph ph-house-line',
+        intro: 'Le niveau supérieur constitue le cœur de la vie domestique de la famille rurale.',
+        groups: [
+          G(null, ['Salle commune.', 'Cuisine.', 'Chambres.', 'Espace familial.', 'Rangements.', 'Accès aux combles.']),
+        ],
+      },
+      {
+        title: 'Bolet et perron',
+        icon: 'ph ph-stairs',
+        intro: "L'accès extérieur à l'étage peut prendre la forme d'un bolet ou d'un perron, en bois ou en maçonnerie.",
+        groups: [
+          G(null, ['Escalier extérieur.', 'Perron maçonné.', 'Perron en bois.', 'Balcon.', 'Galerie.', "Accès direct à l'habitation."]),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-cube',
+        intro: 'La maison repose généralement sur une construction massive en pierre locale adaptée aux ressources géologiques du Quercy.',
+        groups: [
+          G(null, ['Calcaire local.', 'Moellons.', 'Pierre de taille.', 'Murs porteurs.', 'Encadrements en pierre.', 'Mortier de chaux.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house',
+        intro: "La forme de la toiture varie selon les secteurs et les périodes, notamment en fonction de l'évolution des matériaux de couverture.",
+        groups: [
+          G(null, ['Deux pans.', 'Forte pente dans les formes anciennes.', 'Pente plus faible dans certaines zones méridionales.', 'Tuile plate.', 'Tuile creuse.', 'Lauze selon les secteurs.']),
+        ],
+      },
+      {
+        title: "Relation avec l'exploitation",
+        icon: 'ph ph-tractor',
+        intro: "Le regroupement vertical permet de concentrer l'habitation et une partie des fonctions de l'exploitation dans un même bâtiment.",
+        groups: [
+          G(null, ['Stockage.', 'Élevage.', 'Transformation des produits.', 'Habitation.', "Gestion quotidienne de l'exploitation.", 'Proximité des terres agricoles.']),
+        ],
+      },
+      {
+        title: 'Variantes régionales',
+        icon: 'ph ph-map-pin',
+        intro: 'Le modèle connaît de nombreuses adaptations locales dans le Lot et le Quercy.',
+        groups: [
+          G(null, ['Accès par bolet en bois.', 'Accès par perron maçonné.', 'Accès intérieur.', 'Niveau inférieur agricole.', 'Niveau inférieur domestique ou utilitaire.', 'Variations de toiture.', 'Variations de matériaux.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la maison à bolet',
+        icon: 'ph ph-info',
+        intro: "Le bolet est un dispositif d'accès à l'étage et non le principe typologique fondamental de la maison en hauteur.",
+        groups: [
+          G(null, [
+            'La maison en hauteur est définie par sa superposition fonctionnelle.',
+            "Le bolet constitue un dispositif d'accès extérieur.",
+            'Une maison en hauteur peut exister sans bolet caractéristique.',
+            'Un bolet peut être remplacé par un perron maçonné.',
+            'Les deux notions ne doivent donc pas être confondues.',
+          ]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La séparation verticale entre fonctions agricoles et habitation permet d'identifier cette forme majeure de l'habitat rural quercynois.",
+        groups: [
+          G(null, ['Bâtiment compact.', "Étage d'habitation.", 'Parties basses utilitaires.', 'Murs porteurs en pierre.', 'Accès extérieur possible.', 'Combles de stockage.', 'Toiture à deux pans.', "Relation directe avec l'exploitation agricole."]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
