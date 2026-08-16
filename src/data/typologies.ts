@@ -17727,6 +17727,170 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'logisdoublequercynois',
+    name: 'Logis double quercynois',
+    region: 'Occitanie · Quercy · Lot',
+    periode: 'XVIIIe–XIXe siècle',
+    procede:
+      "Construction rurale réunissant deux unités d'habitation dans un même ensemble bâti, généralement conçues ou créées au cours d'une même phase de construction. Les deux logis peuvent partager certains éléments structurels tout en conservant des accès et des espaces domestiques distincts.",
+    usage: 'Habitation de plusieurs ménages, organisation familiale et exploitation rurale',
+    categorie: 'rural',
+    gps: '44.70° N, 1.70° E',
+    altitude: '100–500 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans',
+    penteToit: '30–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe'],
+    resume:
+      "Le logis double quercynois est une forme d'habitat rural dans laquelle deux unités de logement sont réunies dans un même ensemble architectural. Les deux logis peuvent être disposés côte à côte ou organisés autour d'une structure commune, tout en conservant une certaine autonomie domestique. Cette organisation témoigne de formes de cohabitation familiale et de partage du bâti rural. Le Département du Lot identifie les logis doubles ou triples parmi les typologies rurales particulièrement menacées.",
+    identite: [
+      ['Période', 'XVIIIe–XIXe siècle'],
+      ['Région', 'Quercy · Lot'],
+      ['Usage', 'Habitation de deux ménages ou unités familiales'],
+      ['Organisation', 'Deux logis autonomes réunis dans un même ensemble bâti'],
+      ['Matériau dominant', 'Pierre calcaire locale et moellons'],
+      ['Toiture', 'Généralement à deux pans, parfois avec une organisation différenciée selon les volumes'],
+      ['Particularité', "Plusieurs unités d'habitation conçues ou créées dans une même phase de construction"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Pierre de taille', 'Chaux', 'Bois', 'Terre cuite'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Premier logis',
+        txt: "La première unité d'habitation possède ses propres espaces domestiques et peut disposer d'un accès indépendant.",
+      },
+      {
+        n: 2,
+        el: 'Second logis',
+        txt: 'La seconde unité reprend généralement une organisation domestique comparable tout en conservant son autonomie vis-à-vis du premier logement.',
+      },
+      {
+        n: 3,
+        el: 'Séparation des unités',
+        txt: 'Les deux logements peuvent être séparés par un mur mitoyen, une différence de niveaux ou une organisation intérieure spécifique.',
+      },
+      {
+        n: 4,
+        el: 'Accès',
+        txt: 'Chaque unité peut disposer d\'une entrée propre, parfois disposée symétriquement ou de part et d\'autre de la façade.',
+      },
+      {
+        n: 5,
+        el: 'Toiture commune',
+        txt: 'Les deux logis peuvent être réunis sous une même toiture, renforçant la perception d\'un bâtiment unique.',
+      },
+      {
+        n: 6,
+        el: 'Fondations',
+        txt: "Les fondations maçonnées supportent l'ensemble du bâtiment et ses différents volumes résidentiels.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe du logis double',
+        icon: 'ph ph-house-line',
+        intro: "La caractéristique fondamentale est la présence de deux unités d'habitation au sein d'un même ensemble architectural.",
+        groups: [
+          G(null, ['Deux logements.', 'Organisation commune.', 'Autonomie domestique.', 'Construction coordonnée.', 'Volume architectural partagé.']),
+        ],
+      },
+      {
+        title: 'Organisation des logements',
+        icon: 'ph ph-buildings',
+        intro: "Chaque unité conserve généralement les fonctions nécessaires à la vie quotidienne d'un ménage.",
+        groups: [
+          G(null, ['Cuisine.', 'Salle commune.', 'Chambres.', 'Cellier.', 'Rangements.', 'Accès indépendant possible.']),
+        ],
+      },
+      {
+        title: 'Disposition des deux logis',
+        icon: 'ph ph-arrows-horizontal',
+        intro: 'Les deux unités peuvent être disposées côte à côte ou présenter des organisations plus complexes selon le bâtiment.',
+        groups: [
+          G(null, ['Disposition côte à côte.', 'Entrées distinctes.', 'Murs mitoyens.', 'Volumes symétriques possibles.', 'Différences de niveaux possibles.', 'Toiture commune possible.']),
+        ],
+      },
+      {
+        title: 'Organisation familiale',
+        icon: 'ph ph-users-three',
+        intro: 'Le regroupement de plusieurs logements peut répondre à des formes de cohabitation ou de transmission familiale du patrimoine.',
+        groups: [
+          G(null, ['Familles apparentées.', 'Ménages distincts.', 'Partage du bâti.', 'Proximité familiale.', 'Transmission patrimoniale.', 'Organisation intergénérationnelle possible.']),
+        ],
+      },
+      {
+        title: "Relation avec l'exploitation",
+        icon: 'ph ph-tractor',
+        intro: 'Le logis double peut être associé à une exploitation agricole et à des espaces de production ou de stockage.',
+        groups: [
+          G(null, ['Cour commune possible.', 'Dépendances agricoles.', 'Grange.', 'Étable.', 'Jardin.', 'Espace de stockage.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-cube',
+        intro: "La construction utilise les matériaux locaux caractéristiques de l'architecture rurale quercynoise.",
+        groups: [
+          G(null, ['Calcaire local.', 'Moellons.', 'Pierre de taille.', 'Mortier de chaux.', 'Encadrements en pierre.', 'Chaînages d\'angle.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house',
+        intro: 'La couverture peut réunir les deux logements sous un même volume ou distinguer les différentes parties du bâtiment.',
+        groups: [
+          G(null, ['Toiture commune.', 'Deux pans.', 'Tuile plate.', 'Tuile creuse selon le secteur.', 'Faibles ou fortes pentes selon le contexte.', 'Charpente traditionnelle.']),
+        ],
+      },
+      {
+        title: 'Évolution du bâtiment',
+        icon: 'ph ph-clock',
+        intro: 'Les logis doubles peuvent avoir connu des transformations et des divisions au cours de leur histoire.',
+        groups: [
+          G(null, ['Modification des distributions.', 'Transformation des accès.', 'Réaménagement des pièces.', 'Regroupement ultérieur possible.', 'Division ultérieure possible.', 'Réaffectation contemporaine.']),
+        ],
+      },
+      {
+        title: 'Patrimoine menacé',
+        icon: 'ph ph-warning',
+        intro: "Le Département du Lot identifie les logis doubles ou triples parmi les formes d'habitat rural particulièrement exposées à la disparition ou à la transformation.",
+        groups: [
+          G(null, ['Abandon rural.', 'Regroupement des logements.', 'Transformation en habitation unique.', 'Réhabilitation lourde.', 'Modification des façades.', 'Perte de la distribution originelle.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la maison-bloc',
+        icon: 'ph ph-info',
+        intro: 'Le logis double se distingue de la maison-bloc par la nature des fonctions regroupées.',
+        groups: [
+          G(null, [
+            "Logis double : plusieurs unités d'habitation.",
+            'Maison-bloc : habitation et fonctions agricoles dans un même bâtiment.',
+            'Le logis double est principalement une organisation résidentielle.',
+            "La maison-bloc associe habitat et exploitation.",
+            'Les deux peuvent toutefois être accompagnés de dépendances agricoles.',
+          ]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La présence de deux unités résidentielles autonomes dans un même ensemble constitue le principal critère d'identification.",
+        groups: [
+          G(null, ['Deux logements.', 'Entrées distinctes possibles.', 'Organisation symétrique possible.', 'Toiture commune possible.', 'Maçonnerie partagée.', 'Autonomie domestique.', 'Relation familiale ou communautaire.', 'Bâtiment rural unique.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
