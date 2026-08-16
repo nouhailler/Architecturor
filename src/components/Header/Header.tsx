@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { Buildings, Gear, BookOpen, List, X } from '@phosphor-icons/react'
+import { Buildings, Gear, BookOpen, Info, List, X } from '@phosphor-icons/react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import HelpButton from '../Help/HelpButton'
 import styles from './Header.module.css'
@@ -22,6 +22,7 @@ export default function Header() {
   const goCatalogue = () => go('/catalogue')
   const goGlossaire = () => go('/glossaire')
   const goParametres = () => go('/parametres')
+  const goAPropos = () => go('/a-propos')
 
   useEffect(() => {
     const measure = () => {
@@ -83,6 +84,9 @@ export default function Header() {
           <button className={isActive(location.pathname === '/parametres')} onClick={goParametres} aria-label="Paramètres">
             <Gear size={16} weight="regular" />
           </button>
+          <button className={isActive(location.pathname === '/a-propos')} onClick={goAPropos} aria-label="À propos">
+            <Info size={16} weight="regular" />
+          </button>
           <HelpButton className={styles.navLink} />
         </nav>
 
@@ -114,6 +118,10 @@ export default function Header() {
             <button className={isActive(location.pathname === '/parametres')} onClick={goParametres}>
               <Gear size={16} weight="regular" style={{ marginRight: 7, verticalAlign: -3 }} />
               Paramètres
+            </button>
+            <button className={isActive(location.pathname === '/a-propos')} onClick={goAPropos}>
+              <Info size={16} weight="regular" style={{ marginRight: 7, verticalAlign: -3 }} />
+              À propos
             </button>
             <HelpButton className={styles.navLink}>
               Aide de cet écran

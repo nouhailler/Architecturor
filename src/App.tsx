@@ -9,6 +9,7 @@ import Catalogue from './pages/Catalogue/Catalogue'
 import FicheDetail from './pages/FicheDetail/FicheDetail'
 import Parametres from './pages/Parametres/Parametres'
 import Glossaire from './pages/Glossaire/Glossaire'
+import APropos from './pages/APropos/APropos'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/typologie/:id" element={<FicheDetail />} />
             <Route path="/parametres" element={<Parametres />} />
             <Route path="/glossaire" element={<Glossaire />} />
+            <Route path="/a-propos" element={<APropos />} />
             <Route path="*" element={<Accueil />} />
           </Routes>
         </main>
