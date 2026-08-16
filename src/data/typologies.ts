@@ -17117,6 +17117,148 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisonfortequercynoise',
+    name: 'Maison forte quercynoise',
+    region: 'Occitanie · Quercy · Lot · Tarn-et-Garonne · Dordogne méridionale',
+    periode: 'XIIIe–XVIe siècle',
+    procede:
+      "Demeure fortifiée en maçonnerie de pierre, généralement organisée autour d'un corps de logis massif complété par une ou plusieurs tours, échauguettes ou dispositifs défensifs.",
+    usage: "Résidence seigneuriale rurale, exploitation domaniale et refuge défensif",
+    categorie: 'rural',
+    gps: '44.55° N, 1.75° E',
+    altitude: '100–450 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux ou quatre pans',
+    penteToit: '30–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations profondes en maçonnerie de pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XIIIe', 'XIVe', 'XVe', 'XVIe'],
+    resume:
+      "La maison forte quercynoise est une demeure rurale fortifiée développée principalement au Moyen Âge et à la Renaissance. Elle associe une fonction résidentielle à des dispositifs défensifs destinés à protéger les occupants et les biens du domaine. Construite en pierre, elle présente généralement des murs épais, des ouvertures limitées, une ou plusieurs tours et parfois des éléments défensifs tels que meurtrières, mâchicoulis ou échauguettes. Elle se distingue du château par une échelle plus réduite et une relation plus directe avec l'exploitation rurale.",
+    identite: [
+      ['Période', 'XIIIe–XVIe siècle'],
+      ['Région', 'Quercy · Lot · Tarn-et-Garonne · Dordogne méridionale'],
+      ['Usage', "Résidence fortifiée et centre d'un domaine rural"],
+      ['Système', 'Maçonnerie massive en pierre avec dispositifs défensifs intégrés'],
+      ['Matériau dominant', 'Pierre calcaire et moellons'],
+      ['Toiture', 'Toitures à deux ou quatre pans, parfois associées à des couvertures distinctes pour les tours'],
+      ['Particularité', "Association d'un habitat résidentiel et de dispositifs de défense passive ou active"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Pierre de taille', 'Chaux', 'Bois', 'Terre cuite', 'Ardoise selon les secteurs'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Murs défensifs',
+        txt: 'Les murs épais en maçonnerie assurent à la fois la stabilité du bâtiment et une fonction de protection contre les attaques et les intrusions.',
+      },
+      {
+        n: 2,
+        el: 'Tour',
+        txt: "Une tour peut être intégrée ou accolée au corps de logis. Elle permet d'améliorer la surveillance des abords et peut contenir des espaces de circulation ou de stockage.",
+      },
+      {
+        n: 3,
+        el: 'Ouvertures défensives',
+        txt: 'Les ouvertures sont généralement peu nombreuses et peuvent comporter des archères, meurtrières ou dispositifs adaptés aux armes de différentes périodes.',
+      },
+      {
+        n: 4,
+        el: 'Échauguette',
+        txt: 'Certaines maisons fortes possèdent des échauguettes ou petits ouvrages en encorbellement permettant une surveillance plus large des abords.',
+      },
+      {
+        n: 5,
+        el: 'Corps de logis',
+        txt: 'Le bâtiment principal rassemble les fonctions résidentielles et domestiques. Son organisation évolue progressivement avec l\'amélioration du confort à partir de la fin du Moyen Âge.',
+      },
+      {
+        n: 6,
+        el: 'Fondations',
+        txt: 'Les fondations massives sont adaptées au poids important des murs et aux contraintes liées aux tours et aux éventuels ouvrages défensifs.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Fonction défensive',
+        icon: 'ph ph-shield',
+        intro: 'La maison forte combine la fonction résidentielle avec une capacité de protection adaptée aux troubles médiévaux.',
+        groups: [
+          G(null, ['Murs épais.', 'Ouvertures limitées.', 'Meurtrières.', 'Archères.', 'Surveillance des abords.', 'Protection des habitants.', 'Protection des récoltes et du bétail.']),
+        ],
+      },
+      {
+        title: 'Tours et volumes verticaux',
+        icon: 'ph ph-tower',
+        intro: 'Les tours constituent l\'un des éléments les plus visibles de certaines maisons fortes quercynoises.',
+        groups: [
+          G(null, ['Tour carrée.', 'Tour polygonale.', 'Tour circulaire selon les variantes.', 'Tour intégrée au logis.', 'Tour accolée.', 'Escalier en vis possible.', 'Poste d\'observation.']),
+        ],
+      },
+      {
+        title: 'Organisation résidentielle',
+        icon: 'ph ph-house-line',
+        intro: 'Malgré son caractère défensif, la maison forte reste avant tout une demeure destinée à une famille et à la gestion d\'un domaine.',
+        groups: [
+          G(null, ['Salle commune.', 'Chambres.', 'Cuisine.', 'Celliers.', 'Réserves.', 'Espaces de stockage.', 'Locaux agricoles.']),
+        ],
+      },
+      {
+        title: 'Cour et dépendances',
+        icon: 'ph ph-buildings',
+        intro: "La maison forte peut constituer le centre d'un ensemble rural comprenant plusieurs bâtiments liés à l'exploitation du domaine.",
+        groups: [
+          G(null, ['Cour.', 'Grange.', 'Étable.', 'Remise.', 'Four.', 'Pigeonnier.', 'Jardins.', 'Vergers.']),
+        ],
+      },
+      {
+        title: 'Architecture calcaire',
+        icon: 'ph ph-cube',
+        intro: 'La pierre locale donne aux maisons fortes du Quercy leur aspect massif et minéral.',
+        groups: [
+          G(null, ['Calcaire local.', 'Moellons.', 'Pierre de taille.', 'Encadrements en pierre.', 'Mortier de chaux.', 'Chaînages d\'angle.']),
+        ],
+      },
+      {
+        title: 'Évolution du bâtiment',
+        icon: 'ph ph-clock',
+        intro: 'Les maisons fortes ont souvent été transformées au fil des siècles, notamment lorsque les besoins défensifs ont diminué.',
+        groups: [
+          G(null, ['Renforcement médiéval.', 'Transformations de la Renaissance.', 'Ouverture progressive des façades.', 'Amélioration du confort.', 'Modification des distributions intérieures.', 'Transformation en demeure résidentielle.']),
+        ],
+      },
+      {
+        title: 'Relation au domaine',
+        icon: 'ph ph-map-pin',
+        intro: 'La maison forte est généralement associée à un territoire agricole dont elle constitue le centre résidentiel et administratif.',
+        groups: [
+          G(null, ['Terres cultivées.', 'Pâturages.', 'Vergers.', 'Boisements.', 'Chemins ruraux.', 'Dépendances agricoles.']),
+        ],
+      },
+      {
+        title: 'Distinction avec le château',
+        icon: 'ph ph-info',
+        intro: 'La maison forte se distingue généralement du château par son échelle, son caractère domestique et son intégration plus directe à une exploitation rurale.',
+        groups: [
+          G(null, ['Échelle plus réduite.', 'Fonction résidentielle dominante.', 'Relation étroite avec le domaine agricole.', 'Dispositifs défensifs limités.', 'Absence fréquente de véritable enceinte monumentale.', 'Organisation plus compacte.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La silhouette massive, les tours et les ouvertures défensives constituent les principaux indices permettant d\'identifier cette architecture.',
+        groups: [
+          G(null, ['Maçonnerie épaisse.', 'Tour ou tourelle.', 'Meurtrières ou archères.', 'Échauguette possible.', 'Ouvertures limitées.', 'Corps de logis massif.', 'Pierre calcaire.', 'Relation avec un domaine rural.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
