@@ -18436,6 +18436,175 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisondevignequercynoise',
+    name: 'Maison de vigne quercynoise',
+    region: 'Occitanie · Quercy · Lot',
+    periode: 'Seconde moitié du XIXe siècle – début du XXe siècle',
+    procede:
+      "Petite dépendance agricole spécialisée construite au sein ou à proximité des parcelles viticoles afin d'accompagner les travaux de la vigne et d'assurer certaines fonctions liées à l'exploitation. Elle apparaît dans le Lot avec la spécialisation viticole du XIXe siècle.",
+    usage: "Viticulture, abri pour les travailleurs, rangement du matériel et activités liées à l'exploitation de la vigne",
+    categorie: 'agricole',
+    gps: '44.48° N, 1.30° E',
+    altitude: '100–300 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans',
+    penteToit: 'Variable selon le secteur',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'Seconde moitié du XIXe siècle',
+    difficulteIdentification: 'Moyenne à élevée',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "La maison de vigne quercynoise est une petite construction agricole spécialisée apparue dans le Lot au cours de la seconde moitié du XIXe siècle et au début du XXe siècle, dans le contexte du développement de la viticulture. Contrairement à la maison en hauteur, dont le premier niveau pouvait simplement servir de cave, la maison de vigne constitue une dépendance directement associée à l'activité viticole. Elle pouvait servir d'abri temporaire aux travailleurs, de lieu de rangement des outils et de stockage de petits équipements nécessaires au travail de la vigne. Sa présence témoigne de la spécialisation progressive de certaines exploitations quercynoises vers la production viticole.",
+    identite: [
+      ['Période', 'Seconde moitié du XIXe siècle – début du XXe siècle'],
+      ['Région', 'Quercy · Lot'],
+      ['Usage', 'Dépendance viticole'],
+      ['Implantation', 'Parcelle viticole ou proximité immédiate du vignoble'],
+      ['Fonction', 'Abri, rangement et soutien aux travaux viticoles'],
+      ['Matériau dominant', 'Pierre calcaire locale'],
+      ['Particularité', 'Construction spécialisée liée à la viticulture'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons', 'Pierre de taille', 'Chaux', 'Bois', 'Tuile', 'Lauze'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Petit volume',
+        txt: 'La maison de vigne est généralement un bâtiment de dimensions réduites, adapté aux besoins ponctuels du travail viticole.',
+      },
+      {
+        n: 2,
+        el: 'Espace de travail',
+        txt: "L'espace intérieur peut servir à ranger les outils et à effectuer certaines opérations liées au travail de la vigne.",
+      },
+      {
+        n: 3,
+        el: 'Abri',
+        txt: "Le bâtiment offre un refuge temporaire aux travailleurs lors des travaux effectués dans les parcelles éloignées du siège de l'exploitation.",
+      },
+      {
+        n: 4,
+        el: 'Ouverture',
+        txt: "Les ouvertures restent généralement limitées et répondent aux besoins d'éclairage et de ventilation du petit local.",
+      },
+      {
+        n: 5,
+        el: 'Maçonnerie',
+        txt: 'Les murs utilisent principalement la pierre calcaire locale, généralement sous forme de moellons.',
+      },
+      {
+        n: 6,
+        el: 'Toiture',
+        txt: 'La couverture reprend les matériaux et techniques locales, notamment la tuile ou la lauze selon le secteur.',
+      },
+      {
+        n: 7,
+        el: 'Implantation viticole',
+        txt: 'La construction est directement associée à une parcelle ou à un secteur de vignoble et doit être distinguée d\'une habitation principale.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Origine de la typologie',
+        icon: 'ph ph-calendar',
+        intro: 'La maison de vigne apparaît dans le Lot avec la spécialisation progressive de certaines exploitations vers la viticulture au XIXe siècle.',
+        groups: [
+          G(null, ['Développement viticole au XIXe siècle.', 'Spécialisation entre 1850 et 1890.', 'Construction de dépendances spécialisées.', 'Développement avant la crise du phylloxéra.', 'Maintien de certains bâtiments au début du XXe siècle.']),
+        ],
+      },
+      {
+        title: 'Fonction viticole',
+        icon: 'ph ph-grape',
+        intro: 'La maison de vigne accompagne directement les activités effectuées dans les parcelles.',
+        groups: [
+          G(null, ['Rangement des outils.', 'Abri des travailleurs.', 'Protection contre les intempéries.', 'Stockage de petit matériel.', 'Préparation du travail viticole.', 'Surveillance des parcelles.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: "L'emplacement est déterminé avant tout par la proximité du vignoble et par les besoins pratiques du travail.",
+        groups: [
+          G(null, ['Au milieu des vignes.', 'En bordure de parcelle.', "À proximité d'un chemin rural.", 'Sur une pente viticole.', "À distance du siège de l'exploitation.", 'Relation directe avec les parcelles.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-house-line',
+        intro: "La maison de vigne privilégie la simplicité, la robustesse et l'économie constructive.",
+        groups: [
+          G(null, ['Petit volume.', 'Plan simple.', 'Maçonnerie en pierre.', 'Ouvertures réduites.', 'Construction fonctionnelle.', "Absence d'ornementation importante."]),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-cube',
+        intro: 'Les constructeurs utilisent principalement les matériaux disponibles localement.',
+        groups: [
+          G(null, ['Calcaire local.', 'Moellons.', 'Pierre de taille pour les encadrements.', 'Mortier de chaux.', 'Enduit possible.', 'Chaînages en pierre.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house',
+        intro: "La couverture reprend les traditions constructives locales tout en restant adaptée à un bâtiment de petite taille.",
+        groups: [
+          G(null, ['Deux pans fréquents.', 'Tuile plate.', 'Tuile creuse selon le secteur.', 'Lauze selon les traditions locales.', 'Charpente simple.', 'Faible emprise constructive.']),
+        ],
+      },
+      {
+        title: 'Relation avec le vignoble',
+        icon: 'ph ph-vine',
+        intro: 'La maison de vigne constitue une architecture directement produite par l\'organisation du travail viticole.',
+        groups: [
+          G(null, ['Parcelle viticole.', 'Rangs de vigne.', "Chemin d'accès.", 'Outils viticoles.', 'Travail saisonnier.', 'Surveillance des cultures.']),
+        ],
+      },
+      {
+        title: 'Contexte viticole du Lot',
+        icon: 'ph ph-chart-line-up',
+        intro: 'Le développement des maisons de vigne accompagne la spécialisation progressive du territoire lotois dans la production viticole.',
+        groups: [
+          G(null, ['Vignoble du Lot.', 'Vignoble de Cahors.', 'Spécialisation agricole.', 'Développement au XIXe siècle.', 'Période 1850–1890.', 'Crise du phylloxéra.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la maison en hauteur',
+        icon: 'ph ph-info',
+        intro: 'Cette distinction est essentielle pour éviter un doublon avec la maison en hauteur quercynoise.',
+        groups: [
+          G(null, [
+            'Maison de vigne : dépendance spécialisée.',
+            "Maison en hauteur : forme générale d'habitation rurale.",
+            'Une cave au rez-de-chaussée ne suffit pas à définir une maison vigneronne.',
+            "La maison de vigne est directement associée à l'activité viticole.",
+            'La maison en hauteur peut appartenir à une exploitation non spécialisée dans la viticulture.',
+          ]),
+        ],
+      },
+      {
+        title: 'Évolution et disparition',
+        icon: 'ph ph-clock',
+        intro: 'La crise viticole et les transformations des pratiques agricoles ont progressivement réduit la fonction originelle de nombreuses maisons de vigne.',
+        groups: [
+          G(null, ['Crise du phylloxéra.', 'Réduction des surfaces viticoles.', 'Abandon de certaines parcelles.', 'Transformation des usages.', 'Restauration patrimoniale.', 'Disparition de certaines dépendances.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'association entre petit bâtiment, parcelle viticole et fonction agricole spécialisée constitue le principal critère d'identification.",
+        groups: [
+          G(null, ['Petit bâtiment isolé ou dépendance.', 'Implantation dans ou près du vignoble.', 'Maçonnerie en pierre.', 'Plan simple.', 'Ouvertures réduites.', 'Fonction agricole spécialisée.', 'Datation principalement XIXe–début XXe siècle.', 'Relation directe avec la viticulture.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
