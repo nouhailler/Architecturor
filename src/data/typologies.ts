@@ -22280,6 +22280,233 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'chapelleruralesavoyarde',
+    name: 'Chapelle rurale savoyarde',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XVe siècle – début du XXe siècle',
+    procede:
+      "Petit édifice religieux implanté dans un village, un hameau, un vallon, un alpage ou à proximité d'un ancien chemin. La chapelle rurale savoyarde est généralement construite en maçonnerie de pierre locale et présente un plan simple, le plus souvent rectangulaire, parfois complété par une abside ou un chevet plus étroit. Une façade-pignon accueille généralement l'entrée et peut être surmontée d'un petit clocher-mur ou d'un clocheton. La construction privilégie la simplicité des volumes et l'adaptation au relief et aux conditions climatiques alpines.",
+    usage: 'Culte local, dévotion communautaire, pèlerinage et protection des populations rurales',
+    categorie: 'religieuse',
+    gps: '45.60° N, 6.45° E',
+    altitude: '300–2200 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et mélèze',
+    typeFondation: 'Fondations et soubassement en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe–XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVe', 'XVIe', 'XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La chapelle rurale savoyarde est un petit édifice religieux destiné aux communautés rurales, aux hameaux isolés et parfois aux populations fréquentant les alpages. Elle peut être consacrée à un saint protecteur, à la Vierge ou être associée à un événement religieux ou communautaire. Son architecture est généralement sobre : murs en pierre, plan rectangulaire, couverture à deux pans et petit dispositif campanaire. Dans les zones de montagne, son implantation tient compte du relief, des chemins et des contraintes climatiques. Certaines chapelles sont établies au cœur des villages tandis que d'autres occupent des sites isolés, des passages ou des pâturages d'altitude. Les décors intérieurs peuvent néanmoins présenter une richesse importante, notamment sous la forme de peintures murales, de retables ou de mobilier liturgique.",
+    identite: [
+      ['Période', 'XVe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', 'Culte local et dévotion communautaire'],
+      ['Implantation', 'Villages, hameaux, chemins, vallons et alpages'],
+      ['Organisation', 'Plan simple à nef unique'],
+      ['Système', 'Maçonnerie en pierre et charpente en bois'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Toiture', 'Toiture à deux pans'],
+      ['Particularité', 'Petit volume religieux adapté au contexte rural et montagnard'],
+    ],
+    materiaux: ['Pierre locale', 'Calcaire', 'Schiste', 'Granit selon les secteurs', 'Mortier de chaux', 'Bois', 'Épicéa', 'Sapin', 'Mélèze', 'Ardoise', 'Lauze', 'Tuile', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Nef',
+        txt: "La nef constitue généralement l'espace principal destiné aux fidèles.",
+      },
+      {
+        n: 2,
+        el: 'Chœur',
+        txt: "Le chœur accueille l'autel et peut être simplement séparé de la nef ou marqué par une différence de largeur ou de hauteur.",
+      },
+      {
+        n: 3,
+        el: 'Chevet',
+        txt: 'Le chevet peut être plat, légèrement polygonal ou complété par une petite abside selon les édifices.',
+      },
+      {
+        n: 4,
+        el: 'Façade-pignon',
+        txt: "La façade principale est fréquemment organisée sous la forme d'un pignon donnant sur le chemin ou l'espace public.",
+      },
+      {
+        n: 5,
+        el: "Porte d'entrée",
+        txt: "L'accès principal est généralement situé au centre de la façade occidentale ou sur le côté selon la topographie.",
+      },
+      {
+        n: 6,
+        el: 'Clocher-mur ou clocheton',
+        txt: 'Un dispositif campanaire simple peut être placé au-dessus du pignon ou de la toiture.',
+      },
+      {
+        n: 7,
+        el: 'Murs en pierre',
+        txt: 'Les murs porteurs en pierre assurent la stabilité du bâtiment et sa résistance aux conditions climatiques.',
+      },
+      {
+        n: 8,
+        el: 'Charpente',
+        txt: 'Une charpente traditionnelle en bois porte la couverture à deux pans.',
+      },
+      {
+        n: 9,
+        el: 'Décor intérieur',
+        txt: 'Certaines chapelles présentent des peintures murales, retables, statues ou autres éléments de mobilier religieux.',
+      },
+      {
+        n: 10,
+        el: 'Parvis',
+        txt: "Un petit espace extérieur peut assurer la transition entre le chemin et l'entrée de la chapelle.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Fonction religieuse',
+        icon: 'ph ph-church',
+        intro: "La chapelle répond aux besoins religieux d'une communauté rurale ou d'un territoire isolé.",
+        groups: [
+          G(null, ['Messe.', 'Prière.', 'Culte local.', 'Fêtes religieuses.', 'Dédicace à un saint.']),
+        ],
+      },
+      {
+        title: 'Implantation rurale',
+        icon: 'ph ph-map-pin',
+        intro: 'La chapelle peut être implantée dans un village, un hameau ou un site isolé associé aux pratiques locales.',
+        groups: [
+          G(null, ['Village.', 'Hameau.', 'Vallon.', 'Alpage.', 'Chemin rural.', 'Passage montagnard.']),
+        ],
+      },
+      {
+        title: 'Plan à nef unique',
+        icon: 'ph ph-arrows-out',
+        intro: 'La simplicité du plan répond aux dimensions réduites et aux moyens limités des communautés rurales.',
+        groups: [
+          G(null, ['Nef unique.', 'Chœur.', 'Chevet.', 'Espace des fidèles.', 'Autel.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-wall',
+        intro: 'La construction utilise principalement les matériaux minéraux disponibles localement.',
+        groups: [
+          G(null, ['Pierre locale.', 'Calcaire.', 'Schiste.', 'Mortier de chaux.', 'Enduit.']),
+        ],
+      },
+      {
+        title: 'Clocher',
+        icon: 'ph ph-bell',
+        intro: 'Le dispositif campanaire reste généralement de dimensions modestes.',
+        groups: [
+          G(null, ['Clocher-mur.', 'Clocheton.', 'Baie campanaire.', 'Cloche.', 'Pignon.']),
+        ],
+      },
+      {
+        title: 'Toiture alpine',
+        icon: 'ph ph-house-line',
+        intro: "La couverture doit résister aux fortes précipitations et, selon l'altitude, à l'enneigement hivernal.",
+        groups: [
+          G(null, ['Deux pans.', 'Forte pente.', 'Lauze.', 'Ardoise.', 'Tuile.', 'Débord de toiture.']),
+        ],
+      },
+      {
+        title: 'Décor intérieur',
+        icon: 'ph ph-paint-brush',
+        intro: 'Malgré leur simplicité extérieure, certaines chapelles rurales possèdent un décor intérieur particulièrement riche.',
+        groups: [
+          G(null, ['Peintures murales.', 'Fresques.', 'Retable.', 'Statues.', 'Mobilier liturgique.', 'Ex-voto.']),
+        ],
+      },
+      {
+        title: 'Dévotions locales',
+        icon: 'ph ph-hands-praying',
+        intro: 'Les chapelles sont souvent liées à des cultes particuliers ou à des traditions religieuses locales.',
+        groups: [
+          G(null, ['Saint protecteur.', 'Vierge.', 'Pèlerinage.', 'Procession.', 'Fête patronale.']),
+        ],
+      },
+      {
+        title: 'Protection des communautés',
+        icon: 'ph ph-shield-check',
+        intro: 'Certaines dédicaces témoignent de préoccupations liées aux risques naturels, aux maladies ou à la protection des récoltes et des troupeaux.',
+        groups: [
+          G(null, ['Protection du village.', 'Protection des troupeaux.', 'Protection des récoltes.', 'Épidémies.', 'Risques naturels.']),
+        ],
+      },
+      {
+        title: 'Relation avec les chemins',
+        icon: 'ph ph-road-horizon',
+        intro: 'Certaines chapelles sont implantées le long d\'anciens itinéraires et constituent des points de repère dans le paysage.',
+        groups: [
+          G(null, ['Chemin rural.', 'Ancien itinéraire.', 'Col.', 'Passage.', 'Point de repère.']),
+        ],
+      },
+      {
+        title: 'Construction en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois intervient principalement dans la charpente, les portes et certains éléments du mobilier.',
+        groups: [
+          G(null, ['Charpente.', 'Épicéa.', 'Sapin.', 'Mélèze.', 'Portes.', 'Mobilier.']),
+        ],
+      },
+      {
+        title: 'Adaptation au relief',
+        icon: 'ph ph-mountains',
+        intro: 'Les chapelles de montagne sont implantées et construites en tenant compte de la pente et de la stabilité du terrain.',
+        groups: [
+          G(null, ['Terrassement.', 'Soubassement.', 'Mur de soutènement.', 'Accès en pente.', 'Orientation.']),
+        ],
+      },
+      {
+        title: "Distinction avec l'oratoire",
+        icon: 'ph ph-info',
+        intro: "La chapelle possède un véritable espace intérieur destiné au rassemblement des fidèles, contrairement à l'oratoire qui constitue généralement une micro-architecture de dévotion.",
+        groups: [
+          G(null, [
+            'Chapelle : espace intérieur accessible.',
+            'Oratoire : édicule de petite dimension.',
+            'Chapelle : nef et autel.',
+            'Oratoire : niche ou petit espace votif.',
+            'Fonction collective plus importante.',
+          ]),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: 'Certaines chapelles ont perdu leur fonction régulière tout en conservant une forte valeur patrimoniale et communautaire.',
+        groups: [
+          G(null, ['Culte occasionnel.', 'Restauration.', 'Patrimoine local.', 'Fête annuelle.', 'Ouverture saisonnière.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "Le petit volume religieux, la nef unique, la maçonnerie en pierre et le dispositif campanaire constituent les principaux indices d'identification.",
+        groups: [
+          G(null, [
+            'Nef unique.',
+            'Petit volume.',
+            'Maçonnerie en pierre.',
+            'Façade-pignon.',
+            'Clocher-mur ou clocheton.',
+            'Toiture à deux pans.',
+            'Autel.',
+            'Implantation rurale.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
