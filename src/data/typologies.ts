@@ -18605,6 +18605,205 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'grangettebergeriedescausses',
+    name: 'Grangette-bergerie des Causses',
+    region: 'Occitanie · Quercy · Causses du Quercy · Lot',
+    periode: 'XIXe siècle',
+    procede:
+      "Petite dépendance agricole construite principalement en pierre sèche sur les causses du Quercy. Elle associe généralement plusieurs fonctions : abri temporaire pour le berger ou le bétail, remise à outils, stockage du fourrage et fenil. Certains exemplaires intègrent une citerne recueillant l'eau de pluie, souvent aménagée sous un escalier extérieur. La dénomination patrimoniale attestée pour ce type d'édifice est « grangette avec citerne ».",
+    usage: 'Élevage ovin, stockage du foin, remise agricole, abri temporaire du berger et du bétail',
+    categorie: 'agricole',
+    gps: '44.55° N, 1.75° E',
+    altitude: '250–450 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Toiture en lauzes calcaires ou couverture traditionnelle locale',
+    penteToit: 'Variable selon la forme et le système de couverture',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations en pierre calcaire',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XIXe'],
+    resume:
+      "La grangette-bergerie des Causses est une petite construction agricole caractéristique des paysages pastoraux du Quercy caussenard, connue dans la documentation patrimoniale du Lot sous le nom de « grangette avec citerne ». Apparue ou développée dans le contexte de l'intensification des pratiques agricoles au XIXe siècle, elle permettait de rapprocher certaines fonctions de l'exploitation des parcelles éloignées du siège de la ferme. Son rez-de-chaussée pouvait accueillir quelques animaux tandis que le comble servait de fenil. Certains exemplaires associent au bâtiment une citerne destinée à recueillir l'eau de toiture et une auge pour l'abreuvement du bétail. Construite en pierre sèche, elle témoigne d'une remarquable adaptation aux ressources calcaires et aux contraintes hydriques des Causses du Quercy.",
+    identite: [
+      ['Période', 'XIXe siècle'],
+      ['Région', 'Causses du Quercy · Lot'],
+      ['Usage', 'Élevage ovin et activités agricoles'],
+      ['Organisation', 'Petit bâtiment agricole à rez-de-chaussée et comble'],
+      ['Système constructif', 'Maçonnerie en pierre sèche'],
+      ['Fonction du rez-de-chaussée', 'Bergerie, remise ou abri temporaire'],
+      ['Fonction du comble', 'Fenil et stockage du fourrage'],
+      ['Particularité', "Citerne associée recueillant l'eau de toiture"],
+    ],
+    materiaux: ['Calcaire', 'Pierre sèche', 'Lauzes calcaires', 'Pierre de taille', 'Bois'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Bergerie',
+        txt: "Le rez-de-chaussée pouvait accueillir quelques brebis ou les animaux les plus fragiles lorsque les parcelles se trouvaient éloignées de la ferme.",
+      },
+      {
+        n: 2,
+        el: 'Fenil',
+        txt: "Le comble servait au stockage du foin destiné à l'alimentation du bétail.",
+      },
+      {
+        n: 3,
+        el: 'Remise à outils',
+        txt: 'La construction permettait également de conserver sur place les outils et petits équipements nécessaires aux travaux agricoles.',
+      },
+      {
+        n: 4,
+        el: 'Escalier extérieur',
+        txt: 'Un escalier construit contre le mur-pignon permettait d\'accéder au comble et pouvait être disposé au-dessus de la citerne.',
+      },
+      {
+        n: 5,
+        el: 'Citerne',
+        txt: "Certains exemplaires possèdent une citerne constituée de grandes dalles calcaires, recueillant l'eau de pluie provenant de la toiture.",
+      },
+      {
+        n: 6,
+        el: 'Auge',
+        txt: "La citerne pouvait être associée à une auge monolithe destinée à l'abreuvement des animaux.",
+      },
+      {
+        n: 7,
+        el: 'Pierre sèche',
+        txt: 'Les murs sont construits sans mortier, avec des blocs calcaires soigneusement empilés et calés.',
+      },
+      {
+        n: 8,
+        el: 'Parcelle agricole',
+        txt: "La grangette est implantée au contact des pâturages ou des parcelles cultivées afin de réduire les déplacements entre les terres et la ferme.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe architectural',
+        icon: 'ph ph-buildings',
+        intro: "La grangette-bergerie est un petit bâtiment agricole polyvalent destiné à rapprocher les fonctions d'élevage et de stockage des parcelles exploitées.",
+        groups: [
+          G(null, ['Petit volume compact.', 'Rez-de-chaussée fonctionnel.', 'Comble ou fenil.', 'Fonctions agricoles multiples.', 'Implantation au milieu ou en bordure des parcelles.']),
+        ],
+      },
+      {
+        title: 'Élevage ovin',
+        icon: 'ph ph-sheep',
+        intro: "L'élevage des brebis constitue l'une des fonctions majeures de ces petites constructions pastorales.",
+        groups: [
+          G(null, ['Accueil de quelques brebis.', 'Abri du bétail.', 'Protection contre les intempéries.', 'Isolement des animaux fragiles.', 'Proximité des pâturages.']),
+        ],
+      },
+      {
+        title: 'Fenil',
+        icon: 'ph ph-grains',
+        intro: 'Le niveau supérieur permet de stocker le fourrage nécessaire aux animaux.',
+        groups: [
+          G(null, ['Stockage du foin.', 'Comble agricole.', 'Accès indépendant possible.', 'Conservation du fourrage.', 'Distribution au bétail.']),
+        ],
+      },
+      {
+        title: 'Pierre sèche',
+        icon: 'ph ph-cube',
+        intro: 'La construction en pierre sèche constitue l\'une des caractéristiques fondamentales de cette architecture caussenarde.',
+        groups: [
+          G(null, ['Absence de mortier.', 'Calcaire local.', "Pierres issues de l'épierrement des parcelles.", 'Blocs irréguliers.', 'Calage des pierres.', 'Savoir-faire traditionnel.']),
+        ],
+      },
+      {
+        title: 'Citerne',
+        icon: 'ph ph-drop',
+        intro: 'Dans certains exemplaires, la récupération de l\'eau de pluie complète les fonctions agricoles du bâtiment.',
+        groups: [
+          G(null, ["Collecte de l'eau de toiture.", 'Citerne en dalles calcaires.', "Réserve d'eau.", 'Abreuvement du bétail.', 'Auge monolithe.', "Adaptation à la rareté de l'eau sur les Causses."]),
+        ],
+      },
+      {
+        title: 'Implantation sur les Causses',
+        icon: 'ph ph-map-pin',
+        intro: 'La grangette est directement associée au paysage agricole et pastoral des plateaux calcaires.',
+        groups: [
+          G(null, ['Pâturages.', 'Parcelles cultivées.', 'Pelouses sèches.', 'Murets en pierre sèche.', 'Chemins ruraux.', 'Terrains éloignés de la ferme.']),
+        ],
+      },
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-out-line-vertical',
+        intro: "La superposition des fonctions permet d'obtenir plusieurs usages dans un bâtiment de faible emprise.",
+        groups: [
+          G(null, ['Niveau bas : animaux et remise.', 'Niveau haut : foin.', 'Escalier extérieur.', 'Accès au comble.', "Économie d'espace."]),
+        ],
+      },
+      {
+        title: 'Relation avec les murs de pierre',
+        icon: 'ph ph-wall',
+        intro: 'La grangette peut être intégrée au système parcellaire des Causses et faire corps avec les murs qui délimitent les terres.',
+        groups: [
+          G(null, ["Mur d'enclos.", 'Parcelle agricole.', 'Construction intégrée au mur.', 'Économie de matériaux.', 'Continuité du paysage de pierre sèche.']),
+        ],
+      },
+      {
+        title: 'Contexte agricole du XIXe siècle',
+        icon: 'ph ph-calendar',
+        intro: 'Ces constructions sont liées à l\'intensification des pratiques agricoles et pastorales sur les Causses au XIXe siècle.',
+        groups: [
+          G(null, ['Intensification agricole.', "Développement de l'élevage.", 'Mise en valeur des terres caussenardes.', 'Éloignement de certaines parcelles.', 'Multiplication des petits bâtiments agricoles.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la cazelle',
+        icon: 'ph ph-info',
+        intro: 'La distinction avec la cazelle quercynoise est essentielle : les deux constructions utilisent la pierre sèche, mais leurs organisations et leurs fonctions diffèrent.',
+        groups: [
+          G(null, [
+            'Cazelle : principalement abri pastoral ou petit refuge.',
+            'Grangette-bergerie : bâtiment agricole plus polyvalent.',
+            'Grangette : présence possible d\'un fenil.',
+            'Grangette : stockage du matériel.',
+            'Grangette : possibilité d\'abriter du bétail.',
+            'Certains exemplaires possèdent une citerne intégrée.',
+          ]),
+        ],
+      },
+      {
+        title: 'Distinction avec la grange-étable',
+        icon: 'ph ph-info',
+        intro: 'La grangette des Causses se distingue de la grange-étable quercynoise par son échelle, son implantation et son système constructif.',
+        groups: [
+          G(null, [
+            'Grangette : petite construction isolée dans les parcelles.',
+            'Grange-étable : bâtiment agricole plus important.',
+            'Grangette : pierre sèche fréquente.',
+            'Grange-étable : maçonnerie généralement liée au mortier.',
+            'Grangette : fonctions temporaires et stockage local.',
+            "Grange-étable : centre permanent de l'exploitation.",
+          ]),
+        ],
+      },
+      {
+        title: 'Exemple de Marcilhac-sur-Célé',
+        icon: 'ph ph-map-trifold',
+        intro: 'Le circuit patrimonial des caselles de Marcilhac documente un exemple particulièrement complet de grangette avec citerne.',
+        groups: [
+          G(null, ['Construction en pierre sèche.', 'Porte en pierre de taille.', 'Grange et remise à outils.', 'Abri temporaire pour hommes ou bétail.', 'Fenil dans le comble.', 'Escalier extérieur.', 'Citerne sous l\'escalier.', 'Auge pour le bétail.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'un petit bâtiment en pierre sèche, d'un espace agricole à plusieurs niveaux et, dans certains cas, d'une citerne constitue la signature de cette typologie.",
+        groups: [
+          G(null, ['Petite construction caussenarde.', 'Pierre sèche.', 'Bergerie ou abri du bétail.', 'Fenil.', 'Remise à outils.', 'Escalier extérieur.', 'Citerne possible.', 'Implantation dans une parcelle agricole.', 'Contexte pastoral du XIXe siècle.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
