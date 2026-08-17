@@ -19740,6 +19740,225 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisonblocsavoyarde',
+    name: 'Maison-bloc savoyarde',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Bâtiment rural regroupant dans un même volume les fonctions d'habitation et d'exploitation agricole. Selon les secteurs et les contraintes du terrain, le logement, l'étable, la grange et le fenil sont disposés côte à côte ou superposés. La construction associe généralement un soubassement en pierre à des parties en bois, avec une toiture adaptée aux fortes précipitations et à l'enneigement.",
+    usage: 'Habitation permanente, élevage, stockage du foin et exploitation agricole',
+    categorie: 'montagne',
+    gps: '45.55° N, 6.55° E',
+    altitude: '500–1500 m',
+    climat: 'Montagnard alpin à montagnard humide',
+    typeToiture: 'Toiture à deux pans, couverture variable selon le secteur',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa et mélèze',
+    typeFondation: 'Fondations maçonnées en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La maison-bloc savoyarde est une forme d'habitat rural dans laquelle le logement et les principales fonctions agricoles sont réunis dans un même bâtiment. Cette organisation permet de concentrer les activités domestiques et agricoles tout en limitant les déplacements et l'emprise au sol, ce qui est particulièrement adapté aux terrains montagnards. Le bâtiment peut présenter une organisation longitudinale avec habitation, étable et grange disposées dans un même volume, ou une organisation verticale où les fonctions agricoles et domestiques sont superposées. La pierre domine généralement dans les parties basses soumises à l'humidité et aux contraintes du terrain, tandis que le bois est largement employé pour les niveaux supérieurs, les planchers et la charpente. Les variantes sont nombreuses selon les vallées, l'altitude, les matériaux disponibles et les pratiques agricoles.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', 'Habitation et exploitation agricole'],
+      ['Organisation', 'Fonctions domestiques et agricoles regroupées'],
+      ['Système', 'Construction mixte pierre et bois'],
+      ['Implantation', 'Villages, hameaux et exploitations agricoles de montagne'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Toiture', 'Toiture à deux pans adaptée au climat montagnard'],
+      ['Particularité', 'Habitation, étable et stockage réunis dans un même volume'],
+    ],
+    materiaux: ['Pierre locale', 'Calcaire', 'Schiste selon les secteurs', 'Bois', 'Épicéa', 'Mélèze', 'Chêne', 'Lauze', 'Ardoise', 'Tuile'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Soubassement en pierre',
+        txt: "La partie basse maçonnée assure la stabilité du bâtiment et protège les espaces agricoles et domestiques contre l'humidité du terrain.",
+      },
+      {
+        n: 2,
+        el: 'Habitation',
+        txt: 'Le logement familial occupe une partie du bâtiment et comprend généralement les pièces de vie, la cuisine et les espaces de rangement.',
+      },
+      {
+        n: 3,
+        el: 'Étable',
+        txt: "L'étable accueille les animaux et peut être directement reliée aux espaces de stockage et à l'habitation.",
+      },
+      {
+        n: 4,
+        el: 'Grange',
+        txt: 'La grange permet le stockage du foin, de la paille et du matériel agricole.',
+      },
+      {
+        n: 5,
+        el: 'Fenil',
+        txt: "Le fenil occupe fréquemment la partie supérieure du bâtiment afin de faciliter le stockage du fourrage par chargement depuis l'extérieur.",
+      },
+      {
+        n: 6,
+        el: 'Parois en bois',
+        txt: 'Le bois est largement employé dans les parties supérieures pour réduire le poids de la construction et favoriser la ventilation du foin.',
+      },
+      {
+        n: 7,
+        el: 'Charpente',
+        txt: 'La charpente en bois supporte la couverture et doit résister aux charges de neige importantes.',
+      },
+      {
+        n: 8,
+        el: 'Toiture',
+        txt: "La toiture à deux pans protège les espaces domestiques et agricoles des précipitations et de l'enneigement.",
+      },
+      {
+        n: 9,
+        el: 'Accès agricoles',
+        txt: 'Des portes et ouvertures de dimensions importantes permettent la manutention du foin et l\'accès aux espaces agricoles.',
+      },
+      {
+        n: 10,
+        el: 'Circulation interne',
+        txt: 'La proximité des différentes fonctions réduit les déplacements quotidiens entre logement, animaux et réserves agricoles.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe de la maison-bloc',
+        icon: 'ph ph-house',
+        intro: "La maison-bloc rassemble les fonctions essentielles de l'exploitation dans un même bâtiment.",
+        groups: [
+          G(null, ['Habitation.', 'Étable.', 'Grange.', 'Fenil.', 'Rangement du matériel.', 'Espaces de travail.']),
+        ],
+      },
+      {
+        title: 'Organisation horizontale',
+        icon: 'ph ph-arrows-left-right',
+        intro: 'Dans certaines maisons-blocs, les fonctions sont disposées côte à côte dans un bâtiment relativement allongé.',
+        groups: [
+          G(null, ['Habitation à une extrémité.', 'Étable au centre ou à proximité.', "Grange à l'autre extrémité.", 'Accès indépendants.', 'Circulation longitudinale.']),
+        ],
+      },
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-out-line-vertical',
+        intro: "Lorsque le terrain ou les contraintes constructives l'imposent, les fonctions peuvent être superposées.",
+        groups: [
+          G(null, ['Étable au niveau inférieur.', 'Habitation à un niveau intermédiaire.', 'Fenil dans les niveaux supérieurs.', 'Accès différenciés selon le relief.', 'Utilisation optimale de la pente.']),
+        ],
+      },
+      {
+        title: 'Adaptation au relief',
+        icon: 'ph ph-mountains',
+        intro: "La maison-bloc s'adapte aux terrains fortement inclinés grâce à des accès différents selon les niveaux.",
+        groups: [
+          G(null, ['Implantation en pente.', 'Accès haut pour le fenil.', "Accès bas pour l'étable.", 'Soubassement maçonné.', 'Terrassement limité.']),
+        ],
+      },
+      {
+        title: 'Soubassement minéral',
+        icon: 'ph ph-wall',
+        intro: 'La pierre constitue généralement la base structurelle du bâtiment.',
+        groups: [
+          G(null, ['Pierre locale.', 'Calcaire.', 'Schiste dans certains secteurs.', 'Moellons.', 'Mortier de chaux.', "Protection contre l'humidité."]),
+        ],
+      },
+      {
+        title: 'Construction en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois est particulièrement présent dans les niveaux supérieurs, la charpente et les éléments de stockage.',
+        groups: [
+          G(null, ['Épicéa.', 'Mélèze.', 'Poutres.', 'Madriers.', 'Planchers.', 'Charpente.']),
+        ],
+      },
+      {
+        title: 'Fenil et stockage',
+        icon: 'ph ph-hay',
+        intro: 'Le stockage du fourrage constitue une fonction essentielle de la maison-bloc agricole.',
+        groups: [
+          G(null, ['Foin.', 'Paille.', 'Stockage en hauteur.', 'Ventilation naturelle.', 'Chargement par ouverture haute.', 'Alimentation hivernale du troupeau.']),
+        ],
+      },
+      {
+        title: 'Étable',
+        icon: 'ph ph-cow',
+        intro: "L'étable constitue le principal espace consacré aux animaux dans l'exploitation.",
+        groups: [
+          G(null, ['Bovins.', 'Traite.', 'Affouragement.', 'Évacuation des déjections.', 'Accès direct aux pâturages.']),
+        ],
+      },
+      {
+        title: 'Habitation',
+        icon: 'ph ph-armchair',
+        intro: 'La partie domestique constitue le logement permanent de la famille exploitante.',
+        groups: [
+          G(null, ['Cuisine.', 'Pièce de vie.', 'Chambres.', 'Rangement.', 'Chauffage.', 'Accès indépendant ou commun.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: 'La toiture constitue un élément essentiel de protection contre les précipitations et la neige.',
+        groups: [
+          G(null, ['Deux pans.', 'Charpente en bois.', 'Couverture locale.', 'Débord de toiture.', 'Pente adaptée au secteur.', 'Protection des façades.']),
+        ],
+      },
+      {
+        title: 'Relation avec le village',
+        icon: 'ph ph-buildings',
+        intro: "Les maisons-blocs peuvent former des hameaux ou des villages où les bâtiments agricoles s'organisent selon le relief.",
+        groups: [
+          G(null, ['Hameaux.', 'Villages de montagne.', 'Parcelles agricoles.', 'Chemins ruraux.', 'Cours et espaces communs.']),
+        ],
+      },
+      {
+        title: "Maison-bloc et chalet d'alpage",
+        icon: 'ph ph-info',
+        intro: "La maison-bloc savoyarde se distingue du chalet d'alpage savoyard principalement par son caractère résidentiel et son implantation.",
+        groups: [
+          G(null, [
+            'Maison-bloc : habitat permanent ou semi-permanent.',
+            "Chalet d'alpage : occupation saisonnière.",
+            "Maison-bloc : exploitation proche de l'habitat permanent.",
+            'Chalet : implantation dans les pâturages d\'altitude.',
+            'Maison-bloc : fonctions domestiques développées.',
+            'Chalet : fonctions pastorales dominantes.',
+          ]),
+        ],
+      },
+      {
+        title: 'Variations régionales',
+        icon: 'ph ph-map',
+        intro: "L'organisation et l'apparence de la maison-bloc varient selon les vallées et les ressources disponibles.",
+        groups: [
+          G(null, ['Tarentaise.', 'Maurienne.', 'Beaufortain.', 'Bauges.', "Val d'Arly.", 'Avant-pays savoyard.']),
+        ],
+      },
+      {
+        title: 'Évolution',
+        icon: 'ph ph-clock',
+        intro: "L'évolution des pratiques agricoles a progressivement séparé certaines fonctions autrefois réunies dans le même bâtiment.",
+        groups: [
+          G(null, ['Modernisation agricole.', 'Séparation du logement et de l\'exploitation.', 'Transformation des étables.', 'Création de bâtiments agricoles spécialisés.', 'Réhabilitation résidentielle.', 'Préservation patrimoniale.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'La réunion des fonctions domestiques et agricoles dans un seul volume constitue le principal critère d\'identification.',
+        groups: [
+          G(null, ['Un bâtiment unique.', 'Habitation intégrée.', 'Étable intégrée.', 'Grange ou fenil intégré.', 'Soubassement minéral.', 'Structure bois.', 'Toiture à deux pans.', 'Adaptation au relief.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
