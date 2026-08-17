@@ -23772,6 +23772,227 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'fruitierejurassienne',
+    name: 'Fruitière jurassienne',
+    region: 'Bourgogne-Franche-Comté · Jura · massif jurassien',
+    periode: 'XVIIIe siècle – début du XXe siècle',
+    procede:
+      "Bâtiment collectif destiné à la collecte, à la transformation et à l'affinage initial du lait produit par les exploitations d'un village ou d'un hameau. La fruitière traditionnelle est généralement implantée au cœur du village afin de faciliter l'apport quotidien du lait. Elle associe des espaces de réception et de stockage du lait, une grande salle de fabrication équipée de cuves et de foyers de chauffe, ainsi que des espaces annexes. La construction utilise principalement la pierre et le bois, avec une organisation intérieure adaptée aux contraintes d'hygiène, de température et de ventilation nécessaires à la transformation fromagère.",
+    usage: 'Production collective de fromage et transformation du lait',
+    categorie: 'industrielle',
+    gps: '46.70° N, 6.10° E',
+    altitude: '500–1100 m',
+    climat: 'Montagnard continental',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et chêne',
+    typeFondation: 'Soubassement maçonné en pierre calcaire',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Faible à moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La fruitière jurassienne est un bâtiment collectif emblématique de l'organisation agricole du massif jurassien. Elle rassemble les producteurs de lait d'un village ou d'un secteur afin de transformer collectivement leur production en fromage, notamment en Comté. Son architecture est directement liée à cette fonction : grande salle de fabrication, chaudière ou foyer, cuves, espaces de stockage et locaux annexes. Implantée généralement dans le village, elle constitue à la fois un équipement productif et un lieu important de la vie communautaire. Les bâtiments anciens sont généralement construits en pierre, avec une charpente et des éléments intérieurs en bois. Certaines fruitières ont été agrandies ou profondément transformées avec la modernisation de la production laitière.",
+    identite: [
+      ['Période', 'XVIIIe siècle – début du XXe siècle'],
+      ['Région', 'Jura · Haut-Doubs · massif jurassien'],
+      ['Usage', 'Transformation collective du lait en fromage'],
+      ['Implantation', 'Village ou hameau'],
+      ['Organisation', 'Grande salle de fabrication et locaux annexes'],
+      ['Système', 'Maçonnerie en pierre et charpente en bois'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Toiture', 'Toiture à deux pans'],
+      ['Particularité', "Équipement collectif de transformation laitière associé à l'organisation communautaire du village"],
+    ],
+    materiaux: ['Pierre calcaire', 'Bois', 'Épicéa', 'Sapin', 'Chêne', 'Chaux', 'Tuiles', 'Lauze', 'Ardoise', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Salle de fabrication',
+        txt: 'Grande pièce centrale destinée aux opérations de transformation du lait et à la fabrication du fromage.',
+      },
+      {
+        n: 2,
+        el: 'Cuves',
+        txt: 'Les cuves servent à chauffer et à travailler le lait lors des différentes étapes de fabrication.',
+      },
+      {
+        n: 3,
+        el: 'Foyer ou chaudière',
+        txt: "Le dispositif de chauffe permet d'élever la température du lait dans les grandes cuves de fabrication.",
+      },
+      {
+        n: 4,
+        el: 'Local de réception',
+        txt: 'Espace destiné à la réception et à la manipulation du lait apporté quotidiennement par les producteurs.',
+      },
+      {
+        n: 5,
+        el: 'Espace de stockage',
+        txt: 'Locaux destinés au stockage temporaire du matériel, du bois de chauffe et des produits.',
+      },
+      {
+        n: 6,
+        el: 'Ouvertures de ventilation',
+        txt: "Les ouvertures contribuent au renouvellement de l'air et à la régulation des conditions intérieures.",
+      },
+      {
+        n: 7,
+        el: 'Mur en pierre',
+        txt: 'La maçonnerie en pierre locale assure solidité et stabilité thermique du bâtiment.',
+      },
+      {
+        n: 8,
+        el: 'Charpente',
+        txt: 'La charpente en bois porte la couverture et participe à la structure générale du bâtiment.',
+      },
+      {
+        n: 9,
+        el: 'Cheminée',
+        txt: "Une cheminée ou un conduit permet l'évacuation des fumées produites par le dispositif de chauffe.",
+      },
+      {
+        n: 10,
+        el: 'Entrée',
+        txt: "L'entrée permet l'accès des producteurs, du matériel et des livraisons au bâtiment.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Équipement collectif',
+        icon: 'ph ph-users-three',
+        intro: "La fruitière est avant tout un équipement communautaire appartenant à l'organisation collective des producteurs.",
+        groups: [
+          G(null, ['Collecte du lait.', 'Transformation collective.', 'Producteurs associés.', 'Organisation villageoise.', 'Mise en commun.']),
+        ],
+      },
+      {
+        title: 'Production fromagère',
+        icon: 'ph ph-cheese',
+        intro: 'Le bâtiment est conçu autour des différentes étapes de transformation du lait.',
+        groups: [
+          G(null, ['Réception du lait.', 'Chauffage.', 'Caillage.', 'Travail du caillé.', 'Moulage.', 'Égouttage.']),
+        ],
+      },
+      {
+        title: 'Salle de fabrication',
+        icon: 'ph ph-factory',
+        intro: 'La grande salle de fabrication constitue le principal espace architectural de la fruitière.',
+        groups: [
+          G(null, ['Grande salle.', 'Cuves.', 'Foyer.', 'Tables de travail.', 'Ustensiles.']),
+        ],
+      },
+      {
+        title: 'Chauffage du lait',
+        icon: 'ph ph-fire',
+        intro: 'La chauffe constitue une étape essentielle de la fabrication traditionnelle des grands fromages jurassiens.',
+        groups: [
+          G(null, ['Foyer.', 'Chaudière.', 'Bois de chauffage.', 'Cuve.', 'Conduit de fumée.']),
+        ],
+      },
+      {
+        title: 'Production du Comté',
+        icon: 'ph ph-cheese',
+        intro: "La fruitière est historiquement associée à la fabrication collective du Comté et à l'économie laitière du massif jurassien.",
+        groups: [
+          G(null, ['Lait cru.', 'Comté.', 'Fromage à pâte pressée cuite.', 'Transformation quotidienne.', 'Affinage ultérieur.']),
+        ],
+      },
+      {
+        title: 'Implantation villageoise',
+        icon: 'ph ph-buildings',
+        intro: "La proximité entre les exploitations et la fruitière facilite l'apport quotidien du lait.",
+        groups: [
+          G(null, ['Village.', 'Hameau.', 'Place.', 'Rue principale.', 'Proximité des fermes.']),
+        ],
+      },
+      {
+        title: 'Architecture en pierre',
+        icon: 'ph ph-wall',
+        intro: 'Les constructions traditionnelles utilisent largement les matériaux disponibles localement.',
+        groups: [
+          G(null, ['Pierre calcaire.', 'Murs maçonnés.', 'Chaux.', 'Enduit.', 'Soubassement.']),
+        ],
+      },
+      {
+        title: 'Bois et charpente',
+        icon: 'ph ph-tree',
+        intro: 'Le bois intervient dans la charpente, les planchers, les menuiseries et certains aménagements intérieurs.',
+        groups: [
+          G(null, ['Épicéa.', 'Sapin.', 'Chêne.', 'Charpente.', 'Planchers.', 'Menuiseries.']),
+        ],
+      },
+      {
+        title: 'Ventilation',
+        icon: 'ph ph-wind',
+        intro: "La gestion de l'air constitue un élément important du fonctionnement des locaux de transformation.",
+        groups: [
+          G(null, ['Ventilation naturelle.', 'Aération.', 'Évacuation des fumées.', 'Régulation thermique.', 'Ouvertures hautes.']),
+        ],
+      },
+      {
+        title: 'Eau',
+        icon: 'ph ph-drop',
+        intro: "L'eau est indispensable au nettoyage et aux opérations liées à la transformation fromagère.",
+        groups: [
+          G(null, ['Source.', 'Puits.', 'Eau courante.', 'Nettoyage.', 'Hygiène.']),
+        ],
+      },
+      {
+        title: 'Organisation communautaire',
+        icon: 'ph ph-handshake',
+        intro: "La fruitière matérialise architecturalement une forme ancienne de coopération entre exploitants.",
+        groups: [
+          G(null, ['Producteurs.', 'Coopération.', 'Mise en commun du lait.', 'Gestion collective.', 'Répartition des produits.']),
+        ],
+      },
+      {
+        title: 'Économie laitière',
+        icon: 'ph ph-cow',
+        intro: "La fruitière s'inscrit dans un système agricole spécialisé dans l'élevage bovin laitier.",
+        groups: [
+          G(null, ['Bovins.', 'Lait.', 'Prairies.', 'Foin.', 'Élevage laitier.']),
+        ],
+      },
+      {
+        title: 'Relations avec les fermes',
+        icon: 'ph ph-farm',
+        intro: 'La fruitière complète directement le système des fermes productrices de lait du territoire.',
+        groups: [
+          G(null, ['Fermes.', 'Collecte.', 'Livraison quotidienne.', 'Transformation.', 'Retour économique.']),
+        ],
+      },
+      {
+        title: 'Évolution du bâtiment',
+        icon: 'ph ph-clock',
+        intro: 'La modernisation des techniques fromagères a entraîné la transformation de nombreuses fruitières anciennes.',
+        groups: [
+          G(null, ['Modernisation.', 'Extension.', 'Équipements industriels.', 'Mise aux normes.', 'Réhabilitation patrimoniale.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La grande salle de fabrication, les dispositifs de chauffe et l'organisation collective constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Bâtiment collectif.',
+            'Salle de fabrication.',
+            'Cuves.',
+            'Foyer ou chaudière.',
+            'Cheminée.',
+            'Architecture villageoise.',
+            'Production fromagère.',
+            'Coopération agricole.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
