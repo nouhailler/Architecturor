@@ -19959,6 +19959,211 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'mazotsavoyard',
+    name: 'Mazot savoyard',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Petit bâtiment annexe généralement construit en bois et destiné principalement au stockage et à la conservation de biens, de denrées, de semences, d'outils ou d'objets précieux. Le mazot est souvent installé à proximité d'une ferme ou d'une habitation mais séparé du bâtiment principal. Selon les secteurs, il peut être posé sur un soubassement maçonné ou sur des supports en pierre afin de limiter les remontées d'humidité et de protéger son contenu.",
+    usage: "Stockage, conservation des denrées, des semences, des outils et des biens domestiques",
+    categorie: 'montagne',
+    gps: '45.65° N, 6.55° E',
+    altitude: '400–1400 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa et mélèze',
+    typeFondation: 'Supports ou soubassement en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le mazot savoyard est un petit bâtiment rural indépendant associé aux fermes et aux habitations traditionnelles. Sa fonction originelle est principalement liée à la conservation de biens et de produits que l'on souhaite protéger de l'humidité, des rongeurs et des variations climatiques. Sa construction légère en bois, son faible volume et son implantation séparée du bâtiment principal répondent à cette fonction. Certains exemplaires sont surélevés sur des pierres ou des supports afin de créer une coupure entre le sol et le plancher. Le mazot peut servir au stockage des céréales, des semences, des outils, de certains aliments ou d'objets domestiques. Aujourd'hui, de nombreux mazots ont été transformés en petits logements, annexes ou constructions touristiques, mais cette fonction contemporaine ne doit pas être confondue avec leur usage agricole traditionnel.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', 'Stockage et conservation'],
+      ["Implantation", "À proximité d'une ferme ou d'une habitation"],
+      ['Organisation', 'Petit bâtiment indépendant'],
+      ['Système', 'Structure et parois principalement en bois'],
+      ['Matériau dominant', 'Bois'],
+      ['Toiture', 'Toiture à deux pans'],
+      ['Particularité', 'Bâtiment annexe indépendant destiné à protéger les biens et denrées'],
+    ],
+    materiaux: ['Bois', 'Épicéa', 'Mélèze', 'Pierre locale', 'Calcaire', 'Lauze', 'Ardoise', 'Tuile'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Structure en bois',
+        txt: 'La structure et les parois sont généralement constituées de pièces de bois assemblées selon les techniques locales.',
+      },
+      {
+        n: 2,
+        el: 'Plancher surélevé',
+        txt: "Le plancher peut être placé au-dessus du sol afin de limiter l'humidité et de protéger les produits stockés.",
+      },
+      {
+        n: 3,
+        el: 'Supports en pierre',
+        txt: 'Des pierres ou plots maçonnés peuvent assurer la séparation entre le bâtiment et le terrain.',
+      },
+      {
+        n: 4,
+        el: 'Espace de stockage',
+        txt: 'Le volume intérieur est utilisé pour conserver les denrées, les semences, les outils ou certains biens domestiques.',
+      },
+      {
+        n: 5,
+        el: "Porte d'accès",
+        txt: "Une porte unique ou principale permet d'accéder au volume de stockage.",
+      },
+      {
+        n: 6,
+        el: 'Petites ouvertures',
+        txt: 'Les ouvertures sont généralement limitées afin de protéger le contenu contre les intempéries et les nuisibles.',
+      },
+      {
+        n: 7,
+        el: 'Toiture',
+        txt: 'La toiture à deux pans protège le bâtiment contre la pluie et la neige.',
+      },
+      {
+        n: 8,
+        el: 'Débord de toiture',
+        txt: 'Les débords protègent les parois en bois contre les précipitations.',
+      },
+      {
+        n: 9,
+        el: 'Implantation indépendante',
+        txt: "Le mazot est généralement séparé du bâtiment principal de la ferme ou de l'habitation.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Fonction de conservation',
+        icon: 'ph ph-archive',
+        intro: "La fonction principale du mazot est de conserver certains biens et produits à l'écart des conditions défavorables du bâtiment principal.",
+        groups: [
+          G(null, ['Semences.', 'Céréales.', 'Denrées alimentaires.', 'Outils.', 'Objets domestiques.', 'Biens de valeur.']),
+        ],
+      },
+      {
+        title: 'Bâtiment indépendant',
+        icon: 'ph ph-house-line',
+        intro: 'Le caractère indépendant constitue l\'une des principales caractéristiques architecturales du mazot.',
+        groups: [
+          G(null, ['Séparation de la ferme.', 'Faible volume.', 'Accès indépendant.', "Implantation à proximité de l'habitation.", 'Fonction complémentaire.']),
+        ],
+      },
+      {
+        title: 'Construction en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois permet de construire un volume léger, adapté aux dimensions réduites du bâtiment.',
+        groups: [
+          G(null, ['Épicéa.', 'Mélèze.', 'Madriers.', 'Poutres.', 'Planches.', 'Assemblages traditionnels.']),
+        ],
+      },
+      {
+        title: "Protection contre l'humidité",
+        icon: 'ph ph-drop',
+        intro: 'La séparation du bâtiment par rapport au sol contribue à protéger les produits stockés.',
+        groups: [
+          G(null, ['Plancher surélevé.', 'Supports en pierre.', 'Ventilation sous le bâtiment.', 'Éloignement du terrain humide.', 'Protection des denrées.']),
+        ],
+      },
+      {
+        title: 'Protection contre les nuisibles',
+        icon: 'ph ph-shield-check',
+        intro: 'La construction séparée et parfois surélevée contribue également à limiter l\'accès des rongeurs et autres nuisibles.',
+        groups: [
+          G(null, ['Accès unique.', 'Plancher séparé du sol.', 'Parois fermées.', 'Petites ouvertures.', 'Conservation des réserves.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house',
+        intro: "La couverture protège le petit volume en bois contre les précipitations et l'enneigement.",
+        groups: [
+          G(null, ['Deux pans.', 'Charpente en bois.', 'Débord de toiture.', 'Couverture locale.', 'Protection des façades.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: "Le mazot est généralement implanté dans l'environnement immédiat de l'exploitation.",
+        groups: [
+          G(null, ['Proximité de la maison.', 'Proximité de la ferme.', 'Cour agricole.', 'Terrain légèrement surélevé.', 'Accès facile.']),
+        ],
+      },
+      {
+        title: 'Relation avec la ferme',
+        icon: 'ph ph-buildings',
+        intro: "Le mazot constitue une annexe spécialisée de l'exploitation et complète les fonctions de la maison-bloc savoyarde.",
+        groups: [
+          G(null, ['Maison-bloc : fonctions principales.', 'Mazot : conservation spécialisée.', 'Complément fonctionnel.', 'Stockage séparé.', "Organisation de l'exploitation."]),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: 'Les mazots ont connu de nombreuses transformations au cours du XXe siècle.',
+        groups: [
+          G(null, ['Abandon du stockage traditionnel.', 'Transformation en atelier.', 'Transformation en remise.', 'Transformation en logement.', 'Usage touristique.', 'Restauration patrimoniale.']),
+        ],
+      },
+      {
+        title: "Mazot et chalet d'habitation",
+        icon: 'ph ph-info',
+        intro: "Le mazot traditionnel ne doit pas être confondu avec les petits chalets contemporains utilisant ce terme à des fins résidentielles ou touristiques.",
+        groups: [
+          G(null, [
+            'Mazot traditionnel : fonction de stockage.',
+            'Chalet d\'habitation : fonction résidentielle.',
+            'Mazot : faible volume.',
+            'Chalet : volume habitable plus important.',
+            'Mazot : bâtiment annexe.',
+            'Chalet : bâtiment principal.',
+          ]),
+        ],
+      },
+      {
+        title: 'Mazot et grenier indépendant',
+        icon: 'ph ph-info',
+        intro: 'Les fonctions de stockage peuvent créer des formes proches entre mazot et grenier indépendant ; la distinction doit tenir compte des usages et des traditions locales.',
+        groups: [
+          G(null, [
+            'Mazot : petit bâtiment annexe polyvalent.',
+            'Grenier : stockage principalement agricole.',
+            'Terminologie variable selon les vallées.',
+            'Formes constructives parfois proches.',
+            'Distinction fonctionnelle et territoriale nécessaire.',
+          ]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La petite taille, la construction en bois, l'indépendance par rapport au bâtiment principal et la fonction de conservation constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Petit volume.',
+            'Construction en bois.',
+            'Bâtiment indépendant.',
+            'Fonction de stockage.',
+            'Plancher surélevé selon les modèles.',
+            'Supports en pierre.',
+            'Toiture à deux pans.',
+            'Implantation près de la ferme.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
