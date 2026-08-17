@@ -20787,6 +20787,198 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'fourapainsavoyard',
+    name: 'Four à pain savoyard',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Petit bâtiment ou construction maçonnée destinée à la cuisson collective ou familiale du pain. Le four est généralement constitué d'une chambre de cuisson voûtée en matériau réfractaire, précédée d'une bouche de four et d'un espace de travail. Il peut être intégré à une habitation, à une ferme ou, plus fréquemment dans les villages et hameaux, constituer un bâtiment communautaire indépendant. La construction utilise principalement la pierre locale, la terre cuite et des matériaux résistants à la chaleur.",
+    usage: 'Cuisson du pain et préparation de produits alimentaires',
+    categorie: 'agricole',
+    gps: '45.55° N, 6.55° E',
+    altitude: '300–1500 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Toiture à deux pans ou couverture locale',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa et mélèze pour les éléments en bois',
+    typeFondation: 'Fondations maçonnées en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Faible à moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le four à pain savoyard est une petite construction destinée à la cuisson du pain dans les villages, hameaux et exploitations rurales. Dans les communautés montagnardes, le four pouvait être partagé par plusieurs familles et constituer un équipement collectif essentiel. Sa conception repose sur une chambre de cuisson voûtée capable d'accumuler puis de restituer la chaleur produite par la combustion du bois. Le bâtiment est généralement construit en maçonnerie afin de résister aux températures élevées, avec une couverture adaptée au climat local. Lorsqu'il est indépendant, le four peut prendre la forme d'un petit édifice compact à toiture à deux pans ou à couverture plus complexe selon les traditions locales. Il témoigne de l'organisation collective des villages et de l'autonomie alimentaire des communautés rurales savoyardes.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', 'Cuisson du pain'],
+      ['Implantation', 'Villages, hameaux et exploitations rurales'],
+      ['Organisation', 'Four indépendant ou intégré à un bâtiment'],
+      ['Système', 'Chambre de cuisson voûtée à accumulation de chaleur'],
+      ['Matériau dominant', 'Pierre et matériaux réfractaires'],
+      ['Toiture', 'Toiture protectrice à deux pans ou couverture locale'],
+      ['Particularité', 'Équipement pouvant être partagé par plusieurs familles'],
+    ],
+    materiaux: ['Pierre locale', 'Calcaire', 'Schiste', 'Brique', 'Terre cuite', 'Terre réfractaire', 'Mortier de chaux', 'Bois'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Chambre de cuisson',
+        txt: 'La chambre voûtée constitue le cœur du four et conserve la chaleur nécessaire à la cuisson du pain.',
+      },
+      {
+        n: 2,
+        el: 'Voûte réfractaire',
+        txt: "La voûte est réalisée avec des matériaux capables de supporter les températures élevées et d'accumuler la chaleur.",
+      },
+      {
+        n: 3,
+        el: 'Bouche du four',
+        txt: "L'ouverture permet d'introduire le bois puis les pâtons et de retirer le pain après la cuisson.",
+      },
+      {
+        n: 4,
+        el: 'Sole',
+        txt: 'La sole constitue la surface sur laquelle sont déposés les pains pour leur cuisson.',
+      },
+      {
+        n: 5,
+        el: 'Espace de travail',
+        txt: 'Une zone située devant la bouche du four permet de préparer les pâtons, manipuler le bois et enfourner les pains.',
+      },
+      {
+        n: 6,
+        el: 'Maçonnerie',
+        txt: "La maçonnerie protège la chambre de cuisson et assure la stabilité de l'ensemble.",
+      },
+      {
+        n: 7,
+        el: 'Cheminée ou conduit',
+        txt: "Un conduit permet l'évacuation des fumées produites pendant la chauffe.",
+      },
+      {
+        n: 8,
+        el: 'Toiture',
+        txt: "La couverture protège la maçonnerie et la chambre de cuisson contre les précipitations et l'enneigement.",
+      },
+      {
+        n: 9,
+        el: 'Réserve de bois',
+        txt: 'Le bois nécessaire à la chauffe peut être stocké à proximité immédiate du four.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Fonction du four',
+        icon: 'ph ph-fire',
+        intro: 'Le four permet de cuire le pain grâce à la chaleur accumulée dans une chambre maçonnée.',
+        groups: [
+          G(null, ['Pain.', 'Pâtes levées.', 'Galettes.', 'Produits alimentaires.', 'Cuisson collective.']),
+        ],
+      },
+      {
+        title: 'Chambre de cuisson',
+        icon: 'ph ph-circle',
+        intro: "La chambre voûtée constitue l'élément architectural et technique essentiel du four.",
+        groups: [
+          G(null, ['Voûte.', 'Sole.', 'Accumulation thermique.', 'Matériaux réfractaires.', 'Bouche de four.']),
+        ],
+      },
+      {
+        title: 'Chauffe au bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois constitue traditionnellement le combustible utilisé pour chauffer la chambre de cuisson.',
+        groups: [
+          G(null, ['Bois de chauffage.', 'Allumage.', 'Montée en température.', 'Retrait des braises.', 'Cuisson à chaleur résiduelle.']),
+        ],
+      },
+      {
+        title: 'Architecture maçonnée',
+        icon: 'ph ph-wall',
+        intro: 'La maçonnerie protège la chambre de cuisson et résiste aux températures élevées.',
+        groups: [
+          G(null, ['Pierre locale.', 'Brique.', 'Terre cuite.', 'Mortier.', 'Matériaux réfractaires.']),
+        ],
+      },
+      {
+        title: 'Four communautaire',
+        icon: 'ph ph-users-three',
+        intro: 'Dans les villages et hameaux, le four pouvait constituer un équipement collectif utilisé successivement par plusieurs familles.',
+        groups: [
+          G(null, ['Usage communautaire.', 'Cuissons successives.', 'Entretien collectif.', 'Organisation villageoise.', 'Partage du combustible.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'Le four peut être intégré à un bâtiment rural ou installé dans un petit édifice indépendant.',
+        groups: [
+          G(null, ['Hameau.', 'Village.', 'Ferme.', 'Cour rurale.', 'Espace communautaire.']),
+        ],
+      },
+      {
+        title: 'Protection contre le feu',
+        icon: 'ph ph-shield',
+        intro: 'La construction maçonnée limite les risques liés à la présence d\'un foyer à haute température.',
+        groups: [
+          G(null, ['Maçonnerie.', 'Isolement du foyer.', 'Matériaux incombustibles.', 'Protection de la charpente.', 'Évacuation des fumées.']),
+        ],
+      },
+      {
+        title: "Relation avec l'habitat",
+        icon: 'ph ph-house',
+        intro: 'Le four complète l\'organisation domestique et agricole en fournissant un équipement spécialisé pour la préparation du pain.',
+        groups: [
+          G(null, ['Maison rurale.', 'Maison-bloc.', 'Ferme.', 'Stockage de la farine.', 'Préparation des pâtes.']),
+        ],
+      },
+      {
+        title: 'Organisation du travail',
+        icon: 'ph ph-arrows-clockwise',
+        intro: "L'utilisation du four implique une succession d'opérations préparées à l'avance.",
+        groups: [
+          G(null, ['Préparation de la pâte.', 'Chauffe.', 'Retrait des braises.', 'Nettoyage de la sole.', 'Enfournement.', 'Cuisson.', 'Défournement.']),
+        ],
+      },
+      {
+        title: 'Toiture et climat',
+        icon: 'ph ph-snowflake',
+        intro: 'La couverture protège le petit bâtiment contre les fortes précipitations et l\'enneigement des secteurs alpins.',
+        groups: [
+          G(null, ['Toiture à deux pans.', 'Débord de toiture.', 'Couverture locale.', 'Protection de la maçonnerie.', 'Résistance à la neige.']),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: 'La généralisation des boulangeries commerciales et l\'évolution des modes de vie ont progressivement réduit l\'utilisation des fours ruraux.',
+        groups: [
+          G(null, ["Déclin de l'usage domestique.", 'Boulangeries commerciales.', 'Abandon.', 'Restauration patrimoniale.', 'Remise en fonctionnement occasionnelle.', 'Usage culturel.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La présence d'une chambre de cuisson maçonnée, d'une bouche de four et d'un dispositif d'évacuation des fumées permet généralement d'identifier la typologie.",
+        groups: [
+          G(null, [
+            'Chambre voûtée.',
+            'Sole de cuisson.',
+            'Bouche de four.',
+            'Maçonnerie épaisse.',
+            'Conduit de fumée.',
+            'Réserve de bois.',
+            'Petit bâtiment spécialisé.',
+            'Usage individuel ou communautaire.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
