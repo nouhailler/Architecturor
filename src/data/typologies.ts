@@ -22955,6 +22955,227 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'habitattraditionneltarentaise',
+    name: 'Habitat traditionnel de Tarentaise',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Tarentaise',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Habitat montagnard traditionnel adapté aux vallées et versants de Tarentaise. La construction associe généralement une maçonnerie en pierre, des éléments porteurs et des circulations en bois, ainsi qu'une organisation verticale permettant de superposer les fonctions domestiques, agricoles et de stockage. Les bâtiments s'adaptent fortement à la pente et peuvent présenter plusieurs niveaux d'accès selon la topographie. L'habitation peut être associée à une grange, une étable, un fenil ou des espaces de stockage. La forme des constructions varie selon l'altitude, l'orientation, les ressources disponibles et les traditions locales.",
+    usage: 'Habitation familiale, élevage, stockage du fourrage et activités agro-pastorales',
+    categorie: 'montagne',
+    gps: '45.48° N, 6.55° E',
+    altitude: '500–1800 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et mélèze',
+    typeFondation: 'Soubassement maçonné en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe–XIXe siècle',
+    difficulteIdentification: 'Élevée',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "L'habitat traditionnel de Tarentaise correspond à une famille de constructions vernaculaires développées dans les vallées et versants de cette partie des Alpes. Son architecture répond à un environnement fortement contraint par la pente, l'enneigement, les variations climatiques et la nécessité de conserver les ressources agricoles pendant l'hiver. Les constructions associent fréquemment des parties maçonnées en pierre à des éléments en bois et superposent plusieurs fonctions. Le niveau inférieur peut accueillir une étable ou des locaux de service, tandis que les niveaux supérieurs sont consacrés au logement, au stockage et au fenil. L'organisation des volumes et des accès varie selon les villages et les secteurs de Tarentaise. Cette fiche constitue donc une typologie territoriale, complémentaire des formes plus génériques comme la maison-bloc savoyarde ou la maison de village.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Tarentaise · Savoie'],
+      ['Usage', 'Habitation et activités agro-pastorales'],
+      ['Implantation', 'Villages, hameaux et versants de vallée'],
+      ['Organisation', 'Superposition des fonctions sur plusieurs niveaux'],
+      ['Système', 'Maçonnerie en pierre et structure traditionnelle en bois'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Toiture', 'Toiture à deux pans adaptée aux conditions alpines'],
+      ['Particularité', "Forte adaptation à la pente, au climat et à l'économie agro-pastorale de Tarentaise"],
+    ],
+    materiaux: ['Pierre locale', 'Calcaire', 'Schiste', 'Bois', 'Épicéa', 'Sapin', 'Mélèze', 'Chaux', 'Lauze', 'Ardoise', 'Tuile'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Mur en pierre',
+        txt: 'La maçonnerie constitue généralement la structure principale des parties basses et des façades exposées.',
+      },
+      {
+        n: 2,
+        el: 'Parties en bois',
+        txt: 'Le bois intervient dans les planchers, la charpente, les balcons, les galeries et certains volumes agricoles.',
+      },
+      {
+        n: 3,
+        el: "Étage d'habitation",
+        txt: 'Les niveaux intermédiaires ou supérieurs accueillent les espaces de vie de la famille.',
+      },
+      {
+        n: 4,
+        el: 'Étable',
+        txt: 'Dans les bâtiments agricoles, le niveau inférieur peut être consacré au bétail.',
+      },
+      {
+        n: 5,
+        el: 'Fenil',
+        txt: "Le volume supérieur peut servir au stockage du foin et des fourrages destinés à l'hiver.",
+      },
+      {
+        n: 6,
+        el: 'Accès en hauteur',
+        txt: 'La pente permet parfois d\'accéder directement aux niveaux supérieurs depuis le terrain.',
+      },
+      {
+        n: 7,
+        el: 'Balcon ou galerie',
+        txt: 'Des circulations extérieures en bois peuvent desservir les différents niveaux.',
+      },
+      {
+        n: 8,
+        el: 'Charpente',
+        txt: "La charpente traditionnelle en bois supporte la couverture et participe à l'adaptation du bâtiment au climat montagnard.",
+      },
+      {
+        n: 9,
+        el: 'Soubassement',
+        txt: "Le soubassement maçonné protège les parties habitables et agricoles contre l'humidité et les contraintes du terrain.",
+      },
+      {
+        n: 10,
+        el: 'Toiture',
+        txt: 'La couverture à deux pans protège la construction contre la neige et les précipitations.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Habitat agro-pastoral',
+        icon: 'ph ph-house',
+        intro: "L'habitat traditionnel de Tarentaise est directement lié à une économie combinant agriculture de montagne et élevage.",
+        groups: [
+          G(null, ['Logement familial.', 'Élevage.', 'Stockage du foin.', 'Stockage des récoltes.', 'Activités domestiques.']),
+        ],
+      },
+      {
+        title: 'Adaptation à la pente',
+        icon: 'ph ph-mountains',
+        intro: "La topographie constitue l'un des principaux facteurs déterminant l'organisation des bâtiments.",
+        groups: [
+          G(null, ['Versant.', 'Terrain en pente.', 'Accès à plusieurs niveaux.', 'Soubassement enterré.', 'Niveaux décalés.']),
+        ],
+      },
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-vertical',
+        intro: "La superposition des fonctions permet de limiter l'emprise au sol et de profiter de la topographie.",
+        groups: [
+          G(null, ['Étable.', 'Cellier.', 'Habitation.', 'Grenier.', 'Fenil.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-wall',
+        intro: 'La pierre constitue généralement la base de la construction et assure une importante inertie thermique.',
+        groups: [
+          G(null, ['Pierre locale.', 'Calcaire.', 'Schiste.', 'Mortier de chaux.', 'Enduit.']),
+        ],
+      },
+      {
+        title: 'Construction en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois complète la maçonnerie et permet de réaliser les structures légères et les espaces de stockage.',
+        groups: [
+          G(null, ['Épicéa.', 'Sapin.', 'Mélèze.', 'Planchers.', 'Balcons.', 'Charpente.']),
+        ],
+      },
+      {
+        title: 'Fenil et stockage',
+        icon: 'ph ph-stack',
+        intro: 'Les volumes de stockage sont essentiels dans une économie où les réserves doivent couvrir la longue période hivernale.',
+        groups: [
+          G(null, ['Foin.', 'Fourrage.', 'Grains.', 'Bois.', 'Réserves hivernales.']),
+        ],
+      },
+      {
+        title: 'Élevage',
+        icon: 'ph ph-cow',
+        intro: "L'élevage bovin et les pratiques pastorales influencent directement la distribution des espaces agricoles.",
+        groups: [
+          G(null, ['Bovins.', 'Étable.', 'Râteliers.', 'Fourrage.', 'Litière.']),
+        ],
+      },
+      {
+        title: 'Balcons et galeries',
+        icon: 'ph ph-columns',
+        intro: 'Les circulations extérieures en bois peuvent desservir les niveaux et faciliter certaines activités domestiques.',
+        groups: [
+          G(null, ['Balcon.', 'Galerie.', 'Coursive.', 'Séchage.', 'Circulation extérieure.']),
+        ],
+      },
+      {
+        title: 'Relation avec le village',
+        icon: 'ph ph-buildings',
+        intro: 'L\'habitat peut être organisé en hameaux et villages étagés sur les versants.',
+        groups: [
+          G(null, ['Hameau.', 'Village.', 'Rue en pente.', 'Parcelle étroite.', 'Bâtiments rapprochés.']),
+        ],
+      },
+      {
+        title: 'Climat montagnard',
+        icon: 'ph ph-cloud-snow',
+        intro: 'La construction répond aux contraintes de neige, de froid, de précipitations et de variations saisonnières importantes.',
+        groups: [
+          G(null, ['Isolation par la masse.', 'Toiture adaptée à la neige.', 'Débord de toiture.', "Protection contre l'humidité.", 'Stockage hivernal.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: 'La toiture constitue un élément majeur de protection du bâtiment et des réserves agricoles.',
+        groups: [
+          G(null, ['Deux pans.', 'Pente moyenne à forte.', 'Lauze.', 'Ardoise.', 'Tuile.', 'Débord protecteur.']),
+        ],
+      },
+      {
+        title: 'Relation avec la maison-bloc',
+        icon: 'ph ph-info',
+        intro: "L'habitat de Tarentaise partage certains principes avec la maison-bloc mais se définit ici par son ancrage territorial et les adaptations propres aux vallées de Tarentaise.",
+        groups: [
+          G(null, ['Superposition des fonctions.', 'Association logement-agriculture.', 'Adaptation à la pente.', 'Influence du climat.', 'Variations locales.']),
+        ],
+      },
+      {
+        title: "Variations selon l'altitude",
+        icon: 'ph ph-chart-line-up',
+        intro: "Les formes bâties évoluent en fonction de l'altitude, de l'exposition et des ressources disponibles.",
+        groups: [
+          G(null, ['Fond de vallée.', 'Versant.', 'Moyenne montagne.', "Secteur d'alpage.", 'Variations de toiture.']),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: "La modernisation agricole et le développement touristique ont profondément transformé une partie de l'habitat traditionnel.",
+        groups: [
+          G(null, ['Modernisation.', 'Abandon agricole.', 'Transformation résidentielle.', 'Résidence secondaire.', 'Restauration patrimoniale.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'adaptation à la pente, la superposition des fonctions et l'association pierre-bois constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Architecture montagnarde.',
+            'Maçonnerie en pierre.',
+            'Structure en bois.',
+            'Organisation verticale.',
+            'Fenil.',
+            'Étable éventuelle.',
+            'Accès à plusieurs niveaux.',
+            'Adaptation à la pente.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
