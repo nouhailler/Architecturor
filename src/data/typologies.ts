@@ -20368,6 +20368,216 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'scieriehydrauliquesavoyarde',
+    name: 'Scierie hydraulique savoyarde',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XVIIIe siècle – début du XXe siècle',
+    procede:
+      "Bâtiment de transformation du bois utilisant l'énergie hydraulique d'un cours d'eau, d'un bief ou d'une dérivation pour actionner une roue hydraulique puis, selon les périodes, une turbine ou un système mécanique de transmission. La scierie associe généralement un bâtiment couvert abritant les mécanismes et la zone de sciage à des espaces extérieurs destinés au stockage et à la manutention des grumes et des planches. Son implantation est étroitement liée à la disponibilité de l'eau et à la proximité des ressources forestières.",
+    usage: 'Sciage et première transformation des bois issus des forêts savoyardes',
+    categorie: 'industrielle',
+    gps: '45.55° N, 6.55° E',
+    altitude: '300–1200 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et mélèze',
+    typeFondation: 'Soubassement maçonné en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La scierie hydraulique savoyarde est un établissement de transformation du bois utilisant la force de l'eau comme source d'énergie. Elle se développe particulièrement dans les vallées et secteurs forestiers où les cours d'eau permettent d'alimenter une roue hydraulique ou, plus tard, une turbine. Le bâtiment regroupe les mécanismes de transmission, la machine de sciage et les espaces nécessaires à la manutention du bois. Les grumes sont généralement stockées à proximité avant d'être sciées en planches, poutres ou autres pièces destinées à la construction et aux activités artisanales. La construction associe fréquemment maçonnerie en pierre pour les parties soumises à l'humidité et charpente ou bardage en bois pour les espaces de travail. L'implantation près d'un cours d'eau et la présence d'un système hydraulique constituent les éléments essentiels de cette typologie.",
+    identite: [
+      ['Période', 'XVIIIe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', 'Sciage et transformation primaire du bois'],
+      ['Implantation', "Vallées, cours d'eau et secteurs forestiers"],
+      ['Énergie', 'Hydraulique'],
+      ['Système', 'Roue hydraulique ou turbine avec transmission mécanique'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Particularité', "Association d'un bâtiment de production et d'un dispositif hydraulique"],
+    ],
+    materiaux: ['Pierre locale', 'Calcaire', 'Schiste', 'Bois', 'Épicéa', 'Mélèze', 'Acier', 'Fonte', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: "Bief ou canal d'amenée",
+        txt: "Une dérivation du cours d'eau peut conduire l'eau vers le dispositif moteur de la scierie.",
+      },
+      {
+        n: 2,
+        el: 'Roue hydraulique',
+        txt: "La roue hydraulique transforme l'énergie du courant en mouvement mécanique destiné à actionner les machines.",
+      },
+      {
+        n: 3,
+        el: 'Turbine',
+        txt: "À partir de la fin du XIXe siècle, certaines installations remplacent ou complètent la roue hydraulique par une turbine.",
+      },
+      {
+        n: 4,
+        el: 'Transmission mécanique',
+        txt: 'Un ensemble d\'arbres, poulies, courroies et engrenages transmet le mouvement vers les machines de sciage.',
+      },
+      {
+        n: 5,
+        el: 'Bâtiment de sciage',
+        txt: 'Le bâtiment abrite les machines, les mécanismes et les zones nécessaires à la transformation des grumes.',
+      },
+      {
+        n: 6,
+        el: 'Scie',
+        txt: 'La machine de sciage transforme les troncs en planches, poutres et autres pièces de bois.',
+      },
+      {
+        n: 7,
+        el: 'Aire de stockage des grumes',
+        txt: 'Les troncs sont stockés à proximité du bâtiment avant leur transformation.',
+      },
+      {
+        n: 8,
+        el: 'Aire de stockage du bois scié',
+        txt: 'Les planches et poutres produites sont entreposées à l\'extérieur ou sous des auvents avant leur utilisation ou leur commercialisation.',
+      },
+      {
+        n: 9,
+        el: 'Charpente',
+        txt: 'La structure en bois permet de créer de grands espaces de travail adaptés aux machines et à la manutention.',
+      },
+      {
+        n: 10,
+        el: 'Soubassement maçonné',
+        txt: "Les parties exposées à l'eau et aux contraintes mécaniques sont fréquemment construites en pierre ou en maçonnerie.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Énergie hydraulique',
+        icon: 'ph ph-drop',
+        intro: "L'eau constitue la source d'énergie principale des premières scieries mécaniques.",
+        groups: [
+          G(null, ["Cours d'eau.", 'Bief.', "Canal d'amenée.", 'Roue hydraulique.', 'Turbine.', 'Transmission mécanique.']),
+        ],
+      },
+      {
+        title: 'Transformation du bois',
+        icon: 'ph ph-tree',
+        intro: 'La scierie transforme les grumes issues des forêts en produits destinés à la construction et aux activités artisanales.',
+        groups: [
+          G(null, ['Grumes.', 'Planches.', 'Poutres.', 'Madriers.', 'Chevrons.', 'Débits de bois.']),
+        ],
+      },
+      {
+        title: 'Bâtiment de production',
+        icon: 'ph ph-factory',
+        intro: 'Le bâtiment est organisé autour des machines et de la circulation des bois.',
+        groups: [
+          G(null, ['Machine de sciage.', 'Transmission.', 'Zone de manutention.', 'Aire de travail.', 'Stockage temporaire.', 'Accès pour les grumes.']),
+        ],
+      },
+      {
+        title: 'Implantation hydraulique',
+        icon: 'ph ph-map-pin',
+        intro: "La localisation de la scierie dépend directement de la possibilité d'utiliser l'énergie d'un cours d'eau.",
+        groups: [
+          G(null, ["Cours d'eau.", 'Bief.', 'Dénivelé.', "Prise d'eau.", 'Canal de fuite.', 'Vallée montagnarde.']),
+        ],
+      },
+      {
+        title: 'Architecture en bois',
+        icon: 'ph ph-tree-structure',
+        intro: 'Le bois est à la fois la matière première transformée et un matériau majeur de construction du bâtiment.',
+        groups: [
+          G(null, ['Charpente.', 'Poteaux.', 'Poutres.', 'Bardage.', 'Planchers.', 'Auvents.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-wall',
+        intro: "La pierre et la maçonnerie sont particulièrement utilisées dans les parties basses et les zones exposées à l'humidité.",
+        groups: [
+          G(null, ['Soubassement.', 'Murs de soutènement.', 'Canaux.', 'Fondations.', 'Pierre locale.', 'Mortier.']),
+        ],
+      },
+      {
+        title: 'Manutention des grumes',
+        icon: 'ph ph-arrows-out-cardinal',
+        intro: "L'organisation du site doit permettre le déplacement des troncs entre l'aire de stockage et la machine.",
+        groups: [
+          G(null, ['Stockage extérieur.', 'Roulage.', 'Treuils.', 'Plans de travail.', 'Chargement.', 'Déchargement.']),
+        ],
+      },
+      {
+        title: 'Produits fabriqués',
+        icon: 'ph ph-stack',
+        intro: "Le sciage fournit les éléments nécessaires à une grande partie de la construction et de l'artisanat local.",
+        groups: [
+          G(null, ['Planches.', 'Poutres.', 'Madriers.', 'Chevrons.', 'Voliges.', 'Bois de charpente.']),
+        ],
+      },
+      {
+        title: 'Relation avec la forêt',
+        icon: 'ph ph-tree',
+        intro: "La scierie constitue un maillon essentiel entre la ressource forestière et l'économie de construction.",
+        groups: [
+          G(null, ['Forêts de montagne.', 'Exploitation forestière.', 'Débardage.', 'Transport des grumes.', 'Sciage.', 'Distribution du bois.']),
+        ],
+      },
+      {
+        title: 'Évolution technique',
+        icon: 'ph ph-gear',
+        intro: "Les installations hydrauliques évoluent progressivement avec l'introduction des turbines et de machines plus performantes.",
+        groups: [
+          G(null, ['Roue hydraulique.', 'Transmission par courroies.', 'Turbine.', 'Mécanisation.', 'Électrification.', 'Moteurs modernes.']),
+        ],
+      },
+      {
+        title: 'Scierie et moulin',
+        icon: 'ph ph-info',
+        intro: "La scierie hydraulique partage avec le moulin l'utilisation de l'énergie de l'eau, mais se distingue par sa fonction industrielle de transformation du bois.",
+        groups: [
+          G(null, [
+            'Scierie : transformation du bois.',
+            'Moulin : transformation des céréales ou autres produits.',
+            'Même principe énergétique.',
+            'Machines différentes.',
+            'Organisation productive spécifique.',
+          ]),
+        ],
+      },
+      {
+        title: 'Évolution et disparition',
+        icon: 'ph ph-clock',
+        intro: "Les scieries hydrauliques traditionnelles ont progressivement été remplacées par des installations motorisées et électrifiées.",
+        groups: [
+          G(null, ['Électrification.', 'Motorisation.', 'Modernisation des machines.', 'Abandon de certains biefs.', 'Transformation des bâtiments.', 'Conservation patrimoniale.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La présence simultanée d'un bâtiment de sciage, d'un dispositif hydraulique et d'espaces de stockage du bois constitue le principal critère d'identification.",
+        groups: [
+          G(null, [
+            'Cours d\'eau ou bief.',
+            'Roue hydraulique ou turbine.',
+            'Transmission mécanique.',
+            'Machine de sciage.',
+            'Stockage des grumes.',
+            'Stockage du bois scié.',
+            'Architecture productive.',
+            'Implantation en secteur forestier.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
