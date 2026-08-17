@@ -20979,6 +20979,211 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisonvigneronnesavoyarde',
+    name: 'Maison vigneronne savoyarde',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Combe de Savoie · Avant-Pays savoyard',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Maison rurale associant généralement habitation et fonctions liées à la culture de la vigne, avec espaces de vinification, de stockage et de conservation du vin. La construction s'adapte aux terrains en pente des coteaux viticoles et peut présenter une organisation verticale ou semi-enterrée permettant de bénéficier de conditions thermiques plus stables. Les matériaux associent pierre locale, bois et enduits à la chaux. Selon les secteurs, le bâtiment peut comporter une cave, un cellier, un pressoir, une grange ou des espaces de stockage directement associés au logement.",
+    usage: 'Habitation, vinification, stockage du vin et exploitation viticole',
+    categorie: 'rural',
+    gps: '45.55° N, 6.10° E',
+    altitude: '250–700 m',
+    climat: 'Montagnard à influence continentale et méridionale selon les secteurs',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et châtaignier selon les secteurs',
+    typeFondation: 'Fondations et soubassement en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La maison vigneronne savoyarde est une habitation rurale directement associée à une petite exploitation viticole. Elle se rencontre notamment dans les secteurs viticoles de la Combe de Savoie, de l'Avant-Pays savoyard et des coteaux exposés au soleil. Son architecture répond à la double fonction résidentielle et agricole : le logement occupe généralement une partie du bâtiment tandis que la cave, le cellier, le pressoir ou les espaces de stockage sont implantés au rez-de-chaussée, en sous-sol ou dans des volumes attenants. La pente des coteaux favorise parfois une organisation sur plusieurs niveaux avec accès différenciés. La pierre locale assure la stabilité et l'inertie thermique des parties maçonnées tandis que le bois intervient dans les planchers, la charpente et certains éléments agricoles. Cette typologie témoigne de l'importance historique de la viticulture dans plusieurs territoires savoyards.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Combe de Savoie · Avant-Pays savoyard'],
+      ['Usage', 'Habitation et exploitation viticole'],
+      ['Implantation', 'Coteaux, villages viticoles et hameaux'],
+      ['Organisation', 'Habitation associée à une cave et des espaces agricoles'],
+      ['Système', 'Maçonnerie traditionnelle avec organisation verticale adaptée à la pente'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Toiture', 'Toiture à deux pans'],
+      ['Particularité', 'Association directe entre logement, cave et activité viticole'],
+    ],
+    materiaux: ['Pierre locale', 'Calcaire', 'Schiste selon les secteurs', 'Bois', 'Épicéa', 'Châtaignier', 'Tuile', 'Lauze', 'Ardoise', 'Chaux'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Logement',
+        txt: 'La partie résidentielle accueille la famille du vigneron et peut occuper un ou plusieurs niveaux du bâtiment.',
+      },
+      {
+        n: 2,
+        el: 'Cave',
+        txt: "La cave constitue l'un des espaces essentiels de la maison vigneronne et permet la vinification et la conservation des vins.",
+      },
+      {
+        n: 3,
+        el: 'Cellier',
+        txt: "Le cellier sert au stockage des bouteilles, tonneaux, outils et produits nécessaires à l'exploitation.",
+      },
+      {
+        n: 4,
+        el: 'Pressoir',
+        txt: "Selon les bâtiments et les secteurs, un espace spécifique peut accueillir le pressoir destiné au traitement des vendanges.",
+      },
+      {
+        n: 5,
+        el: 'Accès à la cave',
+        txt: "La cave peut bénéficier d'un accès indépendant facilitant l'entrée des vendanges et la sortie des produits.",
+      },
+      {
+        n: 6,
+        el: 'Maçonnerie en pierre',
+        txt: "La pierre locale forme généralement les murs porteurs et contribue à maintenir des conditions thermiques relativement stables dans les espaces de stockage.",
+      },
+      {
+        n: 7,
+        el: 'Planchers',
+        txt: 'Les planchers en bois permettent de séparer les niveaux résidentiels et agricoles.',
+      },
+      {
+        n: 8,
+        el: 'Charpente',
+        txt: "La charpente traditionnelle porte la couverture et participe à l'identité rurale du bâtiment.",
+      },
+      {
+        n: 9,
+        el: 'Ouvertures agricoles',
+        txt: 'Les ouvertures liées aux activités viticoles peuvent être plus larges et différemment positionnées que celles du logement.',
+      },
+      {
+        n: 10,
+        el: 'Terrain en pente',
+        txt: 'La construction peut tirer parti de la pente pour superposer ou différencier les accès aux espaces agricoles et résidentiels.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Habitation vigneronne',
+        icon: 'ph ph-house',
+        intro: "La maison associe directement la vie domestique à l'activité viticole.",
+        groups: [
+          G(null, ['Logement familial.', 'Cuisine.', 'Pièces de vie.', 'Chambres.', 'Accès indépendant.']),
+        ],
+      },
+      {
+        title: 'Cave et vinification',
+        icon: 'ph ph-wine',
+        intro: 'Les espaces viticoles constituent une composante essentielle de la typologie.',
+        groups: [
+          G(null, ['Cave.', 'Cuves.', 'Fûts.', 'Pressoir.', 'Stockage du vin.', 'Vinification.']),
+        ],
+      },
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-vertical',
+        intro: 'La pente des coteaux permet d\'organiser les fonctions sur plusieurs niveaux.',
+        groups: [
+          G(null, ['Cave en partie basse.', 'Cellier intermédiaire.', 'Logement en partie haute.', 'Accès différenciés.', 'Adaptation à la pente.']),
+        ],
+      },
+      {
+        title: 'Architecture des coteaux',
+        icon: 'ph ph-mountains',
+        intro: 'La maison vigneronne s\'inscrit dans des territoires où les parcelles viticoles occupent les coteaux bien exposés.',
+        groups: [
+          G(null, ['Coteaux.', 'Versants exposés.', 'Terrasses agricoles.', 'Villages viticoles.', 'Hameaux.']),
+        ],
+      },
+      {
+        title: 'Construction en pierre',
+        icon: 'ph ph-wall',
+        intro: "La maçonnerie locale contribue à la stabilité du bâtiment et à l'inertie thermique des caves.",
+        groups: [
+          G(null, ['Pierre calcaire.', 'Schiste selon les secteurs.', 'Mortier de chaux.', 'Enduit.', 'Murs épais.']),
+        ],
+      },
+      {
+        title: 'Bois et charpente',
+        icon: 'ph ph-tree',
+        intro: 'Le bois intervient dans les éléments structurels et dans les aménagements agricoles.',
+        groups: [
+          G(null, ['Charpente.', 'Poutres.', 'Planchers.', 'Portes.', 'Éléments de pressoir.', 'Rangements.']),
+        ],
+      },
+      {
+        title: 'Stockage du vin',
+        icon: 'ph ph-wine',
+        intro: "La cave constitue un espace de conservation recherchant des conditions relativement stables de température et d'humidité.",
+        groups: [
+          G(null, ['Fûts.', 'Bouteilles.', 'Cuves.', 'Vin en élevage.', 'Conservation.']),
+        ],
+      },
+      {
+        title: 'Relation avec les vignes',
+        icon: 'ph ph-plant',
+        intro: "La maison constitue le centre de l'exploitation viticole familiale.",
+        groups: [
+          G(null, ['Parcelles de vigne.', 'Chemins ruraux.', 'Vendanges.', 'Transport des raisins.', 'Vinification sur place.']),
+        ],
+      },
+      {
+        title: 'Gestion des vendanges',
+        icon: 'ph ph-basket',
+        intro: 'L\'organisation du bâtiment doit permettre le passage rapide des raisins entre les parcelles et les espaces de vinification.',
+        groups: [
+          G(null, ['Accès agricole.', 'Réception des vendanges.', 'Tri.', 'Pressurage.', 'Transfert vers les cuves.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: "La toiture protège l'habitation et les espaces agricoles contre les précipitations.",
+        groups: [
+          G(null, ['Deux pans.', 'Charpente en bois.', 'Couverture locale.', 'Débord de toiture.', 'Protection des murs.']),
+        ],
+      },
+      {
+        title: 'Viticulture savoyarde',
+        icon: 'ph ph-map-trifold',
+        intro: "La typologie est liée aux secteurs historiques de la viticulture savoyarde, particulièrement présents sur les coteaux de l'Avant-Pays et de la Combe de Savoie.",
+        groups: [
+          G(null, ['Combe de Savoie.', 'Avant-Pays savoyard.', 'Coteaux viticoles.', 'Villages viticoles.', 'Petites exploitations familiales.']),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: 'La modernisation de la viticulture a progressivement séparé certaines fonctions résidentielles et productives.',
+        groups: [
+          G(null, ['Modernisation des caves.', 'Coopératives.', 'Mécanisation.', 'Transformation des dépendances.', 'Rénovation résidentielle.', 'Conservation patrimoniale.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'association d'une habitation avec une cave et des espaces directement liés à la viticulture constitue le principal critère d'identification.",
+        groups: [
+          G(null, [
+            'Maison rurale.',
+            'Cave viticole.',
+            'Espace de vinification.',
+            'Cellier.',
+            'Pressoir selon les exemplaires.',
+            'Implantation sur coteau.',
+            'Organisation verticale.',
+            'Proximité immédiate des vignes.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
