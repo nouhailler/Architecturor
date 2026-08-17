@@ -22061,6 +22061,225 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisonvillagesavoyarde',
+    name: 'Maison de village savoyarde',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Maison d'habitation implantée dans un village ou un hameau savoyard et intégrée à un tissu bâti relativement dense. Contrairement à l'habitat agricole dispersé, elle s'inscrit dans une organisation parcellaire contrainte par la pente, les voies de circulation et la proximité des autres constructions. Le bâtiment peut superposer ou juxtaposer plusieurs fonctions domestiques et agricoles, avec logement, cave, remise, grange ou espaces de stockage. La construction repose principalement sur des murs porteurs en pierre, des planchers et une charpente en bois, avec une toiture adaptée aux conditions climatiques locales.",
+    usage: 'Habitation familiale et activités domestiques ou agricoles de proximité',
+    categorie: 'urbain',
+    gps: '45.60° N, 6.45° E',
+    altitude: '300–1200 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et mélèze',
+    typeFondation: 'Fondations et soubassement en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La maison de village savoyarde constitue l'une des formes caractéristiques de l'habitat groupé des vallées et versants alpins. Elle se distingue de la maison-bloc agricole par son implantation dans un tissu villageois et par une relation moins directe avec de vastes espaces d'exploitation. Les maisons sont souvent mitoyennes ou très proches les unes des autres et s'organisent le long d'une rue, d'un chemin ou autour d'un espace commun. La forte pente des terrains peut conduire à une organisation en niveaux décalés, avec des accès différents selon la topographie. Les rez-de-chaussée ou niveaux bas peuvent accueillir caves, celliers et remises tandis que les étages supérieurs sont consacrés à l'habitation. La pierre constitue généralement le matériau principal des murs tandis que le bois intervient dans les planchers, les balcons, les portes et la charpente.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', 'Habitation et activités domestiques'],
+      ['Implantation', 'Villages et hameaux alpins'],
+      ['Organisation', 'Maison compacte intégrée au tissu bâti'],
+      ['Système', 'Maçonnerie en pierre et structure intérieure en bois'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Toiture', 'Toiture à deux pans'],
+      ['Particularité', 'Adaptation à la pente et forte proximité avec les constructions voisines'],
+    ],
+    materiaux: ['Pierre locale', 'Calcaire', 'Schiste', 'Granit selon les secteurs', 'Bois', 'Épicéa', 'Sapin', 'Mélèze', 'Chaux', 'Tuile', 'Lauze', 'Ardoise'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Façade principale',
+        txt: 'La façade principale donne généralement sur la rue, un chemin ou un espace commun du village.',
+      },
+      {
+        n: 2,
+        el: 'Mur porteur en pierre',
+        txt: 'Les murs en pierre assurent la stabilité de la construction et contribuent à son inertie thermique.',
+      },
+      {
+        n: 3,
+        el: "Niveaux d'habitation",
+        txt: 'Les niveaux supérieurs accueillent généralement les principales pièces de vie et chambres.',
+      },
+      {
+        n: 4,
+        el: 'Cave ou cellier',
+        txt: 'Les niveaux bas peuvent abriter une cave, un cellier ou des espaces de stockage.',
+      },
+      {
+        n: 5,
+        el: 'Remise',
+        txt: 'Une remise ou un petit espace agricole peut être associé au logement.',
+      },
+      {
+        n: 6,
+        el: 'Balcon ou galerie',
+        txt: "Des éléments en bois peuvent desservir les étages ou servir d'espace extérieur couvert.",
+      },
+      {
+        n: 7,
+        el: 'Charpente',
+        txt: "La charpente traditionnelle en bois porte la couverture et s'adapte aux contraintes climatiques locales.",
+      },
+      {
+        n: 8,
+        el: 'Toiture',
+        txt: "La toiture protège le bâtiment contre les précipitations et l'enneigement.",
+      },
+      {
+        n: 9,
+        el: 'Accès en pente',
+        txt: 'La topographie peut conduire à des accès situés à des niveaux différents sur une même construction.',
+      },
+      {
+        n: 10,
+        el: 'Mitoyenneté',
+        txt: 'Dans les villages denses, la maison peut être directement accolée aux bâtiments voisins.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Habitat villageois',
+        icon: 'ph ph-house',
+        intro: 'La maison de village constitue une unité résidentielle intégrée à un tissu bâti collectif.',
+        groups: [
+          G(null, ['Logement familial.', 'Cuisine.', 'Pièces de vie.', 'Chambres.', 'Espaces de rangement.']),
+        ],
+      },
+      {
+        title: 'Implantation groupée',
+        icon: 'ph ph-buildings',
+        intro: "La proximité des constructions constitue une caractéristique essentielle de l'habitat villageois.",
+        groups: [
+          G(null, ['Mitoyenneté.', 'Alignement sur rue.', 'Hameau.', 'Village.', 'Parcelles étroites.']),
+        ],
+      },
+      {
+        title: 'Adaptation à la pente',
+        icon: 'ph ph-mountains',
+        intro: "La topographie alpine influence fortement l'organisation des volumes et des accès.",
+        groups: [
+          G(null, ['Terrain en pente.', 'Niveaux décalés.', 'Accès multiples.', 'Soubassement enterré.', 'Escaliers.']),
+        ],
+      },
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-vertical',
+        intro: "La superposition des fonctions permet d'optimiser une parcelle souvent limitée.",
+        groups: [
+          G(null, ['Cave en partie basse.', 'Cellier.', 'Logement.', 'Grenier.', 'Stockage.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-wall',
+        intro: 'La pierre locale constitue généralement la structure principale des maisons anciennes.',
+        groups: [
+          G(null, ['Calcaire.', 'Schiste.', 'Pierre locale.', 'Mortier de chaux.', 'Enduit.']),
+        ],
+      },
+      {
+        title: 'Éléments en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois complète la maçonnerie et intervient dans les éléments structurels et les circulations extérieures.',
+        groups: [
+          G(null, ['Planchers.', 'Charpente.', 'Balcons.', 'Galeries.', 'Portes.', 'Volets.']),
+        ],
+      },
+      {
+        title: 'Balcons et galeries',
+        icon: 'ph ph-columns',
+        intro: 'Les éléments extérieurs en bois peuvent desservir les niveaux et servir d\'espaces de circulation ou de séchage.',
+        groups: [
+          G(null, ['Balcon.', 'Galerie.', 'Coursive.', 'Garde-corps en bois.', 'Accès extérieur.']),
+        ],
+      },
+      {
+        title: "Relation avec l'activité agricole",
+        icon: 'ph ph-tractor',
+        intro: "Même dans le village, l'habitation traditionnelle conserve souvent des espaces destinés au stockage ou à de petites activités agricoles.",
+        groups: [
+          G(null, ['Cellier.', 'Cave.', 'Remise.', 'Grenier.', 'Petit élevage.', 'Stockage.']),
+        ],
+      },
+      {
+        title: 'Vie communautaire',
+        icon: 'ph ph-users-three',
+        intro: "La maison s'inscrit dans un tissu villageois où les habitants partagent des équipements et des espaces communs.",
+        groups: [
+          G(null, ['Rue.', 'Fontaine.', 'Four communautaire.', 'Lavoir.', 'Place.', 'Chemins communs.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: 'La toiture répond aux contraintes de la neige, des précipitations et des ressources disponibles localement.',
+        groups: [
+          G(null, ['Deux pans.', 'Pente adaptée à la neige.', 'Lauze.', 'Tuile.', 'Ardoise.', 'Débord de toiture.']),
+        ],
+      },
+      {
+        title: 'Organisation parcellaire',
+        icon: 'ph ph-map',
+        intro: 'La maison est généralement construite sur une parcelle contrainte par le relief et la densité du village.',
+        groups: [
+          G(null, ['Parcelle étroite.', 'Front bâti.', 'Alignement.', 'Mitoyenneté.', 'Cour réduite.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la maison-bloc',
+        icon: 'ph ph-info',
+        intro: "La maison de village peut présenter plusieurs fonctions superposées, mais son implantation dans un tissu bâti dense la distingue de la maison-bloc agricole isolée.",
+        groups: [
+          G(null, [
+            'Maison de village : habitat groupé.',
+            'Maison-bloc : exploitation agricole.',
+            'Parcelle plus contrainte.',
+            'Proximité des voisins.',
+            'Fonction agricole secondaire.',
+          ]),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: "Les transformations modernes ont souvent séparé les fonctions agricoles de l'habitation et modifié les distributions intérieures.",
+        groups: [
+          G(null, ['Modernisation du logement.', 'Transformation des greniers.', 'Conversion des remises.', 'Rénovation des façades.', 'Réhabilitation résidentielle.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'intégration au tissu villageois, la construction compacte et l'adaptation au relief constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Implantation groupée.',
+            'Maison compacte.',
+            'Maçonnerie en pierre.',
+            'Niveaux superposés.',
+            'Adaptation à la pente.',
+            'Balcon ou galerie.',
+            'Cave ou cellier.',
+            'Toiture alpine.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
