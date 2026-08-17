@@ -21403,6 +21403,219 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'sechoirfruitssavoyard',
+    name: 'Séchoir à fruits savoyard',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Avant-Pays savoyard · Combe de Savoie',
+    periode: 'XVIIIe siècle – début du XXe siècle',
+    procede:
+      "Petit bâtiment ou espace spécialisé destiné au séchage naturel des fruits récoltés dans les vergers. La construction privilégie une bonne circulation de l'air tout en protégeant les fruits des précipitations. Selon les secteurs et les exploitations, le séchoir peut constituer un bâtiment indépendant, une dépendance agricole ou être aménagé dans une partie d'un bâtiment existant. Les dispositifs de ventilation, les ouvertures protégées et les claies ou étagères de séchage constituent ses principaux éléments fonctionnels.",
+    usage: 'Séchage, conservation et transformation traditionnelle des fruits',
+    categorie: 'agricole',
+    gps: '45.60° N, 6.05° E',
+    altitude: '250–700 m',
+    climat: 'Montagnard à influence continentale selon les secteurs',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne',
+    essenceBois: 'Épicéa, sapin et mélèze',
+    typeFondation: 'Soubassement maçonné ou fondations en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Élevée',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le séchoir à fruits savoyard est une construction agricole spécialisée destinée à prolonger la conservation des récoltes issues des vergers. Il est particulièrement associé aux territoires ruraux de l'Avant-Pays savoyard et de la Combe de Savoie où l'arboriculture fruitière complète traditionnellement les activités agricoles. Son architecture repose moins sur une forme monumentale uniforme que sur une organisation fonctionnelle favorisant le séchage naturel : espace protégé, circulation de l'air, ouvertures ventilées et supports destinés à recevoir les fruits. Pommes, poires et autres fruits peuvent être séchés ou conservés sous différentes formes selon les pratiques locales. Le séchoir peut être indépendant ou intégré à une grange, une remise ou une dépendance agricole. Cette diversité explique une difficulté d'identification supérieure à celle de typologies savoyardes plus fortement caractérisées.",
+    identite: [
+      ['Période', 'XVIIIe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Avant-Pays savoyard · Combe de Savoie'],
+      ['Usage', 'Séchage et conservation des fruits'],
+      ['Implantation', 'Vergers, exploitations rurales, hameaux et dépendances agricoles'],
+      ['Organisation', 'Espace ventilé protégé des précipitations'],
+      ['Système', "Séchage naturel par circulation de l'air"],
+      ['Matériau dominant', 'Bois et pierre selon les bâtiments'],
+      ['Particularité', 'Ouvertures et dispositifs favorisant la ventilation'],
+    ],
+    materiaux: ['Bois', 'Épicéa', 'Sapin', 'Mélèze', 'Pierre locale', 'Calcaire', 'Schiste', 'Brique', 'Tuile', 'Lauze', 'Ardoise'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Espace de séchage',
+        txt: 'Le volume principal accueille les fruits disposés sur des claies, grilles ou supports permettant leur séchage.',
+      },
+      {
+        n: 2,
+        el: 'Ouvertures ventilées',
+        txt: "Les ouvertures permettent la circulation de l'air tout en limitant l'exposition directe aux intempéries.",
+      },
+      {
+        n: 3,
+        el: 'Claies de séchage',
+        txt: "Les fruits peuvent être disposés sur des supports horizontaux favorisant leur exposition régulière à l'air.",
+      },
+      {
+        n: 4,
+        el: 'Parois ajourées',
+        txt: 'Des éléments ajourés en bois peuvent améliorer la ventilation du volume intérieur.',
+      },
+      {
+        n: 5,
+        el: 'Protection contre la pluie',
+        txt: 'La toiture et les débords protègent les fruits contre les précipitations tout en maintenant une ventilation suffisante.',
+      },
+      {
+        n: 6,
+        el: 'Structure en bois',
+        txt: 'Le bois est particulièrement adapté aux petits bâtiments agricoles nécessitant des espaces légers et ventilés.',
+      },
+      {
+        n: 7,
+        el: 'Soubassement',
+        txt: "Un soubassement maçonné peut protéger la partie basse du bâtiment contre l'humidité du sol.",
+      },
+      {
+        n: 8,
+        el: 'Accès',
+        txt: "Une porte ou une ouverture suffisamment large permet l'introduction des récoltes et la manutention des claies.",
+      },
+      {
+        n: 9,
+        el: 'Stockage temporaire',
+        txt: 'Une partie du bâtiment peut servir au stockage des fruits avant ou après le séchage.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Fonction fruitière',
+        icon: 'ph ph-apple-logo',
+        intro: 'Le séchoir prolonge la conservation des fruits issus des vergers et permet de valoriser une partie des récoltes.',
+        groups: [
+          G(null, ['Pommes.', 'Poires.', 'Fruits séchés.', 'Conservation.', 'Transformation alimentaire.']),
+        ],
+      },
+      {
+        title: 'Séchage naturel',
+        icon: 'ph ph-wind',
+        intro: 'La ventilation naturelle constitue le principe technique essentiel du bâtiment.',
+        groups: [
+          G(null, ["Circulation de l'air.", 'Ventilation naturelle.', "Évacuation de l'humidité.", 'Séchage progressif.', 'Protection des récoltes.']),
+        ],
+      },
+      {
+        title: 'Claies et supports',
+        icon: 'ph ph-grid-four',
+        intro: "Les fruits sont disposés sur des supports permettant leur exposition régulière à l'air.",
+        groups: [
+          G(null, ['Claies.', 'Grilles.', 'Étagères.', 'Supports en bois.', 'Disposition espacée.']),
+        ],
+      },
+      {
+        title: 'Architecture ventilée',
+        icon: 'ph ph-wind',
+        intro: "L'organisation des façades et des ouvertures répond avant tout aux besoins de ventilation.",
+        groups: [
+          G(null, ['Parois ajourées.', 'Ouvertures protégées.', 'Bardage bois.', 'Persiennes.', "Circulation transversale de l'air."]),
+        ],
+      },
+      {
+        title: 'Relation avec les vergers',
+        icon: 'ph ph-tree',
+        intro: "Le séchoir est directement associé aux espaces de production fruitière de l'exploitation.",
+        groups: [
+          G(null, ['Vergers.', 'Arboriculture.', 'Récolte.', 'Tri des fruits.', 'Transport des récoltes.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'Le bâtiment peut être implanté au sein de l\'exploitation ou à proximité immédiate des vergers.',
+        groups: [
+          G(null, ['Ferme.', 'Hameau.', 'Verger.', 'Cour agricole.', 'Dépendance.']),
+        ],
+      },
+      {
+        title: 'Construction en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois facilite la réalisation de structures légères et ventilées adaptées au séchage.',
+        groups: [
+          G(null, ['Épicéa.', 'Sapin.', 'Mélèze.', 'Bardage.', 'Poteaux.', 'Claies.']),
+        ],
+      },
+      {
+        title: 'Protection climatique',
+        icon: 'ph ph-cloud-rain',
+        intro: 'Le bâtiment doit maintenir une ventilation importante tout en protégeant les fruits contre la pluie et la neige.',
+        groups: [
+          G(null, ['Débord de toiture.', 'Protection contre la pluie.', 'Protection contre la neige.', 'Ventilation.', 'Orientation.']),
+        ],
+      },
+      {
+        title: 'Transformation des récoltes',
+        icon: 'ph ph-knife',
+        intro: 'Le séchage permet de conserver les fruits au-delà de la période de récolte.',
+        groups: [
+          G(null, ['Séchage.', 'Conservation.', 'Découpe éventuelle.', 'Stockage.', 'Consommation différée.']),
+        ],
+      },
+      {
+        title: 'Relation avec les autres bâtiments',
+        icon: 'ph ph-buildings',
+        intro: 'Le séchoir peut être indépendant ou intégré à une grange, une remise ou une autre dépendance agricole.',
+        groups: [
+          G(null, ['Grange.', 'Remise.', 'Dépendance agricole.', 'Grenier.', 'Bâtiment polyvalent.']),
+        ],
+      },
+      {
+        title: 'Distinction avec le grenier',
+        icon: 'ph ph-info',
+        intro: 'Le séchoir se distingue du grenier par l\'importance donnée à la ventilation et au séchage des récoltes.',
+        groups: [
+          G(null, ['Grenier : stockage général.', 'Séchoir : séchage spécialisé.', 'Ventilation renforcée.', 'Claies ou supports.', 'Protection des fruits.']),
+        ],
+      },
+      {
+        title: "Difficulté d'identification",
+        icon: 'ph ph-warning',
+        intro: "Les séchoirs à fruits présentent une grande diversité formelle et peuvent être intégrés à d'autres bâtiments agricoles.",
+        groups: [
+          G(null, [
+            'Absence de modèle architectural unique.',
+            'Bâtiments indépendants ou intégrés.',
+            'Variations locales.',
+            'Fonction parfois difficile à déterminer.',
+            'Identification par les dispositifs de ventilation.',
+          ]),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: "La modernisation des techniques de conservation et l'évolution des pratiques agricoles ont réduit l'usage des séchoirs traditionnels.",
+        groups: [
+          G(null, ['Modernisation agricole.', 'Conservation industrielle.', 'Transformation des dépendances.', 'Abandon.', 'Réhabilitation patrimoniale.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'un espace protégé, de dispositifs de ventilation et de supports de séchage constitue le principal indice d'identification.",
+        groups: [
+          G(null, [
+            'Espace ventilé.',
+            'Claies.',
+            'Parois ajourées.',
+            'Ouvertures protégées.',
+            'Débord de toiture.',
+            'Proximité des vergers.',
+            'Fonction de séchage.',
+            'Stockage des fruits.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
