@@ -19198,6 +19198,198 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'moulinventquercynois',
+    name: 'Moulin à vent quercynois',
+    region: 'Occitanie · Quercy · Lot',
+    periode: 'XVIIIe – XIXe siècles',
+    procede:
+      "Moulin utilisant l'énergie du vent pour entraîner un mécanisme de broyage, principalement destiné à la mouture des céréales. Le bâtiment est généralement implanté sur un point dégagé et exposé aux vents dominants. La tour maçonnée supporte une toiture mobile ou orientable portant les ailes et abrite le mécanisme de transmission et les meules.",
+    usage: 'Mouture des céréales et production de farine',
+    categorie: 'industrielle',
+    gps: '44.50° N, 1.50° E',
+    altitude: '150–400 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Toiture conique ou couverture adaptée au mécanisme orientable',
+    penteToit: 'Variable selon le type de moulin',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations maçonnées en pierre calcaire',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe – XIXe siècles',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe'],
+    resume:
+      "Le moulin à vent quercynois est une architecture productive destinée à exploiter l'énergie éolienne pour moudre les céréales. Sa présence complète le réseau des moulins à eau du Quercy et témoigne de la recherche de sources d'énergie adaptées aux conditions locales. Le moulin est généralement installé sur une hauteur dégagée afin de bénéficier d'une exposition favorable au vent. Une tour maçonnée abrite les meules et le mécanisme de transmission, tandis que la partie supérieure porte les ailes et permet d'orienter le dispositif face au vent. L'implantation, la robustesse de la maçonnerie et l'organisation verticale répondent directement aux contraintes techniques du fonctionnement du moulin.",
+    identite: [
+      ['Période', 'XVIIIe – XIXe siècles'],
+      ['Région', 'Quercy · Lot'],
+      ['Usage', 'Mouture des céréales'],
+      ["Source d'énergie", 'Vent'],
+      ['Organisation', 'Tour maçonnée avec mécanisme de mouture'],
+      ['Implantation', 'Point haut ou secteur dégagé et exposé au vent'],
+      ['Mécanisme', 'Ailes, arbre de transmission, engrenages et meules'],
+      ['Particularité', 'Architecture productive directement dépendante des conditions aérologiques'],
+    ],
+    materiaux: ['Calcaire', 'Moellons', 'Pierre de taille', 'Bois', 'Fer', 'Tuile', 'Lauze'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Tour maçonnée',
+        txt: 'La tour constitue le volume principal du moulin et abrite les différents niveaux de travail et de transmission.',
+      },
+      {
+        n: 2,
+        el: 'Ailes',
+        txt: "Les ailes captent l'énergie du vent et transmettent leur mouvement à l'arbre principal.",
+      },
+      {
+        n: 3,
+        el: 'Arbre moteur',
+        txt: "L'arbre principal transmet la rotation des ailes au mécanisme de broyage situé à l'intérieur du moulin.",
+      },
+      {
+        n: 4,
+        el: 'Engrenages',
+        txt: "Le système d'engrenages transforme et transmet le mouvement nécessaire à l'entraînement des meules.",
+      },
+      {
+        n: 5,
+        el: 'Meules',
+        txt: 'Les meules constituent l\'élément productif principal et permettent de transformer les grains en farine.',
+      },
+      {
+        n: 6,
+        el: 'Toiture mobile',
+        txt: "La partie supérieure peut être orientée afin de placer les ailes face à la direction du vent.",
+      },
+      {
+        n: 7,
+        el: 'Plate-forme de travail',
+        txt: 'Les différents niveaux intérieurs permettent le stockage, la manutention du grain et l\'exploitation du mécanisme.',
+      },
+      {
+        n: 8,
+        el: 'Implantation en hauteur',
+        txt: 'Le moulin recherche un emplacement dégagé permettant de bénéficier d\'un vent suffisamment régulier.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe énergétique',
+        icon: 'ph ph-wind',
+        intro: "Le moulin transforme l'énergie cinétique du vent en mouvement mécanique utilisable pour la mouture.",
+        groups: [
+          G(null, ['Vent.', 'Rotation des ailes.', 'Transmission mécanique.', 'Rotation des meules.', 'Transformation du grain en farine.']),
+        ],
+      },
+      {
+        title: 'Tour du moulin',
+        icon: 'ph ph-buildings',
+        intro: 'La tour maçonnée fournit une structure stable capable de supporter le mécanisme et les efforts transmis par les ailes.',
+        groups: [
+          G(null, ['Maçonnerie épaisse.', 'Plan circulaire ou légèrement polygonal selon les modèles.', 'Organisation verticale.', 'Petites ouvertures.', 'Accès intérieur.', 'Plateformes de travail.']),
+        ],
+      },
+      {
+        title: 'Ailes',
+        icon: 'ph ph-arrows-clockwise',
+        intro: 'Les ailes constituent le capteur énergétique du moulin.',
+        groups: [
+          G(null, ['Structure en bois.', 'Voilure ou système de pales.', 'Rotation autour de l\'arbre principal.', 'Adaptation à la force du vent.', 'Transmission du mouvement.']),
+        ],
+      },
+      {
+        title: 'Orientation au vent',
+        icon: 'ph ph-compass',
+        intro: 'Le fonctionnement efficace du moulin nécessite de présenter les ailes dans une direction favorable au vent.',
+        groups: [
+          G(null, ['Toiture orientable selon le type de moulin.', 'Recherche du vent dominant.', 'Position dégagée.', "Adaptation de l'orientation.", 'Réduction des obstacles proches.']),
+        ],
+      },
+      {
+        title: 'Mécanisme de transmission',
+        icon: 'ph ph-gear',
+        intro: "Un ensemble d'arbres et d'engrenages transmet la rotation des ailes aux meules.",
+        groups: [
+          G(null, ['Arbre moteur.', 'Engrenage principal.', 'Transmission verticale.', 'Régulation de la vitesse.', 'Entraînement des meules.']),
+        ],
+      },
+      {
+        title: 'Meules',
+        icon: 'ph ph-circle-dashed',
+        intro: 'Les meules constituent le dispositif directement responsable de la mouture.',
+        groups: [
+          G(null, ['Meule dormante.', 'Meule tournante.', 'Trémie.', 'Alimentation régulière du grain.', 'Farine.', 'Son.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: "L'emplacement du moulin est déterminé avant tout par la recherche d'une bonne exposition au vent.",
+        groups: [
+          G(null, ['Sommet de colline.', 'Crête.', 'Plateau dégagé.', "Absence d'obstacles importants.", 'Proximité des terres céréalières.', 'Accès pour le transport du grain.']),
+        ],
+      },
+      {
+        title: "Relation avec l'agriculture",
+        icon: 'ph ph-wheat',
+        intro: 'Le moulin constitue un équipement essentiel de transformation des productions céréalières locales.',
+        groups: [
+          G(null, ['Blé.', 'Seigle.', 'Céréales locales.', 'Transport du grain.', 'Mouture.', 'Distribution de la farine.']),
+        ],
+      },
+      {
+        title: 'Architecture calcaire',
+        icon: 'ph ph-cube',
+        intro: 'La maçonnerie utilise principalement les ressources minérales disponibles localement.',
+        groups: [
+          G(null, ['Calcaire.', 'Moellons.', 'Pierre de taille.', 'Mortier de chaux.', 'Enduits possibles.', 'Maçonnerie épaisse.']),
+        ],
+      },
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-out-line-vertical',
+        intro: 'La superposition des fonctions permet d\'intégrer le stockage et le mécanisme dans une emprise réduite.',
+        groups: [
+          G(null, ['Niveau inférieur.', 'Stockage.', 'Niveau des meules.', 'Mécanisme supérieur.', 'Accès à la toiture.', 'Circulation verticale.']),
+        ],
+      },
+      {
+        title: 'Moulin à vent et moulin à eau',
+        icon: 'ph ph-info',
+        intro: 'Le moulin à vent constitue le complément énergétique du moulin à eau quercynois, mais son implantation et son fonctionnement diffèrent profondément.',
+        groups: [
+          G(null, [
+            'Moulin à vent : énergie éolienne.',
+            'Moulin à eau : énergie hydraulique.',
+            'Moulin à vent : implantation sur un point exposé.',
+            'Moulin à eau : implantation sur un cours d\'eau ou un dispositif hydraulique.',
+            'Moulin à vent : dépend du régime des vents.',
+            'Moulin à eau : dépend du débit disponible.',
+          ]),
+        ],
+      },
+      {
+        title: 'Déclin de la meunerie traditionnelle',
+        icon: 'ph ph-clock',
+        intro: 'La mécanisation et l\'évolution des modes de production ont progressivement réduit la fonction des petits moulins traditionnels.',
+        groups: [
+          G(null, ['Développement de la meunerie industrielle.', 'Mécanisation.', 'Concurrence des minoteries.', 'Arrêt progressif des installations.', 'Transformation patrimoniale.', 'Restauration de certains moulins.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'une tour maçonnée, d'ailes, d'un mécanisme de transmission et d'une implantation exposée permet d'identifier cette architecture productive.",
+        groups: [
+          G(null, ['Tour maçonnée.', 'Ailes.', 'Toiture ou tête orientable.', 'Arbre de transmission.', 'Engrenages.', 'Meules.', 'Implantation en hauteur.', 'Fonction de mouture.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
