@@ -22734,6 +22734,227 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'grangecolonnesavoyarde',
+    name: 'Grange à colonne savoyarde',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Bâtiment agricole destiné principalement au stockage du foin et à l'abri du bétail, caractérisé par une organisation structurelle faisant intervenir des poteaux ou colonnes en bois à l'intérieur du volume. La structure porteuse permet de dégager ou de surélever les espaces de stockage et d'organiser verticalement la grange. La maçonnerie en pierre peut former le soubassement et les murs exposés tandis que le bois constitue un élément essentiel de la charpente et de la structure intérieure. Selon les secteurs et les altitudes, la grange peut être associée à une étable au niveau inférieur et à un fenil au niveau supérieur.",
+    usage: "Stockage du foin, abri du bétail et exploitation agricole",
+    categorie: 'montagne',
+    gps: '45.62° N, 6.40° E',
+    altitude: '400–1800 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et mélèze',
+    typeFondation: 'Soubassement maçonné en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe–XIXe siècle',
+    difficulteIdentification: 'Élevée',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La grange à colonne savoyarde constitue une forme d'architecture agricole dans laquelle une structure intérieure en bois participe directement à l'organisation du bâtiment. Les poteaux permettent de soutenir les planchers, les éléments de stockage et la charpente tout en maintenant de grands volumes adaptés au foin. Dans les constructions associant grange et étable, le niveau inférieur peut accueillir les animaux tandis que le fenil occupe le volume supérieur. La construction est fortement adaptée au relief et au climat montagnard : soubassements maçonnés, murs en pierre, charpente en bois et grandes ouvertures destinées au chargement du foin. Cette typologie doit être comprise comme une famille constructive localisée dans certains secteurs de Savoie plutôt que comme un modèle uniforme à l'ensemble du territoire savoyard.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', "Stockage du foin et activités d'élevage"],
+      ['Implantation', 'Fermes, hameaux, versants et alpages'],
+      ['Organisation', 'Volume agricole superposé avec structure intérieure en bois'],
+      ['Système', 'Maçonnerie périphérique et structure bois'],
+      ['Matériau dominant', 'Bois et pierre'],
+      ['Toiture', 'Toiture à deux pans'],
+      ['Particularité', "Poteaux ou colonnes intérieurs participant à la structure et à l'organisation du fenil"],
+    ],
+    materiaux: ['Pierre locale', 'Bois', 'Épicéa', 'Sapin', 'Mélèze', 'Chaux', 'Ardoise', 'Lauze', 'Tuile', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Poteaux intérieurs',
+        txt: "Les poteaux ou colonnes en bois participent au soutien des planchers et à l'organisation du volume agricole.",
+      },
+      {
+        n: 2,
+        el: 'Fenil',
+        txt: "Le niveau supérieur accueille principalement le foin et les autres fourrages destinés à l'hiver.",
+      },
+      {
+        n: 3,
+        el: 'Étable',
+        txt: 'Dans les bâtiments mixtes, le niveau inférieur peut accueillir le bétail.',
+      },
+      {
+        n: 4,
+        el: 'Plancher de stockage',
+        txt: 'Le plancher sépare les espaces agricoles et supporte les charges importantes liées au stockage du foin.',
+      },
+      {
+        n: 5,
+        el: 'Grande ouverture',
+        txt: "Une ouverture importante permet l'entrée du foin et facilite le chargement du fenil.",
+      },
+      {
+        n: 6,
+        el: 'Mur en pierre',
+        txt: 'Les murs périphériques assurent la protection du bâtiment et reposent généralement sur un soubassement maçonné.',
+      },
+      {
+        n: 7,
+        el: 'Charpente',
+        txt: 'La charpente traditionnelle en bois supporte la couverture et contribue à la stabilité du volume.',
+      },
+      {
+        n: 8,
+        el: 'Soubassement',
+        txt: "Le soubassement en pierre protège la construction contre l'humidité du terrain et les contraintes liées à la pente.",
+      },
+      {
+        n: 9,
+        el: 'Accès au fenil',
+        txt: "L'accès supérieur peut être desservi directement depuis le terrain en pente ou par une rampe.",
+      },
+      {
+        n: 10,
+        el: 'Toiture',
+        txt: "La couverture protège le fourrage et la structure contre les précipitations et l'enneigement.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Fonction agricole',
+        icon: 'ph ph-tractor',
+        intro: "La grange est principalement destinée à la conservation du fourrage et à l'organisation des activités d'élevage.",
+        groups: [
+          G(null, ['Stockage du foin.', 'Stockage de la paille.', 'Abri du bétail.', 'Stockage du matériel.', 'Travail agricole.']),
+        ],
+      },
+      {
+        title: 'Structure à colonnes',
+        icon: 'ph ph-columns',
+        intro: 'La présence de poteaux intérieurs constitue le principal caractère constructif retenu pour cette typologie.',
+        groups: [
+          G(null, ['Poteaux en bois.', 'Poutres.', 'Solives.', 'Assemblages traditionnels.', 'Structure porteuse intérieure.']),
+        ],
+      },
+      {
+        title: 'Fenil',
+        icon: 'ph ph-stack',
+        intro: 'Le fenil occupe généralement une grande partie du volume supérieur et permet de conserver le fourrage durant l\'hiver.',
+        groups: [
+          G(null, ['Foin.', 'Fourrage.', 'Stockage en vrac.', 'Chargement par ouverture haute.', 'Ventilation naturelle.']),
+        ],
+      },
+      {
+        title: 'Étable',
+        icon: 'ph ph-cow',
+        intro: 'Lorsque la grange est associée à une étable, les animaux occupent généralement le niveau inférieur.',
+        groups: [
+          G(null, ['Bovins.', 'Petits ruminants.', 'Râteliers.', 'Auge.', 'Litière.']),
+        ],
+      },
+      {
+        title: 'Adaptation à la pente',
+        icon: 'ph ph-mountains',
+        intro: 'La topographie permet souvent de créer des accès à plusieurs niveaux du bâtiment.',
+        groups: [
+          G(null, ['Terrain en pente.', 'Accès haut.', 'Accès bas.', 'Soubassement enterré.', 'Rampe.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-wall',
+        intro: 'La pierre protège les parties basses et les façades exposées tandis que le bois domine les éléments structurels intérieurs.',
+        groups: [
+          G(null, ['Pierre locale.', 'Calcaire.', 'Schiste.', 'Mortier de chaux.', 'Enduit.']),
+        ],
+      },
+      {
+        title: 'Charpente',
+        icon: 'ph ph-tree',
+        intro: 'La charpente en bois constitue un élément essentiel de la construction agricole traditionnelle.',
+        groups: [
+          G(null, ['Épicéa.', 'Sapin.', 'Mélèze.', 'Pannes.', 'Chevrons.', 'Assemblages traditionnels.']),
+        ],
+      },
+      {
+        title: 'Ouvertures agricoles',
+        icon: 'ph ph-door-open',
+        intro: 'Les ouvertures sont dimensionnées en fonction des besoins de chargement et de ventilation du bâtiment.',
+        groups: [
+          G(null, ['Grande porte.', 'Ouverture du fenil.', 'Portes de grange.', 'Ventilation.', 'Accès du bétail.']),
+        ],
+      },
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-vertical',
+        intro: 'La superposition des fonctions optimise un bâtiment implanté sur des terrains souvent difficiles.',
+        groups: [
+          G(null, ['Soubassement.', 'Étable.', 'Étage agricole.', 'Fenil.', 'Stockage.']),
+        ],
+      },
+      {
+        title: 'Conservation du fourrage',
+        icon: 'ph ph-wheat',
+        intro: 'Le volume important du fenil répond au besoin de constituer des réserves pour la période hivernale.',
+        groups: [
+          G(null, ['Réserve hivernale.', 'Foin sec.', 'Ventilation.', "Protection contre l'humidité.", 'Stockage en hauteur.']),
+        ],
+      },
+      {
+        title: 'Toiture alpine',
+        icon: 'ph ph-house-line',
+        intro: 'La couverture doit protéger efficacement le fourrage contre la neige et les précipitations.',
+        groups: [
+          G(null, ['Deux pans.', 'Pente adaptée à la neige.', 'Lauze.', 'Ardoise.', 'Tuile.', 'Débord de toiture.']),
+        ],
+      },
+      {
+        title: 'Relation avec la ferme',
+        icon: 'ph ph-farm',
+        intro: 'La grange peut constituer un bâtiment indépendant ou être intégrée à un ensemble agricole plus vaste.',
+        groups: [
+          G(null, ['Maison-bloc.', 'Ferme.', 'Étable.', 'Grange indépendante.', 'Grenier.', 'Remise.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la grange à foin',
+        icon: 'ph ph-info',
+        intro: "La présence d'une structure intérieure à poteaux constitue ici le critère morphologique privilégié, tandis que la simple fonction de stockage du foin ne suffit pas à définir la typologie.",
+        groups: [
+          G(null, ['Structure intérieure identifiable.', 'Poteaux en bois.', 'Organisation verticale.', 'Volume de fenil.', 'Adaptation au relief.']),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: "La mécanisation agricole et l'abandon progressif de certaines exploitations ont entraîné la transformation de nombreuses granges traditionnelles.",
+        groups: [
+          G(null, ['Abandon agricole.', 'Transformation en stockage.', 'Réhabilitation.', 'Conversion résidentielle.', 'Patrimonialisation.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La structure intérieure en bois, le volume du fenil et l'association éventuelle avec une étable constituent les principaux indices d'identification.",
+        groups: [
+          G(null, [
+            'Poteaux intérieurs.',
+            'Poutres en bois.',
+            'Grand volume agricole.',
+            'Fenil.',
+            'Étable éventuelle.',
+            'Grande ouverture.',
+            'Maçonnerie en pierre.',
+            'Toiture à deux pans.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
