@@ -20578,6 +20578,215 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'moulineausavoyard',
+    name: 'Moulin à eau savoyard',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'Moyen Âge – début du XXe siècle',
+    procede:
+      "Bâtiment productif implanté sur un cours d'eau, un bief ou une dérivation afin d'utiliser l'énergie hydraulique pour entraîner une roue puis, selon les périodes, une turbine et un système de transmission mécanique. Le moulin savoyard associe généralement un bâtiment maçonné ou mixte à un dispositif hydraulique comprenant prise d'eau, canal d'amenée, mécanisme moteur et canal de fuite. Les installations peuvent être de petite taille et directement intégrées au tissu rural des vallées et des hameaux.",
+    usage: 'Mouture des céréales et transformation de productions agricoles par énergie hydraulique',
+    categorie: 'industrielle',
+    gps: '45.55° N, 6.55° E',
+    altitude: '300–1300 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa et mélèze',
+    typeFondation: 'Fondations et soubassement en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Moyen Âge', 'XVIe', 'XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le moulin à eau savoyard est un bâtiment productif utilisant la force des cours d'eau pour actionner des mécanismes de transformation, principalement destinés à la mouture des céréales. Implanté dans les vallées, les hameaux et les secteurs agricoles, il est étroitement lié à un dispositif hydraulique composé d'une prise d'eau, d'un bief ou canal d'amenée, d'une roue et d'un canal de fuite. La construction associe fréquemment une maçonnerie en pierre à des éléments en bois et doit résister à l'humidité ainsi qu'aux variations du débit. Les installations les plus anciennes utilisent des roues hydrauliques horizontales ou verticales ; les évolutions techniques introduisent ensuite des turbines et des systèmes de transmission plus performants. Le moulin constitue un équipement essentiel de l'économie rurale traditionnelle en permettant aux communautés agricoles de transformer localement leurs récoltes.",
+    identite: [
+      ['Période', 'Moyen Âge – début du XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', 'Mouture des céréales et transformation agricole'],
+      ['Implantation', "Cours d'eau, vallées, hameaux et secteurs agricoles"],
+      ['Énergie', 'Hydraulique'],
+      ['Système', 'Roue hydraulique ou turbine avec transmission mécanique'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Particularité', 'Association étroite entre bâtiment productif et réseau hydraulique'],
+    ],
+    materiaux: ['Pierre locale', 'Calcaire', 'Schiste', 'Bois', 'Épicéa', 'Mélèze', 'Fer', 'Fonte'],
+    annotations: [
+      {
+        n: 1,
+        el: "Prise d'eau",
+        txt: "Un dispositif de dérivation prélève une partie du débit du cours d'eau pour alimenter le moulin.",
+      },
+      {
+        n: 2,
+        el: 'Bief',
+        txt: 'Le bief conduit l\'eau jusqu\'au mécanisme moteur et permet de contrôler la hauteur et le débit disponibles.',
+      },
+      {
+        n: 3,
+        el: 'Roue hydraulique',
+        txt: "La roue transforme l'énergie du courant ou de la chute d'eau en mouvement mécanique.",
+      },
+      {
+        n: 4,
+        el: 'Mécanisme de transmission',
+        txt: 'Arbres, engrenages et autres éléments transmettent le mouvement de la roue aux appareils de mouture.',
+      },
+      {
+        n: 5,
+        el: 'Meules',
+        txt: 'Les meules assurent traditionnellement la transformation des céréales en farine.',
+      },
+      {
+        n: 6,
+        el: 'Trémie',
+        txt: "La trémie permet l'alimentation régulière des mécanismes de mouture.",
+      },
+      {
+        n: 7,
+        el: 'Bâtiment du moulin',
+        txt: 'Le bâtiment abrite les mécanismes de production et les espaces nécessaires à la réception et au stockage des céréales.',
+      },
+      {
+        n: 8,
+        el: 'Canal de fuite',
+        txt: "Après avoir actionné le mécanisme moteur, l'eau est restituée au cours d'eau par le canal de fuite.",
+      },
+      {
+        n: 9,
+        el: 'Aire de stockage',
+        txt: 'Les céréales et les produits issus de la mouture peuvent être temporairement stockés dans ou à proximité du bâtiment.',
+      },
+      {
+        n: 10,
+        el: 'Maçonnerie',
+        txt: "La pierre locale constitue fréquemment la structure principale du bâtiment, notamment dans les parties exposées à l'eau.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe hydraulique',
+        icon: 'ph ph-drop',
+        intro: "Le moulin transforme l'énergie potentielle ou cinétique de l'eau en énergie mécanique.",
+        groups: [
+          G(null, ["Cours d'eau.", "Prise d'eau.", 'Bief.', 'Chute.', 'Roue hydraulique.', 'Canal de fuite.']),
+        ],
+      },
+      {
+        title: 'Mouture des céréales',
+        icon: 'ph ph-grains',
+        intro: 'La fonction traditionnelle principale du moulin est de transformer les céréales en farine.',
+        groups: [
+          G(null, ['Blé.', 'Seigle.', 'Orge.', 'Céréales locales.', 'Farine.', 'Son.']),
+        ],
+      },
+      {
+        title: 'Meules',
+        icon: 'ph ph-circle',
+        intro: 'Les meules constituent l\'un des principaux équipements des moulins traditionnels.',
+        groups: [
+          G(null, ['Meule dormante.', 'Meule tournante.', "Réglage de l'écartement.", 'Mouture progressive.', 'Entretien des surfaces de broyage.']),
+        ],
+      },
+      {
+        title: 'Bâtiment productif',
+        icon: 'ph ph-factory',
+        intro: 'Le bâtiment est organisé autour des mécanismes et du circuit des matières premières.',
+        groups: [
+          G(null, ['Réception des céréales.', 'Stockage.', 'Trémie.', 'Meules.', 'Transmission.', 'Stockage de la farine.']),
+        ],
+      },
+      {
+        title: 'Construction',
+        icon: 'ph ph-wall',
+        intro: "La construction doit supporter les mécanismes, les vibrations et l'humidité liée à la présence permanente de l'eau.",
+        groups: [
+          G(null, ['Pierre locale.', 'Maçonnerie.', 'Bois.', 'Poutres.', 'Planchers.', 'Charpente.']),
+        ],
+      },
+      {
+        title: 'Implantation dans les vallées',
+        icon: 'ph ph-mountains',
+        intro: 'Les moulins sont implantés à proximité des cours d\'eau et des communautés agricoles qu\'ils desservent.',
+        groups: [
+          G(null, ['Vallées.', 'Hameaux.', 'Villages.', "Cours d'eau.", 'Terrains agricoles.', 'Chemins ruraux.']),
+        ],
+      },
+      {
+        title: "Gestion de l'eau",
+        icon: 'ph ph-waves',
+        intro: 'Le fonctionnement du moulin nécessite une maîtrise du débit et de la hauteur d\'eau.',
+        groups: [
+          G(null, ['Vannes.', "Canal d'amenée.", 'Bief.', 'Chute.', 'Déversoir.', 'Canal de fuite.']),
+        ],
+      },
+      {
+        title: 'Évolution technique',
+        icon: 'ph ph-gear',
+        intro: "Les mécanismes hydrauliques et les appareils de mouture évoluent progressivement jusqu'à l'industrialisation.",
+        groups: [
+          G(null, ['Roue hydraulique.', 'Engrenages en bois.', 'Transmission métallique.', 'Turbine.', 'Mécanisation.', 'Électrification.']),
+        ],
+      },
+      {
+        title: 'Économie rurale',
+        icon: 'ph ph-storefront',
+        intro: 'Le moulin assure localement une fonction essentielle dans la transformation des productions agricoles.',
+        groups: [
+          G(null, ['Production céréalière.', 'Transformation locale.', 'Économie de proximité.', 'Échange de services.', 'Approvisionnement des villages.']),
+        ],
+      },
+      {
+        title: 'Moulin et scierie hydraulique',
+        icon: 'ph ph-info',
+        intro: 'Le moulin et la scierie partagent une même source d\'énergie mais correspondent à deux architectures productives différentes.',
+        groups: [
+          G(null, [
+            'Moulin : transformation des céréales.',
+            'Scierie : transformation du bois.',
+            'Même principe hydraulique.',
+            'Machines différentes.',
+            'Organisation spatiale spécifique.',
+          ]),
+        ],
+      },
+      {
+        title: 'Déclin des moulins traditionnels',
+        icon: 'ph ph-clock',
+        intro: "L'industrialisation et l'évolution des modes de production entraînent progressivement la disparition de nombreux petits moulins.",
+        groups: [
+          G(null, [
+            'Industrialisation de la meunerie.',
+            'Électrification.',
+            'Abandon des équipements.',
+            'Transformation en habitation.',
+            'Restauration patrimoniale.',
+            "Maintien ponctuel d'activités artisanales.",
+          ]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'un bâtiment de mouture et d'un dispositif hydraulique constitue le principal critère d'identification.",
+        groups: [
+          G(null, [
+            "Cours d'eau.",
+            'Bief.',
+            'Roue ou turbine.',
+            'Transmission mécanique.',
+            'Meules ou équipements de mouture.',
+            'Bâtiment productif.',
+            'Canal de fuite.',
+            'Stockage des céréales.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
