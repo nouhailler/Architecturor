@@ -23543,6 +23543,235 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'fermecourjurassienne',
+    name: 'Ferme à cour jurassienne',
+    region: 'Bourgogne-Franche-Comté · Jura · massif jurassien',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Ensemble rural organisé autour d'une cour centrale ou semi-fermée, regroupant plusieurs bâtiments destinés au logement, à l'élevage, au stockage et aux activités agricoles. Contrairement à la ferme-bloc, les fonctions peuvent être réparties entre plusieurs volumes distincts. Les bâtiments utilisent principalement la pierre locale pour les murs et le bois pour les charpentes, planchers et éléments secondaires. La cour constitue un espace de travail, de circulation et de distribution entre les différentes parties de l'exploitation.",
+    usage: 'Habitation, élevage, stockage agricole et activités rurales',
+    categorie: 'rural',
+    gps: '46.72° N, 5.95° E',
+    altitude: '400–900 m',
+    climat: 'Montagnard à continental',
+    typeToiture: 'Toitures à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et chêne',
+    typeFondation: 'Soubassement maçonné en pierre calcaire',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne à élevée',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La ferme à cour jurassienne constitue une forme d'exploitation rurale dans laquelle les différents bâtiments sont organisés autour d'un espace central servant à la circulation et aux activités agricoles. Elle se distingue de la ferme-bloc par une plus grande séparation des volumes et par l'importance donnée à la cour. Selon les secteurs et les périodes, l'ensemble peut comprendre un logis, une grange, une étable, des remises, des greniers et différents bâtiments annexes. Cette organisation permet d'adapter l'exploitation à des parcelles relativement vastes tout en protégeant partiellement les espaces de travail des intempéries. La forme et le degré de fermeture de la cour varient fortement selon les villages, les ressources disponibles et les traditions constructives locales.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Jura · massif jurassien'],
+      ['Usage', 'Habitation et exploitation agricole'],
+      ['Implantation', 'Villages, hameaux et exploitations rurales'],
+      ['Organisation', "Plusieurs bâtiments disposés autour d'une cour"],
+      ['Système', 'Maçonnerie en pierre et charpente traditionnelle en bois'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Toiture', 'Toitures à deux pans, généralement fortement inclinées'],
+      ['Particularité', "Cour centrale ou semi-fermée organisant les bâtiments de l'exploitation"],
+    ],
+    materiaux: ['Pierre calcaire', 'Pierre locale', 'Bois', 'Épicéa', 'Sapin', 'Chêne', 'Chaux', 'Tuiles', 'Lauze', 'Ardoise', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Cour centrale',
+        txt: 'La cour constitue l\'espace de circulation, de travail et de distribution entre les différents bâtiments.',
+      },
+      {
+        n: 2,
+        el: 'Logis',
+        txt: "Le bâtiment d'habitation accueille la famille exploitante et peut être implanté sur un côté de la cour.",
+      },
+      {
+        n: 3,
+        el: 'Grange',
+        txt: 'La grange permet le stockage du foin, des récoltes et du matériel agricole.',
+      },
+      {
+        n: 4,
+        el: 'Étable',
+        txt: "L'étable peut constituer un bâtiment indépendant ou occuper l'un des côtés de l'ensemble.",
+      },
+      {
+        n: 5,
+        el: 'Remise',
+        txt: 'Les bâtiments secondaires accueillent le matériel, les véhicules agricoles et différents espaces de stockage.',
+      },
+      {
+        n: 6,
+        el: 'Mur de clôture',
+        txt: 'Un mur ou un bâtiment peut fermer partiellement la cour et la protéger des vents et des intempéries.',
+      },
+      {
+        n: 7,
+        el: 'Grande porte',
+        txt: 'Les larges ouvertures permettent le passage des charrettes, du bétail et du matériel agricole.',
+      },
+      {
+        n: 8,
+        el: 'Mur en pierre',
+        txt: 'La maçonnerie en pierre locale constitue le matériau principal des bâtiments permanents.',
+      },
+      {
+        n: 9,
+        el: 'Charpente',
+        txt: 'Les charpentes traditionnelles en bois supportent les couvertures des différents bâtiments.',
+      },
+      {
+        n: 10,
+        el: 'Toiture',
+        txt: "Les toitures à deux pans protègent les bâtiments contre les précipitations et l'enneigement.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Organisation autour de la cour',
+        icon: 'ph ph-square',
+        intro: "La cour constitue le principe organisateur de l'ensemble bâti.",
+        groups: [
+          G(null, ['Cour centrale.', 'Cour semi-fermée.', 'Circulation.', 'Aire de travail.', 'Distribution des bâtiments.']),
+        ],
+      },
+      {
+        title: 'Répartition des fonctions',
+        icon: 'ph ph-buildings',
+        intro: 'Les différentes fonctions peuvent être réparties entre plusieurs bâtiments spécialisés.',
+        groups: [
+          G(null, ['Logement.', 'Étable.', 'Grange.', 'Remise.', 'Stockage.']),
+        ],
+      },
+      {
+        title: 'Logis',
+        icon: 'ph ph-house',
+        intro: "Le logement familial constitue généralement l'un des bâtiments principaux de l'exploitation.",
+        groups: [
+          G(null, ['Cuisine.', 'Pièces de vie.', 'Chambres.', 'Accès depuis la cour.', 'Annexes domestiques.']),
+        ],
+      },
+      {
+        title: 'Grange et stockage',
+        icon: 'ph ph-stack',
+        intro: 'Les volumes agricoles permettent de conserver les récoltes et le fourrage.',
+        groups: [
+          G(null, ['Foin.', 'Fourrage.', 'Récoltes.', 'Fenil.', 'Matériel agricole.']),
+        ],
+      },
+      {
+        title: 'Élevage',
+        icon: 'ph ph-cow',
+        intro: "L'élevage bovin occupe une place importante dans l'économie rurale traditionnelle du Jura.",
+        groups: [
+          G(null, ['Bovins.', 'Étable.', 'Fourrage.', 'Pâturage.', 'Litière.']),
+        ],
+      },
+      {
+        title: 'Architecture en pierre',
+        icon: 'ph ph-wall',
+        intro: 'La pierre locale fournit des constructions massives et résistantes aux conditions climatiques du massif.',
+        groups: [
+          G(null, ['Pierre calcaire.', 'Murs épais.', 'Chaux.', 'Enduit.', 'Soubassement.']),
+        ],
+      },
+      {
+        title: 'Construction en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois provenant des forêts jurassiennes est utilisé pour les charpentes et les aménagements.',
+        groups: [
+          G(null, ['Épicéa.', 'Sapin.', 'Chêne.', 'Charpente.', 'Planchers.', 'Portes.']),
+        ],
+      },
+      {
+        title: 'Protection de la cour',
+        icon: 'ph ph-shield',
+        intro: 'La disposition des bâtiments peut créer un espace relativement protégé des vents et des intempéries.',
+        groups: [
+          G(null, ['Bâtiments contigus.', 'Mur de clôture.', 'Cour abritée.', 'Protection contre le vent.', "Travail à l'abri."]),
+        ],
+      },
+      {
+        title: 'Toitures',
+        icon: 'ph ph-house-line',
+        intro: 'Chaque bâtiment peut posséder sa propre toiture, tout en participant à une composition architecturale cohérente.',
+        groups: [
+          G(null, ['Deux pans.', 'Forte pente.', 'Tuiles.', 'Lauze.', 'Ardoise.', 'Débords.']),
+        ],
+      },
+      {
+        title: 'Circulation agricole',
+        icon: 'ph ph-arrows-out-cardinal',
+        intro: 'La cour facilite les déplacements des personnes, des animaux et des véhicules agricoles.',
+        groups: [
+          G(null, ['Charrettes.', 'Bétail.', 'Fourrage.', 'Matériel.', 'Chargement.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'Les fermes à cour peuvent être implantées dans les villages, les hameaux ou au sein des espaces agricoles.',
+        groups: [
+          G(null, ['Village.', 'Hameau.', 'Plateau.', 'Prairie.', 'Exploitation isolée.']),
+        ],
+      },
+      {
+        title: 'Climat jurassien',
+        icon: 'ph ph-snowflake',
+        intro: 'La disposition des bâtiments contribue à protéger les espaces de travail contre les conditions hivernales.',
+        groups: [
+          G(null, ['Neige.', 'Froid.', 'Vent.', 'Protection des accès.', 'Stockage hivernal.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la ferme-bloc',
+        icon: 'ph ph-arrows-left-right',
+        intro: "La ferme à cour se distingue principalement par la séparation des volumes autour d'un espace central.",
+        groups: [
+          G(null, ['Plusieurs bâtiments.', 'Cour centrale.', 'Fonctions séparées.', 'Organisation spatiale.', 'Emprise plus étendue.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la ferme à tué',
+        icon: 'ph ph-fire',
+        intro: "Le tué n'est pas un élément constitutif de la ferme à cour, même si certaines exploitations peuvent en posséder un.",
+        groups: [
+          G(null, ['Tué non obligatoire.', 'Organisation par la cour.', 'Volumes indépendants.', 'Fonctions agricoles réparties.', 'Variantes locales.']),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: "La modernisation agricole a transformé l'organisation traditionnelle des exploitations et de leurs bâtiments.",
+        groups: [
+          G(null, ['Modernisation.', 'Extensions.', 'Abandon agricole.', 'Réhabilitation.', 'Transformation résidentielle.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La cour et la répartition des fonctions entre plusieurs bâtiments constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Cour centrale.',
+            'Plusieurs bâtiments.',
+            'Logis.',
+            'Grange.',
+            'Étable.',
+            'Pierre locale.',
+            'Toitures à deux pans.',
+            'Organisation fonctionnelle.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
