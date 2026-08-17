@@ -21841,6 +21841,226 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisonfortesavoyarde',
+    name: 'Maison forte savoyarde',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XIIIe siècle – XVIe siècle',
+    procede:
+      "Demeure rurale fortifiée appartenant généralement à une famille noble ou à un propriétaire disposant d'une certaine autorité foncière. La maison forte associe fonction résidentielle, contrôle du domaine et capacité défensive limitée. Elle est généralement construite en maçonnerie de pierre, avec des murs épais, des ouvertures réduites dans les parties basses, une organisation verticale et parfois une tour ou un volume dominant. Certaines maisons fortes sont implantées sur des positions légèrement surélevées ou à proximité d'anciens axes de circulation. Elles peuvent évoluer au cours des siècles vers des demeures moins défensives.",
+    usage: 'Habitation seigneuriale, contrôle foncier et défense locale',
+    categorie: 'rural',
+    gps: '45.65° N, 6.35° E',
+    altitude: '250–1000 m',
+    climat: 'Montagnard à continental',
+    typeToiture: 'Toiture à deux pans ou couverture complexe selon les édifices',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et mélèze',
+    typeFondation: 'Fondations maçonnées en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIVe–XVe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XIIIe', 'XIVe', 'XVe', 'XVIe'],
+    resume:
+      "La maison forte savoyarde est une demeure rurale fortifiée apparue principalement au Moyen Âge et destinée à assurer à la fois l'habitation d'un propriétaire privilégié, la gestion d'un domaine et une capacité de défense locale. Elle se distingue du château par une échelle généralement plus réduite et une relation étroite avec l'exploitation du territoire. La construction privilégie la maçonnerie en pierre, les murs épais et des ouvertures limitées, tandis que les niveaux supérieurs peuvent présenter des baies plus importantes lorsque la fonction défensive diminue. Selon les exemples, l'édifice peut comporter une tour, un corps de logis compact, une cour, des dépendances ou des éléments défensifs résiduels. En Savoie, ces bâtiments s'inscrivent dans un territoire marqué par les relations entre domaines ruraux, seigneuries locales et anciens itinéraires alpins.",
+    identite: [
+      ['Période', 'XIIIe siècle – XVIe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', "Résidence seigneuriale et gestion d'un domaine"],
+      ['Implantation', 'Villages, hameaux, domaines ruraux et points de contrôle locaux'],
+      ['Organisation', 'Corps de logis compact, parfois associé à une tour ou une cour'],
+      ['Système', 'Maçonnerie massive à fonction résidentielle et défensive'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Toiture', 'Toiture à forte pente, généralement à deux ou plusieurs pans'],
+      ['Particularité', 'Association d\'une résidence rurale avec des dispositifs défensifs'],
+    ],
+    materiaux: ['Pierre locale', 'Calcaire', 'Schiste', 'Granit selon les secteurs', 'Mortier de chaux', 'Bois', 'Tuile', 'Lauze', 'Ardoise'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Corps de logis',
+        txt: 'Le corps de logis constitue le principal volume résidentiel et accueille les espaces de vie du propriétaire ou du gestionnaire du domaine.',
+      },
+      {
+        n: 2,
+        el: 'Mur épais',
+        txt: 'La forte épaisseur des murs en pierre renforce la stabilité du bâtiment et constitue un élément de protection.',
+      },
+      {
+        n: 3,
+        el: 'Tour',
+        txt: 'Une tour peut compléter le corps de logis et renforcer la surveillance ou la défense du domaine.',
+      },
+      {
+        n: 4,
+        el: 'Ouvertures réduites',
+        txt: 'Les niveaux inférieurs présentent généralement des ouvertures limitées afin de préserver la protection du bâtiment.',
+      },
+      {
+        n: 5,
+        el: 'Ouvertures supérieures',
+        txt: 'Les niveaux élevés peuvent présenter des fenêtres plus importantes, notamment lorsque la fonction résidentielle devient prépondérante.',
+      },
+      {
+        n: 6,
+        el: "Porte d'accès",
+        txt: "L'accès principal est généralement concentré sur une ouverture protégée donnant sur la cour ou directement sur l'extérieur.",
+      },
+      {
+        n: 7,
+        el: 'Cour',
+        txt: 'Certains ensembles comportent une cour permettant la circulation entre le logis et les dépendances agricoles.',
+      },
+      {
+        n: 8,
+        el: 'Dépendances',
+        txt: "Des bâtiments agricoles peuvent être associés à la maison forte pour assurer l'exploitation du domaine.",
+      },
+      {
+        n: 9,
+        el: 'Toiture',
+        txt: 'La toiture protège la maçonnerie et s\'adapte aux conditions climatiques locales.',
+      },
+      {
+        n: 10,
+        el: 'Implantation dominante',
+        txt: "L'implantation peut tirer parti d'une position légèrement dominante ou d'un emplacement stratégique sur le domaine.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Fonction résidentielle',
+        icon: 'ph ph-house',
+        intro: "La maison forte est avant tout une demeure destinée à un propriétaire ou à un représentant de l'autorité seigneuriale.",
+        groups: [
+          G(null, ['Logement.', 'Pièces de réception.', 'Espaces domestiques.', 'Chambres.', 'Locaux de service.']),
+        ],
+      },
+      {
+        title: 'Fonction défensive',
+        icon: 'ph ph-shield',
+        intro: 'Les dispositifs défensifs restent généralement plus modestes que dans un château mais renforcent la protection de la demeure.',
+        groups: [
+          G(null, ['Murs épais.', 'Ouvertures réduites.', 'Tour.', 'Accès contrôlé.', 'Position dominante.', 'Dispositifs défensifs.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-wall',
+        intro: 'La pierre constitue le principal matériau de construction des maisons fortes savoyardes.',
+        groups: [
+          G(null, ['Pierre locale.', 'Calcaire.', 'Schiste.', 'Mortier de chaux.', 'Murs massifs.']),
+        ],
+      },
+      {
+        title: 'Organisation verticale',
+        icon: 'ph ph-arrows-vertical',
+        intro: 'La construction superpose généralement les fonctions domestiques et défensives sur plusieurs niveaux.',
+        groups: [
+          G(null, ['Rez-de-chaussée défensif.', 'Locaux de service.', 'Niveaux résidentiels.', 'Niveaux supérieurs.', 'Tour éventuelle.']),
+        ],
+      },
+      {
+        title: 'Relation avec le domaine',
+        icon: 'ph ph-tree-structure',
+        intro: "La maison forte constitue le centre résidentiel et administratif d'un domaine rural.",
+        groups: [
+          G(null, ['Terres agricoles.', 'Prairies.', 'Vergers.', 'Forêts.', 'Dépendances.', 'Chemins ruraux.']),
+        ],
+      },
+      {
+        title: 'Cour et dépendances',
+        icon: 'ph ph-buildings',
+        intro: 'Certains ensembles associent la demeure à une cour et à différents bâtiments agricoles.',
+        groups: [
+          G(null, ['Grange.', 'Écurie.', 'Remise.', 'Grenier.', 'Cour.', 'Stockage.']),
+        ],
+      },
+      {
+        title: 'Implantation stratégique',
+        icon: 'ph ph-map-pin',
+        intro: 'L\'implantation répond autant aux contraintes du domaine qu\'à la surveillance du territoire environnant.',
+        groups: [
+          G(null, ['Éminence.', 'Versant.', 'Entrée de vallée.', 'Ancien chemin.', 'Point de passage.', 'Domaine rural.']),
+        ],
+      },
+      {
+        title: 'Ouvertures',
+        icon: 'ph ph-windows',
+        intro: "Les ouvertures témoignent de l'évolution progressive d'un bâtiment défensif vers une demeure plus confortable.",
+        groups: [
+          G(null, ['Petites ouvertures basses.', 'Fenêtres supérieures.', 'Baies remaniées.', 'Ouvertures défensives éventuelles.', 'Élargissements postérieurs.']),
+        ],
+      },
+      {
+        title: 'Évolution résidentielle',
+        icon: 'ph ph-armchair',
+        intro: "À partir de l'époque moderne, de nombreuses maisons fortes perdent progressivement leur fonction défensive au profit du confort résidentiel.",
+        groups: [
+          G(null, ['Agrandissement des fenêtres.', 'Réaménagement intérieur.', 'Décor résidentiel.', 'Transformation des dépendances.', 'Réduction de la fonction militaire.']),
+        ],
+      },
+      {
+        title: 'Architecture médiévale savoyarde',
+        icon: 'ph ph-castle-turret',
+        intro: "La maison forte appartient à un réseau de demeures rurales fortifiées qui participe à l'organisation territoriale médiévale.",
+        groups: [
+          G(null, ['Seigneurie locale.', 'Domaine rural.', 'Contrôle foncier.', 'Habitat privilégié.', 'Surveillance du territoire.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: "La couverture varie selon l'altitude et les ressources locales et peut avoir été profondément transformée au cours des siècles.",
+        groups: [
+          G(null, ['Deux pans.', 'Forte pente.', 'Lauze.', 'Tuile.', 'Ardoise.', 'Remaniements modernes.']),
+        ],
+      },
+      {
+        title: 'Distinction avec le château',
+        icon: 'ph ph-info',
+        intro: 'La maison forte se distingue du château par une échelle généralement plus réduite et une relation beaucoup plus directe avec le domaine rural.',
+        groups: [
+          G(null, [
+            'Volume plus compact.',
+            'Défense limitée.',
+            'Fonction résidentielle importante.',
+            'Relation directe avec les terres agricoles.',
+            'Dépendances rurales.',
+            'Absence fréquente de véritable enceinte castrale.',
+          ]),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: 'Les maisons fortes ont connu de nombreuses transformations après la disparition progressive de leur fonction défensive.',
+        groups: [
+          G(null, ['Demeure résidentielle.', 'Exploitation agricole.', 'Transformation en ferme.', 'Restauration patrimoniale.', 'Réutilisation contemporaine.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'une demeure rurale massive, d'une organisation défensive et d'une relation étroite avec un domaine agricole constitue le principal critère d'identification.",
+        groups: [
+          G(null, [
+            'Maçonnerie massive.',
+            'Murs épais.',
+            'Volume compact.',
+            'Ouvertures réduites.',
+            'Tour éventuelle.',
+            'Implantation dominante.',
+            'Dépendances agricoles.',
+            'Fonction résidentielle seigneuriale.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
