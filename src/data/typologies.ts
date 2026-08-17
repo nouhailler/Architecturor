@@ -20164,6 +20164,210 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'greniersavoyardindependant',
+    name: 'Grenier savoyard indépendant',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Bâtiment agricole indépendant destiné principalement au stockage et à la conservation des récoltes, du grain, du foin, des semences ou de certains produits de l'exploitation. Implanté à proximité de la ferme ou dans le tissu des hameaux, il est généralement construit en bois sur un soubassement ou des supports en pierre. Sa séparation du bâtiment principal permet de créer un espace de stockage plus sec, ventilé et protégé.",
+    usage: 'Stockage des récoltes, du grain, des semences et des réserves agricoles',
+    categorie: 'montagne',
+    gps: '45.55° N, 6.55° E',
+    altitude: '400–1500 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa et mélèze',
+    typeFondation: 'Soubassement ou supports en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Élevée',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le grenier savoyard indépendant est un bâtiment annexe spécialisé dans le stockage des produits agricoles. Séparé de la maison-ferme, il permet de conserver les récoltes dans des conditions plus favorables de ventilation et d'humidité. Sa construction fait largement appel au bois, matériau disponible localement et adapté aux bâtiments légers de montagne. Le bâtiment peut être placé sur des supports ou un soubassement en pierre afin de limiter les remontées d'humidité et de protéger les réserves contre les nuisibles. Selon les vallées et les exploitations, le grenier peut présenter un volume relativement compact ou plus développé. Il constitue un élément complémentaire de l'organisation agricole traditionnelle savoyarde.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', 'Stockage et conservation des récoltes'],
+      ['Implantation', 'Hameaux, villages et exploitations agricoles'],
+      ['Organisation', 'Bâtiment indépendant spécialisé'],
+      ['Système', 'Structure légère principalement en bois'],
+      ['Matériau dominant', 'Bois'],
+      ['Toiture', 'Toiture à deux pans'],
+      ['Particularité', "Séparation du stockage agricole par rapport à l'habitation et à l'étable"],
+    ],
+    materiaux: ['Bois', 'Épicéa', 'Mélèze', 'Pierre locale', 'Calcaire', 'Schiste selon les secteurs', 'Lauze', 'Ardoise', 'Tuile'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Soubassement en pierre',
+        txt: "La base maçonnée ou les supports en pierre isolent le bâtiment du terrain et contribuent à protéger les réserves contre l'humidité.",
+      },
+      {
+        n: 2,
+        el: 'Structure en bois',
+        txt: "Le bois constitue généralement l'ossature principale et les parois du grenier.",
+      },
+      {
+        n: 3,
+        el: 'Espace de stockage',
+        txt: 'Le volume intérieur accueille les récoltes, les céréales, les semences ou d\'autres réserves agricoles.',
+      },
+      {
+        n: 4,
+        el: 'Plancher',
+        txt: "Le plancher peut être surélevé afin de favoriser l'aération et de limiter les remontées d'humidité.",
+      },
+      {
+        n: 5,
+        el: 'Ouvertures de ventilation',
+        txt: 'Des interstices ou ouvertures contrôlées favorisent la circulation de l\'air et le séchage des produits stockés.',
+      },
+      {
+        n: 6,
+        el: 'Porte de chargement',
+        txt: "Une ouverture principale permet d'introduire et de retirer les produits agricoles.",
+      },
+      {
+        n: 7,
+        el: 'Toiture',
+        txt: "La couverture protège les réserves contre les précipitations et l'enneigement.",
+      },
+      {
+        n: 8,
+        el: 'Débord de toiture',
+        txt: 'Les débords protègent les parois en bois contre les intempéries.',
+      },
+      {
+        n: 9,
+        el: 'Implantation indépendante',
+        txt: "Le bâtiment est séparé de la maison-ferme afin de disposer d'un espace spécifiquement consacré au stockage.",
+      },
+      {
+        n: 10,
+        el: 'Accès agricole',
+        txt: "L'accès est généralement organisé pour faciliter la manutention des récoltes et des réserves.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Fonction agricole',
+        icon: 'ph ph-warehouse',
+        intro: "Le grenier constitue une réserve indépendante destinée à conserver les productions et fournitures de l'exploitation.",
+        groups: [
+          G(null, ['Céréales.', 'Semences.', 'Récoltes sèches.', 'Fourrage selon les modèles.', 'Réserves alimentaires.', 'Petit matériel agricole.']),
+        ],
+      },
+      {
+        title: 'Bâtiment indépendant',
+        icon: 'ph ph-buildings',
+        intro: "La séparation avec la maison-ferme permet de spécialiser le bâtiment dans le stockage.",
+        groups: [
+          G(null, ['Accès indépendant.', 'Fonction spécialisée.', "Séparation de l'étable.", "Séparation de l'habitation.", "Proximité de l'exploitation."]),
+        ],
+      },
+      {
+        title: 'Construction en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois permet une construction légère et ventilée, particulièrement adaptée au stockage de produits agricoles secs.',
+        groups: [
+          G(null, ['Épicéa.', 'Mélèze.', 'Madriers.', 'Poutres.', 'Planches.', 'Charpente en bois.']),
+        ],
+      },
+      {
+        title: "Protection contre l'humidité",
+        icon: 'ph ph-drop',
+        intro: "L'organisation constructive cherche à maintenir les produits stockés à l'abri de l'humidité du terrain.",
+        groups: [
+          G(null, ['Soubassement minéral.', 'Supports en pierre.', 'Plancher surélevé.', 'Ventilation sous le plancher.', 'Éloignement du sol.']),
+        ],
+      },
+      {
+        title: 'Ventilation',
+        icon: 'ph ph-wind',
+        intro: 'La circulation naturelle de l\'air contribue à maintenir des conditions favorables à la conservation des produits.',
+        groups: [
+          G(null, ['Parois ventilées.', 'Interstices du bois.', 'Ouvertures contrôlées.', 'Ventilation traversante.', "Évacuation de l'humidité."]),
+        ],
+      },
+      {
+        title: 'Stockage des céréales',
+        icon: 'ph ph-grains',
+        intro: 'Le stockage des céréales et des semences constitue l\'une des fonctions possibles du grenier agricole.',
+        groups: [
+          G(null, ['Céréales.', 'Semences.', 'Récoltes sèches.', 'Sacs et contenants.', 'Conservation saisonnière.']),
+        ],
+      },
+      {
+        title: 'Adaptation au climat montagnard',
+        icon: 'ph ph-snowflake',
+        intro: 'La construction doit supporter les précipitations importantes, les périodes de gel et l\'enneigement hivernal.',
+        groups: [
+          G(null, ['Toiture à deux pans.', 'Charpente robuste.', 'Débord de toiture.', 'Protection des parois.', 'Volume compact.']),
+        ],
+      },
+      {
+        title: 'Implantation dans les hameaux',
+        icon: 'ph ph-map-pin',
+        intro: 'Les greniers indépendants peuvent participer à l\'organisation des hameaux agricoles savoyards.',
+        groups: [
+          G(null, ['Proximité des maisons.', 'Cours agricoles.', 'Parcelles cultivées.', 'Chemins ruraux.', 'Regroupement des bâtiments.']),
+        ],
+      },
+      {
+        title: 'Relation avec la maison-bloc',
+        icon: 'ph ph-house',
+        intro: "Le grenier indépendant complète la maison-bloc lorsque les fonctions de stockage sont séparées du logement et de l'étable.",
+        groups: [
+          G(null, ['Maison-bloc : habitat et exploitation.', 'Grenier : stockage spécialisé.', 'Complément fonctionnel.', 'Réserves séparées.', 'Organisation plus spécialisée.']),
+        ],
+      },
+      {
+        title: 'Grenier et mazot',
+        icon: 'ph ph-info',
+        intro: 'Les deux bâtiments peuvent présenter des formes proches, mais la fiche distingue ici le grenier agricole du petit bâtiment annexe polyvalent.',
+        groups: [
+          G(null, [
+            'Grenier : fonction principalement agricole.',
+            'Mazot : conservation plus polyvalente.',
+            'Grenier : volume potentiellement plus important.',
+            'Mazot : petit volume annexe.',
+            'Terminologie variable selon les territoires.',
+            'Distinction à établir selon la fonction et le contexte local.',
+          ]),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: 'La modernisation des exploitations a progressivement réduit l\'usage des greniers indépendants traditionnels.',
+        groups: [
+          G(null, ['Mécanisation.', 'Nouveaux bâtiments agricoles.', 'Réduction du stockage traditionnel.', 'Transformation en remise.', 'Transformation en atelier.', 'Restauration patrimoniale.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'association d'un bâtiment indépendant, d'une fonction de stockage agricole et d'une construction traditionnellement largement en bois constitue le principal critère d'identification.",
+        groups: [
+          G(null, [
+            'Bâtiment indépendant.',
+            'Fonction de stockage.',
+            'Structure en bois.',
+            'Soubassement ou supports en pierre.',
+            'Ventilation naturelle.',
+            "Plancher protégé de l'humidité.",
+            'Toiture à deux pans.',
+            "Proximité de l'exploitation.",
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
