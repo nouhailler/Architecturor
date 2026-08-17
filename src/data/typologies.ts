@@ -18804,6 +18804,199 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'fourachauxquercynois',
+    name: 'Four à chaux quercynois',
+    region: 'Occitanie · Quercy · Lot',
+    periode: 'Antiquité – XXe siècle',
+    procede:
+      "Installation productive destinée à transformer le calcaire en chaux par calcination à haute température. Le four est généralement implanté à proximité d'une ressource calcaire, d'un combustible disponible et d'une voie permettant l'approvisionnement et l'évacuation de la production. Selon les périodes, il peut prendre la forme d'une fosse ou d'une structure maçonnée, puis d'un four vertical plus élaboré.",
+    usage: "Production de chaux pour la construction, les mortiers, les enduits et l'amendement agricole",
+    categorie: 'industrielle',
+    gps: '44.60° N, 1.55° E',
+    altitude: '100–400 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Sans toiture ou couverture technique selon le type de four',
+    penteToit: 'Sans objet ou faible couverture technique',
+    essenceBois: 'Chêne et essences locales selon la disponibilité du combustible',
+    typeFondation: 'Fondations massives en maçonnerie de pierre',
+    typeCharpente: 'Sans charpente principale ; dispositifs en bois possibles pour les accès et équipements',
+    epoqueDominante: 'XIXe siècle pour les installations artisanales et industrielles documentées',
+    difficulteIdentification: 'Moyenne à élevée',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Antiquité', 'Moyen Âge', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le four à chaux quercynois est une installation productive utilisant l'abondance du calcaire local pour fabriquer de la chaux par cuisson. Sa présence est attestée dans le Lot sur une très longue période, depuis des installations antiques jusqu'aux fours artisanaux et industriels des XIXe et XXe siècles. Son implantation répond à une logique étroitement liée au territoire : proximité des carrières de calcaire, disponibilité du combustible et accès à une voie de transport. Les structures les plus élaborées comprennent une chambre de cuisson, un foyer, un système de chargement supérieur et des ouvertures permettant l'extraction de la chaux cuite. Cette architecture témoigne du lien entre ressources géologiques, techniques artisanales et développement du bâti quercynois.",
+    identite: [
+      ['Période', 'Antiquité – XXe siècle'],
+      ['Région', 'Quercy · Lot'],
+      ['Usage', 'Production de chaux'],
+      ['Matière première', 'Calcaire'],
+      ['Combustible', 'Bois ou autre combustible selon la période'],
+      ['Principe', 'Calcination du calcaire à haute température'],
+      ['Implantation', "Proximité d'une carrière, d'un combustible et d'une voie de communication"],
+      ['Particularité', 'Architecture productive directement liée à la géologie du territoire'],
+    ],
+    materiaux: ['Calcaire', 'Moellons', 'Pierre de taille', 'Brique', 'Terre cuite', 'Mortier', 'Bois', 'Métal'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Chambre de cuisson',
+        txt: 'La chambre reçoit les couches de calcaire et de combustible et constitue le cœur du processus de calcination.',
+      },
+      {
+        n: 2,
+        el: 'Foyer',
+        txt: 'Le foyer permet de maintenir la température nécessaire à la transformation du calcaire en chaux.',
+      },
+      {
+        n: 3,
+        el: 'Gueulard',
+        txt: "Dans les fours verticaux, l'ouverture supérieure permet le chargement du calcaire et du combustible.",
+      },
+      {
+        n: 4,
+        el: 'Bouches de défournement',
+        txt: "Les ouvertures situées à la base permettent d'alimenter le foyer et, selon la conception du four, de récupérer la chaux cuite.",
+      },
+      {
+        n: 5,
+        el: 'Maçonnerie réfractaire',
+        txt: 'Les parties directement exposées à la chaleur nécessitent une maçonnerie capable de supporter des températures élevées.',
+      },
+      {
+        n: 6,
+        el: "Rampe d'accès",
+        txt: "Une rampe ou un dispositif d'accès peut permettre d'atteindre la partie supérieure du four pour son chargement.",
+      },
+      {
+        n: 7,
+        el: 'Aire de stockage',
+        txt: 'Le site peut comprendre des espaces destinés au stockage du calcaire, du combustible et de la chaux produite.',
+      },
+      {
+        n: 8,
+        el: 'Carrière',
+        txt: "La proximité d'un gisement calcaire constitue un facteur essentiel dans le choix de l'implantation.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe de production',
+        icon: 'ph ph-fire',
+        intro: 'Le four transforme le calcaire en chaux par une cuisson prolongée à haute température.',
+        groups: [
+          G(null, ['Extraction du calcaire.', 'Concassage ou préparation de la pierre.', 'Chargement du four.', 'Combustion.', 'Calcination.', 'Refroidissement.', 'Extraction de la chaux.']),
+        ],
+      },
+      {
+        title: 'Architecture du four',
+        icon: 'ph ph-buildings',
+        intro: 'Les formes varient selon les périodes et les techniques, mais les fours verticaux maçonnés présentent une organisation particulièrement caractéristique.',
+        groups: [
+          G(null, ['Structure massive.', 'Chambre de cuisson.', 'Foyer inférieur.', 'Ouverture supérieure.', 'Ouvertures de défournement.', 'Maçonnerie épaisse.', 'Accès pour le chargement.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'Le four est implanté selon une logique économique combinant ressources naturelles et possibilités de transport.',
+        groups: [
+          G(null, ['Proximité du calcaire.', 'Proximité du combustible.', "Accès à une voie de communication.", 'Proximité des chantiers consommateurs.', "Implantation isolée ou associée à une carrière.", 'Relation avec le paysage minéral du Quercy.']),
+        ],
+      },
+      {
+        title: 'Matière première',
+        icon: 'ph ph-mountains',
+        intro: "L'abondance des formations calcaires du Quercy constitue une ressource essentielle pour cette activité.",
+        groups: [
+          G(null, ['Calcaire local.', 'Pierre extraite en carrière.', 'Blocs calcaires.', 'Pierres de différentes granulométries.', 'Préparation avant cuisson.']),
+        ],
+      },
+      {
+        title: 'Combustible',
+        icon: 'ph ph-tree',
+        intro: 'La cuisson du calcaire nécessite une importante quantité de combustible, dont la nature varie selon les périodes et les installations.',
+        groups: [
+          G(null, ['Bois.', 'Charbon selon les périodes.', 'Combustibles disponibles localement.', 'Stockage à proximité du four.', 'Approvisionnement régulier.']),
+        ],
+      },
+      {
+        title: 'La chaux produite',
+        icon: 'ph ph-drop',
+        intro: 'La chaux obtenue après calcination constitue un matériau essentiel de la construction traditionnelle.',
+        groups: [
+          G(null, ['Mortiers.', 'Enduits.', 'Maçonnerie.', 'Badigeons.', 'Restauration.', 'Amendement des terres.']),
+        ],
+      },
+      {
+        title: "Relation avec l'architecture quercynoise",
+        icon: 'ph ph-house-line',
+        intro: 'La production locale de chaux participe directement à la construction et à l\'entretien du bâti traditionnel.',
+        groups: [
+          G(null, ['Mortiers de maçonnerie.', 'Enduits à la chaux.', 'Joints des murs.', 'Réparation des bâtiments.', 'Construction rurale.', 'Entretien des ouvrages.']),
+        ],
+      },
+      {
+        title: 'Évolution historique',
+        icon: 'ph ph-clock',
+        intro: 'La production de chaux dans le Quercy connaît une longue histoire, avec des formes techniques qui évoluent selon les périodes.',
+        groups: [
+          G(null, ['Fours antiques.', 'Installations médiévales.', 'Fours artisanaux.', 'Développement des fours maçonnés.', 'Industrialisation progressive.', 'Déclin des petits fours artisanaux au XXe siècle.']),
+        ],
+      },
+      {
+        title: 'Four à chaux de Cambes',
+        icon: 'ph ph-map-trifold',
+        intro: "Les fouilles archéologiques menées à Cambes, dans le Lot, ont révélé un four à chaux dont l'implantation était directement liée aux ressources disponibles et aux besoins de production.",
+        groups: [
+          G(null, ['Site des Trouvats et Blancardie.', 'Commune de Cambes.', 'Four découvert lors de fouilles archéologiques.', 'Calcaire disponible localement.', 'Proximité du combustible.', "Proximité d'une voie de communication.", 'Production destinée probablement à un établissement proche.']),
+        ],
+      },
+      {
+        title: 'Fours à chaux et carrières',
+        icon: 'ph ph-hammer',
+        intro: "Le four fonctionne généralement comme le prolongement d'une activité d'extraction de la pierre.",
+        groups: [
+          G(null, ['Carrière de calcaire.', 'Extraction.', 'Tri des blocs.', 'Transport vers le four.', 'Cuisson.', 'Stockage de la chaux.']),
+        ],
+      },
+      {
+        title: 'Architecture productive',
+        icon: 'ph ph-factory',
+        intro: "Le four à chaux appartient à une architecture de production dont la forme est directement déterminée par le procédé technique.",
+        groups: [
+          G(null, ['Fonction industrielle ou artisanale.', 'Structure massive.', 'Forte contrainte thermique.', 'Organisation verticale.', 'Aires de stockage.', 'Accès techniques.']),
+        ],
+      },
+      {
+        title: 'Distinction avec une carrière',
+        icon: 'ph ph-info',
+        intro: 'La carrière fournit le calcaire tandis que le four assure sa transformation en chaux.',
+        groups: [
+          G(null, ['Carrière : extraction.', 'Four : transformation.', 'La carrière peut alimenter plusieurs fours.', 'Le four nécessite également un combustible.', 'Les deux installations peuvent former un même site productif.']),
+        ],
+      },
+      {
+        title: 'Distinction avec le four à pain',
+        icon: 'ph ph-info',
+        intro: 'Malgré leur emploi commun de la chaleur, le four à chaux et le four à pain répondent à des fonctions et à des échelles très différentes.',
+        groups: [
+          G(null, ['Four à chaux : production de matériau.', 'Four à pain : cuisson alimentaire.', 'Four à chaux : température et durée de cuisson importantes.', 'Four à chaux : structure massive.', 'Four à pain : chambre de cuisson domestique ou communautaire.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'une structure maçonnée massive, d'une chambre de cuisson et d'une relation directe avec une ressource calcaire permet d'identifier cette architecture productive.",
+        groups: [
+          G(null, ['Structure massive.', 'Chambre de cuisson.', 'Foyer.', 'Ouverture supérieure.', 'Bouches de défournement.', "Proximité d'une carrière.", 'Aire de stockage.', 'Relation avec une voie de transport.', 'Production de chaux.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
