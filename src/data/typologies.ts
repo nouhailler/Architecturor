@@ -22507,6 +22507,233 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'oratoiresavoyard',
+    name: 'Oratoire savoyard',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Petit édicule religieux de dévotion implanté dans les villages, hameaux, chemins, cols, pâturages et abords des habitations. L'oratoire savoyard est généralement constitué d'une petite construction maçonnée en pierre, abritant une niche destinée à recevoir une statue, une image religieuse ou un petit autel. Son architecture est réduite à l'essentiel : socle ou soubassement, corps maçonné, niche et couverture. Certains exemplaires peuvent être protégés par un petit toit à deux pans ou une couverture en pierre et présenter une croix, une inscription ou un décor peint.",
+    usage: 'Dévotion individuelle et communautaire, protection des voyageurs, des habitants et des activités rurales',
+    categorie: 'religieuse',
+    gps: '45.62° N, 6.40° E',
+    altitude: '300–2200 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Petit toit à deux pans ou couverture maçonnée',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et mélèze',
+    typeFondation: 'Petit soubassement maçonné en pierre locale',
+    typeCharpente: 'Petite charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne à élevée',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "L'oratoire savoyard est une petite construction religieuse destinée à la prière et à la dévotion locale. Installé au bord d'un chemin, à l'entrée d'un village, près d'une maison, dans un hameau ou sur un itinéraire de montagne, il constitue un repère religieux dans le paysage quotidien. Contrairement à la chapelle rurale, il ne constitue généralement pas un lieu de rassemblement et ne possède pas de véritable nef. Sa forme repose principalement sur une niche abritant une statue, une représentation de la Vierge ou d'un saint. Les constructions traditionnelles utilisent la pierre locale et la chaux, avec une couverture adaptée aux conditions alpines. Les oratoires peuvent être associés à des vœux, à la protection des voyageurs, aux saints patrons des communautés ou aux pratiques religieuses liées aux travaux agricoles et pastoraux.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', 'Dévotion et prière individuelle'],
+      ['Implantation', 'Chemins, villages, hameaux, pâturages et abords des habitations'],
+      ['Organisation', 'Petit édicule à niche'],
+      ['Système', 'Maçonnerie de pierre'],
+      ['Matériau dominant', 'Pierre locale'],
+      ['Toiture', 'Petit toit à deux pans ou couverture maçonnée'],
+      ['Particularité', 'Niche destinée à une statue ou une image religieuse'],
+    ],
+    materiaux: ['Pierre locale', 'Calcaire', 'Schiste', 'Granit selon les secteurs', 'Mortier de chaux', 'Enduit', 'Bois', 'Ardoise', 'Lauze', 'Tuile', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Soubassement',
+        txt: "Le socle assure la stabilité de l'édicule et peut le surélever légèrement par rapport au terrain.",
+      },
+      {
+        n: 2,
+        el: 'Corps maçonné',
+        txt: 'Le petit volume principal est généralement construit en pierre locale liée au mortier de chaux.',
+      },
+      {
+        n: 3,
+        el: 'Niche',
+        txt: "La niche constitue l'élément essentiel de l'oratoire et accueille une statue, une image ou un petit objet de dévotion.",
+      },
+      {
+        n: 4,
+        el: 'Statue',
+        txt: 'La représentation d\'un saint, de la Vierge ou du Christ constitue généralement le centre de la dévotion.',
+      },
+      {
+        n: 5,
+        el: 'Protection de la niche',
+        txt: 'La niche peut être protégée par une grille, une porte vitrée ou un dispositif métallique.',
+      },
+      {
+        n: 6,
+        el: 'Toiture',
+        txt: 'Une petite couverture protège la niche et la maçonnerie contre les précipitations et la neige.',
+      },
+      {
+        n: 7,
+        el: 'Croix',
+        txt: "Une croix peut être placée au sommet de l'oratoire ou directement associée à la niche.",
+      },
+      {
+        n: 8,
+        el: 'Inscription',
+        txt: 'Une inscription peut rappeler le saint invoqué, la date de construction, une restauration ou le nom du donateur.',
+      },
+      {
+        n: 9,
+        el: 'Décor',
+        txt: 'Certains oratoires présentent des éléments peints, sculptés ou des motifs religieux simples.',
+      },
+      {
+        n: 10,
+        el: 'Implantation',
+        txt: "L'oratoire est généralement placé à un endroit visible et accessible depuis un chemin ou un espace de circulation.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Fonction dévotionnelle',
+        icon: 'ph ph-hands-praying',
+        intro: "L'oratoire offre un lieu de prière de proximité sans nécessiter la construction d'un édifice religieux important.",
+        groups: [
+          G(null, ['Prière individuelle.', 'Dévotion.', "Vénération d'un saint.", 'Prière de protection.', "Dépôt d'offrandes."]),
+        ],
+      },
+      {
+        title: 'Micro-architecture',
+        icon: 'ph ph-cube',
+        intro: "La petite taille et la simplicité constructive distinguent l'oratoire des autres édifices religieux.",
+        groups: [
+          G(null, ['Petit volume.', 'Socle.', 'Corps maçonné.', 'Niche.', 'Couverture.']),
+        ],
+      },
+      {
+        title: 'Niche votive',
+        icon: 'ph ph-frame-corners',
+        intro: "La niche constitue le cœur architectural et symbolique de l'oratoire.",
+        groups: [
+          G(null, ['Statue.', 'Image religieuse.', 'Petit autel.', 'Bougies.', 'Fleurs.', 'Offrandes.']),
+        ],
+      },
+      {
+        title: 'Saints protecteurs',
+        icon: 'ph ph-shield-check',
+        intro: 'Les représentations religieuses sont souvent associées aux besoins de protection de la communauté.',
+        groups: [
+          G(null, ['Saint patron.', 'Vierge Marie.', 'Saint protecteur des voyageurs.', 'Saint protecteur des récoltes.', 'Saint protecteur du bétail.']),
+        ],
+      },
+      {
+        title: 'Implantation villageoise',
+        icon: 'ph ph-house',
+        intro: "L'oratoire peut être intégré directement au tissu bâti des villages et des hameaux.",
+        groups: [
+          G(null, ['Entrée de village.', 'Carrefour.', 'Rue.', 'Hameau.', "Proximité d'une habitation."]),
+        ],
+      },
+      {
+        title: 'Implantation rurale',
+        icon: 'ph ph-tree',
+        intro: 'Certains oratoires sont associés aux chemins ruraux, aux champs, aux pâturages et aux espaces agricoles.',
+        groups: [
+          G(null, ['Chemin agricole.', 'Pâturage.', 'Prairie.', 'Alpage.', 'Lisière.']),
+        ],
+      },
+      {
+        title: 'Oratoire de chemin',
+        icon: 'ph ph-road-horizon',
+        intro: 'Les oratoires installés le long des chemins servent de points de repère religieux et de lieux de halte.',
+        groups: [
+          G(null, ['Chemin.', 'Passage.', 'Carrefour.', 'Col.', 'Halte.']),
+        ],
+      },
+      {
+        title: 'Construction',
+        icon: 'ph ph-wall',
+        intro: 'La construction repose généralement sur des matériaux locaux et des techniques simples de maçonnerie.',
+        groups: [
+          G(null, ['Pierre locale.', 'Calcaire.', 'Schiste.', 'Mortier de chaux.', 'Enduit.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: 'La couverture protège la niche et les objets de dévotion contre les intempéries.',
+        groups: [
+          G(null, ['Deux pans.', 'Lauze.', 'Ardoise.', 'Tuile.', 'Débord de toiture.']),
+        ],
+      },
+      {
+        title: 'Croix et inscriptions',
+        icon: 'ph ph-cross',
+        intro: "Les éléments symboliques renforcent la fonction religieuse et permettent parfois d'identifier l'origine de l'édicule.",
+        groups: [
+          G(null, ['Croix.', 'Date.', 'Nom du saint.', 'Inscription votive.', 'Nom du donateur.']),
+        ],
+      },
+      {
+        title: 'Protection contre les intempéries',
+        icon: 'ph ph-cloud-snow',
+        intro: 'La construction doit résister aux précipitations, au gel et à l\'enneigement caractéristiques du climat alpin.',
+        groups: [
+          G(null, ['Soubassement.', 'Couverture protectrice.', 'Débord.', 'Pierre résistante au gel.', 'Entretien régulier.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la chapelle',
+        icon: 'ph ph-info',
+        intro: "L'oratoire est une construction beaucoup plus petite qu'une chapelle et ne possède généralement pas d'espace intérieur destiné au rassemblement des fidèles.",
+        groups: [
+          G(null, [
+            'Oratoire : micro-architecture.',
+            'Chapelle : bâtiment religieux accessible.',
+            'Oratoire : niche.',
+            'Chapelle : nef et autel.',
+            'Fonction individuelle privilégiée.',
+          ]),
+        ],
+      },
+      {
+        title: 'Dévotion communautaire',
+        icon: 'ph ph-users-three',
+        intro: "Même s'il est principalement destiné à la prière individuelle, l'oratoire peut être associé aux pratiques collectives du village.",
+        groups: [
+          G(null, ['Processions.', 'Fêtes patronales.', 'Haltes religieuses.', 'Bénédictions.', 'Pèlerinages locaux.']),
+        ],
+      },
+      {
+        title: 'Évolution et restauration',
+        icon: 'ph ph-clock',
+        intro: "De nombreux oratoires ont été restaurés ou reconstruits, parfois après des dégradations liées au climat ou à l'évolution des chemins.",
+        groups: [
+          G(null, ['Restauration.', 'Reconstruction.', 'Remplacement de la statue.', 'Réfection de la toiture.', 'Entretien de la maçonnerie.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La petite taille, la niche votive et l'implantation dans l'espace quotidien constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Petit édicule.',
+            'Niche.',
+            'Statue ou image religieuse.',
+            'Maçonnerie en pierre.',
+            'Croix.',
+            'Toiture protectrice.',
+            "Implantation au bord d'un chemin.",
+            'Fonction votive.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
