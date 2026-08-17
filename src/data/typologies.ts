@@ -18237,6 +18237,205 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'moulineauquercynois',
+    name: 'Moulin à eau quercynois',
+    region: 'Occitanie · Quercy · Lot',
+    periode: 'Moyen Âge–XXe siècle',
+    procede:
+      "Édifice productif implanté directement sur un cours d'eau ou sur un canal de dérivation afin d'utiliser l'énergie hydraulique pour entraîner une ou plusieurs machines. Le bâtiment associe généralement une partie hydraulique, un espace de production et, selon les exemples, un logement pour le meunier ainsi que diverses dépendances.",
+    usage: 'Mouture des céréales, transformation agricole, production artisanale et habitation du meunier',
+    categorie: 'industrielle',
+    gps: '44.50° N, 1.65° E',
+    altitude: '100–400 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Deux pans',
+    penteToit: '30–50°',
+    essenceBois: 'Chêne',
+    typeFondation: 'Fondations et maçonneries hydrauliques en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe–XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['Moyen Âge', 'XVe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le moulin à eau quercynois est une architecture productive étroitement liée au réseau hydrographique du territoire. Le bâtiment exploite l'énergie d'un cours d'eau grâce à un canal d'amenée, une retenue ou une dérivation et une chambre hydraulique alimentant une roue ou des rouets. Dans le Lot, les moulins à eau ont notamment servi à moudre les céréales, mais aussi à fouler la laine, fabriquer de la pâte à papier ou actionner des forges. Certains ensembles associent au bâtiment productif un logement de meunier et plusieurs dépendances. Le moulin d'Aulanac à Saint-Cirq-Lapopie constitue un exemple remarquable, attesté dès le début du XIVe siècle et conservant des parties du XVe siècle.",
+    identite: [
+      ['Période', 'Moyen Âge–XXe siècle'],
+      ['Région', 'Quercy · Lot'],
+      ['Usage', 'Production hydraulique et transformation agricole'],
+      ['Implantation', "Cours d'eau, dérivation ou canal d'amenée"],
+      ['Énergie', 'Force hydraulique'],
+      ['Production principale', 'Mouture des céréales'],
+      ['Éléments hydrauliques', "Canal d'amenée, chambre à eau, roue ou rouets"],
+      ['Particularité', 'Architecture directement adaptée au relief et au régime hydraulique local'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellons de calcaire', 'Pierre de taille', 'Chaux', 'Bois', 'Brique', 'Métal'],
+    annotations: [
+      {
+        n: 1,
+        el: "Canal d'amenée",
+        txt: "Le canal conduit l'eau depuis le cours d'eau ou une retenue jusqu'au dispositif hydraulique du moulin.",
+      },
+      {
+        n: 2,
+        el: 'Chambre à eau',
+        txt: 'La chambre à eau reçoit le flux hydraulique et permet de concentrer la force de l\'eau sur les organes moteurs.',
+      },
+      {
+        n: 3,
+        el: 'Roues ou rouets',
+        txt: "L'énergie de l'eau met en mouvement une roue ou des rouets qui transmettent la rotation aux machines de production.",
+      },
+      {
+        n: 4,
+        el: 'Meules',
+        txt: 'Dans les moulins à farine, les meules transforment les céréales en farine. Plusieurs paires de meules peuvent être installées selon l\'importance de l\'établissement.',
+      },
+      {
+        n: 5,
+        el: 'Salle de mouture',
+        txt: 'La partie productive supérieure accueille les machines, les arbres de transmission et les meules nécessaires à la transformation des céréales.',
+      },
+      {
+        n: 6,
+        el: 'Logement du meunier',
+        txt: "Certains moulins intègrent une habitation destinée au meunier et à sa famille, parfois installée à l'étage au-dessus des espaces productifs.",
+      },
+      {
+        n: 7,
+        el: 'Maçonnerie hydraulique',
+        txt: 'Les parties directement soumises à l\'eau utilisent une maçonnerie particulièrement robuste, souvent constituée de moellons et de blocs de calcaire.',
+      },
+      {
+        n: 8,
+        el: 'Déversoir et évacuation',
+        txt: "Le dispositif hydraulique comprend des ouvrages permettant de contrôler le débit et d'évacuer l'eau après son passage dans le système moteur.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe du moulin à eau',
+        icon: 'ph ph-drop',
+        intro: "Le moulin transforme l'énergie potentielle ou cinétique de l'eau en énergie mécanique utilisable pour une activité productive.",
+        groups: [
+          G(null, ["Cours d'eau.", 'Retenue ou dérivation.', "Canal d'amenée.", 'Chambre hydraulique.', 'Organe moteur.', 'Transmission mécanique.', 'Machine de production.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: "L'implantation dépend directement de la topographie, du débit du cours d'eau et de la possibilité de créer une chute ou une différence de niveau suffisante.",
+        groups: [
+          G(null, ['Rivière.', 'Ruisseau.', 'Bras secondaire.', 'Canal de dérivation.', 'Cascade naturelle.', 'Seuil ou retenue.', 'Vallée encaissée.']),
+        ],
+      },
+      {
+        title: 'Système hydraulique',
+        icon: 'ph ph-arrows-down-up',
+        intro: "L'architecture du moulin est indissociable de son dispositif hydraulique.",
+        groups: [
+          G(null, ["Canal d'amenée.", 'Vanne.', 'Chambre à eau.', 'Roue hydraulique ou rouets.', 'Canal de fuite.', 'Déversoir.', 'Ouvrages de régulation.']),
+        ],
+      },
+      {
+        title: 'Mouture des céréales',
+        icon: 'ph ph-grains',
+        intro: "La mouture constitue l'un des usages les plus répandus des moulins à eau quercynois.",
+        groups: [
+          G(null, ['Blé.', 'Seigle.', 'Maïs.', 'Meules.', 'Arbres de transmission.', 'Trémie.', 'Farine.']),
+        ],
+      },
+      {
+        title: 'Salle des machines',
+        icon: 'ph ph-gear',
+        intro: 'La partie productive rassemble les organes mécaniques transmettant la puissance hydraulique aux machines.',
+        groups: [
+          G(null, ['Arbre vertical ou horizontal.', 'Engrenages.', 'Meules.', 'Rouets.', 'Paliers.', 'Trémie.', 'Système de transmission.']),
+        ],
+      },
+      {
+        title: 'Architecture',
+        icon: 'ph ph-buildings',
+        intro: 'Le bâtiment est généralement compact et fortement conditionné par le relief et la présence de l\'eau.',
+        groups: [
+          G(null, ['Plan rectangulaire fréquent.', 'Maçonnerie calcaire.', 'Murs épais.', 'Ouvertures limitées.', 'Toiture à forte ou moyenne pente.', 'Adaptation au terrain.', 'Construction sur ou au-dessus du dispositif hydraulique.']),
+        ],
+      },
+      {
+        title: 'Logement du meunier',
+        icon: 'ph ph-house-line',
+        intro: 'Le moulin peut intégrer un logement permettant au meunier de vivre directement sur son lieu de travail.',
+        groups: [
+          G(null, ['Pièce de vie.', 'Cheminée.', 'Chambres.', 'Accès indépendant ou intérieur.', 'Étage habitable.', 'Dépendances domestiques.']),
+        ],
+      },
+      {
+        title: 'Diversité des usages',
+        icon: 'ph ph-factory',
+        intro: 'La force hydraulique pouvait alimenter de nombreuses activités productives au-delà de la seule mouture.',
+        groups: [
+          G(null, ['Mouture des céréales.', 'Foulage de la laine.', 'Papeterie.', 'Forge.', 'Transformation agricole.', 'Activités artisanales.']),
+        ],
+      },
+      {
+        title: "Exemple du moulin d'Aulanac",
+        icon: 'ph ph-map-trifold',
+        intro: "Le moulin d'Aulanac à Saint-Cirq-Lapopie constitue une référence majeure pour cette typologie.",
+        groups: [
+          G(null, ['Attesté dès le début du XIVe siècle.', 'Importants vestiges du XVe siècle.', 'Construction en moellons de calcaire.', "Canal d'amenée.", 'Chambre à eau.', 'Quatre rouets.', 'Deux meules conservées.', 'Logement du meunier ajouté ou remanié au XVIIIe siècle.']),
+        ],
+      },
+      {
+        title: 'Exemple du moulin du Saut',
+        icon: 'ph ph-mountains',
+        intro: 'Le moulin du Saut à Gramat illustre une adaptation spectaculaire de l\'architecture hydraulique au relief des Causses du Quercy.',
+        groups: [
+          G(null, ['Construction au XVIIIe siècle.', 'Implantation à flanc de rocher.', "Vallée étroite de l'Alzou.", "Chute d'environ 10 mètres.", 'Trois chambres à eau.', 'Quatre paires de meules.', 'Habitation du meunier.', 'Four à pain et étable.']),
+        ],
+      },
+      {
+        title: 'Relation avec le paysage',
+        icon: 'ph ph-tree',
+        intro: "Le moulin forme un système architectural et paysager indissociable de la rivière et des aménagements hydrauliques.",
+        groups: [
+          G(null, ["Cours d'eau.", 'Berges.', 'Canaux.', 'Seuils.', 'Écluses.', 'Ponts.', "Chemins d'accès.", 'Vallée.']),
+        ],
+      },
+      {
+        title: 'Évolution historique',
+        icon: 'ph ph-clock',
+        intro: 'Les moulins ont connu de nombreuses transformations techniques et architecturales au cours de leur longue histoire.',
+        groups: [
+          G(null, ['Moulins médiévaux.', 'Reconstructions après les guerres.', 'Modernisations des XVIIIe et XIXe siècles.', 'Évolution des systèmes hydrauliques.', 'Introduction de nouvelles machines.', 'Abandon progressif au XXe siècle.', 'Transformation en habitation ou patrimoine touristique.']),
+        ],
+      },
+      {
+        title: 'Distinction avec le moulin à vent',
+        icon: 'ph ph-info',
+        intro: "Le moulin à eau se distingue par son implantation et son système énergétique directement liés à un cours d'eau.",
+        groups: [
+          G(null, [
+            'Moulin à eau : énergie hydraulique.',
+            'Moulin à vent : énergie éolienne.',
+            'Le moulin à eau nécessite un réseau hydraulique.',
+            'Le bâtiment peut être implanté dans une vallée.',
+            "Le dispositif hydraulique constitue une partie essentielle de l'architecture.",
+          ]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La relation entre le bâtiment, l'eau et le système mécanique constitue le principal critère d'identification.",
+        groups: [
+          G(null, ["Implantation sur un cours d'eau.", "Canal d'amenée.", 'Chambre à eau.', 'Roue ou rouets.', 'Meules ou autre machine.', 'Maçonnerie robuste.', 'Logement du meunier possible.', 'Ouvrages hydrauliques associés.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
