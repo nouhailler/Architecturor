@@ -19390,6 +19390,213 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'sechoirtabacquercynois',
+    name: 'Séchoir à tabac quercynois',
+    region: 'Occitanie · Quercy · Lot',
+    periode: 'XIXe siècle – XXe siècle',
+    procede:
+      "Bâtiment agricole spécialisé destiné au séchage naturel des feuilles de tabac après leur récolte. Sa conception privilégie la circulation de l'air, la protection contre les intempéries et la possibilité de suspendre les feuilles sur plusieurs niveaux. Selon les périodes et les exploitations, le séchoir peut être construit en bois, en maçonnerie ou selon une combinaison des deux, avec des ouvertures largement ventilées pouvant être obturées partiellement.",
+    usage: 'Séchage et conservation des feuilles de tabac',
+    categorie: 'agricole',
+    gps: '44.45° N, 1.60° E',
+    altitude: '100–350 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Toiture à deux pans en tuile ou couverture agricole traditionnelle',
+    penteToit: 'Faible à moyenne',
+    essenceBois: 'Chêne et châtaignier',
+    typeFondation: 'Fondations maçonnées en pierre ou semelles adaptées à la structure',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe – XXe siècles',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "Le séchoir à tabac quercynois est une construction agricole spécialisée apparue avec le développement de la culture du tabac dans le Sud-Ouest. Son architecture répond directement aux exigences du séchage des feuilles : protéger la récolte de la pluie tout en assurant une ventilation importante et régulière. Le bâtiment présente généralement une structure relativement légère, des volumes suffisamment hauts pour suspendre les feuilles et de larges ouvertures permettant de contrôler les flux d'air. Les feuilles fraîchement récoltées sont suspendues sur des perches ou des supports à l'intérieur du séchoir pendant plusieurs semaines. Dans le Quercy, ces constructions complètent les bâtiments traditionnels des exploitations agricoles et témoignent de la diversification des cultures au XIXe et au XXe siècle.",
+    identite: [
+      ['Période', 'XIXe siècle – XXe siècle'],
+      ['Région', 'Quercy · Lot'],
+      ['Usage', 'Séchage du tabac'],
+      ['Production', 'Feuilles de tabac'],
+      ['Principe', 'Séchage naturel par ventilation'],
+      ['Organisation', 'Volume agricole haut et largement ventilé'],
+      ['Structure', 'Bois, maçonnerie ou combinaison des deux'],
+      ['Particularité', "Architecture entièrement adaptée à la circulation de l'air"],
+    ],
+    materiaux: ['Bois', 'Calcaire', 'Moellons', 'Brique', 'Tuile', 'Tôle', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Structure porteuse',
+        txt: 'La structure doit permettre de supporter les charges liées aux nombreuses feuilles suspendues pendant le séchage.',
+      },
+      {
+        n: 2,
+        el: 'Perches de séchage',
+        txt: "Des perches horizontales ou des systèmes de suspension permettent d'accrocher les feuilles récoltées.",
+      },
+      {
+        n: 3,
+        el: 'Ouvertures ventilées',
+        txt: 'Les ouvertures favorisent la circulation naturelle de l\'air indispensable au séchage.',
+      },
+      {
+        n: 4,
+        el: "Dispositifs d'obturation",
+        txt: "Certaines ouvertures peuvent être partiellement fermées afin de protéger les feuilles des pluies, des vents excessifs ou d'une ventilation trop importante.",
+      },
+      {
+        n: 5,
+        el: 'Volume intérieur',
+        txt: 'La hauteur disponible permet de multiplier les niveaux de suspension et d\'optimiser la capacité du bâtiment.',
+      },
+      {
+        n: 6,
+        el: 'Toiture',
+        txt: 'La couverture protège la récolte contre les précipitations tout en maintenant une ventilation suffisante dans le volume intérieur.',
+      },
+      {
+        n: 7,
+        el: 'Aire de préparation',
+        txt: 'Un espace extérieur ou intérieur peut être utilisé pour trier, préparer et suspendre les feuilles avant leur mise au séchage.',
+      },
+      {
+        n: 8,
+        el: 'Accès agricole',
+        txt: 'Les dimensions des ouvertures et des portes permettent la manutention des récoltes et des supports de séchage.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe architectural',
+        icon: 'ph ph-wind',
+        intro: 'Le bâtiment est conçu avant tout comme une enveloppe ventilée permettant de sécher progressivement les feuilles de tabac.',
+        groups: [
+          G(null, ['Volume suffisamment haut.', 'Ventilation naturelle.', 'Protection contre la pluie.', 'Suspension des feuilles.', "Contrôle des flux d'air."]),
+        ],
+      },
+      {
+        title: 'Culture du tabac',
+        icon: 'ph ph-plant',
+        intro: 'Le séchoir constitue le prolongement architectural de la culture du tabac et intervient immédiatement après la récolte.',
+        groups: [
+          G(null, ['Récolte des feuilles.', 'Préparation.', 'Mise en suspension.', 'Séchage.', 'Affinage.', 'Stockage.']),
+        ],
+      },
+      {
+        title: 'Système de suspension',
+        icon: 'ph ph-arrows-out-line-vertical',
+        intro: "Les feuilles sont suspendues afin de maximiser leur exposition à l'air tout en utilisant efficacement le volume du bâtiment.",
+        groups: [
+          G(null, ['Perches horizontales.', 'Supports en bois.', 'Plusieurs niveaux.', 'Suspension des feuilles.', 'Organisation régulière des rangées.']),
+        ],
+      },
+      {
+        title: 'Ventilation naturelle',
+        icon: 'ph ph-wind',
+        intro: 'La circulation de l\'air constitue la fonction technique fondamentale du séchoir.',
+        groups: [
+          G(null, ['Ouvertures latérales.', 'Persiennes ou claustras selon les modèles.', 'Ventilation traversante.', "Évacuation de l'humidité.", 'Séchage progressif.']),
+        ],
+      },
+      {
+        title: 'Protection de la récolte',
+        icon: 'ph ph-shield',
+        intro: 'Le séchoir doit maintenir un équilibre entre protection contre les intempéries et renouvellement de l\'air.',
+        groups: [
+          G(null, ['Protection contre la pluie.', 'Protection contre le soleil direct.', 'Réduction des vents excessifs.', 'Maintien d\'une ventilation régulière.', 'Contrôle des ouvertures.']),
+        ],
+      },
+      {
+        title: 'Structure légère',
+        icon: 'ph ph-tree-structure',
+        intro: 'Les séchoirs peuvent employer une structure relativement légère, particulièrement lorsque le bois constitue le matériau principal.',
+        groups: [
+          G(null, ['Poteaux en bois.', 'Poutres.', 'Perches.', 'Bardage partiel.', 'Ouvertures importantes.', 'Assemblages simples.']),
+        ],
+      },
+      {
+        title: 'Construction maçonnée',
+        icon: 'ph ph-wall',
+        intro: 'Certains séchoirs utilisent également une maçonnerie traditionnelle, notamment lorsque le bâtiment est intégré à une exploitation agricole existante.',
+        groups: [
+          G(null, ['Calcaire local.', 'Moellons.', 'Brique.', 'Mortier de chaux.', 'Maçonnerie périphérique.', 'Charpente en bois.']),
+        ],
+      },
+      {
+        title: "Implantation dans l'exploitation",
+        icon: 'ph ph-map-pin',
+        intro: 'Le séchoir est généralement implanté à proximité des parcelles cultivées et des autres bâtiments agricoles afin de faciliter la manutention de la récolte.',
+        groups: [
+          G(null, ['Proximité des champs.', 'Proximité de la ferme.', 'Accès agricole.', 'Aire de manutention.', 'Relation avec les bâtiments de stockage.']),
+        ],
+      },
+      {
+        title: "Relation avec l'architecture agricole",
+        icon: 'ph ph-buildings',
+        intro: 'Le séchoir complète l\'organisation traditionnelle de l\'exploitation sans constituer nécessairement son bâtiment principal.',
+        groups: [
+          G(null, ["Maison d'habitation.", 'Grange.', 'Étable.', 'Hangar.', 'Aire de stockage.', 'Séchoir spécialisé.']),
+        ],
+      },
+      {
+        title: 'Évolution de la culture du tabac',
+        icon: 'ph ph-clock',
+        intro: 'Le développement puis le recul de la culture du tabac ont directement influencé la construction et l\'abandon progressif de ces bâtiments.',
+        groups: [
+          G(null, ['Développement de la culture.', 'Spécialisation des exploitations.', 'Construction de séchoirs.', 'Mécanisation progressive.', 'Évolution des techniques de séchage.', 'Abandon ou reconversion.']),
+        ],
+      },
+      {
+        title: 'Architecture fonctionnelle',
+        icon: 'ph ph-ruler',
+        intro: "La forme du bâtiment est principalement déterminée par le procédé agricole plutôt que par une recherche esthétique.",
+        groups: [
+          G(null, ['Grande hauteur utile.', 'Ventilation.', "Facilité d'accrochage.", 'Accès pour la récolte.', 'Protection climatique.', 'Économie constructive.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la grange-étable',
+        icon: 'ph ph-info',
+        intro: 'Le séchoir à tabac et la grange-étable quercynoise sont tous deux des bâtiments agricoles, mais leurs fonctions et leurs dispositifs architecturaux diffèrent.',
+        groups: [
+          G(null, [
+            "Séchoir : traitement d'une récolte végétale.",
+            'Grange-étable : stockage et élevage.',
+            'Séchoir : ventilation dominante.',
+            'Grange-étable : protection et stockage.',
+            'Séchoir : nombreux supports de suspension.',
+            'Grange-étable : grands espaces de stockage du fourrage.',
+          ]),
+        ],
+      },
+      {
+        title: 'Distinction avec la grangette-bergerie',
+        icon: 'ph ph-info',
+        intro: 'Le séchoir constitue une architecture agricole spécialisée qui ne répond pas aux fonctions pastorales de la grangette-bergerie des Causses.',
+        groups: [
+          G(null, [
+            'Séchoir : culture du tabac.',
+            'Grangette : élevage et stockage.',
+            'Séchoir : ventilation importante.',
+            'Grangette : bâtiment plus fermé.',
+            'Séchoir : supports de suspension.',
+            'Grangette : fenil et espace pour les animaux.',
+          ]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'un volume agricole haut, de larges dispositifs de ventilation et de supports destinés à suspendre les feuilles permet de reconnaître cette typologie.",
+        groups: [
+          G(null, ['Volume haut.', 'Ouvertures ventilées.', 'Structure bois ou maçonnerie.', 'Perches de suspension.', 'Ventilation traversante.', 'Protection contre la pluie.', 'Proximité des terres agricoles.', 'Fonction spécialisée de séchage.']),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
