@@ -21184,6 +21184,225 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'grangeafoinsavoyarde',
+    name: 'Grange à foin savoyarde',
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Bâtiment agricole destiné principalement au séchage et au stockage du foin produit dans les prairies de montagne. La grange est généralement implantée à proximité des prairies, des exploitations ou des hameaux et peut être associée à une étable ou constituer un bâtiment indépendant. Sa structure privilégie le bois pour la charpente et les parois, avec une organisation favorisant la ventilation naturelle du fourrage. Le niveau supérieur peut être largement ouvert ou muni de dispositifs permettant la circulation de l'air tandis que le niveau inférieur peut accueillir les animaux, du matériel ou des espaces de service selon les variantes locales.",
+    usage: "Séchage et stockage du foin destiné à l'alimentation hivernale du bétail",
+    categorie: 'montagne',
+    gps: '45.55° N, 6.35° E',
+    altitude: '500–1500 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et mélèze',
+    typeFondation: 'Soubassement ou fondations en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La grange à foin savoyarde est un bâtiment agricole spécialisé dans la conservation du fourrage nécessaire à l'hivernage du bétail. Elle joue un rôle essentiel dans les exploitations de montagne où les longues périodes hivernales nécessitent de constituer d'importantes réserves de foin pendant la belle saison. Le bâtiment peut être indépendant ou associé à une étable, une ferme ou d'autres dépendances agricoles. Sa conception privilégie la ventilation du fourrage grâce à des parois en bois, des ouvertures ou des espaces ajourés. Le foin est généralement stocké dans le volume supérieur, tandis que le rez-de-chaussée peut avoir différentes fonctions agricoles selon les secteurs. L'implantation dans les prairies, les hameaux et les versants exploités constitue un élément important de cette architecture rurale savoyarde.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', 'Séchage et stockage du foin'],
+      ['Implantation', 'Prairies, hameaux, exploitations et versants agricoles'],
+      ['Organisation', 'Volume de stockage supérieur avec espaces agricoles au niveau inférieur selon les modèles'],
+      ['Système', 'Structure et charpente principalement en bois'],
+      ['Matériau dominant', 'Bois'],
+      ['Toiture', 'Toiture à deux pans'],
+      ['Particularité', 'Ventilation naturelle destinée à conserver le fourrage'],
+    ],
+    materiaux: ['Bois', 'Épicéa', 'Sapin', 'Mélèze', 'Pierre locale', 'Calcaire', 'Schiste', 'Lauze', 'Ardoise', 'Tuile'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Volume de stockage',
+        txt: "Le niveau supérieur accueille principalement le foin séché destiné à l'alimentation hivernale du bétail.",
+      },
+      {
+        n: 2,
+        el: 'Parois ajourées',
+        txt: 'Les ouvertures et espaces entre les éléments de bois favorisent la circulation naturelle de l\'air.',
+      },
+      {
+        n: 3,
+        el: 'Charpente',
+        txt: 'La charpente en bois supporte la couverture et doit résister au poids important du fourrage stocké.',
+      },
+      {
+        n: 4,
+        el: 'Plancher de stockage',
+        txt: 'Le plancher sépare le volume de foin des éventuels espaces agricoles situés au niveau inférieur.',
+      },
+      {
+        n: 5,
+        el: 'Accès au fenil',
+        txt: 'Une porte ou une ouverture importante permet d\'introduire le foin directement dans le volume de stockage.',
+      },
+      {
+        n: 6,
+        el: 'Soubassement en pierre',
+        txt: "La partie basse peut être maçonnée afin de protéger la structure en bois du contact avec le sol et l'humidité.",
+      },
+      {
+        n: 7,
+        el: 'Étable éventuelle',
+        txt: 'Certains modèles associent le stockage du foin à une étable située sous le fenil.',
+      },
+      {
+        n: 8,
+        el: 'Débord de toiture',
+        txt: 'Les débords protègent les parois en bois contre les précipitations.',
+      },
+      {
+        n: 9,
+        el: 'Aire de chargement',
+        txt: "L'accès au bâtiment est organisé pour faciliter le dépôt du foin provenant des prairies.",
+      },
+      {
+        n: 10,
+        el: 'Ventilation',
+        txt: 'La circulation de l\'air limite l\'humidité résiduelle et contribue à la bonne conservation du fourrage.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Fonction pastorale',
+        icon: 'ph ph-cow',
+        intro: "La grange à foin assure la constitution des réserves nécessaires à l'alimentation du bétail pendant l'hiver.",
+        groups: [
+          G(null, ['Foin.', 'Fourrage.', 'Alimentation hivernale.', 'Bovins.', 'Ovins.', 'Réserves saisonnières.']),
+        ],
+      },
+      {
+        title: 'Fenil',
+        icon: 'ph ph-warehouse',
+        intro: 'Le volume supérieur constitue généralement le principal espace de stockage du fourrage.',
+        groups: [
+          G(null, ['Fenil.', 'Stockage en vrac.', 'Volume important.', 'Chargement vertical.', 'Réserve hivernale.']),
+        ],
+      },
+      {
+        title: 'Séchage du foin',
+        icon: 'ph ph-wind',
+        intro: 'La conception du bâtiment favorise le séchage et la conservation du fourrage.',
+        groups: [
+          G(null, ['Ventilation naturelle.', 'Parois ajourées.', "Circulation de l'air.", 'Protection contre la pluie.', "Évacuation de l'humidité."]),
+        ],
+      },
+      {
+        title: 'Construction en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois est particulièrement adapté à la construction de grands volumes agricoles ventilés.',
+        groups: [
+          G(null, ['Épicéa.', 'Sapin.', 'Mélèze.', 'Poteaux.', 'Poutres.', 'Bardage.']),
+        ],
+      },
+      {
+        title: 'Soubassement',
+        icon: 'ph ph-wall',
+        intro: "La partie basse peut utiliser la pierre afin de protéger la construction du terrain et de l'humidité.",
+        groups: [
+          G(null, ['Pierre locale.', 'Calcaire.', 'Schiste.', 'Maçonnerie.', 'Soubassement.']),
+        ],
+      },
+      {
+        title: "Relation avec l'étable",
+        icon: 'ph ph-cow',
+        intro: "Certaines granges associent directement le fenil et l'étable afin de faciliter l'alimentation du bétail.",
+        groups: [
+          G(null, ['Fenil au-dessus.', 'Étable au-dessous.', 'Distribution du fourrage.', 'Stockage intégré.', 'Protection du bétail.']),
+        ],
+      },
+      {
+        title: 'Implantation dans les prairies',
+        icon: 'ph ph-map-pin',
+        intro: 'La grange peut être installée au plus près des prairies afin de réduire les distances de transport du foin.',
+        groups: [
+          G(null, ['Prairies de fauche.', 'Versants.', 'Hameaux.', 'Exploitations dispersées.', 'Chemins agricoles.']),
+        ],
+      },
+      {
+        title: 'Adaptation à la montagne',
+        icon: 'ph ph-mountains',
+        intro: 'Le bâtiment doit supporter les contraintes climatiques et topographiques des secteurs montagnards.',
+        groups: [
+          G(null, ['Pente.', 'Neige.', 'Précipitations.', 'Gel.', 'Ventilation.', 'Protection du bois.']),
+        ],
+      },
+      {
+        title: 'Récolte du foin',
+        icon: 'ph ph-sun',
+        intro: 'Le fonctionnement de la grange est directement lié au cycle annuel de la fenaison.',
+        groups: [
+          G(null, ['Fauche.', 'Séchage au champ.', 'Fanage.', 'Transport.', 'Stockage.', 'Distribution hivernale.']),
+        ],
+      },
+      {
+        title: 'Organisation du stockage',
+        icon: 'ph ph-stack',
+        intro: 'Le volume intérieur est conçu pour accueillir une quantité importante de fourrage tout en permettant sa manutention.',
+        groups: [
+          G(null, ['Chargement.', 'Empilage.', 'Circulation.', 'Accès large.', "Distribution vers l'étable."]),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: "La couverture protège le foin contre les précipitations et l'enneigement.",
+        groups: [
+          G(null, ['Deux pans.', 'Charpente en bois.', 'Couverture locale.', 'Débord de toiture.', 'Protection des façades.']),
+        ],
+      },
+      {
+        title: "Distinction avec le chalet d'alpage",
+        icon: 'ph ph-info',
+        intro: "La grange à foin et le chalet d'alpage peuvent être proches géographiquement mais répondent à des fonctions différentes.",
+        groups: [
+          G(null, [
+            'Grange à foin : stockage du fourrage.',
+            "Chalet d'alpage : séjour saisonnier et activité pastorale.",
+            'Grange : fonction principalement agricole.',
+            'Chalet : présence humaine et animale.',
+            'Volumes et organisation différents.',
+          ]),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: "La mécanisation et la transformation des pratiques agricoles ont progressivement modifié l'organisation traditionnelle du stockage du foin.",
+        groups: [
+          G(null, ['Mécanisation.', 'Balles de foin.', 'Nouveaux bâtiments agricoles.', 'Réduction des petits fenils.', 'Transformation en remise.', 'Restauration patrimoniale.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "Un grand volume de stockage ventilé, une fonction fourragère et une construction agricole adaptée à la montagne permettent d'identifier cette typologie.",
+        groups: [
+          G(null, [
+            'Fenil.',
+            'Grand volume.',
+            'Parois ventilées.',
+            'Structure en bois.',
+            'Accès de chargement.',
+            'Soubassement en pierre.',
+            'Proximité des prairies.',
+            'Stockage du foin.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
