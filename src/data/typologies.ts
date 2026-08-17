@@ -23330,6 +23330,219 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'fermeblocjurassienne',
+    name: 'Ferme-bloc jurassienne',
+    region: 'Bourgogne-Franche-Comté · Jura · massif jurassien',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Grande construction rurale compacte regroupant sous un même volume ou dans un ensemble très resserré les principales fonctions de l'exploitation : logement, étable, grange, fenil et espaces de stockage. La ferme-bloc jurassienne est particulièrement adaptée aux plateaux et aux secteurs de moyenne montagne soumis à des hivers rigoureux. Les murs sont généralement réalisés en pierre locale, tandis que la charpente, les planchers et les éléments secondaires utilisent le bois. L'organisation intérieure privilégie la proximité fonctionnelle entre le logement et les espaces agricoles, avec des volumes importants destinés au stockage du foin nécessaire à l'hivernage du bétail.",
+    usage: 'Habitation, élevage, stockage du foin et activités agricoles',
+    categorie: 'rural',
+    gps: '46.70° N, 6.05° E',
+    altitude: '500–1100 m',
+    climat: 'Montagnard continental',
+    typeToiture: 'Toiture à deux pans fortement inclinée',
+    penteToit: 'Forte',
+    essenceBois: 'Épicéa, sapin et chêne',
+    typeFondation: 'Soubassement maçonné en pierre calcaire',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La ferme-bloc jurassienne constitue une forme compacte d'habitat rural dans laquelle les fonctions domestiques et agricoles sont réunies dans un même bâtiment. Elle répond aux contraintes climatiques du massif jurassien et à une économie fondée notamment sur l'élevage bovin et la production fourragère. Le logement côtoie directement l'étable, la grange et les espaces de stockage, ce qui réduit les déplacements et facilite le travail durant les périodes hivernales. Les bâtiments présentent généralement une architecture massive en pierre, une toiture à deux pans et des volumes importants. Certaines fermes peuvent posséder un tué, mais celui-ci n'est pas indispensable à la définition de cette typologie et permet ainsi de la distinguer de la ferme à tué jurassienne.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Jura · massif jurassien'],
+      ['Usage', 'Habitation et exploitation agricole'],
+      ['Implantation', 'Plateaux, villages, hameaux et exploitations isolées'],
+      ['Organisation', 'Regroupement compact des fonctions domestiques et agricoles'],
+      ['Système', 'Maçonnerie en pierre et charpente traditionnelle en bois'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Toiture', 'Toiture à deux pans fortement inclinée'],
+      ['Particularité', 'Unité fonctionnelle réunissant logement, étable, grange et stockage'],
+    ],
+    materiaux: ['Pierre calcaire', 'Pierre locale', 'Bois', 'Épicéa', 'Sapin', 'Chêne', 'Chaux', 'Tuiles', 'Lauze', 'Ardoise', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Logis',
+        txt: "La partie résidentielle accueille la famille exploitante et est directement intégrée au bâtiment agricole.",
+      },
+      {
+        n: 2,
+        el: 'Étable',
+        txt: "L'étable occupe une partie importante du bâtiment et accueille principalement le bétail.",
+      },
+      {
+        n: 3,
+        el: 'Grange',
+        txt: 'La grange permet le stockage et la manutention des récoltes et du fourrage.',
+      },
+      {
+        n: 4,
+        el: 'Fenil',
+        txt: 'Le fenil occupe généralement un volume supérieur important afin de constituer les réserves hivernales.',
+      },
+      {
+        n: 5,
+        el: 'Mur en pierre',
+        txt: 'Les murs épais en pierre locale apportent stabilité et protection contre les températures hivernales.',
+      },
+      {
+        n: 6,
+        el: 'Charpente',
+        txt: 'La charpente traditionnelle en bois supporte la couverture et les importants volumes de la ferme.',
+      },
+      {
+        n: 7,
+        el: 'Grande porte de grange',
+        txt: "Une large ouverture permet l'entrée des charrettes, du matériel et du fourrage.",
+      },
+      {
+        n: 8,
+        el: 'Accès au logement',
+        txt: 'Le logement possède un accès distinct ou directement relié aux espaces agricoles selon la configuration.',
+      },
+      {
+        n: 9,
+        el: 'Soubassement',
+        txt: "Le soubassement protège le bâtiment contre l'humidité et les contraintes du terrain.",
+      },
+      {
+        n: 10,
+        el: 'Toiture',
+        txt: 'La toiture à deux pans fortement inclinée protège les volumes agricoles contre la neige et les précipitations.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe de la ferme-bloc',
+        icon: 'ph ph-house',
+        intro: "La caractéristique essentielle est le regroupement des fonctions agricoles et domestiques dans un bâtiment compact.",
+        groups: [
+          G(null, ['Logement.', 'Étable.', 'Grange.', 'Fenil.', 'Stockage.']),
+        ],
+      },
+      {
+        title: 'Élevage bovin',
+        icon: 'ph ph-cow',
+        intro: "L'organisation du bâtiment répond largement aux besoins de l'élevage et de la conservation du fourrage.",
+        groups: [
+          G(null, ['Bovins.', 'Étable.', 'Foin.', 'Râteliers.', 'Litière.']),
+        ],
+      },
+      {
+        title: 'Fenil',
+        icon: 'ph ph-stack',
+        intro: "Les volumes supérieurs permettent de conserver les quantités importantes de foin nécessaires pendant l'hiver.",
+        groups: [
+          G(null, ['Stockage du foin.', 'Fourrage.', 'Réserves hivernales.', 'Ventilation.', 'Chargement par hauteur.']),
+        ],
+      },
+      {
+        title: 'Organisation compacte',
+        icon: 'ph ph-arrows-in-cardinal',
+        intro: "La concentration des fonctions limite les déplacements entre les différents espaces de l'exploitation.",
+        groups: [
+          G(null, ['Bâtiment unique.', 'Fonctions contiguës.', 'Circulations courtes.', 'Travail hivernal facilité.', "Économie d'emprise au sol."]),
+        ],
+      },
+      {
+        title: 'Architecture massive',
+        icon: 'ph ph-wall',
+        intro: 'Les murs en pierre constituent une enveloppe robuste adaptée au climat du massif jurassien.',
+        groups: [
+          G(null, ['Pierre calcaire.', 'Murs épais.', 'Mortier de chaux.', 'Inertie thermique.', 'Protection contre le froid.']),
+        ],
+      },
+      {
+        title: 'Structure en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois provenant des forêts jurassiennes est utilisé pour les éléments de structure et les aménagements intérieurs.',
+        groups: [
+          G(null, ['Épicéa.', 'Sapin.', 'Chêne.', 'Charpente.', 'Planchers.', 'Menuiseries.']),
+        ],
+      },
+      {
+        title: 'Adaptation climatique',
+        icon: 'ph ph-snowflake',
+        intro: 'La compacité du bâtiment et ses volumes protégés répondent aux hivers froids du massif jurassien.',
+        groups: [
+          G(null, ['Hivers rigoureux.', 'Neige.', 'Protection thermique.', 'Réduction des circulations extérieures.', 'Stockage important.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: 'La toiture constitue un élément essentiel de protection des grands volumes agricoles.',
+        groups: [
+          G(null, ['Deux pans.', 'Forte pente.', 'Tuiles.', 'Lauze.', 'Ardoise.', 'Large débord.']),
+        ],
+      },
+      {
+        title: 'Grande grange',
+        icon: 'ph ph-warehouse',
+        intro: "La grange occupe une place importante dans l'organisation fonctionnelle de la ferme.",
+        groups: [
+          G(null, ['Grande porte.', 'Charrette.', 'Fourrage.', 'Matériel agricole.', 'Aire de travail.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'Les fermes-blocs peuvent être intégrées aux villages ou implantées directement au sein des espaces agricoles.',
+        groups: [
+          G(null, ['Village.', 'Hameau.', 'Plateau agricole.', 'Exploitation isolée.', 'Prairie.']),
+        ],
+      },
+      {
+        title: 'Relation avec le tué',
+        icon: 'ph ph-fire',
+        intro: "Certaines fermes-blocs peuvent comporter un tué, mais celui-ci constitue un équipement particulier et non un critère obligatoire de la ferme-bloc.",
+        groups: [
+          G(null, ['Tué possible.', 'Fumage.', 'Cuisine.', 'Volume vertical.', 'Distinction typologique.']),
+        ],
+      },
+      {
+        title: 'Relation avec la ferme à cour',
+        icon: 'ph ph-square',
+        intro: "La ferme-bloc se distingue de la ferme à cour par son regroupement beaucoup plus compact autour d'un seul volume principal.",
+        groups: [
+          G(null, ['Volume unique.', 'Faible fragmentation.', 'Fonctions intégrées.', 'Pas de cour centrale nécessaire.', 'Emprise compacte.']),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: 'La modernisation agricole a progressivement rendu certaines organisations traditionnelles moins adaptées aux exploitations contemporaines.',
+        groups: [
+          G(null, ['Transformation.', 'Extension.', 'Abandon agricole.', 'Réhabilitation.', 'Conversion résidentielle.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "Le regroupement des fonctions sous un même volume et la forte compacité constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Bâtiment compact.',
+            'Logement.',
+            'Étable.',
+            'Grange.',
+            'Fenil.',
+            'Pierre locale.',
+            'Toiture à deux pans.',
+            'Adaptation au climat.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
