@@ -21616,6 +21616,231 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'fromageriealpage',
+    name: "Fromagerie d'alpage",
+    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    periode: 'XVIIe siècle – XXe siècle',
+    procede:
+      "Bâtiment pastoral destiné à la transformation sur place du lait produit par les troupeaux conduits en altitude pendant la saison estivale. La fromagerie peut être intégrée au chalet d'alpage ou constituer un espace spécialisé distinct. Son organisation répond aux différentes étapes de fabrication du fromage : réception et traite du lait, chauffage dans des cuves ou chaudrons, emprésurage, brassage, égouttage, moulage et stockage. La construction utilise principalement la pierre et le bois et doit assurer une bonne protection contre les variations climatiques ainsi que des conditions adaptées à la conservation des produits laitiers.",
+    usage: "Transformation du lait et fabrication de fromages en alpage",
+    categorie: 'montagne',
+    gps: '45.55° N, 6.35° E',
+    altitude: '1000–2200 m',
+    climat: 'Montagnard alpin',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et mélèze',
+    typeFondation: 'Fondations et soubassement en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne à élevée',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La fromagerie d'alpage est un bâtiment ou un espace spécialisé consacré à la transformation du lait produit pendant l'estive. Elle constitue un élément essentiel de l'organisation pastorale traditionnelle savoyarde lorsque le lait est transformé directement sur le lieu de pâturage plutôt que redescendu dans la vallée. Son fonctionnement nécessite une organisation particulière autour du chauffage du lait, de la fabrication des fromages et de leur conservation. Les bâtiments associent généralement une maçonnerie en pierre à une structure et des éléments intérieurs en bois. Selon les secteurs et les exploitations, la fromagerie peut être intégrée au chalet d'alpage ou prendre la forme d'un local spécialisé. Elle témoigne de l'autonomie alimentaire et de la valorisation locale de la production laitière dans les territoires d'altitude.",
+    identite: [
+      ['Période', 'XVIIe siècle – XXe siècle'],
+      ['Région', 'Savoie · Alpes du Nord'],
+      ['Usage', 'Fabrication et conservation des fromages'],
+      ['Implantation', "Alpages, pâturages d'altitude et chalets pastoraux"],
+      ['Organisation', 'Espace de fabrication associé aux locaux pastoraux'],
+      ['Système', 'Transformation du lait sur place'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Équipement caractéristique', 'Cuve ou chaudron de fabrication'],
+      ['Particularité', "Transformation du lait directement sur le lieu d'estive"],
+    ],
+    materiaux: ['Pierre locale', 'Calcaire', 'Schiste', 'Bois', 'Épicéa', 'Mélèze', 'Sapin', 'Fer', 'Cuivre', 'Chaux'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Local de fabrication',
+        txt: "L'espace principal accueille les opérations de transformation du lait en fromage.",
+      },
+      {
+        n: 2,
+        el: 'Cuve ou chaudron',
+        txt: 'Le lait est chauffé dans une cuve ou un chaudron adapté à la fabrication fromagère.',
+      },
+      {
+        n: 3,
+        el: 'Foyer',
+        txt: 'Le foyer permet de chauffer le lait lorsque la fabrication traditionnelle repose sur une chauffe directe.',
+      },
+      {
+        n: 4,
+        el: "Espace d'égouttage",
+        txt: "Après le travail du caillé, les fromages sont égouttés afin d'éliminer une partie du lactosérum.",
+      },
+      {
+        n: 5,
+        el: 'Moules',
+        txt: 'Les moules donnent leur forme aux fromages et facilitent leur égouttage.',
+      },
+      {
+        n: 6,
+        el: 'Espace de stockage',
+        txt: "Les fromages peuvent être conservés temporairement dans des conditions adaptées avant leur descente ou leur affinage.",
+      },
+      {
+        n: 7,
+        el: 'Sol et drainage',
+        txt: "Les espaces de fabrication doivent permettre le nettoyage et l'évacuation de l'eau et du lactosérum.",
+      },
+      {
+        n: 8,
+        el: 'Maçonnerie',
+        txt: "La pierre protège le bâtiment contre l'humidité et contribue à la stabilité thermique des espaces de fabrication.",
+      },
+      {
+        n: 9,
+        el: 'Structure en bois',
+        txt: 'Le bois intervient dans la charpente, les planchers, les portes et différents équipements intérieurs.',
+      },
+      {
+        n: 10,
+        el: 'Accès pastoral',
+        txt: "L'accès doit permettre l'arrivée du lait depuis les lieux de traite et la manutention des produits fabriqués.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Fonction fromagère',
+        icon: 'ph ph-cheese',
+        intro: 'La fromagerie transforme directement le lait produit par les troupeaux présents sur les alpages.',
+        groups: [
+          G(null, ['Réception du lait.', 'Chauffage.', 'Emprésurage.', 'Travail du caillé.', 'Moulage.', 'Égouttage.']),
+        ],
+      },
+      {
+        title: 'Production laitière',
+        icon: 'ph ph-cow',
+        intro: "Le fonctionnement de la fromagerie dépend directement de l'organisation pastorale et de la traite des animaux.",
+        groups: [
+          G(null, ['Vaches.', 'Troupeaux.', 'Traite.', 'Lait frais.', 'Estive.', 'Pâturage.']),
+        ],
+      },
+      {
+        title: 'Chauffage du lait',
+        icon: 'ph ph-fire',
+        intro: 'La chauffe constitue une étape fondamentale de nombreuses fabrications fromagères traditionnelles.',
+        groups: [
+          G(null, ['Foyer.', 'Bois de chauffage.', 'Cuve.', 'Chaudron.', 'Contrôle de la température.']),
+        ],
+      },
+      {
+        title: 'Transformation du caillé',
+        icon: 'ph ph-arrows-clockwise',
+        intro: "Le lait chauffé est progressivement transformé afin d'obtenir la matière fromagère.",
+        groups: [
+          G(null, ['Emprésurage.', 'Caillage.', 'Découpe.', 'Brassage.', 'Égouttage.', 'Moulage.']),
+        ],
+      },
+      {
+        title: 'Eau et nettoyage',
+        icon: 'ph ph-drop',
+        intro: "L'activité fromagère nécessite une gestion importante de l'eau et du nettoyage des locaux et équipements.",
+        groups: [
+          G(null, ['Eau de lavage.', 'Nettoyage des cuves.', 'Évacuation du lactosérum.', 'Drainage.', 'Hygiène des locaux.']),
+        ],
+      },
+      {
+        title: 'Conservation des fromages',
+        icon: 'ph ph-archive',
+        intro: "Les fromages produits en altitude doivent être conservés dans des conditions adaptées avant leur descente ou leur affinage.",
+        groups: [
+          G(null, ['Stockage temporaire.', 'Cave.', 'Affinage.', 'Humidité.', 'Température.']),
+        ],
+      },
+      {
+        title: 'Architecture pastorale',
+        icon: 'ph ph-mountains',
+        intro: "La fromagerie s'inscrit dans l'organisation saisonnière des exploitations d'altitude.",
+        groups: [
+          G(null, ['Alpage.', 'Chalet.', 'Pâturage.', 'Troupeau.', 'Estive.', 'Descente en vallée.']),
+        ],
+      },
+      {
+        title: 'Construction',
+        icon: 'ph ph-wall',
+        intro: 'La construction associe les matériaux disponibles localement et doit résister aux conditions climatiques de l\'altitude.',
+        groups: [
+          G(null, ['Pierre locale.', 'Bois.', 'Murs épais.', 'Charpente.', 'Soubassement.', 'Enduit à la chaux.']),
+        ],
+      },
+      {
+        title: "Relation avec le chalet d'alpage",
+        icon: 'ph ph-house',
+        intro: "La fromagerie peut être intégrée au chalet d'alpage mais possède une fonction productive spécifique.",
+        groups: [
+          G(null, [
+            'Chalet : habitat et activité pastorale.',
+            'Fromagerie : transformation du lait.',
+            'Locaux parfois contigus.',
+            'Équipements spécialisés.',
+            'Organisation complémentaire.',
+          ]),
+        ],
+      },
+      {
+        title: 'Organisation saisonnière',
+        icon: 'ph ph-calendar',
+        intro: "La fromagerie fonctionne pendant la période d'estive lorsque les troupeaux sont conduits sur les pâturages d'altitude.",
+        groups: [
+          G(null, ['Montée en alpage.', 'Estive.', 'Traites quotidiennes.', 'Fabrication régulière.', 'Descente des troupeaux.']),
+        ],
+      },
+      {
+        title: 'Économie pastorale',
+        icon: 'ph ph-users-three',
+        intro: "La transformation sur place permet de valoriser le lait et de réduire le transport d'un produit rapidement périssable.",
+        groups: [
+          G(null, ['Valorisation du lait.', 'Production locale.', 'Autonomie.', 'Réduction du transport.', 'Économie pastorale.']),
+        ],
+      },
+      {
+        title: 'Évolution des pratiques',
+        icon: 'ph ph-clock',
+        intro: "La modernisation de la production laitière et l'évolution des normes sanitaires ont transformé les anciennes fromageries d'alpage.",
+        groups: [
+          G(null, ['Modernisation.', 'Nouveaux équipements.', 'Normes sanitaires.', 'Transformation des locaux.', 'Abandon de certains sites.', 'Valorisation patrimoniale.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la fromagerie de vallée',
+        icon: 'ph ph-info',
+        intro: "La fromagerie d'alpage se caractérise avant tout par son implantation dans le système pastoral d'altitude et par sa production directement liée à l'estive.",
+        groups: [
+          G(null, [
+            'Implantation en altitude.',
+            'Production saisonnière.',
+            "Lait du troupeau d'estive.",
+            'Petite capacité de transformation.',
+            'Intégration au chalet pastoral.',
+          ]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'un espace de fabrication, d'équipements de transformation du lait et d'une implantation pastorale permet d'identifier cette typologie.",
+        groups: [
+          G(null, [
+            'Alpage.',
+            'Local de fabrication.',
+            'Cuve ou chaudron.',
+            'Foyer.',
+            'Moules.',
+            'Égouttage.',
+            'Stockage.',
+            'Relation directe avec le troupeau.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
