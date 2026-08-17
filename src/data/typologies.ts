@@ -18997,6 +18997,207 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'citernedecausse',
+    name: 'Citerne de causse',
+    region: 'Occitanie · Quercy · Causses du Quercy · Lot',
+    periode: 'XIXe siècle – début du XXe siècle',
+    procede:
+      "Ouvrage hydraulique vernaculaire destiné à recueillir et conserver l'eau de pluie dans les paysages calcaires des Causses du Quercy. La citerne collecte généralement l'eau provenant des toitures ou de surfaces aménagées et la stocke dans une cuve enterrée ou semi-enterrée construite en pierre et protégée par une voûte ou une couverture maçonnée.",
+    usage: "Approvisionnement en eau, abreuvement du bétail et usages agricoles",
+    categorie: 'rural',
+    gps: '44.55° N, 1.75° E',
+    altitude: '250–450 m',
+    climat: 'Océanique dégradé à tendance méridionale',
+    typeToiture: 'Voûte ou couverture en dalles calcaires',
+    penteToit: "Faible ou sans pente apparente selon l'enfouissement",
+    essenceBois: 'Chêne',
+    typeFondation: 'Cuve et assise en pierre calcaire',
+    typeCharpente: 'Sans charpente principale',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Élevée',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "La citerne de causse constitue une réponse architecturale aux contraintes hydrologiques des plateaux calcaires du Quercy. Les terrains karstiques favorisent l'infiltration rapide des eaux de pluie et rendent les ressources superficielles rares ou irrégulières. Les communautés rurales ont donc développé des dispositifs de récupération et de stockage de l'eau. La citerne recueille l'eau des toitures, des impluviums ou de surfaces aménagées et la conserve dans une cuve protégée. Certaines citernes sont directement associées à des grangettes, des bergeries ou des bâtiments agricoles et alimentent une auge destinée au bétail. Elles constituent un élément essentiel du paysage pastoral des Causses et témoignent de l'adaptation des sociétés rurales à la rareté de l'eau.",
+    identite: [
+      ['Période', 'XIXe siècle – début du XXe siècle'],
+      ['Région', 'Causses du Quercy · Lot'],
+      ['Usage', "Stockage de l'eau et abreuvement"],
+      ['Ressource', 'Eau de pluie'],
+      ['Principe', 'Collecte, filtration et stockage'],
+      ['Construction', 'Cuve maçonnée ou creusée dans le substrat calcaire'],
+      ['Couverture', 'Voûte ou dalle de pierre'],
+      ['Particularité', 'Adaptation au contexte karstique et à la rareté des eaux superficielles'],
+    ],
+    materiaux: ['Calcaire', 'Pierre sèche', 'Pierre de taille', 'Dalles calcaires', 'Mortier de chaux', 'Bois', 'Terre cuite'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Aire de collecte',
+        txt: "La surface de collecte récupère l'eau de pluie avant son acheminement vers la cuve.",
+      },
+      {
+        n: 2,
+        el: "Gouttière ou canal d'amenée",
+        txt: "Un dispositif de collecte conduit l'eau depuis la toiture ou une surface aménagée jusqu'à la citerne.",
+      },
+      {
+        n: 3,
+        el: 'Cuve',
+        txt: 'La cuve constitue le réservoir principal. Elle est généralement protégée de la lumière et de l\'évaporation afin de conserver l\'eau.',
+      },
+      {
+        n: 4,
+        el: 'Voûte',
+        txt: 'Une voûte ou une couverture en pierre protège la réserve d\'eau et contribue à la stabilité de l\'ouvrage.',
+      },
+      {
+        n: 5,
+        el: "Ouverture d'accès",
+        txt: "Une petite ouverture permet de puiser l'eau, d'entretenir la citerne et éventuellement de contrôler son niveau.",
+      },
+      {
+        n: 6,
+        el: 'Système de filtration',
+        txt: "Selon les installations, un dispositif rudimentaire de décantation ou de filtration peut limiter l'entrée des impuretés dans la cuve.",
+      },
+      {
+        n: 7,
+        el: 'Auge',
+        txt: "Une auge en pierre peut être associée à la citerne pour permettre l'abreuvement des animaux.",
+      },
+      {
+        n: 8,
+        el: 'Déversoir',
+        txt: "Un trop-plein peut permettre d'évacuer l'excédent d'eau lorsque la citerne est remplie.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Principe hydraulique',
+        icon: 'ph ph-drop',
+        intro: 'La citerne transforme les précipitations irrégulières en une réserve utilisable pendant les périodes sèches.',
+        groups: [
+          G(null, ["Collecte de l'eau de pluie.", 'Acheminement vers la cuve.', 'Décantation éventuelle.', 'Stockage.', 'Prélèvement.', 'Distribution vers une auge.']),
+        ],
+      },
+      {
+        title: 'Contexte karstique',
+        icon: 'ph ph-mountains',
+        intro: 'La géologie calcaire des Causses conditionne fortement les besoins en ouvrages de stockage de l\'eau.',
+        groups: [
+          G(null, ['Plateaux calcaires.', 'Réseau karstique.', 'Infiltration rapide.', 'Rareté des eaux superficielles.', 'Sources ponctuelles.', 'Besoin de stockage des précipitations.']),
+        ],
+      },
+      {
+        title: "Collecte de l'eau",
+        icon: 'ph ph-cloud-rain',
+        intro: "La toiture des bâtiments et certaines surfaces minérales peuvent servir d'impluvium.",
+        groups: [
+          G(null, ['Toiture en lauzes.', 'Toiture en tuiles.', 'Dalles calcaires.', 'Cour aménagée.', 'Gouttière.', "Canal d'amenée."]),
+        ],
+      },
+      {
+        title: 'Construction de la cuve',
+        icon: 'ph ph-cube',
+        intro: 'La réserve doit être suffisamment étanche et protégée pour conserver l\'eau pendant plusieurs semaines ou plusieurs mois.',
+        groups: [
+          G(null, ['Cuve enterrée.', 'Cuve semi-enterrée.', 'Maçonnerie en pierre.', 'Dalles calcaires.', 'Mortier de chaux.', 'Parois épaisses.', "Protection contre l'évaporation."]),
+        ],
+      },
+      {
+        title: 'Couverture',
+        icon: 'ph ph-house',
+        intro: 'La couverture protège la réserve et permet de maintenir une température plus stable dans la cuve.',
+        groups: [
+          G(null, ['Voûte en pierre.', 'Dalle calcaire.', 'Couverture maçonnée.', 'Petite ouverture de puisage.', 'Protection contre les débris.']),
+        ],
+      },
+      {
+        title: 'Usage pastoral',
+        icon: 'ph ph-sheep',
+        intro: "L'abreuvement des troupeaux constitue une fonction importante des citernes installées au contact des parcours et des parcelles agricoles.",
+        groups: [
+          G(null, ['Élevage ovin.', 'Abreuvement.', 'Auge monolithe.', 'Parcours pastoraux.', 'Bétail éloigné de la ferme.', 'Réserve d\'eau en période sèche.']),
+        ],
+      },
+      {
+        title: 'Association avec les bâtiments agricoles',
+        icon: 'ph ph-buildings',
+        intro: 'La citerne peut être intégrée à une construction agricole ou implantée immédiatement à proximité.',
+        groups: [
+          G(null, ['Grangette-bergerie.', 'Bergerie.', 'Grange.', 'Maison rurale.', 'Mur de parcelle.', 'Auge associée.']),
+        ],
+      },
+      {
+        title: 'Citerne et grangette',
+        icon: 'ph ph-house-line',
+        intro: 'Certaines grangettes des Causses associent directement le bâtiment agricole à une citerne destinée à récupérer l\'eau de pluie.',
+        groups: [
+          G(null, ["Citerne sous ou près de l'escalier.", 'Récupération de l\'eau du toit.', 'Auge pour le bétail.', 'Réserve pour les périodes sèches.', 'Complément de la grangette-bergerie des Causses.']),
+        ],
+      },
+      {
+        title: 'Implantation dans le paysage',
+        icon: 'ph ph-map-pin',
+        intro: "La position de la citerne est déterminée par la disponibilité d'une surface de collecte et par les besoins de l'exploitation.",
+        groups: [
+          G(null, ['Parcelle agricole.', 'Pâturage.', "Proximité d'une grangette.", "Proximité d'une bergerie.", 'Bordure de chemin.', 'Secteur dépourvu de source permanente.']),
+        ],
+      },
+      {
+        title: 'Relation avec la pierre sèche',
+        icon: 'ph ph-wall',
+        intro: 'La citerne s\'inscrit dans le même système constructif et paysager que les murets, cazelles et grangettes en pierre sèche des Causses.',
+        groups: [
+          G(null, ['Calcaire local.', 'Dalles de couverture.', 'Maçonnerie sèche possible.', 'Économie de matériaux.', "Réemploi des pierres issues de l'épierrement."]),
+        ],
+      },
+      {
+        title: "Gestion traditionnelle de l'eau",
+        icon: 'ph ph-arrows-clockwise',
+        intro: 'La citerne participe à une stratégie plus large de récupération et d\'économie de l\'eau dans les territoires caussenards.',
+        groups: [
+          G(null, ['Récupération des précipitations.', 'Stockage saisonnier.', 'Limitation des déplacements vers les sources.', 'Abreuvement du bétail.', 'Entretien régulier.', 'Gestion collective ou familiale selon les sites.']),
+        ],
+      },
+      {
+        title: 'Évolution historique',
+        icon: 'ph ph-clock',
+        intro: "Les citernes ont perdu une partie de leur fonction quotidienne avec l'amélioration des réseaux d'adduction d'eau au XXe siècle.",
+        groups: [
+          G(null, ['Usage agricole traditionnel.', 'Modernisation des exploitations.', "Développement des réseaux d'eau.", 'Abandon progressif.', 'Conservation patrimoniale.', 'Restauration possible des ouvrages.']),
+        ],
+      },
+      {
+        title: 'Distinction avec le puits',
+        icon: 'ph ph-info',
+        intro: "La citerne stocke principalement l'eau recueillie à la surface tandis que le puits exploite une nappe ou une réserve souterraine naturelle.",
+        groups: [
+          G(null, ['Citerne : eau de pluie stockée.', 'Puits : prélèvement dans le sous-sol.', 'Citerne : dépend des précipitations.', "Puits : dépend de la présence d'une nappe ou d'un réseau souterrain accessible."]),
+        ],
+      },
+      {
+        title: 'Distinction avec la citerne domestique',
+        icon: 'ph ph-info',
+        intro: 'La citerne de causse est ici considérée comme une architecture vernaculaire liée au paysage agricole et pastoral plutôt qu\'une simple installation domestique.',
+        groups: [
+          G(null, ['Citerne de causse : implantation rurale ou pastorale.', 'Fonction agricole importante.', 'Collecte associée aux bâtiments ou aux impluviums.', 'Usage possible pour le bétail.', 'Relation directe avec le paysage caussenard.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La combinaison d'une cuve protégée, d'un système de collecte des précipitations et d'une implantation dans le paysage calcaire permet d'identifier cette typologie.",
+        groups: [
+          G(null, ['Cuve enterrée ou semi-enterrée.', "Collecte de l'eau de pluie.", 'Couverture en pierre.', 'Impluvium ou toiture collectrice.', 'Auge possible.', 'Association avec les bâtiments pastoraux.', 'Contexte calcaire des Causses.', "Fonction d'abreuvement."]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
