@@ -24214,6 +24214,236 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'chaletalpagejurassien',
+    name: "Chalet d'alpage jurassien",
+    region: 'Bourgogne-Franche-Comté · Jura · Haut-Jura',
+    periode: 'XVIIIe siècle – début du XXe siècle',
+    procede:
+      "Bâtiment d'estive destiné à accueillir temporairement les bergers, les troupeaux et les activités de transformation du lait pendant la saison de pâturage. Le chalet traditionnel associe généralement une partie destinée à la fabrication et à la conservation du fromage, une ou plusieurs étables et des espaces de vie rudimentaires. Les constructions anciennes utilisent la pierre locale pour les murs et le bois pour la charpente, les planchers, les menuiseries et les couvertures traditionnelles en tavaillons. L'organisation et la forme de la toiture varient selon les secteurs du massif jurassien.",
+    usage: 'Habitat saisonnier, élevage bovin, transformation du lait et fabrication fromagère',
+    categorie: 'montagne',
+    gps: '46.55° N, 6.05° E',
+    altitude: '900–1400 m',
+    climat: 'Montagnard continental',
+    typeToiture: 'Toiture à deux ou quatre pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa et sapin',
+    typeFondation: 'Soubassement maçonné en pierre locale',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Faible à moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le chalet d'alpage jurassien est un bâtiment d'estive installé dans les pâturages du Haut-Jura pour accueillir les troupeaux pendant la belle saison et transformer leur lait sur place. Il constitue un élément essentiel de l'ancien système pastoral et fromager jurassien. Les formes traditionnelles comprennent notamment une cuisine ou salle de fabrication, un laitier, une cave à fromage et des espaces réservés au bétail. Les premiers chalets étaient particulièrement rustiques ; les formes plus évoluées ont reçu une cheminée et parfois un étage. Les constructions utilisent principalement la pierre et le bois et peuvent être couvertes de tavaillons. Le bâtiment est étroitement associé à son environnement de pâturages, de forêts et de murets de pierres sèches.",
+    identite: [
+      ['Période', 'XVIIIe siècle – début du XXe siècle'],
+      ['Région', 'Jura · Haut-Jura · massif jurassien'],
+      ['Usage', 'Estive, élevage et fabrication fromagère'],
+      ['Implantation', "Pâturages et alpages d'altitude"],
+      ['Organisation', 'Fabrication fromagère, logement saisonnier et espaces pour le bétail'],
+      ['Système', 'Maçonnerie en pierre et structure traditionnelle en bois'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Toiture', 'Deux ou quatre pans selon les secteurs'],
+      ['Particularité', 'Association entre estive, élevage laitier et transformation du lait sur place'],
+    ],
+    materiaux: ['Pierre calcaire', 'Pierre locale', 'Bois', 'Épicéa', 'Sapin', 'Chêne', 'Chaux', 'Tavaillons', 'Bardeaux de bois', 'Lauze', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Salle de fabrication',
+        txt: "Espace dans lequel le lait est transformé en fromage pendant la période d'estive.",
+      },
+      {
+        n: 2,
+        el: 'Laitier',
+        txt: 'Local frais destiné notamment à la conservation temporaire du lait avant sa transformation.',
+      },
+      {
+        n: 3,
+        el: 'Cave à fromage',
+        txt: "Espace destiné à la conservation et aux premières phases d'affinage des fromages.",
+      },
+      {
+        n: 4,
+        el: 'Étable',
+        txt: 'Espace destiné au logement des vaches pendant les périodes de traite et lors des conditions météorologiques défavorables.',
+      },
+      {
+        n: 5,
+        el: 'Logement des bergers',
+        txt: "Espace rudimentaire destiné au repos et à la vie quotidienne des personnes présentes sur l'alpage.",
+      },
+      {
+        n: 6,
+        el: 'Foyer',
+        txt: 'Foyer utilisé notamment pour chauffer le lait dans le chaudron lors de la fabrication traditionnelle du fromage.',
+      },
+      {
+        n: 7,
+        el: 'Cheminée',
+        txt: "Dans les formes évoluées, la cheminée permet l'évacuation des fumées produites par le foyer.",
+      },
+      {
+        n: 8,
+        el: 'Mur en pierre',
+        txt: 'La maçonnerie locale protège les espaces intérieurs et assure la stabilité du bâtiment.',
+      },
+      {
+        n: 9,
+        el: 'Couverture en tavaillons',
+        txt: 'Les tavaillons ou bardeaux de bois constituent une couverture traditionnelle particulièrement adaptée aux ressources forestières du massif.',
+      },
+      {
+        n: 10,
+        el: 'Pâturage',
+        txt: "Le chalet est directement associé aux prairies d'estive exploitées par les troupeaux pendant la belle saison.",
+      },
+    ],
+    sections: [
+      {
+        title: "Architecture d'estive",
+        icon: 'ph ph-mountains',
+        intro: "Le chalet est conçu pour une occupation saisonnière au cœur des pâturages d'altitude.",
+        groups: [
+          G(null, ['Occupation saisonnière.', "Pâturage d'altitude.", 'Logement des bergers.', 'Élevage.', 'Transformation du lait.']),
+        ],
+      },
+      {
+        title: 'Fabrication fromagère',
+        icon: 'ph ph-cheese',
+        intro: 'La transformation du lait sur place constitue l\'une des caractéristiques majeures du chalet jurassien traditionnel.',
+        groups: [
+          G(null, ['Traite.', 'Réception du lait.', 'Chauffage.', 'Caillage.', 'Fabrication du fromage.']),
+        ],
+      },
+      {
+        title: 'Laitier et cave',
+        icon: 'ph ph-thermometer-cold',
+        intro: 'Les locaux frais jouent un rôle essentiel dans la conservation du lait et des fromages.',
+        groups: [
+          G(null, ['Laitier.', 'Cave.', 'Température stable.', 'Conservation.', 'Humidité contrôlée.']),
+        ],
+      },
+      {
+        title: 'Élevage bovin',
+        icon: 'ph ph-cow',
+        intro: "Le bâtiment accompagne directement l'activité pastorale et l'élevage laitier.",
+        groups: [
+          G(null, ['Vaches laitières.', 'Écurie.', 'Traite.', 'Pâturage.', 'Fourrage.']),
+        ],
+      },
+      {
+        title: 'Organisation intérieure',
+        icon: 'ph ph-layout',
+        intro: 'Le chalet regroupe plusieurs fonctions complémentaires dans un bâtiment relativement compact.',
+        groups: [
+          G(null, ['Cuisine.', 'Laitier.', 'Cave à fromage.', 'Étable.', 'Logement.']),
+        ],
+      },
+      {
+        title: 'Construction en pierre',
+        icon: 'ph ph-wall',
+        intro: 'La pierre locale constitue le matériau principal des murs des chalets traditionnels.',
+        groups: [
+          G(null, ['Pierre calcaire.', 'Moellons.', 'Mortier de chaux.', 'Crépi.', 'Murs épais.']),
+        ],
+      },
+      {
+        title: 'Architecture en bois',
+        icon: 'ph ph-tree',
+        intro: 'Les ressources forestières du Jura fournissent la charpente et de nombreux éléments du bâtiment.',
+        groups: [
+          G(null, ['Épicéa.', 'Sapin.', 'Charpente.', 'Planchers.', 'Menuiseries.']),
+        ],
+      },
+      {
+        title: 'Tavaillons',
+        icon: 'ph ph-house-line',
+        intro: "Les couvertures traditionnelles en petits éléments de bois constituent un marqueur important de l'architecture d'estive jurassienne.",
+        groups: [
+          G(null, ['Tavaillons.', 'Bardeaux.', 'Bois fendu.', 'Protection contre les intempéries.', 'Ressource forestière locale.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-caret-down',
+        intro: "La forme de la toiture varie selon les secteurs du massif et l'évolution historique des chalets.",
+        groups: [
+          G(null, ['Deux pans.', 'Quatre pans.', 'Forte pente.', 'Tavaillons.', 'Débord de toiture.']),
+        ],
+      },
+      {
+        title: 'Foyer et cheminée',
+        icon: 'ph ph-fire',
+        intro: "Le foyer constitue un élément central de l'ancienne activité fromagère.",
+        groups: [
+          G(null, ['Chaudron.', 'Chauffage du lait.', 'Fumée.', 'Cheminée.', 'Cuisson du fromage.']),
+        ],
+      },
+      {
+        title: 'Eau',
+        icon: 'ph ph-drop',
+        intro: "L'approvisionnement en eau constitue une contrainte importante de l'installation pastorale.",
+        groups: [
+          G(null, ['Source.', 'Citerne.', 'Récupération des eaux.', 'Abreuvement.', 'Nettoyage.']),
+        ],
+      },
+      {
+        title: 'Pâturages',
+        icon: 'ph ph-plant',
+        intro: 'Le chalet forme avec les pâturages et les espaces forestiers un système pastoral cohérent.',
+        groups: [
+          G(null, ['Estive.', 'Prairies.', 'Pâturage boisé.', 'Forêt.', 'Murets de pierres sèches.']),
+        ],
+      },
+      {
+        title: 'Vie des bergers',
+        icon: 'ph ph-person-simple-walk',
+        intro: "Les personnes présentes sur l'alpage vivaient et travaillaient directement dans le chalet pendant la saison estivale.",
+        groups: [
+          G(null, ['Berger.', 'Fromager.', 'Traite.', 'Fabrication.', 'Surveillance du troupeau.']),
+        ],
+      },
+      {
+        title: 'Distinction avec le chalet savoyard',
+        icon: 'ph ph-arrows-left-right',
+        intro: "Le chalet jurassien possède une organisation historiquement très liée à la transformation fromagère collective ou familiale sur l'alpage.",
+        groups: [
+          G(null, ['Jura.', 'Estive.', 'Laitier.', 'Cave à fromage.', 'Fabrication sur place.']),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: 'La modernisation de l\'élevage et de la production fromagère a entraîné la disparition ou la reconversion de nombreux chalets.',
+        groups: [
+          G(null, ["Fin de l'estive traditionnelle.", 'Modernisation.', 'Abandon.', 'Réhabilitation.', 'Patrimonialisation.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'association du bâtiment d'estive, de l'étable et des locaux de fabrication fromagère constitue le principal critère d'identification.",
+        groups: [
+          G(null, [
+            "Chalet d'estive.",
+            "Pâturage d'altitude.",
+            'Étable.',
+            'Cuisine fromagère.',
+            'Laitier.',
+            'Cave à fromage.',
+            'Pierre.',
+            'Bois.',
+            'Tavaillons.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
