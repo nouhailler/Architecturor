@@ -24444,6 +24444,251 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisonvigneronnejurassienne',
+    name: 'Maison vigneronne jurassienne',
+    region: 'Bourgogne-Franche-Comté · Jura · Vignoble jurassien · Revermont',
+    periode: 'XVIe siècle – début du XXe siècle',
+    procede:
+      "Maison rurale spécialisée dans la viticulture, regroupant dans un même bâtiment l'habitation et les principaux locaux nécessaires à la production et à la conservation du vin. Dans le Revermont, la forme traditionnelle se caractérise fréquemment par une cave enterrée ou semi-enterrée, accessible depuis la rue par un escalier extérieur ou un trappon, et par une habitation surélevée desservie par un escalier et parfois une galerie ou un balcon en pierre. Selon les secteurs et les ressources du propriétaire, une grange et une étable peuvent compléter l'ensemble pour former une maison de polyculteur-vigneron. Les bâtiments sont généralement construits en pierre calcaire avec des charpentes en bois et des toitures à deux pans.",
+    usage: 'Habitation, viticulture, vinification, stockage et parfois polyculture-élevage',
+    categorie: 'rural',
+    gps: '46.75° N, 5.65° E',
+    altitude: '250–500 m',
+    climat: 'Semi-continental à influence montagnarde',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Épicéa, sapin et chêne',
+    typeFondation: 'Soubassement maçonné en pierre calcaire',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Faible',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIe', 'XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La maison vigneronne jurassienne constitue l'une des formes architecturales les plus caractéristiques du vignoble du Jura et du Revermont. Elle associe directement l'habitation du vigneron aux espaces nécessaires au travail de la vigne et à la conservation du vin. La cave, souvent enterrée ou semi-enterrée afin de bénéficier d'une température et d'une hygrométrie relativement stables, occupe généralement la partie basse du bâtiment. L'habitation est fréquemment surélevée et accessible par un escalier extérieur en pierre, parfois prolongé par un perron ou une galerie. Une lucarne peut desservir le grenier. Dans les exploitations pratiquant également l'élevage et la polyculture, une grange et une étable peuvent compléter le bâtiment. Les grandes exploitations viticoles peuvent quant à elles s'organiser autour d'une cour. Cette diversité constitue une caractéristique importante de l'habitat viticole jurassien.",
+    identite: [
+      ['Période', 'XVIe siècle – début du XXe siècle'],
+      ['Région', 'Jura · Revermont · vignoble jurassien'],
+      ['Usage', 'Habitation et exploitation viticole'],
+      ['Implantation', 'Villages viticoles, coteaux et pieds de coteaux'],
+      ['Organisation', 'Cave viticole en partie basse et habitation surélevée'],
+      ['Système', 'Maçonnerie en pierre et structure traditionnelle en bois'],
+      ['Matériau dominant', 'Pierre calcaire'],
+      ['Toiture', 'Toiture à deux pans'],
+      ['Particularité', "Escalier extérieur donnant accès à l'habitation au-dessus d'une cave ou d'un cellier"],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellon calcaire', 'Pierre de taille', 'Bois', 'Chêne', 'Épicéa', 'Sapin', 'Chaux', 'Tuiles', 'Fer forgé'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Cave viticole',
+        txt: 'La cave constitue le principal espace de travail et de conservation du vin. Elle peut être enterrée, semi-enterrée ou située au niveau inférieur du bâtiment.',
+      },
+      {
+        n: 2,
+        el: 'Escalier extérieur',
+        txt: "L'escalier en pierre permet d'accéder directement à l'habitation sans traverser la cave ou les espaces de vinification.",
+      },
+      {
+        n: 3,
+        el: 'Perron ou galerie',
+        txt: 'Le palier supérieur peut former un perron ou une galerie servant à la distribution de l\'habitation.',
+      },
+      {
+        n: 4,
+        el: 'Habitation surélevée',
+        txt: 'Les pièces de vie sont fréquemment implantées au-dessus de la cave afin de dissocier les fonctions domestiques et viticoles.',
+      },
+      {
+        n: 5,
+        el: 'Porte de cave',
+        txt: "L'accès à la cave est souvent situé au niveau de la rue ou légèrement en contrebas et peut présenter un encadrement en pierre.",
+      },
+      {
+        n: 6,
+        el: 'Lucarne',
+        txt: 'Une lucarne en toiture permet d\'accéder au grenier et de monter le petit matériel ou certaines récoltes.',
+      },
+      {
+        n: 7,
+        el: 'Grange',
+        txt: "Dans les maisons mixtes, la grange accueille le matériel agricole et peut également servir d'espace de cuvage.",
+      },
+      {
+        n: 8,
+        el: 'Étable',
+        txt: 'Les maisons de polyculteurs-vignerons peuvent comporter une petite étable destinée au bétail nécessaire à l\'économie domestique.',
+      },
+      {
+        n: 9,
+        el: 'Treille',
+        txt: 'Une treille peut accompagner la façade et constitue à la fois un élément fonctionnel, décoratif et un marqueur de l\'activité viticole.',
+      },
+      {
+        n: 10,
+        el: 'Mur en pierre',
+        txt: "Les murs en pierre calcaire locale constituent l'enveloppe traditionnelle de la maison vigneronne.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Architecture viticole',
+        icon: 'ph ph-grape',
+        intro: "La maison vigneronne est organisée autour des besoins spécifiques de la culture de la vigne et de la production du vin.",
+        groups: [
+          G(null, ['Vigne.', 'Vendange.', 'Vinification.', 'Élevage du vin.', 'Mise en bouteille.']),
+        ],
+      },
+      {
+        title: 'Cave',
+        icon: 'ph ph-wine',
+        intro: 'La cave constitue le cœur productif de la maison et bénéficie de conditions thermiques favorables à la conservation du vin.',
+        groups: [
+          G(null, ['Cave enterrée.', 'Cave semi-enterrée.', 'Cellier.', 'Fûts.', 'Vieillissement.']),
+        ],
+      },
+      {
+        title: 'Escalier extérieur',
+        icon: 'ph ph-stairs',
+        intro: "L'escalier extérieur est l'un des éléments les plus caractéristiques de nombreuses maisons vigneronnes du Revermont.",
+        groups: [
+          G(null, ['Pierre.', 'Perron.', 'Palier.', 'Galerie.', 'Accès indépendant.']),
+        ],
+      },
+      {
+        title: 'Habitation surélevée',
+        icon: 'ph ph-house',
+        intro: 'L\'habitation est fréquemment installée au-dessus de la cave et accessible depuis l\'extérieur.',
+        groups: [
+          G(null, ['Cuisine.', 'Pièces de vie.', 'Chambres.', 'Grenier.', 'Accès surélevé.']),
+        ],
+      },
+      {
+        title: 'Vinification',
+        icon: 'ph ph-wine',
+        intro: 'La partie basse du bâtiment accueille les opérations liées à la transformation et à la conservation de la vendange.',
+        groups: [
+          G(null, ['Pressurage.', 'Cuvage.', 'Vinification.', 'Élevage.', 'Stockage.']),
+        ],
+      },
+      {
+        title: 'Maison de polyculteur-vigneron',
+        icon: 'ph ph-farm',
+        intro: "Dans les secteurs où la vigne ne suffisait pas aux besoins de la famille, la maison pouvait intégrer des fonctions d'élevage et de polyculture.",
+        groups: [
+          G(null, ['Vigne.', 'Élevage.', 'Céréales.', 'Grange.', 'Étable.']),
+        ],
+      },
+      {
+        title: 'Grenier',
+        icon: 'ph ph-warehouse',
+        intro: 'Le grenier situé sous la toiture permettait de stocker du petit matériel, du bois et certaines productions.',
+        groups: [
+          G(null, ['Lucarne.', 'Stockage.', 'Petit matériel.', 'Bois de chauffage.', 'Foin selon les variantes.']),
+        ],
+      },
+      {
+        title: 'Pierre du Revermont',
+        icon: 'ph ph-wall',
+        intro: 'La pierre calcaire locale constitue le matériau traditionnel dominant des maisons du vignoble.',
+        groups: [
+          G(null, ['Calcaire.', 'Moellons.', 'Pierre de taille.', 'Chaux.', 'Enduit.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: 'La couverture protège les volumes d\'habitation et de stockage et comporte fréquemment une lucarne caractéristique.',
+        groups: [
+          G(null, ['Deux pans.', 'Tuiles.', 'Charpente en bois.', 'Lucarne.', 'Débord de toiture.']),
+        ],
+      },
+      {
+        title: 'Façade viticole',
+        icon: 'ph ph-buildings',
+        intro: 'La façade traduit directement la séparation verticale entre les fonctions viticoles et domestiques.',
+        groups: [
+          G(null, ['Porte de cave.', 'Escalier extérieur.', 'Perron.', "Fenêtres d'habitation.", 'Lucarne.']),
+        ],
+      },
+      {
+        title: 'Treille',
+        icon: 'ph ph-plant',
+        intro: 'La treille constitue un élément fréquent des façades vigneronnes et rappelle directement la fonction viticole du bâtiment.',
+        groups: [
+          G(null, ['Vigne de table.', 'Ombrage.', 'Façade.', 'Structure métallique ou bois.', 'Symbolique viticole.']),
+        ],
+      },
+      {
+        title: 'Implantation dans le vignoble',
+        icon: 'ph ph-map-pin',
+        intro: 'La maison vigneronne est particulièrement associée aux villages implantés sur les coteaux et au pied des reliefs du Revermont.',
+        groups: [
+          G(null, ['Revermont.', 'Coteaux.', 'Pied de coteau.', 'Village viticole.', 'Vignoble.']),
+        ],
+      },
+      {
+        title: 'Variantes régionales',
+        icon: 'ph ph-arrows-left-right',
+        intro: "La forme varie selon le relief, la localisation dans le vignoble et l'évolution économique des exploitations.",
+        groups: [
+          G(null, [
+            'Deux travées.',
+            'Une travée.',
+            'Cave enterrée.',
+            'Cave semi-enterrée.',
+            'Escalier parallèle à la façade.',
+            'Galerie.',
+            'Maison mixte.',
+          ]),
+        ],
+      },
+      {
+        title: 'Grandes exploitations',
+        icon: 'ph ph-buildings',
+        intro: 'Les exploitations viticoles importantes pouvaient se développer en plusieurs bâtiments organisés autour d\'une cour.',
+        groups: [
+          G(null, ['Cour fermée.', 'Cave.', 'Grange.', 'Écurie.', 'Logis.', 'Architecture plus massive.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la ferme-bloc',
+        icon: 'ph ph-arrows-left-right',
+        intro: "La maison vigneronne se distingue par la prédominance de la viticulture et par l'organisation spécifique de la cave et de l'habitation surélevée.",
+        groups: [
+          G(null, ['Cave viticole.', 'Habitation surélevée.', 'Escalier extérieur.', 'Vigne.', 'Vinification.']),
+        ],
+      },
+      {
+        title: 'Patrimoine viticole',
+        icon: 'ph ph-bank',
+        intro: 'La maison vigneronne constitue un élément majeur du patrimoine bâti du vignoble jurassien.',
+        groups: [
+          G(null, ['Arbois.', 'Poligny.', 'Château-Chalon.', 'Revermont.', 'Villages viticoles.', 'Patrimoine rural.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La cave viticole, l'escalier extérieur et l'habitation surélevée permettent généralement d'identifier la maison vigneronne jurassienne.",
+        groups: [
+          G(null, [
+            'Cave enterrée ou semi-enterrée.',
+            'Escalier extérieur en pierre.',
+            'Habitation surélevée.',
+            'Perron ou galerie.',
+            'Lucarne.',
+            'Pierre calcaire.',
+            'Vigne.',
+            'Grange ou étable dans les variantes mixtes.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
