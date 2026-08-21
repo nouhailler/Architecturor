@@ -25360,6 +25360,227 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisoncouralsacienne',
+    name: 'Maison à cour alsacienne',
+    region: 'Alsace · Bas-Rhin · Haut-Rhin',
+    periode: 'XVIIIe siècle – début du XXe siècle',
+    procede:
+      "Maison rurale et villageoise traditionnelle organisée autour d'une cour, généralement implantée sur une parcelle étroite et profonde. Le logis principal est associé à plusieurs bâtiments ou ailes destinés aux activités agricoles, artisanales ou viticoles. Selon les secteurs, la cour peut être largement ouverte sur la rue ou relativement fermée par un portail et des bâtiments secondaires. Les constructions utilisent principalement la maçonnerie, le bois, le torchis et la brique selon les périodes et les secteurs. Les façades peuvent présenter des colombages, notamment sur les niveaux supérieurs, tandis que les rez-de-chaussée sont fréquemment maçonnés.",
+    usage: 'Habitation, exploitation agricole, artisanat et activités rurales',
+    categorie: 'rural',
+    gps: '48.35° N, 7.45° E',
+    altitude: '150–400 m',
+    climat: 'Semi-continental rhénan',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Chêne et résineux',
+    typeFondation: 'Soubassement maçonné en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La maison à cour alsacienne constitue une forme d'habitat traditionnel dans laquelle le logement et les fonctions économiques de la parcelle s'organisent autour d'un espace central. Cette disposition permet de regrouper l'habitation, la grange, l'étable, les remises et diverses dépendances tout en ménageant un espace de travail protégé. La cour peut être ouverte vers la rue ou fermée par un portail monumental. Dans les villages viticoles, l'organisation peut intégrer des espaces liés à la vinification et au stockage. La maison à cour se distingue de la ferme-bloc par la séparation plus nette des volumes et par leur organisation autour d'un espace central.",
+    identite: [
+      ['Période', 'XVIIIe siècle – début du XXe siècle'],
+      ['Région', 'Alsace · plaine rhénane et piémont des Vosges'],
+      ['Usage', 'Habitation et activités rurales'],
+      ['Implantation', 'Village, rue principale ou secondaire'],
+      ['Organisation', "Logis et dépendances disposés autour d'une cour"],
+      ['Système', 'Ensemble de bâtiments indépendants ou accolés'],
+      ['Matériau dominant', 'Pierre, bois, torchis et brique'],
+      ['Toiture', 'Toitures à deux pans'],
+      ['Particularité', 'Cour centrale organisant les fonctions domestiques et agricoles'],
+    ],
+    materiaux: ['Grès', 'Calcaire', 'Moellon', 'Brique', 'Bois', 'Torchis', 'Chaux', 'Tuiles plates', 'Tuiles mécaniques', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Logis',
+        txt: "Bâtiment principal destiné à l'habitation de la famille.",
+      },
+      {
+        n: 2,
+        el: 'Cour',
+        txt: "Espace central autour duquel s'organisent les différents bâtiments de la propriété.",
+      },
+      {
+        n: 3,
+        el: 'Grange',
+        txt: 'Bâtiment destiné au stockage du foin, des céréales et du matériel agricole.',
+      },
+      {
+        n: 4,
+        el: 'Étable',
+        txt: "Local destiné au logement des animaux de l'exploitation.",
+      },
+      {
+        n: 5,
+        el: 'Dépendance',
+        txt: "Bâtiment secondaire destiné au stockage, à l'artisanat ou à diverses fonctions agricoles.",
+      },
+      {
+        n: 6,
+        el: 'Portail',
+        txt: "Accès principal à la cour pouvant être monumental et participer à l'identité de la propriété.",
+      },
+      {
+        n: 7,
+        el: 'Colombage',
+        txt: 'Ossature de bois visible ou partiellement enduite pouvant caractériser les étages du logis.',
+      },
+      {
+        n: 8,
+        el: 'Rez-de-chaussée maçonné',
+        txt: "Le niveau inférieur est fréquemment construit en pierre ou en brique afin de résister à l'humidité et aux sollicitations.",
+      },
+      {
+        n: 9,
+        el: 'Toiture',
+        txt: 'Les différents bâtiments sont généralement couverts de toitures à deux pans.',
+      },
+      {
+        n: 10,
+        el: 'Cave',
+        txt: 'Dans les secteurs viticoles, une cave peut être intégrée au logis ou installée dans une dépendance donnant sur la cour.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Organisation autour de la cour',
+        icon: 'ph ph-square',
+        intro: "La cour constitue l'élément organisateur de la propriété et distribue les différents bâtiments.",
+        groups: [
+          G(null, ['Cour centrale.', 'Logis.', 'Grange.', 'Étable.', 'Dépendances.']),
+        ],
+      },
+      {
+        title: 'Parcelle villageoise',
+        icon: 'ph ph-map-pin',
+        intro: 'La maison occupe généralement une parcelle étroite et profonde caractéristique des villages alsaciens.',
+        groups: [
+          G(null, ['Parcelle étroite.', 'Parcelle profonde.', 'Alignement sur rue.', 'Bâtiments arrière.', 'Cour.']),
+        ],
+      },
+      {
+        title: 'Logis',
+        icon: 'ph ph-house',
+        intro: 'Le logis constitue le bâtiment résidentiel principal de l\'ensemble.',
+        groups: [
+          G(null, ['Habitation.', 'Cuisine.', 'Chambres.', 'Séjour.', 'Grenier.']),
+        ],
+      },
+      {
+        title: 'Dépendances agricoles',
+        icon: 'ph ph-warehouse',
+        intro: "Les bâtiments secondaires regroupent les fonctions nécessaires à l'exploitation.",
+        groups: [
+          G(null, ['Grange.', 'Étable.', 'Remise.', 'Grange à foin.', 'Atelier.']),
+        ],
+      },
+      {
+        title: 'Colombage',
+        icon: 'ph ph-tree',
+        intro: 'Le colombage peut apparaître sur les façades du logis et de certaines dépendances.',
+        groups: [
+          G(null, ['Ossature bois.', 'Torchis.', 'Poutres.', 'Poteaux.', 'Décharge.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie',
+        icon: 'ph ph-wall',
+        intro: 'Les parties basses des bâtiments sont fréquemment réalisées en maçonnerie.',
+        groups: [
+          G(null, ['Pierre.', 'Grès.', 'Calcaire.', 'Brique.', 'Enduit à la chaux.']),
+        ],
+      },
+      {
+        title: 'Portail et accès',
+        icon: 'ph ph-door-open',
+        intro: "Le portail marque la transition entre la rue et l'espace domestique de la cour.",
+        groups: [
+          G(null, ['Portail.', 'Porte charretière.', 'Porte piétonne.', 'Mur de clôture.', 'Accès agricole.']),
+        ],
+      },
+      {
+        title: 'Activités viticoles',
+        icon: 'ph ph-grape',
+        intro: 'Dans le vignoble alsacien, certaines maisons à cour intègrent des fonctions liées à la production et au stockage du vin.',
+        groups: [
+          G(null, ['Cave.', 'Pressoir.', 'Cellier.', 'Stockage.', 'Vinification.']),
+        ],
+      },
+      {
+        title: 'Activités artisanales',
+        icon: 'ph ph-hammer',
+        intro: 'La disposition autour de la cour permettait également d\'intégrer de petites activités artisanales.',
+        groups: [
+          G(null, ['Atelier.', 'Stockage.', 'Artisanat familial.', 'Commerce local.', 'Production.']),
+        ],
+      },
+      {
+        title: 'Toitures',
+        icon: 'ph ph-house-line',
+        intro: 'Les différents corps de bâtiments possèdent généralement des toitures à deux pans adaptées aux fortes précipitations de la région.',
+        groups: [
+          G(null, ['Deux pans.', 'Tuiles.', 'Charpente bois.', 'Débord.', 'Gouttières.']),
+        ],
+      },
+      {
+        title: 'Cour de travail',
+        icon: 'ph ph-arrows-out-cardinal',
+        intro: 'La cour constitue un espace polyvalent pour les activités domestiques, agricoles et artisanales.',
+        groups: [
+          G(null, ['Manœuvre.', 'Stockage.', 'Travail agricole.', 'Accès aux dépendances.', 'Séchage.']),
+        ],
+      },
+      {
+        title: 'Rapport à la rue',
+        icon: 'ph ph-road-horizon',
+        intro: 'La maison participe à la constitution des fronts bâtis continus caractéristiques de nombreux villages alsaciens.',
+        groups: [
+          G(null, ['Alignement.', 'Pignon.', 'Mur sur rue.', 'Portail.', 'Front bâti.']),
+        ],
+      },
+      {
+        title: 'Évolution',
+        icon: 'ph ph-clock',
+        intro: "La modernisation des exploitations et l'évolution des usages ont entraîné de nombreuses transformations des dépendances.",
+        groups: [
+          G(null, ['Transformation.', 'Extension.', 'Réhabilitation.', "Changement d'usage.", 'Logement.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la ferme-bloc',
+        icon: 'ph ph-arrows-left-right',
+        intro: 'La maison à cour se distingue de la ferme-bloc par la séparation plus nette des volumes et leur disposition autour d\'un espace central.',
+        groups: [
+          G(null, ['Volumes séparés.', 'Cour.', 'Dépendances indépendantes.', 'Organisation horizontale.', 'Parcelle profonde.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'organisation du logis et des dépendances autour d'une cour constitue le principal critère d'identification de cette typologie.",
+        groups: [
+          G(null, [
+            'Cour centrale.',
+            'Logis.',
+            'Grange.',
+            'Étable.',
+            'Dépendances.',
+            'Portail.',
+            'Parcelle profonde.',
+            'Colombage.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
