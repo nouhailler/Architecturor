@@ -23993,6 +23993,227 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'grangeetablejurassienne',
+    name: 'Grange-étable jurassienne',
+    region: 'Bourgogne-Franche-Comté · Jura · massif jurassien',
+    periode: 'XVIIIe siècle – début du XXe siècle',
+    procede:
+      "Bâtiment agricole associant sous un même volume une grange destinée au stockage et à la manutention du foin et des récoltes, et une étable destinée au logement du bétail. Cette organisation répond aux contraintes du climat jurassien et à l'économie pastorale des plateaux, fondée notamment sur l'élevage bovin laitier. La grange occupe généralement la partie haute ou centrale du bâtiment tandis que l'étable est installée dans la partie basse. La construction utilise principalement la pierre locale pour les murs et le bois pour la charpente, les planchers et les éléments de fermeture. Le bâtiment peut être indépendant du logis ou intégré à une exploitation plus vaste.",
+    usage: 'Stockage du foin, logement du bétail et activités agricoles',
+    categorie: 'rural',
+    gps: '46.75° N, 6.05° E',
+    altitude: '500–1100 m',
+    climat: 'Montagnard continental',
+    typeToiture: 'Toiture à deux pans fortement inclinée',
+    penteToit: 'Forte',
+    essenceBois: 'Épicéa, sapin et chêne',
+    typeFondation: 'Soubassement maçonné en pierre calcaire',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La grange-étable jurassienne est un bâtiment agricole spécialisé associant deux fonctions essentielles de l'exploitation traditionnelle : le stockage du fourrage et l'hébergement du bétail. Elle est particulièrement adaptée aux secteurs de moyenne montagne et aux plateaux jurassiens où les longs hivers imposaient de constituer d'importantes réserves de foin. Le volume de grange et de fenil est généralement situé au-dessus ou à proximité immédiate de l'étable, ce qui facilite la distribution du fourrage aux animaux. Le bâtiment peut être isolé, constituer une annexe d'une ferme ou s'intégrer à un ensemble plus complexe. Sa forte toiture, ses murs maçonnés et ses importantes ouvertures agricoles témoignent de son adaptation aux contraintes climatiques et fonctionnelles.",
+    identite: [
+      ['Période', 'XVIIIe siècle – début du XXe siècle'],
+      ['Région', 'Jura · Haut-Jura · plateaux jurassiens'],
+      ['Usage', 'Stockage du fourrage et élevage bovin'],
+      ['Implantation', 'Prairies, hameaux, villages et exploitations isolées'],
+      ['Organisation', 'Grange et fenil associés à une étable'],
+      ['Système', 'Maçonnerie en pierre et charpente traditionnelle en bois'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Toiture', 'Toiture à deux pans fortement inclinée'],
+      ['Particularité', "Superposition ou juxtaposition des espaces de stockage du foin et de l'étable"],
+    ],
+    materiaux: ['Pierre calcaire', 'Pierre locale', 'Bois', 'Épicéa', 'Sapin', 'Chêne', 'Chaux', 'Tuiles', 'Lauze', 'Ardoise', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Grange',
+        txt: 'Grand espace agricole destiné à la réception, à la manutention et au stockage du fourrage et des récoltes.',
+      },
+      {
+        n: 2,
+        el: 'Fenil',
+        txt: "Volume supérieur destiné principalement au stockage du foin nécessaire à l'alimentation hivernale du bétail.",
+      },
+      {
+        n: 3,
+        el: 'Étable',
+        txt: "Espace inférieur destiné à l'hébergement des bovins pendant la période hivernale.",
+      },
+      {
+        n: 4,
+        el: 'Porte de grange',
+        txt: "Large ouverture permettant l'entrée des charrettes, du fourrage et du matériel agricole.",
+      },
+      {
+        n: 5,
+        el: 'Ouverture du fenil',
+        txt: "Ouverture située en hauteur permettant l'introduction et la manutention du foin.",
+      },
+      {
+        n: 6,
+        el: 'Râtelier',
+        txt: "Dispositif permettant de distribuer le fourrage aux animaux depuis l'espace de stockage.",
+      },
+      {
+        n: 7,
+        el: 'Mangeoire',
+        txt: "Équipement disposé dans l'étable pour la distribution du fourrage au bétail.",
+      },
+      {
+        n: 8,
+        el: 'Mur en pierre',
+        txt: 'Maçonnerie massive destinée à assurer la stabilité du bâtiment et à protéger les animaux contre le froid.',
+      },
+      {
+        n: 9,
+        el: 'Charpente',
+        txt: 'Structure traditionnelle en bois supportant la couverture et les importants volumes de stockage.',
+      },
+      {
+        n: 10,
+        el: 'Débord de toiture',
+        txt: 'Saillie de la couverture protégeant les murs et les accès contre les précipitations.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Grange et fenil',
+        icon: 'ph ph-warehouse',
+        intro: "Le stockage du fourrage constitue l'une des fonctions fondamentales du bâtiment.",
+        groups: [
+          G(null, ['Foin.', 'Fourrage.', 'Fenil.', 'Récoltes.', 'Stockage hivernal.']),
+        ],
+      },
+      {
+        title: 'Étable',
+        icon: 'ph ph-cow',
+        intro: "L'étable accueille le bétail pendant la période froide et le protège des conditions climatiques difficiles.",
+        groups: [
+          G(null, ['Bovins.', 'Logement hivernal.', 'Mangeoires.', 'Râteliers.', 'Litière.']),
+        ],
+      },
+      {
+        title: 'Superposition fonctionnelle',
+        icon: 'ph ph-arrows-down-up',
+        intro: "Le rapprochement vertical ou horizontal de la grange et de l'étable facilite la distribution du fourrage.",
+        groups: [
+          G(null, ["Fenil au-dessus de l'étable.", 'Distribution directe.', 'Circulations courtes.', 'Économie de déplacement.', 'Organisation compacte.']),
+        ],
+      },
+      {
+        title: 'Élevage laitier',
+        icon: 'ph ph-cow',
+        intro: "Le bâtiment s'inscrit dans le système traditionnel d'élevage bovin des plateaux jurassiens.",
+        groups: [
+          G(null, ['Bovins.', 'Production laitière.', 'Pâturage.', 'Foin.', 'Hivernage.']),
+        ],
+      },
+      {
+        title: 'Stockage hivernal',
+        icon: 'ph ph-stack',
+        intro: 'Les longs hivers rendent nécessaire la constitution d\'importantes réserves de fourrage.',
+        groups: [
+          G(null, ['Foin.', 'Fourrage.', 'Réserves.', 'Fenil.', 'Hivernage du bétail.']),
+        ],
+      },
+      {
+        title: 'Architecture massive',
+        icon: 'ph ph-wall',
+        intro: 'Les murs en pierre locale assurent robustesse et protection thermique.',
+        groups: [
+          G(null, ['Pierre calcaire.', 'Murs épais.', 'Chaux.', 'Soubassement.', 'Inertie thermique.']),
+        ],
+      },
+      {
+        title: 'Charpente en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois provenant des forêts jurassiennes est largement utilisé pour la structure du bâtiment.',
+        groups: [
+          G(null, ['Épicéa.', 'Sapin.', 'Chêne.', 'Charpente.', 'Planchers.', 'Portes.']),
+        ],
+      },
+      {
+        title: 'Grande porte agricole',
+        icon: 'ph ph-door-open',
+        intro: 'Les dimensions importantes des accès répondent aux besoins de manutention du fourrage.',
+        groups: [
+          G(null, ['Charrette.', 'Fourrage.', 'Matériel agricole.', 'Chargement.', 'Déchargement.']),
+        ],
+      },
+      {
+        title: 'Toiture jurassienne',
+        icon: 'ph ph-house-line',
+        intro: "La couverture fortement inclinée protège les volumes agricoles contre les précipitations et l'enneigement.",
+        groups: [
+          G(null, ['Deux pans.', 'Forte pente.', 'Tuiles.', 'Lauze.', 'Ardoise.', 'Débord important.']),
+        ],
+      },
+      {
+        title: 'Ventilation',
+        icon: 'ph ph-wind',
+        intro: "L'aération des espaces agricoles contribue à maintenir des conditions adaptées au stockage du foin et au logement du bétail.",
+        groups: [
+          G(null, ['Aération.', 'Ouvertures hautes.', 'Ventilation naturelle.', "Évacuation de l'humidité.", 'Séchage du fourrage.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: 'Les granges-étables peuvent être intégrées aux exploitations ou implantées à proximité des prairies.',
+        groups: [
+          G(null, ['Prairies.', 'Hameaux.', 'Villages.', 'Plateaux.', 'Exploitations isolées.']),
+        ],
+      },
+      {
+        title: 'Relation avec la ferme-bloc',
+        icon: 'ph ph-arrows-left-right',
+        intro: "La grange-étable peut constituer une partie de la ferme-bloc mais se distingue lorsqu'elle forme un bâtiment agricole spécialisé sans fonction résidentielle dominante.",
+        groups: [
+          G(null, ['Fonction agricole.', 'Absence de logement nécessaire.', 'Grange.', 'Étable.', 'Bâtiment indépendant possible.']),
+        ],
+      },
+      {
+        title: 'Relation avec la ferme à tué',
+        icon: 'ph ph-fire',
+        intro: "La grange-étable est principalement définie par ses fonctions agricoles et ne dépend pas de la présence d'un tué.",
+        groups: [
+          G(null, ['Pas de tué nécessaire.', 'Stockage.', 'Élevage.', 'Fonction agricole.', 'Bâtiment spécialisé.']),
+        ],
+      },
+      {
+        title: 'Évolution des usages',
+        icon: 'ph ph-clock',
+        intro: 'La mécanisation et la modernisation des exploitations ont progressivement transformé les anciennes granges-étables.',
+        groups: [
+          G(null, ['Modernisation.', 'Extensions.', 'Transformation.', 'Abandon agricole.', 'Réhabilitation.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'association directe entre stockage du fourrage et logement du bétail constitue le principal critère d'identification.",
+        groups: [
+          G(null, [
+            'Grange.',
+            'Fenil.',
+            'Étable.',
+            'Grande porte.',
+            'Pierre locale.',
+            'Charpente en bois.',
+            'Toiture à deux pans.',
+            'Fonction agricole spécialisée.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
