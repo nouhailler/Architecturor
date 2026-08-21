@@ -431,6 +431,7 @@ export default function CarteTypologies() {
 
       {/* Sélecteur de région + typologies de la région choisie */}
       <div className={styles.regionSection}>
+        <div className={styles.catalogueTotal}>Catalogue complet : {TYPOLOGIES.length} typologies</div>
         <div className={styles.regionPickerRow}>
           <label htmlFor="region-picker" className={styles.regionPickerLabel}>Région</label>
           <div className={styles.comboWrap}>

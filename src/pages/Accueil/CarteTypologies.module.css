@@ -123,6 +123,11 @@
   gap: 14px;
 }
 
+.catalogueTotal {
+  font-size: 12px;
+  color: var(--color-neutral-500);
+}
+
 .regionPickerRow {
   display: flex;
   align-items: center;
