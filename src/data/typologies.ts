@@ -24918,6 +24918,227 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'cabordejurassienne',
+    name: 'Caborde jurassienne',
+    region: 'Jura · Vignoble jurassien · Revermont',
+    periode: 'XVIe siècle – début du XXe siècle',
+    procede:
+      "Petite construction rurale traditionnellement édifiée en pierre sèche, principalement dans les secteurs viticoles du Jura. Les cabordes sont constituées par empilement de pierres calcaires sans mortier, souvent récupérées lors de l'épierrement des parcelles. Elles sont généralement implantées au milieu ou en bordure des vignes et peuvent être associées aux murgers qui délimitent les parcelles. Leur fonction première était de fournir au vigneron un abri temporaire contre les intempéries et un espace pour déposer les outils et le petit matériel. Certaines cabordes pouvaient également servir ponctuellement d'abri aux bergers ou aux travailleurs agricoles.",
+    usage: 'Abri temporaire, stockage du petit matériel viticole et refuge contre les intempéries',
+    categorie: 'rural',
+    gps: '46.70° N, 5.60° E',
+    altitude: '250–500 m',
+    climat: 'Semi-continental',
+    typeToiture: 'Voûte ou couverture en pierre sèche',
+    penteToit: 'Variable selon la forme de la couverture',
+    essenceBois: 'Aucune structure principale en bois',
+    typeFondation: 'Assise directement sur le sol ou sur un soubassement en pierre',
+    typeCharpente: 'Sans charpente traditionnelle dans les formes voûtées',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Faible',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIe', 'XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La caborde jurassienne est une petite construction en pierre sèche caractéristique des paysages viticoles du Jura, notamment du Revermont et du Premier Plateau. Construite sans mortier à partir des pierres calcaires extraites des terres agricoles et viticoles, elle constitue un témoignage direct des anciennes pratiques d'épierrement et de mise en valeur des coteaux. La caborde servait principalement d'abri au vigneron et de lieu de stockage pour les outils. Elle pouvait être intégrée ou accolée à un murger, formant avec celui-ci un ensemble fonctionnel particulièrement caractéristique du paysage jurassien. Les cabordes présentent des formes variables, généralement compactes, avec une ouverture unique et une couverture en pierre sèche formant parfois une voûte ou une toiture conique selon les secteurs.",
+    identite: [
+      ['Période', 'XVIe siècle – début du XXe siècle'],
+      ['Région', 'Jura · Revermont · Premier Plateau · vignoble jurassien'],
+      ['Usage', 'Abri du vigneron et stockage des outils'],
+      ['Implantation', 'Parcelles viticoles, coteaux et murgers'],
+      ['Organisation', 'Petit volume indépendant à ouverture unique'],
+      ['Système', 'Maçonnerie traditionnelle en pierre sèche'],
+      ['Matériau dominant', 'Calcaire local'],
+      ['Toiture', 'Voûte ou couverture en pierre sèche selon les variantes'],
+      ['Particularité', 'Construction sans mortier étroitement associée aux murgers et au vignoble'],
+    ],
+    materiaux: ['Calcaire', 'Pierre sèche', 'Dalles calcaires', "Pierres d'épierrement"],
+    annotations: [
+      {
+        n: 1,
+        el: 'Mur en pierre sèche',
+        txt: 'Les pierres sont empilées sans mortier et organisées de manière à assurer la stabilité de la construction.',
+      },
+      {
+        n: 2,
+        el: 'Entrée',
+        txt: "Une ouverture généralement étroite permet d'accéder à l'abri depuis la parcelle viticole.",
+      },
+      {
+        n: 3,
+        el: 'Voûte',
+        txt: 'Certaines cabordes utilisent une couverture construite par encorbellement successif des pierres.',
+      },
+      {
+        n: 4,
+        el: 'Aire intérieure',
+        txt: "L'espace intérieur réduit permettait de se mettre à l'abri et de déposer temporairement du matériel.",
+      },
+      {
+        n: 5,
+        el: 'Murger',
+        txt: "Les cabordes peuvent être implantées dans le prolongement ou à proximité des murets de pierre sèche issus de l'épierrement.",
+      },
+      {
+        n: 6,
+        el: 'Parcelle viticole',
+        txt: 'La caborde est directement associée aux anciennes parcelles de vigne du Revermont et des autres secteurs viticoles du Jura.',
+      },
+      {
+        n: 7,
+        el: "Pierre d'épierrement",
+        txt: 'Les matériaux utilisés proviennent souvent des pierres retirées des sols lors des travaux agricoles.',
+      },
+      {
+        n: 8,
+        el: 'Petit matériel',
+        txt: 'La construction permettait de conserver temporairement les outils nécessaires au travail de la vigne.',
+      },
+      {
+        n: 9,
+        el: 'Abri',
+        txt: 'La caborde protégeait les travailleurs de la pluie, du vent et du soleil pendant les travaux agricoles.',
+      },
+      {
+        n: 10,
+        el: 'Vigne',
+        txt: "L'implantation dans les parcelles viticoles constitue l'un des principaux éléments permettant d'identifier la typologie.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Architecture en pierre sèche',
+        icon: 'ph ph-wall',
+        intro: 'La caborde repose sur une technique de construction sans mortier utilisant les pierres disponibles sur place.',
+        groups: [
+          G(null, ['Pierre sèche.', 'Calcaire.', 'Empilement.', 'Stabilité par appareillage.', 'Absence de mortier.']),
+        ],
+      },
+      {
+        title: 'Vignoble jurassien',
+        icon: 'ph ph-grape',
+        intro: 'La caborde appartient au paysage viticole traditionnel du Jura.',
+        groups: [
+          G(null, ['Revermont.', 'Vignoble.', 'Coteaux.', 'Parcelles.', 'Vignerons.']),
+        ],
+      },
+      {
+        title: 'Abri du vigneron',
+        icon: 'ph ph-person',
+        intro: 'La fonction principale était de fournir un refuge temporaire aux personnes travaillant dans les vignes.',
+        groups: [
+          G(null, ['Protection contre la pluie.', 'Protection contre le vent.', 'Repos.', 'Pause.', 'Abri temporaire.']),
+        ],
+      },
+      {
+        title: 'Stockage des outils',
+        icon: 'ph ph-wrench',
+        intro: 'La caborde permettait de conserver à proximité des parcelles le petit matériel nécessaire au travail viticole.',
+        groups: [
+          G(null, ['Outils.', 'Matériel viticole.', 'Rangement.', 'Stockage temporaire.', 'Proximité des parcelles.']),
+        ],
+      },
+      {
+        title: 'Murgers',
+        icon: 'ph ph-arrows-out-cardinal',
+        intro: "Cabordes et murgers forment un système paysager issu de l'épierrement et de la mise en valeur des terres.",
+        groups: [
+          G(null, ['Murger.', 'Muret.', 'Pierre sèche.', 'Délimitation des parcelles.', 'Épierrement.']),
+        ],
+      },
+      {
+        title: 'Épierrement',
+        icon: 'ph ph-hammer',
+        intro: 'La construction utilise les pierres retirées des terres cultivées et des parcelles viticoles.',
+        groups: [
+          G(null, ['Pierres des champs.', 'Calcaire.', 'Nettoyage des parcelles.', 'Empilement.', 'Réutilisation.']),
+        ],
+      },
+      {
+        title: 'Forme compacte',
+        icon: 'ph ph-house-line',
+        intro: "Le volume intérieur est réduit au strict nécessaire pour l'abri et le stockage.",
+        groups: [
+          G(null, ['Petit volume.', 'Plan compact.', 'Ouverture unique.', 'Faible hauteur.', 'Épaisseur des murs.']),
+        ],
+      },
+      {
+        title: 'Couverture',
+        icon: 'ph ph-caret-up',
+        intro: 'La couverture est constituée de pierre sèche et peut prendre différentes formes selon les traditions locales.',
+        groups: [
+          G(null, ['Voûte.', 'Encourbement.', 'Dalles calcaires.', 'Pierre sèche.', 'Protection contre les intempéries.']),
+        ],
+      },
+      {
+        title: 'Implantation dans le paysage',
+        icon: 'ph ph-map-pin',
+        intro: 'La caborde est directement intégrée aux parcelles et aux structures de pierre du vignoble.',
+        groups: [
+          G(null, ['Coteau.', 'Vigne.', 'Murger.', 'Chemin rural.', 'Parcelle.']),
+        ],
+      },
+      {
+        title: 'Variantes locales',
+        icon: 'ph ph-arrows-left-right',
+        intro: 'La dénomination et la forme peuvent varier selon les secteurs du vignoble jurassien.',
+        groups: [
+          G(null, ['Caborde.', 'Caborne.', 'Cadole.', 'Capette.', 'Cabane de vigne.']),
+        ],
+      },
+      {
+        title: 'Relation au travail viticole',
+        icon: 'ph ph-plant',
+        intro: 'La construction témoigne d\'une époque où le travail de la vigne nécessitait une présence régulière dans les parcelles.',
+        groups: [
+          G(null, ['Taille.', 'Entretien.', 'Vendange.', 'Outils.', 'Travail manuel.']),
+        ],
+      },
+      {
+        title: 'Patrimoine du Revermont',
+        icon: 'ph ph-bank',
+        intro: "Les cabordes participent fortement à l'identité patrimoniale des paysages viticoles du Jura.",
+        groups: [
+          G(null, ['Revermont.', 'Premier Plateau.', 'Vignoble.', 'Pierre sèche.', 'Patrimoine rural.']),
+        ],
+      },
+      {
+        title: 'Fragilité du patrimoine',
+        icon: 'ph ph-warning',
+        intro: "L'abandon des pratiques traditionnelles d'épierrement et l'enfrichement menacent une partie de ce patrimoine.",
+        groups: [
+          G(null, ['Abandon.', 'Végétation.', 'Dégradation.', 'Restauration.', 'Entretien des murgers.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la maison vigneronne',
+        icon: 'ph ph-arrows-left-right',
+        intro: "La caborde est une construction fonctionnelle indépendante de très petite dimension, contrairement à la maison vigneronne qui combine habitation et activités viticoles.",
+        groups: [
+          G(null, ['Petit abri.', 'Pierre sèche.', 'Parcelle.', "Pas d'habitation permanente.", "Stockage d'outils."]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La petite taille, la construction en pierre sèche et l'association aux vignes et aux murgers permettent d'identifier facilement la caborde jurassienne.",
+        groups: [
+          G(null, [
+            'Pierre sèche.',
+            'Calcaire.',
+            'Petit volume.',
+            'Ouverture unique.',
+            'Vignoble.',
+            'Murger.',
+            'Abri du vigneron.',
+            'Stockage des outils.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
