@@ -25581,6 +25581,219 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisoncorseenhauteur',
+    name: 'Maison corse en hauteur',
+    region: 'Corse',
+    periode: 'XVIe siècle – début du XXe siècle',
+    procede:
+      "Maison traditionnelle corse développée verticalement sur plusieurs niveaux afin d'optimiser l'espace disponible dans les villages insulaires. Le rez-de-chaussée peut accueillir des fonctions agricoles, des réserves ou des espaces de travail tandis que les niveaux supérieurs sont consacrés à l'habitation. La construction utilise principalement la pierre locale : granite dans le centre et le sud de l'île, schiste dans le nord. Les murs épais, les petites ouvertures et l'organisation compacte répondent aux contraintes climatiques et aux conditions de vie des villages de montagne. Les escaliers peuvent être extérieurs ou occuper un espace intérieur réduit.",
+    usage: 'Habitation familiale, stockage et activités domestiques ou agricoles',
+    categorie: 'urbain',
+    gps: '42.15° N, 9.10° E',
+    altitude: '100–900 m',
+    climat: 'Méditerranéen montagnard',
+    typeToiture: 'Toiture à longs pans',
+    penteToit: 'Moyenne à forte',
+    essenceBois: 'Châtaignier, chêne et résineux selon les secteurs',
+    typeFondation: 'Fondations et soubassement en maçonnerie de pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIIe siècle',
+    difficulteIdentification: 'Faible à moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIe', 'XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La maison corse en hauteur constitue l'une des formes les plus caractéristiques de l'habitat traditionnel de l'île. Son développement vertical, parfois sur quatre ou cinq niveaux, permet de concentrer les fonctions domestiques et économiques sur une parcelle souvent limitée dans les villages établis sur les pentes. Le rez-de-chaussée et les niveaux bas peuvent être consacrés aux caves, réserves ou activités agricoles, tandis que les étages accueillent les espaces de vie. Les matériaux dépendent fortement de la géologie locale : granite dans une grande partie du centre et du sud, schiste dans le nord. Les façades présentent généralement des ouvertures relativement petites et une maçonnerie épaisse. La maison peut être isolée ou mitoyenne et s'insérer dans un tissu villageois dense.",
+    identite: [
+      ['Période', 'XVIe siècle – début du XXe siècle'],
+      ['Région', 'Corse'],
+      ['Usage', 'Habitation familiale et fonctions domestiques ou agricoles'],
+      ['Implantation', 'Villages, bourgs et villages de montagne'],
+      ['Organisation', 'Développement vertical sur plusieurs niveaux'],
+      ['Système', 'Maçonnerie traditionnelle en pierre locale'],
+      ['Matériau dominant', 'Granite ou schiste selon le secteur'],
+      ['Toiture', "Toiture à longs pans, généralement couverte de tuiles ou d'ardoises selon les régions"],
+      ['Particularité', 'Superposition verticale des fonctions sur une parcelle réduite'],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Moellon', 'Pierre de taille', 'Enduit', 'Chaux', 'Bois', 'Tuile creuse', 'Tuile mécanique', 'Ardoise'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Rez-de-chaussée',
+        txt: 'Le niveau bas peut accueillir des caves, réserves, espaces de travail ou fonctions agricoles.',
+      },
+      {
+        n: 2,
+        el: "Étages d'habitation",
+        txt: 'Les niveaux supérieurs regroupent les espaces de vie de la famille.',
+      },
+      {
+        n: 3,
+        el: 'Mur en pierre',
+        txt: 'La maçonnerie utilise la pierre disponible localement, principalement le granite ou le schiste.',
+      },
+      {
+        n: 4,
+        el: 'Petites ouvertures',
+        txt: 'Les ouvertures traditionnellement réduites limitent les échanges thermiques et protègent les espaces intérieurs.',
+      },
+      {
+        n: 5,
+        el: 'Escalier',
+        txt: "L'accès aux différents niveaux peut être assuré par un escalier extérieur ou par un dispositif intérieur compact.",
+      },
+      {
+        n: 6,
+        el: 'Façade',
+        txt: 'La façade présente une composition verticale adaptée au développement de la maison sur plusieurs niveaux.',
+      },
+      {
+        n: 7,
+        el: 'Toiture',
+        txt: 'La couverture protège le volume compact de la maison et varie selon les traditions et matériaux régionaux.',
+      },
+      {
+        n: 8,
+        el: 'Grenier',
+        txt: 'Le dernier niveau peut être utilisé pour le stockage des récoltes, des provisions ou du matériel.',
+      },
+      {
+        n: 9,
+        el: 'Cave',
+        txt: 'Les niveaux inférieurs peuvent abriter une cave destinée aux réserves alimentaires ou au vin.',
+      },
+      {
+        n: 10,
+        el: 'Parcelle étroite',
+        txt: "Le développement vertical permet de maximiser l'utilisation d'une emprise au sol limitée.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Développement vertical',
+        icon: 'ph ph-buildings',
+        intro: 'La maison corse exploite la hauteur plutôt que la largeur afin de concentrer plusieurs fonctions dans un volume compact.',
+        groups: [
+          G(null, ['Plusieurs niveaux.', 'Volume compact.', 'Emprise réduite.', 'Superposition des fonctions.', 'Habitation verticale.']),
+        ],
+      },
+      {
+        title: 'Organisation des niveaux',
+        icon: 'ph ph-stack',
+        intro: 'Les différentes fonctions de la maison sont réparties verticalement selon leur usage.',
+        groups: [
+          G(null, ['Cave.', 'Réserves.', 'Espace de travail.', 'Habitation.', 'Grenier.']),
+        ],
+      },
+      {
+        title: 'Granite',
+        icon: 'ph ph-cube',
+        intro: "Le granite constitue le matériau dominant dans une grande partie du centre et du sud de la Corse.",
+        groups: [
+          G(null, ['Granite.', 'Moellon.', 'Pierre de taille.', 'Maçonnerie.', 'Enduit.']),
+        ],
+      },
+      {
+        title: 'Schiste',
+        icon: 'ph ph-cube',
+        intro: "Le schiste est particulièrement caractéristique de nombreuses constructions traditionnelles du nord de l'île.",
+        groups: [
+          G(null, ['Schiste.', 'Moellon.', 'Ardoise.', 'Maçonnerie.', 'Pierre locale.']),
+        ],
+      },
+      {
+        title: 'Petites ouvertures',
+        icon: 'ph ph-windows',
+        intro: 'Les ouvertures relativement réduites participent à la protection des espaces intérieurs contre les conditions climatiques.',
+        groups: [
+          G(null, ['Fenêtres étroites.', 'Éclairage limité.', 'Protection solaire.', 'Protection thermique.', 'Épaisseur des murs.']),
+        ],
+      },
+      {
+        title: 'Escaliers',
+        icon: 'ph ph-stairs',
+        intro: 'La circulation verticale constitue un élément important de cette architecture développée sur plusieurs étages.',
+        groups: [
+          G(null, ['Escalier extérieur.', 'Escalier intérieur.', 'Distribution verticale.', 'Emprise réduite.', 'Accès aux étages.']),
+        ],
+      },
+      {
+        title: 'Village corse',
+        icon: 'ph ph-map-pin',
+        intro: "La maison en hauteur participe à la formation des villages accrochés aux pentes et aux reliefs de l'île.",
+        groups: [
+          G(null, ['Village de montagne.', 'Bourg.', 'Pente.', 'Densité bâtie.', 'Parcelle étroite.']),
+        ],
+      },
+      {
+        title: 'Cave et réserves',
+        icon: 'ph ph-archive',
+        intro: 'Les niveaux inférieurs permettent de conserver les denrées, le vin et différents biens nécessaires à la vie familiale.',
+        groups: [
+          G(null, ['Cave.', 'Cellier.', 'Réserves.', 'Vin.', 'Provisions.']),
+        ],
+      },
+      {
+        title: 'Vie familiale',
+        icon: 'ph ph-users-three',
+        intro: 'La maison pouvait accueillir une famille élargie et concentrer plusieurs générations dans un même bâtiment.',
+        groups: [
+          G(null, ['Famille élargie.', 'Plusieurs générations.', 'Habitation.', 'Cuisine.', 'Chambres.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: "Les couvertures varient selon les secteurs géologiques et les traditions locales de l'île.",
+        groups: [
+          G(null, ['Toit à longs pans.', 'Tuile creuse.', 'Tuile mécanique.', 'Ardoise.', 'Charpente bois.']),
+        ],
+      },
+      {
+        title: 'Adaptation au climat',
+        icon: 'ph ph-sun-dim',
+        intro: 'La compacité du bâtiment, l\'épaisseur des murs et les petites ouvertures participent à la régulation thermique.',
+        groups: [
+          G(null, ['Compacité.', 'Inertie thermique.', 'Protection solaire.', 'Protection contre le froid.', 'Murs épais.']),
+        ],
+      },
+      {
+        title: 'Implantation en pente',
+        icon: 'ph ph-mountains',
+        intro: 'Dans les villages de montagne, la construction verticale accompagne souvent la topographie accidentée.',
+        groups: [
+          G(null, ['Pente.', 'Dénivelé.', 'Terrassement.', 'Village étagé.', 'Relief.']),
+        ],
+      },
+      {
+        title: 'Variantes régionales',
+        icon: 'ph ph-map',
+        intro: 'L\'architecture domestique varie sensiblement entre le nord schisteux et les régions granitiques du centre et du sud.',
+        groups: [
+          G(null, ['Cap Corse.', 'Castagniccia.', 'Centre Corse.', 'Sud Corse.', 'Balagne.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "Le développement sur plusieurs niveaux, la maçonnerie en pierre locale et l'organisation compacte constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Maison en hauteur.',
+            'Plusieurs étages.',
+            'Granite.',
+            'Schiste.',
+            'Petites ouvertures.',
+            'Escalier extérieur.',
+            'Volume compact.',
+            'Village de montagne.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
