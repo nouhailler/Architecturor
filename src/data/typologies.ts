@@ -24689,6 +24689,235 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisonbressanejurassienne',
+    name: 'Maison bressane jurassienne',
+    region: 'Bourgogne-Franche-Comté · Jura · Bresse jurassienne',
+    periode: 'XVIIIe siècle – début du XXe siècle',
+    procede:
+      "Maison rurale traditionnelle de la Bresse jurassienne, généralement implantée sur une exploitation dispersée dans un paysage de bocage et de prairies humides. Le bâtiment associe habitation et fonctions agricoles dans des volumes relativement bas et allongés. Les constructions traditionnelles utilisent la terre, la brique, le bois et la pierre selon les secteurs. Les murs peuvent être constitués de briques, de torchis sur ossature bois ou de maçonnerie enduite. La toiture à deux pans, généralement largement débordante, protège les murs et les ouvertures. Les dépendances agricoles peuvent être accolées ou disposées à proximité du logis.",
+    usage: 'Habitation rurale, polyculture, élevage et stockage agricole',
+    categorie: 'rural',
+    gps: '46.80° N, 5.35° E',
+    altitude: '180–250 m',
+    climat: 'Semi-continental humide',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Moyenne',
+    essenceBois: 'Chêne, peuplier et résineux selon les éléments',
+    typeFondation: 'Soubassement maçonné ou fondations en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La maison bressane jurassienne constitue l'une des formes caractéristiques de l'habitat rural de la Bresse comtoise. Elle s'inscrit dans un paysage de fermes dispersées, de prairies, de haies et de zones humides. Son architecture privilégie des volumes horizontaux, une toiture à deux pans largement débordante et une organisation fonctionnelle adaptée à la polyculture et à l'élevage. Selon les secteurs et les périodes, les murs associent brique, terre crue, torchis, bois et pierre. L'habitation peut être accompagnée d'une grange, d'une étable, d'un fournil ou d'autres dépendances. Les maisons les plus anciennes témoignent d'une architecture utilisant largement les matériaux disponibles localement.",
+    identite: [
+      ['Période', 'XVIIIe siècle – début du XXe siècle'],
+      ['Région', 'Jura · Bresse jurassienne · Bresse comtoise'],
+      ['Usage', 'Habitation et exploitation agricole'],
+      ['Implantation', 'Fermes isolées, hameaux et paysage bocager'],
+      ['Organisation', 'Logis associé aux fonctions agricoles'],
+      ['Système', 'Brique, terre, bois et maçonnerie'],
+      ['Matériau dominant', 'Brique et terre selon les secteurs'],
+      ['Toiture', 'Toiture à deux pans largement débordante'],
+      ['Particularité', 'Architecture horizontale adaptée au paysage humide et bocager de la Bresse'],
+    ],
+    materiaux: ['Brique', 'Terre crue', 'Torchis', 'Bois', 'Chêne', 'Pierre', 'Moellon', 'Chaux', 'Tuile plate', 'Tuile mécanique'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Logis',
+        txt: "Partie résidentielle destinée à la vie quotidienne de la famille exploitante.",
+      },
+      {
+        n: 2,
+        el: 'Grange',
+        txt: 'Volume agricole destiné au stockage du foin, des récoltes et du matériel.',
+      },
+      {
+        n: 3,
+        el: 'Étable',
+        txt: 'Espace destiné au logement du bétail, généralement associé aux autres fonctions agricoles.',
+      },
+      {
+        n: 4,
+        el: 'Mur en brique',
+        txt: 'La brique constitue un matériau caractéristique de nombreux bâtiments ruraux de la Bresse comtoise.',
+      },
+      {
+        n: 5,
+        el: 'Torchis',
+        txt: 'Le torchis peut remplir une ossature en bois dans certaines constructions traditionnelles.',
+      },
+      {
+        n: 6,
+        el: 'Ossature bois',
+        txt: 'Le bois peut constituer la structure porteuse de certaines parties anciennes du bâtiment.',
+      },
+      {
+        n: 7,
+        el: 'Débord de toiture',
+        txt: 'La forte saillie de la toiture protège les murs et les ouvertures contre la pluie.',
+      },
+      {
+        n: 8,
+        el: 'Auvent',
+        txt: "Un auvent peut protéger l'entrée du logis ou certaines zones de travail.",
+      },
+      {
+        n: 9,
+        el: 'Fournil',
+        txt: "Certaines exploitations disposent d'un fournil séparé ou intégré aux dépendances.",
+      },
+      {
+        n: 10,
+        el: 'Cour agricole',
+        txt: 'La cour organise les circulations entre le logis, les bâtiments agricoles et les espaces de travail.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Architecture bressane',
+        icon: 'ph ph-house',
+        intro: "La maison bressane jurassienne est caractérisée par des volumes horizontaux et une forte adaptation aux conditions de la Bresse.",
+        groups: [
+          G(null, ['Volumes bas.', 'Plan allongé.', 'Toiture protectrice.', 'Matériaux locaux.', 'Organisation rurale.']),
+        ],
+      },
+      {
+        title: 'Bresse comtoise',
+        icon: 'ph ph-map-pin',
+        intro: "La typologie appartient au paysage rural de la Bresse jurassienne, marqué par l'habitat dispersé et le bocage.",
+        groups: [
+          G(null, ['Bresse jurassienne.', 'Bresse comtoise.', 'Bocage.', 'Prairies.', 'Fermes dispersées.']),
+        ],
+      },
+      {
+        title: 'Organisation agricole',
+        icon: 'ph ph-tractor',
+        intro: "Le bâtiment répond aux besoins d'une exploitation associant traditionnellement élevage et cultures.",
+        groups: [
+          G(null, ['Polyculture.', 'Élevage.', 'Foin.', 'Récoltes.', 'Matériel agricole.']),
+        ],
+      },
+      {
+        title: 'Brique',
+        icon: 'ph ph-bricks',
+        intro: "La brique cuite constitue un matériau important de l'architecture rurale bressane.",
+        groups: [
+          G(null, ['Brique pleine.', 'Maçonnerie.', 'Encadrements.', 'Murs.', 'Production locale.']),
+        ],
+      },
+      {
+        title: 'Terre et torchis',
+        icon: 'ph ph-wall',
+        intro: "Les techniques utilisant la terre témoignent de l'adaptation de l'architecture aux ressources disponibles localement.",
+        groups: [
+          G(null, ['Terre crue.', 'Torchis.', 'Ossature bois.', 'Enduit.', 'Matériaux locaux.']),
+        ],
+      },
+      {
+        title: 'Ossature en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois est utilisé pour les structures, les charpentes et certaines parties des façades traditionnelles.',
+        groups: [
+          G(null, ['Chêne.', 'Charpente.', 'Poteaux.', 'Poutres.', 'Ossature.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: 'La toiture joue un rôle majeur dans la protection des murs contre les précipitations.',
+        groups: [
+          G(null, ['Deux pans.', 'Débord important.', 'Tuiles.', 'Charpente bois.', 'Protection des façades.']),
+        ],
+      },
+      {
+        title: 'Habitat dispersé',
+        icon: 'ph ph-map',
+        intro: "L'habitat traditionnel de la Bresse est marqué par une forte dispersion des exploitations dans le paysage rural.",
+        groups: [
+          G(null, ['Ferme isolée.', 'Hameau.', 'Parcelle agricole.', 'Bocage.', 'Prairies.']),
+        ],
+      },
+      {
+        title: 'Paysage humide',
+        icon: 'ph ph-drop',
+        intro: 'L\'architecture s\'inscrit dans un environnement caractérisé par les sols humides, les prairies et les réseaux de fossés.',
+        groups: [
+          G(null, ['Zones humides.', 'Prairies.', 'Fossés.', 'Étangs.', 'Haies.']),
+        ],
+      },
+      {
+        title: 'Dépendances',
+        icon: 'ph ph-buildings',
+        intro: "Le logis peut être accompagné de nombreux bâtiments ou annexes agricoles.",
+        groups: [
+          G(null, ['Grange.', 'Étable.', 'Fournil.', 'Remise.', 'Hangar.']),
+        ],
+      },
+      {
+        title: 'Auvent et galerie',
+        icon: 'ph ph-columns',
+        intro: 'Les dispositifs couverts constituent des espaces intermédiaires entre le logement et les espaces extérieurs.',
+        groups: [
+          G(null, ['Auvent.', 'Galerie.', 'Protection contre la pluie.', 'Espace de travail.', 'Accès au logis.']),
+        ],
+      },
+      {
+        title: 'Cour agricole',
+        icon: 'ph ph-arrows-out-cardinal',
+        intro: 'La cour constitue un espace fonctionnel pour les activités agricoles quotidiennes.',
+        groups: [
+          G(null, ['Manœuvre.', 'Stockage temporaire.', 'Accès aux bâtiments.', 'Travail agricole.', 'Circulation.']),
+        ],
+      },
+      {
+        title: 'Rapport au paysage',
+        icon: 'ph ph-tree-evergreen',
+        intro: 'La maison bressane forme avec les haies, prairies et bâtiments agricoles un ensemble paysager cohérent.',
+        groups: [
+          G(null, ['Bocage.', 'Haies.', 'Prairies.', 'Arbres isolés.', 'Ferme dispersée.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la ferme jurassienne',
+        icon: 'ph ph-arrows-left-right',
+        intro: "La maison bressane se distingue des grandes fermes montagnardes du Jura par son architecture plus basse, son implantation dispersée et l'emploi important de la brique et de la terre.",
+        groups: [
+          G(null, ['Bresse.', 'Volumes horizontaux.', 'Brique.', 'Terre.', 'Bocage.', 'Plaine.']),
+        ],
+      },
+      {
+        title: 'Évolution',
+        icon: 'ph ph-clock',
+        intro: 'La modernisation agricole a entraîné la transformation ou l\'abandon de nombreuses dépendances traditionnelles.',
+        groups: [
+          G(null, ['Mécanisation.', 'Extensions.', 'Transformation.', 'Réhabilitation.', "Changement d'usage."]),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'association d'un volume bas et allongé, d'une toiture largement débordante et de matériaux comme la brique ou la terre permet de reconnaître cette architecture bressane.",
+        groups: [
+          G(null, [
+            'Bresse jurassienne.',
+            'Maison basse et allongée.',
+            'Toiture débordante.',
+            'Brique.',
+            'Torchis.',
+            'Bois.',
+            'Habitat dispersé.',
+            'Bocage.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
