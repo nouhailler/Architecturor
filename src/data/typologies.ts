@@ -25794,6 +25794,227 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'bergeriecorse',
+    name: 'Bergerie corse',
+    region: "Corse · intérieur de l'île · zones pastorales",
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Construction pastorale traditionnelle destinée principalement à l'abri des troupeaux et aux activités associées à l'élevage ovin et caprin. Les bergeries corses sont généralement édifiées en pierre locale, avec une maçonnerie épaisse et une couverture adaptée aux ressources et aux traditions du secteur. Leur implantation est étroitement liée aux parcours pastoraux, aux pâturages et aux espaces de montagne. Les formes varient selon les microrégions, depuis de petits bâtiments isolés jusqu'à des ensembles pastoraux comprenant plusieurs volumes.",
+    usage: 'Abri des troupeaux, traite, élevage pastoral et stockage',
+    categorie: 'agricole',
+    gps: '42.25° N, 9.10° E',
+    altitude: '300–1400 m',
+    climat: 'Méditerranéen montagnard',
+    typeToiture: 'Couverture traditionnelle en pierre, lauzes ou tuile selon les secteurs',
+    penteToit: 'Faible à moyenne',
+    essenceBois: 'Châtaignier et chêne, avec résineux selon les secteurs',
+    typeFondation: 'Assise directe sur le terrain ou soubassement en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois ou couverture en pierre selon les formes',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La bergerie corse constitue un élément majeur du patrimoine pastoral de l'île. Implantée à proximité des parcours et des pâturages, elle servait principalement à abriter les ovins ou les caprins et à organiser les travaux liés à l'élevage. La construction repose généralement sur la pierre disponible localement, notamment le granite dans une grande partie du centre et du sud et le schiste dans le nord. Certaines bergeries présentent une architecture particulièrement compacte et robuste, adaptée aux contraintes du relief et du climat. Selon les secteurs, elles peuvent être accompagnées d'espaces destinés à la traite, à la transformation du lait ou au stockage.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', "Corse · zones pastorales de l'intérieur"],
+      ['Usage', 'Élevage ovin et caprin'],
+      ['Implantation', 'Pâturages, montagnes, parcours pastoraux'],
+      ['Organisation', 'Petit bâtiment indépendant ou ensemble pastoral'],
+      ['Système', 'Maçonnerie traditionnelle en pierre'],
+      ['Matériau dominant', 'Granite ou schiste selon le secteur'],
+      ['Toiture', 'Pierre, lauzes ou couverture traditionnelle selon les secteurs'],
+      ['Particularité', "Architecture directement liée à l'économie pastorale insulaire"],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Calcaire', 'Moellon', 'Pierre sèche', 'Bois', 'Chaux', 'Lauzes', 'Terre'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Bergerie',
+        txt: 'Volume principal destiné à abriter les animaux pendant les périodes de repos ou de mauvais temps.',
+      },
+      {
+        n: 2,
+        el: 'Murs en pierre',
+        txt: 'La maçonnerie épaisse utilise les matériaux disponibles à proximité immédiate du site.',
+      },
+      {
+        n: 3,
+        el: 'Entrée',
+        txt: "L'ouverture principale permet le passage des animaux et facilite les opérations d'élevage.",
+      },
+      {
+        n: 4,
+        el: 'Espace de traite',
+        txt: 'Certains ensembles pastoraux comportent un espace adapté à la traite des animaux.',
+      },
+      {
+        n: 5,
+        el: 'Aire pastorale',
+        txt: 'L\'espace extérieur devant la bergerie sert aux déplacements, au tri et à la manipulation du troupeau.',
+      },
+      {
+        n: 6,
+        el: 'Toiture',
+        txt: 'La couverture protège le troupeau des intempéries et varie selon les traditions constructives locales.',
+      },
+      {
+        n: 7,
+        el: 'Pierre locale',
+        txt: 'Le granite, le schiste ou le calcaire sont employés selon la géologie du secteur.',
+      },
+      {
+        n: 8,
+        el: 'Ouvertures',
+        txt: 'Les ouvertures sont généralement limitées afin de protéger les animaux du vent et des intempéries.',
+      },
+      {
+        n: 9,
+        el: 'Réserve',
+        txt: "Un espace peut être consacré au stockage du matériel, du fourrage ou des produits issus de l'élevage.",
+      },
+      {
+        n: 10,
+        el: 'Parcours',
+        txt: 'La bergerie est directement associée aux espaces de pâturage et aux itinéraires traditionnels du troupeau.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Architecture pastorale',
+        icon: 'ph ph-house',
+        intro: "La bergerie est avant tout une construction fonctionnelle liée à l'élevage extensif.",
+        groups: [
+          G(null, ['Élevage.', 'Troupeau.', 'Abri.', 'Traite.', 'Stockage.']),
+        ],
+      },
+      {
+        title: 'Élevage ovin et caprin',
+        icon: 'ph ph-sheep',
+        intro: 'La bergerie accompagne traditionnellement l\'élevage des moutons et des chèvres.',
+        groups: [
+          G(null, ['Ovins.', 'Caprins.', 'Troupeau.', 'Agneaux.', 'Chevreaux.']),
+        ],
+      },
+      {
+        title: 'Pierre locale',
+        icon: 'ph ph-cube',
+        intro: 'La construction exploite les ressources minérales immédiatement disponibles.',
+        groups: [
+          G(null, ['Granite.', 'Schiste.', 'Calcaire.', 'Moellon.', 'Pierre sèche.']),
+        ],
+      },
+      {
+        title: 'Protection du troupeau',
+        icon: 'ph ph-shield',
+        intro: 'Le bâtiment protège les animaux contre les intempéries et certaines contraintes du milieu montagnard.',
+        groups: [
+          G(null, ['Vent.', 'Pluie.', 'Froid.', 'Soleil.', 'Prédateurs.']),
+        ],
+      },
+      {
+        title: 'Parcours pastoraux',
+        icon: 'ph ph-map',
+        intro: 'L\'implantation de la bergerie est directement déterminée par les parcours et les pâturages.',
+        groups: [
+          G(null, ['Pâturage.', 'Parcours.', 'Montagne.', 'Maquis.', 'Prairies.']),
+        ],
+      },
+      {
+        title: 'Traite',
+        icon: 'ph ph-drop',
+        intro: 'Certaines bergeries sont associées à des espaces permettant la traite et les premières opérations de transformation.',
+        groups: [
+          G(null, ['Traite.', 'Lait.', 'Fromage.', 'Élevage.', 'Transformation.']),
+        ],
+      },
+      {
+        title: 'Organisation du troupeau',
+        icon: 'ph ph-arrows-out-cardinal',
+        intro: "L'espace autour du bâtiment facilite la circulation et la gestion quotidienne des animaux.",
+        groups: [
+          G(null, ['Enclos.', 'Tri.', 'Déplacement.', 'Repos.', 'Surveillance.']),
+        ],
+      },
+      {
+        title: 'Construction compacte',
+        icon: 'ph ph-square',
+        intro: 'Les formes traditionnelles privilégient généralement des volumes simples et résistants.',
+        groups: [
+          G(null, ['Petit volume.', 'Plan simple.', 'Murs épais.', 'Faible ouverture.', 'Robustesse.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: 'La toiture constitue une protection essentielle contre les fortes précipitations et les variations climatiques.',
+        groups: [
+          G(null, ['Lauzes.', 'Pierre.', 'Tuile.', 'Charpente bois.', 'Débord.']),
+        ],
+      },
+      {
+        title: 'Économie pastorale',
+        icon: 'ph ph-plant',
+        intro: "La bergerie s'inscrit dans une économie fondée sur l'exploitation extensive des ressources naturelles.",
+        groups: [
+          G(null, ['Élevage.', 'Lait.', 'Fromage.', 'Viande.', 'Pâturage.']),
+        ],
+      },
+      {
+        title: 'Isolement',
+        icon: 'ph ph-mountains',
+        intro: 'Les bergeries sont souvent isolées au sein des territoires pastoraux, à distance des villages.',
+        groups: [
+          G(null, ['Montagne.', 'Maquis.', 'Parcours.', 'Isolement.', 'Transhumance.']),
+        ],
+      },
+      {
+        title: 'Variantes régionales',
+        icon: 'ph ph-map-pin',
+        intro: "Les matériaux et les formes varient selon les régions de l'île et les ressources disponibles.",
+        groups: [
+          G(null, ['Haute-Corse.', 'Corse-du-Sud.', 'Centre montagneux.', 'Cap Corse.', "Sud de l'île."]),
+        ],
+      },
+      {
+        title: 'Relation avec le pailler',
+        icon: 'ph ph-arrows-left-right',
+        intro: 'La bergerie et le pailler sont deux constructions pastorales distinctes, même si leurs fonctions peuvent parfois se compléter.',
+        groups: [
+          G(null, ['Bergerie.', 'Pailler.', 'Abri.', 'Stockage.', 'Élevage.']),
+        ],
+      },
+      {
+        title: 'Évolution',
+        icon: 'ph ph-clock',
+        intro: "La modernisation de l'élevage a entraîné la transformation ou l'abandon de nombreuses constructions pastorales traditionnelles.",
+        groups: [
+          G(null, ['Abandon.', 'Transformation.', 'Modernisation.', 'Réhabilitation.', 'Patrimoine.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "L'implantation dans un espace pastoral, le volume compact et la maçonnerie en pierre constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Bergerie.',
+            'Pierre locale.',
+            'Troupeau.',
+            'Pâturage.',
+            'Volume compact.',
+            'Murs épais.',
+            'Traite.',
+            'Parcours pastoral.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
