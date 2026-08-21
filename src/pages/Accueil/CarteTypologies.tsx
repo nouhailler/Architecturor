@@ -24,34 +24,42 @@ const GENERIC_REGION_TOKENS = new Set([
 
 const NATIONAL_GROUP = 'Toutes régions'
 
-/* Libellé affiché pour le groupe NATIONAL_GROUP : dans un sélecteur de région,
-   « Toutes régions » se lit comme « pas de filtre, tout afficher » alors qu'il
-   ne regroupe en réalité que les typologies sans région précise (portée
-   nationale). On garde la clé interne (utilisée par regionGroupOf, l'état
-   selectedRegion, etc.) mais on affiche un libellé moins ambigu. */
+/* Libellé affiché pour le groupe NATIONAL_GROUP. « Toutes régions » se
+   lirait comme « pas de filtre, tout afficher » alors qu'il ne regroupe en
+   réalité que les typologies sans région précise (portée nationale) — d'où
+   ce libellé distinct, et le fait qu'il ne s'agit pas d'une région à part
+   entière : il vit dans son propre contrôle, séparé du sélecteur Région
+   (voir NATIONAL_ITEMS ci-dessous), plutôt que mélangé à la liste des
+   régions. */
 const NATIONAL_GROUP_LABEL = 'Portée nationale'
-const regionDisplayLabel = (region: string) => (region === NATIONAL_GROUP ? NATIONAL_GROUP_LABEL : region)
 
 const regionGroupOf = (t: Typologie) => {
   const first = t.region.split(' · ')[0]
   return GENERIC_REGION_TOKENS.has(first) ? NATIONAL_GROUP : first
 }
 
+/* Régions nommées uniquement (sans le groupe « portée nationale »), triées
+   alphabétiquement — la première de la liste (« Alpes ») sert de sélection
+   par défaut, ce qui rend immédiatement lisible le fonctionnement du
+   sélecteur Région. */
 const REGION_GROUPS = (() => {
   const map = new Map<string, Typologie[]>()
   for (const t of TYPOLOGIES) {
     const key = regionGroupOf(t)
+    if (key === NATIONAL_GROUP) continue
     if (!map.has(key)) map.set(key, [])
     map.get(key)!.push(t)
   }
   for (const list of map.values()) list.sort((a, b) => a.name.localeCompare(b.name, 'fr'))
-  const entries = [...map.entries()].sort((a, b) => {
-    if (a[0] === NATIONAL_GROUP) return -1
-    if (b[0] === NATIONAL_GROUP) return 1
-    return a[0].localeCompare(b[0], 'fr')
-  })
+  const entries = [...map.entries()].sort((a, b) => a[0].localeCompare(b[0], 'fr'))
   return entries
 })()
+
+/* Typologies à portée nationale (sans région précise), affichées via leur
+   propre contrôle plutôt que comme une pseudo-région parmi d'autres. */
+const NATIONAL_ITEMS = TYPOLOGIES
+  .filter((t) => regionGroupOf(t) === NATIONAL_GROUP)
+  .sort((a, b) => a.name.localeCompare(b.name, 'fr'))
 
 /* Coordonnées des épingles dans le viewBox 0 0 1000 958 */
 const PINS = [
@@ -255,7 +263,11 @@ export default function CarteTypologies() {
   const navigate = useNavigate()
   const [maximized, setMaximized] = useState(false)
   const [selectedRegion, setSelectedRegion] = useState(REGION_GROUPS[0][0])
-  const selectedItems = REGION_GROUPS.find(([region]) => region === selectedRegion)?.[1] ?? []
+  const [nationalActive, setNationalActive] = useState(false)
+  const selectedItems = nationalActive
+    ? NATIONAL_ITEMS
+    : REGION_GROUPS.find(([region]) => region === selectedRegion)?.[1] ?? []
+  const selectedLabel = nationalActive ? NATIONAL_GROUP_LABEL : selectedRegion
   const [pickerOpen, setPickerOpen] = useState(false)
   const [hover, setHover] = useState<HoverState | null>(null)
   const [thumbFailed, setThumbFailed] = useState(false)
@@ -438,13 +450,26 @@ export default function CarteTypologies() {
             <select
               id="region-picker"
               className={styles.comboSelect}
-              value={selectedRegion}
-              onChange={(e) => setSelectedRegion(e.target.value)}
+              value={nationalActive ? '' : selectedRegion}
+              onChange={(e) => { setSelectedRegion(e.target.value); setNationalActive(false) }}
             >
               {REGION_GROUPS.map(([region, items]) => (
-                <option key={region} value={region}>{regionDisplayLabel(region)} · {items.length}</option>
+                <option key={region} value={region}>{region} · {items.length}</option>
               ))}
             </select>
+            <CaretDown size={13} className={styles.comboCaret} />
+          </div>
+
+          {/* Portée nationale : contrôle distinct, pas une région parmi d'autres */}
+          <div className={styles.comboWrap}>
+            <button
+              type="button"
+              className={`${styles.comboSelect} ${nationalActive ? styles.comboSelectActive : ''}`}
+              onClick={() => setNationalActive(true)}
+              aria-pressed={nationalActive}
+            >
+              {NATIONAL_GROUP_LABEL} · {NATIONAL_ITEMS.length}
+            </button>
             <CaretDown size={13} className={styles.comboCaret} />
           </div>
         </div>
@@ -457,7 +482,7 @@ export default function CarteTypologies() {
                 className={`${styles.comboSelect} ${styles.comboButton}`}
                 onClick={() => setPickerOpen(true)}
                 aria-haspopup="dialog"
-                aria-label={`Choisir une typologie parmi « ${regionDisplayLabel(selectedRegion)} »`}
+                aria-label={`Choisir une typologie parmi « ${selectedLabel} »`}
               >
                 Choisir parmi les {selectedItems.length} typologies…
               </button>
@@ -467,7 +492,7 @@ export default function CarteTypologies() {
             <Modal
               open={pickerOpen}
               onClose={() => setPickerOpen(false)}
-              title={regionDisplayLabel(selectedRegion)}
+              title={selectedLabel}
               subtitle={`${selectedItems.length} typologie${selectedItems.length > 1 ? 's' : ''}`}
             >
               <div className={styles.pickerList}>

@@ -130,6 +130,7 @@
 
 .regionPickerRow {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
 }
@@ -154,6 +155,7 @@
   position: relative;
   display: flex;
   flex: 1;
+  min-width: 180px;
 }
 
 .comboSelect {
@@ -184,6 +186,17 @@
 .comboButton {
   text-align: left;
   color: var(--color-neutral-400);
+}
+
+/* Bouton « Portée nationale » : même gabarit que le <select> Région mais
+   un vrai <button>, donc on force l'alignement du texte et l'état actif. */
+button.comboSelect {
+  text-align: left;
+}
+
+.comboSelectActive {
+  box-shadow: 0 0 0 2px var(--color-accent) inset, var(--shadow-sm);
+  color: var(--color-accent);
 }
 
 .pickerList {
