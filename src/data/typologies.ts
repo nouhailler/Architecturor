@@ -2074,7 +2074,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'jurassienne',
     name: 'Ferme à tué jurassienne',
-    region: 'Bourgogne-Franche-Comté · Jura · Haut-Doubs',
+    region: 'Jura · Haut-Doubs',
     periode: 'XVIIIe siècle – début du XXe siècle',
     procede:
       "Grande ferme rurale à organisation polyvalente, caractéristique des plateaux et hautes vallées du massif jurassien. Le bâtiment regroupe sous un même volume ou dans un ensemble fortement intégré le logement, l'étable, la grange et les espaces de stockage. Son élément le plus caractéristique est le tué, vaste conduit ou volume vertical en bois ou maçonné situé au-dessus de la cuisine et permettant notamment le fumage des viandes et la ventilation des fumées. Les murs sont généralement construits en pierre, tandis que la charpente et les éléments intérieurs utilisent le bois. La forte pente du toit et les importantes dimensions du bâtiment répondent au climat montagnard et aux besoins du stockage hivernal.",
@@ -7539,7 +7539,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'chaletalpage',
     name: "Chalet d'alpage savoyard",
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Bâtiment agricole saisonnier implanté dans les pâturages d'altitude et destiné principalement à l'hébergement temporaire des troupeaux, au logement des personnes chargées de leur garde et, dans certains cas, à la transformation du lait sur place. Le bâtiment associe généralement un soubassement maçonné ou en pierre à une partie supérieure largement construite en bois. Son organisation verticale et sa compacité répondent aux contraintes du climat montagnard.",
@@ -19897,7 +19897,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'maisonblocsavoyarde',
     name: 'Maison-bloc savoyarde',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Bâtiment rural regroupant dans un même volume les fonctions d'habitation et d'exploitation agricole. Selon les secteurs et les contraintes du terrain, le logement, l'étable, la grange et le fenil sont disposés côte à côte ou superposés. La construction associe généralement un soubassement en pierre à des parties en bois, avec une toiture adaptée aux fortes précipitations et à l'enneigement.",
@@ -20116,7 +20116,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'mazotsavoyard',
     name: 'Mazot savoyard',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Petit bâtiment annexe généralement construit en bois et destiné principalement au stockage et à la conservation de biens, de denrées, de semences, d'outils ou d'objets précieux. Le mazot est souvent installé à proximité d'une ferme ou d'une habitation mais séparé du bâtiment principal. Selon les secteurs, il peut être posé sur un soubassement maçonné ou sur des supports en pierre afin de limiter les remontées d'humidité et de protéger son contenu.",
@@ -20321,7 +20321,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'greniersavoyardindependant',
     name: 'Grenier savoyard indépendant',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Bâtiment agricole indépendant destiné principalement au stockage et à la conservation des récoltes, du grain, du foin, des semences ou de certains produits de l'exploitation. Implanté à proximité de la ferme ou dans le tissu des hameaux, il est généralement construit en bois sur un soubassement ou des supports en pierre. Sa séparation du bâtiment principal permet de créer un espace de stockage plus sec, ventilé et protégé.",
@@ -20525,7 +20525,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'scieriehydrauliquesavoyarde',
     name: 'Scierie hydraulique savoyarde',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVIIIe siècle – début du XXe siècle',
     procede:
       "Bâtiment de transformation du bois utilisant l'énergie hydraulique d'un cours d'eau, d'un bief ou d'une dérivation pour actionner une roue hydraulique puis, selon les périodes, une turbine ou un système mécanique de transmission. La scierie associe généralement un bâtiment couvert abritant les mécanismes et la zone de sciage à des espaces extérieurs destinés au stockage et à la manutention des grumes et des planches. Son implantation est étroitement liée à la disponibilité de l'eau et à la proximité des ressources forestières.",
@@ -20735,7 +20735,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'moulineausavoyard',
     name: 'Moulin à eau savoyard',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'Moyen Âge – début du XXe siècle',
     procede:
       "Bâtiment productif implanté sur un cours d'eau, un bief ou une dérivation afin d'utiliser l'énergie hydraulique pour entraîner une roue puis, selon les périodes, une turbine et un système de transmission mécanique. Le moulin savoyard associe généralement un bâtiment maçonné ou mixte à un dispositif hydraulique comprenant prise d'eau, canal d'amenée, mécanisme moteur et canal de fuite. Les installations peuvent être de petite taille et directement intégrées au tissu rural des vallées et des hameaux.",
@@ -20944,7 +20944,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'fourapainsavoyard',
     name: 'Four à pain savoyard',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Petit bâtiment ou construction maçonnée destinée à la cuisson collective ou familiale du pain. Le four est généralement constitué d'une chambre de cuisson voûtée en matériau réfractaire, précédée d'une bouche de four et d'un espace de travail. Il peut être intégré à une habitation, à une ferme ou, plus fréquemment dans les villages et hameaux, constituer un bâtiment communautaire indépendant. La construction utilise principalement la pierre locale, la terre cuite et des matériaux résistants à la chaleur.",
@@ -21136,7 +21136,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'maisonvigneronnesavoyarde',
     name: 'Maison vigneronne savoyarde',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Combe de Savoie · Avant-Pays savoyard',
+    region: 'Savoie · Combe de Savoie · Avant-Pays savoyard',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Maison rurale associant généralement habitation et fonctions liées à la culture de la vigne, avec espaces de vinification, de stockage et de conservation du vin. La construction s'adapte aux terrains en pente des coteaux viticoles et peut présenter une organisation verticale ou semi-enterrée permettant de bénéficier de conditions thermiques plus stables. Les matériaux associent pierre locale, bois et enduits à la chaux. Selon les secteurs, le bâtiment peut comporter une cave, un cellier, un pressoir, une grange ou des espaces de stockage directement associés au logement.",
@@ -21341,7 +21341,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'grangeafoinsavoyarde',
     name: 'Grange à foin savoyarde',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Bâtiment agricole destiné principalement au séchage et au stockage du foin produit dans les prairies de montagne. La grange est généralement implantée à proximité des prairies, des exploitations ou des hameaux et peut être associée à une étable ou constituer un bâtiment indépendant. Sa structure privilégie le bois pour la charpente et les parois, avec une organisation favorisant la ventilation naturelle du fourrage. Le niveau supérieur peut être largement ouvert ou muni de dispositifs permettant la circulation de l'air tandis que le niveau inférieur peut accueillir les animaux, du matériel ou des espaces de service selon les variantes locales.",
@@ -21560,7 +21560,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'sechoirfruitssavoyard',
     name: 'Séchoir à fruits savoyard',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Avant-Pays savoyard · Combe de Savoie',
+    region: 'Savoie · Avant-Pays savoyard · Combe de Savoie',
     periode: 'XVIIIe siècle – début du XXe siècle',
     procede:
       "Petit bâtiment ou espace spécialisé destiné au séchage naturel des fruits récoltés dans les vergers. La construction privilégie une bonne circulation de l'air tout en protégeant les fruits des précipitations. Selon les secteurs et les exploitations, le séchoir peut constituer un bâtiment indépendant, une dépendance agricole ou être aménagé dans une partie d'un bâtiment existant. Les dispositifs de ventilation, les ouvertures protégées et les claies ou étagères de séchage constituent ses principaux éléments fonctionnels.",
@@ -21773,7 +21773,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'fromageriealpage',
     name: "Fromagerie d'alpage",
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVIIe siècle – XXe siècle',
     procede:
       "Bâtiment pastoral destiné à la transformation sur place du lait produit par les troupeaux conduits en altitude pendant la saison estivale. La fromagerie peut être intégrée au chalet d'alpage ou constituer un espace spécialisé distinct. Son organisation répond aux différentes étapes de fabrication du fromage : réception et traite du lait, chauffage dans des cuves ou chaudrons, emprésurage, brassage, égouttage, moulage et stockage. La construction utilise principalement la pierre et le bois et doit assurer une bonne protection contre les variations climatiques ainsi que des conditions adaptées à la conservation des produits laitiers.",
@@ -21998,7 +21998,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'maisonfortesavoyarde',
     name: 'Maison forte savoyarde',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XIIIe siècle – XVIe siècle',
     procede:
       "Demeure rurale fortifiée appartenant généralement à une famille noble ou à un propriétaire disposant d'une certaine autorité foncière. La maison forte associe fonction résidentielle, contrôle du domaine et capacité défensive limitée. Elle est généralement construite en maçonnerie de pierre, avec des murs épais, des ouvertures réduites dans les parties basses, une organisation verticale et parfois une tour ou un volume dominant. Certaines maisons fortes sont implantées sur des positions légèrement surélevées ou à proximité d'anciens axes de circulation. Elles peuvent évoluer au cours des siècles vers des demeures moins défensives.",
@@ -22218,7 +22218,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'maisonvillagesavoyarde',
     name: 'Maison de village savoyarde',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Maison d'habitation implantée dans un village ou un hameau savoyard et intégrée à un tissu bâti relativement dense. Contrairement à l'habitat agricole dispersé, elle s'inscrit dans une organisation parcellaire contrainte par la pente, les voies de circulation et la proximité des autres constructions. Le bâtiment peut superposer ou juxtaposer plusieurs fonctions domestiques et agricoles, avec logement, cave, remise, grange ou espaces de stockage. La construction repose principalement sur des murs porteurs en pierre, des planchers et une charpente en bois, avec une toiture adaptée aux conditions climatiques locales.",
@@ -22437,7 +22437,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'chapelleruralesavoyarde',
     name: 'Chapelle rurale savoyarde',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVe siècle – début du XXe siècle',
     procede:
       "Petit édifice religieux implanté dans un village, un hameau, un vallon, un alpage ou à proximité d'un ancien chemin. La chapelle rurale savoyarde est généralement construite en maçonnerie de pierre locale et présente un plan simple, le plus souvent rectangulaire, parfois complété par une abside ou un chevet plus étroit. Une façade-pignon accueille généralement l'entrée et peut être surmontée d'un petit clocher-mur ou d'un clocheton. La construction privilégie la simplicité des volumes et l'adaptation au relief et aux conditions climatiques alpines.",
@@ -22664,7 +22664,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'oratoiresavoyard',
     name: 'Oratoire savoyard',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Petit édicule religieux de dévotion implanté dans les villages, hameaux, chemins, cols, pâturages et abords des habitations. L'oratoire savoyard est généralement constitué d'une petite construction maçonnée en pierre, abritant une niche destinée à recevoir une statue, une image religieuse ou un petit autel. Son architecture est réduite à l'essentiel : socle ou soubassement, corps maçonné, niche et couverture. Certains exemplaires peuvent être protégés par un petit toit à deux pans ou une couverture en pierre et présenter une croix, une inscription ou un décor peint.",
@@ -22891,7 +22891,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'grangecolonnesavoyarde',
     name: 'Grange à colonne savoyarde',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Alpes du Nord',
+    region: 'Savoie · Alpes du Nord',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Bâtiment agricole destiné principalement au stockage du foin et à l'abri du bétail, caractérisé par une organisation structurelle faisant intervenir des poteaux ou colonnes en bois à l'intérieur du volume. La structure porteuse permet de dégager ou de surélever les espaces de stockage et d'organiser verticalement la grange. La maçonnerie en pierre peut former le soubassement et les murs exposés tandis que le bois constitue un élément essentiel de la charpente et de la structure intérieure. Selon les secteurs et les altitudes, la grange peut être associée à une étable au niveau inférieur et à un fenil au niveau supérieur.",
@@ -23112,7 +23112,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'habitattraditionneltarentaise',
     name: 'Habitat traditionnel de Tarentaise',
-    region: 'Auvergne-Rhône-Alpes · Savoie · Tarentaise',
+    region: 'Savoie · Tarentaise',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Habitat montagnard traditionnel adapté aux vallées et versants de Tarentaise. La construction associe généralement une maçonnerie en pierre, des éléments porteurs et des circulations en bois, ainsi qu'une organisation verticale permettant de superposer les fonctions domestiques, agricoles et de stockage. Les bâtiments s'adaptent fortement à la pente et peuvent présenter plusieurs niveaux d'accès selon la topographie. L'habitation peut être associée à une grange, une étable, un fenil ou des espaces de stockage. La forme des constructions varie selon l'altitude, l'orientation, les ressources disponibles et les traditions locales.",
@@ -23333,7 +23333,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'fermeblocjurassienne',
     name: 'Ferme-bloc jurassienne',
-    region: 'Bourgogne-Franche-Comté · Jura · massif jurassien',
+    region: 'Jura · massif jurassien',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Grande construction rurale compacte regroupant sous un même volume ou dans un ensemble très resserré les principales fonctions de l'exploitation : logement, étable, grange, fenil et espaces de stockage. La ferme-bloc jurassienne est particulièrement adaptée aux plateaux et aux secteurs de moyenne montagne soumis à des hivers rigoureux. Les murs sont généralement réalisés en pierre locale, tandis que la charpente, les planchers et les éléments secondaires utilisent le bois. L'organisation intérieure privilégie la proximité fonctionnelle entre le logement et les espaces agricoles, avec des volumes importants destinés au stockage du foin nécessaire à l'hivernage du bétail.",
@@ -23546,7 +23546,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'fermecourjurassienne',
     name: 'Ferme à cour jurassienne',
-    region: 'Bourgogne-Franche-Comté · Jura · massif jurassien',
+    region: 'Jura · massif jurassien',
     periode: 'XVIIe siècle – début du XXe siècle',
     procede:
       "Ensemble rural organisé autour d'une cour centrale ou semi-fermée, regroupant plusieurs bâtiments destinés au logement, à l'élevage, au stockage et aux activités agricoles. Contrairement à la ferme-bloc, les fonctions peuvent être réparties entre plusieurs volumes distincts. Les bâtiments utilisent principalement la pierre locale pour les murs et le bois pour les charpentes, planchers et éléments secondaires. La cour constitue un espace de travail, de circulation et de distribution entre les différentes parties de l'exploitation.",
@@ -23775,7 +23775,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'fruitierejurassienne',
     name: 'Fruitière jurassienne',
-    region: 'Bourgogne-Franche-Comté · Jura · massif jurassien',
+    region: 'Jura · massif jurassien',
     periode: 'XVIIIe siècle – début du XXe siècle',
     procede:
       "Bâtiment collectif destiné à la collecte, à la transformation et à l'affinage initial du lait produit par les exploitations d'un village ou d'un hameau. La fruitière traditionnelle est généralement implantée au cœur du village afin de faciliter l'apport quotidien du lait. Elle associe des espaces de réception et de stockage du lait, une grande salle de fabrication équipée de cuves et de foyers de chauffe, ainsi que des espaces annexes. La construction utilise principalement la pierre et le bois, avec une organisation intérieure adaptée aux contraintes d'hygiène, de température et de ventilation nécessaires à la transformation fromagère.",
@@ -23996,7 +23996,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'grangeetablejurassienne',
     name: 'Grange-étable jurassienne',
-    region: 'Bourgogne-Franche-Comté · Jura · massif jurassien',
+    region: 'Jura · massif jurassien',
     periode: 'XVIIIe siècle – début du XXe siècle',
     procede:
       "Bâtiment agricole associant sous un même volume une grange destinée au stockage et à la manutention du foin et des récoltes, et une étable destinée au logement du bétail. Cette organisation répond aux contraintes du climat jurassien et à l'économie pastorale des plateaux, fondée notamment sur l'élevage bovin laitier. La grange occupe généralement la partie haute ou centrale du bâtiment tandis que l'étable est installée dans la partie basse. La construction utilise principalement la pierre locale pour les murs et le bois pour la charpente, les planchers et les éléments de fermeture. Le bâtiment peut être indépendant du logis ou intégré à une exploitation plus vaste.",
@@ -24217,7 +24217,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'chaletalpagejurassien',
     name: "Chalet d'alpage jurassien",
-    region: 'Bourgogne-Franche-Comté · Jura · Haut-Jura',
+    region: 'Jura · Haut-Jura',
     periode: 'XVIIIe siècle – début du XXe siècle',
     procede:
       "Bâtiment d'estive destiné à accueillir temporairement les bergers, les troupeaux et les activités de transformation du lait pendant la saison de pâturage. Le chalet traditionnel associe généralement une partie destinée à la fabrication et à la conservation du fromage, une ou plusieurs étables et des espaces de vie rudimentaires. Les constructions anciennes utilisent la pierre locale pour les murs et le bois pour la charpente, les planchers, les menuiseries et les couvertures traditionnelles en tavaillons. L'organisation et la forme de la toiture varient selon les secteurs du massif jurassien.",
@@ -24447,7 +24447,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'maisonvigneronnejurassienne',
     name: 'Maison vigneronne jurassienne',
-    region: 'Bourgogne-Franche-Comté · Jura · Vignoble jurassien · Revermont',
+    region: 'Jura · Vignoble jurassien · Revermont',
     periode: 'XVIe siècle – début du XXe siècle',
     procede:
       "Maison rurale spécialisée dans la viticulture, regroupant dans un même bâtiment l'habitation et les principaux locaux nécessaires à la production et à la conservation du vin. Dans le Revermont, la forme traditionnelle se caractérise fréquemment par une cave enterrée ou semi-enterrée, accessible depuis la rue par un escalier extérieur ou un trappon, et par une habitation surélevée desservie par un escalier et parfois une galerie ou un balcon en pierre. Selon les secteurs et les ressources du propriétaire, une grange et une étable peuvent compléter l'ensemble pour former une maison de polyculteur-vigneron. Les bâtiments sont généralement construits en pierre calcaire avec des charpentes en bois et des toitures à deux pans.",
@@ -24692,7 +24692,7 @@ export const TYPOLOGIES: Typologie[] = [
   {
     id: 'maisonbressanejurassienne',
     name: 'Maison bressane jurassienne',
-    region: 'Bourgogne-Franche-Comté · Jura · Bresse jurassienne',
+    region: 'Jura · Bresse jurassienne',
     periode: 'XVIIIe siècle – début du XXe siècle',
     procede:
       "Maison rurale traditionnelle de la Bresse jurassienne, généralement implantée sur une exploitation dispersée dans un paysage de bocage et de prairies humides. Le bâtiment associe habitation et fonctions agricoles dans des volumes relativement bas et allongés. Les constructions traditionnelles utilisent la terre, la brique, le bois et la pierre selon les secteurs. Les murs peuvent être constitués de briques, de torchis sur ossature bois ou de maçonnerie enduite. La toiture à deux pans, généralement largement débordante, protège les murs et les ouvertures. Les dépendances agricoles peuvent être accolées ou disposées à proximité du logis.",
