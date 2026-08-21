@@ -25139,6 +25139,227 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisongrenierjurassienne',
+    name: 'Maison à grenier jurassienne',
+    region: 'Jura · Haut-Jura · Hautes-Combes',
+    periode: 'XVIIIe siècle – début du XXe siècle',
+    procede:
+      "Ferme pastorale traditionnelle des Hautes-Combes du Jura, organisée autour d'un volume presque carré sous une toiture à deux pans. Le logis occupe généralement l'un des pignons tandis qu'une levée de grange permet d'accéder directement à l'étage agricole depuis l'extérieur. Le rez-de-chaussée accueille notamment les espaces liés à l'élevage et à la vie quotidienne. La maison s'inscrit dans un système d'habitat dispersé fondé sur la polyculture, l'élevage et l'exploitation des ressources de la combe. Un grenier-fort indépendant peut compléter l'ensemble pour protéger les biens et les récoltes contre l'incendie.",
+    usage: 'Habitation, élevage, stockage agricole et exploitation pastorale',
+    categorie: 'rural',
+    gps: '46.35° N, 5.90° E',
+    altitude: '900–1200 m',
+    climat: 'Montagnard continental',
+    typeToiture: 'Toiture à deux pans',
+    penteToit: 'Forte',
+    essenceBois: 'Épicéa et sapin',
+    typeFondation: 'Soubassement maçonné en pierre calcaire',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Faible à moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "La maison à grenier des Hautes-Combes constitue une forme particulièrement caractéristique de l'habitat rural du Haut-Jura. Son plan presque carré et sa toiture à deux pans englobent un bâtiment organisé verticalement autour de plusieurs fonctions. Le logis est généralement implanté sous un pignon tandis que la grange occupe une partie importante de l'étage, accessible par une levée de grange. Cette organisation permet de stocker le foin au-dessus des espaces consacrés au bétail. La ferme fonctionne dans le cadre d'un habitat dispersé issu du défrichement des Hautes-Combes. Le système traditionnel associe prairies de fauche, cultures, bois et pâturages. Un grenier-fort situé à proximité constitue fréquemment un élément complémentaire destiné à préserver les biens précieux, les semences et les récoltes.",
+    identite: [
+      ['Période', 'XVIIIe siècle – début du XXe siècle'],
+      ['Région', 'Jura · Haut-Jura · Hautes-Combes'],
+      ['Usage', 'Habitation, élevage et stockage agricole'],
+      ['Implantation', "Habitat dispersé des combes d'altitude"],
+      ['Organisation', 'Plan presque carré avec logis sous un pignon et grange accessible par levée'],
+      ['Système', 'Ferme pastorale polyvalente'],
+      ['Matériau dominant', 'Pierre et bois'],
+      ['Toiture', 'Toiture à deux pans'],
+      ['Particularité', 'Levée de grange donnant directement accès au niveau agricole'],
+    ],
+    materiaux: ['Pierre calcaire', 'Moellon', 'Bois', 'Épicéa', 'Sapin', 'Chêne', 'Chaux', 'Tavaillons', 'Tuile', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Logis',
+        txt: "Partie résidentielle de la ferme, généralement disposée sous l'un des pignons.",
+      },
+      {
+        n: 2,
+        el: 'Grange haute',
+        txt: "Grand volume situé à l'étage, principalement destiné au stockage du foin et des récoltes.",
+      },
+      {
+        n: 3,
+        el: 'Levée de grange',
+        txt: "Rampe extérieure permettant d'accéder directement au niveau supérieur de la grange avec les charges agricoles.",
+      },
+      {
+        n: 4,
+        el: 'Étable',
+        txt: 'Espace destiné au logement du bétail, situé généralement au niveau inférieur.',
+      },
+      {
+        n: 5,
+        el: 'Pignon',
+        txt: 'Les deux façades pignons organisent la distribution caractéristique de la maison à grenier.',
+      },
+      {
+        n: 6,
+        el: 'Grenier',
+        txt: 'Espace de stockage situé sous la toiture ou au-dessus des espaces agricoles.',
+      },
+      {
+        n: 7,
+        el: 'Grenier-fort',
+        txt: "Petit bâtiment indépendant destiné à mettre les biens précieux, les semences et certaines réserves à l'abri du feu et du vol.",
+      },
+      {
+        n: 8,
+        el: 'Toiture',
+        txt: 'La toiture à deux pans couvre l\'ensemble du volume compact de la ferme.',
+      },
+      {
+        n: 9,
+        el: 'Mur en pierre',
+        txt: 'La maçonnerie en pierre locale assure la résistance et l\'isolation du bâtiment dans le climat montagnard.',
+      },
+      {
+        n: 10,
+        el: 'Cour agricole',
+        txt: "L'espace autour de la ferme assure les circulations entre le logement, la grange, l'étable et les espaces agricoles.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Maison à grenier',
+        icon: 'ph ph-house',
+        intro: 'La maison à grenier constitue une forme caractéristique de la ferme pastorale des Hautes-Combes.',
+        groups: [
+          G(null, ['Plan presque carré.', 'Deux pignons.', 'Toiture à deux pans.', 'Logis.', 'Grange haute.']),
+        ],
+      },
+      {
+        title: 'Levée de grange',
+        icon: 'ph ph-arrow-up',
+        intro: "La levée permet d'accéder directement au niveau supérieur de la ferme.",
+        groups: [
+          G(null, ['Rampe.', 'Accès à la grange.', 'Transport du foin.', 'Accès agricole.', 'Dénivelé naturel.']),
+        ],
+      },
+      {
+        title: 'Grange haute',
+        icon: 'ph ph-warehouse',
+        intro: "L'étage agricole constitue un important espace de stockage du fourrage et des récoltes.",
+        groups: [
+          G(null, ['Foin.', 'Paille.', 'Récoltes.', 'Stockage.', 'Ventilation.']),
+        ],
+      },
+      {
+        title: 'Élevage',
+        icon: 'ph ph-cow',
+        intro: "L'élevage constitue une fonction fondamentale de l'économie traditionnelle des Hautes-Combes.",
+        groups: [
+          G(null, ['Bovins.', 'Étable.', 'Traite.', 'Fourrage.', 'Pâturage.']),
+        ],
+      },
+      {
+        title: 'Habitat dispersé',
+        icon: 'ph ph-map',
+        intro: "La ferme s'inscrit dans un système d'habitat dispersé caractéristique des Hautes-Combes.",
+        groups: [
+          G(null, ['Ferme isolée.', 'Combe.', 'Autarcie.', 'Parcelles longues.', 'Hameaux dispersés.']),
+        ],
+      },
+      {
+        title: 'Organisation du terroir',
+        icon: 'ph ph-map-pin',
+        intro: "L'exploitation traditionnelle organise les différentes ressources autour de la ferme.",
+        groups: [
+          G(null, ['Prairie.', 'Foin.', 'Cultures.', 'Bois.', 'Pâturages.']),
+        ],
+      },
+      {
+        title: 'Grenier-fort',
+        icon: 'ph ph-lock-key',
+        intro: 'Le grenier-fort constitue un bâtiment complémentaire destiné à protéger les biens essentiels de la famille.',
+        groups: [
+          G(null, ['Semences.', 'Grains.', 'Documents.', 'Objets précieux.', "Protection contre l'incendie."]),
+        ],
+      },
+      {
+        title: 'Construction en pierre',
+        icon: 'ph ph-wall',
+        intro: 'La pierre locale forme la base de la construction et protège les espaces intérieurs du climat montagnard.',
+        groups: [
+          G(null, ['Calcaire.', 'Moellons.', 'Murs épais.', 'Chaux.', 'Soubassement.']),
+        ],
+      },
+      {
+        title: 'Construction en bois',
+        icon: 'ph ph-tree',
+        intro: 'Le bois provenant des forêts du Haut-Jura intervient dans la charpente et les éléments intérieurs.',
+        groups: [
+          G(null, ['Épicéa.', 'Sapin.', 'Charpente.', 'Poutres.', 'Planchers.']),
+        ],
+      },
+      {
+        title: 'Toiture',
+        icon: 'ph ph-house-line',
+        intro: 'La toiture à deux pans protège le volume compact de la ferme et supporte traditionnellement des couvertures adaptées au climat neigeux.',
+        groups: [
+          G(null, ['Deux pans.', 'Forte pente.', 'Tavaillons.', 'Tuiles.', 'Débord.']),
+        ],
+      },
+      {
+        title: 'Climat montagnard',
+        icon: 'ph ph-snowflake',
+        intro: 'La construction répond aux conditions de neige, de froid et de fortes précipitations des Hautes-Combes.',
+        groups: [
+          G(null, ['Neige.', 'Froid.', 'Isolation.', 'Toiture inclinée.', 'Murs épais.']),
+        ],
+      },
+      {
+        title: 'Autonomie agricole',
+        icon: 'ph ph-plant',
+        intro: "L'exploitation traditionnelle permettait à chaque famille de vivre largement des ressources de son domaine.",
+        groups: [
+          G(null, ['Céréales.', 'Foin.', 'Élevage.', 'Bois.', 'Pâturage.']),
+        ],
+      },
+      {
+        title: 'Fournil et annexes',
+        icon: 'ph ph-fire',
+        intro: 'Le complexe rural pouvait être complété par différentes petites constructions nécessaires à la vie quotidienne.',
+        groups: [
+          G(null, ['Fournil.', 'Four à pain.', 'Citerne.', 'Cabane à bois.', 'Grenier-fort.']),
+        ],
+      },
+      {
+        title: 'Évolution',
+        icon: 'ph ph-clock',
+        intro: 'La modernisation agricole a progressivement transformé l\'organisation traditionnelle des fermes des Hautes-Combes.',
+        groups: [
+          G(null, ['Mécanisation.', 'Transformation.', 'Abandon.', 'Réhabilitation.', 'Patrimonialisation.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "Le plan compact, les deux pignons et surtout la levée de grange donnant accès à l'étage constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Hautes-Combes.',
+            'Plan presque carré.',
+            'Deux pignons.',
+            'Toiture à deux pans.',
+            'Levée de grange.',
+            'Grange haute.',
+            'Ferme pastorale.',
+            'Grenier-fort.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
