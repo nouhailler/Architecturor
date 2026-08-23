@@ -26236,6 +26236,219 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'baracconebonifacio',
+    name: 'Baraccone de Bonifacio',
+    region: 'Corse · Bonifacio et extrême sud de la Corse',
+    periode: 'XVIIIe siècle – début du XXe siècle',
+    procede:
+      "Petite construction rurale en pierre sèche caractéristique de la région de Bonifacio. Le baraccone présente généralement un plan circulaire ou légèrement elliptique et une couverture conique ou voûtée réalisée en pierre. Il est construit avec des matériaux calcaires prélevés localement et s'inscrit dans le paysage rural du sud de la Corse. Sa forme compacte et sa construction entièrement minérale témoignent de l'adaptation des architectures vernaculaires aux ressources et aux conditions climatiques locales.",
+    usage: 'Abri rural, stockage et activités agricoles ou pastorales',
+    categorie: 'rural',
+    gps: '41.39° N, 9.16° E',
+    altitude: '0–250 m',
+    climat: 'Méditerranéen littoral',
+    typeToiture: 'Voûte ou couverture conique en pierre',
+    penteToit: 'Faible à moyenne',
+    essenceBois: 'Sans élément structurel majeur en bois dans les formes entièrement minérales',
+    typeFondation: 'Assise directe sur le substrat rocheux ou fondation en pierre',
+    typeCharpente: 'Sans charpente dans les formes voûtées',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Faible à moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le baraccone de Bonifacio constitue une forme particulièrement originale de l'architecture vernaculaire du sud de la Corse. Édifié en pierre sèche, il se distingue par son petit volume généralement circulaire ou elliptique et par sa couverture entièrement réalisée en pierre. Sa morphologie compacte et robuste répond aux contraintes du paysage calcaire de l'extrême sud de l'île. Ces constructions étaient associées aux activités rurales et pastorales et pouvaient servir d'abri temporaire, de local de travail ou de petit espace de stockage. Le baraccone se distingue ainsi des pagliaghji et des bergeries plus importants par sa forme architecturale et son implantation dans le paysage de Bonifacio.",
+    identite: [
+      ['Période', 'XVIIIe siècle – début du XXe siècle'],
+      ['Région', "Bonifacio et extrême sud de la Corse"],
+      ['Usage', 'Abri rural, stockage et activités agricoles'],
+      ['Implantation', "Campagne bonifacienne et espaces ruraux du sud de l'île"],
+      ['Organisation', 'Petit volume circulaire ou elliptique'],
+      ['Système', 'Construction en pierre sèche'],
+      ['Matériau dominant', 'Calcaire local'],
+      ['Toiture', 'Couverture conique ou voûtée en pierre'],
+      ['Particularité', 'Architecture circulaire entièrement minérale caractéristique de la région de Bonifacio'],
+    ],
+    materiaux: ['Calcaire', 'Pierre sèche', 'Dalles calcaires', 'Moellons', 'Terre'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Mur circulaire',
+        txt: 'La maçonnerie périphérique forme un petit volume généralement circulaire ou légèrement elliptique.',
+      },
+      {
+        n: 2,
+        el: 'Entrée',
+        txt: "Une ouverture étroite permet l'accès au petit espace intérieur.",
+      },
+      {
+        n: 3,
+        el: 'Voûte',
+        txt: 'La couverture peut être constituée d\'une structure de pierre montée progressivement par encorbellement.',
+      },
+      {
+        n: 4,
+        el: 'Pierre calcaire',
+        txt: "La construction exploite l'abondance de la pierre calcaire caractéristique de l'extrême sud de la Corse.",
+      },
+      {
+        n: 5,
+        el: 'Pierre sèche',
+        txt: 'Les pierres sont assemblées sans mortier dans la technique traditionnelle de la pierre sèche.',
+      },
+      {
+        n: 6,
+        el: 'Espace intérieur',
+        txt: 'Le faible volume intérieur est adapté à un usage temporaire, au stockage ou aux activités agricoles.',
+      },
+      {
+        n: 7,
+        el: 'Paysage rural',
+        txt: 'Le baraccone s\'intègre directement aux espaces agricoles et pastoraux du territoire bonifacien.',
+      },
+      {
+        n: 8,
+        el: 'Soubassement',
+        txt: "L'assise repose directement sur le substrat rocheux ou sur une base constituée de pierres plus importantes.",
+      },
+      {
+        n: 9,
+        el: 'Couverture minérale',
+        txt: "L'absence de matériaux industriels permet une construction pratiquement entièrement réalisée avec la pierre locale.",
+      },
+      {
+        n: 10,
+        el: 'Parcelle agricole',
+        txt: 'Le bâtiment peut être implanté au sein ou en bordure d\'une parcelle exploitée.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Forme circulaire',
+        icon: 'ph ph-circle',
+        intro: 'La morphologie compacte et arrondie constitue l\'un des principaux caractères du baraccone.',
+        groups: [
+          G(null, ['Plan circulaire.', 'Plan elliptique.', 'Petit volume.', 'Mur périphérique.', 'Forme compacte.']),
+        ],
+      },
+      {
+        title: 'Pierre sèche',
+        icon: 'ph ph-wall',
+        intro: 'La construction repose sur l\'assemblage de pierres sans utilisation systématique de mortier.',
+        groups: [
+          G(null, ['Pierre sèche.', 'Calcaire.', 'Moellons.', 'Calage.', 'Épierrement.']),
+        ],
+      },
+      {
+        title: 'Voûte de pierre',
+        icon: 'ph ph-arch',
+        intro: 'La couverture minérale constitue une caractéristique remarquable de cette petite construction.',
+        groups: [
+          G(null, ['Voûte.', 'Encourbement.', 'Dalles.', 'Pierre.', 'Couverture conique.']),
+        ],
+      },
+      {
+        title: 'Calcaire de Bonifacio',
+        icon: 'ph ph-cube',
+        intro: "Le matériau de construction est directement lié au substrat calcaire de l'extrême sud de la Corse.",
+        groups: [
+          G(null, ['Calcaire.', 'Pierre locale.', 'Roche.', 'Dalles calcaires.', 'Épierrement.']),
+        ],
+      },
+      {
+        title: 'Architecture rurale',
+        icon: 'ph ph-tractor',
+        intro: 'Le baraccone appartient au paysage agricole et pastoral traditionnel de la région de Bonifacio.',
+        groups: [
+          G(null, ['Agriculture.', 'Pastoralisme.', 'Parcelle.', 'Stockage.', 'Travail rural.']),
+        ],
+      },
+      {
+        title: 'Abri temporaire',
+        icon: 'ph ph-door-open',
+        intro: 'Le petit volume pouvait offrir un abri ponctuel aux travailleurs et aux activités rurales.',
+        groups: [
+          G(null, ['Abri.', 'Travail agricole.', 'Protection.', 'Repos.', 'Surveillance.']),
+        ],
+      },
+      {
+        title: 'Construction intégrée au paysage',
+        icon: 'ph ph-mountains',
+        intro: 'Le baraccone utilise les ressources du site et s\'intègre directement aux paysages ruraux du sud de l\'île.',
+        groups: [
+          G(null, ['Paysage calcaire.', 'Maquis.', 'Campagne.', 'Roche.', 'Parcelle agricole.']),
+        ],
+      },
+      {
+        title: 'Économie de moyens',
+        icon: 'ph ph-hammer',
+        intro: 'La construction utilise essentiellement les matériaux disponibles sur place et nécessite peu d\'éléments importés.',
+        groups: [
+          G(null, ['Pierre locale.', 'Autoconstruction.', 'Réemploi.', 'Matériaux naturels.', 'Savoir-faire.']),
+        ],
+      },
+      {
+        title: 'Protection climatique',
+        icon: 'ph ph-wind',
+        intro: 'La masse minérale et la petite ouverture contribuent à protéger l\'intérieur des conditions climatiques du sud de la Corse.',
+        groups: [
+          G(null, ['Inertie thermique.', 'Protection solaire.', 'Protection contre le vent.', 'Compacité.', 'Murs épais.']),
+        ],
+      },
+      {
+        title: 'Relation avec la pierre sèche',
+        icon: 'ph ph-tree-structure',
+        intro: "Le baraccone appartient à un ensemble plus large de constructions rurales en pierre sèche du sud de l'île.",
+        groups: [
+          G(null, ['Muret.', 'Enclos.', 'Épierrement.', 'Parcelle.', 'Construction pastorale.']),
+        ],
+      },
+      {
+        title: 'Territoire de Bonifacio',
+        icon: 'ph ph-map-pin',
+        intro: 'Cette typologie est étroitement associée au territoire calcaire de Bonifacio et de son arrière-pays.',
+        groups: [
+          G(null, ['Bonifacio.', 'Extrême sud.', 'Corse-du-Sud.', 'Plateau calcaire.', 'Campagne bonifacienne.']),
+        ],
+      },
+      {
+        title: 'Typologies apparentées',
+        icon: 'ph ph-arrows-left-right',
+        intro: 'Le baraccone appartient à la famille des petits édifices ruraux corses mais conserve une identité morphologique propre.',
+        groups: [
+          G(null, ['Pagliaghju.', 'Bergerie.', 'Oriu.', 'Cabane.', 'Construction en pierre sèche.']),
+        ],
+      },
+      {
+        title: 'Patrimoine de pierre sèche',
+        icon: 'ph ph-bank',
+        intro: 'Ces constructions témoignent d\'un savoir-faire rural ancien fondé sur l\'utilisation directe de la pierre disponible.',
+        groups: [
+          G(null, ['Patrimoine rural.', 'Pierre sèche.', 'Savoir-faire.', 'Architecture vernaculaire.', 'Paysage culturel.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "Le petit plan circulaire, la maçonnerie en pierre sèche et la couverture minérale constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Baraccone.',
+            'Bonifacio.',
+            'Plan circulaire.',
+            'Calcaire.',
+            'Pierre sèche.',
+            'Voûte.',
+            'Petit volume.',
+            'Architecture rurale.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
