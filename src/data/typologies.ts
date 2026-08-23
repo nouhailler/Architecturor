@@ -27088,6 +27088,219 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisontourcorse',
+    name: 'Maison à torre / maison-tour corse',
+    region: 'Corse · villages et territoires ruraux de l\'intérieur, notamment Castagniccia et Corse-du-Sud',
+    periode: 'XVIe siècle – XIXe siècle',
+    procede:
+      "Maison fortifiée de plan généralement compact et de développement vertical, construite en pierre locale et conçue à la fois comme habitation, élément de prestige et dispositif défensif. La maison-tour peut comporter plusieurs niveaux superposés, des murs épais, des ouvertures limitées, des dispositifs de défense et parfois une tour intégrée ou accolée au logis. Certaines maisons-tours sont issues de maisons fortes anciennes transformées ou agrandies au fil des siècles.",
+    usage: 'Habitation familiale, refuge et représentation sociale',
+    categorie: 'rural',
+    gps: '42.35° N, 9.35° E',
+    altitude: '200–800 m',
+    climat: 'Méditerranéen montagnard',
+    typeToiture: 'Toiture traditionnelle à deux ou quatre pans, généralement en tuile',
+    penteToit: 'Faible à moyenne',
+    essenceBois: 'Châtaignier, chêne et résineux selon les secteurs',
+    typeFondation: 'Fondation maçonnée sur terrain rocheux ou soubassement en pierre',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XVIIe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIe', 'XVIIe', 'XVIIIe', 'XIXe'],
+    resume:
+      "La maison à torre, ou maison-tour corse, constitue une forme remarquable de l'habitat fortifié insulaire. Elle associe les fonctions résidentielles d'une maison à des caractéristiques défensives héritées des maisons fortes médiévales et modernes. Les exemples recensés par l'Inventaire général montrent notamment des bâtiments à plusieurs niveaux, des maçonneries épaisses, des ouvertures contrôlées, des contreforts et parfois des dispositifs défensifs tels que bretèches ou éléments de surveillance. La Castagniccia conserve plusieurs exemples de maisons-tours, certaines étant attestées dès le XVIe siècle. La typologie doit être distinguée des tours génoises littorales, qui répondent à une fonction militaire et de surveillance différente.",
+    identite: [
+      ['Période', 'XVIe siècle – XIXe siècle'],
+      ['Région', 'Corse · intérieur de l\'île, notamment Castagniccia'],
+      ['Usage', 'Habitation, refuge et représentation familiale'],
+      ['Implantation', 'Village, hameau ou position dominante'],
+      ['Organisation', 'Volume compact développé sur plusieurs niveaux'],
+      ['Système', 'Maçonnerie massive en pierre'],
+      ['Matériau dominant', 'Granite, schiste ou pierre locale'],
+      ['Toiture', 'Toiture traditionnelle à faible ou moyenne pente'],
+      ['Particularité', "Association d'un logis résidentiel et de caractéristiques défensives"],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Calcaire', 'Moellon', 'Pierre de taille', 'Chaux', 'Bois', 'Tuile'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Volume-tour',
+        txt: 'La verticalité et la compacité du bâtiment constituent les caractères fondamentaux de la maison-tour.',
+      },
+      {
+        n: 2,
+        el: 'Murs épais',
+        txt: 'La maçonnerie massive renforce la stabilité du bâtiment et contribue à sa fonction défensive.',
+      },
+      {
+        n: 3,
+        el: 'Ouvertures',
+        txt: 'Les ouvertures sont généralement limitées et contrôlées, notamment dans les parties les plus anciennes.',
+      },
+      {
+        n: 4,
+        el: 'Entrée',
+        txt: "L'accès peut être particulièrement protégé et parfois associé à un dispositif défensif.",
+      },
+      {
+        n: 5,
+        el: 'Logis',
+        txt: 'Les différents niveaux accueillent les espaces domestiques de la famille.',
+      },
+      {
+        n: 6,
+        el: 'Contrefort',
+        txt: 'Certains exemples possèdent de puissants contreforts renforçant les murs du bâtiment.',
+      },
+      {
+        n: 7,
+        el: 'Bretèche',
+        txt: 'Certains édifices conservent des dispositifs défensifs en saillie protégeant les accès ou les façades.',
+      },
+      {
+        n: 8,
+        el: 'Escalier',
+        txt: 'La distribution verticale permet de relier les différents niveaux du logis.',
+      },
+      {
+        n: 9,
+        el: 'Pierre locale',
+        txt: 'Le bâtiment est généralement construit avec les matériaux lithiques disponibles dans son environnement.',
+      },
+      {
+        n: 10,
+        el: 'Position dominante',
+        txt: "L'implantation peut favoriser la surveillance du village, du territoire ou des voies d'accès.",
+      },
+    ],
+    sections: [
+      {
+        title: 'Maison fortifiée',
+        icon: 'ph ph-shield',
+        intro: 'La maison-tour associe la fonction résidentielle à une capacité de protection et de refuge.',
+        groups: [
+          G(null, ['Habitation.', 'Refuge.', 'Défense.', 'Surveillance.', 'Protection.']),
+        ],
+      },
+      {
+        title: 'Verticalité',
+        icon: 'ph ph-arrows-out-line-vertical',
+        intro: 'Le développement en hauteur permet de concentrer les fonctions domestiques dans un volume compact.',
+        groups: [
+          G(null, ['Plusieurs niveaux.', 'Volume vertical.', 'Compacité.', 'Superposition.', 'Tour.']),
+        ],
+      },
+      {
+        title: 'Maçonnerie massive',
+        icon: 'ph ph-wall',
+        intro: 'Les murs épais constituent à la fois une structure porteuse robuste et un élément de protection.',
+        groups: [
+          G(null, ['Pierre.', 'Granite.', 'Schiste.', 'Murs épais.', 'Maçonnerie.']),
+        ],
+      },
+      {
+        title: 'Dispositifs défensifs',
+        icon: 'ph ph-sword',
+        intro: "Certains exemples conservent des éléments directement hérités de l'architecture fortifiée.",
+        groups: [
+          G(null, ['Bretèche.', 'Contrefort.', 'Meurtrière.', 'Porte défensive.', 'Surveillance.']),
+        ],
+      },
+      {
+        title: 'Maison familiale',
+        icon: 'ph ph-users',
+        intro: 'La fonction première reste celle d\'un habitat destiné à une famille ou à une lignée locale.',
+        groups: [
+          G(null, ['Famille.', 'Logis.', 'Transmission.', 'Lignée.', 'Résidence.']),
+        ],
+      },
+      {
+        title: 'Position dominante',
+        icon: 'ph ph-mountains',
+        intro: "L'implantation peut exploiter le relief afin d'améliorer la surveillance du territoire environnant.",
+        groups: [
+          G(null, ['Hauteur.', 'Village.', 'Hameau.', 'Vallée.', 'Surveillance.']),
+        ],
+      },
+      {
+        title: 'Architecture de prestige',
+        icon: 'ph ph-crown',
+        intro: 'La hauteur et la monumentalité peuvent également exprimer le statut social de la famille propriétaire.',
+        groups: [
+          G(null, ['Notabilité.', 'Prestige.', 'Famille.', 'Pouvoir local.', 'Monumentalité.']),
+        ],
+      },
+      {
+        title: 'Distribution verticale',
+        icon: 'ph ph-stairs',
+        intro: 'La superposition des niveaux impose une organisation verticale des espaces domestiques.',
+        groups: [
+          G(null, ['Escalier.', 'Étages.', 'Logis.', 'Grenier.', 'Circulation.']),
+        ],
+      },
+      {
+        title: 'Pierre locale',
+        icon: 'ph ph-cube',
+        intro: 'Les maisons-tours utilisent les ressources minérales du territoire où elles sont implantées.',
+        groups: [
+          G(null, ['Granite.', 'Schiste.', 'Calcaire.', 'Moellon.', 'Pierre de taille.']),
+        ],
+      },
+      {
+        title: 'Relation avec la maison forte',
+        icon: 'ph ph-arrows-left-right',
+        intro: 'La maison-tour appartient à la même famille historique que les maisons fortes, tout en conservant une fonction résidentielle importante.',
+        groups: [
+          G(null, ['Maison forte.', 'Tour.', 'Logis fortifié.', 'Refuge.', 'Notable.']),
+        ],
+      },
+      {
+        title: 'Castagniccia',
+        icon: 'ph ph-map-pin',
+        intro: 'La Castagniccia constitue un territoire particulièrement riche en exemples documentés de maisons-tours corses.',
+        groups: [
+          G(null, ['Castagniccia.', 'Haute-Corse.', 'Villages perchés.', 'Habitat ancien.', 'Maisons-tours.']),
+        ],
+      },
+      {
+        title: 'Évolution',
+        icon: 'ph ph-clock',
+        intro: "De nombreuses maisons-tours ont été transformées au fil des siècles afin d'adapter leur organisation aux besoins résidentiels.",
+        groups: [
+          G(null, ['Transformation.', 'Agrandissement.', 'Remaniement.', 'Restauration.', 'Patrimoine.']),
+        ],
+      },
+      {
+        title: 'Distinction avec la tour génoise',
+        icon: 'ph ph-warning',
+        intro: 'La maison-tour intérieure ne doit pas être confondue avec les tours génoises de surveillance du littoral.',
+        groups: [
+          G(null, ['Maison-tour.', 'Logis.', 'Tour génoise.', 'Surveillance côtière.', 'Architecture défensive.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "Le volume vertical, la maçonnerie massive, la fonction résidentielle et les éventuels dispositifs défensifs permettent d'identifier la maison-tour.",
+        groups: [
+          G(null, [
+            'Casa torre.',
+            'Maison-tour.',
+            'Volume vertical.',
+            'Pierre.',
+            'Murs épais.',
+            'Logis.',
+            'Bretèche.',
+            'Maison forte.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
