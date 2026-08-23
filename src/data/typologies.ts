@@ -26662,6 +26662,219 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'stazzucorse',
+    name: 'Stazzu corse',
+    region: 'Corse · principalement Gallura historique, Alta Rocca, intérieur et zones pastorales de Corse-du-Sud',
+    periode: 'XVIIIe siècle – début du XXe siècle',
+    procede:
+      "Ensemble rural et pastoral dispersé organisé autour d'une habitation, de bâtiments agricoles et d'espaces destinés à l'élevage et à l'exploitation des terres. Le stazzu constitue moins un bâtiment isolé qu'une petite unité d'exploitation implantée dans un territoire rural éloigné des villages. Les constructions utilisent la pierre locale, notamment le granite, et peuvent comprendre une maison, une bergerie, un pagliaghju, des enclos et des espaces de culture. L'organisation dépend fortement du relief, des ressources en eau et des parcours pastoraux.",
+    usage: 'Exploitation agricole et pastorale familiale',
+    categorie: 'rural',
+    gps: '41.90° N, 9.10° E',
+    altitude: '100–1000 m',
+    climat: 'Méditerranéen montagnard',
+    typeToiture: 'Tuile canal, lauze ou couverture traditionnelle locale',
+    penteToit: 'Faible à moyenne',
+    essenceBois: 'Châtaignier, chêne et pin selon les secteurs',
+    typeFondation: 'Soubassement en pierre ou assise directe sur le terrain',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le stazzu corse désigne une exploitation rurale dispersée constituée autour d'une habitation et de plusieurs bâtiments nécessaires à l'élevage et à l'agriculture. Contrairement à la maison rurale isolée, il correspond à une véritable unité territoriale comprenant généralement maison, bergerie, espaces de stockage, enclos et terres exploitées. Cette forme d'habitat dispersé est particulièrement liée aux territoires pastoraux et aux zones de faible densité de l'intérieur de l'île. Les constructions sont réalisées avec les matériaux disponibles localement, notamment le granite, et présentent une architecture sobre adaptée à l'économie agricole traditionnelle. Le stazzu témoigne d'un mode d'occupation du territoire fondé sur la dispersion des exploitations plutôt que sur le regroupement dans les villages.",
+    identite: [
+      ['Période', 'XVIIIe siècle – début du XXe siècle'],
+      ['Région', 'Corse · intérieur et zones rurales dispersées'],
+      ['Usage', 'Exploitation agricole et pastorale'],
+      ['Implantation', 'Territoires ruraux éloignés des villages'],
+      ['Organisation', "Ensemble composé d'une habitation et de bâtiments agricoles"],
+      ['Système', 'Construction traditionnelle en pierre locale'],
+      ['Matériau dominant', 'Granite, schiste ou calcaire selon le secteur'],
+      ['Toiture', 'Couverture traditionnelle en tuile, lauze ou matériaux locaux'],
+      ['Particularité', "Unité d'exploitation dispersée associant habitat, élevage, stockage et terres agricoles"],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Calcaire', 'Moellon', 'Pierre sèche', 'Bois', 'Chaux', 'Tuile', 'Terre'],
+    annotations: [
+      {
+        n: 1,
+        el: "Maison d'habitation",
+        txt: "Le logement de la famille constitue généralement le bâtiment principal de l'exploitation.",
+      },
+      {
+        n: 2,
+        el: 'Bergerie',
+        txt: 'Un bâtiment pastoral peut accueillir les ovins ou caprins élevés sur l\'exploitation.',
+      },
+      {
+        n: 3,
+        el: 'Pagliaghju',
+        txt: 'Un petit bâtiment peut être consacré au stockage du foin et de la paille.',
+      },
+      {
+        n: 4,
+        el: 'Enclos',
+        txt: 'Les espaces clôturés permettent de contenir et de trier les animaux.',
+      },
+      {
+        n: 5,
+        el: 'Terres agricoles',
+        txt: "Les bâtiments sont directement associés aux terres cultivées et aux pâturages de l'exploitation.",
+      },
+      {
+        n: 6,
+        el: 'Aire de travail',
+        txt: 'Un espace ouvert permet les différentes opérations agricoles et pastorales.',
+      },
+      {
+        n: 7,
+        el: 'Source ou citerne',
+        txt: "La disponibilité de l'eau constitue un facteur essentiel dans le choix de l'implantation.",
+      },
+      {
+        n: 8,
+        el: 'Mur de clôture',
+        txt: 'Des murs en pierre sèche peuvent délimiter les parcelles et les espaces réservés au bétail.',
+      },
+      {
+        n: 9,
+        el: 'Parcours pastoral',
+        txt: 'Les terres autour du stazzu servent notamment aux déplacements et au pâturage des troupeaux.',
+      },
+      {
+        n: 10,
+        el: "Chemin d'accès",
+        txt: "Un chemin rural relie l'exploitation aux autres espaces agricoles et aux villages.",
+      },
+    ],
+    sections: [
+      {
+        title: "Unité d'exploitation",
+        icon: 'ph ph-house',
+        intro: "Le stazzu est avant tout une unité rurale organisée autour d'une exploitation familiale.",
+        groups: [
+          G(null, ['Habitation.', 'Bergerie.', 'Stockage.', 'Enclos.', 'Terres agricoles.']),
+        ],
+      },
+      {
+        title: 'Habitat dispersé',
+        icon: 'ph ph-map-pin',
+        intro: "L'exploitation est implantée à l'écart des villages, directement au contact des terres exploitées.",
+        groups: [
+          G(null, ['Dispersion.', 'Isolement.', 'Campagne.', 'Exploitation familiale.', 'Territoire rural.']),
+        ],
+      },
+      {
+        title: 'Économie pastorale',
+        icon: 'ph ph-sheep',
+        intro: "L'élevage ovin et caprin occupe une place importante dans de nombreux stazzi traditionnels.",
+        groups: [
+          G(null, ['Ovins.', 'Caprins.', 'Troupeau.', 'Pâturage.', 'Lait.']),
+        ],
+      },
+      {
+        title: 'Agriculture',
+        icon: 'ph ph-plant',
+        intro: 'Le stazzu associe fréquemment élevage et culture des terres environnantes.',
+        groups: [
+          G(null, ['Céréales.', 'Vigne.', 'Olivier.', 'Verger.', 'Cultures vivrières.']),
+        ],
+      },
+      {
+        title: 'Ensemble bâti',
+        icon: 'ph ph-buildings',
+        intro: 'La typologie se définit par la complémentarité de plusieurs bâtiments plutôt que par une forme architecturale unique.',
+        groups: [
+          G(null, ['Maison.', 'Bergerie.', 'Pagliaghju.', 'Four.', 'Enclos.']),
+        ],
+      },
+      {
+        title: 'Pierre locale',
+        icon: 'ph ph-cube',
+        intro: "Les bâtiments exploitent les ressources minérales disponibles autour de l'exploitation.",
+        groups: [
+          G(null, ['Granite.', 'Schiste.', 'Calcaire.', 'Moellon.', 'Pierre sèche.']),
+        ],
+      },
+      {
+        title: 'Pierre sèche',
+        icon: 'ph ph-wall',
+        intro: 'Les murs de clôture et certains bâtiments secondaires peuvent utiliser la technique traditionnelle de la pierre sèche.',
+        groups: [
+          G(null, ['Murets.', 'Clôtures.', 'Épierrement.', 'Parcellisation.', 'Savoir-faire.']),
+        ],
+      },
+      {
+        title: "Gestion de l'eau",
+        icon: 'ph ph-drop',
+        intro: "L'accès à l'eau conditionne fortement l'installation durable d'une exploitation dispersée.",
+        groups: [
+          G(null, ['Source.', 'Citerne.', 'Puits.', 'Abreuvoir.', 'Réserve.']),
+        ],
+      },
+      {
+        title: 'Organisation familiale',
+        icon: 'ph ph-users',
+        intro: 'Le stazzu correspond traditionnellement à une exploitation directement gérée par une famille.',
+        groups: [
+          G(null, ['Famille.', 'Autonomie.', 'Travail agricole.', 'Élevage.', 'Transmission.']),
+        ],
+      },
+      {
+        title: 'Relation au territoire',
+        icon: 'ph ph-map',
+        intro: "L'ensemble des bâtiments est organisé en fonction des terres, des pâturages, de l'eau et des voies d'accès.",
+        groups: [
+          G(null, ['Parcelles.', 'Pâturages.', 'Chemins.', 'Eau.', 'Relief.']),
+        ],
+      },
+      {
+        title: 'Paysage pastoral',
+        icon: 'ph ph-mountains',
+        intro: "Les stazzi participent à la structuration des paysages ruraux dispersés de l'intérieur de la Corse.",
+        groups: [
+          G(null, ['Maquis.', 'Pâturages.', 'Boisements.', 'Terrasses.', 'Parcours.']),
+        ],
+      },
+      {
+        title: 'Architecture fonctionnelle',
+        icon: 'ph ph-hammer',
+        intro: "Les bâtiments privilégient la simplicité constructive et l'adaptation aux besoins de l'exploitation.",
+        groups: [
+          G(null, ['Volumes simples.', 'Murs épais.', 'Ouvertures réduites.', 'Matériaux locaux.', 'Fonctionnalité.']),
+        ],
+      },
+      {
+        title: 'Évolution',
+        icon: 'ph ph-clock',
+        intro: "La modernisation agricole et l'exode rural ont profondément transformé le système traditionnel des stazzi.",
+        groups: [
+          G(null, ['Abandon.', 'Transformation.', 'Modernisation.', 'Résidence secondaire.', 'Patrimonialisation.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "Le caractère dispersé de l'exploitation et l'association de plusieurs fonctions agricoles constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            'Stazzu.',
+            'Habitat dispersé.',
+            'Exploitation familiale.',
+            'Bergerie.',
+            'Pagliaghju.',
+            'Enclos.',
+            'Terres agricoles.',
+            'Pastoralisme.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
