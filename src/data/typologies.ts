@@ -26875,6 +26875,219 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'maisonamericaincorse',
+    name: "Maison d'Américain corse",
+    region: "Corse · principalement villages de Balagne, Cap Corse, Castagniccia et autres régions de l'intérieur",
+    periode: 'XIXe siècle – début du XXe siècle',
+    procede:
+      "Grande maison de notable construite ou agrandie par des Corses ayant fait fortune dans les migrations commerciales, notamment vers les Amériques. Édifiée généralement au cœur ou en périphérie des villages, elle reprend la structure de la maison traditionnelle corse tout en adoptant une échelle plus importante, des façades plus régulières, des éléments décoratifs et parfois des références stylistiques importées de l'étranger. La construction utilise principalement la pierre locale, enduite ou laissée apparente, avec des planchers en bois et une toiture traditionnelle en pente faible à moyenne.",
+    usage: 'Résidence familiale de notable, maison de retour et représentation sociale',
+    categorie: 'urbain',
+    gps: '42.20° N, 9.10° E',
+    altitude: '100–700 m',
+    climat: 'Méditerranéen montagnard',
+    typeToiture: 'Toiture traditionnelle à deux ou quatre pans, généralement couverte de tuiles',
+    penteToit: 'Faible à moyenne',
+    essenceBois: 'Châtaignier et chêne, avec résineux selon les secteurs',
+    typeFondation: 'Soubassement en pierre et fondations maçonnées',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'Fin XIXe siècle',
+    difficulteIdentification: 'Faible à moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XIXe', 'XXe'],
+    resume:
+      "La maison d'Américain est l'une des expressions les plus originales de l'architecture résidentielle corse du XIXe siècle. Elle est liée aux familles corses ayant émigré, notamment vers les Amériques, puis revenues au pays avec une certaine réussite économique. Leur maison manifeste cette ascension sociale par une dimension souvent importante, une composition plus régulière, des façades soignées, des balcons, des garde-corps ouvragés, des encadrements de baies et parfois des éléments décoratifs inspirés des architectures découvertes à l'étranger. Ces demeures restent néanmoins profondément liées aux traditions constructives locales et aux matériaux du territoire. Elles constituent ainsi un remarquable témoignage architectural des migrations corses et de leurs effets sur les villages de l'île.",
+    identite: [
+      ['Période', 'XIXe siècle – début du XXe siècle'],
+      ['Région', "Corse · Balagne, Cap Corse, Castagniccia et villages de l'intérieur"],
+      ['Usage', 'Résidence familiale et maison de notable'],
+      ['Implantation', 'Village, hameau ou périphérie immédiate'],
+      ['Organisation', 'Maison importante généralement organisée sur plusieurs niveaux'],
+      ['Système', 'Maçonnerie traditionnelle en pierre'],
+      ['Matériau dominant', 'Pierre locale et enduit'],
+      ['Toiture', 'Toiture à deux ou quatre pans selon les exemples'],
+      ['Particularité', 'Architecture résidentielle témoignant de la réussite économique liée aux migrations corses'],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Calcaire', 'Moellon', 'Chaux', 'Enduit', 'Bois', 'Pierre de taille', 'Tuile'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Façade principale',
+        txt: 'La façade présente généralement une composition plus régulière et monumentale que celle des maisons rurales traditionnelles.',
+      },
+      {
+        n: 2,
+        el: 'Encadrement des baies',
+        txt: 'Les fenêtres peuvent recevoir des encadrements en pierre de taille ou des éléments décoratifs plus travaillés.',
+      },
+      {
+        n: 3,
+        el: 'Balcon',
+        txt: 'Les balcons constituent parfois un élément important de représentation et de confort.',
+      },
+      {
+        n: 4,
+        el: 'Garde-corps',
+        txt: 'Les garde-corps métalliques ou en pierre peuvent présenter des motifs décoratifs témoignant du statut du propriétaire.',
+      },
+      {
+        n: 5,
+        el: 'Entrée',
+        txt: "L'entrée principale peut être particulièrement mise en valeur par un portail, un perron ou un encadrement travaillé.",
+      },
+      {
+        n: 6,
+        el: "Niveaux d'habitation",
+        txt: 'La maison comporte fréquemment plusieurs niveaux superposant espaces de réception, pièces familiales et locaux secondaires.',
+      },
+      {
+        n: 7,
+        el: 'Enduit',
+        txt: 'Les maçonneries peuvent être protégées par un enduit à la chaux, parfois accompagné d\'une mise en couleur.',
+      },
+      {
+        n: 8,
+        el: 'Toiture',
+        txt: 'La couverture reprend généralement les traditions locales tout en pouvant adopter une composition plus monumentale.',
+      },
+      {
+        n: 9,
+        el: 'Jardin',
+        txt: 'Certaines demeures sont accompagnées d\'un jardin, d\'une cour ou d\'un petit parc renforçant leur caractère de maison de notable.',
+      },
+      {
+        n: 10,
+        el: 'Mur de clôture',
+        txt: 'Une clôture en pierre peut séparer la demeure de la rue et organiser la parcelle.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Maison de notable',
+        icon: 'ph ph-house',
+        intro: "La maison d'Américain se distingue par son importance et par la volonté de manifester la réussite sociale de son propriétaire.",
+        groups: [
+          G(null, ['Grande maison.', 'Notabilité.', 'Résidence familiale.', 'Représentation.', 'Prestige.']),
+        ],
+      },
+      {
+        title: 'Architecture des migrations',
+        icon: 'ph ph-airplane-takeoff',
+        intro: "La typologie est directement liée à l'histoire des migrations corses et au retour de familles ayant acquis une réussite économique à l'étranger.",
+        groups: [
+          G(null, ['Migration.', 'Retour.', 'Réussite économique.', 'Diaspora.', 'Investissement local.']),
+        ],
+      },
+      {
+        title: 'Influences extérieures',
+        icon: 'ph ph-globe',
+        intro: "Certaines demeures intègrent des éléments stylistiques découverts lors des séjours à l'étranger.",
+        groups: [
+          G(null, ['Influences étrangères.', 'Éclectisme.', 'Architecture importée.', 'Décor.', 'Modernité.']),
+        ],
+      },
+      {
+        title: 'Structure traditionnelle',
+        icon: 'ph ph-wall',
+        intro: 'Malgré son caractère monumental, la maison conserve généralement une structure fondée sur les techniques locales.',
+        groups: [
+          G(null, ['Pierre.', 'Maçonnerie.', 'Chaux.', 'Bois.', 'Savoir-faire local.']),
+        ],
+      },
+      {
+        title: 'Composition verticale',
+        icon: 'ph ph-arrows-out-line-vertical',
+        intro: 'La maison développe souvent plusieurs niveaux afin d\'organiser les fonctions domestiques et de renforcer sa présence dans le village.',
+        groups: [
+          G(null, ['Rez-de-chaussée.', 'Étages.', 'Combles.', 'Superposition.', 'Verticalité.']),
+        ],
+      },
+      {
+        title: 'Façade ordonnancée',
+        icon: 'ph ph-columns',
+        intro: 'Les ouvertures et les niveaux sont généralement organisés avec davantage de régularité que dans l\'habitat rural ancien.',
+        groups: [
+          G(null, ['Symétrie.', 'Alignement.', 'Fenêtres.', 'Travées.', 'Composition.']),
+        ],
+      },
+      {
+        title: 'Balcons et ferronneries',
+        icon: 'ph ph-windows',
+        intro: 'Les éléments métalliques et les balcons participent fréquemment à la dimension représentative de la demeure.',
+        groups: [
+          G(null, ['Balcon.', 'Ferronnerie.', 'Garde-corps.', 'Ornement.', 'Façade.']),
+        ],
+      },
+      {
+        title: 'Pierre et enduit',
+        icon: 'ph ph-cube',
+        intro: 'La construction associe la pierre locale à des finitions plus soignées destinées à affirmer le caractère résidentiel de la maison.',
+        groups: [
+          G(null, ['Granite.', 'Schiste.', 'Calcaire.', 'Enduit.', 'Pierre de taille.']),
+        ],
+      },
+      {
+        title: 'Maison et jardin',
+        icon: 'ph ph-tree',
+        intro: "Certaines maisons d'Américain disposent d'un jardin ou d'un espace extérieur traité comme un prolongement de la demeure.",
+        groups: [
+          G(null, ['Jardin.', 'Cour.', 'Terrasse.', 'Mur de clôture.', 'Plantations.']),
+        ],
+      },
+      {
+        title: 'Maison de retour',
+        icon: 'ph ph-house-line',
+        intro: "La demeure matérialise le retour ou l'investissement d'une famille ayant construit une partie de sa fortune hors de Corse.",
+        groups: [
+          G(null, ['Retour au pays.', 'Famille.', 'Résidence.', 'Transmission.', 'Ancrage local.']),
+        ],
+      },
+      {
+        title: 'Architecture villageoise',
+        icon: 'ph ph-buildings',
+        intro: 'Même lorsqu\'elle adopte une échelle importante, la maison reste généralement intégrée au tissu des villages corses.',
+        groups: [
+          G(null, ['Village.', 'Hameau.', 'Rue.', 'Place.', 'Tissu bâti.']),
+        ],
+      },
+      {
+        title: 'Confort moderne',
+        icon: 'ph ph-lightbulb',
+        intro: 'Les maisons les plus tardives intègrent progressivement des équipements et des dispositions plus modernes.',
+        groups: [
+          G(null, ['Eau.', 'Éclairage.', 'Ventilation.', 'Pièces spécialisées.', 'Confort.']),
+        ],
+      },
+      {
+        title: 'Patrimoine de la diaspora',
+        icon: 'ph ph-globe-hemisphere-west',
+        intro: "Ces maisons constituent des témoins matériels de l'histoire économique et migratoire de la Corse.",
+        groups: [
+          G(null, ['Diaspora.', 'Migration.', 'Commerce.', 'Famille.', 'Patrimoine.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La grande échelle, la façade ordonnancée, les éléments décoratifs et le lien avec l'émigration constituent les principaux critères d'identification.",
+        groups: [
+          G(null, [
+            "Maison d'Américain.",
+            'Notable.',
+            'Grande maison.',
+            'Façade ordonnancée.',
+            'Balcon.',
+            'Ferronnerie.',
+            'Pierre.',
+            'Architecture de retour.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
