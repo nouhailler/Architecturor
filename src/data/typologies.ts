@@ -26449,6 +26449,219 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'oriucorse',
+    name: 'Oriu corse',
+    region: 'Corse · principalement Corse-du-Sud et zones rurales de l\'intérieur',
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Abri rural traditionnel aménagé sous un surplomb rocheux, dans une cavité naturelle ou contre un gros bloc de granite. L'orìu utilise directement la morphologie du rocher comme protection et complète généralement l'abri naturel par des murs en pierre sèche, un petit muret d'accès ou des aménagements destinés au stockage et au repos. Cette architecture rudimentaire associe ainsi la géologie naturelle du site à une intervention humaine minimale.",
+    usage: 'Abri temporaire, refuge pastoral, repos et activités agricoles',
+    categorie: 'rural',
+    gps: '41.95° N, 9.15° E',
+    altitude: '100–1200 m',
+    climat: 'Méditerranéen montagnard',
+    typeToiture: 'Rocher naturel / surplomb rocheux',
+    penteToit: 'Variable selon la formation rocheuse',
+    essenceBois: 'Châtaignier et chêne pour les éventuels aménagements',
+    typeFondation: 'Appui direct sur le substrat rocheux',
+    typeCharpente: 'Aucune charpente dans la forme traditionnelle sous surplomb',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Faible',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "L'orìu corse constitue une forme très particulière d'abri vernaculaire dans laquelle le rocher lui-même devient l'élément principal de l'architecture. Le terme désigne notamment des abris aménagés sous de grands blocs granitiques ou sous des surplombs rocheux. Les populations rurales complétaient la protection naturelle offerte par le rocher au moyen de petits murs en pierre sèche, de murets et d'aménagements intérieurs rudimentaires. L'orìu pouvait servir d'abri temporaire aux bergers, aux agriculteurs ou aux chasseurs, mais également de lieu de repos ou de stockage. Il illustre une architecture à très faible impact matériel, entièrement dépendante de la géologie locale.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', "Corse, notamment Corse-du-Sud et zones granitiques de l'intérieur"],
+      ['Usage', 'Abri temporaire, repos et activités pastorales'],
+      ['Implantation', 'Sous un bloc rocheux, un surplomb ou dans une cavité naturelle'],
+      ['Organisation', 'Espace naturel complété par des aménagements rudimentaires'],
+      ['Système', 'Abri naturel associé à des murs en pierre sèche'],
+      ['Matériau dominant', 'Granite local'],
+      ['Toiture', "Rocher naturel faisant office de couverture"],
+      ['Particularité', "Le rocher constitue directement la structure et la couverture de l'abri"],
+    ],
+    materiaux: ['Granite', 'Pierre sèche', 'Moellon', 'Dalles de pierre', 'Bois', 'Terre'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Surplomb rocheux',
+        txt: "Le rocher naturel forme la couverture principale et protège l'espace intérieur.",
+      },
+      {
+        n: 2,
+        el: 'Bloc granitique',
+        txt: "Un gros bloc rocheux peut constituer l'une ou plusieurs parois de l'abri.",
+      },
+      {
+        n: 3,
+        el: 'Mur en pierre sèche',
+        txt: "Des murets complètent la protection naturelle et délimitent l'espace utilisable.",
+      },
+      {
+        n: 4,
+        el: 'Entrée',
+        txt: "L'accès est généralement une ouverture simple aménagée entre les rochers et les murs.",
+      },
+      {
+        n: 5,
+        el: 'Espace intérieur',
+        txt: "La cavité naturelle offre un espace réduit destiné principalement au repos ou à l'abri temporaire.",
+      },
+      {
+        n: 6,
+        el: 'Sol naturel',
+        txt: 'Le sol est généralement constitué du substrat rocheux ou de terre compactée.',
+      },
+      {
+        n: 7,
+        el: 'Muret de protection',
+        txt: "Un petit mur peut protéger l'entrée contre le vent ou délimiter l'espace intérieur.",
+      },
+      {
+        n: 8,
+        el: 'Roche environnante',
+        txt: "L'implantation dépend directement de la présence d'un bloc ou d'un relief rocheux approprié.",
+      },
+      {
+        n: 9,
+        el: 'Aire de repos',
+        txt: "L'espace pouvait servir temporairement aux bergers, agriculteurs ou autres usagers des campagnes.",
+      },
+      {
+        n: 10,
+        el: 'Aménagement minimal',
+        txt: 'La construction nécessite peu de matériaux puisque la structure principale est fournie par le relief naturel.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Architecture rupestre',
+        icon: 'ph ph-mountains',
+        intro: "L'orìu repose sur l'utilisation directe d'une formation rocheuse comme élément architectural.",
+        groups: [
+          G(null, ['Surplomb.', 'Bloc rocheux.', 'Cavité.', 'Abri naturel.', 'Architecture rupestre.']),
+        ],
+      },
+      {
+        title: 'Le rocher comme toiture',
+        icon: 'ph ph-house-line',
+        intro: "Contrairement aux bâtiments traditionnels construits de toutes pièces, l'orìu utilise le rocher comme couverture.",
+        groups: [
+          G(null, ['Rocher.', 'Surplomb.', 'Protection.', 'Couverture naturelle.', 'Inertie thermique.']),
+        ],
+      },
+      {
+        title: 'Pierre sèche',
+        icon: 'ph ph-wall',
+        intro: 'Les interventions humaines restent limitées et prennent principalement la forme de petits murs en pierre sèche.',
+        groups: [
+          G(null, ['Pierre sèche.', 'Muret.', 'Calage.', 'Granite.', 'Moellon.']),
+        ],
+      },
+      {
+        title: 'Abri pastoral',
+        icon: 'ph ph-sheep',
+        intro: "L'orìu s'inscrit dans les pratiques pastorales traditionnelles et les déplacements dans les espaces ruraux.",
+        groups: [
+          G(null, ['Berger.', 'Troupeau.', 'Parcours.', 'Pâturage.', 'Repos.']),
+        ],
+      },
+      {
+        title: 'Abri temporaire',
+        icon: 'ph ph-door-open',
+        intro: "Le bâtiment offre une protection ponctuelle plutôt qu'un espace d'habitation permanent.",
+        groups: [
+          G(null, ['Repos.', 'Protection.', 'Travail agricole.', 'Refuge.', 'Séjour temporaire.']),
+        ],
+      },
+      {
+        title: 'Granite corse',
+        icon: 'ph ph-cube',
+        intro: "Les orìi sont particulièrement associés aux paysages granitiques où les blocs rocheux fournissent naturellement des abris.",
+        groups: [
+          G(null, ['Granite.', 'Bloc rocheux.', 'Chaos granitique.', 'Rocher.', 'Paysage minéral.']),
+        ],
+      },
+      {
+        title: 'Économie de moyens',
+        icon: 'ph ph-hammer',
+        intro: "L'utilisation d'un abri naturel réduit considérablement la quantité de matériaux nécessaires à la construction.",
+        groups: [
+          G(null, ['Matériaux réduits.', 'Réemploi du site.', 'Construction minimale.', 'Pierre locale.', 'Savoir-faire.']),
+        ],
+      },
+      {
+        title: 'Protection climatique',
+        icon: 'ph ph-wind',
+        intro: 'La masse rocheuse protège naturellement contre le soleil, le vent et certaines variations de température.',
+        groups: [
+          G(null, ['Ombre.', 'Inertie thermique.', 'Protection contre le vent.', 'Fraîcheur.', 'Abri.']),
+        ],
+      },
+      {
+        title: 'Implantation',
+        icon: 'ph ph-map-pin',
+        intro: "La localisation de l'orìu dépend entièrement de la présence d'une configuration rocheuse adaptée.",
+        groups: [
+          G(null, ['Blocs granitiques.', 'Pentes.', 'Maquis.', 'Montagne.', 'Campagne.']),
+        ],
+      },
+      {
+        title: 'Usages agricoles',
+        icon: 'ph ph-tractor',
+        intro: "L'abri accompagnait les activités quotidiennes des populations rurales travaillant loin des villages.",
+        groups: [
+          G(null, ['Agriculture.', 'Pastoralisme.', 'Surveillance.', 'Repos.', 'Stockage ponctuel.']),
+        ],
+      },
+      {
+        title: 'Relation avec les constructions pastorales',
+        icon: 'ph ph-arrows-left-right',
+        intro: "L'orìu appartient à la même culture constructive que les bergeries et pagliaghji, mais son architecture est essentiellement fournie par le rocher.",
+        groups: [
+          G(null, ['Bergerie.', 'Pagliaghju.', 'Pierre sèche.', 'Abri.', 'Pastoralisme.']),
+        ],
+      },
+      {
+        title: 'Paysage culturel',
+        icon: 'ph ph-tree',
+        intro: "Ces abris témoignent de la manière dont les activités rurales se sont adaptées au relief et aux ressources naturelles de la Corse.",
+        groups: [
+          G(null, ['Paysage rural.', 'Géologie.', 'Pastoralisme.', 'Architecture vernaculaire.', 'Mémoire rurale.']),
+        ],
+      },
+      {
+        title: 'Patrimoine vernaculaire',
+        icon: 'ph ph-bank',
+        intro: "L'orìu constitue un témoignage particulièrement original de l'architecture traditionnelle à très faible impact.",
+        groups: [
+          G(null, ['Patrimoine.', 'Architecture vernaculaire.', 'Pierre sèche.', 'Abri rupestre.', 'Savoir-faire.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La présence d'un grand bloc ou d'un surplomb rocheux utilisé comme couverture constitue le principal critère d'identification.",
+        groups: [
+          G(null, [
+            'Oriu.',
+            'Surplomb rocheux.',
+            'Granite.',
+            'Pierre sèche.',
+            'Abri naturel.',
+            'Muret.',
+            'Pastoralisme.',
+            'Architecture rupestre.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
