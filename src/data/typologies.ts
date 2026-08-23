@@ -26015,6 +26015,227 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'paillercorse',
+    name: 'Pailler / Pagliaghju corse',
+    region: "Corse · zones pastorales de l'intérieur et de moyenne montagne",
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Petite construction pastorale traditionnelle généralement édifiée en pierre locale, destinée principalement au stockage du fourrage et à l'abri des activités liées à l'élevage. Le pagliaghju présente fréquemment un plan simple et compact, avec une maçonnerie épaisse en pierre et une couverture traditionnelle pouvant être constituée d'une voûte en pierre sèche, d'une couverture de lauzes ou d'une charpente en bois selon les secteurs. Il s'intègre aux exploitations pastorales et peut être associé à une bergerie, à des enclos ou à d'autres petits bâtiments agricoles.",
+    usage: 'Stockage du foin, abri pastoral et fonctions agricoles',
+    categorie: 'rural',
+    gps: '42.20° N, 9.05° E',
+    altitude: '200–1200 m',
+    climat: 'Méditerranéen montagnard',
+    typeToiture: 'Voûte en pierre sèche, lauzes ou couverture traditionnelle',
+    penteToit: 'Faible à moyenne',
+    essenceBois: 'Châtaignier et chêne selon les secteurs',
+    typeFondation: 'Assise directe sur le terrain ou soubassement en pierre',
+    typeCharpente: 'Sans charpente dans les formes voûtées ; charpente bois dans les autres variantes',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Moyenne',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le pailler, ou pagliaghju, est une petite construction rurale caractéristique de l'architecture pastorale corse. Son nom est directement associé au stockage de la paille et du fourrage. Généralement construit en pierre locale, il adopte un volume compact particulièrement bien adapté aux espaces pastoraux isolés. Certaines formes présentent une remarquable couverture en pierre sèche réalisée par encorbellement ou en tas de charge, tandis que d'autres utilisent une charpente en bois et une couverture traditionnelle. Le pagliaghju peut être implanté à proximité des bergeries, des parcours ou des anciennes exploitations agricoles. Sa petite dimension et son architecture rudimentaire témoignent d'une construction réalisée avec les ressources immédiatement disponibles sur le site.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', "Corse · intérieur de l'île · zones pastorales"],
+      ['Usage', 'Stockage du foin et de la paille'],
+      ['Implantation', 'Parcours pastoraux, pâturages et exploitations isolées'],
+      ['Organisation', 'Petit volume indépendant à plan simple'],
+      ['Système', 'Maçonnerie traditionnelle en pierre'],
+      ['Matériau dominant', 'Granite, schiste ou autre pierre locale'],
+      ['Toiture', 'Voûte en pierre sèche, lauzes ou couverture traditionnelle'],
+      ['Particularité', 'Petit bâtiment pastoral consacré principalement au stockage du fourrage'],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Calcaire', 'Moellon', 'Pierre sèche', 'Lauzes', 'Bois', 'Chaux', 'Terre'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Maçonnerie en pierre',
+        txt: 'Les murs sont constitués de pierres locales assemblées traditionnellement, avec ou sans mortier selon les formes.',
+      },
+      {
+        n: 2,
+        el: 'Entrée',
+        txt: 'Une ouverture généralement étroite permet l\'accès au volume de stockage.',
+      },
+      {
+        n: 3,
+        el: 'Espace de stockage',
+        txt: "Le volume intérieur est principalement destiné à conserver le foin, la paille ou d'autres produits agricoles.",
+      },
+      {
+        n: 4,
+        el: 'Voûte',
+        txt: 'Certaines formes de pagliaghju utilisent une couverture en pierre sèche construite par encorbellement ou en tas de charge.',
+      },
+      {
+        n: 5,
+        el: 'Lauzes',
+        txt: 'Des dalles de pierre peuvent être utilisées pour la couverture selon les traditions locales.',
+      },
+      {
+        n: 6,
+        el: 'Sol',
+        txt: 'Le sol intérieur est généralement simple et adapté au stockage des matériaux agricoles.',
+      },
+      {
+        n: 7,
+        el: 'Parcours pastoral',
+        txt: 'Le bâtiment est implanté à proximité des espaces exploités par les troupeaux.',
+      },
+      {
+        n: 8,
+        el: 'Bergerie associée',
+        txt: "Le pagliaghju peut être associé à une bergerie ou à d'autres constructions nécessaires à l'élevage.",
+      },
+      {
+        n: 9,
+        el: 'Fourrage',
+        txt: 'Le foin et la paille constituent les principaux produits traditionnellement conservés dans le bâtiment.',
+      },
+      {
+        n: 10,
+        el: "Pierre d'épierrement",
+        txt: 'Les matériaux peuvent provenir des pierres retirées des terres agricoles et pastorales environnantes.',
+      },
+    ],
+    sections: [
+      {
+        title: 'Architecture du pagliaghju',
+        icon: 'ph ph-house',
+        intro: "Le pagliaghju privilégie un volume réduit, robuste et directement adapté aux besoins de l'exploitation pastorale.",
+        groups: [
+          G(null, ['Petit volume.', 'Plan simple.', 'Murs épais.', 'Ouverture réduite.', 'Construction fonctionnelle.']),
+        ],
+      },
+      {
+        title: 'Stockage du fourrage',
+        icon: 'ph ph-stack',
+        intro: "La fonction principale du bâtiment est de conserver les ressources nécessaires à l'alimentation des animaux.",
+        groups: [
+          G(null, ['Foin.', 'Paille.', 'Fourrage.', 'Récoltes.', 'Stockage.']),
+        ],
+      },
+      {
+        title: 'Pierre sèche',
+        icon: 'ph ph-wall',
+        intro: 'La construction peut utiliser la technique de la pierre sèche, particulièrement adaptée aux ressources disponibles dans les espaces ruraux corses.',
+        groups: [
+          G(null, ['Pierre locale.', 'Sans mortier.', 'Empilement.', 'Calage.', 'Épierrement.']),
+        ],
+      },
+      {
+        title: 'Voûte en pierre',
+        icon: 'ph ph-arch',
+        intro: 'Certaines formes de pagliaghju présentent une couverture voûtée construite entièrement en pierre.',
+        groups: [
+          G(null, ['Voûte.', 'Encourbement.', 'Tas de charge.', 'Dalles.', 'Pierre sèche.']),
+        ],
+      },
+      {
+        title: 'Implantation pastorale',
+        icon: 'ph ph-map-pin',
+        intro: 'Le bâtiment est implanté directement au sein des espaces exploités par les éleveurs.',
+        groups: [
+          G(null, ['Pâturage.', 'Parcours.', 'Maquis.', 'Prairie.', 'Montagne.']),
+        ],
+      },
+      {
+        title: 'Relation avec la bergerie',
+        icon: 'ph ph-arrows-left-right',
+        intro: 'Le pagliaghju peut compléter la bergerie en assurant une fonction spécifique de stockage.',
+        groups: [
+          G(null, ['Bergerie.', 'Fourrage.', 'Troupeau.', 'Stockage.', 'Exploitation pastorale.']),
+        ],
+      },
+      {
+        title: 'Ressources locales',
+        icon: 'ph ph-cube',
+        intro: 'La construction est directement conditionnée par les matériaux disponibles dans son environnement immédiat.',
+        groups: [
+          G(null, ['Granite.', 'Schiste.', 'Calcaire.', 'Bois.', 'Lauzes.']),
+        ],
+      },
+      {
+        title: 'Forme compacte',
+        icon: 'ph ph-square',
+        intro: 'Le faible volume limite les surfaces exposées aux intempéries et facilite la conservation des produits stockés.',
+        groups: [
+          G(null, ['Compacité.', 'Murs épais.', 'Faible ouverture.', 'Inertie.', 'Protection.']),
+        ],
+      },
+      {
+        title: 'Toiture traditionnelle',
+        icon: 'ph ph-house-line',
+        intro: 'La couverture varie selon les territoires et les techniques disponibles.',
+        groups: [
+          G(null, ['Voûte.', 'Lauzes.', 'Pierre.', 'Charpente bois.', 'Couverture traditionnelle.']),
+        ],
+      },
+      {
+        title: 'Économie pastorale',
+        icon: 'ph ph-sheep',
+        intro: "Le pagliaghju appartient à un système économique fondé sur l'élevage extensif et l'exploitation des parcours.",
+        groups: [
+          G(null, ['Élevage.', 'Ovins.', 'Caprins.', 'Foin.', 'Pâturage.']),
+        ],
+      },
+      {
+        title: 'Construction vernaculaire',
+        icon: 'ph ph-hammer',
+        intro: 'Le bâtiment est généralement construit avec des techniques simples et des matériaux prélevés à proximité.',
+        groups: [
+          G(null, ['Autoconstruction.', 'Matériaux locaux.', 'Savoir-faire.', 'Pierre.', 'Économie de moyens.']),
+        ],
+      },
+      {
+        title: 'Isolement',
+        icon: 'ph ph-mountains',
+        intro: 'De nombreux pagliaghji sont isolés dans les espaces pastoraux, loin des villages.',
+        groups: [
+          G(null, ['Isolement.', 'Montagne.', 'Maquis.', 'Parcours.', 'Exploitation dispersée.']),
+        ],
+      },
+      {
+        title: 'Patrimoine rural',
+        icon: 'ph ph-bank',
+        intro: "Les pagliaghji constituent des témoins importants de l'ancienne organisation pastorale de l'île.",
+        groups: [
+          G(null, ['Patrimoine.', 'Architecture rurale.', 'Pastoralisme.', 'Pierre sèche.', 'Mémoire agricole.']),
+        ],
+      },
+      {
+        title: 'Évolution et abandon',
+        icon: 'ph ph-clock',
+        intro: "La mécanisation et la transformation des pratiques d'élevage ont entraîné l'abandon de nombreux petits bâtiments pastoraux.",
+        groups: [
+          G(null, ['Abandon.', 'Ruine.', 'Végétation.', 'Restauration.', 'Réhabilitation.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: 'Le petit volume en pierre, la fonction de stockage et l\'association aux espaces pastoraux permettent d\'identifier le pagliaghju.',
+        groups: [
+          G(null, [
+            'Pagliaghju.',
+            'Petit bâtiment.',
+            'Pierre.',
+            'Fourrage.',
+            'Pierre sèche.',
+            'Voûte.',
+            'Parcours pastoral.',
+            'Stockage.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
