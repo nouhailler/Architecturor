@@ -22,7 +22,7 @@
 
 ## ✨ À propos
 
-Inventaire du bâti est une base de référence destinée à la maîtrise d'œuvre : elle recense **219 typologies constructives françaises** (immeuble haussmannien, mas provençal, maison à pans de bois, grand ensemble, bastide, borie, pigeonnier, grange à fenil, village perché, etc.) réparties en 10 catégories (rural, urbain, religieux, militaire, industriel, transports, agricole, public, littoral, montagne), avec pour chacune : structure porteuse, matériaux, planchers, toiture — et, pour la plupart, une photo.
+Inventaire du bâti est une base de référence destinée à la maîtrise d'œuvre : elle recense **269 typologies constructives françaises** (immeuble haussmannien, mas provençal, maison à pans de bois, grand ensemble, bastide, borie, pigeonnier, grange à fenil, village perché, etc.) réparties en 10 catégories (rural, urbain, religieux, militaire, industriel, transports, agricole, public, littoral, montagne), avec pour chacune : structure porteuse, matériaux, planchers, toiture — et, pour la plupart, une photo.
 
 Points d'entrée principaux :
 - 🗺️ Carte de France géolocalisant chaque typologie
@@ -62,7 +62,7 @@ Remarques :
 
 ## Features
 
-- ✅ 219 typologies documentées, sur 10 catégories (rural, urbain, religieux, militaire,
+- ✅ 269 typologies documentées, sur 10 catégories (rural, urbain, religieux, militaire,
   industriel, transports, agricole, public, littoral, montagne)
 - ✅ Catalogue filtrable par catégorie, période, procédé, usage, avec recherche texte
 - ✅ Carte interactive et frise chronologique des typologies
@@ -191,7 +191,7 @@ src/
 │   └── useUpdate.ts       # Hook React exposant l'état de mise à jour
 ├── context/          # App context : filtres, recherche
 ├── data/
-│   ├── typologies.ts      # 219 typologies natives — source de vérité
+│   ├── typologies.ts      # 269 typologies natives — source de vérité
 │   ├── typologieSchema.ts # Gabarit + validation des typologies importées
 │   ├── glossaire.ts       # Termes du glossaire
 │   └── icons.tsx          # Mappage icônes → composants Phosphor
@@ -211,7 +211,7 @@ public/
 
 ## 🧾 Données & contenu
 
-- Les 219 typologies natives sont définies dans `src/data/typologies.ts` — format TypeScript
+- Les 269 typologies natives sont définies dans `src/data/typologies.ts` — format TypeScript
   pour assurer la cohérence (voir la section « Modèle de données » de [CONTEXT.md](CONTEXT.md)
   pour le détail des champs).
 - La plupart référencent une photo Wikimedia Commons (`images: string[]`), résolue à l'affichage

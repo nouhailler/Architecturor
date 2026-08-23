@@ -65,7 +65,7 @@ types) car il s'agit de terminologie métier, pas d'infrastructure technique gé
 ## 🗺️ Modèle de données
 
 `Typologie` (dans `src/data/typologies.ts`) est la source de vérité unique pour les typologies
-natives — actuellement **219 entrées**, exportées sous forme de tableau (`TYPOLOGIES`) et de map
+natives — actuellement **269 entrées**, exportées sous forme de tableau (`TYPOLOGIES`) et de map
 par id (`TYPOLOGIES_MAP`). Chaque entrée porte :
 
 - des métadonnées de listing/filtrage (`region`, `periode`, `procede`, `usage`, `periodeTags`,
@@ -86,7 +86,7 @@ unique dans tout le fichier.
 
 ### Typologies importées par l'utilisateur
 
-En plus des 219 typologies natives, un·e utilisateur·rice peut importer ses propres typologies
+En plus des 269 typologies natives, un·e utilisateur·rice peut importer ses propres typologies
 depuis la page **Paramètres** (`/parametres`) : import d'un fichier JSON ou collage direct,
 validé contre le schéma de `src/data/typologieSchema.ts` (avec gabarit `TYPOLOGIE_TEMPLATE`
 téléchargeable et liste blanche `VALID_SECTION_ICONS`). Avant tout import, une détection de
@@ -114,7 +114,7 @@ Un préfixe `wp:` sur la référence bascule la résolution vers `fr.wikipedia.o
 chargées directement depuis Wikimedia à l'affichage (pas de copie locale, pas de backend) — un
 accès réseau externe est donc nécessaire pour les voir. Chaque image ajoutée doit être vérifiée
 individuellement (licence libre, cohérence visuelle avec la typologie) avant d'être référencée ;
-environ 180 des 219 typologies en possèdent une à ce jour, les autres retombent sur un
+environ 190 des 269 typologies en possèdent une à ce jour, les autres retombent sur un
 placeholder (icône `Image`).
 
 ## 📌 État actuel / limitations connues
