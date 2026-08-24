@@ -27301,6 +27301,219 @@ export const TYPOLOGIES: Typologie[] = [
       },
     ],
   },
+  {
+    id: 'moulinhuilecorse',
+    name: 'Moulin à huile corse',
+    region: "Corse · principalement Balagne, Cap Corse, Castagniccia, Nebbio et régions rurales de l'intérieur",
+    periode: 'XVIIe siècle – début du XXe siècle',
+    procede:
+      "Bâtiment rural destiné à la transformation des olives en huile, généralement implanté à proximité des oliveraies et intégré à une exploitation agricole ou à un hameau. Le moulin traditionnel peut être actionné par un manège animal ou, selon les sites, par la force hydraulique. L'installation comprend notamment une meule destinée au broyage des olives, une cuve ou aire de réception de la pâte, ainsi qu'un dispositif de pressage. Les bâtiments utilisent principalement la pierre locale, avec des volumes simples, des murs épais et des ouvertures limitées.",
+    usage: "Transformation des olives et production d'huile",
+    categorie: 'agricole',
+    gps: '42.20° N, 9.10° E',
+    altitude: '50–700 m',
+    climat: 'Méditerranéen',
+    typeToiture: 'Toiture à deux pans en tuile traditionnelle',
+    penteToit: 'Faible à moyenne',
+    essenceBois: 'Châtaignier, chêne et olivier',
+    typeFondation: 'Assise maçonnée sur terrain rocheux ou sol compact',
+    typeCharpente: 'Charpente traditionnelle en bois',
+    epoqueDominante: 'XIXe siècle',
+    difficulteIdentification: 'Faible',
+    wikipediaUrl: '',
+    commonsUrl: '',
+    images: [],
+    periodeTags: ['XVIIe', 'XVIIIe', 'XIXe', 'XXe'],
+    resume:
+      "Le moulin à huile corse constitue un élément important de l'architecture productive traditionnelle de l'île. Installé au cœur des territoires oléicoles, il permettait de transformer les récoltes d'olives en huile grâce à une meule et à un système de pressage. Certains moulins fonctionnaient avec un manège actionné par un animal, tandis que d'autres exploitaient une source d'énergie hydraulique. Les inventaires patrimoniaux corses documentent des ensembles associant moulin à huile, maison d'exploitation, four à pain, pressoir et dépendances. La construction est généralement massive et fonctionnelle, avec une maçonnerie en granite, schiste ou autre pierre locale et une couverture traditionnelle. Le moulin témoigne de l'importance ancienne de l'olivier dans l'économie rurale corse.",
+    identite: [
+      ['Période', 'XVIIe siècle – début du XXe siècle'],
+      ['Région', 'Corse · Balagne, Cap Corse, Castagniccia, Nebbio et intérieur'],
+      ['Usage', "Transformation des olives et production d'huile"],
+      ['Implantation', "Exploitation agricole, hameau ou proximité d'une oliveraie"],
+      ['Organisation', 'Bâtiment productif comprenant broyage, réception et pressage'],
+      ['Système', 'Meule et pressoir, avec manège animal ou énergie hydraulique selon les exemples'],
+      ['Matériau dominant', 'Pierre locale et moellon'],
+      ['Toiture', 'Toiture traditionnelle en tuile ou matériau local'],
+      ['Particularité', "Architecture directement organisée autour de la chaîne traditionnelle de fabrication de l'huile"],
+    ],
+    materiaux: ['Granite', 'Schiste', 'Calcaire', 'Moellon', 'Pierre de taille', 'Chaux', 'Bois', 'Tuile', 'Fer'],
+    annotations: [
+      {
+        n: 1,
+        el: 'Meule',
+        txt: "La meule en pierre broie les olives afin de produire une pâte avant le pressage.",
+      },
+      {
+        n: 2,
+        el: 'Cuve de broyage',
+        txt: "La pâte d'olives est préparée et accumulée dans une cuve ou sur une aire maçonnée.",
+      },
+      {
+        n: 3,
+        el: 'Pressoir',
+        txt: "Le pressoir permet d'extraire l'huile contenue dans la pâte d'olives.",
+      },
+      {
+        n: 4,
+        el: 'Manège',
+        txt: 'Certains moulins corses utilisent un manège où un animal fournit la force nécessaire à la rotation de la meule.',
+      },
+      {
+        n: 5,
+        el: 'Aire de travail',
+        txt: "L'espace intérieur est organisé autour des différentes étapes de transformation des olives.",
+      },
+      {
+        n: 6,
+        el: 'Cuves de réception',
+        txt: 'Des récipients ou cuves permettent de récupérer et de laisser décanter les liquides issus du pressage.',
+      },
+      {
+        n: 7,
+        el: 'Mur massif',
+        txt: "Les murs épais assurent la stabilité nécessaire aux équipements lourds et participent à l'inertie thermique du bâtiment.",
+      },
+      {
+        n: 8,
+        el: 'Entrée',
+        txt: "L'accès est dimensionné pour permettre l'entrée des récoltes, des animaux et du matériel.",
+      },
+      {
+        n: 9,
+        el: 'Espace de stockage',
+        txt: "Des espaces annexes permettent de conserver les olives, les outils ou l'huile produite.",
+      },
+      {
+        n: 10,
+        el: 'Oliveraie',
+        txt: "Le moulin est directement associé aux territoires de culture de l'olivier.",
+      },
+    ],
+    sections: [
+      {
+        title: "Transformation de l'olive",
+        icon: 'ph ph-drop',
+        intro: "Le moulin regroupe les opérations nécessaires à la transformation des olives en huile.",
+        groups: [
+          G(null, ['Réception.', 'Broyage.', 'Pressage.', 'Décantation.', 'Stockage.']),
+        ],
+      },
+      {
+        title: 'Meule traditionnelle',
+        icon: 'ph ph-circle',
+        intro: "La meule constitue l'un des éléments architecturaux et techniques les plus caractéristiques du moulin traditionnel.",
+        groups: [
+          G(null, ['Pierre.', 'Meule.', 'Broyage.', "Pâte d'olive.", 'Rotation.']),
+        ],
+      },
+      {
+        title: 'Pressage',
+        icon: 'ph ph-arrows-out-line-horizontal',
+        intro: "Le pressage permet de séparer l'huile des matières solides contenues dans la pâte d'olives.",
+        groups: [
+          G(null, ['Pressoir.', 'Paniers.', 'Pression.', 'Huile.', 'Résidus.']),
+        ],
+      },
+      {
+        title: 'Force animale',
+        icon: 'ph ph-horse',
+        intro: 'De nombreux moulins traditionnels utilisent la traction animale pour entraîner le mécanisme de broyage.',
+        groups: [
+          G(null, ['Manège.', 'Animal de trait.', 'Rotation.', 'Transmission.', 'Meule.']),
+        ],
+      },
+      {
+        title: 'Énergie hydraulique',
+        icon: 'ph ph-drop-half-bottom',
+        intro: 'Certains moulins exploitent également la force de l\'eau disponible localement.',
+        groups: [
+          G(null, ['Eau.', 'Roue hydraulique.', 'Transmission.', 'Énergie.', 'Moulin.']),
+        ],
+      },
+      {
+        title: 'Architecture productive',
+        icon: 'ph ph-factory',
+        intro: 'Le bâtiment est avant tout conçu autour des contraintes techniques de la production d\'huile.',
+        groups: [
+          G(null, ['Volumes fonctionnels.', 'Murs épais.', 'Sol robuste.', 'Ouvertures réduites.', 'Circulation.']),
+        ],
+      },
+      {
+        title: 'Pierre locale',
+        icon: 'ph ph-cube',
+        intro: 'La construction utilise les matériaux disponibles dans le territoire rural environnant.',
+        groups: [
+          G(null, ['Granite.', 'Schiste.', 'Calcaire.', 'Moellon.', 'Pierre de taille.']),
+        ],
+      },
+      {
+        title: 'Oliviculture corse',
+        icon: 'ph ph-tree',
+        intro: 'Le moulin constitue le dernier maillon d\'un système agricole organisé autour des oliveraies.',
+        groups: [
+          G(null, ['Olivier.', 'Oliveraie.', 'Récolte.', 'Olives.', 'Huile.']),
+        ],
+      },
+      {
+        title: 'Stockage',
+        icon: 'ph ph-package',
+        intro: 'Le fonctionnement du moulin nécessite des espaces pour conserver les olives, les outils et le produit fini.',
+        groups: [
+          G(null, ['Réserve.', 'Jarres.', 'Cuves.', 'Huile.', 'Outils.']),
+        ],
+      },
+      {
+        title: "Intégration à l'exploitation",
+        icon: 'ph ph-buildings',
+        intro: 'Le moulin peut constituer une partie d\'un ensemble agricole comprenant maison, four, pressoir et dépendances.',
+        groups: [
+          G(null, ['Maison.', 'Moulin.', 'Four.', 'Pressoir.', 'Dépendances.']),
+        ],
+      },
+      {
+        title: 'Économie rurale',
+        icon: 'ph ph-coins',
+        intro: "La production d'huile représente une activité agricole importante dans plusieurs régions de Corse.",
+        groups: [
+          G(null, ['Autoconsommation.', 'Commerce.', 'Récolte.', 'Production.', 'Économie familiale.']),
+        ],
+      },
+      {
+        title: 'Savoir-faire',
+        icon: 'ph ph-hammer',
+        intro: 'Le fonctionnement du moulin repose sur des connaissances techniques transmises au sein des communautés rurales.',
+        groups: [
+          G(null, ['Meunier.', 'Oléiculture.', 'Mécanique traditionnelle.', 'Pierre.', 'Transmission.']),
+        ],
+      },
+      {
+        title: 'Évolution',
+        icon: 'ph ph-clock',
+        intro: 'Les moulins traditionnels ont progressivement été remplacés par des installations mécanisées au cours du XXe siècle.',
+        groups: [
+          G(null, ['Mécanisation.', 'Abandon.', 'Transformation.', 'Restauration.', 'Patrimoine.']),
+        ],
+      },
+      {
+        title: 'Éléments distinctifs',
+        icon: 'ph ph-magnifying-glass',
+        intro: "La présence d'une meule, d'un système de pressage et d'un bâtiment rural fonctionnel constitue le principal ensemble de critères.",
+        groups: [
+          G(null, [
+            'Moulin à huile.',
+            'Meule.',
+            'Pressoir.',
+            'Manège.',
+            'Olive.',
+            'Huile.',
+            'Pierre.',
+            'Architecture productive.',
+          ]),
+        ],
+      },
+    ],
+  },
 ]
 
 export const TYPOLOGIES_MAP = Object.fromEntries(TYPOLOGIES.map((t) => [t.id, t]))
